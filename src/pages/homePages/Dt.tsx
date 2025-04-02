@@ -4,7 +4,7 @@ import BannerV1 from "../../components/banner/BannerV1";
 import BlogV2 from "../../components/blog/BlogV2";
 import BrandV1 from "../../components/brand/BrandV1";
 import DarkClass from "../../components/classes/DarkClass";
-// import FooterV3 from "../../components/footer/FooterV3";
+import FooterV3 from "../../components/footer/FooterV3";
 import HeaderV1 from "../../components/header/HeaderV1";
 import MultiSection from "../../components/multi/MultiSection";
 import PriceV2 from "../../components/price/PriceV2";
@@ -13,9 +13,9 @@ import ServicesV1 from "../../components/services/ServicesV1";
 import TeamV3 from "../../components/team/TeamV3";
 import TestimonialV1 from "../../components/testimonial/TestimonialV1";
 import BrandV2 from "../../components/brand/BrandV2";
-// import FooterV4 from "../../components/footer/FooterV4";
-// import FooterV2 from "../../components/footer/FooterV2";
-// import FooterV1 from "../../components/footer/FooterV1";
+import FooterV4 from "../../components/footer/FooterV4";
+import FooterV2 from "../../components/footer/FooterV2";
+import FooterV1 from "../../components/footer/FooterV1";
 import ServicesV2 from "../../components/services/ServicesV2";
 import ServicesV3 from "../../components/services/ServicesV3";
 import ServicesV4 from "../../components/services/ServicesV4";
@@ -39,6 +39,30 @@ import AboutV4 from "../../components/about/AboutV4";
 import AboutV5 from "../../components/about/AboutV5";
 import AboutV6 from "../../components/about/AboutV6";
 import AboutV7 from "../../components/about/AboutV7";
+import TeamV1 from "../../components/team/TeamV1";
+import TeamV2 from "../../components/team/TeamV2";
+import ProjectV1 from "../../components/project/ProjectV1";
+import PriceV1 from "../../components/price/PriceV1";
+import PriceV3 from "../../components/price/PriceV3";
+import BannerV2 from "../../components/banner/BannerV2";
+import BannerV3 from "../../components/banner/BannerV3";
+import BannerV4 from "../../components/banner/BannerV4";
+import BannerV6 from "../../components/banner/BannerV6";
+import BannerV7 from "../../components/banner/BannerV7";
+import BannerV8 from "../../components/banner/BannerV8";
+import BannerV9 from "../../components/banner/BannerV9";
+import BannerV10 from "../../components/banner/BannerV10";
+import BlogV1 from "../../components/blog/BlogV1";
+import AchievementAward from "../../components/awards/AchievementAward";
+import AwardV1 from "../../components/awards/AwardV1";
+import ExpertiseV1 from "../../components/expertise/ExpertiseV1";
+import FunFactV1 from "../../components/fact/FunFactV1";
+import ContactMap from "../../components/map/ContactMap";
+import NewsletterV2 from "../../components/newsletter/NewsletterV2";
+import PartnerV2 from "../../components/partner/PartnerV2";
+import WhyChooseV1 from "../../components/whyChoose/WhyChooseV1";
+import WhyChooseV2 from "../../components/whyChoose/WhyChooseV2";
+import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3";
 
 const dt = () => {
   return (
@@ -46,29 +70,41 @@ const dt = () => {
       <Helmet>
         <title>Dixor - Home 9</title>
       </Helmet>
-
       <div className="smooth-scroll-container">
         <HeaderV1 />
+        <p>Banner 1</p>
         <BannerV1 />
-        <p>Brand v1</p>
-        <BrandV1 />
-        <p>Brand v2</p>
-        <BrandV2 />
-        <p>Focus 1</p>
+        <p>Banner 2</p>
+        <BannerV2 />
+        <p>Banner 3</p>
+        <BannerV3 />
+        <p>Banner 4</p>
+        <BannerV4 />
+        <p>Banner 6</p>
+        <BannerV6 />
+        <p>Banner 7</p>
+        <BannerV7 />
+        <p>Banner 8</p>
+        <BannerV8/>
+        <p>Banner 9</p>
+        <BannerV9 />
+        <p>Banner 10</p>
+        <BannerV10 />
+
+        <p>Focus/Service 1</p>
         <ServicesV1 sectionClass="default-padding bg-gray" hasTitle={true} />
-        <p>Focus 2</p>
+        <p>Focus/Service 2</p>
         <ServicesV2 sectionClass="default-padding bg-gray" hasTitle={true} />
-        <p>Focus 3</p>
+        <p>Focus/Service 3</p>
         <ServicesV3 sectionClass="default-padding bg-gray" hasTitle={true} />
-        <p>Focus 4</p>
+        <p>Focus/Service 4</p>
         <ServicesV4 />
-        <p>Focus 5</p>
+        <p>Focus/Service 5</p>
         <ServicesV5 />
-        <p>Focus 6</p>
+        <p>Focus/Service 6</p>
         <ServicesV6 />
         <p>Client 1</p>
         <ClientsV1 sectionClass="bg-gray" />
-
         <p>Portfolio 1</p>
         <PortfolioV1 />
         <p>Portfolio 2</p>
@@ -83,34 +119,48 @@ const dt = () => {
         <PortfolioV6 />
         <p> Process </p>
         <ProcessWrapper />
-        <p>Service 1</p>
-        <ServicesV1/>
-        <p>Service 2</p>
-        <ServicesV2/>
-        <p>Service 3</p>
-        <ServicesV3/>
-        <p>Service 4</p>
-        <ServicesV4/>
-        <p>Service 5</p>
-        <ServicesV5/>
-        <p>Service 6</p>
-        <ServicesV6/>
         <p>Testimonial 1</p>
         <TestimonialV1 />
         <p>Testimonial 2</p>
         <TestimonialV2 />
         <p>Testimonial 3</p>
         <TestimonialV3 />
+        <p>Project 1</p>
+        <ProjectV1 />
+        <p>Project 2</p>
         <ProjectV2 />
+        <p>Expertise 1</p>
+        <ExpertiseV1/>
+        <p>FACT </p>
+        <FunFactV1/>
+        <p>Price 1</p>
+        <PriceV1 />
+        <p>Price 2</p>
         <PriceV2 />
-        <TestimonialV1 />
-        <TeamV3 sectionClass="bg-gray" hasTitle={true} />
+        <p>Price 3</p>
+        <PriceV3 />
+        <p>Multisection </p>
         <MultiSection />
+        <p>Blog 1</p>
+        <BlogV1 sectionClass="bg-gray" />
+        <p>Blog 2</p>
         <BlogV2 sectionClass="bg-gray" />
         <p>Contact 1</p>
         <ContactV1 />
         <p>Contact 2</p>
         <QuickContact />
+        <p>Contact Map</p>
+        <ContactMap/>
+        <p>News Letter</p>
+        <NewsletterV2/>
+        <p>Partner</p>
+        <PartnerV2/>
+        <p>Why Choose V1</p>
+        <WhyChooseV1/>
+        <p>Why Choose V2</p>
+        <WhyChooseV2/>
+        <p>Why Choose V3</p>
+        <WhyChooseV3/>
         <p>About 1</p>
         <AboutV1 />
         <p>About 2</p>
@@ -125,10 +175,23 @@ const dt = () => {
         <AboutV6 />
         <p>About 7</p>
         <AboutV7/>
-        {/* <FooterV3 />
-        <FooterV4 />
+        <p>Team 1</p>
+        <TeamV1/>
+        <p>Team 2</p>
+        <TeamV2/>
+        <p>Team 3</p>
+        <TeamV3/>
+        <p>Acheivement and Awards</p>
+        <AchievementAward/>
+        <AwardV1/>
+        <p>Footer 1</p>
+        <FooterV1 />
+        <p>Footer 2</p>
         <FooterV2 />
-        <FooterV1 /> */}
+        <p>Footer 3</p>
+        <FooterV3 />
+        <p>Footer 4</p>
+        <FooterV4 />
         <DarkClass />
       </div>
     </>
