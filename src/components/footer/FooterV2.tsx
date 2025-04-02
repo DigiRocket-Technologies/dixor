@@ -1,4 +1,4 @@
-import logoLight from '/assets/img/logo-light.png';
+// import logoLight from '/assets/img/logo-light.png';
 import logo from '/assets/img/logo.png';
 import { Link } from "react-router-dom";
 import NewsletterV2 from '../newsletter/NewsletterV2';
