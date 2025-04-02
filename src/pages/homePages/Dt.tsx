@@ -91,6 +91,11 @@ const dt = () => {
         <p>Banner 10</p>
         <BannerV10 />
 
+        <p>Brand 1</p>
+        <BrandV1/>
+        <p>Brand 2</p>
+        <BrandV2/>
+
         <p>Focus/Service 1</p>
         <ServicesV1 sectionClass="default-padding bg-gray" hasTitle={true} />
         <p>Focus/Service 2</p>
