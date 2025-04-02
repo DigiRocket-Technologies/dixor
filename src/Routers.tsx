@@ -9,6 +9,7 @@ import Home7 from "./pages/homePages/Home7";
 import Home8 from "./pages/homePages/Home8";
 import Home9 from "./pages/homePages/Home9";
 import Dt from "./pages/homePages/Dt";
+import DtLight from './pages/homePages/DtLight'
 
 // Home Light
 import Home1Light from "./pages/homePages/Home1Light";
@@ -20,6 +21,7 @@ import Home6Light from "./pages/homePages/Home6Light";
 import Home7Light from "./pages/homePages/Home7Light";
 import Home8Light from "./pages/homePages/Home8Light";
 import Home9Light from "./pages/homePages/Home9Light";
+
 
 // Inner Pages 
 import AboutUsPage from "./pages/innerPages/AboutUsPage";
@@ -94,6 +96,7 @@ const Routers = () => {
                 <Route path='/home-9' element={<Home9 />}></Route>
                 <Route path='/dt' element={<Dt />}></Route>
 
+
                 {/* Home Light  */}
                 <Route path='/home-1-light' element={<Home1Light />}></Route>
                 <Route path='/home-2-light' element={<Home2Light />}></Route>
@@ -104,6 +107,7 @@ const Routers = () => {
                 <Route path='/home-7-light' element={<Home7Light />}></Route>
                 <Route path='/home-8-light' element={<Home8Light />}></Route>
                 <Route path='/home-9-light' element={<Home9Light />}></Route>
+                <Route path='/dt-light' element={<DtLight />}></Route>
 
                 {/* Inner Pages */}
                 <Route path='/about-us' element={<AboutUsPage />}></Route>
