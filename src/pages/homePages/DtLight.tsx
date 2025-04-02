@@ -34,6 +34,38 @@ import TestimonialV2 from '../../components/testimonial/TestimonialV2';
 import TestimonialV3 from '../../components/testimonial/TestimonialV3';
 import TeamV1 from '../../components/team/TeamV1';
 import TeamV2 from '../../components/team/TeamV2';
+import BlogV1 from '../../components/blog/BlogV1';
+import AboutV2 from '../../components/about/AboutV2';
+import AboutV3 from '../../components/about/AboutV3';
+import AboutV4 from '../../components/about/AboutV4';
+import AboutV5 from '../../components/about/AboutV5';
+import AboutV6 from '../../components/about/AboutV6';
+import AboutV7 from '../../components/about/AboutV7';
+import FooterV1 from '../../components/footer/FooterV1';
+import FooterV2 from '../../components/footer/FooterV2';
+import FooterV4 from '../../components/footer/FooterV4';
+import ClientsV1 from '../../components/clients/ClientsV1';
+// import PortfolioV1 from '../../components/portfolio/PortfolioV1';
+import PortfolioV1Light from '../../components/portfolio/PortfolioV1Light';
+import PortfolioV3Light from '../../components/portfolio/PortfolioV3Light';
+// import SinglePortfolioV4Light from '../../components/portfolio/SinglePortfolioV4Light';
+import PortfolioV6Light from '../../components/portfolio/PortfolioV6Light';
+import PortfolioV2 from '../../components/portfolio/PortfolioV2';
+import PortfolioV4 from '../../components/portfolio/PortfolioV4';
+import PortfolioV5 from '../../components/portfolio/PortfolioV5';
+import ProcessWrapper from '../../components/process/ProcessWrapper';
+import ExpertiseV1 from '../../components/expertise/ExpertiseV1';
+import FunFactV1 from '../../components/fact/FunFactV1';
+import AchievementAward from '../../components/awards/AchievementAward';
+import AwardV1 from '../../components/awards/AwardV1';
+import ContactV1 from '../../components/contact/ContactV1';
+import QuickContact from '../../components/contact/QuickContact';
+import ContactMap from '../../components/map/ContactMap';
+import NewsletterV2 from '../../components/newsletter/NewsletterV2';
+import PartnerV2 from '../../components/partner/PartnerV2';
+import WhyChooseV1 from '../../components/whyChoose/WhyChooseV1';
+import WhyChooseV2 from '../../components/whyChoose/WhyChooseV2';
+import WhyChooseV3 from '../../components/whyChoose/WhyChooseV3';
 
 const Home9Light = () => {
     return (
@@ -61,8 +93,10 @@ const Home9Light = () => {
             <BannerV9 lightMode={true} />
             <p>Banner 10</p>
             <BannerV10Light />
-
+           
+            <p>BrandV1</p>
             <BrandV1 />
+            <p>BrandV2 </p>
             <BrandV2 />
 
 
@@ -70,9 +104,9 @@ const Home9Light = () => {
            <p>Focus/service 1</p>
             <ServicesV1Light sectionClass='default-padding bg-gray' hasTitle={true} />
             <p>Focus/service 2</p>
-             <ServicesV2/>
+             <ServicesV2 sectionClass="default-padding bg-gray" hasTitle={true}/>
              <p>Focus/service 3</p>
-             <ServicesV3Light/>
+             <ServicesV3Light sectionClass="default-padding bg-gray" hasTitle={true}/>
              <p>Focus/service 4</p>
              <ServicesV4/>
              <p>Focus/service 5</p>
@@ -80,28 +114,109 @@ const Home9Light = () => {
              <p>Focus/service 6</p>
              <ServicesV6/>
 
+             <p>ClientsV1 </p>
+             <ClientsV1 sectionClass="bg-gray"/>
+
+             <p>PortfolioV1 </p>
+             <PortfolioV1Light/>
+
+             <p>PortfolioV2 </p>
+             <PortfolioV2/>
+             <p>PortfolioV3 </p>
+             <PortfolioV3Light/>
+             <p>PortfolioV4 </p>
+             <PortfolioV4/>
+             <p>PortfolioV5 </p>
+             <PortfolioV5/>
+             <p>PortfolioV6 </p>
+             <PortfolioV6Light/>
+
+             <p> ProcessWrapper </p>
+             <ProcessWrapper />
+
+             <p>TestimonialV1 </p>
+            <TestimonialV1 />
+            <p>TestimonialV2 </p>
+            <TestimonialV2 />
+            <p>TestimonialV3 </p>
+            <TestimonialV3 />
+
              <p>Project v1</p>
             <ProjectV1Light/>
             <p>Project v2</p>
             <ProjectV2Light />
 
+            <p>Expertise 1</p>
+            <ExpertiseV1/>
+
+            <p>FACT </p>
+            <FunFactV1/>
+            <p>PriceV1 </p>
             <PriceV1 />
+            <p>PriceV2 </p>
             <PriceV2 />
+            <p>PriceV3 </p>
             <PriceV3 />
-
-            <TestimonialV1 />
-            <TestimonialV2 />
-            <TestimonialV3 />
-
-
-            <TeamV1 sectionClass='bg-dark' hasTitle={true} />
-            <TeamV2 />
-            <TeamV3 sectionClass='bg-dark' hasTitle={true} />
-
+            <p>MultiSectionLight </p>
             <MultiSectionLight />
+            
+            <p>BlogV1 </p>
+            <BlogV1 sectionClass='bg-gray' />
+            <p>BlogV2 </p>
             <BlogV2 sectionClass='bg-gray' />
+            <p>Contact 1</p>
+            <ContactV1 />
+            <p>Contact 2</p>
+            <QuickContact />
+            <p>Contact Map</p>
+            <ContactMap/>
+            <p>News Letter</p>
+            <NewsletterV2/>
+            <p>Partner</p>
+            <PartnerV2/>
+            <p>Why Choose V1</p>
+            <WhyChooseV1/>
+            <p>Why Choose V2</p>
+            <WhyChooseV2/>
+            <p>Why Choose V3</p>
+            <WhyChooseV3/>
+            <p>AboutV1 </p>
             <AboutV1 lightMode={true} />
+            <p>AboutV2 </p>
+            <AboutV2  />
+            <p>AboutV3 </p>
+            <AboutV3  />
+            <p>AboutV4 </p>
+            <AboutV4  />
+            <p>AboutV5 </p>
+            <AboutV5  />
+            <p>AboutV6 </p>
+            <AboutV6 lightMode={true} />
+            <p>AboutV7 </p>
+            <AboutV7  />
+
+            <p>TeamV1 </p>
+            <TeamV1 sectionClass='bg-dark' hasTitle={true} />
+            <p>TeamV2 </p>
+            <TeamV2 />
+            <p>TeamV3 </p>
+            <TeamV3 sectionClass='bg-dark' hasTitle={true} />
+           
+
+         
+
+            <p>Acheivement and Awards</p>
+            <AchievementAward/>
+            <AwardV1/>
+        
+            <p>FooterV1 </p>
+            <FooterV1 />
+            <p>FooterV2 </p>
+            <FooterV2 />
+            <p>FooterV3 </p>
             <FooterV3 />
+            <p>FooterV4 </p>
+            <FooterV4 />
         </>
     );
 };
