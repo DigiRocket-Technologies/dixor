@@ -72,78 +72,78 @@ const dt = () => {
       </Helmet>
       <div className="smooth-scroll-container">
         <HeaderV1 />
-        <p>Banner 1</p>
+        {/* <p>Banner 1</p> */}
         <BannerV1 />
-        <p>Banner 2</p>
-        <BannerV2 />
-        <p>Banner 3</p>
-        <BannerV3 />
-        <p>Banner 4</p>
-        <BannerV4 />
-        <p>Banner 6</p>
-        <BannerV6 />
-        <p>Banner 7</p>
-        <BannerV7 />
-        <p>Banner 8</p>
-        <BannerV8/>
-        <p>Banner 9</p>
-        <BannerV9 />
-        <p>Banner 10</p>
-        <BannerV10 />
+        {/* <p>Banner 8</p> */}
+        {/* <BannerV8/> */}
+        {/* <p>Banner 9</p> */}
+        {/* <BannerV9 /> */}
+       
 
-        <p>Brand 1</p>
-        <BrandV1/>
-        <p>Brand 2</p>
+        {/* <p>Brand 1</p> */}
+        {/* <BrandV1/> */}
+        {/* <p>Brand 2</p> */}
         <BrandV2/>
 
-        <p>Focus/Service 1</p>
-        <ServicesV1 sectionClass="default-padding bg-gray" hasTitle={true} />
-        <p>Focus/Service 2</p>
+        {/* <p>Focus/Service 1 Preferred</p> */}
+        {/* <ServicesV1 sectionClass="default-padding bg-gray" hasTitle={true} /> */}
+        {/* <p>Focus/Service 2 PREFFERED TILL NOW</p> */}
         <ServicesV2 sectionClass="default-padding bg-gray" hasTitle={true} />
-        <p>Focus/Service 3</p>
-        <ServicesV3 sectionClass="default-padding bg-gray" hasTitle={true} />
-        <p>Focus/Service 4</p>
-        <ServicesV4 />
-        <p>Focus/Service 5</p>
-        <ServicesV5 />
-        <p>Focus/Service 6</p>
-        <ServicesV6 />
-        <p>Client 1</p>
+        {/* <p>Focus/Service 3</p> */}
+        {/* <ServicesV3 sectionClass="default-padding bg-gray" hasTitle={true} /> */}
+        {/* <p>Focus/Service 4</p> */}
+        {/* <ServicesV4 /> */}
+        {/* <p>Focus/Service 5 i like it</p> */}
+        {/* <ServicesV5 /> */}
+        {/* <p>Focus/Service 6 PEREFFRED BY ME</p> */}
+        {/* <ServicesV6 /> */}
+
+
+
+        {/* <p>Client 1</p> */}
         <ClientsV1 sectionClass="bg-gray" />
-        <p>Portfolio 1</p>
-        <PortfolioV1 />
-        <p>Portfolio 2</p>
-        <PortfolioV2 />
-        <p>Portfolio 3</p>
-        <PortfolioV3 />
-        <p>Portfolio 4</p>
-        <PortfolioV4 />
-        <p>Portfolio 5</p>
+
+{/* our work */}
+
+        
         <PortfolioV5 />
-        <p>Portfolio 6</p>
-        <PortfolioV6 />
-        <p> Process </p>
+       
+
+
+
+
+
+        {/* <p> Process </p> */}
         <ProcessWrapper />
-        <p>Testimonial 1</p>
-        <TestimonialV1 />
-        <p>Testimonial 2</p>
-        <TestimonialV2 />
-        <p>Testimonial 3</p>
+
+
+        
+        {/* <p>Testimonial 3</p> */}
         <TestimonialV3 />
-        <p>Project 1</p>
+
+
+
+        {/* <p>Project 1</p> */}
         <ProjectV1 />
-        <p>Project 2</p>
-        <ProjectV2 />
-        <p>Expertise 1</p>
-        <ExpertiseV1/>
-        <p>FACT </p>
+        {/* <p>Project 2 both are same</p> */}
+        {/* <ProjectV2 /> */}
+
+
+        {/* <p>Expertise 1</p> repeat from out process*/}
+        {/* <ExpertiseV1/> */}
+
+        {/* <p>FACT </p> */}
         <FunFactV1/>
-        <p>Price 1</p>
-        <PriceV1 />
-        <p>Price 2</p>
+
+
+        {/* <p>Price 1</p> */}
+        {/* <PriceV1 /> */}
+        {/* <p>Price 2</p> */}
         <PriceV2 />
-        <p>Price 3</p>
-        <PriceV3 />
+        {/* <p>Price 3</p> */}
+        {/* <PriceV3 /> */}
+
+
         <p>Multisection </p>
         <MultiSection />
         <p>Blog 1</p>

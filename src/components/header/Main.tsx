@@ -10,10 +10,10 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
     return (
         <>
             <ul className={`nav navbar-nav ${navbarPlacement ? navbarPlacement : ""}`} data-in="fadeInDown" data-out="fadeOutUp">
-                <li className="dropdown">
+                {/* <li className="dropdown">
                     <Link to="#" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>Home</Link>
                     
-                </li>
+                </li> */}
                
                 <li className="dropdown">
                     <Link to="#" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Marketing</Link>
