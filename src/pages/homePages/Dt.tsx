@@ -49,6 +49,7 @@ const dt = () => {
 
       <div className="smooth-scroll-container">
         <HeaderV1 />
+        
         <BannerV1 />
         <p>Brand v1</p>
         <BrandV1 />
