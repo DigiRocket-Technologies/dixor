@@ -83,7 +83,6 @@ const Routers = () => {
     return (
         <>
             <Routes>
-
                 <Route path='/' element={<Home1 />}></Route>
                 <Route path='/home-2' element={<Home2 />}></Route>
                 <Route path='/home-3' element={<Home3 />}></Route>
