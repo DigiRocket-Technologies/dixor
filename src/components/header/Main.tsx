@@ -22,6 +22,8 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
                         <li><Link to="#">Ecommerce SEO</Link></li>
                         <li><Link to="#">Performance Marketing</Link></li>
                         <li><Link to="#">Social Media Marketing</Link></li>
+                        <li><Link to="#">Influencer Marketing</Link></li>
+                        <li><Link to="#">Ecommerce Marketing</Link></li>
                        
                        
                     </ul>
