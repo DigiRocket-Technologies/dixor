@@ -19,8 +19,8 @@ const HeaderV7 = ({ lightMode }: DataType) => {
     return (
         <>
             <header>
-                <nav className={`navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed ${isMenuSticky ? "sticked" : "no-background"} ${isOpen ? "navbar-responsive" : ""} `}>
-                    <div className="container d-flex justify-content-between align-items-center">
+                <nav className={`navbar  mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed ${isMenuSticky ? "sticked" : "no-background"} ${isOpen ? "navbar-responsive" : ""} `}>
+                    <div style={{ width: "90%" }} className="mx-auto d-flex justify-content-between align-items-center">
                         <div className="navbar-header">
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" onClick={openMenu}>
                                 <i className="fa fa-bars" />
