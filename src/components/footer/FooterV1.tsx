@@ -3,6 +3,7 @@ import NewsletterV2 from '../newsletter/NewsletterV2';
 import FooterSocial from '../social/FooterSocial';
 import logoLight from '/assets/img/logo-light.png'
 import logo from '/assets/img/logo.png'
+import DigirocketLogo from '/assets/img/digirocket logo 1.svg'
 
 interface DataType {
     sectionClass?: string;
@@ -20,7 +21,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                                 <div className="top">
                                     {lightMode ?
                                         <img src={logo} alt="Image Not Found" /> :
-                                        <img src={logoLight} alt="Image Not Found" />
+                                        <img src={DigirocketLogo} alt="Image Not Found" />
                                     }
                                 </div>
                                 <ul className="address-list">

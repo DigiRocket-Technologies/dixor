@@ -3,6 +3,7 @@ import logo from '/assets/img/logo.png';
 import { Link } from "react-router-dom";
 import NewsletterV2 from '../newsletter/NewsletterV2';
 import FooterSocial from '../social/FooterSocial';
+import DigirocketLogo from '/assets/img/digirocket logo 1.svg'
 
 interface DataType {
     lightMode?: boolean;
@@ -20,7 +21,7 @@ const FooterV2 = ({ lightMode, sectionClass }: DataType) => {
                                 <div className="top">
                                     {lightMode ?
                                         <img src={logo} alt="Image Not Found" /> :
-                                        <img src={logoLight} alt="Image Not Found" />
+                                        <img src={DigirocketLogo} alt="Image Not Found" />
                                     }
                                 </div>
                                 <ul className="address-list">
