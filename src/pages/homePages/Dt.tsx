@@ -1,20 +1,20 @@
 import { Helmet } from "react-helmet-async";
-import AboutV1 from "../../components/about/AboutV1";
+// import AboutV1 from "../../components/about/AboutV1";
 import BannerV1 from "../../components/banner/BannerV1";
-import BlogV2 from "../../components/blog/BlogV2";
+// import BlogV2 from "../../components/blog/BlogV2";
 // import BrandV1 from "../../components/brand/BrandV1";
 import DarkClass from "../../components/classes/DarkClass";
-import FooterV3 from "../../components/footer/FooterV3";
+// import FooterV3 from "../../components/footer/FooterV3";
 import HeaderV1 from "../../components/header/HeaderV1";
 import MultiSection from "../../components/multi/MultiSection";
 import PriceV2 from "../../components/price/PriceV2";
 // import ProjectV2 from "../../components/project/ProjectV2";
 // import ServicesV1 from "../../components/services/ServicesV1";
-import TeamV3 from "../../components/team/TeamV3";
+// import TeamV3 from "../../components/team/TeamV3";
 // import TestimonialV1 from "../../components/testimonial/TestimonialV1";
-import BrandV2 from "../../components/brand/BrandV2";
-import FooterV4 from "../../components/footer/FooterV4";
-import FooterV2 from "../../components/footer/FooterV2";
+// import BrandV2 from "../../components/brand/BrandV2";
+// import FooterV4 from "../../components/footer/FooterV4";
+// import FooterV2 from "../../components/footer/FooterV2";
 import FooterV1 from "../../components/footer/FooterV1";
 import ServicesV2 from "../../components/services/ServicesV2";
 // import ServicesV3 from "../../components/services/ServicesV3";
@@ -30,17 +30,17 @@ import PortfolioV5 from "../../components/portfolio/PortfolioV5";
 // import PortfolioV6 from "../../components/portfolio/PortfolioV6";
 // import TestimonialV2 from "../../components/testimonial/TestimonialV2";
 import TestimonialV3 from "../../components/testimonial/TestimonialV3";
-import ContactV1 from "../../components/contact/ContactV1";
-import QuickContact from "../../components/contact/QuickContact";
+// import ContactV1 from "../../components/contact/ContactV1";
+// import QuickContact from "../../components/contact/QuickContact";
 import ProcessWrapper from "../../components/process/ProcessWrapper";
 import AboutV2 from "../../components/about/AboutV2";
-import AboutV3 from "../../components/about/AboutV3";
-import AboutV4 from "../../components/about/AboutV4";
-import AboutV5 from "../../components/about/AboutV5";
+// import AboutV3 from "../../components/about/AboutV3";
+// import AboutV4 from "../../components/about/AboutV4";
+// import AboutV5 from "../../components/about/AboutV5";
 import AboutV6 from "../../components/about/AboutV6";
-import AboutV7 from "../../components/about/AboutV7";
-import TeamV1 from "../../components/team/TeamV1";
-import TeamV2 from "../../components/team/TeamV2";
+// import AboutV7 from "../../components/about/AboutV7";
+// import TeamV1 from "../../components/team/TeamV1";
+// import TeamV2 from "../../components/team/TeamV2";
 import ProjectV1 from "../../components/project/ProjectV1";
 // import PriceV1 from "../../components/price/PriceV1";
 // import PriceV3 from "../../components/price/PriceV3";
@@ -53,15 +53,15 @@ import ProjectV1 from "../../components/project/ProjectV1";
 // import BannerV9 from "../../components/banner/BannerV9";
 // import BannerV10 from "../../components/banner/BannerV10";
 import BlogV1 from "../../components/blog/BlogV1";
-import AchievementAward from "../../components/awards/AchievementAward";
-import AwardV1 from "../../components/awards/AwardV1";
+// import AchievementAward from "../../components/awards/AchievementAward";
+// import AwardV1 from "../../components/awards/AwardV1";
 // import ExpertiseV1 from "../../components/expertise/ExpertiseV1";
 import FunFactV1 from "../../components/fact/FunFactV1";
-import ContactMap from "../../components/map/ContactMap";
-import NewsletterV2 from "../../components/newsletter/NewsletterV2";
+// import ContactMap from "../../components/map/ContactMap";
+// import NewsletterV2 from "../../components/newsletter/NewsletterV2";
 import PartnerV2 from "../../components/partner/PartnerV2";
-import WhyChooseV1 from "../../components/whyChoose/WhyChooseV1";
-import WhyChooseV2 from "../../components/whyChoose/WhyChooseV2";
+// import WhyChooseV1 from "../../components/whyChoose/WhyChooseV1";
+// import WhyChooseV2 from "../../components/whyChoose/WhyChooseV2";
 import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3";
 
 const dt = () => {
@@ -79,11 +79,13 @@ const dt = () => {
         {/* <p>Banner 9</p> */}
         {/* <BannerV9 /> */}
        
+        {/* <p>About 2</p> */}
+        <AboutV2 />
 
         {/* <p>Brand 1</p> */}
         {/* <BrandV1/> */}
         {/* <p>Brand 2</p> */}
-        <BrandV2/>
+        {/* <BrandV2/> */}
 
         {/* <p>Focus/Service 1 Preferred</p> */}
         {/* <ServicesV1 sectionClass="default-padding bg-gray" hasTitle={true} /> */}
@@ -144,59 +146,73 @@ const dt = () => {
         {/* <PriceV3 /> */}
 
 
-        <p>Multisection </p>
+        {/* <p>Multisection SHOW OUR VALUES IN THIS[client commitment, teamwork, integrity]</p> */}
         <MultiSection />
-        <p>Blog 1</p>
+
+
+
+        {/* <p>Blog 1</p> */}
         <BlogV1 sectionClass="bg-gray" />
-        <p>Blog 2</p>
-        <BlogV2 sectionClass="bg-gray" />
-        <p>Contact 1</p>
+        
+
+{/* will go on contact us page */}
+        {/* <p>Contact 1</p>
         <ContactV1 />
         <p>Contact 2</p>
         <QuickContact />
         <p>Contact Map</p>
-        <ContactMap/>
-        <p>News Letter</p>
-        <NewsletterV2/>
-        <p>Partner</p>
+        <ContactMap/> */}
+
+
+        {/* <p>News Letter</p>
+        <NewsletterV2/> */}
+
+        {/* <p>Partner</p> */}
         <PartnerV2/>
-        <p>Why Choose V1</p>
+
+
+        {/* <p>Why Choose V1</p>
         <WhyChooseV1/>
         <p>Why Choose V2</p>
         <WhyChooseV2/>
-        <p>Why Choose V3</p>
+        <p>Why Choose V3</p> */}
         <WhyChooseV3/>
-        <p>About 1</p>
-        <AboutV1 />
-        <p>About 2</p>
-        <AboutV2 />
-        <p>About 3</p>
+
+
+        {/* <p>About 1</p>
+        <AboutV1 /> */}
+        {/* <p>About 2</p>
+        <AboutV2 /> */}
+        {/* <p>About 3</p>
         <AboutV3 />
         <p>About 4</p>
-        <AboutV4/>
-        <p>About 5</p>
-        <AboutV5 />
-        <p>About 6</p>
+        <AboutV4/> */}
+        {/* <p>About 5</p>
+        <AboutV5 /> */}
+        {/* <p>About 6</p> */}
         <AboutV6 />
-        <p>About 7</p>
-        <AboutV7/>
-        <p>Team 1</p>
+        {/* <p>About 7</p>
+        <AboutV7/> */}
+
+
+
+        {/* <p>Team 1</p>
         <TeamV1/>
         <p>Team 2</p>
         <TeamV2/>
         <p>Team 3</p>
-        <TeamV3/>
-        <p>Acheivement and Awards</p>
+        <TeamV3/> */}
+
+
+        {/* <p>Acheivement and Awards</p>
         <AchievementAward/>
-        <AwardV1/>
-        <p>Footer 1</p>
+        <AwardV1/> */}
+
+
+        
         <FooterV1 />
-        <p>Footer 2</p>
-        <FooterV2 />
-        <p>Footer 3</p>
-        <FooterV3 />
-        <p>Footer 4</p>
-        <FooterV4 />
+        
+        
         <DarkClass />
       </div>
     </>
