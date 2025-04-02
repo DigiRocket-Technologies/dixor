@@ -36,12 +36,12 @@ const FooterV2 = ({ lightMode, sectionClass }: DataType) => {
                                             Unit No. 259,, Tower B1, SPAZE ITECH PARK, Sector 49, Gurugram
                                         </p>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <h4>United Kingdom</h4>
                                         <p>
                                             71-75, Shelton Street, Covent Garden, London, WC2H 9JQ
                                         </p>
-                                    </li>
+                                    </li> */}
                                 </ul>
                                 <div className="footer-contact">
                                     <ul>
@@ -49,7 +49,7 @@ const FooterV2 = ({ lightMode, sectionClass }: DataType) => {
                                             <a href="mailto:someone@example.com">info@digirocket.io</a>
                                         </li>
                                         <li>
-                                            <a href="tel:+4733378901">+47 333 78 901</a>
+                                            <a href="tel:+18156886366">+1 8156 886 366</a>
                                         </li>
                                     </ul>
                                 </div>
