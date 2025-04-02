@@ -25,15 +25,21 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                                 </div>
                                 <ul className="address-list">
                                     <li>
-                                        <h4>Australia</h4>
+                                        <h4>United States</h4>
                                         <p>
-                                            Travel World House, Level 7, 17 Jones St, NSW, 2060
+                                            8 The Green, St#4522, Dover, Delaware 19901
                                         </p>
                                     </li>
                                     <li>
-                                        <h4>Dubai</h4>
+                                        <h4>India</h4>
                                         <p>
-                                            Sheikh Mohammed bin salah, #234 B - Downtown - Dubai
+                                            Unit No. 259,, Tower B1, SPAZE ITECH PARK, Sector 49, Gurugram
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>United Kingdom</h4>
+                                        <p>
+                                            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ
                                         </p>
                                     </li>
                                 </ul>
@@ -54,7 +60,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                                 <div className="footer-contact">
                                     <ul>
                                         <li>
-                                            <a href="mailto:someone@example.com">info@dixor.com</a>
+                                            <a href="mailto:someone@example.com">info@digirocket.io</a>
                                         </li>
                                         <li>
                                             <a href="tel:+4733378901">+47 333 78 901</a>
@@ -75,7 +81,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                             </div>
                             <div className="col-lg-6 text-end">
                                 <p>
-                                    Copyright &copy; {(new Date().getFullYear())} Dixor. All Rights Reserved
+                                    Copyright &copy; {(new Date().getFullYear())} DigiRocket Technologies. All Rights Reserved
                                 </p>
                             </div>
                         </div>

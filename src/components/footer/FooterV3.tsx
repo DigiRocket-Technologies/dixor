@@ -13,23 +13,29 @@ const FooterV3 = () => {
                                 <div className="col-lg-6 footer-item about pr-120 pr-md-15 pr-xs-15 pr-md-15 pr-xs-15">
                                     <div className="top">
                                         <h2>Get Support?</h2>
-                                        <a className="quick-btn" href="mailto:someone@example.com">
+                                        <a className="quick-btn" href="mailto:info@digirocket.io">
                                             <i className="fas fa-long-arrow-right" />
                                         </a>
                                     </div>
                                     <ul className="address-list">
-                                        <li>
-                                            <h4>Australia</h4>
-                                            <p>
-                                                Travel World House, Level 7, 17 Jones St, NSW, 2060
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h4>Dubai</h4>
-                                            <p>
-                                                Sheikh Mohammed bin Salah, #234 B - Downtown - Dubai
-                                            </p>
-                                        </li>
+                                    <li>
+                                        <h4>United States</h4>
+                                        <p>
+                                            8 The Green, St#4522, Dover, Delaware 19901
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>India</h4>
+                                        <p>
+                                            Unit No. 259,, Tower B1, SPAZE ITECH PARK, Sector 49, Gurugram
+                                        </p>
+                                    </li>
+                                    {/* <li>
+                                        <h4>United Kingdom</h4>
+                                        <p>
+                                            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ
+                                        </p>
+                                    </li> */}
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 offset-lg-1 footer-item">
@@ -59,7 +65,7 @@ const FooterV3 = () => {
                                 </div>
                                 <div className="col-lg-6 text-end">
                                     <p>
-                                        Copyright &copy; {(new Date().getFullYear())} Dixor. All Rights Reserved
+                                        Copyright &copy; {(new Date().getFullYear())} DigiRocket Technologies. All Rights Reserved
                                     </p>
                                 </div>
                             </div>

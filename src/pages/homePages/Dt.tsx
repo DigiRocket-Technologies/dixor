@@ -13,6 +13,9 @@ import ServicesV1 from "../../components/services/ServicesV1";
 import TeamV3 from "../../components/team/TeamV3";
 import TestimonialV1 from "../../components/testimonial/TestimonialV1";
 import BrandV2 from "../../components/brand/BrandV2";
+import FooterV4 from "../../components/footer/FooterV4";
+import FooterV2 from "../../components/footer/FooterV2";
+import FooterV1 from "../../components/footer/FooterV1";
 
 const dt = () => {
     return (
@@ -37,6 +40,9 @@ const dt = () => {
                 <MultiSection />
                 <BlogV2 sectionClass='bg-gray' />
                 <FooterV3 />
+                <FooterV4 />
+                <FooterV2 />
+                <FooterV1 />
                 <DarkClass />
             </div>
         </>
