@@ -11362,6 +11362,26 @@ ul.contact-list li .info {
 	font-weight: 600;
 }
 
+.pricing-style-two ul .given::after {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	content: "\f336";
+	font-family: "Font Awesome 5 Pro";
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.pricing-style-two ul .blocked::after {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	content: "\f00d";
+	font-family: "Font Awesome 5 Pro";
+	font-size: 14px;
+	font-weight: 600;
+}
+
 .pricing-style-two .pricing-header {
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 	margin-bottom: 25px;

@@ -55,7 +55,7 @@ import Services2Page from "./pages/servicesPages/Services2Page";
 import Services3Page from "./pages/servicesPages/Services3Page";
 import Services4Page from "./pages/servicesPages/Services4Page";
 import ServiceDetailsPage from "./pages/servicesPages/ServiceDetailsPage";
-
+import EcommerceSeo from "./pages/servicesPages/EcommerceSeo"
 // Services Light
 import ServicesLightPage from "./pages/servicesPages/ServicesLightPage";
 import Services2LightPage from "./pages/servicesPages/Services2LightPage";
@@ -199,12 +199,15 @@ const Routers = () => {
                 <Route path='/services-4' element={<Services4Page />}></Route>
                 <Route path='/service-details/:id' element={<ServiceDetailsPage />}></Route>
 
+             
+
                 {/* Services Light */}
                 <Route path='/services-light' element={<ServicesLightPage />}></Route>
                 <Route path='/services-2-light' element={<Services2LightPage />}></Route>
                 <Route path='/services-3-light' element={<Services3LightPage />}></Route>
                 <Route path='/services-4-light' element={<Services4LightPage />}></Route>
                 <Route path='/service-details-light/:id' element={<ServiceDetailsLightPage />}></Route>
+                <Route path="/ecommerce-seo1" element={<EcommerceSeo/>}></Route>
 
                 {/* Blog Pages */}
                 <Route path='/blog-standard' element={<BlogStandardPage />}></Route>

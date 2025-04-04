@@ -5,7 +5,7 @@ import SplitText from "../animation/SplitText.jsx"
 const PriceV2 = () => {
     return (
         <>
-            <div id="pricing" className="pricing-style-two-area default-padding bottom-less bg-gray">
+            <div  id="pricing" className="pricing-style-two-area default-padding bottom-less bg-gray">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">

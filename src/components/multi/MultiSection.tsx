@@ -8,7 +8,7 @@ const MultiSection = () => {
 
     return (
         <>
-            <div className="multi-section overflow-hidden">
+            <div  className="multi-section overflow-hidden">
                 <div className="thecontainer">
                     <div className="panel overflow-hidden">
                         <WhyChooseV1 />

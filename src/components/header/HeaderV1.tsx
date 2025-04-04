@@ -24,7 +24,7 @@ const HeaderV1 = ({ lightMode }: DataType) => {
     return (
         <>
             <header>
-                <nav className={`navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed on menu-center ${isMenuSticky ? "sticked" : "no-background"} ${isOpen ? "navbar-responsive" : ""}`}>
+                <nav className={`navbar  mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed on menu-center ${isMenuSticky ? "sticked" : "no-background"} ${isOpen ? "navbar-responsive" : ""}`}>
                     {/* <div className="container d-flex justify-content-between align-items-center"> */}
                     <div style={{width:"90%"}} className="mx-auto  d-flex justify-content-between align-items-center">
                         <div className="navbar-header">

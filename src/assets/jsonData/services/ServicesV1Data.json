@@ -1,34 +1,51 @@
 [
-    {
-        "id": 1,
-        "icon": "1.png",
-        "iconLight": "23.png",
-        "title": "Marketing & SEO Optimization",
-        "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
-        "activeClass": ""
-    },
-    {
-        "id": 2,
-        "icon": "2.png",
-        "iconLight": "24.png",
-        "title": "Mobile App & Web Development",
-        "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
-        "activeClass": "active"
-    },
-    {
-        "id": 3,
-        "icon": "3.png",
-        "iconLight": "25.png",
-        "title": "UI/UX Design from Professionals",
-        "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
-        "activeClass": ""
-    },
-    {
-        "id": 4,
-        "icon": "4.png",
-        "iconLight": "26.png",
-        "title": "Access to the Latest Technology",
-        "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
-        "activeClass": ""
-    }
+  {
+    "id": 1,
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Marketing & SEO Optimization",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "activeClass": ""
+  },
+  {
+    "id": 2,
+    "icon": "2.png",
+    "iconLight": "24.png",
+    "title": "Mobile App & Web Development",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "activeClass": "active"
+  },
+  {
+    "id": 3,
+    "icon": "3.png",
+    "iconLight": "25.png",
+    "title": "UI/UX Design from Professionals",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "activeClass": ""
+  },
+  {
+    "id": 4,
+    "icon": "4.png",
+    "iconLight": "26.png",
+    "title": "Access to the Latest Technology",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "activeClass": ""
+  },
+  {
+    "id": 5,
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Ecommerce Seo",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "whyChooseP1": "DigiRocket Technologies specialize in transforming e-commerce stores into thriving online hubs with tailored SEO strategies designed for maximum impact. Our expertise ensures that yourstore ranks higher, attracts the right audience, and converts visitors into loyal customers. With a data-driven approach, we focus on optimizing every aspect of your site, from targeted keyword research to technical improvements.",
+    "whyChooseP2": "Backed by years of experience and a commitment to delivering measurable results, we provide transparent updates and dedicated support to help your business thrive in the competitive digital marketplace.",
+    "q1": "Which social media platforms should I be on?",
+    "a1": "We’ll help you choose the platforms that best align with your business goals and target audience, whether it’s Instagram, Facebook, YouTube, or others.",
+    "q2": "How do you create engaging content?",
+    "a2": "We use a mix of creativity, data, and audience insights to create content that resonates with your followers. From eye-catching visuals to compelling storytelling, our content keeps your audience engaged..",
+    "q3": "How long does it take to see results from social media marketing?",
+    "a3": "Results vary based on goals and strategy, but generally, you’ll start seeing noticeable engagement and growth within 2-3 months of consistent effort.",
+
+    "activeClass": ""
+  }
 ]
