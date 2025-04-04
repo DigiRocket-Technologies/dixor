@@ -88,7 +88,7 @@ const Routers = () => {
                 <Route path='/' element={<Dt />}></Route>
 
                 {/* TO BE USED FOR DIGIROCKET TECHNOLOGIES MADE BY APOORV */}
-                <Route path='/ecommerce-seo' element={<BlogSingleWithSidebarLightPage />}></Route>   
+                <Route path="/ecommerce-seo" element={<EcommerceSeo/>}></Route>
                 <Route path='/local-seo' element={<BlogSingleWithSidebarLightPage />}></Route>
                 <Route path='/performance-marketing' element={<BlogSingleWithSidebarLightPage />}></Route>
                 <Route path='/social-media-marketing' element={<BlogSingleWithSidebarLightPage />}></Route>
@@ -207,7 +207,7 @@ const Routers = () => {
                 <Route path='/services-3-light' element={<Services3LightPage />}></Route>
                 <Route path='/services-4-light' element={<Services4LightPage />}></Route>
                 <Route path='/service-details-light/:id' element={<ServiceDetailsLightPage />}></Route>
-                <Route path="/ecommerce-seo1" element={<EcommerceSeo/>}></Route>
+                
 
                 {/* Blog Pages */}
                 <Route path='/blog-standard' element={<BlogStandardPage />}></Route>
