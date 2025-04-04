@@ -5,7 +5,7 @@ const ProjectIdeaV1 = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-7">
-                        <h4 className="sub-title">Have you project in mind?</h4>
+                        <h4 className="sub-title">Integrity</h4>
                         <h2 className="title">For instant support <br /> Please reach us</h2>
                         <ul className="contact-list">
                             <li>

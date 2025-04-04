@@ -7,7 +7,7 @@ import DarkClass from "../../components/classes/DarkClass";
 // import FooterV3 from "../../components/footer/FooterV3";
 import HeaderV1 from "../../components/header/HeaderV1";
 import MultiSection from "../../components/multi/MultiSection";
-import PriceV2 from "../../components/price/PriceV2";
+// import PriceV2 from "../../components/price/PriceV2";
 // import ProjectV2 from "../../components/project/ProjectV2";
 // import ServicesV1 from "../../components/services/ServicesV1";
 // import TeamV3 from "../../components/team/TeamV3";
@@ -105,6 +105,9 @@ const dt = () => {
         {/* <p>Client 1</p> */}
         <ClientsV1 sectionClass="bg-gray" />
 
+        {/* <p>Multisection SHOW OUR VALUES IN THIS[client commitment, teamwork, integrity]</p> */}
+        <MultiSection />
+
 {/* our work */}
 
         
@@ -141,13 +144,12 @@ const dt = () => {
         {/* <p>Price 1</p> */}
         {/* <PriceV1 /> */}
         {/* <p>Price 2</p> */}
-        <PriceV2 />
+        {/* <PriceV2 /> */}
         {/* <p>Price 3</p> */}
         {/* <PriceV3 /> */}
 
 
-        {/* <p>Multisection SHOW OUR VALUES IN THIS[client commitment, teamwork, integrity]</p> */}
-        <MultiSection />
+        
 
 
 
