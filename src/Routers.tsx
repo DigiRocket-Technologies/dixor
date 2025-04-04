@@ -86,6 +86,63 @@ const Routers = () => {
         <>
             <Routes>
                 <Route path='/' element={<Dt />}></Route>
+
+                {/* TO BE USED FOR DIGIROCKET TECHNOLOGIES MADE BY APOORV */}
+                <Route path='/ecommerce-seo' element={<BlogSingleWithSidebarLightPage />}></Route>   
+                <Route path='/local-seo' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/performance-marketing' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/social-media-marketing' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/influencer-marketing' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/ecommerce-marketing' element={<BlogSingleWithSidebarLightPage />}></Route>
+
+
+                <Route path='/shopify-development' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/woocomerce-development' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/wordpress-development' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/mobile-application-development' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/application-development' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/artificial-intelligence' element={<BlogSingleWithSidebarLightPage />}></Route>
+
+                <Route path='/dropshipping' element={<BlogSingleWithSidebarLightPage />}></Route>
+
+
+                <Route path='/portfolio' element={<BlogSingleWithSidebarLightPage />}></Route>
+
+
+                <Route path='/case-studies' element={<BlogSingleWithSidebarLightPage />}></Route>
+
+
+                <Route path='/contact-us' element={<BlogSingleWithSidebarLightPage />}></Route>
+
+
+                <Route path='/terms-and-conditions' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/privacy-policy' element={<BlogSingleWithSidebarLightPage />}></Route>
+
+                <Route path='/about-us' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route>
+                
+
+                <Route path='*' element={<NotFoundPage />}></Route>
+
+                {/* DIGIROCKET ROUTES END OVER HERE */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <Route path='/home-2' element={<Home2 />}></Route>
                 <Route path='/home-3' element={<Home3 />}></Route>
                 <Route path='/home-4' element={<Home4 />}></Route>
@@ -173,7 +230,9 @@ const Routers = () => {
                 <Route path='/blog-single-light/:id' element={<BlogSingleLightPage />}></Route>
                 <Route path='/blog-single-with-sidebar-light/:id' element={<BlogSingleWithSidebarLightPage />}></Route>
 
-                <Route path='*' element={<NotFoundPage />}></Route>
+
+
+                
             </Routes>
         </>
     );
