@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Home1 from "./pages/homePages/Home1";
+// import Home1 from "./pages/homePages/Home1";
 import Home2 from "./pages/homePages/Home2";
 import Home3 from "./pages/homePages/Home3";
 import Home4 from "./pages/homePages/Home4";
@@ -85,7 +85,7 @@ const Routers = () => {
     return (
         <>
             <Routes>
-                <Route path='/' element={<Home1 />}></Route>
+                <Route path='/' element={<Dt />}></Route>
                 <Route path='/home-2' element={<Home2 />}></Route>
                 <Route path='/home-3' element={<Home3 />}></Route>
                 <Route path='/home-4' element={<Home4 />}></Route>
