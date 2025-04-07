@@ -4,11 +4,12 @@ import portfolio46 from "/assets/img/portfolio/46.jpg";
 import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
+
 interface DataType {
   title?: string;
   whyChooseP1?: string;
   whyChooseP2?: string;
-  faqs?:[FAQ];
+  faqs?:FAQ[];
   definition?:string,
   importance?:[string],
   importance_title?:string,
