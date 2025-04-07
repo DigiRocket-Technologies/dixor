@@ -32,20 +32,464 @@
     "activeClass": ""
   },
   {
-    "id": 5,
+    "id": "ecommerce-seo",
+    "type": "marketing",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Ecommerce Seo",
+    "definition": "E-commerce SEO E-commerce SEO is the art and science of optimizing your online store to rank higher on search engines, driving organic traffic, and increasing sales. Unlike general SEO, E-commerce SEO focuses on product pages, category pages, and overall site architecture, ensuring that your store is easily discoverable by potential customers.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Boosts Visibility",
+      "Increases Conversions",
+      "Optimizes Experience"
+    ],
+    "importance_title": " New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. These cases are perfectly simple and easy to distinguish.",
     "whyChooseP1": "DigiRocket Technologies specialize in transforming e-commerce stores into thriving online hubs with tailored SEO strategies designed for maximum impact. Our expertise ensures that yourstore ranks higher, attracts the right audience, and converts visitors into loyal customers. With a data-driven approach, we focus on optimizing every aspect of your site, from targeted keyword research to technical improvements.",
     "whyChooseP2": "Backed by years of experience and a commitment to delivering measurable results, we provide transparent updates and dedicated support to help your business thrive in the competitive digital marketplace.",
-    "q1": "Which social media platforms should I be on?",
-    "a1": "We’ll help you choose the platforms that best align with your business goals and target audience, whether it’s Instagram, Facebook, YouTube, or others.",
-    "q2": "How do you create engaging content?",
-    "a2": "We use a mix of creativity, data, and audience insights to create content that resonates with your followers. From eye-catching visuals to compelling storytelling, our content keeps your audience engaged..",
-    "q3": "How long does it take to see results from social media marketing?",
-    "a3": "Results vary based on goals and strategy, but generally, you’ll start seeing noticeable engagement and growth within 2-3 months of consistent effort.",
-
+    "faqs": [
+      {
+        "q": "Which social media platforms should I be on?",
+        "a": "We’ll help you choose the platforms that best align with your business goals and target audience, whether it’s Instagram, Facebook, YouTube, or others."
+      },
+      {
+        "q": "How do you create engaging content?",
+        "a": "We use a mix of creativity, data, and audience insights to create content that resonates with your followers. From eye-catching visuals to compelling storytelling, our content keeps your audience engaged.."
+      },
+      {
+        "q": "How long does it take to see results from social media marketing?",
+        "a": "Results vary based on goals and strategy, but generally, you’ll start seeing noticeable engagement and growth within 2-3 months of consistent effort."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "local-seo",
+    "type": "marketing",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Local Seo",
+    "definition": "Local SEO (Search Engine Optimization) focuses on improving your business’s online visibility within a specific geographic area. It ensures your business appears in local search results when potential customers are looking for products or services near them. From Google Maps to “near me” searches, local SEO helps your business connect with the right audience in your community.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Enhanced Visibility",
+      "Increased Foot Traffic",
+      "Higher Trust and Credibility",
+      "Cost-Effective Marketing"
+    ],
+    "importance_title": "In today's competitive landscape, having a strong local presence is vital for businesses that serve a specific region or city. Here’s why it matters:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is the difference between Local SEO and regular SEO?",
+        "a": "Local SEO targets a specific geographical audience, focusing on location-based searches, while regular SEO aims to increase visibility on a broader or national level."
+      },
+      {
+        "q": "How long does it take to see results with Local SEO?",
+        "a": "Local SEO results can typically be seen within 3 to 6 months, depending on the competition and your business's current online presence."
+      },
+      {
+        "q": "Can Local SEO help my small business grow?",
+        "a": "Absolutely! Local SEO is perfect for small businesses as it connects you directly with customers in your area, driving more traffic, leads, and sales."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "performance-marketing",
+    "type": "marketing",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Performance Marketing",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "social-media-marketing",
+    "type": "marketing",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Social Media Marketing",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "influencer-marketing",
+    "type": "marketing",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Influencer Marketing",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "ecommerce-marketing",
+    "type": "marketing",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Ecommerce Marketing",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "artificial-intelligence",
+    "type": "development",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Artificial Intelligence",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "shopify-development",
+    "type": "development",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Shopify Development",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "woocommerce-development",
+    "type": "development",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Woocommerce Development",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "web-application-development",
+    "type": "development",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Web Application Development",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "wordpress-development",
+    "type": "development",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Web Application Development",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "mobile-application-development",
+    "type": "development",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Mobile Application Development",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "dropshipping",
+    "type": "dropshipping",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Dropshipping",
+    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Targets the Right Audience",
+      "Maximizes ROI",
+      "Provides Transparency"
+    ],
+    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is a market strategy for growth?",
+        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "How do you identify growth opportunities?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "What does a typical market strategy include?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      },
+      {
+        "q": "Do you only focus on customer acquisition?",
+        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+      }
+    ],
     "activeClass": ""
   }
 ]

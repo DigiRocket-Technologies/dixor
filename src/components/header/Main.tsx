@@ -18,29 +18,27 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
                 <li className="dropdown">
                     <Link to="#" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Marketing</Link>
                     <ul className="dropdown-menu">
-                        <li><Link to="#">Local SEO</Link></li>
-                        <li><Link to="#">Ecommerce SEO</Link></li>
-                        <li><Link to="#">Performance Marketing</Link></li>
-                        <li><Link to="#">Social Media Marketing</Link></li>
-                        <li><Link to="#">Influencer Marketing</Link></li>
-                        <li><Link to="#">Ecommerce Marketing</Link></li>
-                       
-                       
+                        <li><Link to="/local-seo">Local SEO</Link></li>
+                        <li><Link to="/ecommerce-seo">Ecommerce SEO</Link></li>
+                        <li><Link to="/performance-marketing">Performance Marketing</Link></li>
+                        <li><Link to="/social-media-marketing">Social Media Marketing</Link></li>
+                        <li><Link to="/influencer-marketing">Influencer Marketing</Link></li>
+                        <li><Link to="/ecommerce-marketing">Ecommerce Marketing</Link></li>   
                     </ul>
                 </li>
                 <li className="dropdown">
                     <Link to="#" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Development</Link>
                     <ul className="dropdown-menu">
-                        <li><Link to="#">Shopify</Link></li>
-                        <li><Link to="#">Woo Commerce</Link></li>
-                        <li><Link to="#">Wordpress</Link></li>
-                        <li><Link to="#">Web Applications</Link></li>
-                        <li><Link to="#">Mobile Applications</Link></li>
-                        <li><Link to="#">Artificial Intelligence</Link></li>
+                        <li><Link to="/shopify-development">Shopify</Link></li>
+                        <li><Link to="/woocommerce-development">Woo Commerce</Link></li>
+                        <li><Link to="/wordpress-development">Wordpress</Link></li>
+                        <li><Link to="/web-application-development">Web Applications</Link></li>
+                        <li><Link to="/mobile-application-development">Mobile Applications</Link></li>
+                        <li><Link to="/artificial-intelligence">Artificial Intelligence</Link></li>
                     </ul>
                 </li>
                 <li className="dropdown">
-                    <Link to="#" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>Dropshipping</Link>
+                    <Link to="/dropshipping" className="active" data-toggle="dropdown" onClick={toggleSubMenu}>Dropshipping</Link>
                 </li>
                 <li className="dropdown">
                     <Link to="#" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>Portfolio</Link>
@@ -48,8 +46,6 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
                 <li className="dropdown">
                     <Link to="#" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>Case Studies</Link>
                 </li>
-               
-                
                 <li><Link to="/contact-us">contact</Link></li>
             </ul>
         </>

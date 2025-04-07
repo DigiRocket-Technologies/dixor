@@ -9,24 +9,24 @@ interface DataType {
   title?: string;
   whyChooseP1?: string;
   whyChooseP2?: string;
-  q1?: string;
-  a1?: string;
-  q2?: string;
-  a2?: string;
-  q3?: string;
-  a3?: string;
+  faqs?:[DataType];
+  definition?:string,
+  importance?:[string],
+  importance_title?:string,
 }
 
 interface ServiceDetailsProps {
   serviceInfo?: DataType;
   sectionClass?: string;
+  pricing?:DataType;
 }
 
 const ServiceDetailsContentLight = ({
   serviceInfo,
   sectionClass,
+  pricing,
 }: ServiceDetailsProps) => {
-  const { title, whyChooseP1, whyChooseP2, q1, a1, q2, a2, q3, a3 } =
+  const { title, whyChooseP1, whyChooseP2, faqs,definition,importance,importance_title } =
     serviceInfo || {};
 
   return (
@@ -47,25 +47,17 @@ const ServiceDetailsContentLight = ({
               <div className="col-lg-7">
                 <h2>{title}</h2>
                 <p>
-                  E-commerce SEO E-commerce SEO is the art and science of
-                  optimizing your online store to rank higher on search engines,
-                  driving organic traffic, and increasing sales. Unlike general
-                  SEO, E-commerce SEO focuses on product pages, category pages,
-                  and overall site architecture, ensuring that your store is
-                  easily discoverable by potential customers.
+                  {definition}
                 </p>
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>
-                  New had happen unable uneasy. Drawings can followed improved
-                  out sociable not. Earnestly so do instantly pretended. See
-                  general few civilly amiable pleased account carried. These
-                  cases are perfectly simple and easy to distinguish.
+                  {importance_title}
                 </p>
                 <ul className="feature-list-item">
-                  <li>Boosts Visibility</li>
-                  <li>Increases Conversions</li>
-                  <li>Optimizes Experience</li>
+                  {importance?.map((item,idx)=>{
+                    return <li key={idx}>{item}</li>
+                  })}
                 </ul>
               </div>
             </div>
@@ -122,7 +114,7 @@ const ServiceDetailsContentLight = ({
             </div>
           </div>
         </div>
-        <PriceV2New />
+        <PriceV2New pricing={pricing} />
         <div className="container">
           <div className="services-details-items">
             <div className="d-grid colums-2 mt-50">
@@ -130,78 +122,37 @@ const ServiceDetailsContentLight = ({
                 <div className="faq-style-one faq-style-two">
                   <h2 className="mb-30">Any questions find here.</h2>
                   <div className="accordion" id="faqAccordion">
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="headingOne">
-                        <button
-                          className="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
-                          {q1}
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseOne"
-                        className="accordion-collapse collapse show"
-                        aria-labelledby="headingOne"
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          <p>{a1}</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="headingTwo">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo"
-                        >
-                          {q2}
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseTwo"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingTwo"
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          <p>{a2}</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="headingThree">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree"
-                        >
-                          {q3}
-                        </button>
-                      </h2>
-                      <div
-                        id="collapseThree"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="headingThree"
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          <p>{a3}</p>
-                        </div>
-                      </div>
-                    </div>
+                    {
+                      faqs?.map((item,idx)=>{
+                        return (
+                          <div key={idx} className="accordion-item">
+                          <h2 className="accordion-header" id={`heading${idx}`}>
+                            <button
+                              className="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target={`#collapse${idx}`}
+                              aria-expanded="true"
+                              aria-controls={`collapse${idx}`}
+                            >
+                              {item.q}
+                            </button>
+                          </h2>
+                          <div
+                            id={`collapse${idx}`}
+                            className="accordion-collapse collapse show"
+                            aria-labelledby={`heading${idx}`}
+                            data-bs-parent="#faqAccordion"
+                          >
+                            <div className="accordion-body">
+                              <p>{item.a}</p>
+                            </div>
+                          </div>
+                          </div>
+                        )
+                      })
+                    }
+                   
                   </div>
                 </div>
               </div>

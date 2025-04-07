@@ -2,13 +2,12 @@ import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import LayoutV1Light from "../../components/layouts/LayoutV1Light";
 import ServiceDetailsContentLight2 from "../../components/services/ServiceDetailsContentLight2";
 import ServicesV1Data from "../../assets/jsonData/services/ServicesV1Data.json";
-import { Helmet } from "react-helmet-async";
 import pricingInfo from "../../assets/jsonData/price/PriceV2New.json"
+import { Helmet } from "react-helmet-async";
 
-const EcommerceSeo = () => {
-    const data = ServicesV1Data.find(service => service.id === "ecommerce-seo");
-    const pricing=pricingInfo.find((service)=>service.serviceId==="ecommerce-seo")
-
+const AI = () => {
+    const data = ServicesV1Data.find(service => service.id === "artificial-intelligence");
+    const pricing=pricingInfo.find((service)=>service.serviceId==="artificial-intelligence")
     return (
         <>
             <Helmet>
@@ -23,4 +22,4 @@ const EcommerceSeo = () => {
     );
 };
 
-export default EcommerceSeo;
+export default AI;

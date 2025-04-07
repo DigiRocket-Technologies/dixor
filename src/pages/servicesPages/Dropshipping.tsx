@@ -5,9 +5,9 @@ import ServicesV1Data from "../../assets/jsonData/services/ServicesV1Data.json";
 import { Helmet } from "react-helmet-async";
 import pricingInfo from "../../assets/jsonData/price/PriceV2New.json"
 
-const EcommerceSeo = () => {
-    const data = ServicesV1Data.find(service => service.id === "ecommerce-seo");
-    const pricing=pricingInfo.find((service)=>service.serviceId==="ecommerce-seo")
+const Dropshipping = () => {
+    const data = ServicesV1Data.find(service => service.id === "dropshipping");
+    const pricing=pricingInfo.find((service)=>service.serviceId==="dropshipping")
 
     return (
         <>
@@ -23,4 +23,4 @@ const EcommerceSeo = () => {
     );
 };
 
-export default EcommerceSeo;
+export default Dropshipping;
