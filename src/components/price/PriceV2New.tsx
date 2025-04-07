@@ -24,7 +24,7 @@ interface pricingType {
 }
 
 interface pricingProps{
-  pricing:pricingType
+  pricing?:pricingType
 }
 
 const PriceV2New = ({ pricing }:pricingProps) => {
