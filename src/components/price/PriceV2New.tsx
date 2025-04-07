@@ -8,7 +8,7 @@ const PriceV2New = ({ pricing }) => {
     serviceId?: string;
   }
 
-  const { monthlyPlans, yearlyPlans,} = pricing || {};
+  const { monthlyPlans, yearlyPlans} = pricing || {};
 
   return (
     <>

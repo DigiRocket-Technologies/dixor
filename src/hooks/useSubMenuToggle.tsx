@@ -1,6 +1,6 @@
 const useSubMenuToggle = () => {
     const toggleSubMenu = (e: React.MouseEvent<HTMLAnchorElement>) => {
-      
+        
         const listItem = e.currentTarget.parentElement;
         // Check if listItem is not null before proceeding
         if (listItem) {

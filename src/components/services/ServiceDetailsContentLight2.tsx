@@ -9,7 +9,7 @@ interface DataType {
   title?: string;
   whyChooseP1?: string;
   whyChooseP2?: string;
-  faqs?:[DataType];
+  faqs?:[];
   definition?:string,
   importance?:[string],
   importance_title?:string,
