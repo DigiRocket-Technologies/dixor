@@ -11,7 +11,7 @@ interface DataType {
   whyChooseP2?: string;
   faqs?:FAQ[];
   definition?:string,
-  importance?:[string],
+  importance?:string[],
   importance_title?:string,
 }
 
@@ -19,12 +19,23 @@ interface FAQ{
   q?:string;
   a?:string;
 }
-
+interface PricingPlan {
+  id: number;
+  title: string;
+  description: string;
+  features: string[];
+  blockedFeatures: string[];
+  priceOriginal: number | null;
+  priceDiscounted: number;
+  currency: string;
+  billingCycle: string;
+}
 interface PricingDataType {
   serviceId?: string;
-  monthlyPlans?:[];
-  yearlyPlans?:[],
+  monthlyPlans?:PricingPlan[];
+  yearlyPlans?:PricingPlan[];
 }
+
 
 interface ServiceDetailsProps {
   serviceInfo?: DataType;
@@ -35,7 +46,7 @@ interface ServiceDetailsProps {
 const ServiceDetailsContentLight = ({
   serviceInfo,
   sectionClass,
-  pricing,
+  pricing
 }: ServiceDetailsProps) => {
   const { title, whyChooseP1, whyChooseP2, faqs,definition,importance,importance_title } =
     serviceInfo || {};

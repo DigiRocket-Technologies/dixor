@@ -1,23 +1,34 @@
 import SplitText from "../animation/SplitText.jsx";
 import SinglePriceV2New from "./SinglePriceV2New.js";
 
-const PriceV2New = ({ pricing }) => {
-  interface pricing {
-    monthlyPlans?: [];
-    yearlyPlans?: [];
-    serviceId?: string;
-  }
-  interface PricingPlan {
-    id: number;
-    title: string;
-    description: string;
-    features: string[];
-    blockedFeatures: string[];
-    priceOriginal: number | null;
-    priceDiscounted: number;
-    currency: string;
-    billingCycle: string;
-  }
+interface pricingType {
+  monthlyPlans?: PricingPlan[];
+  yearlyPlans?: PricingPlan[];
+  serviceId?: string;
+}
+interface PricingPlan {
+  id: number;
+  title: string;
+  description: string;
+  features: string[];
+  blockedFeatures: string[];
+  priceOriginal: number | null;
+  priceDiscounted: number;
+  currency: string;
+  billingCycle: string;
+}
+interface pricingType {
+  monthlyPlans?: PricingPlan[];
+  yearlyPlans?: PricingPlan[];
+  serviceId?: string;
+}
+
+interface pricingProps{
+  pricing:pricingType
+}
+
+const PriceV2New = ({ pricing }:pricingProps) => {
+
 
   const { monthlyPlans, yearlyPlans} = pricing || {};
 
@@ -102,7 +113,7 @@ const PriceV2New = ({ pricing }) => {
                 aria-labelledby="nav-id-1"
               >
                 <div className="row">
-                  {monthlyPlans.map((plan:PricingPlan) => (
+                  {monthlyPlans?.map((plan:PricingPlan) => (
                     <div
                       className="col-xl-4 col-lg-6 col-md-6 mb-30"
                       key={plan.id}
@@ -121,7 +132,7 @@ const PriceV2New = ({ pricing }) => {
                 aria-labelledby="nav-id-2"
               >
                 <div className="row">
-                  {yearlyPlans.map((plan:PricingPlan) => (
+                  {yearlyPlans?.map((plan:PricingPlan) => (
                     <div
                       className="col-xl-4 col-lg-6 col-md-6 mb-30"
                       key={plan.id}
