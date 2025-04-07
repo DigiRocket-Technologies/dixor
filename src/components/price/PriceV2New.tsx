@@ -3,12 +3,12 @@ import SinglePriceV2New from "./SinglePriceV2New.js";
 
 const PriceV2New = ({ pricing }) => {
   interface pricing {
-    monthlyPlans?: DataType;
-    yearlyPlans?: DataType;
+    monthlyPlans?: [];
+    yearlyPlans?: [];
     serviceId?: string;
   }
 
-  const { monthlyPlans, yearlyPlans, serviceId } = pricing || {};
+  const { monthlyPlans, yearlyPlans,} = pricing || {};
 
   return (
     <>

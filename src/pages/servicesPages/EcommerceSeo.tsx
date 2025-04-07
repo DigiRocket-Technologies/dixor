@@ -7,7 +7,7 @@ import pricingInfo from "../../assets/jsonData/price/PriceV2New.json"
 
 const EcommerceSeo = () => {
     const data = ServicesV1Data.find(service => service.id === "ecommerce-seo");
-    const pricing=pricingInfo.find((service)=>service.serviceId==="ecommerce-seo")
+    const pricing=pricingInfo.find(service=>service.serviceId==="ecommerce-seo")
 
     return (
         <>
