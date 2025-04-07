@@ -6,8 +6,9 @@ import pricingInfo from "../../assets/jsonData/price/PriceV2New.json"
 import { Helmet } from "react-helmet-async";
 
 const EcommerceMarketing = () => {
-    const data = ServicesV1Data.find(service => service.id === "ecommerce-marketing");
+    const data = ServicesV1Data.find(service => service.id === "ecommerce-marketing")
     const pricing=pricingInfo.find((service)=>service.serviceId==="ecommerce-marketing")
+
     return (
         <>
             <Helmet>

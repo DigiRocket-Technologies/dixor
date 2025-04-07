@@ -7,6 +7,17 @@ const PriceV2New = ({ pricing }) => {
     yearlyPlans?: [];
     serviceId?: string;
   }
+  interface PricingPlan {
+    id: number;
+    title: string;
+    description: string;
+    features: string[];
+    blockedFeatures: string[];
+    priceOriginal: number | null;
+    priceDiscounted: number;
+    currency: string;
+    billingCycle: string;
+  }
 
   const { monthlyPlans, yearlyPlans} = pricing || {};
 
@@ -91,7 +102,7 @@ const PriceV2New = ({ pricing }) => {
                 aria-labelledby="nav-id-1"
               >
                 <div className="row">
-                  {monthlyPlans.map((plan) => (
+                  {monthlyPlans.map((plan:PricingPlan) => (
                     <div
                       className="col-xl-4 col-lg-6 col-md-6 mb-30"
                       key={plan.id}
@@ -110,7 +121,7 @@ const PriceV2New = ({ pricing }) => {
                 aria-labelledby="nav-id-2"
               >
                 <div className="row">
-                  {yearlyPlans.map((plan) => (
+                  {yearlyPlans.map((plan:PricingPlan) => (
                     <div
                       className="col-xl-4 col-lg-6 col-md-6 mb-30"
                       key={plan.id}

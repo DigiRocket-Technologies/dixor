@@ -56,10 +56,10 @@ import Services3Page from "./pages/servicesPages/Services3Page";
 import Services4Page from "./pages/servicesPages/Services4Page";
 import ServiceDetailsPage from "./pages/servicesPages/ServiceDetailsPage";
 import EcommerceSeo from "./pages/servicesPages/EcommerceSeo"
-import LocalSeo from "./pages/servicesPages/LocalSeo"
-import PerformanceMarketing from "./pages/servicesPages/PerformanceMarketing"
-import SocialMediaMarketing from "./pages/servicesPages/SocialMediaMarketing"
-import EcommerceMarketing from "./pages/servicesPages/EcommerceMarketing"
+// import LocalSeo from "./pages/servicesPages/LocalSeo"
+// import PerformanceMarketing from "./pages/servicesPages/PerformanceMarketing"
+// import SocialMediaMarketing from "./pages/servicesPages/SocialMediaMarketing"
+// import EcommerceMarketing from "./pages/servicesPages/EcommerceMarketing"
 // Services Light
 import ServicesLightPage from "./pages/servicesPages/ServicesLightPage";
 import Services2LightPage from "./pages/servicesPages/Services2LightPage";
@@ -84,14 +84,14 @@ import BlogSingleLightPage from "./pages/blogPages/BlogSingleLightPage";
 import BlogSingleWithSidebarLightPage from "./pages/blogPages/BlogSingleWithSidebarLightPage";
 
 import NotFoundPage from "./pages/innerPages/NotFoundPage";
-import InfluencerMarketing from "./pages/servicesPages/InfluencerMarketing";
-import Shopify from "./pages/servicesPages/Shopify";
-import Woocommerce from "./pages/servicesPages/WooCommerce";
-import WebApplication from "./pages/servicesPages/WebApplications";
-import Wordpress from "./pages/servicesPages/Wordpress";
-import MobileApplication from "./pages/servicesPages/MobileApplications";
-import Dropshipping from "./pages/servicesPages/Dropshipping";
-import AI from "./pages/servicesPages/AI";
+// import InfluencerMarketing from "./pages/servicesPages/InfluencerMarketing";
+// import Shopify from "./pages/servicesPages/Shopify";
+// import Woocommerce from "./pages/servicesPages/WooCommerce";
+// import WebApplication from "./pages/servicesPages/WebApplications";
+// import Wordpress from "./pages/servicesPages/Wordpress";
+// import MobileApplication from "./pages/servicesPages/MobileApplications";
+// import Dropshipping from "./pages/servicesPages/Dropshipping";
+// import AI from "./pages/servicesPages/AI";
 
 
 const Routers = () => {
@@ -102,7 +102,7 @@ const Routers = () => {
 
                 {/* TO BE USED FOR DIGIROCKET TECHNOLOGIES MADE BY APOORV */}
                 <Route path="/ecommerce-seo" element={<EcommerceSeo/>}></Route>
-                <Route path='/local-seo' element={<LocalSeo />}></Route>
+                {/* <Route path='/local-seo' element={<LocalSeo />}></Route>
                 <Route path='/performance-marketing' element={<PerformanceMarketing />}></Route>
                 <Route path='/social-media-marketing' element={<SocialMediaMarketing />}></Route>
                 <Route path='/influencer-marketing' element={<InfluencerMarketing/>}></Route>
@@ -113,10 +113,10 @@ const Routers = () => {
                 <Route path='/web-application-development' element={<WebApplication/>}></Route>
                 <Route path='/wordpress-development' element={<Wordpress/>}></Route>
                 <Route path='/mobile-application-development' element={<MobileApplication/>}></Route>
-                {/* <Route path='/application-development' element={<BlogSingleWithSidebarLightPage />}></Route> */}
+                <Route path='/application-development' element={<BlogSingleWithSidebarLightPage />}></Route>
                 <Route path='/artificial-intelligence' element={<AI/>}></Route>
 
-                <Route path='/dropshipping' element={<Dropshipping/>}></Route>
+                <Route path='/dropshipping' element={<Dropshipping/>}></Route> */}
 
 
                 <Route path='/portfolio' element={<BlogSingleWithSidebarLightPage />}></Route>
