@@ -11,7 +11,7 @@ const LocalSeo = () => {
     return (
         <>
             <Helmet>
-                <title>Ecommerce-Seo</title>
+                <title>Social Media Marketing | DigiRocket Technologies</title>
             </Helmet>
             
             <LayoutV1Light>

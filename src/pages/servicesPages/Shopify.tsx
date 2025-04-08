@@ -11,7 +11,7 @@ const Shopify = () => {
     return (
         <>
             <Helmet>
-                <title>Ecommerce-Seo</title>
+                <title>Shopify Development | DigiRocket Technologies</title>
             </Helmet>
             
             <LayoutV1Light>

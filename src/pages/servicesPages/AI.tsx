@@ -12,7 +12,7 @@ const AI = () => {
     return (
         <>
             <Helmet>
-                <title>Ecommerce-Seo</title>
+                <title>Artificial Intelligence | DigiRocket Technologies</title>
             </Helmet>
             
             <LayoutV1Light>

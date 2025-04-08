@@ -11,7 +11,7 @@ const InfluencerMarketing = () => {
     return (
         <>
             <Helmet>
-                <title>Ecommerce-Seo</title>
+                <title>Influencer Marketing | DigiRocket Technologies</title>
             </Helmet>
             
             <LayoutV1Light>

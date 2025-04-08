@@ -12,7 +12,7 @@ const EcommerceMarketing = () => {
     return (
         <>
             <Helmet>
-                <title>Ecommerce-Seo</title>
+                <title>Ecommerce Marketing | DigiRocket Technologies</title>
             </Helmet>
             
             <LayoutV1Light>

@@ -12,7 +12,7 @@ const Wordpress = () => {
     return (
         <>
             <Helmet>
-                <title>Ecommerce-Seo</title>
+                <title>Wordpress Development | DigiRocket Technologies</title>
             </Helmet>
             
             <LayoutV1Light>

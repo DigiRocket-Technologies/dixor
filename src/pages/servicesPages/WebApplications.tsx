@@ -12,7 +12,7 @@ const WebApplication = () => {
     return (
         <>
             <Helmet>
-                <title>Ecommerce-Seo</title>
+                <title>Web Application Development | DigiRocket Technologies</title>
             </Helmet>
             
             <LayoutV1Light>
