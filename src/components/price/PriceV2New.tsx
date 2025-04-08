@@ -29,7 +29,6 @@ interface pricingProps{
 
 const PriceV2New = ({ pricing }:pricingProps) => {
 
-
   const { monthlyPlans, yearlyPlans} = pricing || {};
 
   return (

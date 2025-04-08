@@ -71,7 +71,7 @@ const dt = () => {
         <title>Dixor - Home 9</title>
       </Helmet>
       <div className="smooth-scroll-container">
-        <HeaderV1 />
+        <HeaderV1 lightMode={false} />
         {/* <p>Banner 1</p> */}
         <BannerV1 />
         {/* <p>Banner 8</p> */}

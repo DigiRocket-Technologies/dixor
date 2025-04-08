@@ -20,7 +20,7 @@ const HeaderV1 = ({ lightMode }: DataType) => {
     const toggleSubMenu = useSubMenuToggle();
     // const { isInfoOpen, openInfoBar, closeInfoBar } = useSidebarInfo();
     const isMenuSticky = useStickyMenu();
-
+    console.log(lightMode)
     return (
         <>
             <header>
