@@ -18,9 +18,9 @@
           "Email & Phone Support"
         ],
         "blockedFeatures": [
+          "E-Commerce Platform Listing and Optimisation",
           "Web 2.0 Profile Creation",
           "Website Designing Consultation",
-          "E-Commerce Platform Listing and Optimisation",
           "Mobile App Development",
           "Quick Commerce Platform Listing and Optimisation"
         ],
@@ -320,20 +320,21 @@
         "title": "ENTERPRISE",
         "description": "Let top creative talent come to you by posting your job listing on #1 Design Jobs Board.",
         "features": [
-            "Upto 8 Marketing Services/Month",
+            "Upto 6 Marketing Services/Month",
             "Consulting & Strategy Development",
-            "Marketing plan development",
             "Campaign Execution & Optimization",
             "Weekly Performance meeting review sessions",
             "Weekly activities + KPI reports",
             "Google data studio dashboard",
             "Monthly analytics & insights report",
+            "Email/Chat Support",
+            "Marketing plan development",
             "Quarterly performance presentation",
             "Dedicated FT Senior Digital Strategist",
             "Online reputation monitoring"
           ],
           "blockedFeatures": [
-            "No blocked features"
+            
           ],
         "priceOriginal": null,
         "priceDiscounted": 1600,
