@@ -26,6 +26,14 @@
       {
         "q": "Will you do keyword research for my products??",
         "a": "Absolutely. We conduct thorough keyword research for your products and categories using advanced tools to identify high-intent, high-converting keywords your customers are actively searching for."
+      },
+      {
+        "q": "Do you optimize all my product pages individually?",
+        "a": "Yes, we prioritize optimizing high-performing and top-potential product pages with custom SEO titles, meta descriptions, alt text, and schema markup to improve their rankings and visibility."
+      },
+      {
+        "q": "How long does it take to see results from Ecommerce SEO?",
+        "a": "SEO is a long-term investment. While some improvements can be seen in 2-3 months, significant traffic and sales growth typically occur within 4-6 months, depending on your site’s current status and competition."
       }
     ],
     "activeClass": ""
@@ -49,16 +57,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is the difference between Local SEO and regular SEO?",
-        "a": "Local SEO targets a specific geographical audience, focusing on location-based searches, while regular SEO aims to increase visibility on a broader or national level."
+        "q": "What is Local SEO and why do I need it?",
+        "a": "Local SEO helps your business appear in local search results on Google, especially for users searching nearby. It's essential for attracting local customers, increasing foot traffic, and growing visibility on Google Maps and near me searches."
       },
       {
-        "q": "How long does it take to see results with Local SEO?",
-        "a": "Local SEO results can typically be seen within 3 to 6 months, depending on the competition and your business's current online presence."
+        "q": "How is Local SEO different from traditional SEO?",
+        "a": "Traditional SEO focuses on improving a website’s visibility nationally or globally, while Local SEO targets specific geographic areas. It involves optimizing your Google Business Profile, local citations, reviews, and location-specific keywords."
       },
       {
-        "q": "Can Local SEO help my small business grow?",
-        "a": "Absolutely! Local SEO is perfect for small businesses as it connects you directly with customers in your area, driving more traffic, leads, and sales."
+        "q": "What platforms do you optimize for Local SEO?",
+        "a": "We optimize your presence across Google Business Profile (formerly Google My Business), Bing Places, Apple Maps, Yelp, and local directories relevant to your industry and location."
+      },
+      {
+        "q": "Do you handle Google Business Profile optimization?",
+        "a": "Absolutely. We fully optimize your Google Business Profile with accurate details, keyword-rich descriptions, categories, photos, services, and regular updates to increase visibility."
+      },
+      {
+        "q": "What kind of businesses benefit the most from Local SEO?",
+        "a": "Any business with a physical location or a local service area—like restaurants, gyms, salons, clinics, real estate agencies, or repair services—can benefit tremendously from Local SEO."
       }
     ],
     "activeClass": ""
@@ -81,20 +97,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What is performance marketing?",
+        "a": "Performance marketing is a results-driven approach where advertisers pay only for specific actions—like clicks, leads, or conversions. It includes paid channels like Google Ads, Facebook Ads, Instagram Ads, and more, focused on maximizing ROI."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "How is performance marketing different from traditional marketing?",
+        "a": "Traditional marketing often charges upfront without guaranteed results. Performance marketing is outcome-based, meaning you only pay when a predefined action (like a purchase or sign-up) occurs—making it more trackable and ROI-focused."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What platforms do you run performance campaigns on?",
+        "a": "We run data-driven campaigns on Google Ads, Facebook, Instagram, LinkedIn, YouTube, and third-party networks based on your goals and target audience. We choose the best platform mix to deliver the highest return on ad spend (ROAS)."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What kind of businesses benefit from performance marketing?",
+        "a": "Almost every business can benefit—from ecommerce stores and B2B service providers to local businesses and startups. Performance marketing is ideal for any brand looking to generate measurable leads or sales online."
+      },
+      {
+        "q": "Do you create ad creatives and landing pages too?",
+        "a": "Yes, we offer end-to-end campaign management—including ad copywriting, creative design (static, video, carousel, etc.), and high-converting landing pages optimized for conversions."
       }
     ],
     "activeClass": ""
@@ -117,20 +137,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What is social media marketing (SMM)?",
+        "a": "Social media marketing is the process of using platforms like Instagram, Facebook, LinkedIn, and Twitter to promote your brand, engage with your audience, and drive traffic, leads, or sales."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Which platforms do you manage for social media marketing?",
+        "a": "We manage campaigns across major platforms like Instagram, Facebook, LinkedIn, Twitter, Pinterest, and YouTube. We choose platforms based on your business goals and target audience."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What does your social media service include?",
+        "a": "Our service includes content creation, graphic design, video editing, post scheduling, community management, paid ad campaigns, influencer collaborations, and monthly performance reports."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Do you create the content, or do we need to provide it?",
+        "a": "We handle everything from strategy to execution—including writing captions, creating graphics/videos, and curating content. If you have product shots or brand guidelines, we’ll incorporate them too."
+      },
+      {
+        "q": "Can you run paid ad campaigns on social media?",
+        "a": "Yes, we specialize in both organic and paid strategies. We run highly targeted ad campaigns on Meta (Facebook + Instagram), LinkedIn, and other platforms to drive leads, sales, and brand awareness."
       }
     ],
     "activeClass": ""
@@ -153,20 +177,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What is influencer marketing?",
+        "a": "Influencer marketing is a strategy where we partner your brand with relevant social media influencers who promote your products/services to their audience, increasing visibility, credibility, and sales."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What platforms do you work with for influencer marketing?",
+        "a": "We primarily run influencer campaigns on Instagram, TikTok etc depending on your target audience and campaign objectives."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "How do you select the right influencers for my brand?",
+        "a": "We analyze influencer metrics like engagement rate, follower authenticity, niche relevance, past collaborations, and audience demographics to ensure a perfect match for your brand."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Do you handle outreach and negotiations with influencers?",
+        "a": "Absolutely. We take care of everything—outreach, negotiation, contracts, content approvals, scheduling, and reporting—so you can focus on running your business."
+      },
+      {
+        "q": "What industries do you work with for influencer marketing?",
+        "a": "We work with ecommerce, fashion, beauty, fitness, food & beverage, tech, and lifestyle brands. We customize influencer strategies based on your niche and audience."
       }
     ],
     "activeClass": ""
@@ -189,20 +217,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What is ecommerce marketing?",
+        "a": "Ecommerce marketing involves promoting your online store through digital channels like SEO, paid ads, social media, email, and influencer campaigns to drive traffic, increase conversions, and grow sales."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What platforms do you support for ecommerce marketing?",
+        "a": "We work with Shopify, WooCommerce, Magento, Wix, BigCommerce, and custom ecommerce websites. Our strategies are tailored to each platform’s strengths and marketing integrations."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What services are included in your ecommerce marketing package?",
+        "a": "Our ecommerce marketing service includes SEO, Google Ads, Facebook & Instagram Ads, social media management, email marketing (e.g., Klaviyo), conversion rate optimization, and influencer marketing."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Can you help with setting up product feeds and Google Shopping?",
+        "a": "Yes! We help set up and optimize your product feed, integrate it with Google Merchant Center, and run high-converting Shopping campaigns to boost product visibility and sales."
+      },
+      {
+        "q": "How long does it take to see results from ecommerce marketing?",
+        "a": "While some paid campaigns generate quick wins within weeks, consistent SEO and email marketing efforts typically take 2–3 months to show strong, sustainable growth."
       }
     ],
     "activeClass": ""
