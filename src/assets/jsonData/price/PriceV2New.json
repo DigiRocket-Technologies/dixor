@@ -153,9 +153,9 @@
         ],
         "blockedFeatures": [
           "Google Map Integration on Website",
-          "Search Trends Analysis",
           "Google My Business: Optimization",
-          "Conversion Rate Analysis"
+          "Conversion Rate Analysis",
+          "Dedicated Project Manager"
         ],
         "priceOriginal": null,
         "priceDiscounted": 500,
@@ -168,7 +168,6 @@
         "description": "Let top creative talent come to you by posting your job listing on #1 Design Jobs Board.",
         "features": [
             "2 Location",
-            "Google Map Integration on Website",
             "12 Targeted Keywords",
             "8 Local Business Listings",
             "30 Local Classified Listings",
@@ -176,12 +175,13 @@
             "Google Search Console setup",
             "Google My Business: Setup and Verification",
             "Email & Phone Support",
+            "Google Map Integration on Website",
             "Google My Business: Optimization",
             "Conversion Rate Analysis",
             "Dedicated Project Manager"
           ],
           "blockedFeatures": [
-            "No blocked features"
+            
           ],
         "priceOriginal": null,
         "priceDiscounted": 950,
@@ -194,7 +194,6 @@
         "description": "Let top creative talent come to you by posting your job listing on #1 Design Jobs Board.",
         "features": [
             "3 Location",
-            "Google Map Integration on Website",
             "25 Targeted Keywords",
             "16 Local Business Listings",
             "50 Local Classified Listings",
@@ -202,12 +201,13 @@
             "Google Search Console setup",
             "Google My Business: Setup and Verification",
             "Email & Phone Support",
+            "Google Map Integration on Website",
             "Google My Business: Optimization",
             "Conversion Rate Analysis",
             "Dedicated Project Manager"
           ],
           "blockedFeatures": [
-            "No blocked features"
+            
           ],
         "priceOriginal": null,
         "priceDiscounted": 1600,
