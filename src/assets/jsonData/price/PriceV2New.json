@@ -18,11 +18,11 @@
           "Email & Phone Support"
         ],
         "blockedFeatures": [
+          "Web 2.0 Profile Creation",
+          "Website Designing Consultation",
           "E-Commerce Platform Listing and Optimisation",
           "Mobile App Development",
-          "Quick Commerce Platform Listing and Optimisation",
-          "Web 2.0 Profile Creation",
-          "Website Designing Consultation"
+          "Quick Commerce Platform Listing and Optimisation"
         ],
         "priceOriginal": null,
         "priceDiscounted": 500,
@@ -79,7 +79,6 @@
           "Quick Commerce Platform Listing and Optimisation"
         ],
         "blockedFeatures": [
-          "No blocked features"
         ],
         "priceOriginal": null,
         "priceDiscounted": 1600,
@@ -298,13 +297,13 @@
         "features": [
             "Upto 6 Marketing Services/Month",
             "Consulting & Strategy Development",
-            "Marketing plan development",
             "Campaign Execution & Optimization",
             "Weekly Performance meeting review sessions",
             "Weekly activities + KPI reports",
             "Google data studio dashboard",
             "Monthly analytics & insights report",
-            "Email/Chat Support"
+            "Email/Chat Support",
+            "Marketing plan development"
           ],
           "blockedFeatures": [
             "Quarterly performance presentation",
