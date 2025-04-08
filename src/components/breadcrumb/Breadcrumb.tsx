@@ -15,7 +15,7 @@ const Breadcrumb = ({ title, breadCrumb, LightMode }: DataType) => {
                     <div className="breadcrumb-item">
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2">
-                                <h1>{title ? title : "not found"}</h1>
+                                <h1 style={{fontSize: '60px'}}>{title ? title : "not found"}</h1>
                                 <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb">
                                         <li><Link to="/"><i className="fas fa-home" /> Home</Link></li>

@@ -16,7 +16,7 @@ const EcommerceSeo = () => {
             </Helmet>
             
             <LayoutV1Light>
-                <Breadcrumb title='Our Services' breadCrumb='service-details-light' LightMode={true} />
+                <Breadcrumb title='Ecommerce SEO' breadCrumb='Ecommerce SEO' LightMode={true} />
                 {data && <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
             </LayoutV1Light>
         </>

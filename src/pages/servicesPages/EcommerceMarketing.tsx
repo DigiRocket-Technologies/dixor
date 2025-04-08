@@ -16,7 +16,7 @@ const EcommerceMarketing = () => {
             </Helmet>
             
             <LayoutV1Light>
-                <Breadcrumb title='Our Services' breadCrumb='service-details-light' LightMode={true} />
+                <Breadcrumb title='Ecommerce Marketing' breadCrumb='Ecommerce Marketing' LightMode={true} />
                 {data && <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
             </LayoutV1Light>
         </>

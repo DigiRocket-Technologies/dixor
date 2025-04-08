@@ -16,7 +16,7 @@ const Woocommerce = () => {
             </Helmet>
             
             <LayoutV1Light>
-                <Breadcrumb title='Our Services' breadCrumb='service-details-light' LightMode={true} />
+                <Breadcrumb title='Woo Commerce Development' breadCrumb='Woo Commerce Development' LightMode={true} />
                 {data && <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
             </LayoutV1Light>
         </>

@@ -15,7 +15,7 @@ const LocalSeo = () => {
             </Helmet>
             
             <LayoutV1Light>
-                <Breadcrumb title='Our Services' breadCrumb='service-details-light' LightMode={true} />
+                <Breadcrumb title='Social Media Marketing' breadCrumb='Social Media Marketing' LightMode={true} />
                 {data && <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
             </LayoutV1Light>
         </>
