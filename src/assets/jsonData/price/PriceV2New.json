@@ -279,11 +279,11 @@
           "Email/Chat Support"
         ],
         "blockedFeatures": [
+          "Google data studio dashboard",
           "Marketing plan development",
           "Quarterly performance presentation",
           "Dedicated FT Senior Digital Strategist",
-          "Online reputation monitoring",
-          "Google data studio dashboard"
+          "Online reputation monitoring"
         ],
         "priceOriginal": null,
         "priceDiscounted": 500,
@@ -295,15 +295,15 @@
         "title": "BUSINESS",
         "description": "Let top creative talent come to you by posting your job listing on #1 Design Jobs Board.",
         "features": [
-            "Upto 6 Marketing Services/Month",
-            "Consulting & Strategy Development",
-            "Campaign Execution & Optimization",
-            "Weekly Performance meeting review sessions",
-            "Weekly activities + KPI reports",
-            "Google data studio dashboard",
-            "Monthly analytics & insights report",
-            "Email/Chat Support",
-            "Marketing plan development"
+          "Upto 6 Marketing Services/Month",
+          "Consulting & Strategy Development",
+          "Campaign Execution & Optimization",
+          "Bi-Weekly Performance meeting review sessions",
+          "Weekly activities + KPI reports",
+          "Monthly analytics & insights report",
+          "Email/Chat Support",
+          "Google data studio dashboard",
+          "Marketing plan development"
           ],
           "blockedFeatures": [
             "Quarterly performance presentation",
@@ -320,18 +320,18 @@
         "title": "ENTERPRISE",
         "description": "Let top creative talent come to you by posting your job listing on #1 Design Jobs Board.",
         "features": [
-            "Upto 6 Marketing Services/Month",
-            "Consulting & Strategy Development",
-            "Campaign Execution & Optimization",
-            "Weekly Performance meeting review sessions",
-            "Weekly activities + KPI reports",
-            "Google data studio dashboard",
-            "Monthly analytics & insights report",
-            "Email/Chat Support",
-            "Marketing plan development",
-            "Quarterly performance presentation",
-            "Dedicated FT Senior Digital Strategist",
-            "Online reputation monitoring"
+          "Upto 6 Marketing Services/Month",
+          "Consulting & Strategy Development",
+          "Campaign Execution & Optimization",
+          "Bi-Weekly Performance meeting review sessions",
+          "Weekly activities + KPI reports",
+          "Monthly analytics & insights report",
+          "Email/Chat Support",
+          "Google data studio dashboard",
+          "Marketing plan development",
+          "Quarterly performance presentation",
+          "Dedicated FT Senior Digital Strategist",
+          "Online reputation monitoring"
           ],
           "blockedFeatures": [
             
@@ -456,7 +456,7 @@
             "Customer Enquiries & Relations"
           ],
           "blockedFeatures": [
-            "No blocked features"
+            
           ],
         "priceOriginal": null,
         "priceDiscounted": 1600,
