@@ -68,7 +68,7 @@ const dt = () => {
   return (
     <>
       <Helmet>
-        <title>Dixor - Home 9</title>
+        <title>DigiRocket Technologies</title>
       </Helmet>
       <div className="smooth-scroll-container">
         <HeaderV1 lightMode={false} />
