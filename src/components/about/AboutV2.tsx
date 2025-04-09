@@ -103,7 +103,7 @@ const AboutV2 = () => {
                 <div className="relative overflow-hidden">
                     <div className="home-container" ref={homeContainerRef}>
                         <video loop muted autoPlay>
-                            <source src="/assets/video/about.mp4" type="video/mp4" />
+                            <source src="/assets/video/about-latest.mp4" type="video/mp4" />
                         </video>
                         <div className="video-content">
                             <div className="video">

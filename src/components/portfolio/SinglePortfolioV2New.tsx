@@ -19,7 +19,7 @@ const SinglePortfolioV2New = ({ portfolio }: { portfolio: DataType }) => {
             <div className="portfolio-style-two">
                 <Link to={`/project-details/${id}`} className="cursor-target">
                     <div className="thumb-zoom">
-                        <img className="img-reveal" src={`/assets/img/portfolio/${thumb}`} width={826} height={1067} alt="Image Not Found" ref={containerRef} />
+                        <img className="img-reveal" src={thumb} width={826} height={1067} alt="Image Not Found" ref={containerRef} />
                     </div>
                     <div className="pf-item-info">
                         <div className="content">
