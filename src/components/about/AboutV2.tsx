@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import CountUp from 'react-countup';
 import { useEffect, useRef, useState } from 'react';
 import ModalVideo from 'react-modal-video';
@@ -107,10 +107,10 @@ const AboutV2 = () => {
                         </video>
                         <div className="video-content">
                             <div className="video">
-                                <Link to="#" className="popup-youtube video-play-button" onClick={() => setOpen(true)}>
+                                {/* <Link to="#" className="popup-youtube video-play-button" onClick={() => setOpen(true)}>
                                     <i className="fas fa-play" />
                                     <div className="effect" />
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                     </div>
