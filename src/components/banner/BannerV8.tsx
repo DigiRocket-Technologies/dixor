@@ -28,7 +28,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                                             threshold={0.2}
                                             rootMargin="-50px"
                                         >
-                                            Designing
+                                            Headline
                                         </SplitText>
                                     </h2>
 
@@ -41,7 +41,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                                             threshold={0.2}
                                             rootMargin="-50px"
                                         >
-                                            Creative
+                                            Here
                                         </SplitText>
                                     </h2>
 
@@ -57,7 +57,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                     <div className="row">
                         <div className="col-xl-7">
                             <div className="d-grid">
-                                <h4>Dexus Agency</h4>
+                                <h4>DigiRocket Technologies</h4>
                                 <div className="right">
                                     <p>
                                         Providing innovative solutions in branding, marketing, design, and advertising. These agencies often collaborate with clients to develop unique campaigns, visual identities, and digital strategies that resonate with target audiences. Services may include graphic design, content creation, social media management.
@@ -71,8 +71,8 @@ const BannerV8 = ({ lightMode }: DataType) => {
                                 <div className="bottom">
                                     <div className="fun-fact">
                                         <div className="counter">
-                                            <div className="timer"><CountUp end={31} enableScrollSpy /></div>
-                                            <div className="operator">K</div>
+                                            <div className="timer"><CountUp end={450} enableScrollSpy /></div>
+                                            <div className="operator">+</div>
                                         </div>
                                         <span className="medium">Completed Projects</span>
                                     </div>

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 // import AboutV1 from "../../components/about/AboutV1";
-import BannerV1 from "../../components/banner/BannerV1";
+// import BannerV1 from "../../components/banner/BannerV1";
 // import BlogV2 from "../../components/blog/BlogV2";
 // import BrandV1 from "../../components/brand/BrandV1";
 import DarkClass from "../../components/classes/DarkClass";
@@ -9,14 +9,14 @@ import HeaderV1 from "../../components/header/HeaderV1";
 import MultiSection from "../../components/multi/MultiSection";
 // import PriceV2 from "../../components/price/PriceV2";
 // import ProjectV2 from "../../components/project/ProjectV2";
-// import ServicesV1 from "../../components/services/ServicesV1";
+import ServicesV1 from "../../components/services/ServicesV1";
 // import TeamV3 from "../../components/team/TeamV3";
 // import TestimonialV1 from "../../components/testimonial/TestimonialV1";
 // import BrandV2 from "../../components/brand/BrandV2";
 // import FooterV4 from "../../components/footer/FooterV4";
 // import FooterV2 from "../../components/footer/FooterV2";
 import FooterV1 from "../../components/footer/FooterV1";
-import ServicesV2 from "../../components/services/ServicesV2";
+// import ServicesV2 from "../../components/services/ServicesV2";
 // import ServicesV3 from "../../components/services/ServicesV3";
 // import ServicesV4 from "../../components/services/ServicesV4";
 // import ServicesV5 from "../../components/services/ServicesV5";
@@ -32,7 +32,7 @@ import PortfolioV5 from "../../components/portfolio/PortfolioV5";
 import TestimonialV3 from "../../components/testimonial/TestimonialV3";
 // import ContactV1 from "../../components/contact/ContactV1";
 // import QuickContact from "../../components/contact/QuickContact";
-import ProcessWrapper from "../../components/process/ProcessWrapper";
+// import ProcessWrapper from "../../components/process/ProcessWrapper";
 import AboutV2 from "../../components/about/AboutV2";
 // import AboutV3 from "../../components/about/AboutV3";
 // import AboutV4 from "../../components/about/AboutV4";
@@ -41,7 +41,7 @@ import AboutV6 from "../../components/about/AboutV6";
 // import AboutV7 from "../../components/about/AboutV7";
 // import TeamV1 from "../../components/team/TeamV1";
 // import TeamV2 from "../../components/team/TeamV2";
-import ProjectV1 from "../../components/project/ProjectV1";
+// import ProjectV1 from "../../components/project/ProjectV1";
 // import PriceV1 from "../../components/price/PriceV1";
 // import PriceV3 from "../../components/price/PriceV3";
 // import BannerV2 from "../../components/banner/BannerV2";
@@ -49,14 +49,14 @@ import ProjectV1 from "../../components/project/ProjectV1";
 // import BannerV4 from "../../components/banner/BannerV4";
 // import BannerV6 from "../../components/banner/BannerV6";
 // import BannerV7 from "../../components/banner/BannerV7";
-// import BannerV8 from "../../components/banner/BannerV8";
+import BannerV8 from "../../components/banner/BannerV8";
 // import BannerV9 from "../../components/banner/BannerV9";
 // import BannerV10 from "../../components/banner/BannerV10";
-import BlogV1 from "../../components/blog/BlogV1";
+// import BlogV1 from "../../components/blog/BlogV1";
 // import AchievementAward from "../../components/awards/AchievementAward";
 // import AwardV1 from "../../components/awards/AwardV1";
 // import ExpertiseV1 from "../../components/expertise/ExpertiseV1";
-import FunFactV1 from "../../components/fact/FunFactV1";
+// import FunFactV1 from "../../components/fact/FunFactV1";
 // import ContactMap from "../../components/map/ContactMap";
 // import NewsletterV2 from "../../components/newsletter/NewsletterV2";
 import PartnerV2 from "../../components/partner/PartnerV2";
@@ -73,7 +73,7 @@ const dt = () => {
       <div className="smooth-scroll-container">
         <HeaderV1 lightMode={false} />
         {/* <p>Banner 1</p> */}
-        <BannerV1 />
+        <BannerV8 />
         {/* <p>Banner 8</p> */}
         {/* <BannerV8/> */}
         {/* <p>Banner 9</p> */}
@@ -86,11 +86,11 @@ const dt = () => {
         {/* <BrandV1/> */}
         {/* <p>Brand 2</p> */}
         {/* <BrandV2/> */}
-
+        <AboutV6 />
         {/* <p>Focus/Service 1 Preferred</p> */}
-        {/* <ServicesV1 sectionClass="default-padding bg-gray" hasTitle={true} /> */}
+        <ServicesV1 sectionClass="default-padding bg-gray" hasTitle={true} />
         {/* <p>Focus/Service 2 PREFFERED TILL NOW</p> */}
-        <ServicesV2 sectionClass="default-padding bg-gray" hasTitle={true} />
+        {/* <ServicesV2 sectionClass="default-padding bg-gray" hasTitle={true} /> */}
         {/* <p>Focus/Service 3</p> */}
         {/* <ServicesV3 sectionClass="default-padding bg-gray" hasTitle={true} /> */}
         {/* <p>Focus/Service 4</p> */}
@@ -114,7 +114,7 @@ const dt = () => {
         <PortfolioV5 />
 
         {/* <p> Process </p> */}
-        <ProcessWrapper />
+        {/* <ProcessWrapper /> */}
 
 
         
@@ -124,7 +124,7 @@ const dt = () => {
 
 
         {/* <p>Project 1</p> */}
-        <ProjectV1 />
+        {/* <ProjectV1 /> */}
         {/* <p>Project 2 both are same</p> */}
         {/* <ProjectV2 /> */}
 
@@ -133,7 +133,7 @@ const dt = () => {
         {/* <ExpertiseV1/> */}
 
         {/* <p>FACT </p> */}
-        <FunFactV1/>
+        {/* <FunFactV1/> */}
 
 
         {/* <p>Price 1</p> */}
@@ -149,7 +149,7 @@ const dt = () => {
 
 
         {/* <p>Blog 1</p> */}
-        <BlogV1 sectionClass="bg-gray" />
+        {/* <BlogV1 sectionClass="bg-gray" /> */}
         
 
 {/* will go on contact us page */}
@@ -187,7 +187,7 @@ const dt = () => {
         {/* <p>About 5</p>
         <AboutV5 /> */}
         {/* <p>About 6</p> */}
-        <AboutV6 />
+        {/* <AboutV6 /> */}
         {/* <p>About 7</p>
         <AboutV7/> */}
 

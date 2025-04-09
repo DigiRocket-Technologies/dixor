@@ -52,7 +52,7 @@ const AboutV2 = () => {
         <>
             <div className="about-style-two-area default-padding-top overflow-hidden">
                 <div className="container mb-80 mb-xs-50">
-                    <div className="row align-center">
+                    {/* <div className="row align-center">
                         <div className="col-lg-5">
                             <div className="about-style-two-info pr-50 pr-md-15 pr-xs-15">
                                 <h4 className="sub-title">About Us</h4>
@@ -98,7 +98,7 @@ const AboutV2 = () => {
                             </p>
                             <Link className="btn-animation mt-10" to="/about-2" ><i className="fas fa-arrow-right" /> <span>Know More</span></Link>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="relative overflow-hidden">
                     <div className="home-container" ref={homeContainerRef}>
