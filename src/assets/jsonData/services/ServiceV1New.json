@@ -293,20 +293,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What is Shopify development?",
+        "a": "Shopify development involves designing, customizing, and building ecommerce websites using the Shopify platform. This includes theme development, app integrations, custom functionality, and performance optimization."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Can you migrate my store to Shopify from another platform?",
+        "a": "Yes! We handle complete store migrations from platforms like WooCommerce, Magento, Wix, and others to Shopify—preserving your products, customers, SEO, and order history."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Do you build custom Shopify themes or use existing ones?",
+        "a": "We offer both options. We can customize existing Shopify themes or build fully custom themes from scratch based on your brand identity and user experience goals."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "How long does it take to build a Shopify store?",
+        "a": "Timelines depend on complexity. A basic store can take 1–2 weeks, while fully custom or enterprise-level Shopify projects may take 3–6 weeks. We always provide a clear project timeline upfront."
+      },
+      {
+        "q": "Will my Shopify store be mobile-responsive?",
+        "a": "Yes. Every store we build is fully responsive, ensuring a seamless shopping experience across all devices—desktop, tablet, and mobile."
       }
     ],
     "activeClass": ""
@@ -329,20 +333,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What is WooCommerce development?",
+        "a": "WooCommerce development involves creating and customizing online stores using WooCommerce, a powerful WordPress plugin. It includes theme customization, plugin development, performance optimization, and integration with third-party tools."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Do you build custom WooCommerce themes or use pre-built ones?",
+        "a": "We do both. Based on your requirements, we can build a fully custom WooCommerce theme from scratch or customize an existing one to match your brand and functionality needs."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Can you migrate my existing store to WooCommerce?",
+        "a": "Yes! We offer full migration services from platforms like Shopify, Magento, Wix, and others to WooCommerce—while retaining your products, customer data, and SEO."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "How long does it take to develop a WooCommerce store?",
+        "a": "It depends on the project scope. A standard WooCommerce store may take 1–3 weeks, while custom builds or large-scale stores can take 4–6 weeks or more. We provide detailed timelines during project planning."
+      },
+      {
+        "q": "Will my WooCommerce store be mobile-friendly?",
+        "a": "Definitely. All our WooCommerce stores are fully responsive and tested across devices to ensure an optimal experience on mobile, tablet, and desktop."
       }
     ],
     "activeClass": ""
@@ -365,20 +373,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What is a web application?",
+        "a": "A web application is an interactive software solution that runs on a web browser. Unlike a static website, web apps allow users to perform specific tasks like bookings, form submissions, dashboards, user logins, and more."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What technologies do you use for web application development?",
+        "a": "We work with modern tech stacks like Laravel, Next.js, Node.js, React, Vue.js, Angular, PHP, Python (Django, FastAPI), and databases like MySQL, PostgreSQL, and MongoDB—based on the project's needs."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "How long does it take to build a custom web application?",
+        "a": "It depends on complexity. A basic app might take 6-8 weeks, while a complex solution with dashboards, APIs, and user roles may take 16-20 weeks or more. We provide a timeline after understanding your requirements."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Can you develop both frontend and backend?",
+        "a": "Yes. We offer full-stack development services—including frontend UI/UX and backend logic, APIs, database design, authentication, and third-party integrations."
+      },
+      {
+        "q": "What industries do you develop web apps for?",
+        "a": "We’ve built solutions for ecommerce, education, real estate, healthcare, HR, SaaS, logistics, and more. Every app is custom-built to match your industry’s goals and workflow."
       }
     ],
     "activeClass": ""
@@ -401,20 +413,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What is WordPress development?",
+        "a": "WordPress development involves designing, customizing, and building websites using the WordPress platform. It includes theme customization, plugin development, performance optimization, and website security."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Do you work with custom WordPress themes or pre-built ones?",
+        "a": "We do both. We can create a fully custom theme from scratch tailored to your brand or customize a pre-built theme to meet your design and functionality requirements."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Can you build an ecommerce site using WordPress?",
+        "a": "Yes! We use WooCommerce (a WordPress plugin) to build powerful ecommerce stores that are secure, scalable, and easy to manage."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "How long does it take to develop a WordPress website?",
+        "a": "It depends on the scope of the project. A simple business website might take 1–2 weeks, while a complex or custom project could take 3–5 weeks or more."
+      },
+      {
+        "q": "Will my WordPress site be mobile-friendly?",
+        "a": "Absolutely. All the websites we build are fully responsive and tested across devices to ensure a seamless user experience on mobile, tablet, and desktop."
       }
     ],
     "activeClass": ""
@@ -437,20 +453,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What types of mobile apps do you develop?",
+        "a": "We develop native (Android/iOS), hybrid, and cross-platform apps using technologies like Flutter, React Native, Swift, Kotlin, and more—depending on your goals and budget."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "How long does it take to develop a mobile app?",
+        "a": "Development time depends on the app’s complexity. A basic app may take 4–6 weeks, while a feature-rich or enterprise app can take 8–16 weeks or longer. We provide a detailed timeline after understanding your requirements."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Do you help with app design (UI/UX)?",
+        "a": " Yes! We provide complete UI/UX design services to ensure your app is user-friendly, visually appealing, and optimized for user engagement."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Can you build apps for both Android and iOS?",
+        "a": "Absolutely. We can build native apps for both platforms or use cross-platform frameworks like Flutter or React Native to develop a single codebase that works on both."
+      },
+      {
+        "q": "How much does mobile app development cost?",
+        "a": "The cost depends on features, platforms, and complexity. We provide transparent quotes after a free consultation to understand your app’s goals and functionality."
       }
     ],
     "activeClass": ""
