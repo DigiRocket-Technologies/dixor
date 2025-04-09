@@ -2,9 +2,12 @@
     "id": "ecommerce-seo",
     "type": "marketing",
     "icon": "1.png",
+    "bannerImg":"/assets/img/banner/6.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "iconLight": "23.png",
     "title": "Ecommerce Seo",
-    "definition": "E-commerce SEO E-commerce SEO is the art and science of optimizing your online store to rank higher on search engines, driving organic traffic, and increasing sales. Unlike general SEO, E-commerce SEO focuses on product pages, category pages, and overall site architecture, ensuring that your store is easily discoverable by potential customers.",
+    "definition": "E-commerce SEO is the art and science of optimizing your online store to rank higher on search engines, driving organic traffic, and increasing sales. Unlike general SEO, E-commerce SEO focuses on product pages, category pages, and overall site architecture, ensuring that your store is easily discoverable by potential customers.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "importance": [
       "Boosts Visibility",
@@ -41,6 +44,9 @@
   {
     "id": "local-seo",
     "type": "marketing",
+    "bannerImg":"/assets/img/banner/6.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Local Seo",
@@ -81,6 +87,9 @@
   },
   {
     "id": "performance-marketing",
+    "bannerImg":"/assets/img/banner/6.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "type": "marketing",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -121,6 +130,9 @@
   },
   {
     "id": "social-media-marketing",
+    "bannerImg":"/assets/img/banner/socialmediamarketing.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "type": "marketing",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -162,9 +174,12 @@
   {
     "id": "influencer-marketing",
     "type": "marketing",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Influencer Marketing",
+    "bannerImg":"/assets/img/banner/6.jpg",
     "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "importance": [
@@ -202,9 +217,12 @@
   {
     "id": "ecommerce-marketing",
     "type": "marketing",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Ecommerce Marketing",
+    "bannerImg":"/assets/img/banner/6.jpg",
     "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "importance": [
@@ -241,6 +259,9 @@
   },
   {
     "id": "artificial-intelligence",
+    "bannerImg":"/assets/img/banner/6.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -277,6 +298,9 @@
   },
   {
     "id": "shopify-development",
+    "bannerImg":"/assets/img/banner/6.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -313,6 +337,9 @@
   },
   {
     "id": "woocommerce-development",
+    "bannerImg":"/assets/img/banner/6.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -349,6 +376,9 @@
   },
   {
     "id": "web-application-development",
+    "bannerImg":"/assets/img/banner/6.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -385,6 +415,9 @@
   },
   {
     "id": "wordpress-development",
+    "bannerImg":"/assets/img/banner/6.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -421,7 +454,10 @@
   },
   {
     "id": "mobile-application-development",
+    "bannerImg":"/assets/img/banner/6.jpg",
     "type": "development",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Mobile Application Development",
@@ -457,6 +493,9 @@
   },
   {
     "id": "dropshipping",
+    "bannerImg":"/assets/img/banner/6.jpg",
+    "img1":"/assets/img/portfolio/45.jpg",
+    "img2":"/assets/img/portfolio/46.jpg",
     "type": "dropshipping",
     "icon": "1.png",
     "iconLight": "23.png",
