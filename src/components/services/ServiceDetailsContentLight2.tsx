@@ -141,7 +141,7 @@ const ServiceDetailsContentLight = ({
             <div className="d-grid colums-2 mt-50">
               <div className="item">
                 <div className="faq-style-one faq-style-two">
-                  <h2 className="mb-30">Any questions find here.</h2>
+                  <h2 className="mb-30">Frequently Asked Questions</h2>
                   <div className="accordion" id="faqAccordion">
                     {
                       faqs?.map((item,idx)=>{
