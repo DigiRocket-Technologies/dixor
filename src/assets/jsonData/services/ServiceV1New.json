@@ -278,20 +278,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What kind of AI solutions do you develop?",
+        "a": "We develop a wide range of AI-powered solutions including chatbots, recommendation engines, predictive analytics systems, computer vision applications, natural language processing (NLP) models, AI automation tools, and more—customized to your business needs."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Do you offer custom AI development or use pre-built models?",
+        "a": "We do both. Depending on your project, we can either fine-tune pre-trained models (like GPT, BERT, etc.) or build custom models from scratch using machine learning frameworks like TensorFlow, PyTorch, or Scikit-learn."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What industries do you serve with AI development?",
+        "a": "We serve a variety of industries including eCommerce, healthcare, real estate, education, fintech, logistics, and marketing—each with custom AI solutions tailored to their operational goals."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Is my data safe and private during the development process?",
+        "a": "Yes. We strictly follow best practices in data security and privacy. We’re happy to sign NDAs, and we use secure, encrypted environments for data handling and model training."
+      },
+      {
+        "q": "Do you provide training or documentation after deployment?",
+        "a": "Yes. We offer onboarding sessions, user documentation, and technical handover to ensure your team can manage and scale the AI solution confidently."
       }
     ],
     "activeClass": ""
@@ -532,20 +536,24 @@
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
       {
-        "q": "What is a market strategy for growth?",
-        "a": "Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What is dropshipping, and how does it work?",
+        "a": "Dropshipping is a business model where you sell products online without holding inventory. When a customer places an order, it's fulfilled directly by a third-party supplier who ships the product to the customer on your behalf."
       },
       {
-        "q": "How do you identify growth opportunities?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "What platforms do you use to build dropshipping stores?",
+        "a": "We specialize in Shopify and WooCommerce for dropshipping. Both platforms are highly customizable and integrate well with dropshipping tools like Oberlo, DSers, Spocket, and AliDropship."
       },
       {
-        "q": "What does a typical market strategy include?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Do you help with product selection and niche research?",
+        "a": "Yes. We help identify winning products, trending niches, and profitable markets to give your store the best chance of success from the start."
       },
       {
-        "q": "Do you only focus on customer acquisition?",
-        "a": "A Market Strategy For Growth Outlines The Approach A Business Takes To Expand Its Reach, Customer Base, And Revenue."
+        "q": "Do you integrate payment gateways like PayPal or Stripe?",
+        "a": "Yes. We integrate all major payment gateways including Stripe, PayPal, Razorpay, and others based on your region and preferences."
+      },
+      {
+        "q": "Can I manage the store myself after it's launched?",
+        "a": "Yes. We provide training or documentation so you can easily manage products, orders, and marketing—even with no tech background."
       }
     ],
     "activeClass": ""
