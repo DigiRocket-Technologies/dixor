@@ -93,7 +93,7 @@ import MobileApplication from "./pages/servicesPages/MobileApplications";
 import Dropshipping from "./pages/servicesPages/Dropshipping";
 import AI from "./pages/servicesPages/AI";
 
-
+import ProjectPage2 from "./pages/innerPages/ProjectPage2";
 const Routers = () => {
     return (
         <>
@@ -119,7 +119,7 @@ const Routers = () => {
                 <Route path='/dropshipping' element={<Dropshipping/>}></Route>
 
 
-                <Route path='/portfolio' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/portfolio' element={<ProjectPage2/>}></Route>
 
 
                 <Route path='/case-studies' element={<BlogSingleWithSidebarLightPage />}></Route>
@@ -138,23 +138,6 @@ const Routers = () => {
                 <Route path='*' element={<NotFoundPage />}></Route>
 
                 {/* DIGIROCKET ROUTES END OVER HERE */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <Route path='/home-2' element={<Home2 />}></Route>
                 <Route path='/home-3' element={<Home3 />}></Route>

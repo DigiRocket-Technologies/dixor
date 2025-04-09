@@ -1,12 +1,12 @@
-import banner6 from "/assets/img/banner/6.jpg";
-import portfolio45 from "/assets/img/portfolio/45.jpg";
-import portfolio46 from "/assets/img/portfolio/46.jpg";
 import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 
 interface DataType {
   title?: string;
+  bannerImg?:string;
+  img1?:string;
+  img2?:string;
   whyChooseP1?: string;
   whyChooseP2?: string;
   faqs?:FAQ[];
@@ -48,7 +48,7 @@ const ServiceDetailsContentLight = ({
   sectionClass,
   pricing
 }: ServiceDetailsProps) => {
-  const { title, whyChooseP1, whyChooseP2, faqs,definition,importance,importance_title } =
+  const { title, whyChooseP1,bannerImg, img1,img2,whyChooseP2, faqs,definition,importance,importance_title } =
     serviceInfo || {};
   return (
     <>
@@ -60,7 +60,7 @@ const ServiceDetailsContentLight = ({
             <div className="row">
               <div className="col-xl-12">
                 <div className="service-single-thumb">
-                  <img src={banner6} alt="Thumb" />
+                  <img src={bannerImg} alt="Thumb" />
                 </div>
               </div>
             </div>
@@ -127,10 +127,10 @@ const ServiceDetailsContentLight = ({
             </div>
             <div className="row mt-80 mt-xs-50 gallery-two-columns">
               <div className="col-md-6">
-                <img src={portfolio45} alt="Image Not Found" />
+                <img src={img1} alt="Image Not Found" />
               </div>
               <div className="col-md-6">
-                <img src={portfolio46} alt="Image Not Found" />
+                <img src={img2} alt="Image Not Found" />
               </div>
             </div>
           </div>

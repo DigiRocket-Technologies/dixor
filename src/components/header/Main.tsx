@@ -41,7 +41,7 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
                     <Link to="/dropshipping" className="active" data-toggle="dropdown" onClick={toggleSubMenu}>Dropshipping</Link>
                 </li>
                 <li className="dropdown">
-                    <Link to="#" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>Portfolio</Link>
+                    <Link to="/portfolio" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>Portfolio</Link>
                 </li>
                 <li className="dropdown">
                     <Link to="#" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>Case Studies</Link>
