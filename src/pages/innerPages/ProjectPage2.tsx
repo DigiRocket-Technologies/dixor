@@ -13,7 +13,7 @@ const ProjectPage2 = () => {
 
             <LayoutV1>
                 <Breadcrumb title='Portfolio' breadCrumb='Portfolio' />
-                <PortfolioV2New moreBtn={true} sectionClass='default-padding-bottom' />
+                <PortfolioV2New  sectionClass='default-padding-bottom' />
                 <DarkClass />
             </LayoutV1>
         </>

@@ -149,7 +149,7 @@ const ServiceDetailsContentLight = ({
                           <div key={idx} className="accordion-item">
                           <h2 className="accordion-header" id={`heading${idx}`}>
                             <button
-                              className="accordion-button"
+                              className="accordion-button collapsed"
                               type="button"
                               data-bs-toggle="collapse"
                               data-bs-target={`#collapse${idx}`}
@@ -161,7 +161,7 @@ const ServiceDetailsContentLight = ({
                           </h2>
                           <div
                             id={`collapse${idx}`}
-                            className="accordion-collapse collapse"
+                            className={`accordion-collapse collapse`}
                             //className="accordion-collapse collapse show"  //use this to keep the answers open
                             aria-labelledby={`heading${idx}`}
                             data-bs-parent="#faqAccordion"
