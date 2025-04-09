@@ -82,7 +82,7 @@ const ServiceDetailsContentLight = ({
                 </ul>
               </div>
             </div>
-            <div className="mt-50 mt-xs-20">
+            {/* <div className="mt-50 mt-xs-20">
               <div className="process-style-two">
                 <div className="process-style-two-item">
                   <span>01</span>
@@ -124,7 +124,7 @@ const ServiceDetailsContentLight = ({
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="row mt-80 mt-xs-50 gallery-two-columns">
               <div className="col-md-6">
                 <img src={img1} alt="Image Not Found" />

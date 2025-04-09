@@ -14,11 +14,11 @@ const ProjectDetailsPage = () => {
     return (
         <>
             <Helmet>
-                <title>Dixor - Project Details</title>
+                <title>Case Studies | DigiRocket Technologies</title>
             </Helmet>
 
             <LayoutV1>
-                <Breadcrumb title='Case Studies' breadCrumb='project-details' />
+                <Breadcrumb title='Case Studies' breadCrumb='case' />
                 {data && <ProjectDetailsContent projectInfo={data} totalProjects={PortfolioV4Data.length} />}
                 <DarkClass />
             </LayoutV1>

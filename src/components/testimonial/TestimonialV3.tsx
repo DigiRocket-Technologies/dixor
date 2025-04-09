@@ -25,7 +25,7 @@ const TestimonialV3 = ({ sectionClass }: DataType) => {
                             </div>
                             <div className="col-lg-4 text-end">
                                 <div className="testimonial-three-quote">
-                                    <h2>4.9</h2>
+                                    <h2>4.7</h2>
                                     <div className="info">
                                         <div className="ratings">
                                             <i className="fas fa-star" />
@@ -34,7 +34,7 @@ const TestimonialV3 = ({ sectionClass }: DataType) => {
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
                                         </div>
-                                        <span>145 (Review)</span>
+                                        <span>79 Reviews</span>
                                     </div>
                                 </div>
                             </div>
