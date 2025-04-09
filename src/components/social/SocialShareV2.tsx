@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const SocialShareV2 = () => {
     return (
         <>
-            <li>
+            {/* <li>
                 <Link className="facebook" to="https://www.facebook.com/" target="_blank">
                     <i className="fab fa-facebook-f" />
                 </Link>
@@ -18,6 +18,18 @@ const SocialShareV2 = () => {
                 <Link className="linkedin" to="https://www.linkedin.com/" target="_blank">
                     <i className="fab fa-linkedin-in" />
                 </Link>
+            </li> */}
+            <li>
+                <Link to="https://www.facebook.com/digirockett" target='_blank'><i className="fab fa-facebook-f" /></Link>
+            </li>
+            <li>
+                <Link to="https://www.linkedin.com/company/digirockett/" target='_blank'><i className="fab fa-linkedin-in" /></Link>
+            </li>
+            <li>
+                <Link to="https://x.com/digirockett/" target='_blank'><img src={twitterDark} alt="Image Not Found" /></Link>
+            </li>
+            <li>
+                <Link to="https://www.instagram.com/digirocket.io/" target='_blank'><i className="fab fa-instagram" /></Link>
             </li>
         </>
     );

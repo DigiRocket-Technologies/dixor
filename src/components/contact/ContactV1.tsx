@@ -16,20 +16,36 @@ const ContactV1 = ({ sectionClass }: DataType) => {
                                 <div className="contact-style-one-info">
                                     <ul className="contact-address">
                                         <li>
-                                            <a className="phone-link" href="tel:+4733378901"><i className="fas fa-user-headset" /> +4733378901</a>
+                                            <a className="phone-link" href="tel:+18156886366"><i className="fas fa-user-headset" /> +1 8156 886 366</a>
                                         </li>
                                         <li>
                                             <div className="info">
-                                                <h4>Location</h4>
+                                                <h4>United States</h4>
                                                 <p>
-                                                    55 Main Street, The Grand Avenue <br /> 2nd Block, New York City
+                                                    8 The Green, St#4522 <br /> Dover, Delaware 19901
                                                 </p>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="info">
-                                                <h4>Official Email</h4>
-                                                <a href="mailto:info@digital.com.com">info@digital.com</a>
+                                                <h4>India</h4>
+                                                <p>
+                                                    Unit No. 259, Tower B1, SPAZE ITECH PARK<br /> Sector 49 Gurugram
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="info">
+                                                <h4>United Kingdom</h4>
+                                                <p>
+                                                71-75, Shelton Street, Covent Garden<br /> London, WC2H 9JQ
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="info">
+                                                <h4>Email</h4>
+                                                <a href="mailto:info@digirocket.io">info@digirocket.io</a>
                                             </div>
                                         </li>
                                         <li>
@@ -45,7 +61,7 @@ const ContactV1 = ({ sectionClass }: DataType) => {
                             <div className="col-tact-stye-one col-lg-7 offset-lg-1">
                                 <div className="contact-form-style-one">
                                     <h4 className="sub-title">Have Questions?</h4>
-                                    <h2 className="title">Send us a Massage</h2>
+                                    <h2 className="title">Send us a Message</h2>
                                     <ContactForm />
                                 </div>
                             </div>

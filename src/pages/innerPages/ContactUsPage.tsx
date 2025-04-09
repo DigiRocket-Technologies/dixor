@@ -9,11 +9,11 @@ const ContactUsPage = () => {
     return (
         <>
             <Helmet>
-                <title>Dixor - Contact Us</title>
+                <title>Contact Us | DigiRocket Technologies</title>
             </Helmet>
 
             <LayoutV1>
-                <Breadcrumb title='Get In Touch' breadCrumb='contact-us' />
+                <Breadcrumb title='Get In Touch' breadCrumb='contact us' />
                 <ContactV1 />
                 <ContactMap />
                 <DarkClass />

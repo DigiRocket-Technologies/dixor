@@ -125,7 +125,7 @@ const Routers = () => {
                 <Route path='/case-studies' element={<BlogSingleWithSidebarLightPage />}></Route>
 
 
-                <Route path='/contact-us' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/contact-us' element={<ContactUsPage />}></Route>
 
 
                 <Route path='/terms-and-conditions' element={<BlogSingleWithSidebarLightPage />}></Route>

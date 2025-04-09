@@ -34,7 +34,7 @@ const FooterV2 = ({ lightMode, sectionClass }: DataType) => {
                                     <li>
                                         <h4>India</h4>
                                         <p>
-                                            Unit No. 259,, Tower B1, SPAZE ITECH PARK, Sector 49, Gurugram
+                                            Unit No. 259, Tower B1, SPAZE ITECH PARK, Sector 49, Gurugram
                                         </p>
                                     </li>
                                     {/* <li>

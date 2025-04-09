@@ -34,7 +34,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                                     <li>
                                         <h4>India</h4>
                                         <p>
-                                            Unit No. 259,, Tower B1, SPAZE ITECH PARK, Sector 49, Gurugram
+                                            Unit No. 259, Tower B1, SPAZE ITECH PARK, Sector 49, Gurugram
                                         </p>
                                     </li>
                                     {/* <li>
@@ -61,7 +61,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                                 <div className="footer-contact">
                                     <ul>
                                         <li>
-                                            <a href="mailto:someone@example.com">info@digirocket.io</a>
+                                            <a href="mailto:info@digirocket.io">info@digirocket.io</a>
                                         </li>
                                         <li>
                                             <a href="tel:+18156886366">+1 8156 886 366</a>
