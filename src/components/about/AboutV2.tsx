@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import CountUp from 'react-countup';
+// import CountUp from 'react-countup';
 import { useEffect, useRef, useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import SplitText from '../animation/SplitText.jsx'
+// import SplitText from '../animation/SplitText.jsx'
 
 const AboutV2 = () => {
 
