@@ -32,7 +32,7 @@ const ServicesV1 = ({ hasTitle, sectionClass, lightMode }: DataType) => {
                             <div className="row">
                                 <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 text-center">
                                     <div className="site-heading">
-                                        <h4 className="sub-title">Services we offer</h4>
+                                        <h4 className="sub-title">Services We Excel In</h4>
                                         <h2 className="title split-text">
                                             <SplitText
                                                 delay={40}
