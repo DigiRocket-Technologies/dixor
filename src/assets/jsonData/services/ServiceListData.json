@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "serviceName": "Social Media",
+        "serviceName": "Marketing",
         "count": "01"
     },
     {
         "id": 2,
-        "serviceName": "Content Writing",
+        "serviceName": "Development",
         "count": "02"
     },
     {
         "id": 3,
-        "serviceName": "Video Production",
+        "serviceName": "Dropshipping",
         "count": "03"
     }
 ]
