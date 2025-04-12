@@ -5,7 +5,6 @@ import WhyChooseV1 from "../whyChoose/WhyChooseV1";
 
 const MultiSection = () => {
     useHorizontalScroll();
-
     return (
         <>
             <div  className="multi-section overflow-hidden">

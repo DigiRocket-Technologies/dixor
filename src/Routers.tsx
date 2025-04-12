@@ -24,7 +24,7 @@ import Home9Light from "./pages/homePages/Home9Light";
 
 
 // Inner Pages 
-import AboutUsPage from "./pages/innerPages/AboutUsPage";
+// import AboutUsPage from "./pages/innerPages/AboutUsPage";
 import About2Page from "./pages/innerPages/About2Page";
 import TeamPage from "./pages/innerPages/TeamPage";
 import Team2Page from "./pages/innerPages/Team2Page";
@@ -94,6 +94,9 @@ import Dropshipping from "./pages/servicesPages/Dropshipping";
 import AI from "./pages/servicesPages/AI";
 
 import ProjectPage2 from "./pages/innerPages/ProjectPage2";
+import AboutUsPage2 from "./pages/innerPages/AboutUsPage2";
+import Marketing from "./pages/servicesPages/Marketing";
+import Development from "./pages/servicesPages/Development";
 const Routers = () => {
     return (
         <>
@@ -125,13 +128,18 @@ const Routers = () => {
                 <Route path='/case-studies' element={<BlogSingleWithSidebarLightPage />}></Route>
 
 
-                <Route path='/contact-us' element={<ContactUsPage />}></Route>
+                {/* <Route path='/contact-us' element={<ContactUsPage />}></Route> */}
+                <Route path='/contact-us' element={<ContactUsLightPage/>}></Route> 
+
 
 
                 <Route path='/terms-and-conditions' element={<BlogSingleWithSidebarLightPage />}></Route>
                 <Route path='/privacy-policy' element={<BlogSingleWithSidebarLightPage />}></Route>
 
-                <Route path='/about-us' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/about-us' element={<AboutUsPage2/>}></Route>
+                <Route path='/marketing' element={<Marketing/>}></Route>
+                <Route path='/development' element={<Development/>}></Route>
+
                 <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route>
                 
 
@@ -163,7 +171,7 @@ const Routers = () => {
                 <Route path='/dt-light' element={<DtLight />}></Route>
 
                 {/* Inner Pages */}
-                <Route path='/about-us' element={<AboutUsPage />}></Route>
+                {/* <Route path='/about-us' element={<AboutUsPage />}></Route> */}
                 <Route path='/about-2' element={<About2Page />}></Route>
                 <Route path='/team' element={<TeamPage />}></Route>
                 <Route path='/team-2' element={<Team2Page />}></Route>

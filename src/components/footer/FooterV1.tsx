@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import NewsletterV2 from '../newsletter/NewsletterV2';
+// import NewsletterV2 from '../newsletter/NewsletterV2';
 import FooterSocial from '../social/FooterSocial';
 import logoLight from '/assets/img/logo-light.png'
 import logo from '/assets/img/logo.png'
@@ -44,7 +44,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                                         </p>
                                     </li> */}
                                 </ul>
-                                <NewsletterV2 />
+
                             </div>
                             <div className="col-lg-5 offset-lg-1 footer-item">
                                 <h4 className="widget-title">Useful Link</h4>

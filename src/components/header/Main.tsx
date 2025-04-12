@@ -15,10 +15,10 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
                     
                 </li> */}
                  <li className="dropdown">
-                    <Link to="/portfolio" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>About</Link>
+                    <Link to="/about-us" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>About</Link>
                 </li>
                 <li className="dropdown">
-                    <Link to="#" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Marketing</Link>
+                    <Link to="/marketing" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Marketing</Link>
                     <ul className="dropdown-menu">
                         <li><Link to="/local-seo">Local SEO</Link></li>
                         <li><Link to="/ecommerce-seo">Ecommerce SEO</Link></li>
@@ -29,7 +29,7 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
                     </ul>
                 </li>
                 <li className="dropdown">
-                    <Link to="#" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Development</Link>
+                    <Link to="/development" className="dropdown-toggle" data-toggle="dropdown" onClick={toggleSubMenu}>Development</Link>
                     <ul className="dropdown-menu">
                         <li><Link to="/shopify-development">Shopify</Link></li>
                         <li><Link to="/woocommerce-development">Woo Commerce</Link></li>
@@ -44,9 +44,6 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
                 </li>
                 <li className="dropdown">
                     <Link to="/portfolio" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>Portfolio</Link>
-                </li>
-                <li className="dropdown">
-                    <Link to="#" className=" active" data-toggle="dropdown" onClick={toggleSubMenu}>Case Studies</Link>
                 </li>
                 <li><Link to="/contact-us">contact</Link></li>
             </ul>

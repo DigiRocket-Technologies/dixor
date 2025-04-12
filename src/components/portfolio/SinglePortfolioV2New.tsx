@@ -10,9 +10,9 @@ interface DataType {
 }
 
 const SinglePortfolioV2New = ({ portfolio }: { portfolio: DataType }) => {
-    const { id, thumb, tag, date, text } = portfolio
+    const { id, thumb, tag, text } = portfolio
 
-    const containerRef = useLeftRightAnimation()
+    const containerRef = useLeftRightAnimation();
 
     return (
         <>
@@ -25,7 +25,7 @@ const SinglePortfolioV2New = ({ portfolio }: { portfolio: DataType }) => {
                         <div className="content">
                             <div className="pf-tags">
                                 <span>{tag}</span>
-                                <span>{date}</span>
+                            
                             </div>
                             <h2>{text}</h2>
                         </div>

@@ -54,7 +54,6 @@ const FooterV4 = ({ sectionClass, lightMode }: DataType) => {
                                         </li>
                                     </ul>
                                 </div>
-
                             </div>
                             <div className="col-lg-5 offset-lg-1 footer-item">
                                 <h4 className="widget-title">Useful Link</h4>

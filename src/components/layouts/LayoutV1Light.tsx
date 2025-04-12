@@ -1,4 +1,4 @@
-import FooterV4 from "../footer/FooterV4";
+import FooterV1 from "../footer/FooterV1";
 import HeaderV1 from "../header/HeaderV1";
 
 interface LayoutProps {
@@ -12,7 +12,7 @@ const LayoutV1Light = ({ children }: LayoutProps) => {
             <div className="smooth-scroll-container">
                 <HeaderV1 lightMode={true}/>
                 {children}
-                <FooterV4 lightMode={true} sectionClass='bg-gray' />
+                <FooterV1 lightMode={true} sectionClass='bg-gray' />
             </div>
         </>
     );

@@ -9,64 +9,87 @@ import useScrollAnimation from "../../hooks/useScrollAnimation";
 import { useState } from "react";
 
 interface DataType {
-    lightMode?: boolean;
-    sectionClass?: string;
+  lightMode?: boolean;
+  sectionClass?: string;
 }
 
 const AboutV6 = ({ lightMode, sectionClass }: DataType) => {
-    const containerRef = useScrollAnimation();
+  const containerRef = useScrollAnimation();
 
-    const [activeServiceId, setActiveServiceId] = useState(ServiceListData[0]?.id || null);
+  const [activeServiceId, setActiveServiceId] = useState(
+    ServiceListData[0]?.id || null
+  );
 
-    const handleMouseEnter = (id: number) => {
-        setActiveServiceId(id);
-    };
+  const handleMouseEnter = (id: number) => {
+    setActiveServiceId(id);
+  };
 
-    const handleMouseLeave = () => {
-        // Do nothing on mouse leave to keep the active item
-    };
+  const handleMouseLeave = () => {
+    // Do nothing on mouse leave to keep the active item
+  };
 
-    return (
-        <>
-            <div className={`about-style-six-area default-padding ${sectionClass ? sectionClass : ""}`}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-5 col-lg-5">
-                            <div className="thumb-style-four">
-                                <img src={lightMode ? thumb12 : thumb2} alt="Image Not Found" />
-                            </div>
-                        </div>
-                        <div className="col-xl-6 offset-xl-1 col-lg-7">
-                            <div className="about-style-six-info text-scroll-animation" ref={containerRef}>
-                                <div className="info">
-                                    <div className="d-flex">
-                                        <Link to="/about-us"><img src={lightMode ? arrowTheme : arrowIcon} alt="Image Not Found" /></Link>
-                                        <h2 className="title text">Best creative & digital agency</h2>
-                                    </div>
-                                    <p className="text">
-                                        Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably
-                                    </p>
-                                </div>
-                                <ul className="service-list">
-                                    {ServiceListData.map(service =>
-                                        <li
-                                            key={service.id}
-                                            onMouseEnter={() => handleMouseEnter(service.id)}
-                                            onMouseLeave={handleMouseLeave}
-                                        >
-                                            <Link to="/services" className={`${activeServiceId === service.id ? 'active' : ''}`}>
-                                                <ServiceList service={service} />
-                                            </Link>
-                                        </li>
-                                    )}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <>
+      <div
+        className={`about-style-six-area default-padding ${
+          sectionClass ? sectionClass : ""
+        }`}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-5 col-lg-5">
+              <div className="thumb-style-four">
+                <img src={lightMode ? thumb12 : thumb2} alt="Image Not Found" />
+              </div>
             </div>
-        </>
-    );
+            <div className="col-xl-6 offset-xl-1 col-lg-7">
+              <div
+                className="about-style-six-info text-scroll-animation"
+                ref={containerRef}
+              >
+                <div className="info">
+                  <div className="d-flex">
+                    <Link to="/about-us">
+                      <img
+                        src={lightMode ? arrowTheme : arrowIcon}
+                        alt="Image Not Found"
+                      />
+                    </Link>
+                    <h2 className="title text">
+                      Best creative & digital agency
+                    </h2>
+                  </div>
+                  <p className="text">
+                    With over three years of industry experience and a proven
+                    track record of working with 200+ clients, we have become a
+                    trusted partner in turning visions into powerful brands.
+                  </p>
+                </div>
+                <ul className="service-list">
+                  {ServiceListData.map((service) => (
+                    <li
+                      key={service.id}
+                      onMouseEnter={() => handleMouseEnter(service.id)}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <Link
+                        to="/services"
+                        className={`${
+                          activeServiceId === service.id ? "active" : ""
+                        }`}
+                      >
+                        <ServiceList service={service} />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default AboutV6;

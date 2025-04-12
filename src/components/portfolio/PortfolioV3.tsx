@@ -1,19 +1,19 @@
 import PortfolioV3Data from '../../../src/assets/jsonData/portfolio/PortfolioV3Data.json';
 import SinglePortfolioV3 from './SinglePortfolioV3';
-import SplitText from "../animation/SplitText.jsx"
+// import SplitText from "../animation/SplitText.jsx"
 
 interface DataType {
     hasTitle?: boolean;
     sectionClass?: string;
 }
 
-const PortfolioV3 = ({ hasTitle, sectionClass }: DataType) => {
+const PortfolioV3 = ({sectionClass }: DataType) => {
     return (
         <>
             <div className={`portfolio-style-three-area ${sectionClass ? sectionClass : ""}`}>
 
                 {/* Portfolio Title  */}
-                {hasTitle &&
+                {/* {hasTitle &&
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-7 offset-lg-3">
@@ -35,7 +35,7 @@ const PortfolioV3 = ({ hasTitle, sectionClass }: DataType) => {
                             </div>
                         </div>
                     </div>
-                }
+                } */}
 
                 <div className="container">
                     <div className="portfolio-style-three-items">

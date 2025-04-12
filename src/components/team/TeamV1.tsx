@@ -111,7 +111,7 @@ const TeamV1 = ({ sectionClass, hasTitle }: DataType) => {
                                             modules={[Keyboard]}
                                         >
                                             <div className="swiper-wrapper">
-                                                {TeamV1Data.slice(3, 7).map(team =>
+                                                {TeamV1Data.slice(3, 9).map(team =>
                                                     <SwiperSlide key={team.id}>
                                                         <SingleTeamV1 team={team} />
                                                     </SwiperSlide>
@@ -135,13 +135,13 @@ const TeamV1 = ({ sectionClass, hasTitle }: DataType) => {
                                             }}
                                             modules={[Keyboard]}
                                         >
-                                            <div className="swiper-wrapper">
+                                           
                                                 {TeamV1Data.slice(6, 10).map(team =>
                                                     <SwiperSlide key={team.id}>
                                                         <SingleTeamV1 team={team} />
                                                     </SwiperSlide>
                                                 )}
-                                            </div>
+                                          
                                         </Swiper>
                                     </div>
                                 </div>

@@ -1,4 +1,4 @@
-import Animate from '../animation/Animate';
+// import Animate from '../animation/Animate';
 import thumb3 from '/assets/img/thumb/3.jpg';
 
 interface DataType {
@@ -21,7 +21,14 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                                 <div className="pl-80 pl-md-0 pl-xs-0">
                                     <h4 className="sub-title">Client Commitment</h4>
                                     <h2 className="title">Unlock Revenue Growth</h2>
-                                    <div className="faq-style-one accordion mt-30" id="faqAccordion">
+                                    <div>We are dedicated to providing outstanding service and helping our clients achieve their goals.We are dedicated to providing outstanding service and helping our clients achieve their goals.
+                                    We are dedicated to providing outstanding service and helping our clients achieve their goals.
+                                    We are dedicated to providing outstanding service and helping our clients achieve their goals.
+                                    We are dedicated to providing outstanding service and helping our clients achieve their goals.
+                                    We are dedicated to providing outstanding service and helping our clients achieve their goals.
+
+                                    </div>
+                                    {/* <div className="faq-style-one accordion mt-30" id="faqAccordion">
                                         <div className="accordion-item">
                                             <h2 className="accordion-header" id="headingOne">
                                                 <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -70,9 +77,9 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
-                                <div className="award-items">
+                                {/* <div className="award-items">
                                     <Animate className='animate__animated animate__fadeInLeft'>
                                         <div className="award-item">
                                             <i className="fab fa-behance" />
@@ -93,7 +100,7 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                                             <h4>Coding Awards</h4>
                                         </div>
                                     </Animate>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

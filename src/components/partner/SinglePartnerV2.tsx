@@ -6,14 +6,12 @@ interface DataType {
 }
 
 const SinglePartnerV2 = ({ partner }: { partner: DataType }) => {
-    const { category, thumb, website } = partner
+    const { thumb } = partner
 
     return (
         <>
-            <div className="partner-two-item">
-                <h5>{category}</h5>
-                <img src={`/assets/img/brand/${thumb}`} alt="Image Not Found" width={350} height={100} />
-                <h4>{website}</h4>
+            <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} className="partner-two-item">
+                <img src={`/assets/img/brand/${thumb}`} alt="Image Not Found" width={350} height={100}  />
             </div>
         </>
     );

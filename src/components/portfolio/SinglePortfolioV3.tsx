@@ -9,8 +9,7 @@ interface DataType {
 }
 
 const SinglePortfolioV3 = ({ portfolio }: { portfolio: DataType }) => {
-    const { id, thumb, date, titleFirst, titleLast } = portfolio
-
+    const { id, thumb, titleFirst, titleLast } = portfolio
     return (
         <>
             <div className="portfolio-style-three-item">
@@ -19,8 +18,8 @@ const SinglePortfolioV3 = ({ portfolio }: { portfolio: DataType }) => {
                         <img src={`/assets/img/portfolio/${thumb}`} alt="Image Not Found" width={800} height={600} />
                     </div>
                     <div className="col-lg-5">
-                        <div className="date">{date}</div>
-                        <h2><Link to={`/project-details/${id}`}>{titleFirst} <strong>{titleLast}</strong></Link></h2>
+                        {/* <div className="date">{date}</div> */}
+                        <h2 style={{fontSize:"80px"}}><Link to={`/project-details/${id}`}>{titleFirst} <strong>{titleLast}</strong></Link></h2>
                         <Link className="btn-animation mt-10" to={`/project-details/${id}`}>
                             <i className="fas fa-arrow-right" />
                             <span>See Details</span>

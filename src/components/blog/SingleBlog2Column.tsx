@@ -18,22 +18,13 @@ const SingleBlog2Column = ({ blog }: { blog: DataType }) => {
                     <Link to={`/blog-single-with-sidebar/${id}`}>
                         <img src={`/assets/img/blog/${thumb}`} width={800} height={600} alt="Thumb" />
                     </Link>
+                     <h2>{author}  {date}</h2>
+                    
                     <div className="info">
-                        <div className="meta">
-                            <ul>
-                                <li>
-                                    <Link to="#">{author}</Link>
-                                </li>
-                                <li>{date}</li>
-                            </ul>
-                        </div>
                         <h2 className="post-title">
                             <Link to={`/blog-single-with-sidebar/${id}`}>{title}</Link>
                         </h2>
-                        <Link to={`/blog-single-with-sidebar/${id}`} className="button-regular">
-                            Continue Reading
-                            <i className="fas fa-long-arrow-right" />
-                        </Link>
+                        <div style={{textAlign:"center"}}>1</div>
                     </div>
                 </div>
             </div>

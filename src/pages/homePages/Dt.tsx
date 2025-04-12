@@ -62,7 +62,7 @@ import BannerV8 from "../../components/banner/BannerV8";
 import PartnerV2 from "../../components/partner/PartnerV2";
 // import WhyChooseV1 from "../../components/whyChoose/WhyChooseV1";
 // import WhyChooseV2 from "../../components/whyChoose/WhyChooseV2";
-import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3";
+// import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3";
 
 const dt = () => {
   return (
@@ -173,7 +173,7 @@ const dt = () => {
         <p>Why Choose V2</p>
         <WhyChooseV2/>
         <p>Why Choose V3</p> */}
-        <WhyChooseV3/>
+        {/* <WhyChooseV3/> */}
 
 
         {/* <p>About 1</p>

@@ -52,7 +52,6 @@ const Blog2ColumnContent = ({ sectionClass }: DataType) => {
                             </div>
                         )}
                     </div>
-
                     {/* Pagination */}
                     <div className="row">
                         <div className="col-md-12 pagi-area text-center">

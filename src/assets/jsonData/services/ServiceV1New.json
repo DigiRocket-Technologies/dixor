@@ -87,9 +87,9 @@
   },
   {
     "id": "performance-marketing",
-    "bannerImg":"/assets/img/banner/6.jpg",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "bannerImg":"/assets/img/banner/pm-banner.jpg",
+    "img1":"/assets/img/services/pm-1.png",
+    "img2":"/assets/img/services/pm-2.png",
     "type": "marketing",
     "icon": "1.png",
     "iconLight": "23.png",
