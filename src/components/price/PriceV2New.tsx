@@ -35,7 +35,8 @@ const PriceV2New = ({ pricing }:pricingProps) => {
     <>
       <div
         id="pricing"
-        className="pricing-style-two-area default-padding bottom-less "
+        style={{marginTop:"40px"}}
+        className="pricing-style-two-area  bottom-less "
       >
         <div className="container">
           <div className="row">

@@ -143,11 +143,6 @@ const dt = () => {
         {/* <p>Price 3</p> */}
         {/* <PriceV3 /> */}
 
-
-        
-
-
-
         {/* <p>Blog 1</p> */}
         {/* <BlogV1 sectionClass="bg-gray" /> */}
         
@@ -191,8 +186,6 @@ const dt = () => {
         {/* <p>About 7</p>
         <AboutV7/> */}
 
-
-
         {/* <p>Team 1</p>
         <TeamV1/>
         <p>Team 2</p>
@@ -200,13 +193,10 @@ const dt = () => {
         <p>Team 3</p>
         <TeamV3/> */}
 
-
         {/* <p>Acheivement and Awards</p>
         <AchievementAward/>
         <AwardV1/> */}
 
-
-        
         <FooterV1 />
         
         

@@ -13,9 +13,9 @@ const SingleTeamV2 = ({ team }: { team: DataType }) => {
     return (
         <>
             <div className="team-style-two-item">
-                <div className="thumb">
+                <div  className="thumb">
                     <img src={`/assets/img/team/${thumb}`} alt="Image Not Found" width={800} height={900} />
-                    <div className="share-link">
+                    <div  className="share-link">
                         <i className="fas fa-share-alt" />
                         <ul>
                             <li>

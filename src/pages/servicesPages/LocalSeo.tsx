@@ -1,9 +1,10 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import LayoutV1Light from "../../components/layouts/LayoutV1Light";
-import ServiceDetailsContentLight2 from "../../components/services/ServiceDetailsContentLight2";
 import ServicesV1Data from "../../assets/jsonData/services/ServiceV1New.json";
 import pricingInfo from "../../assets/jsonData/price/PriceV2New.json"
 import { Helmet } from "react-helmet-async";
+import LocalSeoContent from "../../components/services/LocalSeoContent";
+import DarkClass from "../../components/classes/DarkClass";
+import LayoutV1 from "../../components/layouts/LayoutV1";
 
 const LocalSeo = () => {
     const data = ServicesV1Data.find(service => service.id === "local-seo");
@@ -14,10 +15,11 @@ const LocalSeo = () => {
                 <title>Local SEO | DigiRocket Technologies</title>
             </Helmet>
             
-            <LayoutV1Light>
-                <Breadcrumb title='Local SEO' breadCrumb='Local SEO' LightMode={true} />
-                {data && <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
-            </LayoutV1Light>
+            <LayoutV1>
+                <Breadcrumb title='Local SEO' breadCrumb='Local SEO' LightMode={false}/>
+                {data && <LocalSeoContent serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
+                <DarkClass/>
+            </LayoutV1>
         </>
     );
 };

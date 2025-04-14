@@ -18035,3 +18035,15 @@ button.Toastify__close-button {
 #marketing li::marker{
 	color: black;
 }
+
+.bg-neon {
+	background-color: #C9F31D !important;
+  }
+  
+  .text-neon {
+	color: #C9F31D !important;
+  }
+  
+  .border-neon {
+	border-color: #C9F31D !important;
+  }
