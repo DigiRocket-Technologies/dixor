@@ -83,7 +83,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                     strong—your trusted partner in achieving lasting success in
                     a dynamic landscape
                   </p>
-                  <Link className="btn-animation mt-10" to="/about-2">
+                  <Link className="btn-animation mt-10" to="/about-us">
                     <i className="fas fa-arrow-right" /> <span>Know More</span>
                   </Link>
                 </div>

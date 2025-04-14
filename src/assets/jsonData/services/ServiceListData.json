@@ -1,17 +1,18 @@
 [
     {
         "id": 1,
-        "serviceName": "Marketing",
+        "serviceName": "Integrity",
         "count": "01"
     },
     {
         "id": 2,
-        "serviceName": "Development",
+        "serviceName": "Team Work",
         "count": "02"
     },
     {
         "id": 3,
-        "serviceName": "Dropshipping",
+        "serviceName": "Customer Commitment",
         "count": "03"
     }
 ]
+

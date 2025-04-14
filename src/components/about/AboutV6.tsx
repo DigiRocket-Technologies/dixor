@@ -1,7 +1,7 @@
 import thumb2 from "/assets/img/thumb/2.jpg";
 import thumb12 from "/assets/img/thumb/12.jpg";
-import arrowIcon from "/assets/img/icon/arrow.png";
-import arrowTheme from "/assets/img/icon/arrow-theme.png";
+// import arrowIcon from "/assets/img/icon/arrow.png";
+// import arrowTheme from "/assets/img/icon/arrow-theme.png";
 import ServiceListData from "../../../src/assets/jsonData/services/ServiceListData.json";
 import ServiceList from "../services/ServiceList";
 import { Link } from "react-router-dom";
@@ -49,20 +49,20 @@ const AboutV6 = ({ lightMode, sectionClass }: DataType) => {
               >
                 <div className="info">
                   <div className="d-flex">
-                    <Link to="/about-us">
+                    {/* <Link to="/about-us">
                       <img
                         src={lightMode ? arrowTheme : arrowIcon}
                         alt="Image Not Found"
                       />
-                    </Link>
+                    </Link> */}
                     <h2 className="title text">
-                      Best creative & digital agency
+                      {/* Best creative & digital agency */}
+                      Our Values
                     </h2>
                   </div>
                   <p className="text">
-                    With over three years of industry experience and a proven
-                    track record of working with 200+ clients, we have become a
-                    trusted partner in turning visions into powerful brands.
+                    At the core of DigiRocket Technologies lie values that guide
+                    our actions and shape our culture .
                   </p>
                 </div>
                 <ul className="service-list">
@@ -82,6 +82,7 @@ const AboutV6 = ({ lightMode, sectionClass }: DataType) => {
                       </Link>
                     </li>
                   ))}
+              
                 </ul>
               </div>
             </div>

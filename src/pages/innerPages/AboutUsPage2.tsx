@@ -4,7 +4,7 @@ import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import DarkClass from "../../components/classes/DarkClass";
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import TeamV1 from "../../components/team/TeamV1";
-import MultiSection from "../../components/multi/MultiSection";
+// import MultiSection from "../../components/multi/MultiSection";
 import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3";
 
 
@@ -19,7 +19,7 @@ const AboutUsPage2 = () => {
             <LayoutV1>
                 <Breadcrumb title='About Company' breadCrumb='About' />
                 <AboutV6 sectionClass='bg-gray' />
-                <MultiSection/>
+                {/* <MultiSection/> */}
                 <TeamV1 sectionClass='bg-gray' hasTitle={true} /> 
                 <WhyChooseV3/>
                 <DarkClass />

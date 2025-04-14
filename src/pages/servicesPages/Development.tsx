@@ -53,18 +53,9 @@ const Development = () => {
             </div>
           </div>
           <div className="mt-50 mt-xs-20">
-            <h1>The Future of Growth is Marketing </h1>
-            {/* <div className="row g-3 mt-4">
-              {features.map((feature, index) => (
-                <div key={index} className="col-12 col-sm-6 col-lg-3">
-                  <div className="text-white  p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
-                    <img src={feature.icon} style={{ width: "60px" }} alt="" />
-                    <h5 className="fw-bold mt-4">{feature.title}</h5>
-                    <p className="mb-0">{feature.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div> */}
+            <h1 style={{ marginBottom: "50px" }}>
+              Customized Development for Every Stage of Growth{" "}
+            </h1>
             <div className="container py-5">
               <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 {features.map((feature, index) => (
@@ -84,24 +75,23 @@ const Development = () => {
             </div>
           </div>
           <div style={{ marginTop: "50px" }}>
-            <h2>Smart Marketing Starts with the Right Answers</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus
-              eligendi, vel nisi eum saepe ea iste enim temporibus repellendus
-              culpa, molestias nobis tempore? At sint consequuntur laborum porro
-              saepe!
-            </p>
-            <div className={`blog-area blog-grid-colum `}>
+            <h2>Core Pillars of Our Development Solutions</h2>
+            {/* <div className={`blog-area blog-grid-colum `}>
               <div className="container">
-                <div className="row">
-                  <div className="col-lg-6 mb-50">
+                <div
+                  className="row"
+                  style={{ display: "flex", justifyContent: "center" }}
+                >
+                  <div
+                    className="col-lg-6 mb-50"
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
                     <div className="home-blog-style-one">
-                      <div className="thumb">
+                      <div className="thumb" style={{ margin: "auto" }}>
                         <Link to={`#`}>
                           <img
                             src={`/assets/img/blog/4.jpg`}
-                            width={800}
-                            height={600}
+                            style={{ width: "550px" }}
                             alt="Thumb"
                           />
                         </Link>
@@ -140,14 +130,16 @@ const Development = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6 mb-50">
+                  <div
+                    className="col-lg-6 mb-50"
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
                     <div className="home-blog-style-one">
-                      <div className="thumb">
+                      <div className="thumb" style={{ margin: "auto" }}>
                         <Link to={`#`}>
                           <img
                             src={`/assets/img/blog/4.jpg`}
-                            width={800}
-                            height={600}
+                            style={{ width: "550px" }}
                             alt="Thumb"
                           />
                         </Link>
@@ -186,14 +178,16 @@ const Development = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6 mb-50">
+                  <div
+                    className="col-lg-6 mb-50"
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
                     <div className="home-blog-style-one">
-                      <div className="thumb">
+                      <div className="thumb" style={{ margin: "auto" }}>
                         <Link to={`#`}>
                           <img
                             src={`/assets/img/blog/4.jpg`}
-                            width={800}
-                            height={600}
+                            style={{ width: "550px" }}
                             alt="Thumb"
                           />
                         </Link>
@@ -232,14 +226,16 @@ const Development = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6 mb-50">
+                  <div
+                    className="col-lg-6 mb-50"
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
                     <div className="home-blog-style-one">
-                      <div className="thumb">
+                      <div className="thumb" style={{ margin: "auto" }}>
                         <Link to={`#`}>
                           <img
                             src={`/assets/img/blog/4.jpg`}
-                            width={800}
-                            height={600}
+                            style={{ width: "550px" }}
                             alt="Thumb"
                           />
                         </Link>
@@ -249,7 +245,7 @@ const Development = () => {
                               Final Result
                             </Link>
                           </h2>
-                          {/* <div style={{ textAlign: "center" }}>4</div> */}
+                         
                           <div
                             style={{
                               display: "flex",
@@ -281,10 +277,65 @@ const Development = () => {
                   </div>
                 </div>
               </div>
+            </div> */}
+            <div  style={{marginTop:"50px",width:"100%"}}>
+              {[
+                {
+                  id: 1,
+                  title: "Project Research",
+                  img: "/assets/img/blog/4.jpg",
+                },
+                {
+                  id: 2,
+                  title: "Best Concept",
+                  img: "/assets/img/blog/4.jpg",
+                },
+                {
+                  id: 3,
+                  title: "Design Implement",
+                  img: "/assets/img/blog/4.jpg",
+                },
+                {
+                  id: 4,
+                  title: "Final Result",
+                  img: "/assets/img/blog/4.jpg",
+                },
+              ].map((item, index) => (
+                <div
+                  key={item.id}
+                  
+                  className={`w-100 d-flex flex-column flex-lg-row ${
+                    index % 2 !== 0 ? "flex-lg-row-reverse" : ""
+                  }  mb-5`}
+                >
+                  {/* Image */}
+                  <div className="w-100 w-lg-50 text-center p-2">
+                    <img
+                      src={item.img}
+                      alt="Blog"
+                      className="img-fluid"
+                      style={{ maxWidth: "500px",height:"300px" ,width: "100%" }}
+                    />
+                  </div>
+
+                  {/* Text */}
+                  <div className="w-100 w-lg-50 p-4 text-center">
+                    <h2 className="post-title">
+                      <Link to={`/blog-single-with-sidebar`}>{item.title}</Link>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod unde omnis est eius corrupti, odit vero fuga
+                      accusantium cum expedita debitis velit assumenda quidem.
+                      Facilis suscipit neque ullam numquam fugiat.
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div style={{ marginTop: "50px" }}>
-            <h2>What we bring to the table .</h2>
+            <h2>Explore Our Services</h2>
             <div className="container">
               <div className={`portfolio-style-three-area`}>
                 <div className="portfolio-style-three-item">
@@ -328,7 +379,7 @@ const Development = () => {
                       {/* <div className="date">{date}</div> */}
                       <h2 style={{ fontSize: "80px" }}>
                         <Link to={`/woocommerce-development`}>
-                          WooCommerce  <strong>  Development</strong>
+                          WooCommerce <strong> Development</strong>
                         </Link>
                       </h2>
                       <Link
@@ -435,9 +486,7 @@ const Development = () => {
                     <div className="col-lg-5">
                       {/* <div className="date">{date}</div> */}
                       <h2 style={{ fontSize: "80px" }}>
-                        <Link to={`/wordpress-development`}>
-                          Wordpress
-                        </Link>
+                        <Link to={`/wordpress-development`}>Wordpress</Link>
                       </h2>
                       <Link
                         className="btn-animation mt-10"
