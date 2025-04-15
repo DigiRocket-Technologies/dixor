@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "thumb": "/shubhsir shoot.png",
+    "name": "Shubhranshu Srivastava",
+    "designation": "Founder, Director & CEO",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 2,
+    "thumb": "15.jpg",
+    "name": "Sunny Kumar",
+    "designation": "Co-Founder, Director & COO",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 3,
+    "thumb": "16.jpg",
+    "name": "Apoorv Dwivedi",
+    "designation": "Chief Technology Officer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 4,
+    "thumb": "16.jpg",
+    "name": "Sidharth Anant Shiv",
+    "designation": "Assistant Director",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 5,
+    "thumb": "/upasana shoot.png",
+    "name": "Sidharth Anant Shiv",
+    "designation": "Assistant Director",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 6,
+    "thumb": "/akriti mam shoot 2.png",
+    "name": "Sidharth Anant Shiv",
+    "designation": "Assistant Director",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 7,
+    "thumb": "shudanshu shoot.png",
+    "name": "Sidharth Anant Shiv",
+    "designation": "Assistant Director",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 8,
+    "thumb": "vaishnavi shoot.png",
+    "name": "Sidharth Anant Shiv",
+    "designation": "Assistant Director",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  }
+]

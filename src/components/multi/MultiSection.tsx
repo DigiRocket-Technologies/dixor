@@ -5,9 +5,10 @@ import WhyChooseV1 from "../whyChoose/WhyChooseV1";
 
 const MultiSection = () => {
     useHorizontalScroll();
+
     return (
         <>
-            <div  className="multi-section overflow-hidden">
+            <div className="multi-section overflow-hidden">
                 <div className="thecontainer">
                     <div className="panel overflow-hidden">
                         <WhyChooseV1 />

@@ -1,4 +1,4 @@
-import thumb2 from "/assets/img/thumb/2.jpg";
+import thumb2 from "/assets/img/about/values.png";
 import thumb12 from "/assets/img/thumb/12.jpg";
 // import arrowIcon from "/assets/img/icon/arrow.png";
 // import arrowTheme from "/assets/img/icon/arrow-theme.png";
@@ -35,11 +35,12 @@ const AboutV6 = ({ lightMode, sectionClass }: DataType) => {
           sectionClass ? sectionClass : ""
         }`}
       >
-        <div className="container">
+        <div style={{width:"95%"}} className="container">
           <div className="row">
             <div className="col-xl-5 col-lg-5">
               <div className="thumb-style-four">
-                <img src={lightMode ? thumb12 : thumb2} alt="Image Not Found" />
+
+                <img  src={lightMode ? thumb12 : thumb2} alt="Image Not Found" />
               </div>
             </div>
             <div className="col-xl-6 offset-xl-1 col-lg-7">

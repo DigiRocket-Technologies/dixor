@@ -3,19 +3,18 @@ import AboutV6 from "../../components/about/AboutV6";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import DarkClass from "../../components/classes/DarkClass";
 import LayoutV1 from "../../components/layouts/LayoutV1";
-// import TeamV1 from "../../components/team/TeamV1";
+
 import SplitText from "../../components/animation/SplitText.jsx";
-import TeamV2Data from "../../../src/assets/jsonData/team/TeamV2Data.json";
-// import MultiSection from "../../components/multi/MultiSection";
+import TeamV2Data from "../../../src/assets/jsonData/team/TeamNew.json";
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import SocialShareV1 from "../../components/social/SocialShareV1.js";
-// import Animate from "../../components/animation/Animate";
-// import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3";
+
 import SingleTeamV2 from "../../components/team/SingleTeamV2.js";
 import thumb3 from "/assets/img/thumb/3.jpg";
 import { Keyboard } from "swiper/modules";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useState } from "react";
+// import SocialShareNew from "../../components/social/SocialShareNew.js";
 
 const AboutUsPage2 = () => {
   const [selectedIndustry, setSelectedIndustry] = useState("Textile Printing");
@@ -352,34 +351,6 @@ const AboutUsPage2 = () => {
 
           <div style={{ padding: "40px 0px" }}>
             <h1 className="text-center">Key People</h1>
-            {/* <div>
-              <div className="team-style-one-item">
-                <div className="thumb">
-                  <Link to={`/team-details/`}>
-                    <img
-                      src={`/assets/img/team/1.jpg"`}
-                      alt="Image Not Found"
-                      width={300}
-                      height={315}
-                    />
-                  </Link>
-                  <div className="social-overlay">
-                    <ul>
-                      <SocialShareV1 />
-                    </ul>
-                    <div className="icon">
-                      <i className="fas fa-plus" />
-                    </div>
-                  </div>
-                </div>
-                <div className="info">
-                  <h4>
-                    <Link to={`/team-details/`}>name</Link>
-                  </h4>
-                  <span>designation</span>
-                </div>
-              </div>
-            </div> */}
             <div
               className="team-grid"
               style={{
@@ -390,7 +361,7 @@ const AboutUsPage2 = () => {
                 justifyItems: "center",
               }}
             >
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((_, idx) => (
+              {TeamV2Data.slice(4).map((item, idx) => (
                 <div
                   key={idx}
                   className="team-style-one-item"
@@ -401,29 +372,24 @@ const AboutUsPage2 = () => {
                   }}
                 >
                   <div className="thumb">
-                    <Link to={`/team-details/`}>
-                      <img
-                        src={`/assets/img/team/1.jpg`}
-                        alt="Image Not Found"
-                        width={300}
-                        height={315}
-                        className="img-fluid"
-                      />
-                    </Link>
-                    <div className="social-overlay">
+                    <img
+                      src={`/assets/img/team/${item.thumb}`}
+                      alt="Image Not Found"
+                      width={300}
+                      height={315}
+                      className="img-fluid"
+                    />
+                    {/* <div className="social-overlay">
                       <ul>
-                        <SocialShareV1 />
+                        <SocialShareNew social={item.social}/>
                       </ul>
                       <div className="icon">
                         <i className="fas fa-plus" />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="info mt-3">
-                    <h4>
-                      <Link to={`/team-details/`}>Name</Link>
-                    </h4>
-                    <span>Designation</span>
+                    <h4>Name</h4>
                   </div>
                 </div>
               ))}

@@ -32,7 +32,6 @@ interface PricingPlan {
   currency: string;
   billingCycle: string;
 }
-
 interface PricingDataType {
   serviceId?: string;
   monthlyPlans?: PricingPlan[];
@@ -45,7 +44,7 @@ interface ServiceDetailsProps {
   pricing?: PricingDataType;
 }
 
-const LocalSeoContent = ({
+const EcommerceSeoContent = ({
   serviceInfo,
   sectionClass,
   pricing,
@@ -62,6 +61,7 @@ const LocalSeoContent = ({
     importance,
     importance_title,
   } = serviceInfo || {};
+
   const images = [
     "/assets/img/partner/sp.png",
     "/assets/img/partner/cloud.png",
@@ -70,6 +70,7 @@ const LocalSeoContent = ({
     "/assets/img/partner/sp.png",
     "/assets/img/partner/sp.png",
   ];
+  
   return (
     <>
       <div
@@ -145,6 +146,7 @@ const LocalSeoContent = ({
                 </div>
               </div>
             </div>
+
             <div className="row mt-80 mt-xs-50 gallery-two-columns">
               <div className="col-md-6">
                 <img src={img1} alt="Image Not Found" />
@@ -255,7 +257,7 @@ const LocalSeoContent = ({
                 </div>
               </div>
               <div className="item">
-                <h2>Why Choose Us?</h2>
+                <h2>What we do?</h2>
                 <p>{whyChooseP1}</p>
                 <p>{whyChooseP2}</p>
               </div>
@@ -290,4 +292,4 @@ const LocalSeoContent = ({
   );
 };
 
-export default LocalSeoContent;
+export default EcommerceSeoContent;

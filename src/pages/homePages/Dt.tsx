@@ -37,7 +37,7 @@ import AboutV2 from "../../components/about/AboutV2";
 // import AboutV3 from "../../components/about/AboutV3";
 // import AboutV4 from "../../components/about/AboutV4";
 // import AboutV5 from "../../components/about/AboutV5";
-import AboutV6 from "../../components/about/AboutV6";
+
 // import AboutV7 from "../../components/about/AboutV7";
 // import TeamV1 from "../../components/team/TeamV1";
 // import TeamV2 from "../../components/team/TeamV2";
@@ -60,6 +60,7 @@ import BannerV8 from "../../components/banner/BannerV8";
 // import ContactMap from "../../components/map/ContactMap";
 // import NewsletterV2 from "../../components/newsletter/NewsletterV2";
 import PartnerV2 from "../../components/partner/PartnerV2";
+import ServicesV2 from "../../components/services/ServicesV2";
 // import WhyChooseV1 from "../../components/whyChoose/WhyChooseV1";
 // import WhyChooseV2 from "../../components/whyChoose/WhyChooseV2";
 // import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3";
@@ -81,12 +82,11 @@ const dt = () => {
        
         {/* <p>About 2</p> */}
         <AboutV2 />
-
+        <ServicesV2/>
         {/* <p>Brand 1</p> */}
         {/* <BrandV1/> */}
         {/* <p>Brand 2</p> */}
         {/* <BrandV2/> */}
-        <AboutV6 />
         {/* <p>Focus/Service 1 Preferred</p> */}
         <ServicesV1 sectionClass="default-padding bg-gray" hasTitle={true} />
         {/* <p>Focus/Service 2 PREFFERED TILL NOW</p> */}

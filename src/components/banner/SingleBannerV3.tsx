@@ -10,7 +10,7 @@ interface DataType {
 
 
 const SingleBannerV3 = ({ banner }: { banner: DataType }) => {
-    const { id, tag, title, } = banner
+    const { id, title, } = banner
 
     return (
         <>
@@ -39,8 +39,8 @@ const SingleBannerV3 = ({ banner }: { banner: DataType }) => {
                     </div>
                     <div className="content">
                         <div className="content-info">
-                            <span>{tag}</span>
-                            <h2>{title}</h2>
+                            {/* <span>{tag}</span> */}
+                            <h2 style={{marginTop:"10px"}}>{title}</h2>
                         </div>
                     </div>
                 </Link>

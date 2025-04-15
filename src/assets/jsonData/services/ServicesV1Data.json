@@ -3,7 +3,7 @@
     "id": 1,
     "icon": "1.png",
     "iconLight": "23.png",
-    "title": "Digital Marketing",
+    "title": "SXO",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "activeClass": ""
   },
@@ -11,15 +11,15 @@
     "id": 2,
     "icon": "2.png",
     "iconLight": "24.png",
-    "title": "Mobile App & Web Development",
+    "title": "Website And Tool Development",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
-    "activeClass": "active"
+    "activeClass": ""
   },
   {
     "id": 3,
     "icon": "3.png",
     "iconLight": "25.png",
-    "title": "Dropshipping",
+    "title": "Performance Marketing",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "activeClass": ""
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "icon": "4.png",
     "iconLight": "26.png",
-    "title": "Artificial Intelligence",
+    "title": "Social Media Marketing",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "activeClass": ""
   }

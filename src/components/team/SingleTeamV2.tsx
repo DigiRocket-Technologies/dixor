@@ -14,11 +14,11 @@ const SingleTeamV2 = ({ team }: { team: DataType }) => {
         <>
             <div className="team-style-two-item">
                 <div  className="thumb">
-                    <img src={`/assets/img/team/${thumb}`} alt="Image Not Found" width={800} height={900} />
+                    <img src={`/assets/img/team/${thumb}`} className="img-fluid" alt="Image Not Found" width={800} height={900} />
                     <div  className="share-link">
                         <i className="fas fa-share-alt" />
                         <ul>
-                            <li>
+                            {/* <li>
                                 <Link className="facebook" to="https://www.facebook.com/" target="_blank">
                                     <i className="fab fa-facebook-f" />
                                 </Link>
@@ -27,7 +27,7 @@ const SingleTeamV2 = ({ team }: { team: DataType }) => {
                                 <Link className="youtube" to="https://www.youtube.com" target="_blank">
                                     <i className="fab fa-youtube" />
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link className="linkedin" to="https://www.linkedin.com/" target="_blank">
                                     <i className="fab fa-linkedin-in" />

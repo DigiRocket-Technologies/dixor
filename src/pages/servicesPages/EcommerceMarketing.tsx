@@ -1,9 +1,11 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import LayoutV1Light from "../../components/layouts/LayoutV1Light";
-import ServiceDetailsContentLight2 from "../../components/services/ServiceDetailsContentLight2";
+import LayoutV1 from "../../components/layouts/LayoutV1";
+
 import ServicesV1Data from "../../assets/jsonData/services/ServiceV1New.json";
 import pricingInfo from "../../assets/jsonData/price/PriceV2New.json"
 import { Helmet } from "react-helmet-async";
+import EcommerceMarketingContent from "../../components/services/EcommerceMarketingContent";
+import DarkClass from "../../components/classes/DarkClass";
 
 const EcommerceMarketing = () => {
     const data = ServicesV1Data.find(service => service.id === "ecommerce-marketing")
@@ -15,10 +17,11 @@ const EcommerceMarketing = () => {
                 <title>Ecommerce Marketing | DigiRocket Technologies</title>
             </Helmet>
             
-            <LayoutV1Light>
-                <Breadcrumb title='Ecommerce Marketing' breadCrumb='Ecommerce Marketing' LightMode={true} />
-                {data && <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
-            </LayoutV1Light>
+            <LayoutV1>
+                <Breadcrumb title='Ecommerce Marketing' breadCrumb='Ecommerce Marketing' LightMode={false} />
+                {data && <EcommerceMarketingContent serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
+                <DarkClass/>
+            </LayoutV1>
         </>
     );
 };

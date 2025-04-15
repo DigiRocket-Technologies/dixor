@@ -8710,15 +8710,15 @@ a.btn-circle:hover strong {
 	z-index: 1;
 }
 
-.team-style-one-item .thumb a>img {
+.team-style-one-item .thumb img {
 	transition: all 0.35s ease-in-out;
 }
 
-.bg-dark .team-style-one-item .thumb a>img {
+.bg-dark .team-style-one-item .thumb img {
 	filter: grayscale(1);
 }
 
-.bg-dark .team-style-one-item:hover .thumb a>img {
+.bg-dark .team-style-one-item:hover .thumb img {
 	filter: grayscale(0);
 }
 
@@ -9036,6 +9036,15 @@ a.btn-circle:hover strong {
 .team-style-two-item .share-link li a img {
 	background: #1DA1F2;
 	padding: 10px;
+}
+
+.team-style-two-item .thumb > img {
+	filter: grayscale(1);
+	transition: 0.3s;
+}
+
+.team-style-two-item .thumb>img:hover {
+	filter: grayscale(0);
 }
 
 .team-carousel.swiper .swiper-pagination {
@@ -18047,3 +18056,22 @@ button.Toastify__close-button {
   .border-neon {
 	border-color: #C9F31D !important;
   }
+
+  .swiper-slide {
+	height: 100%;
+	display: flex;
+  }
+  
+  .feature-card {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 300px; /* Adjust based on your design */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+	box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  }
+  

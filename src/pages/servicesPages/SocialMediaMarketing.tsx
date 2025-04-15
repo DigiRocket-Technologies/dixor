@@ -1,9 +1,10 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import LayoutV1Light from "../../components/layouts/LayoutV1Light";
-import ServiceDetailsContentLight2 from "../../components/services/ServiceDetailsContentLight2";
+import LayoutV1 from "../../components/layouts/LayoutV1";
 import ServicesV1Data from "../../assets/jsonData/services/ServiceV1New.json";
 import pricingInfo from "../../assets/jsonData/price/PriceV2New.json"
 import { Helmet } from "react-helmet-async";
+import SocialMediaMarketingContent from "../../components/services/SocialMediaMarketingContent";
+import DarkClass from "../../components/classes/DarkClass";
 
 const LocalSeo = () => {
     const data = ServicesV1Data.find(service => service.id === "social-media-marketing");
@@ -14,10 +15,11 @@ const LocalSeo = () => {
                 <title>Social Media Marketing | DigiRocket Technologies</title>
             </Helmet>
             
-            <LayoutV1Light>
-                <Breadcrumb title='Social Media Marketing' breadCrumb='Social Media Marketing' LightMode={true} />
-                {data && <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
-            </LayoutV1Light>
+            <LayoutV1>
+                <Breadcrumb title='Social Media Marketing' breadCrumb='Social Media Marketing' LightMode={false} />
+                {data && <SocialMediaMarketingContent serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
+                <DarkClass/>
+            </LayoutV1>
         </>
     );
 };

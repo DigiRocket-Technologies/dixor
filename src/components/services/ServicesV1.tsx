@@ -57,19 +57,20 @@ const ServicesV1 = ({ hasTitle, sectionClass, lightMode }: DataType) => {
                         <div className="row">
                             {ServicesV1Data.map((service) => (
                                 <div
+                                    
                                     className="col-xl-3 col-lg-6 col-md-6 single-item"
                                     key={service.id}
                                     onMouseEnter={() => handleMouseEnter(service.id)}
                                     onMouseLeave={handleMouseLeave}
                                 >
-                                    <div className={`services-style-one-item ${activeServiceId === service.id ? 'active' : ''}`}>
+                                    <div style={{minHeight:"500px"}} className={`services-style-one-item ${activeServiceId === service.id ? 'active' : ''}`}>
                                         <div className="icon">
                                             {lightMode ?
                                                 <img src={`/assets/img/icon/${service.iconLight}`} alt="Image Not Found" width={75} height={60} /> :
                                                 <img src={`/assets/img/icon/${service.icon}`} alt="Image Not Found" width={75} height={60} />
                                             }
                                         </div>
-                                        <h4>
+                                        <h4 >
                                             <Link to={`/service-details/${service.id}`}>{service.title}</Link>
                                         </h4>
                                         <p>{service.text}</p>
