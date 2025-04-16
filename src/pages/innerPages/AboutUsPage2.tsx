@@ -389,7 +389,8 @@ const AboutUsPage2 = () => {
                     </div> */}
                   </div>
                   <div className="info mt-3">
-                    <h4>Name</h4>
+                    <h4>{item?.name}</h4>
+                    <span>{item?.designation}</span>
                   </div>
                 </div>
               ))}

@@ -90,7 +90,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
               </div>
             </div>
             <div className="col-xl-4 offset-xl-1">
-              <div style={{marginTop:"150px",padding:"0"}} className="card-style-one">
+              <div style={{marginTop:"150px",paddingTop:"0",paddingBottom:"0"}} className="card-style-one">
                 <div className="bottom" style={{gap:"0",justifyContent:"space-evenly"}}>
                   <div className="fun-fact">
                     <div className="counter">

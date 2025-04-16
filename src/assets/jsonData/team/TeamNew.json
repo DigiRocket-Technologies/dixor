@@ -42,8 +42,8 @@
   {
     "id": 5,
     "thumb": "/upasana shoot.png",
-    "name": "Sidharth Anant Shiv",
-    "designation": "Assistant Director",
+    "name": "Upasana Rathore",
+    "designation": "Senior Frontend Developer",
     "social": {
       "linkedin": "",
       "instagram": ""
@@ -52,8 +52,8 @@
   {
     "id": 6,
     "thumb": "/akriti mam shoot 2.png",
-    "name": "Sidharth Anant Shiv",
-    "designation": "Assistant Director",
+    "name": "Akriti Mahajan",
+    "designation": "Project Coordinator",
     "social": {
       "linkedin": "",
       "instagram": ""
@@ -62,8 +62,8 @@
   {
     "id": 7,
     "thumb": "shudanshu shoot.png",
-    "name": "Sidharth Anant Shiv",
-    "designation": "Assistant Director",
+    "name": "Sudhanshu Awasthi",
+    "designation": "AI Developer",
     "social": {
       "linkedin": "",
       "instagram": ""
@@ -72,11 +72,62 @@
   {
     "id": 8,
     "thumb": "vaishnavi shoot.png",
-    "name": "Sidharth Anant Shiv",
-    "designation": "Assistant Director",
+    "name": "Vaishnavi Gupta",
+    "designation": "Creative Head",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 9,
+    "thumb": "garvit shoot 1.png",
+    "name": "Garvit Sharma",
+    "designation": "SEO Executive",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 10,
+    "thumb": "suraj shoot.png",
+    "name": "Suraj Kumar",
+    "designation": "Data Analyst",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 11,
+    "thumb": "pari shoot.png",
+    "name": "Pratyush Negi",
+    "designation": "Graphic Designer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 11,
+    "thumb": "shristi shoot 1.png",
+    "name": "Shristi Sinha",
+    "designation": "Content Writer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 12,
+    "thumb": "saumya shoot 1.png",
+    "name": "Saumya Tomar",
+    "designation": "H.R. Manager",
     "social": {
       "linkedin": "",
       "instagram": ""
     }
   }
+
 ]

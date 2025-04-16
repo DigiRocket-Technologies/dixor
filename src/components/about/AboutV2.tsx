@@ -123,9 +123,6 @@
 
 // export default AboutV2;
 
-
-"use client"
-
 import { useEffect, useRef, useState } from "react"
 import ModalVideo from "react-modal-video"
 import gsap from "gsap"
