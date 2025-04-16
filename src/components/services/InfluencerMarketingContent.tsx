@@ -207,14 +207,7 @@ const InfluencerMarketingContent = ({
                 ))}
               </div>
             </div>
-            <div className="row mt-80 mt-xs-50 gallery-two-columns">
-              <div className="col-md-6">
-                <img src={img1} alt="Image Not Found" />
-              </div>
-              <div className="col-md-6">
-                <img src={img2} alt="Image Not Found" />
-              </div>
-            </div>
+           
             <div style={{ marginTop: "50px" }}>
               <h2>Why you need Instagram marketing?</h2>
               <div>

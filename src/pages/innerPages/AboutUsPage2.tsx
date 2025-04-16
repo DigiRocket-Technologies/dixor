@@ -10,7 +10,7 @@ import TeamV2Data from "../../../src/assets/jsonData/team/TeamNew.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import SingleTeamV2 from "../../components/team/SingleTeamV2.js";
-import thumb3 from "/assets/img/thumb/3.jpg";
+import thumb3 from "/assets/img/about/who-we-are.png"
 import { Keyboard } from "swiper/modules";
 // import { Link } from "react-router-dom";
 import { useState } from "react";

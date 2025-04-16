@@ -127,15 +127,22 @@ import { useEffect, useRef, useState } from "react"
 import ModalVideo from "react-modal-video"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+
 gsap.registerPlugin(ScrollTrigger)
 
 const AboutV2 = () => {
   const [isOpen, setOpen] = useState(false)
   const homeContainerRef = useRef<HTMLDivElement | null>(null)
-
+  
   useEffect(() => {
     if (homeContainerRef.current) {
       // Create the timeline with modified ScrollTrigger settings
+
+      gsap.set(".home-container video", {
+        width: "50%",
+        opacity: 0.5,
+      })
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: homeContainerRef.current,
