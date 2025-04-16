@@ -53,8 +53,7 @@ const InfluencerMarketingContent = ({
     title,
     whyChooseP1,
     bannerImg,
-    img1,
-    img2,
+  
     whyChooseP2,
     faqs,
     definition,
