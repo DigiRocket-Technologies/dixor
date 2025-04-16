@@ -2,6 +2,7 @@
     {
         "id": 1,
         "activeClass": "active",
+        "serviceid":"marketing",
         "icon": "17.png",
         "subTitle": "Connection",
         "title": "Marketing",
@@ -13,6 +14,7 @@
         "id": 2,
         "activeClass": "",
         "icon": "18.png",
+        "serviceid":"development",
         "subTitle": "Collaboration",
         "title": "Development",
         "text": "Regular indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new.",
@@ -23,6 +25,7 @@
         "id": 3,
         "activeClass": "",
         "icon": "19.png",
+        "serviceid":"dropshipping",
         "subTitle": "Innovations",
         "title": "Dropshipping",
         "text": "Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new.",

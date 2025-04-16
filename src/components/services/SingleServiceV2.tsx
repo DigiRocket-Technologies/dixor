@@ -3,6 +3,7 @@ import useHoverEffects from "../../hooks/useHoverEffects";
 
 interface DataType {
     id?: number;
+    serviceid?:string;
     activeClass?: string;
     icon?: string;
     subTitle?: string;
@@ -13,7 +14,7 @@ interface DataType {
 }
 
 const SingleServiceV2 = ({ service }: { service: DataType }) => {
-    const { id, icon, subTitle, title, text, listData, illustration } = service;
+    const { id, icon, subTitle, title, text, listData, illustration,serviceid } = service;
 
     const { activeIndex, hoveredIndex, handleMouseEnter, handleMouseLeave, handleMouseMove, handleMouseLeaveWrapper } = useHoverEffects();
 
@@ -24,7 +25,7 @@ const SingleServiceV2 = ({ service }: { service: DataType }) => {
             onMouseLeave={handleMouseLeave} // Call without index
         >
             <Link
-                to={`/service-details/${id}`}
+                to={`/${serviceid}`}
                 className="service-hover-item"
                 onMouseMove={(e) => handleMouseMove(e, id)}
                 onMouseLeave={() => handleMouseLeaveWrapper(id)}

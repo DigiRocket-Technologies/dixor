@@ -10,7 +10,7 @@ interface DataType {
 }
 
 const SingleServiceV4 = ({ service }: { service: DataType }) => {
-    const { id, titleFirst, titleLast, icon, text, number } = service;
+    const { id, titleFirst, titleLast, icon, text } = service;
 
     return (
         <>
@@ -20,7 +20,7 @@ const SingleServiceV4 = ({ service }: { service: DataType }) => {
                     <img src={`/assets/img/icon/${icon}`} alt="Icon" width={200} height={200} />
                 </div>
                 <p>{text}</p>
-                <span>{number}</span>
+                {/* <span>{number}</span> */}
             </div>
         </>
     );

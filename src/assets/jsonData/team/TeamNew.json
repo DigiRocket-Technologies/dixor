@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "thumb": "15.jpg",
+    "thumb": "sunny sir shoot.png",
     "name": "Sunny Kumar",
     "designation": "Co-Founder, Director & COO",
     "social": {
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "thumb": "16.jpg",
+    "thumb": "apoorvsir.png",
     "name": "Apoorv Dwivedi",
     "designation": "Chief Technology Officer",
     "social": {
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "thumb": "16.jpg",
+    "thumb": "siddhartsir.png",
     "name": "Sidharth Anant Shiv",
     "designation": "Assistant Director",
     "social": {
@@ -128,6 +128,25 @@
       "linkedin": "",
       "instagram": ""
     }
+  },
+  {
+    "id": 13,
+    "thumb": "sahil shoot.png",
+    "name": "Sahil Awasthi",
+    "designation": "Accountant",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 14,
+    "thumb": "pratyaksh shoot.png",
+    "name": "Pratyaksha Srivastava",
+    "designation": "Graphic Designer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
   }
-
 ]

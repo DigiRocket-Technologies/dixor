@@ -1,8 +1,7 @@
 // import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+
 
 interface DataType {
   title?: string;
@@ -44,7 +43,7 @@ interface ServiceDetailsProps {
   pricing?: PricingDataType;
 }
 
-const EcommerceMarketingContent = ({
+const WooCommerceContent = ({
   serviceInfo,
   sectionClass,
   pricing,
@@ -53,23 +52,12 @@ const EcommerceMarketingContent = ({
     title,
     whyChooseP1,
     bannerImg,
-    img1,
-    img2,
     whyChooseP2,
     faqs,
     definition,
     importance,
     importance_title,
   } = serviceInfo || {};
-
-  const images = [
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/cloud.png",
-    "/assets/img/partner/semrush.png",
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/sp.png",
-  ];
 
   return (
     <>
@@ -99,16 +87,11 @@ const EcommerceMarketingContent = ({
                 </ul>
               </div>
             </div>
-            <div className="row mt-80 mt-xs-50 gallery-two-columns">
-              <div className="col-md-6">
-                <img src={img1} alt="Image Not Found" />
-              </div>
-              <div className="col-md-6">
-                <img src={img2} alt="Image Not Found" />
-              </div>
-            </div>
+
             <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px" }}>Our Process </h1>
+              <h1 style={{ marginBottom: "50px" }}>
+                Why business should sell service with woocommerce?{" "}
+              </h1>
               <div style={{ marginTop: "50px", width: "100%" }}>
                 {[
                   {
@@ -146,7 +129,7 @@ const EcommerceMarketingContent = ({
                         className="img-fluid"
                         style={{
                           maxWidth: "500px",
-                          height: "300px",
+                          height: "500px",
                           width: "100%",
                         }}
                       />
@@ -170,90 +153,53 @@ const EcommerceMarketingContent = ({
                 ))}
               </div>
             </div>
-            <div
-              style={{ marginTop: "50px" }}
-              className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
-            >
-              {/* Image */}
-              <div className="w-100 w-lg-50 text-center p-2">
-                <img
-                  src="/assets/img/blog/1.jpg"
-                  alt="Blog"
-                  className="img-fluid"
-                  style={{ maxWidth: "500px", height: "500px", width: "100%" }}
-                />
-              </div>
-              {/* Text */}
-              <div className="w-100 w-lg-50 p-4 ">
-                <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
-                </h2>
-                <p>
-                  {whyChooseP1}
-                  {whyChooseP2}
-                </p>
-              </div>
-            </div>
-            <div>
-              <h2>How will it benefit you?</h2>
-              <div style={{ marginTop: "40px" }}>
-                <Swiper
-                  modules={[Navigation]}
-                  navigation={{
-                    nextEl: ".right",
-                    prevEl: ".left",
-                  }}
-                  loop={true}
-                  spaceBetween={20}
-                  breakpoints={{
-                    0: {
-                      slidesPerView: 1,
-                    },
-                    768: {
-                      slidesPerView: 2,
-                    },
-                    1024: {
-                      slidesPerView: 3,
-                    },
-                  }}
-                >
-                  {images.map((imgSrc, index) => (
-                    <SwiperSlide key={index}>
-                      <div className="p-3 bg-white rounded shadow-sm text-center">
-                        <img
-                          src={imgSrc}
-                          alt={`Partner ${index}`}
-                          style={{
-                            width: "100%",
-                            height: "200px",
-                            objectFit: "contain",
-                          }}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: "40px",
-                    gap: "10px",
-                  }}
-                  className="project-four-nav"
-                >
-                  <div className="d-flex justify-content-center align-items-center gap-2 my-4">
-                    <button className="left btn  border border-dark rounded-pill px-4 d-flex align-items-center">
-                      <i className="fas fa-chevron-left me-2 text-dark"></i>
-                    </button>
-                    <button className="right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
-                      <i className="fas fa-chevron-right ms-2 text-dark"></i>
-                    </button>
-                  </div>
+            <div style={{ marginTop: "50px" }}>
+              <h2 className="text-center">Technology we rely upon</h2>
+              <div className="row justify-content-center">
+                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                  <img
+                    className="img-fluid"
+                    src="/assets/img/partner/sp.png"
+                    alt=""
+                  />
+                </div>
+                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                  <img
+                    className="img-fluid"
+                    src="/assets/img/partner/sp.png"
+                    alt=""
+                  />
+                </div>
+                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                  <img
+                    className="img-fluid"
+                    src="/assets/img/partner/sp.png"
+                    alt=""
+                  />
+                </div>
+                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                  <img
+                    className="img-fluid"
+                    src="/assets/img/partner/sp.png"
+                    alt=""
+                  />
+                </div>
+                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                  <img
+                    className="img-fluid"
+                    src="/assets/img/partner/sp.png"
+                    alt=""
+                  />
+                </div>
+                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                  <img
+                    className="img-fluid"
+                    src="/assets/img/partner/sp.png"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
-
             <div
               style={{ marginTop: "50px" }}
               className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
@@ -324,4 +270,4 @@ const EcommerceMarketingContent = ({
   );
 };
 
-export default EcommerceMarketingContent;
+export default WooCommerceContent;

@@ -181,7 +181,7 @@ const EcommerceSeoContent = ({
               >
                 {images.map((imgSrc, index) => (
                   <SwiperSlide key={index}>
-                    <div className="p-3 bg-white rounded shadow-sm text-center">
+                    <div className="p-3 bg-white rounded shadow-sm text-center" >
                       <img
                         src={imgSrc}
                         alt={`Partner ${index}`}
@@ -191,6 +191,7 @@ const EcommerceSeoContent = ({
                           objectFit: "contain",
                         }}
                       />
+                    
                     </div>
                   </SwiperSlide>
                 ))}

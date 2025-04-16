@@ -66,15 +66,15 @@ const ServicesV1 = ({ hasTitle, sectionClass, lightMode }: DataType) => {
                                     <div style={{minHeight:"500px"}} className={`services-style-one-item ${activeServiceId === service.id ? 'active' : ''}`}>
                                         <div className="icon">
                                             {lightMode ?
-                                                <img src={`/assets/img/icon/${service.iconLight}`} alt="Image Not Found" width={75} height={60} /> :
-                                                <img src={`/assets/img/icon/${service.icon}`} alt="Image Not Found" width={75} height={60} />
+                                                <img src={`/assets/img/${service.iconLight}`} alt="Image Not Found" width={75} height={60} /> :
+                                                <img src={`/assets/img/${service.icon}`} alt="Image Not Found" width={75} height={60} />
                                             }
                                         </div>
                                         <h4 >
-                                            <Link to={`/service-details/${service.id}`}>{service.title}</Link>
+                                            <Link to={`#`}>{service.title}</Link>
                                         </h4>
                                         <p>{service.text}</p>
-                                        <Link className="btn-full" to={`/service-details/${service.id}`}>
+                                        <Link className="btn-full" to={`#`}>
                                             Read More <i className="fas fa-arrow-right" />
                                         </Link>
                                     </div>

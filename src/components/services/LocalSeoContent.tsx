@@ -62,6 +62,7 @@ const LocalSeoContent = ({
     importance,
     importance_title,
   } = serviceInfo || {};
+
   const images = [
     "/assets/img/partner/sp.png",
     "/assets/img/partner/cloud.png",
@@ -213,54 +214,71 @@ const LocalSeoContent = ({
               </div>
             </div>
           </div>
-        </div>
-        <PriceV2New pricing={pricing} />
-        <div className="container">
-          <div className="services-details-items">
-            <div className="d-grid colums-2 mt-50">
-              <div className="item">
-                <div className="faq-style-one faq-style-two">
-                  <h2 className="mb-30">Frequently Asked Questions</h2>
-                  <div className="accordion" id="faqAccordion">
-                    {faqs?.map((item, idx) => {
-                      return (
-                        <div key={idx} className="accordion-item">
-                          <h2 className="accordion-header" id={`heading${idx}`}>
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target={`#collapse${idx}`}
-                              aria-expanded="true"
-                              aria-controls={`collapse${idx}`}
-                            >
-                              {item.q}
-                            </button>
-                          </h2>
-                          <div
-                            id={`collapse${idx}`}
-                            className={`accordion-collapse collapse`}
-                            //className="accordion-collapse collapse show"  //use this to keep the answers open
-                            aria-labelledby={`heading${idx}`}
-                            data-bs-parent="#faqAccordion"
-                          >
-                            <div className="accordion-body">
-                              <p>{item.a}</p>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
+          <div
+              style={{ marginTop: "50px" }}
+              className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+            >
+              {/* Image */}
+              <div className="w-100 w-lg-50 text-center p-2">
+                <img
+                  src="/assets/img/blog/1.jpg"
+                  alt="Blog"
+                  className="img-fluid"
+                  style={{ maxWidth: "500px", height: "500px", width: "100%" }}
+                />
               </div>
-              <div className="item">
-                <h2>Why Choose Us?</h2>
-                <p>{whyChooseP1}</p>
-                <p>{whyChooseP2}</p>
+              {/* Text */}
+              <div className="w-100 w-lg-50 p-4 ">
+                <h2 className="post-title">
+                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                </h2>
+                <p>
+                  {whyChooseP1}
+                  {whyChooseP2}
+                </p>
               </div>
             </div>
-            <div className="services-more mt-100 mt-xs-30">
+        </div>
+        <PriceV2New pricing={pricing} />
+
+        <div className="container mt-4">
+          <div className="item">
+            <div className="faq-style-one faq-style-two">
+              <h2 className="mb-30">Frequently Asked Questions</h2>
+              <div className="accordion" id="faqAccordion">
+                {faqs?.map((item, idx) => {
+                  return (
+                    <div key={idx} className="accordion-item">
+                      <h2 className="accordion-header" id={`heading${idx}`}>
+                        <button
+                          className="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target={`#collapse${idx}`}
+                          aria-expanded="true"
+                          aria-controls={`collapse${idx}`}
+                        >
+                          {item.q}
+                        </button>
+                      </h2>
+                      <div
+                        id={`collapse${idx}`}
+                        className={`accordion-collapse collapse`}
+                        //className="accordion-collapse collapse show"  //use this to keep the answers open
+                        aria-labelledby={`heading${idx}`}
+                        data-bs-parent="#faqAccordion"
+                      >
+                        <div className="accordion-body">
+                          <p>{item.a}</p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <div className="services-more mt-100 mt-xs-30">
               <h2 className="mb-20">Most popular services</h2>
               <div className="row">
                 {ServicesV1Data.slice(0, 3).map((service) => (
@@ -283,8 +301,8 @@ const LocalSeoContent = ({
                 ))}
               </div>
             </div>
-          </div>
         </div>
+    
       </div>
     </>
   );
