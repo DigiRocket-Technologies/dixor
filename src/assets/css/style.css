@@ -18211,6 +18211,3 @@ button.Toastify__close-button {
 	box-shadow: 0 0 20px #c9f31d /* Greenish shadow */
   }
   
-  .card:hover .card-title {
-	color: #c9f31d !important;
-  }
