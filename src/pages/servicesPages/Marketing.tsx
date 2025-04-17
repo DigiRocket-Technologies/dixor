@@ -8,37 +8,38 @@ import LayoutV1 from "../../components/layouts/LayoutV1";
 import DarkClass from "../../components/classes/DarkClass";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Keyboard, Navigation, FreeMode } from "swiper/modules";
+import MostPopularServices from "../../components/services/MostPopularServices";
 const Marketing = () => {
   const features = [
     {
       icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "First Impressions Count",
+      title: "Reach the Right Audience",
       description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
+        "Targeting the right people at the right time makes all the difference. Smart marketing drives relevant traffic, boosting engagement and conversions.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "User Experience Matters",
+      title: "Connect on a Deeper Level",
       description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
+        "Personalization is key. Marketing today isn’t just about selling — it’s about building meaningful relationships with your customers.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Supports Marketing Efforts",
+      title: "AI in Marketing ",
       description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
+        "AI helps analyze data, predict behaviors, and optimize campaigns, giving you a competitive edge in a fast-paced digital world.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Drives Conversions",
+      title: "Adapt to Change",
       description:
-        "Optimized design and clear call-to-actions turn visitors into customers.",
+        "Marketing is constantly evolving. We keep your brand agile, adapting to the latest trends and tools to ensure sustained growth.",
     },
   ];
   return (
     <>
       <Helmet>
-        <title>Dixor - Service Details Light</title>
+        <title>Marketing | Digirocket</title>
       </Helmet>
 
       <LayoutV1>
@@ -71,13 +72,21 @@ const Marketing = () => {
               ))}
             </div>
           </div>
+          <div style={{marginTop:"100px"}} className="row">
+            <div className="col-xl-12">
+              <div className="service-single-thumb">
+                <img src="/assets/img/banner/marketing 1.png" alt="Thumb" />
+              </div>
+            </div>
+          </div>
           <div style={{ marginTop: "50px" }}>
-            <h2>Smart Marketing Starts with the Right Answers</h2>
+            <h2>Marketing Starts with the Right Answers</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus
-              eligendi, vel nisi eum saepe ea iste enim temporibus repellendus
-              culpa, molestias nobis tempore? At sint consequuntur laborum porro
-              saepe!
+              Do you know the one thing that helps a business grow? It's
+              understanding your audience — what they want, need, fear, and
+              desire. With the right answers, you create better marketing, reach
+              the right people, and grow. So, what are the questions you need to
+              ask to succeed?
             </p>
             {/* <ul className="" style={{ paddingLeft: "15px" }} id="marketing">
               <li>
@@ -101,77 +110,43 @@ const Marketing = () => {
                 nam cumque quia.
               </li>
             </ul> */}
-            <div className="process-style-two">
+            <div style={{ marginTop: "40px" }} className="process-style-two">
               <div className="process-style-two-item">
                 <span>01</span>
-                <h4>Project Research</h4>
+                <h4>Who are you selling to?</h4>
                 <p>
-                  Excuse Deal say over contain performance from comparison new
-                  melancholy themselves.
+                  Define your ideal customer — their behavior, goals, and pain
+                  points — so every message speaks directly to them.
                 </p>
               </div>
               <div className="process-style-two-item">
                 <span>02</span>
-                <h4>Best Concept</h4>
+                <h4>What problem are you solving?</h4>
                 <p>
-                  Excuse Deal say over contain performance from comparison new
-                  melancholy themselves.
+                  People buy solutions, not products. Understand what keeps your
+                  audience up at night and show how you solve it.
                 </p>
               </div>
               <div className="process-style-two-item">
                 <span>03</span>
-                <h4>Design Implement</h4>
+                <h4>What makes them trust you?</h4>
                 <p>
-                  Excuse Deal say over contain performance from comparison new
-                  melancholy themselves.
+                  Trust builds brands. From social proof to clear messaging, the
+                  right answers help build credibility and confidence..
                 </p>
               </div>
               <div className="process-style-two-item">
                 <span>04</span>
-                <h4>Final Result</h4>
+                <h4>How can AI help you understand more?</h4>
                 <p>
-                  Excuse Deal say over contain performance from comparison new
-                  melancholy themselves.
+                  AI uncovers deep insights by analyzing customer data, spotting
+                  patterns, and predicting what drives engagement and action.
                 </p>
               </div>
             </div>
           </div>
           <div style={{ marginTop: "50px" }}>
-            <h2>What we bring to the table .</h2>
-            {/* <div className="process-style-two">
-              <div className="process-style-two-item">
-                <span>01</span>
-                <h4>Project Research</h4>
-                <p>
-                  Excuse Deal say over contain performance from comparison new
-                  melancholy themselves.
-                </p>
-              </div>
-              <div className="process-style-two-item">
-                <span>02</span>
-                <h4>Best Concept</h4>
-                <p>
-                  Excuse Deal say over contain performance from comparison new
-                  melancholy themselves.
-                </p>
-              </div>
-              <div className="process-style-two-item">
-                <span>03</span>
-                <h4>Design Implement</h4>
-                <p>
-                  Excuse Deal say over contain performance from comparison new
-                  melancholy themselves.
-                </p>
-              </div>
-              <div className="process-style-two-item">
-                <span>04</span>
-                <h4>Final Result</h4>
-                <p>
-                  Excuse Deal say over contain performance from comparison new
-                  melancholy themselves.
-                </p>
-              </div>
-            </div> */}
+            <h2>What We Bring To The Table .</h2>
 
             <div
               style={{ marginTop: "50px" }}
@@ -422,68 +397,8 @@ const Marketing = () => {
               </div>
             </div>
           </div>
-          <div className="services-more mt-100 mt-xs-30">
-            <h2 className="mb-20">Most popular services</h2>
-            <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div className="item">
-                  <img
-                    src={`/assets/img/icon/24.png`}
-                    alt="Image Not Found"
-                    width={75}
-                    height={60}
-                  />
-                  <h4>
-                    <Link to={`/local-seo`}>Local Seo</Link>
-                  </h4>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Praesentium dolores optio quaerat est pariatur magni ipsam
-                    tenetur, aspernatur deleniti. Ipsa.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="item">
-                  <img
-                    src={`/assets/img/icon/24.png`}
-                    alt="Image Not Found"
-                    width={75}
-                    height={60}
-                  />
-                  <h4>
-                    <Link to={`/ecommerce-seo`}>Ecommerce Seo</Link>
-                  </h4>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Praesentium dolores optio quaerat est pariatur magni ipsam
-                    tenetur, aspernatur deleniti. Ipsa.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="item">
-                  <img
-                    src={`/assets/img/icon/24.png`}
-                    alt="Image Not Found"
-                    width={75}
-                    height={60}
-                  />
-                  <h4>
-                    <Link to={`/performance-marketing`}>
-                      Performance Marketing
-                    </Link>
-                  </h4>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Praesentium dolores optio quaerat est pariatur magni ipsam
-                    tenetur, aspernatur deleniti. Ipsa.
-                  </p>
-                </div>
-              </div>
-              <TestimonialV2 />
-            </div>
-          </div>
+          <TestimonialV2 />
+          <MostPopularServices />
         </div>
         <DarkClass />
       </LayoutV1>

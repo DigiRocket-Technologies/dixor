@@ -79,15 +79,84 @@ const dt = () => {
         {/* <BannerV8/> */}
         {/* <p>Banner 9</p> */}
         {/* <BannerV9 /> */}
-       
+
         {/* <p>About 2</p> */}
+        {/* <div className="pt-4">
+          <h2 className="text-center">Our Expertise</h2>
+          <div className="row justify-content-center">
+            <div className="col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                className="img-fluid"
+                src="/assets/img/partner/wp.png"
+                alt=""
+              />
+            </div>
+            <div className="bg-white col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                className="img-fluid"
+                src="/assets/img/partner/sp.png"
+                alt=""
+              />
+            </div>
+            <div className="bg-white col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                className="img-fluid"
+                src="/assets/img/partner/node.png"
+                alt=""
+              />
+            </div>
+            <div className="bg-white col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                className="img-fluid"
+                src="/assets/img/partner/ahrefs2.png"
+                alt=""
+              />
+            </div>
+            <div className="bg-white col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                className="img-fluid"
+                src="/assets/img/partner/cloud.png"
+                alt=""
+              />
+            </div>
+            <div className="bg-white col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                className="img-fluid"
+                src="/assets/img/partner/magento.png"
+                alt=""
+              />
+            </div>
+            <div className="bg-white col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                className="img-fluid"
+                src="/assets/img/partner/meta.png"
+                alt=""
+              />
+            </div>
+            <div className="bg-white col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                className="img-fluid"
+                src="/assets/img/partner/semrush.png"
+                alt=""
+              />
+            </div>
+            <div className="bg-white col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                className="img-fluid"
+                src="/assets/img/partner/react.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div> */}
         <AboutV2 />
-        <ServicesV2/>
+        <ServicesV2 />
         {/* <p>Brand 1</p> */}
         {/* <BrandV1/> */}
         {/* <p>Brand 2</p> */}
         {/* <BrandV2/> */}
         {/* <p>Focus/Service 1 Preferred</p> */}
+        <ClientsV1 sectionClass="bg-gray" />
         <ServicesV1 sectionClass="default-padding bg-gray" hasTitle={true} />
         {/* <p>Focus/Service 2 PREFFERED TILL NOW</p> */}
         {/* <ServicesV2 sectionClass="default-padding bg-gray" hasTitle={true} /> */}
@@ -100,41 +169,31 @@ const dt = () => {
         {/* <p>Focus/Service 6 PEREFFRED BY ME</p> */}
         {/* <ServicesV6 /> */}
 
-
-
         {/* <p>Client 1</p> */}
-        <ClientsV1 sectionClass="bg-gray" />
 
         {/* <p>Multisection SHOW OUR VALUES IN THIS[client commitment, teamwork, integrity]</p> */}
         <MultiSection />
 
-{/* our work */}
+        {/* our work */}
 
-        
         <PortfolioV5 />
 
         {/* <p> Process </p> */}
         {/* <ProcessWrapper /> */}
 
-
-        
         {/* <p>Testimonial 3</p> */}
         <TestimonialV3 />
-
-
 
         {/* <p>Project 1</p> */}
         {/* <ProjectV1 /> */}
         {/* <p>Project 2 both are same</p> */}
         {/* <ProjectV2 /> */}
 
-
         {/* <p>Expertise 1</p> repeat from out process*/}
         {/* <ExpertiseV1/> */}
 
         {/* <p>FACT </p> */}
         {/* <FunFactV1/> */}
-
 
         {/* <p>Price 1</p> */}
         {/* <PriceV1 /> */}
@@ -145,9 +204,8 @@ const dt = () => {
 
         {/* <p>Blog 1</p> */}
         {/* <BlogV1 sectionClass="bg-gray" /> */}
-        
 
-{/* will go on contact us page */}
+        {/* will go on contact us page */}
         {/* <p>Contact 1</p>
         <ContactV1 />
         <p>Contact 2</p>
@@ -155,13 +213,11 @@ const dt = () => {
         <p>Contact Map</p>
         <ContactMap/> */}
 
-
         {/* <p>News Letter</p>
         <NewsletterV2/> */}
 
         {/* <p>Partner</p> */}
-        <PartnerV2/>
-
+        <PartnerV2 />
 
         {/* <p>Why Choose V1</p>
         <WhyChooseV1/>
@@ -169,7 +225,6 @@ const dt = () => {
         <WhyChooseV2/>
         <p>Why Choose V3</p> */}
         {/* <WhyChooseV3/> */}
-
 
         {/* <p>About 1</p>
         <AboutV1 /> */}
@@ -198,8 +253,7 @@ const dt = () => {
         <AwardV1/> */}
 
         <FooterV1 />
-        
-        
+
         <DarkClass />
       </div>
     </>

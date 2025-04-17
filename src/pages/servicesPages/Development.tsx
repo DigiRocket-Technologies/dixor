@@ -6,6 +6,7 @@ import TestimonialV2 from "../../components/testimonial/TestimonialV2";
 import thumb3 from "/assets/img/thumb/3.jpg";
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import DarkClass from "../../components/classes/DarkClass";
+import MostPopularServices from "../../components/services/MostPopularServices";
 // import Blog2ColumnContent from "../../components/blog/Blog2ColumnContent";
 // import PortfolioV3 from "../../components/portfolio/PortfolioV3";
 
@@ -76,208 +77,7 @@ const Development = () => {
           </div>
           <div style={{ marginTop: "50px" }}>
             <h2>Core Pillars of Our Development Solutions</h2>
-            {/* <div className={`blog-area blog-grid-colum `}>
-              <div className="container">
-                <div
-                  className="row"
-                  style={{ display: "flex", justifyContent: "center" }}
-                >
-                  <div
-                    className="col-lg-6 mb-50"
-                    style={{ display: "flex", justifyContent: "center" }}
-                  >
-                    <div className="home-blog-style-one">
-                      <div className="thumb" style={{ margin: "auto" }}>
-                        <Link to={`#`}>
-                          <img
-                            src={`/assets/img/blog/4.jpg`}
-                            style={{ width: "550px" }}
-                            alt="Thumb"
-                          />
-                        </Link>
-                        <div className="info">
-                          <h2 className="post-title">
-                            <Link to={`/blog-single-with-sidebar`}>
-                              Project Research
-                            </Link>
-                          </h2>
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "40px",
-                                height: "40px",
-                                borderRadius: "50%",
-                                backgroundColor: "transparent",
-                                border: "2px solid white",
-                                boxShadow: "0 0 10px white",
-                                color: "white",
-                                textAlign: "center",
-                                lineHeight: "40px", // vertically center the number
-                                fontWeight: "bold", // optional
-                                display: "inline-block", // to avoid taking full width
-                              }}
-                            >
-                              1
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="col-lg-6 mb-50"
-                    style={{ display: "flex", justifyContent: "center" }}
-                  >
-                    <div className="home-blog-style-one">
-                      <div className="thumb" style={{ margin: "auto" }}>
-                        <Link to={`#`}>
-                          <img
-                            src={`/assets/img/blog/4.jpg`}
-                            style={{ width: "550px" }}
-                            alt="Thumb"
-                          />
-                        </Link>
-                        <div className="info">
-                          <h2 className="post-title">
-                            <Link to={`/blog-single-with-sidebar`}>
-                              Best Concept
-                            </Link>
-                          </h2>
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "40px",
-                                height: "40px",
-                                borderRadius: "50%",
-                                backgroundColor: "transparent",
-                                border: "2px solid white",
-                                boxShadow: "0 0 10px white",
-                                color: "white",
-                                textAlign: "center",
-                                lineHeight: "40px", // vertically center the number
-                                fontWeight: "bold", // optional
-                                display: "inline-block", // to avoid taking full width
-                              }}
-                            >
-                              2
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="col-lg-6 mb-50"
-                    style={{ display: "flex", justifyContent: "center" }}
-                  >
-                    <div className="home-blog-style-one">
-                      <div className="thumb" style={{ margin: "auto" }}>
-                        <Link to={`#`}>
-                          <img
-                            src={`/assets/img/blog/4.jpg`}
-                            style={{ width: "550px" }}
-                            alt="Thumb"
-                          />
-                        </Link>
-                        <div className="info">
-                          <h2 className="post-title">
-                            <Link to={`/blog-single-with-sidebar`}>
-                              Design Implement
-                            </Link>
-                          </h2>
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "40px",
-                                height: "40px",
-                                borderRadius: "50%",
-                                backgroundColor: "transparent",
-                                border: "2px solid white",
-                                boxShadow: "0 0 10px white",
-                                color: "white",
-                                textAlign: "center",
-                                lineHeight: "40px", // vertically center the number
-                                fontWeight: "bold", // optional
-                                display: "inline-block", // to avoid taking full width
-                              }}
-                            >
-                              3
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="col-lg-6 mb-50"
-                    style={{ display: "flex", justifyContent: "center" }}
-                  >
-                    <div className="home-blog-style-one">
-                      <div className="thumb" style={{ margin: "auto" }}>
-                        <Link to={`#`}>
-                          <img
-                            src={`/assets/img/blog/4.jpg`}
-                            style={{ width: "550px" }}
-                            alt="Thumb"
-                          />
-                        </Link>
-                        <div className="info">
-                          <h2 className="post-title">
-                            <Link to={`/blog-single-with-sidebar`}>
-                              Final Result
-                            </Link>
-                          </h2>
-                         
-                          <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                            }}
-                          >
-                            <div
-                              style={{
-                                width: "40px",
-                                height: "40px",
-                                borderRadius: "50%",
-                                backgroundColor: "transparent",
-                                border: "2px solid white",
-                                boxShadow: "0 0 10px white",
-                                color: "white",
-                                textAlign: "center",
-                                lineHeight: "40px", // vertically center the number
-                                fontWeight: "bold", // optional
-                                display: "inline-block", // to avoid taking full width
-                              }}
-                            >
-                              4
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+          
             <div  style={{marginTop:"50px",width:"100%"}}>
               {[
                 {
@@ -314,7 +114,7 @@ const Development = () => {
                       src={item.img}
                       alt="Blog"
                       className="img-fluid"
-                      style={{ maxWidth: "500px",height:"300px" ,width: "100%" }}
+                      style={{ maxWidth: "500px",height:"550px" ,width: "100%" }}
                     />
                   </div>
 
@@ -533,68 +333,8 @@ const Development = () => {
               </div>
             </div>
           </div>
-          <div className="services-more mt-100 mt-xs-30">
-            <h2 className="mb-20">Most popular services</h2>
-            <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div className="item">
-                  <img
-                    src={`/assets/img/icon/24.png`}
-                    alt="Image Not Found"
-                    width={75}
-                    height={60}
-                  />
-                  <h4>
-                    <Link to={`/local-seo`}>Local Seo</Link>
-                  </h4>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Praesentium dolores optio quaerat est pariatur magni ipsam
-                    tenetur, aspernatur deleniti. Ipsa.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="item">
-                  <img
-                    src={`/assets/img/icon/24.png`}
-                    alt="Image Not Found"
-                    width={75}
-                    height={60}
-                  />
-                  <h4>
-                    <Link to={`/ecommerce-seo`}>Ecommerce Seo</Link>
-                  </h4>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Praesentium dolores optio quaerat est pariatur magni ipsam
-                    tenetur, aspernatur deleniti. Ipsa.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="item">
-                  <img
-                    src={`/assets/img/icon/24.png`}
-                    alt="Image Not Found"
-                    width={75}
-                    height={60}
-                  />
-                  <h4>
-                    <Link to={`/performance-marketing`}>
-                      Performance Marketing
-                    </Link>
-                  </h4>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Praesentium dolores optio quaerat est pariatur magni ipsam
-                    tenetur, aspernatur deleniti. Ipsa.
-                  </p>
-                </div>
-              </div>
-              <TestimonialV2 />
-            </div>
-          </div>
+          <TestimonialV2/>
+          <MostPopularServices/>
         </div>
         <DarkClass />
       </LayoutV1>

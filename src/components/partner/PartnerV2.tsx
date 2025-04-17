@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import thumb15 from "/assets/img/thumb/15.jpg";
+import thumb15 from "/assets/img/partner/trusted partners.jpg";
 // import PartnerV2Data from "../../../src/assets/jsonData/partner/PartnerV2Data.json";
 // import SinglePartnerV2 from "./SinglePartnerV2";
 import { Keyboard } from "swiper/modules";
@@ -46,10 +46,11 @@ const PartnerV2 = ({ sectionClass }: DataType) => {
                   </SplitText>
                 </h2>
                 <p>
-                  Perceived determine departure explained no forfeite. Give lady
-                  of they such they sure it. Me contained explained my
-                  education. Vulgar as hearts by garret. Perceived determine
-                  departure explained no forfeited he something an
+                  We collaborate with leading brands and platforms to ensure the
+                  best solutions for your business. By combining our expertise
+                  with their industry-leading tools, we drive innovation and
+                  sustainable growth. Together, we create meaningful, long-term
+                  results for our clients.
                 </p>
                 {/* <Swiper className="brand-two-carousel swiper mt-60"
                                     loop={true}

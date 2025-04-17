@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import MostPopularServices from "./MostPopularServices.tsx";
 
 interface DataType {
   title?: string;
@@ -146,7 +147,7 @@ const EcommerceMarketingContent = ({
                         className="img-fluid"
                         style={{
                           maxWidth: "500px",
-                          height: "300px",
+                          height: "550px",
                           width: "100%",
                         }}
                       />
@@ -280,8 +281,9 @@ const EcommerceMarketingContent = ({
             </div>
           </div>
         </div>
-        <PriceV2New pricing={pricing} />
-        <div className="container mt-4">
+        <PriceV2New pricing={pricing}/>
+        <div className="container">
+          <MostPopularServices />
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>

@@ -1,9 +1,10 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import LayoutV1Light from "../../components/layouts/LayoutV1Light";
-import ServiceDetailsContentLight2 from "../../components/services/ServiceDetailsContentLight2";
+import LayoutV1 from "../../components/layouts/LayoutV1";
 import ServicesV1Data from "../../assets/jsonData/services/ServiceV1New.json";
 import { Helmet } from "react-helmet-async";
 import pricingInfo from "../../assets/jsonData/price/PriceV2New.json"
+import WordpressContent from "../../components/services/WordpressContent";
+import DarkClass from "../../components/classes/DarkClass";
 
 const Wordpress = () => {
     const data = ServicesV1Data.find(service => service.id === "wordpress-development");
@@ -15,10 +16,11 @@ const Wordpress = () => {
                 <title>Wordpress Development | DigiRocket Technologies</title>
             </Helmet>
             
-            <LayoutV1Light>
-                <Breadcrumb title='Wordpress Development' breadCrumb='Wordpress Development' LightMode={true} />
-                {data && <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
-            </LayoutV1Light>
+            <LayoutV1>
+                <Breadcrumb title='Wordpress Development' breadCrumb='Wordpress Development' LightMode={false} />
+                {data && <WordpressContent serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
+                <DarkClass/>
+            </LayoutV1>
         </>
     );
 };

@@ -10,6 +10,7 @@ import {
   Mousewheel,
   Autoplay,
 } from "swiper/modules";
+import MostPopularServices from "./MostPopularServices.tsx";
 
 interface DataType {
   title?: string;
@@ -334,78 +335,8 @@ const SocialMediaMarketingContent = ({
           </div>
         </div>
         <PriceV2New pricing={pricing} />
-        {/* <div className="container">
-          <div className="services-details-items">
-            <div className="d-grid colums-2 mt-50">
-              <div className="item">
-                <div className="faq-style-one faq-style-two">
-                  <h2 className="mb-30">Frequently Asked Questions</h2>
-                  <div className="accordion" id="faqAccordion">
-                    {faqs?.map((item, idx) => {
-                      return (
-                        <div key={idx} className="accordion-item">
-                          <h2 className="accordion-header" id={`heading${idx}`}>
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target={`#collapse${idx}`}
-                              aria-expanded="true"
-                              aria-controls={`collapse${idx}`}
-                            >
-                              {item.q}
-                            </button>
-                          </h2>
-                          <div
-                            id={`collapse${idx}`}
-                            className={`accordion-collapse collapse`}
-                            //className="accordion-collapse collapse show"  //use this to keep the answers open
-                            aria-labelledby={`heading${idx}`}
-                            data-bs-parent="#faqAccordion"
-                          >
-                            <div className="accordion-body">
-                              <p>{item.a}</p>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-              <div className="item">
-                <h2>What we do?</h2>
-                <p>{whyChooseP1}</p>
-                <p>{whyChooseP2}</p>
-              </div>
-            </div>
-            <div className="services-more mt-100 mt-xs-30">
-              <h2 className="mb-20">Most popular services</h2>
-              <div className="row">
-                {ServicesV1Data.slice(0, 3).map((service) => (
-                  <div className="col-lg-4 col-md-6" key={service.id}>
-                    <div className="item">
-                      <img
-                        src={`/assets/img/icon/${service.iconLight}`}
-                        alt="Image Not Found"
-                        width={75}
-                        height={60}
-                      />
-                      <h4>
-                        <Link to={`/service-details-light/${service.id}`}>
-                          {service.title}
-                        </Link>
-                      </h4>
-                      <p>{service.text}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div className="container mt-4">
+          <MostPopularServices/>
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>

@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import DarkClass from "../../components/classes/DarkClass";
 import LayoutV1 from "../../components/layouts/LayoutV1";
-import PortfolioV2New from "../../components/portfolio/PortfolioV2New";
+import PortfolioV5New from "../../components/portfolio/PortfolioV5New";
 
 const ProjectPage2 = () => {
     return (
@@ -13,7 +13,7 @@ const ProjectPage2 = () => {
 
             <LayoutV1>
                 <Breadcrumb title='Portfolio' breadCrumb='Portfolio' />
-                <PortfolioV2New  sectionClass='default-padding-bottom' />
+                <PortfolioV5New  hasShape={true} />
                 <DarkClass />
             </LayoutV1>
         </>

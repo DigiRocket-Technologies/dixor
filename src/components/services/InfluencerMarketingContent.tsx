@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
+import MostPopularServices from "./MostPopularServices.tsx";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Navigation } from "swiper/modules";
 
@@ -257,7 +258,7 @@ const InfluencerMarketingContent = ({
                             src={`/assets/img/blog/4.jpg`}
                             className="card-img-top"
                             alt="Featured"
-                            style={{ height: "250px", objectFit: "cover" }}
+                            style={{ height: "550px", objectFit: "cover" }}
                           />
                         </a>
                         <div
@@ -311,13 +312,13 @@ const InfluencerMarketingContent = ({
                   <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
                 </h2>
                 <p>{whyChooseP1}{whyChooseP2}</p>
-
               </div>
             </div>
           </div>
         </div>
         <PriceV2New pricing={pricing} />
         <div className="container mt-4">
+          <MostPopularServices/>
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>

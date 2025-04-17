@@ -1,8 +1,8 @@
-import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import MostPopularServices from "./MostPopularServices.tsx";
 
 interface DataType {
   title?: string;
@@ -278,31 +278,8 @@ const LocalSeoContent = ({
               </div>
             </div>
           </div>
-          <div className="services-more mt-100 mt-xs-30">
-              <h2 className="mb-20">Most popular services</h2>
-              <div className="row">
-                {ServicesV1Data.slice(0, 3).map((service) => (
-                  <div className="col-lg-4 col-md-6" key={service.id}>
-                    <div className="item">
-                      <img
-                        src={`/assets/img/icon/${service.iconLight}`}
-                        alt="Image Not Found"
-                        width={75}
-                        height={60}
-                      />
-                      <h4>
-                        <Link to={`/service-details-light/${service.id}`}>
-                          {service.title}
-                        </Link>
-                      </h4>
-                      <p>{service.text}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+         <MostPopularServices/>
         </div>
-    
       </div>
     </>
   );

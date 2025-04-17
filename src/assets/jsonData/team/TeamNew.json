@@ -71,7 +71,7 @@
   },
   {
     "id": 8,
-    "thumb": "vaishnavi shoot.png",
+    "thumb": "vaishnavi mam.png",
     "name": "Vaishnavi Gupta",
     "designation": "Creative Head",
     "social": {
@@ -142,11 +142,22 @@
   {
     "id": 14,
     "thumb": "pratyaksh shoot.png",
-    "name": "Pratyaksha Srivastava",
+    "name": "Pratyaksh Srivastava",
     "designation": "Graphic Designer",
     "social": {
       "linkedin": "",
       "instagram": ""
     }
+  },
+  {
+    "id": 11,
+    "thumb": "nikhar shoot.png",
+    "name": "Nikhar Makkar",
+    "designation": "Project Manager",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
   }
+
 ]

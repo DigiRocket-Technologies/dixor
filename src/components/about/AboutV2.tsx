@@ -176,6 +176,19 @@ const AboutV2 = () => {
         "<",
       ) // Start at the same time as the previous animation
 
+      ScrollTrigger.create({
+      trigger: homeContainerRef.current,
+      start: "bottom bottom", // when bottom of section hits bottom of viewport
+      onEnter: () => {
+        document.body.style.overflow = "hidden";
+
+        setTimeout(() => {
+          document.body.style.overflow = "";
+        }, 3000);
+      },
+      once: true, // lock scroll only once
+    });
+
       // Cleanup function
       return () => {
         ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
@@ -185,7 +198,7 @@ const AboutV2 = () => {
 
   return (
     <>
-      <div className="about-style-two-area pt-4 overflow-hidden">
+      <div style={{backgroundColor:"black"}} className="overflow-hidden">
         <div className="relative overflow-hidden">
           <div className="home-container" ref={homeContainerRef}>
             <video loop muted autoPlay>

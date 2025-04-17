@@ -43,7 +43,7 @@ interface ServiceDetailsProps {
   pricing?: PricingDataType;
 }
 
-const WooCommerceContent = ({
+const WordpressContent = ({
   serviceInfo,
   sectionClass,
   pricing,
@@ -59,33 +59,44 @@ const WooCommerceContent = ({
     importance_title,
   } = serviceInfo || {};
 
-  const features = [
+  const cards = [
     {
-      icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "First Impressions Count",
+      id: 1,
+      title: "Winning Product Research",
       description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
+        "We analyze trending products, search volume, competition, and cost-per-click to find a niche that has high demand and long-term growth potential.",
     },
     {
-      icon: "/assets/img/icon/24.png",
-      title: "User Experience Matters",
+      id: 2,
+      title: "Supplier Sourcing & Logistics",
       description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
+        "We connect you with reliable suppliers from the U.S. and duty-free regions to ensure faster shipping times, superior product quality, and better customer satisfaction.",
     },
     {
-      icon: "/assets/img/icon/24.png",
-      title: "Supports Marketing Efforts",
+      id: 3,
+      title: "Custom Store & Website Development",
       description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
+        "We design and develop a high-converting online store tailored to your niche, ensuring a seamless user experience and optimized sales funnel.",
     },
     {
-      icon: "/assets/img/icon/24.png",
-      title: "Drives Conversions",
+      id: 4,
+      title: "Branding & Positioning",
       description:
-        "Optimized design and clear call-to-actions turn visitors into customers.",
+        "We help you create a unique brand identity, from logo creation to product packaging",
+    },
+    {
+      id: 5,
+      title: "Data-Driven Marketing Strategy",
+      description:
+        "We don’t just build stores; we drive sales. Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
+    },
+    {
+      id: 6,
+      title: "Performance Tracking & Optimization",
+      description:
+        "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
     },
   ];
-
   return (
     <>
       <div
@@ -116,86 +127,84 @@ const WooCommerceContent = ({
             </div>
 
             <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px" }}>
-                Why do you need woocommerce?{" "}
+              <h1 style={{ marginBottom: "20px" }}>
+                Why should you build your website on wordpress?{" "}
               </h1>
-              <div style={{ marginTop: "50px", width: "100%" }}>
-                {[
-                  {
-                    id: 1,
-                    title: "Project Research",
-                    img: "/assets/img/blog/4.jpg",
-                  },
-                  {
-                    id: 2,
-                    title: "Best Concept",
-                    img: "/assets/img/blog/4.jpg",
-                  },
-                  {
-                    id: 3,
-                    title: "Design Implement",
-                    img: "/assets/img/blog/4.jpg",
-                  },
-                  {
-                    id: 4,
-                    title: "Final Result",
-                    img: "/assets/img/blog/4.jpg",
-                  },
-                ].map((item, index) => (
-                  <div
-                    key={item.id}
-                    className={`w-100 d-flex flex-column flex-lg-row ${
-                      index % 2 !== 0 ? "flex-lg-row-reverse" : ""
-                    }  mb-5`}
-                  >
-                    {/* Image */}
-                    <div className="w-100 w-lg-50 text-center p-2">
-                      <img
-                        src={item.img}
-                        alt="Blog"
-                        className="img-fluid"
-                        style={{
-                          maxWidth: "500px",
-                          height: "500px",
-                          width: "100%",
-                        }}
-                      />
-                    </div>
-
-                    {/* Text */}
-                    <div className="w-100 w-lg-50 p-4 text-center">
-                      <h2 className="post-title">
-                        <Link to={`/blog-single-with-sidebar`}>
-                          {item.title}
-                        </Link>
-                      </h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quod unde omnis est eius corrupti, odit vero fuga
-                        accusantium cum expedita debitis velit assumenda quidem.
-                        Facilis suscipit neque ullam numquam fugiat.
-                      </p>
+              <div className="row gx-1 mt-4 gy-4 mb-5">
+                {cards.map((card) => (
+                  <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
+                    <div className="card h-100 border shadow-sm">
+                      <div className="position-relative">
+                        <a href="/blog-single-with-sidebar/">
+                          <img
+                            src={`/assets/img/blog/4.jpg`}
+                            className="card-img-top"
+                            alt="Featured"
+                            style={{ height: "550px", objectFit: "cover" }}
+                          />
+                        </a>
+                        <div
+                          className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            top: "12px",
+                            left: "5px",
+                            fontWeight: "bold",
+                            border: "2px solid white",
+                          }}
+                        >
+                          {card.id}
+                        </div>
+                      </div>
+                      <div className="card-body">
+                        <h4 style={{ color: "black" }} className="card-title">
+                          {card.title}
+                        </h4>
+                        <p
+                          className="card-text text-muted"
+                          style={{
+                            overflow: "hidden",
+                            display: "-webkit-box",
+                            WebkitLineClamp: 3,
+                            WebkitBoxOrient: "vertical",
+                          }}
+                        >
+                          {card.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
             <div style={{ marginTop: "50px" }}>
-              <h2 className="text-center">Benefits of using woocommerce</h2>
-              <div className="row g-4 mt-4">
-                {features.map((feature, index) => (
-                  <div key={index} className="col-12 col-sm-6 col-lg-3">
-                    <div className="text-white  p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
-                      <img
-                        src={feature.icon}
-                        style={{ width: "60px" }}
-                        alt=""
-                      />
-                      <h5 className="fw-bold mt-4">{feature.title}</h5>
-                      <p className="mb-0">{feature.description}</p>
-                    </div>
-                  </div>
-                ))}
+              <h2 className="text-center">
+                Woocommerce integration for powerful ecommerce setup
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                quae voluptatibus voluptas numquam repellat aperiam ullam
+                molestias modi iusto magni, minima asperiores eum,
+                exercitationem sapiente. Minima aperiam ipsum praesentium vel!
+              </p>
+              <div>
+                <h2 className="mb-1">For Growth</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum, nostrum. Facilis impedit quibusdam iusto fugit quod
+                  recusandae eum culpa, consequuntur, perferendis veritatis ex
+                  corrupti dicta et quas, a ut nisi.
+                </p>
+              </div>
+              <div>
+                <h2 className="mb-1">For Growth</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum, nostrum. Facilis impedit quibusdam iusto fugit quod
+                  recusandae eum culpa, consequuntur, perferendis veritatis ex
+                  corrupti dicta et quas, a ut nisi.
+                </p>
               </div>
             </div>
             <div
@@ -225,8 +234,9 @@ const WooCommerceContent = ({
           </div>
         </div>
         <PriceV2New pricing={pricing} />
+        
         <div className="container mt-4">
-          <MostPopularServices/>
+        <MostPopularServices/>
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>
@@ -269,4 +279,4 @@ const WooCommerceContent = ({
   );
 };
 
-export default WooCommerceContent;
+export default WordpressContent;

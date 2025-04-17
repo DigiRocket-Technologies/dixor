@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import MostPopularServices from "./MostPopularServices.tsx";
 
 interface DataType {
   title?: string;
@@ -70,7 +71,7 @@ const EcommerceSeoContent = ({
     "/assets/img/partner/sp.png",
     "/assets/img/partner/sp.png",
   ];
-  
+
   return (
     <>
       <div
@@ -181,7 +182,7 @@ const EcommerceSeoContent = ({
               >
                 {images.map((imgSrc, index) => (
                   <SwiperSlide key={index}>
-                    <div className="p-3 bg-white rounded shadow-sm text-center" >
+                    <div className="p-3 bg-white rounded shadow-sm text-center">
                       <img
                         src={imgSrc}
                         alt={`Partner ${index}`}
@@ -191,7 +192,6 @@ const EcommerceSeoContent = ({
                           objectFit: "contain",
                         }}
                       />
-                    
                     </div>
                   </SwiperSlide>
                 ))}
@@ -218,7 +218,9 @@ const EcommerceSeoContent = ({
           </div>
         </div>
         <PriceV2New pricing={pricing} />
+
         <div className="container">
+          <MostPopularServices />
           <div className="services-details-items">
             <div className="d-grid colums-2 mt-50">
               <div className="item">

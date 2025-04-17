@@ -43,7 +43,7 @@ interface ServiceDetailsProps {
   pricing?: PricingDataType;
 }
 
-const WooCommerceContent = ({
+const WebApplicationContent = ({
   serviceInfo,
   sectionClass,
   pricing,
@@ -269,4 +269,4 @@ const WooCommerceContent = ({
   );
 };
 
-export default WooCommerceContent;
+export default WebApplicationContent;

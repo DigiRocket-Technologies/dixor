@@ -1,0 +1,20 @@
+[
+  {
+    "sid": "local-seo",
+    "imgsrc":"/assets/img/icon/24.png",
+    "name": "SX0",
+    "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit Praesentium dolores optio quaerat est pariatur magni ipsa tenetur, aspernatur deleniti. Ipsa."
+  },
+  {
+    "sid": "performance-marketing",
+    "imgsrc":"/assets/img/icon/24.png",
+    "name": "Performance Marketing",
+    "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit Praesentium dolores optio quaerat est pariatur magni ipsa tenetur, aspernatur deleniti. Ipsa."
+  },
+  {
+    "sid": "social-media-marketing",
+    "imgsrc":"/assets/img/icon/24.png",
+    "name": "Social Media Marketing",
+    "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit Praesentium dolores optio quaerat est pariatur magni ipsa tenetur, aspernatur deleniti. Ipsa."
+  }
+]

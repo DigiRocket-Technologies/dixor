@@ -237,9 +237,6 @@ const Routers = () => {
                 <Route path='/blog-single-light/:id' element={<BlogSingleLightPage />}></Route>
                 <Route path='/blog-single-with-sidebar-light/:id' element={<BlogSingleWithSidebarLightPage />}></Route>
 
-
-
-                
             </Routes>
         </>
     );

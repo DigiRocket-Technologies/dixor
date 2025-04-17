@@ -1,24 +1,30 @@
 import { Link } from "react-router-dom";
 
 interface DataType {
-    id?: number;
-    thumb?: string;
-    name?: string;
-    designation?: string;
+  id?: number;
+  thumb?: string;
+  name?: string;
+  designation?: string;
 }
 
 const SingleTeamV2 = ({ team }: { team: DataType }) => {
-    const { id, thumb, name, designation } = team;
+  const { id, thumb, name, designation } = team;
 
-    return (
-        <>
-            <div className="team-style-two-item">
-                <div  className="thumb">
-                    <img src={`/assets/img/team/${thumb}`} className="img-fluid" alt="Image Not Found" width={800} height={900} />
-                    <div  className="share-link">
-                        <i className="fas fa-share-alt" />
-                        <ul>
-                            {/* <li>
+  return (
+    <>
+      <div className="team-style-two-item">
+        <div className="thumb">
+          <img
+            src={`/assets/img/team/${thumb}`}
+            className="img-fluid"
+            alt="Image Not Found"
+            width={800}
+            height={900}
+          />
+          <div className="share-link">
+            <i className="fas fa-share-alt" />
+            <ul>
+              {/* <li>
                                 <Link className="facebook" to="https://www.facebook.com/" target="_blank">
                                     <i className="fab fa-facebook-f" />
                                 </Link>
@@ -28,21 +34,29 @@ const SingleTeamV2 = ({ team }: { team: DataType }) => {
                                     <i className="fab fa-youtube" />
                                 </Link>
                             </li> */}
-                            <li>
-                                <Link className="linkedin" to="https://www.linkedin.com/" target="_blank">
-                                    <i className="fab fa-linkedin-in" />
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="info">
-                    <h2><Link to={`/team-details/${id}`}>{name}</Link></h2>
-                    <span>{designation}</span>
-                </div>
-            </div>
-        </>
-    );
+              <li>
+                <Link
+                  className="linkedin"
+                  to="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <i className="fab fa-linkedin-in" />
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style={{ height: "200px",display:"flex",alignItems:"center",justifyContent:"center" }} className="info">
+          <div>
+            <h2>
+              <Link to={`/team-details/${id}`}>{name}</Link>
+            </h2>
+            <span>{designation}</span>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default SingleTeamV2;

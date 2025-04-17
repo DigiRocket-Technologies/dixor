@@ -1,9 +1,10 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import LayoutV1Light from "../../components/layouts/LayoutV1Light";
-import ServiceDetailsContentLight2 from "../../components/services/ServiceDetailsContentLight2";
+import LayoutV1 from "../../components/layouts/LayoutV1";
 import ServicesV1Data from "../../assets/jsonData/services/ServiceV1New.json";
 import pricingInfo from "../../assets/jsonData/price/PriceV2New.json"
 import { Helmet } from "react-helmet-async";
+import DarkClass from "../../components/classes/DarkClass";
+import AIContent from "../../components/services/AIContent";
 
 const AI = () => {
 
@@ -15,10 +16,11 @@ const AI = () => {
                 <title>Artificial Intelligence | DigiRocket Technologies</title>
             </Helmet>
             
-            <LayoutV1Light>
-                <Breadcrumb title='Artificial Intelligence' breadCrumb='Artificial Intelligence' LightMode={true} />
-                {data &&  <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
-            </LayoutV1Light>
+            <LayoutV1>
+                <Breadcrumb title='Artificial Intelligence' breadCrumb='Artificial Intelligence' LightMode={false} />
+                {data &&  <AIContent serviceInfo={data} pricing={pricing} sectionClass='default-padding' />}
+                <DarkClass/>
+            </LayoutV1>
         </>
     );
 };

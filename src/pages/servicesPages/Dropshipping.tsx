@@ -20,6 +20,8 @@ import {
   Autoplay,
 } from "swiper/modules";
 import SingleBannerV3 from "../../components/banner/SingleBannerV3.js";
+import { useState } from "react";
+import MostPopularServices from "../../components/services/MostPopularServices.js";
 const Dropshipping = () => {
   const cards = [
     {
@@ -64,6 +66,44 @@ const Dropshipping = () => {
   //   (service) => service.serviceId === "dropshipping"
   // );
 
+  const [formData, setFormData] = useState({
+    hasWebsite: "",
+    websiteUrl: "",
+    hasRegisteredWebsite: "",
+    websiteName: "",
+    businessGoal: "",
+  });
+
+  const radioStyle = {
+    width: "20px",
+    height: "20px",
+    border: "2px solid #007bff",
+    borderRadius: "50%",
+    backgroundColor: "white",
+    marginRight: "10px",
+    cursor: "pointer",
+  };
+
+  const labelStyle = {
+    fontSize: "20px",
+    color: "white",
+    cursor: "pointer",
+  };
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    alert("Form submitted successfully!");
+  };
+
   return (
     <>
       <Helmet>
@@ -90,7 +130,7 @@ const Dropshipping = () => {
             <h2 className="text-center">
               Access suppliers used by top sellers
             </h2>
-            <p style={{fontSize:"20px"}}>
+            <p style={{ fontSize: "20px" }}>
               Dropshipping isn't all about selling products, it's about selling
               the right products that are sourced from reliable suppliers, with
               profit margins that make your business sustainable. When you pick
@@ -100,201 +140,26 @@ const Dropshipping = () => {
             </p>
           </div>
         </div>
-        <div 
-          style={{marginTop:"100px"}}
+        <div
+          style={{ marginTop: "100px" }}
           className={`blog-area home-blog blog-style-two-area  bottom-less `}
         >
           {" "}
           <div className="container">
-            <h2 className="text-center">Our Dropshipping Service Encompasses</h2>
-            {/* <div className="container">
-            <div className="row">
-              <div className="col-lg-6 col-md-6 mb-30">
-                <div className="home-blog-two">
-                  <div className="thumb">
-                    <Link to={`/blog-single-with-sidebar/`}>
-                      <img
-                        style={{height:"400px"}}
-                        src={`/assets/img/blog/4.jpg`}
-                        alt="Image Not Found"
-                      
-                      />
-                    </Link>
-                    <div className="date">1</div>
-                  </div>
-                  <div className="info">
-                    <div className="content">
-                      <div className="meta">
-                        <h3>Winning Product Research</h3>
-                        <p>
-                          We analyze trending products, search volume,
-                          competition, and cost-per-click to find a niche that
-                          has high demand and long-term growth potential.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-6 mb-30">
-                <div className="home-blog-two">
-                  <div className="thumb">
-                    <Link to={`/blog-single-with-sidebar/`}>
-                      <img
-                        style={{height:"400px"}}
-                        src={`/assets/img/blog/4.jpg`}
-                        alt="Image Not Found"
-                        
-                      />
-                    </Link>
-                    <div className="date">2</div>
-                  </div>
-                  <div className="info">
-                    <div className="content">
-                      <div className="meta">
-                        <h3 style={{ fontSize: "25px" }}>
-                          Supplier Sourcing & Logistics
-                        </h3>
-                        <p>
-                          We connect you with reliable suppliers from the U.S.
-                          and duty-free regions to ensure faster shipping times,
-                          superior product quality, and better customer
-                          satisfaction.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row mt-4">
-              <div className="col-lg-6 col-md-6 mb-30">
-                <div className="home-blog-two">
-                  <div className="thumb">
-                    <Link to={`/blog-single-with-sidebar/`}>
-                      <img
-                        style={{height:"400px"}}
-                        src={`/assets/img/blog/4.jpg`}
-                        alt="Image Not Found"
-                      />
-                    </Link>
-                    <div className="date">1</div>
-                  </div>
-                  <div className="info">
-                    <div className="content">
-                      <div className="meta">
-                        <h3 >Winning Product Research</h3>
-                        <p>
-                          We analyze trending products, search volume,
-                          competition, and cost-per-click to find a niche that
-                          has high demand and long-term growth potential.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-6 mb-30">
-                <div className="home-blog-two">
-                  <div className="thumb">
-                    <Link to={`/blog-single-with-sidebar/`}>
-                      <img
-                      style={{height:"400px"}}
-                        src={`/assets/img/blog/4.jpg`}
-                        alt="Image Not Found"
-                        
-                      />
-                    </Link>
-                    <div className="date">2</div>
-                  </div>
-                  <div className="info">
-                    <div className="content">
-                      <div className="meta">
-                        <h3>Winning Product Research</h3>
-                        <p>
-                          We analyze trending products, search volume,
-                          competition, and cost-per-click to find a niche that
-                          has high demand and long-term growth potential.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row mt-4">
-              <div className="col-lg-6 col-md-6 mb-30">
-                <div className="home-blog-two">
-                  <div className="thumb">
-                    <Link to={`/blog-single-with-sidebar/`}>
-                      <img
-                        src={`/assets/img/blog/4.jpg`}
-                        alt="Image Not Found"
-                        style={{height:"400px"}}
-                      />
-                    </Link>
-                    <div className="date">1</div>
-                  </div>
-                  <div className="info">
-                    <div className="content">
-                      <div className="meta">
-                        <h3 style={{ fontSize: "25px" }}>
-                          Branding & Positioning:
-                        </h3>
-                        <p>
-                          We help you create a unique brand identity, from logo
-                          creation to product packaging.
-                          We help you create a unique brand identity, from logo
-                          creation to product packaging.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-6 mb-30">
-                <div className="home-blog-two">
-                  <div className="thumb">
-                    <Link to={`/blog-single-with-sidebar/`}>
-                      <img
-                        src={`/assets/img/blog/4.jpg`}
-                        alt="Image Not Found"
-                        style={{height:"400px"}}
-                      />
-                    </Link>
-                    <div className="date">2</div>
-                  </div>
-                  <div className="info">
-                    <div className="content">
-                      <div className="meta">
-                        <h3 style={{ fontSize: "25px" }}>
-                          Data-Driven Marketing Strategy
-                        </h3>
-                        <p>
-                          We don’t just build stores; we drive sales. Our expert
-                          team develops targeted ad campaigns, SEO strategies,
-                          and email marketing plans to scale your business
-                          profitably.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
+            <h2 className="text-center">
+              Our Dropshipping Service Encompasses
+            </h2>
             <div className="row gx-1 mt-4 gy-4 mb-5">
               {cards.map((card) => (
                 <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
-                  <div className="card h-100 border shadow-sm">
+                  <div className="card h-100 border">
                     <div className="position-relative">
                       <a href="/blog-single-with-sidebar/">
                         <img
                           src={`/assets/img/blog/4.jpg`}
                           className="card-img-top"
                           alt="Featured"
-                          style={{ height: "250px", objectFit: "cover" }}
+                          style={{ height: "550px", objectFit: "cover" }}
                         />
                       </a>
                       <div
@@ -389,50 +254,158 @@ const Dropshipping = () => {
               <div className="banner-slide-button-next" />
             </Swiper>
           </div>
+          <MostPopularServices/>
         </div>
-
-        {/* <div
-          className={`partner-style-two-area default-padding overflow-hidden blurry-shape-right`}
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 pr-110 pr-md-15 pr-xs-15">
-                <div className="partner-two-thumb">
-                  <img style={{height:"400px"}} src={thumb15} alt="Image Not Found" />
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="brand-style-two-items">
-                  <h2 className="title pt-4">
-                    <SplitText
-                      delay={100}
-                      animationFrom={{
-                        opacity: 0,
-                        transform: "translate3d(0,50px,0)",
-                      }}
-                      animationTo={{
-                        opacity: 1,
-                        transform: "translate3d(0,0,0)",
-                      }}
-                      easing="easeOutCubic"
-                      threshold={0.2}
-                      rootMargin="-50px"
-                    >
-                      Our Trusted Partner.
-                    </SplitText>
-                  </h2>
-                  <p>
-                    Perceived determine departure explained no forfeite. Give
-                    lady of they such they sure it. Me contained explained my
-                    education. Vulgar as hearts by garret. Perceived determine
-                    departure explained no forfeited he something an
-                  </p>
-                </div>
-              </div>
+    
+        <div style={{paddingTop:"50px",paddingBottom:"50px"}} className="form-wrapper">
+          <div className="form-container">
+            <div className="text-center mb-4">
+              <p className="fs-2" style={{fontWeight:'bold'}}>Tell us about your dropshipping goals</p>
             </div>
+
+            <form onSubmit={handleSubmit}>
+              {/* Website Ownership Question */}
+              <div className="mb-4">
+                <label className="form-label">Do you have a website?</label>
+                <div className="form-check-group">
+                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="website-yes">
+                    <input
+                      type="radio"
+                      name="hasWebsite"
+                      id="website-yes"
+                      value="yes"
+                      onChange={handleChange}
+                      checked={formData.hasWebsite === "yes"}
+                      style={radioStyle}
+                    />
+                    <span style={labelStyle}>Yes</span>
+                  </label>
+
+                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="website-no">
+                    <input
+                      type="radio"
+                      name="hasWebsite"
+                      id="website-no"
+                      value="no"
+                      onChange={handleChange}
+                      checked={formData.hasWebsite === "no"}
+                      style={radioStyle}
+                    />
+                    <span style={labelStyle}>No</span>
+                  </label>
+                </div>
+              </div>
+
+              {formData.hasWebsite === "yes" && (
+                <div style={{display:"flex", gap:"10px", justifyContent:"start",alignItems:"center"}} className="mb-4">
+                  <label className="form-label">If yes, enter URL:</label>
+                  <input
+                    type="text"
+                    className="neon-input"
+                    name="websiteUrl"
+                    value={formData.websiteUrl}
+                    onChange={handleChange}
+                    placeholder="https://yourwebsite.com"
+                  />
+                </div>
+              )}
+
+              {/* Registered Website */}
+              <div className="mb-4">
+                <label className="form-label">
+                  Do you have a registered website?
+                </label>
+                <div className="form-check-group">
+                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="registered-yes">
+                    <input
+                      type="radio"
+                      className="dinput"
+                      name="hasRegisteredWebsite"
+                      id="registered-yes"
+                      value="yes"
+                      onChange={handleChange}
+                      checked={formData.hasRegisteredWebsite === "yes"}
+                      style={radioStyle}
+                    />
+                    <span style={labelStyle}>Yes</span>
+                  </label>
+
+                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="registered-no">
+                    <input
+                      type="radio"
+                      className="dinput"
+                      name="hasRegisteredWebsite"
+                      id="registered-no"
+                      value="no"
+                      onChange={handleChange}
+                      checked={formData.hasRegisteredWebsite === "no"}
+                      style={radioStyle}
+                    />
+                    <span style={labelStyle}>No</span>
+                  </label>
+                </div>
+              </div>
+
+              {formData.hasRegisteredWebsite === "yes" && (
+                <div style={{display:"flex", gap:"10px", justifyContent:"start",alignItems:"center"}} className="mb-4">
+                  <label className="form-label">If yes, enter name:</label>
+                  <input
+                    type="text"
+                    className="neon-input"
+                    name="websiteName"
+                    value={formData.websiteName}
+                    onChange={handleChange}
+                    placeholder="Your Website Name"
+                  />
+                </div>
+              )}
+
+              {/* Business Goal */}
+              <div className="mb-4">
+                <label className="form-label">
+                  Do you want to pursue dropshipping as:
+                </label>
+                <div className="form-check-group">
+                  <label style={{display:"flex", width:"50%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="goal-fulltime">
+                    <input
+                      type="radio"
+                      className="dinput"
+                      name="businessGoal"
+                      id="goal-fulltime"
+                      value="fullTime"
+                      onChange={handleChange}
+                      checked={formData.businessGoal === "fullTime"}
+                      style={radioStyle}
+                    />
+                    <span style={labelStyle}>
+                      A full-time business professional
+                    </span>
+                  </label>
+
+                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="goal-side">
+                    <input
+                      className="dinput"
+                      type="radio"
+                      name="businessGoal"
+                      id="goal-side"
+                      value="sideIncome"
+                      onChange={handleChange}
+                      checked={formData.businessGoal === "sideIncome"}
+                      style={radioStyle}
+                    />
+                    <span style={labelStyle}>Side income</span>
+                  </label>
+                </div>
+              </div>
+
+              <div className="text-center mt-4">
+                <button type="submit" className="dbutton">
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
-        </div> */}
-        {/* {data && <ServiceDetailsContentLight2 serviceInfo={data} pricing={pricing} sectionClass='default-padding' />} */}
+        </div>
         <DarkClass />
       </LayoutV1>
     </>
