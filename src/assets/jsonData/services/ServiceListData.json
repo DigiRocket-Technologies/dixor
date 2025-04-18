@@ -2,15 +2,18 @@
     {
         "id": 1,
         "serviceName": "Integrity",
+        "img":"/assets/img/about/integrity.svg",
         "count": "01"
     },
     {
         "id": 2,
+        "img":"/assets/img/about/work together.svg",
         "serviceName": "Team Work",
         "count": "02"
     },
     {
         "id": 3,
+        "img":"/assets/img/about/commitment.svg",
         "serviceName": "Customer Commitment",
         "count": "03"
     }

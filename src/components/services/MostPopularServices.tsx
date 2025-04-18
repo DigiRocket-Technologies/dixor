@@ -8,7 +8,7 @@ const MostPopularServices = () => {
         {MostPopularServiceData.map((item, idx) => {
           return (
             <div key={idx} className="col-lg-4 col-md-6">
-              <div  className="item">
+              <div className="item">
                 <img
                   src={item?.imgsrc}
                   alt="Image Not Found"

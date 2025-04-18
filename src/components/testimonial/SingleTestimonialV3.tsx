@@ -14,7 +14,7 @@ const SingleTestimonialV3 = ({ testimonial }: { testimonial: DataType }) => {
 
     return (
         <>
-            <div className="testimonial-style-three-item">
+            <div style={{minHeight:"500px"}} className="testimonial-style-three-item">
                 <div className="tes-rating">
                     <span className='me-3'>{ratings}</span>
                     <div className="icon">
@@ -24,7 +24,7 @@ const SingleTestimonialV3 = ({ testimonial }: { testimonial: DataType }) => {
                 <p>{text}</p>
                 <div className="tm-provider">
                     <div className="thumb">
-                        <img src={`/assets/img/team/${avatar}`} alt="Image Not Found" width={200} height={200} />
+                        <img src={`/assets/img/clients/${avatar}`} alt="Image Not Found" width={200} height={200} />
                     </div>
                     <div className="content">
                         <h4>{name}</h4>

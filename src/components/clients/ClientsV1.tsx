@@ -4,7 +4,6 @@ import team12 from "/assets/img/team/12.jpg";
 import team13 from "/assets/img/team/13.jpg";
 // import brand10 from "/assets/img/brand/10.png";
 import brand10 from "/assets/img/clients/cevherun.png";
-
 import brand2 from "/assets/img/clients/alamo city popcorn.png";
 import brand3 from "/assets/img/clients/ReHisk_png.png";
 import brand4 from "/assets/img/clients/ladder safety.png";

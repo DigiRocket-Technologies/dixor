@@ -122,7 +122,7 @@ const ContactForm = () => {
 
     console.log(data);
 
-    return
+    return ;
 
     // Reset the form
     setFormState({

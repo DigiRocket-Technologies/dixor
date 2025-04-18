@@ -258,7 +258,7 @@
   },
   {
     "id": "artificial-intelligence",
-    "bannerImg":"/assets/img/banner/6.jpg",
+    "bannerImg":"/assets/img/services/sudanshu ai.png",
     "img1":"/assets/img/portfolio/45.jpg",
     "img2":"/assets/img/portfolio/46.jpg",
     "type": "development",
@@ -344,7 +344,7 @@
   },
   {
     "id": "woocommerce-development",
-    "bannerImg":"/assets/img/banner/6.jpg",
+    "bannerImg":"/assets/img/services/woo commerce banner.png",
     "img1":"/assets/img/portfolio/45.jpg",
     "img2":"/assets/img/portfolio/46.jpg",
     "type": "development",
@@ -387,7 +387,7 @@
   },
   {
     "id": "web-application-development",
-    "bannerImg":"/assets/img/banner/6.jpg",
+    "bannerImg":"/assets/img/services/web application upasana.png",
     "img1":"/assets/img/portfolio/45.jpg",
     "img2":"/assets/img/portfolio/46.jpg",
     "type": "development",
@@ -430,7 +430,7 @@
   },
   {
     "id": "wordpress-development",
-    "bannerImg":"/assets/img/banner/6.jpg",
+    "bannerImg":"/assets/img/services/shristi wordpress.png",
     "img1":"/assets/img/portfolio/45.jpg",
     "img2":"/assets/img/portfolio/46.jpg",
     "type": "development",
@@ -473,7 +473,7 @@
   },
   {
     "id": "mobile-application-development",
-    "bannerImg":"/assets/img/banner/6.jpg",
+    "bannerImg":"/assets/img/services/sudanshu mobile development.png",
     "type": "development",
     "img1":"/assets/img/portfolio/45.jpg",
     "img2":"/assets/img/portfolio/46.jpg",

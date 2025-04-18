@@ -1,6 +1,6 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import { Helmet } from "react-helmet-async";
-import banner6 from "/assets/img/services/Marketing.png";
+import banner6 from "/assets/img/services/marketing.png";
 import { Link } from "react-router-dom";
 import TestimonialV2 from "../../components/testimonial/TestimonialV2";
 import thumb3 from "/assets/img/thumb/3.jpg";
@@ -12,25 +12,25 @@ import MostPopularServices from "../../components/services/MostPopularServices";
 const Marketing = () => {
   const features = [
     {
-      icon: "/assets/img/icon/24.png", // Bootstrap Icon class
+      icon: "/assets/img/about/audienc.svg", // Bootstrap Icon class
       title: "Reach the Right Audience",
       description:
         "Targeting the right people at the right time makes all the difference. Smart marketing drives relevant traffic, boosting engagement and conversions.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/about/lvels.svg",
       title: "Connect on a Deeper Level",
       description:
         "Personalization is key. Marketing today isn’t just about selling — it’s about building meaningful relationships with your customers.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/about/ai in marketing.svg",
       title: "AI in Marketing ",
       description:
         "AI helps analyze data, predict behaviors, and optimize campaigns, giving you a competitive edge in a fast-paced digital world.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/about/adapt.svg",
       title: "Adapt to Change",
       description:
         "Marketing is constantly evolving. We keep your brand agile, adapting to the latest trends and tools to ensure sustained growth.",
