@@ -166,6 +166,7 @@ const AIContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h3>What we Offer:</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -174,11 +175,12 @@ const AIContent = ({
               </div>
             </div>
 
-            <div className="mt-50 mt-xs-20">
+            {/* <div className="mt-50 mt-xs-20">
               <h1 style={{ marginBottom: "50px" }}>
                 We build for both ? cards
               </h1>
-            </div>
+            </div> */}
+            
             <div style={{ marginTop: "50px" }}>
               <h2 className="text-center">Features we offer</h2>
               <div className="row g-4 mt-4">

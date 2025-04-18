@@ -10,13 +10,13 @@ interface DataType {
 }
 
 const SingleServiceV4 = ({ service }: { service: DataType }) => {
-    const { id, titleFirst, titleLast, icon, text } = service;
+    const { id, titleFirst, icon, text } = service;
 
     return (
         <>
-            <div className="cteative-service-item">
+            <div style={{minHeight:"400px"}} className="cteative-service-item">
                 <div className="top">
-                    <h4><Link to={`/service-details/${id}`}>{titleFirst} <strong>{titleLast}</strong></Link></h4>
+                    <h4><Link to={`/service-details/${id}`}>{titleFirst} </Link></h4>
                     <img src={`/assets/img/icon/${icon}`} alt="Icon" width={200} height={200} />
                 </div>
                 <p>{text}</p>

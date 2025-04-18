@@ -75,27 +75,39 @@ const ShopifyContent = ({
   const features = [
     {
       icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "First Impressions Count",
+      title: "Seamless Third-Party App Integration",
       description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
+        "We connect your store with essential tools like email marketing, analytics, and review apps for a complete ecosystem.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "User Experience Matters",
+      title: "Custom Feature Development",
       description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
+        "Need something unique? We build tailored features that align with your brand goals and improve user experience.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Supports Marketing Efforts",
+      title: "Inventory & Order Management Tools",
       description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
+        "Automate stock updates, order tracking, and fulfillment with smart integrations that save time and reduce errors.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Drives Conversions",
+      title: "Payment & Checkout Enhancements",
       description:
-        "Optimized design and clear call-to-actions turn visitors into customers.",
+        "We optimize and customize your payment flow to ensure faster, secure, and smoother transactions.",
+    },
+    {
+      icon: "/assets/img/icon/24.png",
+      title: "Loyalty & Referral Systems",
+      description:
+        "Boost customer retention by integrating loyalty points, rewards, and referral program apps into your store.",
+    },
+    {
+      icon: "/assets/img/icon/24.png",
+      title: "Real-Time Chat & Support Tools",
+      description:
+        "Enable instant customer support with chat tools and bots that drive engagement and resolve queries instantly.",
     },
   ];
 
@@ -120,6 +132,7 @@ const ShopifyContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h3>What we focus on:</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -154,7 +167,6 @@ const ShopifyContent = ({
                       loop={true}
                       autoplay={true}
                       freeMode={true}
-                    
                       grabCursor={true}
                       slidesPerView={1}
                       spaceBetween={30}
@@ -172,7 +184,7 @@ const ShopifyContent = ({
                           spaceBetween: 70,
                         },
                       }}
-                      modules={[Navigation, FreeMode, Keyboard,Autoplay]}
+                      modules={[Navigation, FreeMode, Keyboard, Autoplay]}
                     >
                       <div className="swiper-wrapper">
                         {ServicesV4Data.map((service) => (
@@ -221,7 +233,10 @@ const ShopifyContent = ({
             >
               {features.map((feature, index) => (
                 <SwiperSlide key={index}>
-                  <div className="feature-card d-flex flex-column justify-content-between text-center p-4 rounded-4 shadow border border-secondary bg-dark h-100">
+                  <div
+                    style={{ minHeight: "380px" }}
+                    className="feature-card d-flex flex-column justify-content-between text-center p-4 rounded-4 shadow border border-secondary bg-dark h-100"
+                  >
                     <div>
                       <img
                         src={feature.icon}
@@ -241,36 +256,32 @@ const ShopifyContent = ({
             </Swiper>
           </div>
           <div
-          style={{ marginTop: "80px" }}
-          className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
-        >
-          {/* Image */}
-          <div className="w-100 w-lg-50 text-center p-2">
-            <img
-              src="/assets/img/blog/1.jpg"
-              alt="Blog"
-              className="img-fluid"
-              style={{ maxWidth: "500px", height: "500px", width: "100%" }}
-            />
-          </div>
-          {/* Text */}
-          <div className="w-100 w-lg-50 p-4 ">
-            <h2 className="post-title">
-              <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
-            </h2>
-            <p>
-              {whyChooseP1}
-              {whyChooseP2}
-            </p>
+            style={{ marginTop: "80px" }}
+            className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+          >
+            {/* Image */}
+            <div className="w-100 w-lg-50 text-center p-2">
+              <img
+                src="/assets/img/blog/1.jpg"
+                alt="Blog"
+                className="img-fluid"
+                style={{ maxWidth: "500px", height: "500px", width: "100%" }}
+              />
+            </div>
+            {/* Text */}
+            <div className="w-100 w-lg-50 p-4 ">
+              <h2 className="post-title">
+                <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
+              </h2>
+              <p>{whyChooseP1}</p>
+              <p>{whyChooseP2}</p>
+            </div>
           </div>
         </div>
-        </div>
-
-    
 
         <PriceV2New pricing={pricing} />
         <div className="container">
-          <MostPopularServices/>
+          <MostPopularServices />
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>

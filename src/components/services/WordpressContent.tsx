@@ -62,39 +62,39 @@ const WordpressContent = ({
   const cards = [
     {
       id: 1,
-      title: "Winning Product Research",
+      title: "Open-Source Platform",
       description:
-        "We analyze trending products, search volume, competition, and cost-per-click to find a niche that has high demand and long-term growth potential.",
+        "WordPress is free and fully customizable, with constant updates from a vibrant developer community.",
     },
     {
       id: 2,
-      title: "Supplier Sourcing & Logistics",
+      title: "User-Friendly Interface",
       description:
-        "We connect you with reliable suppliers from the U.S. and duty-free regions to ensure faster shipping times, superior product quality, and better customer satisfaction.",
+        "WordPress is designed for ease of use, making it ideal for beginners. At the same time, it offers advanced features and flexibility for experienced developers.",
     },
     {
       id: 3,
-      title: "Custom Store & Website Development",
+      title: "SEO-Friendly",
       description:
-        "We design and develop a high-converting online store tailored to your niche, ensuring a seamless user experience and optimized sales funnel.",
+        "With built-in SEO tools and plugins, WordPress helps you optimize your site for better visibility in search engines",
     },
     {
       id: 4,
-      title: "Branding & Positioning",
+      title: "Scalable and Flexible ",
       description:
-        "We help you create a unique brand identity, from logo creation to product packaging",
+        "WordPress grows with your business, offering the flexibility to expand your site’s features as needed .",
     },
     {
       id: 5,
-      title: "Data-Driven Marketing Strategy",
+      title: "Wide Range of Themes",
       description:
-        "We don’t just build stores; we drive sales. Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
+        "Choose from thousands of pre-designed themes to create a unique, professional look for your site .",
     },
     {
       id: 6,
-      title: "Performance Tracking & Optimization",
+      title: "Strong Community Support",
       description:
-        "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
+        "Benefit from extensive resources, tutorials, and support from a large, active WordPress community.",
     },
   ];
   return (
@@ -118,6 +118,7 @@ const WordpressContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h3>What we offer:</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -128,7 +129,7 @@ const WordpressContent = ({
 
             <div className="mt-50 mt-xs-20">
               <h1 style={{ marginBottom: "20px" }}>
-                Why should you build your website on wordpress?{" "}
+                Why WordPress is the Best Choice for Your Website?
               </h1>
               <div className="row gx-1 mt-4 gy-4 mb-5">
                 {cards.map((card) => (
@@ -140,7 +141,7 @@ const WordpressContent = ({
                             src={`/assets/img/blog/4.jpg`}
                             className="card-img-top"
                             alt="Featured"
-                            style={{ height: "550px", objectFit: "cover" }}
+                            style={{ height: "480px", objectFit: "cover" }}
                           />
                         </a>
                         <div
@@ -182,28 +183,32 @@ const WordpressContent = ({
               <h2 className="text-center">
                 Woocommerce integration for powerful ecommerce setup
               </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-                quae voluptatibus voluptas numquam repellat aperiam ullam
-                molestias modi iusto magni, minima asperiores eum,
-                exercitationem sapiente. Minima aperiam ipsum praesentium vel!
-              </p>
-              <div>
-                <h2 className="mb-1">For Growth</h2>
+              <div className="mt-2">
+                <h2 className="mb-2">Seamless Integration with WordPress</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, nostrum. Facilis impedit quibusdam iusto fugit quod
-                  recusandae eum culpa, consequuntur, perferendis veritatis ex
-                  corrupti dicta et quas, a ut nisi.
+                  WooCommerce integrates effortlessly with WordPress, providing
+                  a strong platform for eCommerce.
                 </p>
               </div>
-              <div>
-                <h2 className="mb-1">For Growth</h2>
+              <div className="mt-4">
+                <h2 className="mb-2">Customizable Product Options</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, nostrum. Facilis impedit quibusdam iusto fugit quod
-                  recusandae eum culpa, consequuntur, perferendis veritatis ex
-                  corrupti dicta et quas, a ut nisi.
+                  WooCommerce allows you to create a variety of product types
+                  and attributes, tailored to your business needs.
+                </p>
+              </div>
+              <div className="mt-4">
+                <h2 className="mb-2">Secure Payment Gateways</h2>
+                <p>
+                  WooCommerce supports multiple secure payment gateways,
+                  offering customers convenient and safe checkout options
+                </p>
+              </div>
+              <div className="mt-4">
+                <h2 className="mb-2">Scalable and Flexible</h2>
+                <p>
+                  WooCommerce grows with your business, offering features to
+                  support everything from small shops to large enterprises.
                 </p>
               </div>
             </div>
@@ -225,18 +230,16 @@ const WordpressContent = ({
                 <h2 className="post-title">
                   <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
                 </h2>
-                <p>
-                  {whyChooseP1}
-                  {whyChooseP2}
-                </p>
+                <p>{whyChooseP1}</p>
+                <p> {whyChooseP2}</p>
               </div>
             </div>
           </div>
         </div>
         <PriceV2New pricing={pricing} />
-        
+
         <div className="container mt-4">
-        <MostPopularServices/>
+          <MostPopularServices />
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>
