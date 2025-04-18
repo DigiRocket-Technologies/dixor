@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import MostPopularServices from "./MostPopularServices.tsx";
@@ -61,43 +60,43 @@ const InfluencerMarketingContent = ({
     importance_title,
   } = serviceInfo || {};
 
-
   const cards = [
     {
       id: 1,
-      title: "Winning Product Research",
+      title: "Strategic Influencer Selection",
       description:
-        "We analyze trending products, search volume, competition, and cost-per-click to find a niche that has high demand and long-term growth potential.",
+        "We research and handpick influencers who align perfectly with your brand, audience, and objectives.",
     },
     {
       id: 2,
-      title: "Supplier Sourcing & Logistics",
+      title: "Tailored Campaign Design",
       description:
-        "We connect you with reliable suppliers from the U.S. and duty-free regions to ensure faster shipping times, superior product quality, and better customer satisfaction.",
+        "We craft influencer campaigns that speak directly to your audience, ensuring maximum engagement and impact.",
     },
+
     {
       id: 3,
-      title: "Custom Store & Website Development",
+      title: "End-to-End Management",
       description:
-        "We design and develop a high-converting online store tailored to your niche, ensuring a seamless user experience and optimized sales funnel.",
+        "From negotiating terms to overseeing content creation, we manage every detail to ensure seamless execution.",
     },
     {
       id: 4,
-      title: "Branding & Positioning",
+      title: "Creative Collaboration",
       description:
-        "We help you create a unique brand identity, from logo creation to product packaging",
+        "We work closely with influencers to create authentic, compelling content that resonates with their audience and drives results.",
     },
     {
       id: 5,
-      title: "Data-Driven Marketing Strategy",
+      title: "Data-Driven Optimization",
       description:
-        "We don’t just build stores; we drive sales. Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
+        "We continuously track performance, refining strategies based on real-time data to improve results as the campaign progresses.",
     },
     {
       id: 6,
-      title: "Performance Tracking & Optimization",
+      title: "Impactful Reporting",
       description:
-        "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
+        "We provide detailed performance reports, offering insights into campaign success and actionable recommendations for future efforts.",
     },
   ];
 
@@ -122,6 +121,8 @@ const InfluencerMarketingContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h4>What We Offer:</h4>
+
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -139,8 +140,8 @@ const InfluencerMarketingContent = ({
               }}
               className=""
             >
-            <button className="btn ">For Brand</button>
-            <button className="btn ">For Influencer</button>
+              <button className="btn ">For Brand</button>
+              <button className="btn ">For Influencer</button>
             </div>
             <div style={{ marginTop: "50px" }}>
               <h2>Types of Influencers :</h2>
@@ -149,22 +150,30 @@ const InfluencerMarketingContent = ({
                 {[
                   {
                     id: 1,
-                    title: "Project Research",
+                    title: "Nano Influencers",
+                    description:
+                      "Nano influencers typically have between 1k to 10k followers. Despite their smaller audience size, they often boast exceptionally high engagement rates and deeply loyal communities. Their recommendations feel more personal, making them ideal for hyper-targeted campaigns, local marketing, or niche-specific promotions. They are cost-effective, accessible, and more open to genuine brand collaborations.",
                     img: "/assets/img/blog/4.jpg",
                   },
                   {
                     id: 2,
-                    title: "Best Concept",
+                    title: "Micro Influencers",
+                    description:
+                      "Micro influencers usually have between 10k to 100k followers. They offer a sweet spot between reach and authenticity. Their audiences are still niche enough to feel personal but large enough to make an impact. These influencers often specialize in specific interests or industries, making them valuable for brands that want to tap into relevant and engaged communities. Micro influencers drive strong engagement, trust, and conversions. ",
                     img: "/assets/img/blog/4.jpg",
                   },
                   {
                     id: 3,
-                    title: "Design Implement",
+                    title: "Macro Influencers",
+                    description:
+                      "Macro influencers have between 100k to 1M  followers. They bring scale and visibility while still maintaining some level of audience connection. Most have built their following through consistent content creation, making them experienced and reliable partners. These influencers are ideal for brands aiming to increase awareness on a larger scale without losing all sense of relatability. Their content quality is usually high, and their audience spans diverse demographics. ",
                     img: "/assets/img/blog/4.jpg",
                   },
                   {
                     id: 4,
-                    title: "Final Result",
+                    title: "Mega Influencers",
+                    description:
+                      "Mega influencers are creators or celebrities with over 1 million followers. They offer massive reach and brand exposure, often across global audiences. These influencers are ideal for large-scale brand awareness campaigns and product launches. Their influence can instantly boost visibility, drive social buzz, and elevate your brand’s status. While they come with higher costs, the potential impact is significant.",
                     img: "/assets/img/blog/4.jpg",
                   },
                 ].map((item, index) => (
@@ -195,54 +204,46 @@ const InfluencerMarketingContent = ({
                           {item.title}
                         </Link>
                       </h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quod unde omnis est eius corrupti, odit vero fuga
-                        accusantium cum expedita debitis velit assumenda quidem.
-                        Facilis suscipit neque ullam numquam fugiat.
-                      </p>
+                      <p>{item.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-           
+
             <div style={{ marginTop: "50px" }}>
-              <h2>Why you need Instagram marketing?</h2>
+              <h2>Why Influencer Marketing Works?</h2>
+              <p>
+                By leveraging influencers' established relationships with their
+                audience, brands can connect with potential customers in a more
+                genuine and engaging way.
+              </p>
               <div>
-                <h2 className="mb-1">For Growth</h2>
+                <h2 className="mb-1">Authentic Connections</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, nostrum. Facilis impedit quibusdam iusto fugit quod
-                  recusandae eum culpa, consequuntur, perferendis veritatis ex
-                  corrupti dicta et quas, a ut nisi.
+                  Influencers have built trust with their followers, making
+                  their recommendations feel more genuine and personal.
                 </p>
               </div>
               <div>
-                <h2 className="mb-1">For Growth</h2>
+                <h2 className="mb-1">Targeted Reach</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, nostrum. Facilis impedit quibusdam iusto fugit quod
-                  recusandae eum culpa, consequuntur, perferendis veritatis ex
-                  corrupti dicta et quas, a ut nisi.
+                  Influencers allow brands to reach specific, niche audiences
+                  that are more likely to convert.
                 </p>
               </div>
               <div>
-                <h2 className="mb-1">For Growth</h2>
+                <h2 className="mb-1">High Engagement Rates</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, nostrum. Facilis impedit quibusdam iusto fugit quod
-                  recusandae eum culpa, consequuntur, perferendis veritatis ex
-                  corrupti dicta et quas, a ut nisi.
+                  Influencers often achieve better engagement compared to
+                  traditional advertising, leading to higher brand interaction.
                 </p>
               </div>
               <div>
-                <h2 className="mb-1">For Growth</h2>
+                <h2 className="mb-1">Cost-Effective ROI</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, nostrum. Facilis impedit quibusdam iusto fugit quod
-                  recusandae eum culpa, consequuntur, perferendis veritatis ex
-                  corrupti dicta et quas, a ut nisi.
+                  With various influencer tiers, brands can scale campaigns to
+                  fit their budget while still seeing significant returns.
                 </p>
               </div>
             </div>
@@ -253,14 +254,13 @@ const InfluencerMarketingContent = ({
                   <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
                     <div className="card h-100 border shadow-sm">
                       <div className="position-relative">
-                      
-                          <img
-                            src={`/assets/img/blog/4.jpg`}
-                            className="card-img-top"
-                            alt="Featured"
-                            style={{ height: "550px", objectFit: "cover" }}
-                          />
-                       
+                        <img
+                          src={`/assets/img/blog/4.jpg`}
+                          className="card-img-top"
+                          alt="Featured"
+                          style={{ height: "550px", objectFit: "cover" }}
+                        />
+
                         <div
                           className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
                           style={{
@@ -296,29 +296,37 @@ const InfluencerMarketingContent = ({
                 ))}
               </div>
             </div>
-            <div style={{marginTop:"50px"}} className={`w-100 d-flex flex-column flex-lg-row  mb-5`}>
+            <div
+              style={{ marginTop: "50px" }}
+              className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+            >
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
                   src="/assets/img/blog/1.jpg"
                   alt="Blog"
                   className="img-fluid"
-                  style={{ maxWidth: "500px",height: "500px", width: "100%" }}
+                  style={{ maxWidth: "500px", height: "500px", width: "100%" }}
                 />
               </div>
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                  <Link to={`/blog-single-with-sidebar`}>
+                    What Makes Us Different?{" "}
+                  </Link>
                 </h2>
-                <p>{whyChooseP1}{whyChooseP2}</p>
+                <p>
+                  {whyChooseP1}
+                  {whyChooseP2}
+                </p>
               </div>
             </div>
           </div>
         </div>
         <PriceV2New pricing={pricing} />
         <div className="container mt-4">
-          <MostPopularServices/>
+          <MostPopularServices />
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>
