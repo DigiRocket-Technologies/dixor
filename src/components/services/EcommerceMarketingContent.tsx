@@ -93,6 +93,7 @@ const EcommerceMarketingContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h4>What We Offer:</h4>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -114,22 +115,30 @@ const EcommerceMarketingContent = ({
                 {[
                   {
                     id: 1,
-                    title: "Project Research",
+                    title: "Market Research and Audience Insights ",
+                    decription:
+                      "We begin by researching your market, competitors, and target audience. This helps us gain insights into consumer behavior and preferences, allowing us to create a marketing strategy that resonates with the right people. Understanding these elements ensures we reach your audience with personalized messaging.",
                     img: "/assets/img/blog/4.jpg",
                   },
                   {
                     id: 2,
-                    title: "Best Concept",
+                    title: "SEO and Content Strategy ",
+                    decription:
+                      "We optimize your website with a comprehensive SEO strategy that focuses on improving visibility and rankings on search engines. Our content strategy includes keyword optimization, product descriptions, blog posts, and other content forms that engage and inform your potential ",
                     img: "/assets/img/blog/4.jpg",
                   },
                   {
                     id: 3,
-                    title: "Design Implement",
+                    title: "Paid Advertising Campaigns",
+                    decription:
+                      "We run paid campaigns across multiple platforms like Google Ads and Facebook to drive qualified traffic to your online store. These campaigns are carefully crafted to ensure maximum ROI by targeting the right demographics and using effective ad creatives. We monitor, adjust, and scale campaigns based on real-time performance.",
                     img: "/assets/img/blog/4.jpg",
                   },
                   {
                     id: 4,
-                    title: "Final Result",
+                    title: "Performance Analysis and Optimization",
+                    decription:
+                      "Constant tracking and analysis of campaign performance help us make data-driven adjustments. By analyzing metrics such as conversion rates, customer behavior, and ROI, we refine strategies to continuously improve results. This ensures that your ecommerce marketing efforts are always aligned with your goals and deliver the best outcomes.",
                     img: "/assets/img/blog/4.jpg",
                   },
                 ].map((item, index) => (
@@ -176,24 +185,24 @@ const EcommerceMarketingContent = ({
               className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
             >
               {/* Image */}
-              <div className="w-100 w-lg-50 text-center p-2">
+              {/* <div className="w-100 w-lg-50 text-center p-2">
                 <img
                   src="/assets/img/blog/1.jpg"
                   alt="Blog"
                   className="img-fluid"
                   style={{ maxWidth: "500px", height: "500px", width: "100%" }}
                 />
-              </div>
+              </div> */}
               {/* Text */}
-              <div className="w-100 w-lg-50 p-4 ">
+              {/* <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                  <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
                 </h2>
                 <p>
                   {whyChooseP1}
                   {whyChooseP2}
                 </p>
-              </div>
+              </div> */}
             </div>
             <div>
               <h2>How will it benefit you?</h2>
@@ -271,7 +280,7 @@ const EcommerceMarketingContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                  <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
                 </h2>
                 <p>
                   {whyChooseP1}
@@ -281,7 +290,7 @@ const EcommerceMarketingContent = ({
             </div>
           </div>
         </div>
-        <PriceV2New pricing={pricing}/>
+        <PriceV2New pricing={pricing} />
         <div className="container">
           <MostPopularServices />
           <div className="item">
