@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 // import pricingInfo from "../../assets/jsonData/price/PriceV2New.json";
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import DarkClass from "../../components/classes/DarkClass";
-import banner6 from "/assets/img/banner/6.jpg";
+import banner6 from "/assets/img/services/dropshipping.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import SplitText from "../../components/animation/SplitText.jsx";
 // import { Link } from "react-router-dom";
@@ -67,53 +67,40 @@ const Dropshipping = () => {
   // );
 
   const [formData, setFormData] = useState({
-    hasWebsite: "",
-    websiteUrl: "",
-    hasRegisteredWebsite: "",
-    websiteName: "",
-    businessGoal: "",
+    name: "",
+    email: "",
+    phone: "",
+    question1: "",
+    question1Details: "",
+    question2: "",
+    question2Details: "",
+    question3: "",
+    question4: "",
   });
-
-  const radioStyle = {
-    width: "20px",
-    height: "20px",
-    border: "2px solid #007bff",
-    borderRadius: "50%",
-    backgroundColor: "white",
-    marginRight: "10px",
-    cursor: "pointer",
-  };
-
-  const labelStyle = {
-    fontSize: "20px",
-    color: "white",
-    cursor: "pointer",
-  };
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
+    setFormData({
+      ...formData,
       [name]: value,
-    }));
+    });
   };
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    alert("Form submitted successfully!");
   };
 
   return (
     <>
       <Helmet>
-        <title>Drop Shipping | DigiRocket Technologies</title>
+        <title>Dropshipping | DigiRocket Technologies</title>
       </Helmet>
 
       <LayoutV1>
         <Breadcrumb
-          title="Drop Shipping"
-          breadCrumb="Drop Shipping"
+          title="Dropshipping"
+          breadCrumb="Dropshipping"
           LightMode={false}
         />
         <div style={{ width: "95%", margin: "auto" }} className="container">
@@ -159,7 +146,7 @@ const Dropshipping = () => {
                           src={`/assets/img/blog/4.jpg`}
                           className="card-img-top"
                           alt="Featured"
-                          style={{ height: "550px", objectFit: "cover" }}
+                          style={{ height: "460px", objectFit: "cover" }}
                         />
                       </a>
                       <div
@@ -254,156 +241,180 @@ const Dropshipping = () => {
               <div className="banner-slide-button-next" />
             </Swiper>
           </div>
-          <MostPopularServices/>
-        </div>
-    
-        <div style={{paddingTop:"50px",paddingBottom:"50px"}} className="form-wrapper">
-          <div className="form-container">
-            <div className="text-center mb-4">
-              <p className="fs-2" style={{fontWeight:'bold'}}>Tell us about your dropshipping goals</p>
+          <MostPopularServices />
+          <div
+            style={{ paddingBottom: "80px", paddingTop: "40px" }}
+            className="mt-5"
+          >
+            <div className="card shadow bg-dark text-white">
+              <div className="row g-0" style={{ minHeight: "750px" }}>
+                {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
+                <div className="col-md-5 col-lg-5 d-none d-md-block">
+                  <img
+                    src="/assets/img/blog/1.jpg"
+                    alt="Business professional"
+                    className="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+
+                {/* Right Side (Form Content) */}
+                <div className="col-md-7 col-lg-7 p-4 p-md-5">
+                  <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
+                    HELP US UNDERSTAND YOUR NEEDS WITH THESE QUESTIONS
+                  </h2>
+
+                  <form onSubmit={handleSubmit}>
+                    <div className="mb-4">
+                      <label className="form-label text-white">Name</label>
+                      <input
+                        name="name"
+                        placeholder="Enter Name"
+                        className="form-control bg-dark text-white"
+                        value={formData.name}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label className="form-label text-white">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Email"
+                        className="form-control bg-dark text-white"
+                        value={formData.email}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">Phone</label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Enter Phone Number"
+                        className="form-control bg-dark text-white"
+                        value={formData.phone}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">
+                        Do you have a website?
+                      </label>
+                      <select
+                        name="question1"
+                        className="form-select bg-dark text-white"
+                        value={formData.question1}
+                        onChange={handleChange}
+                      >
+                        <option value="" disabled>
+                          Select an option
+                        </option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                      {formData.question1 === "Yes" && (
+                        <input
+                          type="url"
+                          name="question1Details"
+                          placeholder="Enter Website URL"
+                          className="form-control bg-dark text-white mt-4"
+                          value={formData.question1Details}
+                          onChange={handleChange}
+                        />
+                      )}
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">
+                        Do you have a registered company?
+                      </label>
+                      <select
+                        name="question2"
+                        className="form-select bg-dark text-white"
+                        value={formData.question2}
+                        onChange={handleChange}
+                      >
+                        <option value="" disabled>
+                          Select an option
+                        </option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                      {formData.question2 === "Yes" && (
+                        <input
+                          type="text"
+                          name="question2Details"
+                          placeholder="Enter Company Name"
+                          className="form-control bg-dark text-white mt-4"
+                          value={formData.question2Details}
+                          onChange={handleChange}
+                        />
+                      )}
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">
+                        Have you tried hands-on dropshipping?
+                      </label>
+                      <select
+                        name="question3"
+                        className="form-select bg-dark text-white"
+                        value={formData.question3}
+                        onChange={handleChange}
+                      >
+                        <option value="" disabled>
+                          Select an option
+                        </option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">
+                        Do you want to pursue dropshipping as full-time or side
+                        income?
+                      </label>
+                      <select
+                        name="question4"
+                        className="form-select bg-dark text-white"
+                        value={formData.question4}
+                        onChange={handleChange}
+                      >
+                        <option value="" disabled>
+                          Select an option
+                        </option>
+                        <option value="Full-time">Full-time</option>
+                        <option value="Side Income">Side Income</option>
+                      </select>
+                    </div>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      className=""
+                    >
+                      <button
+                        type="submit"
+                        className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
+                        style={{
+                          color: "black",
+                          backgroundColor: "white",
+                          borderColor: "white",
+                        }}
+                      >
+                        SUBMIT RESPONSES
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
-
-            <form onSubmit={handleSubmit}>
-              {/* Website Ownership Question */}
-              <div className="mb-4">
-                <label className="form-label">Do you have a website?</label>
-                <div className="form-check-group">
-                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="website-yes">
-                    <input
-                      type="radio"
-                      name="hasWebsite"
-                      id="website-yes"
-                      value="yes"
-                      onChange={handleChange}
-                      checked={formData.hasWebsite === "yes"}
-                      style={radioStyle}
-                    />
-                    <span style={labelStyle}>Yes</span>
-                  </label>
-
-                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="website-no">
-                    <input
-                      type="radio"
-                      name="hasWebsite"
-                      id="website-no"
-                      value="no"
-                      onChange={handleChange}
-                      checked={formData.hasWebsite === "no"}
-                      style={radioStyle}
-                    />
-                    <span style={labelStyle}>No</span>
-                  </label>
-                </div>
-              </div>
-
-              {formData.hasWebsite === "yes" && (
-                <div style={{display:"flex", gap:"10px", justifyContent:"start",alignItems:"center"}} className="mb-4">
-                  <label className="form-label">If yes, enter URL:</label>
-                  <input
-                    type="text"
-                    className="neon-input"
-                    name="websiteUrl"
-                    value={formData.websiteUrl}
-                    onChange={handleChange}
-                    placeholder="https://yourwebsite.com"
-                  />
-                </div>
-              )}
-
-              {/* Registered Website */}
-              <div className="mb-4">
-                <label className="form-label">
-                  Do you have a registered website?
-                </label>
-                <div className="form-check-group">
-                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="registered-yes">
-                    <input
-                      type="radio"
-                      className="dinput"
-                      name="hasRegisteredWebsite"
-                      id="registered-yes"
-                      value="yes"
-                      onChange={handleChange}
-                      checked={formData.hasRegisteredWebsite === "yes"}
-                      style={radioStyle}
-                    />
-                    <span style={labelStyle}>Yes</span>
-                  </label>
-
-                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="registered-no">
-                    <input
-                      type="radio"
-                      className="dinput"
-                      name="hasRegisteredWebsite"
-                      id="registered-no"
-                      value="no"
-                      onChange={handleChange}
-                      checked={formData.hasRegisteredWebsite === "no"}
-                      style={radioStyle}
-                    />
-                    <span style={labelStyle}>No</span>
-                  </label>
-                </div>
-              </div>
-
-              {formData.hasRegisteredWebsite === "yes" && (
-                <div style={{display:"flex", gap:"10px", justifyContent:"start",alignItems:"center"}} className="mb-4">
-                  <label className="form-label">If yes, enter name:</label>
-                  <input
-                    type="text"
-                    className="neon-input"
-                    name="websiteName"
-                    value={formData.websiteName}
-                    onChange={handleChange}
-                    placeholder="Your Website Name"
-                  />
-                </div>
-              )}
-
-              {/* Business Goal */}
-              <div className="mb-4">
-                <label className="form-label">
-                  Do you want to pursue dropshipping as:
-                </label>
-                <div className="form-check-group">
-                  <label style={{display:"flex", width:"50%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="goal-fulltime">
-                    <input
-                      type="radio"
-                      className="dinput"
-                      name="businessGoal"
-                      id="goal-fulltime"
-                      value="fullTime"
-                      onChange={handleChange}
-                      checked={formData.businessGoal === "fullTime"}
-                      style={radioStyle}
-                    />
-                    <span style={labelStyle}>
-                      A full-time business professional
-                    </span>
-                  </label>
-
-                  <label style={{display:"flex", width:"20%", justifyContent:"start",alignItems:"center"}} className="form-check" htmlFor="goal-side">
-                    <input
-                      className="dinput"
-                      type="radio"
-                      name="businessGoal"
-                      id="goal-side"
-                      value="sideIncome"
-                      onChange={handleChange}
-                      checked={formData.businessGoal === "sideIncome"}
-                      style={radioStyle}
-                    />
-                    <span style={labelStyle}>Side income</span>
-                  </label>
-                </div>
-              </div>
-
-              <div className="text-center mt-4">
-                <button type="submit" className="dbutton">
-                  Submit
-                </button>
-              </div>
-            </form>
           </div>
         </div>
         <DarkClass />

@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import MostPopularServices from "./MostPopularServices.tsx";
+import { useState } from "react";
 
 interface DataType {
   title?: string;
@@ -124,6 +125,27 @@ const MobileApplicationContent = ({
         "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
     },
   ];
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    appType: "",
+    additional: "",
+  });
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
   return (
     <>
       <div
@@ -254,7 +276,7 @@ const MobileApplicationContent = ({
         </div>
         <PriceV2New pricing={pricing} />
         <div className="container mt-4">
-          <MostPopularServices/>
+          <MostPopularServices />
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>
@@ -288,6 +310,115 @@ const MobileApplicationContent = ({
                     </div>
                   );
                 })}
+              </div>
+            </div>
+          </div>
+          <div className="mt-5">
+            <div className="card shadow bg-dark text-white">
+              <div className="row g-0" style={{ minHeight: "750px" }}>
+                {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
+                <div className="col-md-5 col-lg-5 d-none d-md-block">
+                  <img
+                    src="/assets/img/blog/1.jpg"
+                    alt="Business professional"
+                    className="w-100 h-100 object-fit-cover"
+                  />
+                </div>
+
+                {/* Right Side (Form Content) */}
+                <div className="col-md-7 col-lg-7 p-4 p-md-5">
+                  <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
+                    LEARN HOW WE CAN ENHANCE THE EFFECTIVENESS OF YOUR MOBILE
+                    APP DEVELOPMENT.
+                  </h2>
+
+                  <form onSubmit={handleSubmit}>
+                    <div className="mb-4">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter Name"
+                        className="form-control bg-dark text-white"
+                        value={formData.name}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div className="row mb-4">
+                      <div className="col-md-6 mb-3 mb-md-0">
+                        <input
+                          type="email"
+                          name="email"
+                          required
+                          placeholder="Email address *"
+                          className="form-control bg-dark text-white"
+                          value={formData.email}
+                          onChange={handleChange}
+                        />
+                        <span className="alert-error" />
+                      </div>
+                      <div className="col-md-6">
+                        <input
+                          type="tel"
+                          name="phone"
+                          required
+                          placeholder="Phone no. *"
+                          className="form-control bg-dark text-white"
+                          value={formData.phone}
+                          onChange={handleChange}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="mb-4">
+                      <select
+                        name="appType"
+                        className="form-select bg-dark text-white"
+                        value={formData.appType}
+                        onChange={handleChange}
+                      >
+                        <option value="" disabled>
+                          Select App Type
+                        </option>
+                        <option value="Android">Android</option>
+                        <option value="iOS">iOS</option>
+                        <option value="Both">Both</option>
+                      </select>
+                    </div>
+
+                    <div className="mb-4">
+                      <textarea
+                        name="additional"
+                        placeholder="Additional information"
+                        className="form-control bg-dark text-white"
+                        style={{ height: "120px" }}
+                        value={formData.additional}
+                        onChange={handleChange}
+                      ></textarea>
+                    </div>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      className=""
+                    >
+                      <button
+                        type="submit"
+                        className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
+                        style={{
+                          color: "black",
+                          backgroundColor: "white",
+                          borderColor: "white",
+                        }}
+                      >
+                        BOOK CONSULTATION
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import Animate from "../animation/Animate";
-import thumb3 from "/assets/img/thumb/3.jpg";
+import thumb3 from "/assets/img/services/unlock revenue growth.jpg";
 
 interface DataType {
   sectionClass?: string;
@@ -110,9 +110,10 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                 </div>
                 <div className="award-items">
                   <Animate className="animate__animated animate__fadeInLeft">
-                    <div className="award-item">
-                      <i className="fab fa-behance" />
-                      <h4>Behance Awards </h4>
+                    <div className="award-item bg-white">
+                      {/* <i className="fab fa-behance" />
+                      <h4>Behance Awards </h4> */}
+                      <img src="/assets/img/partner/wp.png" alt="" />
                     </div>
                   </Animate>
 
@@ -120,9 +121,8 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                     className="animate__animated animate__fadeInLeft"
                     delay="100ms"
                   >
-                    <div className="award-item">
-                      <i className="fas fa-layer-group" />
-                      <h4>Design Awards</h4>
+                    <div className="award-item bg-white">
+                      <img src="/assets/img/partner/meta.png" alt="" />
                     </div>
                   </Animate>
 
@@ -130,9 +130,8 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                     className="animate__animated animate__fadeInLeft"
                     delay="200ms"
                   >
-                    <div className="award-item">
-                      <i className="fab fa-laravel" />
-                      <h4>Coding Awards</h4>
+                    <div className="award-item bg-white">
+                       <img src="/assets/img/partner/magento.png" alt="" />
                     </div>
                   </Animate>
                 </div>

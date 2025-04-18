@@ -9038,7 +9038,7 @@ a.btn-circle:hover strong {
 	padding: 10px;
 }
 
-.team-style-two-item .thumb > img {
+.team-style-two-item .thumb>img {
 	filter: grayscale(1);
 	transition: 0.3s;
 }
@@ -10219,7 +10219,7 @@ h2.text-large-gradient {
 	padding: 30px 50px;
 	position: relative;
 	z-index: 1;
-	min-height: 150px;
+	height: 150px;
 }
 
 .bg-dark .client-style-one-item {
@@ -10326,7 +10326,8 @@ h2.text-large-gradient {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	max-height: 40px;
+	max-height: 120px;
+	width: auto;
 }
 
 .client-style-one-item .fun-fact {
@@ -10866,7 +10867,7 @@ ul.contact-list li .info {
 }
 
 .partner-two-item img {
-	
+
 	max-height: 45px;
 }
 
@@ -18037,109 +18038,110 @@ button.Toastify__close-button {
 	}
 }
 
-#marketing>li{
+#marketing>li {
 	list-style-type: circle;
 }
 
-#marketing li::marker{
+#marketing li::marker {
 	color: black;
 }
 
 .bg-neon {
 	background-color: #C9F31D !important;
-  }
-  
-  .text-neon {
-	color: #C9F31D !important;
-  }
-  
-  .border-neon {
-	border-color: #C9F31D !important;
-  }
+}
 
-  .swiper-slide {
+.text-neon {
+	color: #C9F31D !important;
+}
+
+.border-neon {
+	border-color: #C9F31D !important;
+}
+
+.swiper-slide {
 	height: 100%;
 	display: flex;
-  }
-  
-  .feature-card {
+}
+
+.feature-card {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: 300px; /* Adjust based on your design */
+	min-height: 300px;
+	/* Adjust based on your design */
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .feature-card:hover {
+}
+
+.feature-card:hover {
 	box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
-  }
-  
-  .form-wrapper {
+}
+
+.form-wrapper {
 	min-height: 100vh;
 	background-color: #000;
 	padding: 2rem 0;
 	display: flex;
-	width:'100vw';
+	width: '100vw';
 	align-items: center;
-  }
-  
-  .form-container {
-	width:60%;
-	margin:auto;
+}
+
+.form-container {
+	width: 60%;
+	margin: auto;
 	background-color: rgba(0, 0, 0, 0.7);
 	border-radius: 10px;
 	padding: 2rem;
 	box-shadow: 0 0 20px white;
 	border: 1px solid white;
-  }
-  
-  .neon-title {
+}
+
+.neon-title {
 	font-weight: bold;
 	font-size: 2.5rem;
 	color: white;
 	text-shadow: 0 0 10px white;
 	margin-bottom: 1rem;
-  }
-  
-  .neon-text {
+}
+
+.neon-text {
 	color: white;
 	text-shadow: 0 0 5px white;
-  }
-  
-  .form-label {
+}
+
+.form-label {
 	color: white;
 	font-size: 1.1rem;
 	margin-bottom: 0.5rem;
-  }
-  
-  .neon-input {
+}
+
+.neon-input {
 	background-color: #000 !important;
 	border: 1px solid white !important;
 	color: white !important;
 	border-radius: 5px;
 	padding-left: 10px;
-	padding-right:10px;
-  }
+	padding-right: 10px;
+}
 
-    .neon-input:focus {
+.neon-input:focus {
 	box-shadow: 0 0 8px white !important;
 	border-color: white !important;
-  }
-  
-  .neon-input::placeholder {
+}
+
+.neon-input::placeholder {
 	color: white;
-  }
-  
-  .neon-radio label {
+}
+
+.neon-radio label {
 	color: white;
-  }
-  
-  .neon-radio input[type="radio"] {
+}
+
+.neon-radio input[type="radio"] {
 	accent-color: white;
-  }
-  
-  .dbutton {
+}
+
+.dbutton {
 	background-color: white !important;
 	border: none !important;
 	color: #000 !important;
@@ -18148,49 +18150,52 @@ button.Toastify__close-button {
 	border-radius: 5px !important;
 	transition: all 0.3s ease !important;
 	box-shadow: 0 0 10px white !important;
-  }
-  
-  .dbutton:hover {
+}
+
+.dbutton:hover {
 	background-color: #c9f31d !important;
 	box-shadow: 0 0 15px white !important;
 	transform: translateY(-2px);
-  }
-  
-  .dbutton::after{
-    background-color: #c9f31d !important;;
-  }
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
+}
+
+.dbutton::after {
+	background-color: #c9f31d !important;
+	;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
 	.form-container {
-	  padding: 1.5rem;
+		padding: 1.5rem;
 	}
-  
+
 	.neon-title {
-	  font-size: 2rem;
+		font-size: 2rem;
 	}
-  }
-  
-  .custom-radio-wrapper {
+}
+
+.custom-radio-wrapper {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 	margin-bottom: 1rem;
 	cursor: pointer;
-  }
-  
-  .custom-radio {
+}
+
+.custom-radio {
 	appearance: none;
 	width: 18px;
 	height: 18px;
 	border: 2px solid white;
-	border-radius: 50%; /* ensures it's circular */
+	border-radius: 50%;
+	/* ensures it's circular */
 	background-color: transparent;
 	position: relative;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
-  }
-  
-  .custom-radio:checked::before {
+}
+
+.custom-radio:checked::before {
 	content: '';
 	position: absolute;
 	top: 4px;
@@ -18199,15 +18204,86 @@ button.Toastify__close-button {
 	height: 8px;
 	background-color: white;
 	border-radius: 50%;
-  }
-  
-  .custom-radio-wrapper label {
+}
+
+.custom-radio-wrapper label {
 	color: #212529;
 	font-size: 1rem;
 	cursor: pointer;
-  }
+}
 
-  .card:hover {
-	box-shadow: 0 0 20px #c9f31d /* Greenish shadow */
+.card:hover {
+	box-shadow: 0 0 20px #c9f31d
+		/* Greenish shadow */
+}
+
+.ptext {
+	font-size: 80px !important
+}
+
+.form-control::placeholder,
+.form-select::placeholder {
+	color: #cccccc;
+	opacity: 1;
+}
+
+.form-select option {
+	background-color: #212529;
+	color: white;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-control:active,
+.form-select:active {
+	box-shadow: 0 0 8px #c9f31d !important;
+	border-color: #c9f31d !important;
+	outline: none;
+}
+
+.form-control:focus-visible,
+.form-select:focus-visible {
+	box-shadow: 0 0 8px #c9f31d !important;
+	border-color: #c9f31d !important;
+	outline: none;
+}
+
+@media (max-width: 1200px) {
+	.ptext {
+		font-size: 50px !important
+	}
+}
+
+.tbutton {
+	background-color: #c9f31d !important;
+	border: none !important;
+	color: #000 !important;
+	font-weight: bold !important;
+	padding: 1rem 3rem !important;
+	border-radius: 5px !important;
+	transition: all 0.3s ease !important;
+}
+
+.tbutton:hover {
+
+	background-color: white !important;
+
+	transform: translateY(-2px);
+}
+
+.tbutton::after {
+	background-color: white !important;
+}
+
+.country-card {
+	transition: transform 0.3s ease;
+}
+
+.overlay {
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
   }
-  
+.country-card:hover {
+	transform: scale(1.05);
+}

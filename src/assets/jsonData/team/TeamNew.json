@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "thumb": "/shubhsir shoot.png",
+    "thumb": "/shubh sir 2.png",
     "name": "Shubhranshu Srivastava",
     "designation": "Founder, Director & CEO",
     "social": {
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/shubhranshu-srivastava-403b08229/",
       "instagram": ""
     }
   },
@@ -15,23 +15,23 @@
     "name": "Sunny Kumar",
     "designation": "Co-Founder, Director & COO",
     "social": {
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/sunny-kumar-a6467222a/",
       "instagram": ""
     }
   },
   {
     "id": 3,
-    "thumb": "apoorvsir.png",
+    "thumb": "apoorv sir 1.png",
     "name": "Apoorv Dwivedi",
     "designation": "Chief Technology Officer",
     "social": {
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/dwivediapoorv/",
       "instagram": ""
     }
   },
   {
     "id": 4,
-    "thumb": "siddhartsir.png",
+    "thumb": "siddhart sir shoot.png",
     "name": "Sidharth Anant Shiv",
     "designation": "Assistant Director",
     "social": {
@@ -40,20 +40,10 @@
     }
   },
   {
-    "id": 5,
-    "thumb": "/upasana shoot.png",
-    "name": "Upasana Rathore",
-    "designation": "Senior Frontend Developer",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-  {
-    "id": 6,
-    "thumb": "/akriti mam shoot 2.png",
-    "name": "Akriti Mahajan",
-    "designation": "Project Coordinator",
+    "id": 11,
+    "thumb": "nikhar shoot.png",
+    "name": "Nikhar Makkar",
+    "designation": "Project Manager",
     "social": {
       "linkedin": "",
       "instagram": ""
@@ -80,16 +70,6 @@
     }
   },
   {
-    "id": 9,
-    "thumb": "garvit shoot 1.png",
-    "name": "Garvit Sharma",
-    "designation": "SEO Executive",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-  {
     "id": 10,
     "thumb": "suraj shoot.png",
     "name": "Suraj Kumar",
@@ -100,10 +80,51 @@
     }
   },
   {
+    "id": 5,
+    "thumb": "/upasana shoot_1.png",
+    "name": "Upasana Rathore",
+    "designation": "Senior Frontend Developer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 6,
+    "thumb": "/akriti mam shoot 2.png",
+    "name": "Akriti Mahajan",
+    "designation": "Project Coordinator",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 14,
+    "thumb": "pratyaksh shoot.png",
+    "name": "Pratyaksh Srivastava",
+    "designation": "Graphic Designer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+
+  {
     "id": 11,
     "thumb": "pari.webp",
     "name": "Pratyush Negi",
     "designation": "Graphic Designer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 9,
+    "thumb": "garvit shoot 1.png",
+    "name": "Garvit Sharma",
+    "designation": "SEO Executive",
     "social": {
       "linkedin": "",
       "instagram": ""
@@ -141,23 +162,52 @@
   },
   {
     "id": 14,
-    "thumb": "pratyaksh shoot.png",
-    "name": "Pratyaksh Srivastava",
-    "designation": "Graphic Designer",
+    "thumb": "sohan shoot.png",
+    "name": "Sohun Kumar",
+    "designation": "SEO Expert",
     "social": {
       "linkedin": "",
       "instagram": ""
     }
   },
   {
-    "id": 11,
-    "thumb": "nikhar shoot.png",
-    "name": "Nikhar Makkar",
-    "designation": "Project Manager",
+    "id": 15,
+    "thumb": "harshit shoot.png",
+    "name": "Harshit Singla",
+    "designation": "Ecommerce Specialist",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 16,
+    "thumb": "anurag-shoot.jpg",
+    "name": "Anurag Sharma",
+    "designation": "Performance Marketing Manager",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 17,
+    "thumb": "harsh shoot.png",
+    "name": "Harsh Raj",
+    "designation": "Sales Expert",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 18,
+    "thumb": "bhargav shoot.png",
+    "name": "Bhargav ",
+    "designation": "Sales Expert",
     "social": {
       "linkedin": "",
       "instagram": ""
     }
   }
-
 ]

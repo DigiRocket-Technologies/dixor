@@ -101,7 +101,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                     </div>
                     <span className="medium">Completed Projects</span>
                   </div>
-                  <Link to="/project">
+                  <Link to="/portfolio">
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </div>

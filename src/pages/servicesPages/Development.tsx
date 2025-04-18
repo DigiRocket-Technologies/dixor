@@ -1,6 +1,6 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import { Helmet } from "react-helmet-async";
-import banner6 from "/assets/img/banner/6.jpg";
+import banner6 from "/assets/img/services/dev.jpg";
 import { Link } from "react-router-dom";
 import TestimonialV2 from "../../components/testimonial/TestimonialV2";
 import thumb3 from "/assets/img/thumb/3.jpg";
@@ -77,8 +77,8 @@ const Development = () => {
           </div>
           <div style={{ marginTop: "50px" }}>
             <h2>Core Pillars of Our Development Solutions</h2>
-          
-            <div  style={{marginTop:"50px",width:"100%"}}>
+
+            <div style={{ marginTop: "50px", width: "100%" }}>
               {[
                 {
                   id: 1,
@@ -103,7 +103,6 @@ const Development = () => {
               ].map((item, index) => (
                 <div
                   key={item.id}
-                  
                   className={`w-100 d-flex flex-column flex-lg-row ${
                     index % 2 !== 0 ? "flex-lg-row-reverse" : ""
                   }  mb-5`}
@@ -114,7 +113,11 @@ const Development = () => {
                       src={item.img}
                       alt="Blog"
                       className="img-fluid"
-                      style={{ maxWidth: "500px",height:"550px" ,width: "100%" }}
+                      style={{
+                        maxWidth: "500px",
+                        height: "550px",
+                        width: "100%",
+                      }}
                     />
                   </div>
 
@@ -148,9 +151,15 @@ const Development = () => {
                         height={600}
                       />
                     </div>
-                    <div className="col-lg-5">
-                      {/* <div className="date">{date}</div> */}
-                      <h2 style={{ fontSize: "80px" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                      }}
+                      className="col-lg-5"
+                    >
+                      <h2 className="ptext">
                         <Link to={`/shopify-development/`}>
                           <strong> Shopify</strong>
                         </Link>
@@ -175,9 +184,15 @@ const Development = () => {
                         height={600}
                       />
                     </div>
-                    <div className="col-lg-5">
-                      {/* <div className="date">{date}</div> */}
-                      <h2 style={{ fontSize: "80px" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                      }}
+                      className="col-lg-5"
+                    >
+                      <h2 className="ptext">
                         <Link to={`/woocommerce-development`}>
                           WooCommerce <strong> Development</strong>
                         </Link>
@@ -202,9 +217,15 @@ const Development = () => {
                         height={600}
                       />
                     </div>
-                    <div className="col-lg-5">
-                      {/* <div className="date">{date}</div> */}
-                      <h2 style={{ fontSize: "80px" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                      }}
+                      className="col-lg-5"
+                    >
+                      <h2 className="ptext">
                         <Link to={`/artificial-intelligence`}>
                           Artificial <strong>Intelligence</strong>
                         </Link>
@@ -229,9 +250,15 @@ const Development = () => {
                         height={600}
                       />
                     </div>
-                    <div className="col-lg-5">
-                      {/* <div className="date">{date}</div> */}
-                      <h2 style={{ fontSize: "80px" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                      }}
+                      className="col-lg-5"
+                    >
+                      <h2 className="ptext">
                         <Link to={`/web-application-development`}>
                           Web <strong>Applications</strong>
                         </Link>
@@ -256,9 +283,15 @@ const Development = () => {
                         height={600}
                       />
                     </div>
-                    <div className="col-lg-5">
-                      {/* <div className="date">{date}</div> */}
-                      <h2 style={{ fontSize: "80px" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                      }}
+                      className="col-lg-5"
+                    >
+                      <h2 className="ptext">
                         <Link to={`/mobile-application-development`}>
                           Mobile <strong>Application</strong>
                         </Link>
@@ -283,9 +316,15 @@ const Development = () => {
                         height={600}
                       />
                     </div>
-                    <div className="col-lg-5">
-                      {/* <div className="date">{date}</div> */}
-                      <h2 style={{ fontSize: "80px" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                      }}
+                      className="col-lg-5"
+                    >
+                      <h2 className="ptext">
                         <Link to={`/wordpress-development`}>Wordpress</Link>
                       </h2>
                       <Link
@@ -333,8 +372,8 @@ const Development = () => {
               </div>
             </div>
           </div>
-          <TestimonialV2/>
-          <MostPopularServices/>
+          <TestimonialV2 />
+          <MostPopularServices />
         </div>
         <DarkClass />
       </LayoutV1>

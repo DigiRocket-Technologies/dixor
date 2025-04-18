@@ -54,8 +54,6 @@ const LocalSeoContent = ({
     title,
     whyChooseP1,
     bannerImg,
-    img1,
-    img2,
     whyChooseP2,
     faqs,
     definition,
@@ -63,13 +61,23 @@ const LocalSeoContent = ({
     importance_title,
   } = serviceInfo || {};
 
-  const images = [
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/cloud.png",
-    "/assets/img/partner/semrush.png",
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/sp.png",
+  // const images = [
+  //   "/assets/img/partner/sp.png",
+  //   "/assets/img/partner/cloud.png",
+  //   "/assets/img/partner/semrush.png",
+  //   "/assets/img/partner/sp.png",
+  //   "/assets/img/partner/sp.png",
+  //   "/assets/img/partner/sp.png",
+  // ];
+  const Skills = [
+    "Technical SEO",
+    "Keywords Planning",
+    "Competitor Research",
+    "Blog Optimization",
+    "Quality Link building",
+    "Meta optimization",
+    "GSC and GA4 Analysis",
+    "Google my business Optimization"
   ];
   return (
     <>
@@ -92,6 +100,7 @@ const LocalSeoContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h3>What we focus on:</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -147,11 +156,12 @@ const LocalSeoContent = ({
               </div>
             </div>
             <div className="row mt-80 mt-xs-50 gallery-two-columns">
-              <div className="col-md-6">
-                <img src={img1} alt="Image Not Found" />
-              </div>
-              <div className="col-md-6">
-                <img src={img2} alt="Image Not Found" />
+              <div className="row">
+                <div className="col-xl-12">
+                  <div className="service-single-thumb">
+                    <img src={bannerImg} alt="Thumb" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -174,22 +184,23 @@ const LocalSeoContent = ({
                     slidesPerView: 2,
                   },
                   1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                   },
                 }}
               >
-                {images.map((imgSrc, index) => (
+                {Skills.map((name, index) => (
                   <SwiperSlide key={index}>
-                    <div className="p-3 bg-white rounded shadow-sm text-center">
-                      <img
+                    <div style={{display:"flex",alignItems:"center",justifyContent:"center",width:"100%",height:"150px"}} className="p-3 bg-white rounded shadow-sm text-center">
+                      {/* <img
                         src={imgSrc}
                         alt={`Partner ${index}`}
                         style={{
                           width: "100%",
-                          height: "200px",
+                          height: "150px",
                           objectFit: "contain",
                         }}
-                      />
+                      /> */}
+                      <div style={{fontWeight:"bold"}} className="text-dark fs-4">{name}</div>
                     </div>
                   </SwiperSlide>
                 ))}
@@ -215,29 +226,30 @@ const LocalSeoContent = ({
             </div>
           </div>
           <div
-              style={{ marginTop: "50px" }}
-              className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
-            >
-              {/* Image */}
-              <div className="w-100 w-lg-50 text-center p-2">
-                <img
-                  src="/assets/img/blog/1.jpg"
-                  alt="Blog"
-                  className="img-fluid"
-                  style={{ maxWidth: "500px", height: "500px", width: "100%" }}
-                />
-              </div>
-              {/* Text */}
-              <div className="w-100 w-lg-50 p-4 ">
-                <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
-                </h2>
-                <p>
-                  {whyChooseP1}
-                  {whyChooseP2}
-                </p>
-              </div>
+            style={{ marginTop: "50px" }}
+            className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+          >
+            {/* Image */}
+            <div className="w-100 w-lg-50 text-center p-2">
+              <img
+                src="/assets/img/blog/1.jpg"
+                alt="Blog"
+                className="img-fluid"
+                style={{ maxWidth: "500px", minHeight: "500px", width: "100%" }}
+              />
             </div>
+            {/* Text */}
+            <div className="w-100 w-lg-50 p-4 ">
+              <h2 className="post-title">
+                <Link to={`#`}>Our QuickWin SEO Makes All the Difference. </Link>
+              </h2>
+              <h3>Why is it the best move?</h3>
+              <p>
+                {whyChooseP1}
+              </p>
+              <p> {whyChooseP2}</p>
+            </div>
+          </div>
         </div>
         <PriceV2New pricing={pricing} />
 
@@ -278,7 +290,7 @@ const LocalSeoContent = ({
               </div>
             </div>
           </div>
-         <MostPopularServices/>
+          <MostPopularServices />
         </div>
       </div>
     </>

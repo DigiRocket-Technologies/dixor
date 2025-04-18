@@ -62,8 +62,9 @@ const ServicesV1 = ({ hasTitle, sectionClass, lightMode }: DataType) => {
                                     key={service.id}
                                     onMouseEnter={() => handleMouseEnter(service.id)}
                                     onMouseLeave={handleMouseLeave}
+                                    style={{position:"relative"}}
                                 >
-                                    <div style={{minHeight:"500px"}} className={`services-style-one-item ${activeServiceId === service.id ? 'active' : ''}`}>
+                                    <div style={{minHeight:"550px"}} className={`services-style-one-item ${activeServiceId === service.id ? 'active' : ''}`}>
                                         <div className="icon">
                                             {lightMode ?
                                                 <img src={`/assets/img/${service.iconLight}`} alt="Image Not Found" width={75} height={60} /> :
@@ -74,7 +75,7 @@ const ServicesV1 = ({ hasTitle, sectionClass, lightMode }: DataType) => {
                                             <Link to={`#`}>{service.title}</Link>
                                         </h4>
                                         <p>{service.text}</p>
-                                        <Link className="btn-full" to={`#`}>
+                                        <Link style={{position:"absolute",bottom:"40px",width:"70%"}} className="btn-full" to={`#`}>
                                             Read More <i className="fas fa-arrow-right" />
                                         </Link>
                                     </div>

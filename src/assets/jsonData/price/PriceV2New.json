@@ -100,7 +100,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -115,7 +115,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -228,7 +228,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -243,7 +243,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -356,7 +356,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -371,7 +371,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -478,7 +478,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -493,7 +493,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -575,7 +575,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -590,7 +590,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -672,7 +672,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -687,7 +687,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -778,7 +778,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -801,7 +801,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -891,7 +891,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -906,7 +906,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -988,7 +988,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -1003,7 +1003,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -1085,7 +1085,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -1100,7 +1100,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -1182,7 +1182,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -1197,7 +1197,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -1279,7 +1279,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -1294,7 +1294,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,
@@ -1378,7 +1378,7 @@
         "priceOriginal": null,
         "priceDiscounted": 500,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 2,
@@ -1393,7 +1393,7 @@
         "priceOriginal": null,
         "priceDiscounted": 950,
         "currency": "USD",
-        "billingCycle": "Monthly"
+        "billingCycle": "Yearly"
       },
       {
         "id": 3,

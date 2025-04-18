@@ -74,7 +74,7 @@ const AboutV6 = ({ lightMode, sectionClass }: DataType) => {
                       onMouseLeave={handleMouseLeave}
                     >
                       <Link
-                        to="/services"
+                        to="#"
                         className={`${
                           activeServiceId === service.id ? "active" : ""
                         }`}

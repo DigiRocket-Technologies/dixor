@@ -13,7 +13,7 @@ import brand6 from "/assets/img/clients/dripnation.png";
 import brand7 from "/assets/img/clients/dtfnc.png";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
-import handleSmoothScroll from "../utilities/handleSmoothScroll";
+// import handleSmoothScroll from "../utilities/handleSmoothScroll";
 import SplitText from "../animation/SplitText.jsx";
 
 interface DataType {
@@ -101,8 +101,8 @@ const ClientsV1 = ({ sectionClass }: DataType) => {
                 <div className="client-style-one-item">
                   <img src={brand10} alt="Image Not Found" />
                 </div>
-                <div className="client-style-one-item">
-                  <img src={brand2} style={{width:"100%"}} alt="Image Not Found" />
+                <div  className="client-style-one-item">
+                  <img src={brand2}   alt="Image Not Found" />
                 </div>
                 <div className="client-style-one-item">
                   <img src={brand3} alt="Image Not Found" />
@@ -120,7 +120,7 @@ const ClientsV1 = ({ sectionClass }: DataType) => {
                   <img src={brand7} alt="Image Not Found" />
                 </div>
                 <div className="client-style-one-item">
-                  <Link to="#" onClick={handleSmoothScroll}>
+                  <Link to="/portfolio" >
                     View All
                   </Link>
                 </div>

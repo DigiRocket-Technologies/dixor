@@ -164,14 +164,14 @@ const PerformanceMarketingContent = ({
                   <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
                     <div className="card h-100 border shadow-sm">
                       <div className="position-relative">
-                        <a href="/blog-single-with-sidebar/">
+                       
                           <img
                             src={`/assets/img/blog/4.jpg`}
                             className="card-img-top"
                             alt="Featured"
                             style={{ height: "550px", objectFit: "cover" }}
                           />
-                        </a>
+                       
                         <div
                           className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
                           style={{

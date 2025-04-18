@@ -1,26 +1,26 @@
 [
     {
         "id": "1",
-        "thumb": "/assets/img/portfolio/drip-nation-thumb.jpg",
+        "thumb": "/assets/img/portfolio/DripNation.jpg",
         "title": "Drip Nation IL",
         "tag": "Marketing"
     },
     {
         "id": "2",
-        "thumb": "/assets/img/portfolio/Alamocitypopcorn-thumb.jpg",
+        "thumb": "/assets/img/portfolio/Alamo city popcorn 1.jpg",
         "title": "Alamo City Popcorn",
         "tag": "UX Design"
     },
     {
         "id": "3",
-        "thumb": "/assets/img/portfolio/eyecandy-thumb.jpg",
+        "thumb": "/assets/img/portfolio/eyecandy website.jpg",
         "title": "Eye Candy Brown Salon",
         "tag": "Branding"
     },
     {
         "id": "4",
-        "thumb": "/assets/img/portfolio/gk-thumb.jpg",
-        "title": "Quality in digital industrial layout",
+        "thumb": "/assets/img/portfolio/gourmet kitchen 1.jpg",
+        "title": "Gourmet Kitchenworks",
         "tag": "Business"
     },{
         "id": "gourmetkitchenworks",

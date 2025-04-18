@@ -10,13 +10,34 @@ import TeamV2Data from "../../../src/assets/jsonData/team/TeamNew.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import SingleTeamV2 from "../../components/team/SingleTeamV2.js";
-import thumb3 from "/assets/img/about/who-we-are.png"
+import thumb3 from "/assets/img/about/who-we-are.png";
 import { Keyboard } from "swiper/modules";
 // import { Link } from "react-router-dom";
 import { useState } from "react";
+import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3.js";
+import MostPopularServices from "../../components/services/MostPopularServices.js";
 // import SocialShareNew from "../../components/social/SocialShareNew.js";
 
 const AboutUsPage2 = () => {
+  const countries = [
+    {
+      name: "United States",
+      flag: "/assets/img/about/USA.png",
+    },
+    {
+      name: "United Kingdom",
+      flag: "/assets/img/about/united-kingdom.png",
+    },
+    {
+      name: "Canada",
+      flag: "/assets/img/about/cannada.png",
+    },
+    {
+      name: "India",
+      flag: "/assets/img/about/INDIA.png",
+    },
+  ];
+
   const [selectedIndustry, setSelectedIndustry] = useState("Textile Printing");
   const industryData: Record<
     string,
@@ -69,11 +90,11 @@ const AboutUsPage2 = () => {
   return (
     <>
       <Helmet>
-        <title>Dixor - About Us</title>
+        <title> About Us | DigiRocket </title>
       </Helmet>
 
       <LayoutV1>
-        <Breadcrumb title="About Company" breadCrumb="About" />
+        <Breadcrumb title="About DigiRocket" breadCrumb="About" />
         <div className="py-5 bg-gray">
           <div className="container">
             <div className="row align-center">
@@ -93,98 +114,9 @@ const AboutUsPage2 = () => {
                       }}
                     >
                       With over three years of industry experience and a proven
-                      track record of working with 200+ clients, we have become
+                      track record of working with 300+ clients, we have become
                       a trusted partner in turning visions into powerful brands.
                     </p>
-                    {/* <div
-                      className="faq-style-one accordion mt-30"
-                      id="faqAccordion"
-                    >
-                      <div className="accordion-item">
-                        <h2 className="accordion-header" id="headingOne">
-                          <button
-                            className="accordion-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne"
-                            aria-expanded="true"
-                            aria-controls="collapseOne"
-                          >
-                            Business Innovation
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseOne"
-                          className="accordion-collapse collapse show"
-                          aria-labelledby="headingOne"
-                          data-bs-parent="#faqAccordion"
-                        >
-                          <div className="accordion-body">
-                            <p>
-                              Bennings appetite disposed me an at subjects an.
-                              To no indulgence diminution so discovered mr
-                              apartments. Are off under folly death wrote cause.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="accordion-item">
-                        <h2 className="accordion-header" id="headingTwo">
-                          <button
-                            className="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo"
-                          >
-                            Search Engine Optimization
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseTwo"
-                          className="accordion-collapse collapse"
-                          aria-labelledby="headingTwo"
-                          data-bs-parent="#faqAccordion"
-                        >
-                          <div className="accordion-body">
-                            <p>
-                              Cennings appetite disposed me an at subjects an.
-                              To no indulgence diminution so discovered mr
-                              apartments. Are off under folly death wrote cause.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="accordion-item">
-                        <h2 className="accordion-header" id="headingThree">
-                          <button
-                            className="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree"
-                            aria-expanded="false"
-                            aria-controls="collapseThree"
-                          >
-                            Thinking Differently
-                          </button>
-                        </h2>
-                        <div
-                          id="collapseThree"
-                          className="accordion-collapse collapse"
-                          aria-labelledby="headingThree"
-                          data-bs-parent="#faqAccordion"
-                        >
-                          <div className="accordion-body">
-                            <p>
-                              Tennings appetite disposed me an at subjects an.
-                              To no indulgence diminution so discovered mr
-                              apartments. Are off under folly death wrote cause.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
                     <p>
                       If there were two words to describe us, it would be
                       “Pushing boundaries”. Not bound by traditional thinking or
@@ -200,34 +132,6 @@ const AboutUsPage2 = () => {
                       re-organize and grow anew in the arena of digital media.
                     </p>
                   </div>
-                  {/* <div className="award-items">
-                    <Animate className="animate__animated animate__fadeInLeft">
-                      <div className="award-item">
-                        <i className="fab fa-behance" />
-                        <h4>Behance Awards </h4>
-                      </div>
-                    </Animate>
-
-                    <Animate
-                      className="animate__animated animate__fadeInLeft"
-                      delay="100ms"
-                    >
-                      <div className="award-item">
-                        <i className="fas fa-layer-group" />
-                        <h4>Design Awards</h4>
-                      </div>
-                    </Animate>
-
-                    <Animate
-                      className="animate__animated animate__fadeInLeft"
-                      delay="200ms"
-                    >
-                      <div className="award-item">
-                        <i className="fab fa-laravel" />
-                        <h4>Coding Awards</h4>
-                      </div>
-                    </Animate>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -245,7 +149,7 @@ const AboutUsPage2 = () => {
           </div>
         </div>
         <AboutV6 sectionClass="bg-gray" />
-        {/* <MultiSection/> */}
+
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 ">
@@ -265,7 +169,7 @@ const AboutUsPage2 = () => {
                     threshold={0.2}
                     rootMargin="-50px"
                   >
-                    The Visionaries
+                    Meet Our Brains
                   </SplitText>
                 </h1>
               </div>
@@ -350,7 +254,7 @@ const AboutUsPage2 = () => {
           </div>
 
           <div style={{ padding: "40px 0px" }}>
-            <h1 className="text-center">Key People</h1>
+            <h1 className="text-center">Our Team</h1>
             <div
               className="team-grid"
               style={{
@@ -401,73 +305,6 @@ const AboutUsPage2 = () => {
           style={{ marginTop: "60px", paddingBottom: "30px" }}
           className="container"
         >
-          {/* <div className="container-fluid bg-dark text-white min-vh-100 py-4 px-3">
-            <div className="row h-100">
-              
-              <div className="col-md-5 d-flex flex-column justify-content-start bg-secondary text-white p-4 rounded-3">
-                <h2 className="text-uppercase fw-bold mb-2">Industries</h2>
-                <p className="fs-5 text-light mb-4">
-                  Our expertise knows no industry boundaries.
-                </p>
-                <div className="list-group">
-                  {Object.keys(industryData).map((industry) => (
-                    <button
-                      key={industry}
-                      onClick={() => setSelectedIndustry(industry)}
-                      className={`list-group-item list-group-item-action d-flex justify-content-between align-items-center mb-2 ${
-                        selectedIndustry === industry
-                          ? "active border-success"
-                          : "bg-dark text-light border border-secondary"
-                      }`}
-                    >
-                      {industry}
-                      <img
-                        src="./Arrow 2.svg"
-                        alt="arrow"
-                        style={{ height: "18px" }}
-                      />
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-            
-              <div className="col-md-7 d-flex flex-column gap-3 mt-4 mt-md-0">
-                <div className="bg-neon text-dark text-end p-4 rounded-3">
-                  <p className="fs-4">Active Users</p>
-                  <p className="fs-3 fw-bold">{currentStats.activeUsers}</p>
-                </div>
-
-                <div className="d-flex flex-column flex-md-row gap-3">
-                  <div className="bg-dark text-neon text-end p-4 rounded-3 border border-neon w-100">
-                    <p className="fs-5">Sessions</p>
-                    <p className="fs-4 fw-bold text-white">
-                      {currentStats.sessions}
-                    </p>
-                  </div>
-                  <div className="bg-secondary text-neon text-end p-4 rounded-3 w-100">
-                    <p className="fs-5">Event Count</p>
-                    <p className="fs-4 fw-bold text-white">
-                      {currentStats.eventCount}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-neon text-dark text-end p-4 rounded-3">
-                  <p className="fs-4">Clicks</p>
-                  <p className="fs-3 fw-bold">{currentStats.clicks}</p>
-                </div>
-
-                <div className="bg-dark text-neon text-end p-4 rounded-3 border border-neon">
-                  <p className="fs-4">Impressions</p>
-                  <p className="fs-3 fw-bold text-white">
-                    {currentStats.impressions}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
           <div className="container-fluid p-0">
             <div className="row g-0" style={{ minHeight: "70vh" }}>
               {/* Left Column - Industries */}
@@ -584,8 +421,32 @@ const AboutUsPage2 = () => {
             </div>
           </div>
         </div>
-        {/* <TeamV1 sectionClass="bg-gray" hasTitle={true} /> */}
-        {/* <WhyChooseV3 /> */}
+       
+        <WhyChooseV3 />
+
+        <div className="container">
+          <div className="container my-5">
+            <h2 className="text-center mb-4">Countries We Serve In </h2>
+            <div className="row mt-4 g-4">
+              {countries.map((country, index) => (
+                <div key={index} className="col-12 col-md-6 col-lg-3">
+                  <div 
+                    className="card shadow-sm bg-dark country-card"
+                    style={{
+                      backgroundImage: `url(${country.flag})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      height: "150px",
+                    }}
+                  > 
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <MostPopularServices />
+        </div>
         <DarkClass />
       </LayoutV1>
     </>

@@ -1,5 +1,5 @@
-import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
-import { Link } from "react-router-dom";
+// import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
+// import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -54,8 +54,6 @@ const EcommerceSeoContent = ({
     title,
     whyChooseP1,
     bannerImg,
-    img1,
-    img2,
     whyChooseP2,
     faqs,
     definition,
@@ -149,11 +147,12 @@ const EcommerceSeoContent = ({
             </div>
 
             <div className="row mt-80 mt-xs-50 gallery-two-columns">
-              <div className="col-md-6">
-                <img src={img1} alt="Image Not Found" />
-              </div>
-              <div className="col-md-6">
-                <img src={img2} alt="Image Not Found" />
+              <div className="row">
+                <div className="col-xl-12">
+                  <div className="service-single-thumb">
+                    <img src={bannerImg} alt="Thumb" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -263,29 +262,6 @@ const EcommerceSeoContent = ({
                 <h2>What we do?</h2>
                 <p>{whyChooseP1}</p>
                 <p>{whyChooseP2}</p>
-              </div>
-            </div>
-            <div className="services-more mt-100 mt-xs-30">
-              <h2 className="mb-20">Most popular services</h2>
-              <div className="row">
-                {ServicesV1Data.slice(0, 3).map((service) => (
-                  <div className="col-lg-4 col-md-6" key={service.id}>
-                    <div className="item">
-                      <img
-                        src={`/assets/img/icon/${service.iconLight}`}
-                        alt="Image Not Found"
-                        width={75}
-                        height={60}
-                      />
-                      <h4>
-                        <Link to={`/service-details-light/${service.id}`}>
-                          {service.title}
-                        </Link>
-                      </h4>
-                      <p>{service.text}</p>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           </div>

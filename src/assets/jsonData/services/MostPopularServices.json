@@ -1,20 +1,20 @@
 [
   {
     "sid": "local-seo",
-    "imgsrc":"/assets/img/icon/24.png",
+    "imgsrc": "/assets/img/icon/24.png",
     "name": "SX0",
-    "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit Praesentium dolores optio quaerat est pariatur magni ipsa tenetur, aspernatur deleniti. Ipsa."
+    "desc": "Great rankings mean nothing without great user experience. Our SXO approach delivers both traffic and performance."
   },
   {
     "sid": "performance-marketing",
-    "imgsrc":"/assets/img/icon/24.png",
+    "imgsrc": "/assets/img/icon/24.png",
     "name": "Performance Marketing",
-    "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit Praesentium dolores optio quaerat est pariatur magni ipsa tenetur, aspernatur deleniti. Ipsa."
+    "desc": "Results you can measure. We run data-driven campaigns that convert clicks into revenue across every platform."
   },
   {
-    "sid": "social-media-marketing",
-    "imgsrc":"/assets/img/icon/24.png",
-    "name": "Social Media Marketing",
-    "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit Praesentium dolores optio quaerat est pariatur magni ipsa tenetur, aspernatur deleniti. Ipsa."
+    "sid": "dropshipping",
+    "imgsrc": "/assets/img/icon/24.png",
+    "name": "Dropshipping",
+    "desc": "From product research to fulfillment, our data-backed approach turns dropshipping into a real business."
   }
 ]

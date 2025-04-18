@@ -1,6 +1,6 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import { Helmet } from "react-helmet-async";
-import banner6 from "/assets/img/banner/6.jpg";
+import banner6 from "/assets/img/services/Marketing.png";
 import { Link } from "react-router-dom";
 import TestimonialV2 from "../../components/testimonial/TestimonialV2";
 import thumb3 from "/assets/img/thumb/3.jpg";
@@ -192,7 +192,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/portfolio/39.jpg`}
+                                  src={`/assets/img/services/local so.png`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
@@ -218,14 +218,14 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/portfolio/39.jpg`}
+                                  src={`/assets/img/services/ecommerc seo.png`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
                                 />
                                 <div className="content">
                                   <span>"Marketing"</span>
-                                  <Link to={`/project-details/}`}>
+                                  <Link to={`/ecommerce-seo`}>
                                     <h2>Ecommerce Seo</h2>
                                   </Link>
                                   <Link
@@ -244,7 +244,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/portfolio/39.jpg`}
+                                  src={`/assets/img/services/performance marketing.png`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
@@ -270,7 +270,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/portfolio/39.jpg`}
+                                  src={`/assets/img/services/social media marketing.png`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
@@ -296,7 +296,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/portfolio/39.jpg`}
+                                  src={`/assets/img/services/influencer marketing.png`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
@@ -322,13 +322,13 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/portfolio/39.jpg`}
+                                  src={`/assets/img/services/ecommerce marketing.png`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
                                 />
                                 <div className="content">
-                                  <span>"Hii"</span>
+                                  <span>"Marketing"</span>
                                   <Link to={`/ecommerce-marketing`}>
                                     <h2>Ecommerce Marketing</h2>
                                   </Link>

@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import MostPopularServices from "./MostPopularServices.tsx";
+import { useState } from "react";
 
 interface DataType {
   title?: string;
@@ -124,6 +125,26 @@ const AIContent = ({
         "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
     },
   ];
+  const [formData, setFormData] = useState({
+    name:"",
+    email: "",
+    phone: "",
+    aiService: "",
+    additional: "",
+  });
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
   return (
     <>
       <div
@@ -254,7 +275,7 @@ const AIContent = ({
         </div>
         <PriceV2New pricing={pricing} />
         <div className="container mt-4">
-          <MostPopularServices/>
+          <MostPopularServices />
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>
@@ -288,6 +309,124 @@ const AIContent = ({
                     </div>
                   );
                 })}
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ paddingBottom: "20px", paddingTop: "40px" }}
+            className="mt-5"
+          >
+            <div className="card shadow bg-dark text-white">
+              <div className="row g-0">
+                {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
+                <div className="col-md-5 col-lg-5 d-none d-lg-block">
+                  <img
+                    src="/assets/img/blog/1.jpg"
+                    alt="Business professional"
+                    className="h-100 object-fit-cover"
+                  />
+                </div>
+
+                {/* Right Side (Form Content) */}
+                <div className="col-md-12 col-lg-7 p-4 p-md-5">
+                  <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
+                    HELP US UNDERSTAND YOUR AI SERVICE NEEDS
+                  </h2>
+
+                  <form onSubmit={handleSubmit}>
+                  <div className="mb-4">
+                      <label className="form-label text-white">Name</label>
+                      <input
+                        name="name"
+                        placeholder="Enter Name"
+                        className="form-control bg-dark text-white"
+                        value={formData.name}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label className="form-label text-white">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Email"
+                        className="form-control bg-dark text-white"
+                        value={formData.email}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">Phone</label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Enter Phone Number"
+                        className="form-control bg-dark text-white"
+                        value={formData.phone}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">
+                        What type of AI service do you want?
+                      </label>
+                      <select
+                        name="aiService"
+                        className="form-select bg-dark text-white"
+                        value={formData.aiService}
+                        onChange={handleChange}
+                      >
+                        <option value="" disabled>
+                          Select an option
+                        </option>
+                        <option value="AI Automation">AI Automation</option>
+                        <option value="AI Chatbot">AI Chatbot</option>
+                        <option value="AI Calling Assistant">
+                          AI Calling Assistant
+                        </option>
+                        <option value="AI Sales">AI Sales</option>
+                        <option value="Custom AI Solution">
+                          Custom AI Solution
+                        </option>
+                      </select>
+                    </div>
+                    <div className="mb-4">
+                      <label className="form-label text-white">
+                        Additional Information
+                      </label>
+                      <textarea
+                        name="additional"
+                        placeholder="Enter any additional details"
+                        className="form-control bg-dark text-white"
+                        style={{ height: "120px" }}
+                        value={formData.additional}
+                        onChange={handleChange}
+                      ></textarea>
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      className=""
+                    >
+                      <button
+                        type="submit"
+                        className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
+                        style={{
+                          color: "black",
+                          backgroundColor: "white",
+                          borderColor: "white",
+                        }}
+                      >
+                        SUBMIT RESPONSES
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

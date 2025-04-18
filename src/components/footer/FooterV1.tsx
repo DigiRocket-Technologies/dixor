@@ -64,7 +64,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                                             <a href="mailto:info@digirocket.io">info@digirocket.io</a>
                                         </li>
                                         <li>
-                                            <a href="tel:+18156886366">+1 8156 886 366</a>
+                                            <a href="tel:+18156886366">+1 815 688 6366</a>
                                         </li>
                                     </ul>
                                 </div>
