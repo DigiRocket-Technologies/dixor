@@ -63,66 +63,66 @@ const MobileApplicationContent = ({
   const features = [
     {
       icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "First Impressions Count",
+      title: "Custom App Developmen",
       description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
+        "Tailored apps that align with your specific business goals.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "User Experience Matters",
+      title: "Cross-Platform Compatibility.",
       description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
+        "eamless app experience across both iOS and Android.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Supports Marketing Efforts",
+      title: "User-Centric Design",
       description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
+        "Intuitive, engaging, and easy-to-navigate user interface.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Drives Conversions",
+      title: "Scalable Architecture",
       description:
-        "Optimized design and clear call-to-actions turn visitors into customers.",
+        "Apps designed to grow with your business need.",
     },
   ];
 
   const cards = [
     {
       id: 1,
-      title: "Winning Product Research",
+      title: "Custom Solutions",
       description:
-        "We analyze trending products, search volume, competition, and cost-per-click to find a niche that has high demand and long-term growth potential.",
+        "We develop mobile apps tailored to your unique business needs.",
     },
     {
       id: 2,
-      title: "Supplier Sourcing & Logistics",
+      title: "High-Performance Apps",
       description:
-        "We connect you with reliable suppliers from the U.S. and duty-free regions to ensure faster shipping times, superior product quality, and better customer satisfaction.",
+        "Our apps are optimized for speed and efficiency, ensuring smooth performance.",
     },
     {
       id: 3,
-      title: "Custom Store & Website Development",
+      title: "User-Focused Design",
       description:
-        "We design and develop a high-converting online store tailored to your niche, ensuring a seamless user experience and optimized sales funnel.",
+        "We prioritize user experience to create engaging, intuitive interfaces.",
     },
     {
       id: 4,
-      title: "Branding & Positioning",
+      title: "Cross-Platform Reach",
       description:
-        "We help you create a unique brand identity, from logo creation to product packaging",
+        "Your app will work seamlessly across both iOS and Android platforms.",
     },
     {
       id: 5,
-      title: "Data-Driven Marketing Strategy",
+      title: "Scalability",
       description:
-        "We don’t just build stores; we drive sales. Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
+        "Apps are built to evolve with your business as it grows.",
     },
     {
       id: 6,
-      title: "Performance Tracking & Optimization",
+      title: "Ongoing Support",
       description:
-        "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
+        "We provide continuous updates and troubleshooting to keep your app running smoothly",
     },
   ];
 
@@ -199,7 +199,7 @@ const MobileApplicationContent = ({
               </div>
             </div>
             <div style={{ marginTop: "40px" }}>
-              <h2>When you choose us you get</h2>
+              <h2>What you get when you choose us</h2>
               <div className="row gx-1 mt-1 gy-4 mb-5">
                 {cards.map((card) => (
                   <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
@@ -210,7 +210,7 @@ const MobileApplicationContent = ({
                             src={`/assets/img/blog/4.jpg`}
                             className="card-img-top"
                             alt="Featured"
-                            style={{ height: "550px", objectFit: "cover" }}
+                            style={{ height: "480px", objectFit: "cover" }}
                           />
                         </a>
                         <div
@@ -264,12 +264,12 @@ const MobileApplicationContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                  <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
                 </h2>
                 <p>
                   {whyChooseP1}
-                  {whyChooseP2}
                 </p>
+                <p>{whyChooseP2}</p>
               </div>
             </div>
           </div>

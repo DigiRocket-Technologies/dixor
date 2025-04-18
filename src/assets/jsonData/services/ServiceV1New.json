@@ -1,10 +1,11 @@
-[{
+[
+  {
     "id": "ecommerce-seo",
     "type": "marketing",
     "icon": "1.png",
-    "bannerImg":"/assets/img/banner/6.jpg",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "bannerImg": "/assets/img/banner/6.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "iconLight": "23.png",
     "title": "Ecommerce Seo",
     "definition": "E-commerce SEO is the art and science of optimizing your online store to rank higher on search engines, driving organic traffic, and increasing sales. Unlike general SEO, E-commerce SEO focuses on product pages, category pages, and overall site architecture, ensuring that your store is easily discoverable by potential customers.",
@@ -14,7 +15,7 @@
       "Increases Conversions",
       "Optimizes Experience"
     ],
-    "importance_title": " New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. These cases are perfectly simple and easy to distinguish.",
+    "importance_title": "New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. These cases are perfectly simple and easy to distinguish.",
     "whyChooseP1": "DigiRocket Technologies specialize in transforming e-commerce stores into thriving online hubs with tailored SEO strategies designed for maximum impact. Our expertise ensures that yourstore ranks higher, attracts the right audience, and converts visitors into loyal customers. With a data-driven approach, we focus on optimizing every aspect of your site, from targeted keyword research to technical improvements.",
     "whyChooseP2": "Backed by years of experience and a commitment to delivering measurable results, we provide transparent updates and dedicated support to help your business thrive in the competitive digital marketplace.",
     "faqs": [
@@ -44,9 +45,9 @@
   {
     "id": "local-seo",
     "type": "marketing",
-    "bannerImg":"/assets/img/banner/6.jpg",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "bannerImg": "/assets/img/banner/6.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Local Seo",
@@ -86,9 +87,9 @@
   },
   {
     "id": "performance-marketing",
-    "bannerImg":"/assets/img/banner/pm-banner.jpg",
-    "img1":"/assets/img/services/pm-1.png",
-    "img2":"/assets/img/services/pm-2.png",
+    "bannerImg": "/assets/img/banner/pm-banner.jpg",
+    "img1": "/assets/img/services/pm-1.png",
+    "img2": "/assets/img/services/pm-2.png",
     "type": "marketing",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -129,9 +130,9 @@
   },
   {
     "id": "social-media-marketing",
-    "bannerImg":"/assets/img/banner/socialmediamarketing.jpg",
-    "img1":"/assets/img/services/smm1.jpg",
-    "img2":"/assets/img/services/smm2.png",
+    "bannerImg": "/assets/img/banner/socialmediamarketing.jpg",
+    "img1": "/assets/img/services/smm1.jpg",
+    "img2": "/assets/img/services/smm2.png",
     "type": "marketing",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -173,12 +174,12 @@
   {
     "id": "influencer-marketing",
     "type": "marketing",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Influencer Marketing",
-    "bannerImg":"/assets/img/banner/6.jpg",
+    "bannerImg": "/assets/img/banner/6.jpg",
     "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "importance": [
@@ -216,12 +217,12 @@
   {
     "id": "ecommerce-marketing",
     "type": "marketing",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Ecommerce Marketing",
-    "bannerImg":"/assets/img/banner/6.jpg",
+    "bannerImg": "/assets/img/banner/6.jpg",
     "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "importance": [
@@ -258,21 +259,22 @@
   },
   {
     "id": "artificial-intelligence",
-    "bannerImg":"/assets/img/services/sudanshu ai.png",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "bannerImg": "/assets/img/services/sudanshu ai.png",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Artificial Intelligence",
-    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "definition": "We bring your AI vision to life with White Label AI Tools. Our vast library of pre-built AI solutions allows you to rebrand and market these tools as your own, giving you a competitive edge. From enhancing data processes with machine learning to transforming user interactions with natural language processing, we cover a wide range of AI technologies.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "importance": [
-      "Targets the Right Audience",
-      "Maximizes ROI",
-      "Provides Transparency"
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing (NLP)",
+      "Robotic Process Automation (RPA)"
     ],
-    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
+    "importance_title": "Our solutions also include deep learning for recognizing complex patterns and robotic process automation to streamline repetitive tasks. Partner with us to harness the power of AI and drive innovation in your business with tailored, impactful tools.",
     "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
     "faqs": [
@@ -301,23 +303,23 @@
   },
   {
     "id": "shopify-development",
-    "bannerImg":"/assets/img/banner/6.jpg",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "bannerImg": "/assets/img/banner/6.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Shopify Development",
-    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "definition": "We build powerful, scalable, and conversion-focused Shopify stores that help your eCommerce business grow faster. From design to launch, we take care of everything—so you can focus on selling. Whether you're starting from scratch or optimizing an existing store, our team ensures seamless functionality, mobile responsiveness, and a smooth shopping experience.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "importance": [
-      "Targets the Right Audience",
-      "Maximizes ROI",
-      "Provides Transparency"
+      "Custom Theme Development",
+      "App Integration & Setup",
+      "Conversion-Focused Store Optimization"
     ],
-    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
-    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
-    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "importance_title": "We customize themes, set up payment gateways, integrate essential apps, and optimize for speed and SEO. With DigiRocket, you don’t just get a Shopify store—you get a high-performing brand hub designed to convert visitors into loyal customers.",
+    "whyChooseP1": "At DigiRocket Technologies, we don’t just build Shopify stores — we build brands that are ready to grow, scale, and dominate the market. What makes us different? We blend business strategy with clean design and powerful development. Our team takes the time to understand your niche, your audience, and your goals before we ever write a line of code. Every store we build is tailored — not just in look and feel, but in how it performs.",
+    "whyChooseP2": "We go beyond the basics, integrating the right apps, optimizing for speed and UX, and making sure every touchpoint converts. Whether you’re just getting started or scaling up, we deliver solutions that actually move the needle. With us, you don’t just get a developer — you get a partner who’s invested in your growth, from first click to repeat customer. That’s the DigiRocket difference.",
     "faqs": [
       {
         "q": "What is Shopify development?",
@@ -344,9 +346,9 @@
   },
   {
     "id": "woocommerce-development",
-    "bannerImg":"/assets/img/services/woo commerce banner.png",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "bannerImg": "/assets/img/services/woo commerce banner.png",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -359,8 +361,8 @@
       "Provides Transparency"
     ],
     "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
-    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
-    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP1": "What makes us different isn’t just what we do — it’s how we do it. We don’t offer one-size-fits-all solutions. Instead, we take the time to understand your brand, your goals, and your audience before we build anything. Every campaign, every website, every feature is tailored to create long-term impact, not just short-term clicks.",
+    "whyChooseP2": "Our team blends creative thinking with deep technical expertise, ensuring that strategy and execution go hand in hand. We’re not just your service provider — we’re your growth partner. From in-depth market research to flawless handovers, everything we do is built on transparency, performance, and a real understanding of what your business needs to succeed in a digital world..",
     "faqs": [
       {
         "q": "What is WooCommerce development?",
@@ -387,9 +389,9 @@
   },
   {
     "id": "web-application-development",
-    "bannerImg":"/assets/img/services/web application upasana.png",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "bannerImg": "/assets/img/services/web application upasana.png",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
@@ -430,23 +432,23 @@
   },
   {
     "id": "wordpress-development",
-    "bannerImg":"/assets/img/services/shristi wordpress.png",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "bannerImg": "/assets/img/services/shristi wordpress.png",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
-    "title": "Web Application Development",
-    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "title": "Wordpress Development",
+    "definition": "WordPress stands as one of the most popular website building platforms globally, powering over 40% of all websites. Renowned for its flexibility, user-friendliness, and scalability, WordPress enables you to create anything from a personal blog to a professional portfolio or a strong eCommerce store.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "importance": [
-      "Targets the Right Audience",
-      "Maximizes ROI",
-      "Provides Transparency"
+      "Easy-to-use Interface",
+      "Highly Customizable",
+      "SEO-Friendly"
     ],
-    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
-    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
-    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "importance_title": "With its vast library of themes, plugins, and customizable features, WordPress makes it easy to create a unique and functional website that is optimized for growth. It’s the preferred platform for businesses and individuals aiming to establish a strong, professional online presence with minimal complexity.",
+    "whyChooseP1": "Our team blends creative design, technical expertise, and strategic insights to build custom WordPress sites tailored to your business needs.We prioritize user-friendly interfaces, ensuring seamless navigation for both visitors and administrators. Our designs are scalable, allowing your WordPress site to grow alongside your business. We also focus on SEO-friendly practices to ensure your website performs well on search engines.",
+    "whyChooseP2": "With extensive experience in WordPress, we deliver fast, secure, and mobile-optimized websites that meet the highest standards. Whether you're a startup or an established brand, we offer the expertise needed to help you stand out and succeed online, providing long-term value and exceptional customer satisfaction..",
     "faqs": [
       {
         "q": "What is WordPress development?",
@@ -473,10 +475,10 @@
   },
   {
     "id": "mobile-application-development",
-    "bannerImg":"/assets/img/services/sudanshu mobile development.png",
+    "bannerImg": "/assets/img/services/sudanshu mobile development.png",
     "type": "development",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Mobile Application Development",
@@ -488,8 +490,8 @@
       "Provides Transparency"
     ],
     "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
-    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
-    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP1": "Choosing us for your mobile app development means partnering with a team that truly understands your business goals and user needs. We specialize in creating custom mobile applications designed for performance, scalability, and seamless user experiences. Our approach blends cutting-edge technology with intuitive design to ensure your app stands out in a competitive market. We take the time to understand your unique requirements, providing tailored solutions that are scalable as your business grows. With expertise in both iOS and Android platforms, we offer cross-platform compatibility to maximize your reach",
+    "whyChooseP2": "By choosing us, you not only get a product but a partner who is dedicated to your app’s success and long-term growth. Let us bring your vision to life with innovative mobile solutions that make an impact.",
     "faqs": [
       {
         "q": "What types of mobile apps do you develop?",
@@ -516,9 +518,9 @@
   },
   {
     "id": "dropshipping",
-    "bannerImg":"/assets/img/banner/6.jpg",
-    "img1":"/assets/img/portfolio/45.jpg",
-    "img2":"/assets/img/portfolio/46.jpg",
+    "bannerImg": "/assets/img/banner/6.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
     "type": "dropshipping",
     "icon": "1.png",
     "iconLight": "23.png",

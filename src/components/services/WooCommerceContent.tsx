@@ -62,27 +62,27 @@ const WooCommerceContent = ({
   const features = [
     {
       icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "First Impressions Count",
+      title: "Seamless Integration",
       description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
+        "WooCommerce fits naturally within WordPress, letting you manage products, content, and design from one dashboard",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "User Experience Matters",
+      title: "Total Design Freedom",
       description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
+        "Take full control of your store's look and feel using themes, page builders, and custom CSS — no limits.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Supports Marketing Efforts",
+      title: "Massive Plugin Ecosystem",
       description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
+        "Extend your store with thousands of WordPress plugins for SEO, speed, marketing, and more.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Drives Conversions",
+      title: "trong Community Support",
       description:
-        "Optimized design and clear call-to-actions turn visitors into customers.",
+        "Join a global community of developers, designers, and store owners ready to help and share knowledge.",
     },
   ];
 
@@ -117,28 +117,32 @@ const WooCommerceContent = ({
 
             <div className="mt-50 mt-xs-20">
               <h1 style={{ marginBottom: "50px" }}>
-                Why do you need woocommerce?{" "}
+                Why WooCommerce is Right for Your Business?
               </h1>
               <div style={{ marginTop: "50px", width: "100%" }}>
                 {[
                   {
                     id: 1,
-                    title: "Project Research",
+                    title: "Full Flexibility & Control",
+                    p: "WooCommerce gives you complete control over your store—from how it looks to how it functions. You can customize everything, add unlimited products, and scale easily as your business grows, without being tied to rigid platform rules or limitations.",
                     img: "/assets/img/blog/4.jpg",
                   },
                   {
                     id: 2,
-                    title: "Best Concept",
+                    title: "Built on WordPress",
+                    p: "Since WooCommerce runs on WordPress, the world’s most popular CMS, it offers seamless content and store management in one place. This makes it easier to integrate blogs, SEO tools, and plugins—giving you a competitive edge in both content and commerce",
                     img: "/assets/img/blog/4.jpg",
                   },
                   {
                     id: 3,
-                    title: "Design Implement",
+                    title: "Cost-Effective & Scalable",
+                    p: "WooCommerce itself is free, and you only pay for the tools and features you actually need. This makes it a highly cost-effective option for small businesses and startups, while still offering scalability for larger stores as they grow.",
                     img: "/assets/img/blog/4.jpg",
                   },
                   {
                     id: 4,
-                    title: "Final Result",
+                    title: "Wide Range of Extensions",
+                    p: "With thousands of extensions and plugins available, WooCommerce allows you to enhance your store’s capabilities—whether it’s advanced shipping, payment gateways, or marketing automation. You can tailor the experience to fit your exact business needs",
                     img: "/assets/img/blog/4.jpg",
                   },
                 ].map((item, index) => (
@@ -169,19 +173,16 @@ const WooCommerceContent = ({
                           {item.title}
                         </Link>
                       </h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quod unde omnis est eius corrupti, odit vero fuga
-                        accusantium cum expedita debitis velit assumenda quidem.
-                        Facilis suscipit neque ullam numquam fugiat.
-                      </p>
+                      <p>{item?.p}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
             <div style={{ marginTop: "50px" }}>
-              <h2 className="text-center">Benefits of using woocommerce</h2>
+              <h2 className="text-center">
+                What Makes WooCommerce + WordPress a Smart Choice?
+              </h2>
               <div className="row g-4 mt-4">
                 {features.map((feature, index) => (
                   <div key={index} className="col-12 col-sm-6 col-lg-3">
@@ -214,11 +215,13 @@ const WooCommerceContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                  <Link to={`/blog-single-with-sidebar`}>
+                    What Sets Us Apart?{" "}
+                  </Link>
                 </h2>
                 <p>
                   {whyChooseP1}
-                  {whyChooseP2}
+                  <p> {whyChooseP2}</p>
                 </p>
               </div>
             </div>
@@ -226,7 +229,7 @@ const WooCommerceContent = ({
         </div>
         <PriceV2New pricing={pricing} />
         <div className="container mt-4">
-          <MostPopularServices/>
+          <MostPopularServices />
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>
