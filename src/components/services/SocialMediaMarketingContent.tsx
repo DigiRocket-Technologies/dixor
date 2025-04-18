@@ -73,27 +73,39 @@ const SocialMediaMarketingContent = ({
   const features = [
     {
       icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "First Impressions Count",
+      title: "Consistent Brand Presence",
       description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
+        " Stay top-of-mind with a steady stream of relevant and engaging content.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "User Experience Matters",
+      title: "Higher Engagement Rates",
       description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
+        "Build genuine connections through interactive posts, stories, and community replies.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Supports Marketing Efforts",
+      title: "Platform-Specific Strategies",
       description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
+        "Tailored campaigns that match the unique behavior of each social platform.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Drives Conversions",
+      title: "Growth in Followers & Reach",
       description:
-        "Optimized design and clear call-to-actions turn visitors into customers.",
+        "Organic and paid efforts that steadily expand your brand’s visibility.",
+    },
+    {
+      icon: "/assets/img/icon/24.png",
+      title: "Better Audience Insights",
+      description:
+        "Track real-time data to understand what works and where to improve.",
+    },
+    {
+      icon: "/assets/img/icon/24.png",
+      title: "Increased Website Traffic & Conversions",
+      description:
+        " Drive targeted traffic from social channels to your store or landing pages.",
     },
   ];
 
@@ -118,6 +130,7 @@ const SocialMediaMarketingContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h4>What We Offer:</h4>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -243,10 +256,16 @@ const SocialMediaMarketingContent = ({
               </div>
             </div>
             <div className="mt-50 mt-xs-20">
-              <h1>Metrics we use to measure your growth </h1>
+              <h1>What can you expect? </h1>
               <div style={{ marginTop: "40px", paddingTop: "40px" }}>
                 <Swiper
-                  modules={[Pagination, Navigation, Keyboard, Mousewheel, Autoplay]}
+                  modules={[
+                    Pagination,
+                    Navigation,
+                    Keyboard,
+                    Mousewheel,
+                    Autoplay,
+                  ]}
                   navigation={{
                     nextEl: ".right",
                     prevEl: ".left",
@@ -336,7 +355,7 @@ const SocialMediaMarketingContent = ({
         </div>
         <PriceV2New pricing={pricing} />
         <div className="container mt-4">
-          <MostPopularServices/>
+          <MostPopularServices />
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>
