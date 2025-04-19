@@ -302,7 +302,7 @@ const Dropshipping = () => {
                 <div style={{display:"flex",height:"100%",justifyContent:"center",alignItems:"center"}} className="col-md-5 col-lg-5  d-none d-md-block">
                   <img
                     style={{height:"80%",objectPosition:"center"}}
-                    src="/assets/img/services/contact.jpg"
+                    src="/assets/img/services/contact_us.jpg"
                     alt="Business professional"
                     className="w-100 object-fit-cover"
                   />

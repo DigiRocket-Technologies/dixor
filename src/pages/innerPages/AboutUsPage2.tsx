@@ -22,19 +22,19 @@ const AboutUsPage2 = () => {
   const countries = [
     {
       name: "United States",
-      flag: "/assets/img/about/USA.png",
+      flag: "/assets/img/about/us.svg",
     },
     {
       name: "United Kingdom",
-      flag: "/assets/img/about/united-kingdom.png",
+      flag: "/assets/img/about/uk.svg",
     },
     {
       name: "Canada",
-      flag: "/assets/img/about/cannada.png",
+      flag: "/assets/img/about/canada.svg",
     },
     {
       name: "India",
-      flag: "/assets/img/about/INDIA.png",
+      flag: "/assets/img/about/india.svg",
     },
   ];
 

@@ -191,7 +191,7 @@ const LocalSeoContent = ({
                 }}
               >
                 {Skills.map((name, index) => (
-                  <SwiperSlide key={index}>
+                  <SwiperSlide className="" key={index}>
                     <div
                       style={{
                         display: "flex",
@@ -200,17 +200,9 @@ const LocalSeoContent = ({
                         width: "100%",
                         height: "150px",
                       }}
-                      className="p-3 bg-white rounded shadow-sm text-center"
+                      className="p-3 ocard  rounded shadow-sm text-center"
                     >
-                      {/* <img
-                        src={imgSrc}
-                        alt={`Partner ${index}`}
-                        style={{
-                          width: "100%",
-                          height: "150px",
-                          objectFit: "contain",
-                        }}
-                      /> */}
+                    
                       <div
                         style={{ fontWeight: "bold" }}
                         className="text-dark fs-4"
