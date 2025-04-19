@@ -118,21 +118,21 @@ const EcommerceMarketingContent = ({
                     title: "Market Research and Audience Insights ",
                     decription:
                       "We begin by researching your market, competitors, and target audience. This helps us gain insights into consumer behavior and preferences, allowing us to create a marketing strategy that resonates with the right people. Understanding these elements ensures we reach your audience with personalized messaging.",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/blog/1.jpg",
                   },
                   {
                     id: 2,
                     title: "SEO and Content Strategy ",
                     decription:
                       "We optimize your website with a comprehensive SEO strategy that focuses on improving visibility and rankings on search engines. Our content strategy includes keyword optimization, product descriptions, blog posts, and other content forms that engage and inform your potential ",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/blog/3.jpg",
                   },
                   {
                     id: 3,
                     title: "Paid Advertising Campaigns",
                     decription:
                       "We run paid campaigns across multiple platforms like Google Ads and Facebook to drive qualified traffic to your online store. These campaigns are carefully crafted to ensure maximum ROI by targeting the right demographics and using effective ad creatives. We monitor, adjust, and scale campaigns based on real-time performance.",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/blog/2.jpg",
                   },
                   {
                     id: 4,
@@ -153,7 +153,7 @@ const EcommerceMarketingContent = ({
                       <img
                         src={item.img}
                         alt="Blog"
-                        className="img-fluid"
+                        className="img-fluid "
                         style={{
                           maxWidth: "500px",
                           height: "550px",
