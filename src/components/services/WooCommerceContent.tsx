@@ -125,25 +125,25 @@ const WooCommerceContent = ({
                     id: 1,
                     title: "Full Flexibility & Control",
                     p: "WooCommerce gives you complete control over your store—from how it looks to how it functions. You can customize everything, add unlimited products, and scale easily as your business grows, without being tied to rigid platform rules or limitations.",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/services/woocommerce/flexibility.png",
                   },
                   {
                     id: 2,
                     title: "Built on WordPress",
                     p: "Since WooCommerce runs on WordPress, the world’s most popular CMS, it offers seamless content and store management in one place. This makes it easier to integrate blogs, SEO tools, and plugins—giving you a competitive edge in both content and commerce",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/services/woocommerce/built on wordpress.png",
                   },
                   {
                     id: 3,
                     title: "Cost-Effective & Scalable",
                     p: "WooCommerce itself is free, and you only pay for the tools and features you actually need. This makes it a highly cost-effective option for small businesses and startups, while still offering scalability for larger stores as they grow.",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/services/woocommerce/scalability.png",
                   },
                   {
                     id: 4,
                     title: "Wide Range of Extensions",
                     p: "With thousands of extensions and plugins available, WooCommerce allows you to enhance your store’s capabilities—whether it’s advanced shipping, payment gateways, or marketing automation. You can tailor the experience to fit your exact business needs",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "assets/img/services/woocommerce/extension.png",
                   },
                 ].map((item, index) => (
                   <div
@@ -206,7 +206,7 @@ const WooCommerceContent = ({
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
-                  src="/assets/img/blog/1.jpg"
+                  src="/assets/img/about/choose us 1.png"
                   alt="Blog"
                   className="img-fluid"
                   style={{ maxWidth: "500px", height: "500px", width: "100%" }}
@@ -215,7 +215,7 @@ const WooCommerceContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>
+                  <Link to={`#`}>
                     What Sets Us Apart?{" "}
                   </Link>
                 </h2>
