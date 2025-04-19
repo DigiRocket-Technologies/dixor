@@ -4,7 +4,7 @@
     "thumb": "11.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
-    "title": "Lifestyle ",
+    "title": "Eco-Friendly Products ",
     "date": "18 October, 2024"
   },
   {
@@ -12,7 +12,7 @@
     "thumb": "11.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
-    "title": "Clothing",
+    "title": "Home Fitness & Wellness",
     "date": "18 January, 2024"
   },
   {
@@ -20,7 +20,7 @@
     "thumb": "11.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
-    "title": "Food & Beverage",
+    "title": "Pet Accessories & Toys",
     "date": "18 July, 2024"
   },
   {
@@ -28,7 +28,7 @@
     "thumb": "11.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
-    "title": "Health & Wellness",
+    "title": "Tech Gadgets & Accessories",
     "date": "18 October, 2024"
   },
   {
@@ -36,11 +36,59 @@
     "thumb": "11.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
-    "title": "EdTech & Learning Platforms",
+    "title": "Beauty & Skincare Tools",
     "date": "18 January, 2024"
   },
   {
     "id": 6,
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
+    "tag": "Marketing",
+    "title": "BeauHome Decor & Organizationty ",
+    "date": "18 July, 2024"
+  },
+  {
+    "id": 7,
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
+    "tag": "Marketing",
+    "title": "Lifestyle ",
+    "date": "18 October, 2024"
+  },
+  {
+    "id": 8,
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
+    "tag": "Marketing",
+    "title": "Clothing",
+    "date": "18 January, 2024"
+  },
+  {
+    "id": 9,
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
+    "tag": "Marketing",
+    "title": "Food & Beverage",
+    "date": "18 July, 2024"
+  },
+  {
+    "id": 10,
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
+    "tag": "Marketing",
+    "title": "Health & Wellness",
+    "date": "18 October, 2024"
+  },
+  {
+    "id": 11,
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
+    "tag": "Marketing",
+    "title": "EdTech & Learning Platforms",
+    "date": "18 January, 2024"
+  },
+  {
+    "id": 12,
     "thumb": "11.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
