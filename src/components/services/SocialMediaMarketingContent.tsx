@@ -139,47 +139,33 @@ const SocialMediaMarketingContent = ({
               </div>
             </div>
             <div>
-              <h2 className="">Tools and Platform</h2>
+              <h2 className="">Platforms We Serve</h2>
               <div className="row justify-content-center">
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/fb.svg"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/insta.svg"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/tiktok.svg"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
-                  <img
-                    className="img-fluid"
-                    src="/assets/img/partner/sp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
-                  <img
-                    className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/yt.svg"
                     alt=""
                   />
                 </div>
