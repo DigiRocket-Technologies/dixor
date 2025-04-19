@@ -16,8 +16,7 @@ import SingleServiceV4 from "./SingleServiceV4";
 import MostPopularServices from "./MostPopularServices.tsx";
 interface DataType {
   title?: string;
-  bannerImg1?: string;
-  bannerImg2?: string;
+  bannerImg?: string;
   img1?: string;
   img2?: string;
   whyChooseP1?: string;
@@ -63,8 +62,7 @@ const ShopifyContent = ({
   const {
     title,
     whyChooseP1,
-    bannerImg1,
-    bannerImg2,
+    bannerImg,
     img1,
     img2,
     whyChooseP2,
@@ -76,37 +74,37 @@ const ShopifyContent = ({
 
   const features = [
     {
-      icon: "/assets/img/icon/Data_Conversion.svg", // Bootstrap Icon class
+      icon: "/assets/img/icon/24.png", // Bootstrap Icon class
       title: "Seamless Third-Party App Integration",
       description:
         "We connect your store with essential tools like email marketing, analytics, and review apps for a complete ecosystem.",
     },
     {
-      icon: "/assets/img/icon/custom feature development.svg",
+      icon: "/assets/img/icon/24.png",
       title: "Custom Feature Development",
       description:
         "Need something unique? We build tailored features that align with your brand goals and improve user experience.",
     },
     {
-      icon: "/assets/img/icon/tools.svg",
+      icon: "/assets/img/icon/24.png",
       title: "Inventory & Order Management Tools",
       description:
         "Automate stock updates, order tracking, and fulfillment with smart integrations that save time and reduce errors.",
     },
     {
-      icon: "/assets/img/icon/payment and checkout.svg",
+      icon: "/assets/img/icon/24.png",
       title: "Payment & Checkout Enhancements",
       description:
         "We optimize and customize your payment flow to ensure faster, secure, and smoother transactions.",
     },
     {
-      icon: "/assets/img/icon/referral.svg",
+      icon: "/assets/img/icon/24.png",
       title: "Loyalty & Referral Systems",
       description:
         "Boost customer retention by integrating loyalty points, rewards, and referral program apps into your store.",
     },
     {
-      icon: "/assets/img/icon/chat tool.svg",
+      icon: "/assets/img/icon/24.png",
       title: "Real-Time Chat & Support Tools",
       description:
         "Enable instant customer support with chat tools and bots that drive engagement and resolve queries instantly.",
@@ -123,7 +121,7 @@ const ShopifyContent = ({
             <div className="row">
               <div className="col-xl-12">
                 <div className="service-single-thumb">
-                  <img src={bannerImg1} alt="Thumb" />
+                  <img src={bannerImg} alt="Thumb" />
                 </div>
               </div>
             </div>
@@ -134,7 +132,7 @@ const ShopifyContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
-                <h3>What We Offer:</h3>
+                <h3>What we focus on:</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -142,11 +140,12 @@ const ShopifyContent = ({
                 </ul>
               </div>
             </div>
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="service-single-thumb">
-                  <img src={bannerImg2} alt="Thumb" />
-                </div>
+            <div className="row mt-80 mt-xs-50 gallery-two-columns">
+              <div className="col-md-6">
+                <img src={img1} alt="Image Not Found" />
+              </div>
+              <div className="col-md-6">
+                <img src={img2} alt="Image Not Found" />
               </div>
             </div>
           </div>
@@ -263,7 +262,7 @@ const ShopifyContent = ({
             {/* Image */}
             <div className="w-100 w-lg-50 text-center p-2">
               <img
-                src="/assets/img/blog/choose us 1.png"
+                src="/assets/img/blog/1.jpg"
                 alt="Blog"
                 className="img-fluid"
                 style={{ maxWidth: "500px", height: "500px", width: "100%" }}
