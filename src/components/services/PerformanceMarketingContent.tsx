@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -66,66 +65,89 @@ const PerformanceMarketingContent = ({
   const features = [
     {
       icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "First Impressions Count",
+      title: "Conversion Rate",
       description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
+        "Tracks how many visitors complete a desired action like a purchase or sign-up.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "User Experience Matters",
-      description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
+      title: "Cost Per Acquisition (CPA)",
+      description: "Measures how much it costs to acquire one paying customer.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Supports Marketing Efforts",
+      title: "Return on Ad Spend (ROAS)",
       description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
+        "Shows how much revenue is earned for every dollar spent on ads.",
     },
     {
       icon: "/assets/img/icon/24.png",
-      title: "Drives Conversions",
+      title: "Click-Through Rate (CTR)",
       description:
-        "Optimized design and clear call-to-actions turn visitors into customers.",
+        "Indicates how many people clicked on your ad after seeing it.",
+    },
+    {
+      icon: "/assets/img/icon/24.png",
+      title: "Customer Lifetime Value (CLV)",
+      description:
+        "Estimates the total revenue a business earns from a single customer over time.",
+    },
+    {
+      icon: "/assets/img/icon/24.png",
+      title: "Impressions & Reach",
+      description:
+        "Measures how many times your ad is shown and how many people saw it.",
     },
   ];
 
   const cards = [
     {
       id: 1,
-      title: "Winning Product Research",
+      title: "Data-Driven Decisions",
       description:
-        "We analyze trending products, search volume, competition, and cost-per-click to find a niche that has high demand and long-term growth potential.",
+        "Our strategy is grounded in data. We use strong analytics tools to monitor performance and adjust campaigns in real time.",
     },
     {
       id: 2,
-      title: "Supplier Sourcing & Logistics",
+      title: "Targeted PPC Campaigns",
       description:
-        "We connect you with reliable suppliers from the U.S. and duty-free regions to ensure faster shipping times, superior product quality, and better customer satisfaction.",
+        "We create highly focused paid campaigns aimed at reaching your ideal audience.",
     },
     {
       id: 3,
-      title: "Custom Store & Website Development",
+      title: "Conversion Rate Optimization",
       description:
-        "We design and develop a high-converting online store tailored to your niche, ensuring a seamless user experience and optimized sales funnel.",
+        "We continuously test and refine landing pages, ads, and user flow to ensure that visitors take the desired action.",
     },
     {
       id: 4,
-      title: "Branding & Positioning",
+      title: "A/B Testing",
       description:
-        "We help you create a unique brand identity, from logo creation to product packaging",
+        "We run A/B tests to compare different strategies and identify the best-performing approaches.",
     },
     {
       id: 5,
-      title: "Data-Driven Marketing Strategy",
+      title: "Remarketing Campaigns",
       description:
-        "We don’t just build stores; we drive sales. Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
+        "We re-engage users who have previously interacted with your brand but didn't convert.",
     },
     {
       id: 6,
-      title: "Performance Tracking & Optimization",
+      title: "Multi-Platform Advertising",
       description:
-        "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
+        "We use multiple advertising platforms like Google Ads, Facebook Ads, and more to reach a broader audience.",
+    },
+    {
+      id: 7,
+      title: "Performance Tracking & Analytics",
+      description:
+        "Our detailed reporting helps you understand the success of your campaigns and guides future decision-making for continuous improvement.",
+    },
+    {
+      id: 8,
+      title: "Budget Optimization",
+      description:
+        "We manage your advertising budget efficiently, allocating resources to the highest-performing campaigns.",
     },
   ];
 
@@ -164,14 +186,13 @@ const PerformanceMarketingContent = ({
                   <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
                     <div className="card h-100 border shadow-sm">
                       <div className="position-relative">
-                       
-                          <img
-                            src={`/assets/img/blog/4.jpg`}
-                            className="card-img-top"
-                            alt="Featured"
-                            style={{ height: "550px", objectFit: "cover" }}
-                          />
-                       
+                        <img
+                          src={`/assets/img/blog/4.jpg`}
+                          className="card-img-top"
+                          alt="Featured"
+                          style={{ height: "550px", objectFit: "cover" }}
+                        />
+
                         <div
                           className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
                           style={{
@@ -213,42 +234,42 @@ const PerformanceMarketingContent = ({
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/ahrefs.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/google keyword planner.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/google merchant account.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/google trends.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/screaming frog.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/semrush1.png"
                     alt=""
                   />
                 </div>
@@ -340,30 +361,35 @@ const PerformanceMarketingContent = ({
                 </div>
               </div>
             </div>
-            <div style={{marginTop:"50px"}} className={`w-100 d-flex flex-column flex-lg-row  mb-5`}>
+            <div
+              style={{ marginTop: "50px" }}
+              className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+            >
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
-                  src="/assets/img/blog/1.jpg"
+                  src="/assets/img/blog/why.png"
                   alt="Blog"
                   className="img-fluid"
-                  style={{ maxWidth: "500px",height: "500px", width: "100%" }}
+                  style={{ maxWidth: "500px", height: "500px", width: "100%" }}
                 />
               </div>
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                  <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
                 </h2>
-                <p>{whyChooseP1}{whyChooseP2}</p>
-
+                <p>
+                  {whyChooseP1}
+                  {whyChooseP2}
+                </p>
               </div>
             </div>
           </div>
         </div>
         <PriceV2New pricing={pricing} />
         <div className="container mt-4">
-          <MostPopularServices/>
+          <MostPopularServices />
           <div className="item">
             <div className="faq-style-one faq-style-two">
               <h2 className="mb-30">Frequently Asked Questions</h2>
