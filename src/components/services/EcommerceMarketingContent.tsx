@@ -64,12 +64,12 @@ const EcommerceMarketingContent = ({
   } = serviceInfo || {};
 
   const images = [
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/cloud.png",
-    "/assets/img/partner/semrush.png",
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/sp.png",
+    "/assets/img/partner/Data-Driven Decisions.jpg",
+    "/assets/img/partner/enhanced Customer Engagement.jpg",
+    "/assets/img/partner/higher conversion rate.jpg",
+    "/assets/img/partner/Increased Brand Visibility.jpg",
+    "/assets/img/partner/Scalable Marketing strategy.jpg",
+    "/assets/img/partner/Targeted Advertising.jpg",
   ];
 
   return (
@@ -169,12 +169,7 @@ const EcommerceMarketingContent = ({
                           {item.title}
                         </Link>
                       </h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quod unde omnis est eius corrupti, odit vero fuga
-                        accusantium cum expedita debitis velit assumenda quidem.
-                        Facilis suscipit neque ullam numquam fugiat.
-                      </p>
+                      <p>{item.decription}</p>
                     </div>
                   </div>
                 ))}
@@ -271,7 +266,7 @@ const EcommerceMarketingContent = ({
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
-                  src="/assets/img/blog/1.jpg"
+                  src="/assets/img/blog/why.png"
                   alt="Blog"
                   className="img-fluid"
                   style={{ maxWidth: "500px", height: "500px", width: "100%" }}

@@ -28,42 +28,42 @@ const Dropshipping = () => {
     {
       id: 1,
       title: "Winning Product Research",
-      img:"/assets/img/services/winning product.jpg",
+      img: "/assets/img/services/winning product.jpg",
       description:
         "We analyze trending products, search volume, competition, and cost-per-click to find a niche that has high demand and long-term growth potential.",
     },
     {
       id: 2,
       title: "Supplier Sourcing & Logistics",
-      img:"/assets/img/services/supplying.jpg",
+      img: "/assets/img/services/supplying.jpg",
       description:
         "We connect you with reliable suppliers from the U.S. and duty-free regions to ensure faster shipping times, superior product quality, and better customer satisfaction.",
     },
     {
       id: 3,
       title: "Custom Store & Website Development",
-      img:"/assets/img/services/custom store.jpg",
+      img: "/assets/img/services/custom store.jpg",
       description:
         "We design and develop a high-converting online store tailored to your niche, ensuring a seamless user experience and optimized sales funnel.",
     },
     {
       id: 4,
       title: "Branding & Positioning",
-      img:"/assets/img/services/branding.jpg",
+      img: "/assets/img/services/branding.jpg",
       description:
         "We help you create a unique brand identity, from logo creation to product packaging",
     },
     {
       id: 5,
       title: "Data-Driven Marketing Strategy",
-      img:"/assets/img/services/data driven.jpg",
+      img: "/assets/img/services/data driven.jpg",
       description:
         "We don’t just build stores; we drive sales. Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
     },
     {
       id: 6,
       title: "Performance Tracking & Optimization",
-      img:"/assets/img/services/performance.jpg",
+      img: "/assets/img/services/performance.jpg",
       description:
         "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
     },
@@ -135,7 +135,7 @@ const Dropshipping = () => {
           </div>
         </div>
         <div style={{ marginTop: "100px" }}>
-          <div style={{position:"relative"}} className="container">
+          <div style={{ position: "relative" }} className="container">
             <h2 className="text-center">
               Our Dropshipping Service Encompasses
             </h2>
@@ -170,11 +170,16 @@ const Dropshipping = () => {
               <div className="swiper-wrapper">
                 {cards.map((card) => (
                   <SwiperSlide key={card.id}>
-                    <div key={card.id} style={{ minHeight: "650px",padding:"10px" }}>
+                    <div
+                      key={card.id}
+                      style={{ minHeight: "650px", padding: "10px" }}
+                    >
                       <div className="card h-100 border">
                         <div className="position-relative">
                           <img
-                            src={card?.img?card.img:`/assets/img/blog/4.jpg`}
+                            src={
+                              card?.img ? card.img : `/assets/img/blog/4.jpg`
+                            }
                             className="card-img-top"
                             alt="Featured"
                             style={{ height: "460px", width: "100%" }}
@@ -216,27 +221,27 @@ const Dropshipping = () => {
               </div>
             </Swiper>
             <div
-                style={{
-                  display: "flex",
-                  marginTop:"30px",
-                  top:"110%",
-                  left:"50%",
-                  gap:"10px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                  <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
-                    <i className="fas fa-chevron-left me-2 text-dark"></i>
-                  </button>
-                  <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
-                    <i className="fas fa-chevron-right ms-2 text-dark"></i>
-                  </button>
+              style={{
+                display: "flex",
+                marginTop: "30px",
+                top: "110%",
+                left: "50%",
+                gap: "10px",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
+                <i className="fas fa-chevron-left me-2 text-dark"></i>
+              </button>
+              <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                <i className="fas fa-chevron-right ms-2 text-dark"></i>
+              </button>
             </div>
           </div>
         </div>
 
-        <div style={{marginTop:"60px"}} className="container">
+        <div style={{ marginTop: "60px" }} className="container">
           <h2 className="text-center">Start today with the best niche</h2>
           <div
             style={{ padding: "20px 0px" }}
@@ -280,7 +285,7 @@ const Dropshipping = () => {
               modules={[Pagination, Navigation, Keyboard, Mousewheel, Autoplay]}
             >
               <div className="swiper-wrapper">
-                {BannerV3Data.map((banner) => (
+                {BannerV3Data.slice(0, 7).map((banner) => (
                   <SwiperSlide key={banner.id}>
                     <SingleBannerV3 banner={banner} />
                   </SwiperSlide>
@@ -299,9 +304,17 @@ const Dropshipping = () => {
             <div className="card shadow bg-dark text-white">
               <div className="row g-0" style={{ minHeight: "650px" }}>
                 {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
-                <div style={{display:"flex",height:"100%",justifyContent:"center",alignItems:"center"}} className="col-md-5 col-lg-5  d-none d-md-block">
+                <div
+                  style={{
+                    display: "flex",
+                    height: "100%",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                  className="col-md-5 col-lg-5  d-none d-md-block"
+                >
                   <img
-                    style={{height:"80%",objectPosition:"center"}}
+                    style={{ height: "80%", objectPosition: "center" }}
                     src="/assets/img/services/contact_us.jpg"
                     alt="Business professional"
                     className="w-100 object-fit-cover"

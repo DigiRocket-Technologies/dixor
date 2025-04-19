@@ -243,7 +243,7 @@ const SocialMediaMarketingContent = ({
                   ]}
                 >
                   <div className="swiper-wrapper">
-                    {BannerV3Data.map((banner) => (
+                    {BannerV3Data.slice(6).map((banner) => (
                       <SwiperSlide key={banner.id}>
                         <SingleBannerV3 banner={banner} />
                       </SwiperSlide>
@@ -334,7 +334,7 @@ const SocialMediaMarketingContent = ({
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
-                  src="/assets/img/blog/1.jpg"
+                  src="/assets/img/blog/why.png"
                   alt="Blog"
                   className="img-fluid"
                   style={{ maxWidth: "500px", height: "500px", width: "100%" }}

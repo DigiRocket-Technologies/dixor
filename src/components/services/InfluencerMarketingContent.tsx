@@ -212,38 +212,53 @@ const InfluencerMarketingContent = ({
             </div>
 
             <div style={{ marginTop: "50px" }}>
-              <h2>Why Influencer Marketing Works?</h2>
-              <p>
+              <h2 className="">Why Influencer Marketing Works?</h2>
+              {/* <p>
                 By leveraging influencers' established relationships with their
                 audience, brands can connect with potential customers in a more
                 genuine and engaging way.
-              </p>
-              <div>
-                <h2 className="mb-1">Authentic Connections</h2>
-                <p>
-                  Influencers have built trust with their followers, making
-                  their recommendations feel more genuine and personal.
+              </p> */}
+              <div className="my-2">
+                <h3 className="mb-1">Authentic Connections</h3>
+                <p className="">
+                  Influencers build relationships with their followers through
+                  regular, relatable content. Because of this trust, their
+                  product recommendations feel like advice from a friend rather
+                  than a sales pitch. This authenticity leads to more meaningful
+                  interactions and drives purchase decisions more effectively
+                  than traditional advertising channels.
                 </p>
               </div>
-              <div>
-                <h2 className="mb-1">Targeted Reach</h2>
+              <div className="my-2">
+                <h3 className="mb-1">Targeted Reach</h3>
                 <p>
-                  Influencers allow brands to reach specific, niche audiences
-                  that are more likely to convert.
+                  Influencer marketing allows brands to connect with niche
+                  audiences based on age, interests, location, and more. Instead
+                  of casting a wide net, you can reach potential customers who
+                  are genuinely interested in your product or service, making
+                  every impression more valuable and significantly improving
+                  conversion potential.
                 </p>
               </div>
-              <div>
-                <h2 className="mb-1">High Engagement Rates</h2>
+              <div className="my-2">
+                <h3 className="mb-1">High Engagement Rates</h3>
                 <p>
-                  Influencers often achieve better engagement compared to
-                  traditional advertising, leading to higher brand interaction.
+                  Influencer content typically garners more likes, shares,
+                  comments, and saves compared to brand-generated posts. Their
+                  ability to spark conversations and drive action helps boost
+                  visibility and encourages users to interact, creating a ripple
+                  effect of organic engagement that amplifies your brand
+                  presence.
                 </p>
               </div>
-              <div>
-                <h2 className="mb-1">Cost-Effective ROI</h2>
+              <div className="my-2">
+                <h3 className="mb-1">Cost-Effective ROI</h3>
                 <p>
-                  With various influencer tiers, brands can scale campaigns to
-                  fit their budget while still seeing significant returns.
+                  Influencer marketing is flexible and scalable. From micro to
+                  macro influencers, brands can choose based on their goals and
+                  budget. Many campaigns deliver impressive results at a
+                  fraction of the cost of traditional media, offering better
+                  returns, especially for targeted and smaller-scale efforts.
                 </p>
               </div>
             </div>
@@ -303,7 +318,7 @@ const InfluencerMarketingContent = ({
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
-                  src="/assets/img/blog/1.jpg"
+                  src="/assets/img/blog/why.png"
                   alt="Blog"
                   className="img-fluid"
                   style={{ maxWidth: "500px", height: "500px", width: "100%" }}
