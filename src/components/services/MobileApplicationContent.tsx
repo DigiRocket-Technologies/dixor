@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import MostPopularServices from "./MostPopularServices.tsx";
 import { useState } from "react";
 
+import { SwiperSlide,Swiper } from "swiper/react";
+import { Autoplay, Keyboard, Navigation } from "swiper/modules";
+
 interface DataType {
   title?: string;
   bannerImg?: string;
@@ -61,28 +64,25 @@ const MobileApplicationContent = ({
 
   const features = [
     {
-      icon: "/assets/img/icon/24.png", // Bootstrap Icon class
+      icon: "/assets/img/services/custom app development.svg", // Bootstrap Icon class
       title: "Custom App Development",
       description:
         "Tailored apps that align with your specific business goals.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/services/Compatibility.svg",
       title: "Cross-Platform Compatibility.",
-      description:
-        "eamless app experience across both iOS and Android.",
+      description: "eamless app experience across both iOS and Android.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/services/user centric.svg",
       title: "User-Centric Design",
-      description:
-        "Intuitive, engaging, and easy-to-navigate user interface.",
+      description: "Intuitive, engaging, and easy-to-navigate user interface.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/services/scale up.svg",
       title: "Scalable Architecture",
-      description:
-        "Apps designed to grow with your business need.",
+      description: "Apps designed to grow with your business need.",
     },
   ];
 
@@ -90,36 +90,41 @@ const MobileApplicationContent = ({
     {
       id: 1,
       title: "Custom Solutions",
+      img:"/assets/img/services/wyg/Custom Solutions.jpg",
       description:
         "We develop mobile apps tailored to your unique business needs.",
     },
     {
       id: 2,
       title: "High-Performance Apps",
+      img:"/assets/img/services/wyg/High-Performance Apps.jpg",
       description:
         "Our apps are optimized for speed and efficiency, ensuring smooth performance.",
     },
     {
       id: 3,
       title: "User-Focused Design",
+      img:"/assets/img/services/wyg/User-Focused Design.jpg",
       description:
         "We prioritize user experience to create engaging, intuitive interfaces.",
     },
     {
       id: 4,
       title: "Cross-Platform Reach",
+      img:"/assets/img/services/wyg/Cross-Platform Reach.jpg",
       description:
         "Your app will work seamlessly across both iOS and Android platforms.",
     },
     {
       id: 5,
       title: "Scalability",
-      description:
-        "Apps are built to evolve with your business as it grows.",
+      img:"/assets/img/services/wyg/Scalability.jpg",
+      description: "Apps are built to evolve with your business as it grows.",
     },
     {
       id: 6,
       title: "Ongoing Support",
+      img:"/assets/img/services/wyg/Ongoing Support.jpg",
       description:
         "We provide continuous updates and troubleshooting to keep your app running smoothly",
     },
@@ -173,12 +178,7 @@ const MobileApplicationContent = ({
                 </ul>
               </div>
             </div>
-
-            <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px" }}>
-                We build for both ? cards
-              </h1>
-            </div>
+                
             <div style={{ marginTop: "50px" }}>
               <h2 className="text-center">Features we offer</h2>
               <div className="row g-4 mt-4">
@@ -199,52 +199,107 @@ const MobileApplicationContent = ({
             </div>
             <div style={{ marginTop: "40px" }}>
               <h2>What you get when you choose us</h2>
-              <div className="row gx-1 mt-1 gy-4 mb-5">
-                {cards.map((card) => (
-                  <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
-                    <div className="card h-100 border shadow-sm">
-                      <div className="position-relative">
-                        <a href="/blog-single-with-sidebar/">
-                          <img
-                            src={`/assets/img/blog/4.jpg`}
-                            className="card-img-top"
-                            alt="Featured"
-                            style={{ height: "480px", objectFit: "cover" }}
-                          />
-                        </a>
-                        <div
-                          className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
-                          style={{
-                            width: "40px",
-                            height: "40px",
-                            top: "12px",
-                            left: "5px",
-                            fontWeight: "bold",
-                            border: "2px solid white",
-                          }}
-                        >
-                          {card.id}
+              <Swiper
+                loop={true}
+                centeredSlides={false}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                speed={1000}
+                navigation={{
+                  nextEl: ".dropshippingservice-next",
+                  prevEl: ".dropshippingservice-prev",
+                }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1000: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40,
+                  },
+                }}
+                modules={[Navigation, Keyboard, Autoplay]}
+              >
+                <div className="swiper-wrapper">
+                  {cards.map((card) => (
+                    <SwiperSlide key={card.id}>
+                      <div
+                        key={card.id}
+                        style={{ minHeight: "650px", padding: "10px" }}
+                      >
+                        <div className="card h-100 border">
+                          <div className="position-relative">
+                            <img
+                              src={
+                                card?.img ? card.img : `/assets/img/blog/4.jpg`
+                              }
+                              className="card-img-top"
+                              alt="Featured"
+                              style={{ height: "460px", width: "100%" }}
+                            />
+                            <div
+                              className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                              style={{
+                                width: "40px",
+                                height: "40px",
+                                top: "12px",
+                                left: "5px",
+                                fontWeight: "bold",
+                                border: "2px solid white",
+                              }}
+                            >
+                              {card.id}
+                            </div>
+                          </div>
+                          <div className="card-body">
+                            <h4
+                              style={{ color: "black" }}
+                              className="card-title"
+                            >
+                              {card.title}
+                            </h4>
+                            <p
+                              className="card-text text-muted"
+                              style={{
+                                overflow: "hidden",
+                                display: "-webkit-box",
+                                WebkitLineClamp: 3,
+                                WebkitBoxOrient: "vertical",
+                              }}
+                            >
+                              {card.description}
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="card-body">
-                        <h4 style={{ color: "black" }} className="card-title">
-                          {card.title}
-                        </h4>
-                        <p
-                          className="card-text text-muted"
-                          style={{
-                            overflow: "hidden",
-                            display: "-webkit-box",
-                            WebkitLineClamp: 3,
-                            WebkitBoxOrient: "vertical",
-                          }}
-                        >
-                          {card.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                    </SwiperSlide>
+                  ))}
+                </div>
+              </Swiper>
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "30px",
+                  top: "110%",
+                  left: "50%",
+                  gap: "10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-left me-2 text-dark"></i>
+                </button>
+                <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-right ms-2 text-dark"></i>
+                </button>
               </div>
             </div>
             <div
@@ -254,7 +309,7 @@ const MobileApplicationContent = ({
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
-                  src="/assets/img/blog/1.jpg"
+                  src="/assets/img/about/choose us 1.png"
                   alt="Blog"
                   className="img-fluid"
                   style={{ maxWidth: "500px", height: "500px", width: "100%" }}
@@ -263,17 +318,15 @@ const MobileApplicationContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
+                  <Link to={`#`}>Why Choose Us? </Link>
                 </h2>
-                <p>
-                  {whyChooseP1}
-                </p>
+                <p>{whyChooseP1}</p>
                 <p>{whyChooseP2}</p>
               </div>
             </div>
           </div>
         </div>
-    
+
         <div className="container mt-4">
           <MostPopularServices />
           <div className="item">
