@@ -3,7 +3,6 @@ import portfolio13 from "/assets/img/portfolio/13.jpg";
 import portfolio14 from "/assets/img/portfolio/14.jpg";
 import portfolio15 from "/assets/img/portfolio/15.jpg";
 import portfolio44 from "/assets/img/portfolio/44.jpg";
-import PortfolioV4Data from "../../../src/assets/jsonData/portfolio/PortfolioV4Data.json";
 
 interface DataType {
     id?: number;
@@ -18,23 +17,10 @@ interface ProjectDetailsProps {
     totalProjects?: number
 }
 
-const ProjectDetailsContent = ({ projectInfo, sectionClass, totalProjects }: ProjectDetailsProps) => {
-    const { title, tag, id, thumbFull } = projectInfo || {};
+const ProjectDetailsContent = ({ projectInfo, sectionClass,}: ProjectDetailsProps) => {
+    const { title, tag,  thumbFull } = projectInfo || {};
 
-    // Projects Navigation
 
-    const currentId = id ? parseInt(id.toString(), 10) : 1;
-
-    // Calculate the previous and next IDs dynamically
-    const previousId = currentId === 1 ? totalProjects : currentId - 1;
-    const nextId = currentId === totalProjects ? 1 : currentId + 1;
-
-    // Get the previous and next project titles
-    const previousProject = PortfolioV4Data.find((project) => project.id === previousId);
-    const nextProject = PortfolioV4Data.find((project) => project.id === nextId);
-
-    // Get the first two words of the project title
-    const getFirstTwoWords = (text?: string) => text?.split(' ').slice(0, 2).join(' ') || "No Title";
 
     return (
         <>
@@ -190,36 +176,6 @@ const ProjectDetailsContent = ({ projectInfo, sectionClass, totalProjects }: Pro
                 </div>
             </div>
 
-            {/* 4th Section (Navigation) */}
-            <div className="project-pagination default-padding-bottom">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="project-paginvation-items">
-                                <div className="project-previous">
-                                    <Link to={`/project-details/${previousId}`}>
-                                        <div className="icon"><i className="fas fa-angle-double-left" /></div>
-                                        <div className="nav-title"> Previous Post
-                                            <h5>{getFirstTwoWords(previousProject?.title)}</h5>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="project-all">
-                                    <Link to="#"><i className="fas fa-th-large" /></Link>
-                                </div>
-                                <div className="project-next">
-                                    <Link to={`/project-details/${nextId}`}>
-                                        <div className="nav-title">Next Post
-                                            <h5>{getFirstTwoWords(nextProject?.title)}</h5>
-                                        </div>
-                                        <div className="icon"><i className="fas fa-angle-double-right" /></div>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </>
     );
 };

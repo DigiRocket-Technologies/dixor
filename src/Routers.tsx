@@ -97,6 +97,12 @@ import ProjectPage2 from "./pages/innerPages/ProjectPage2";
 import AboutUsPage2 from "./pages/innerPages/AboutUsPage2";
 import Marketing from "./pages/servicesPages/Marketing";
 import Development from "./pages/servicesPages/Development";
+import GourmetKitchen from "./pages/CasestudyPages/GourmetKitchenworks";
+import Alamocity from "./pages/CasestudyPages/AlamoCity";
+import Rehisk from "./pages/CasestudyPages/Rehisk";
+import EyeCandy from "./pages/CasestudyPages/EyeCandy";
+import Dripnation from "./pages/CasestudyPages/DripNation";
+import LadderSafety from "./pages/CasestudyPages/LadderSafety";
 const Routers = () => {
     return (
         <>
@@ -141,7 +147,12 @@ const Routers = () => {
                 <Route path='/development' element={<Development/>}></Route>
 
                 <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route>
-                
+                <Route path="/case-study/gourmetkitchenworks" element={<GourmetKitchen/>}></Route>
+                <Route path="/case-study/alamocitypopcorn" element={<Alamocity/>}></Route>
+                <Route path="/case-study/rehisk" element={<Rehisk/>}></Route>
+                <Route path="/case-study/eyecandybrownsalon" element={<EyeCandy/>}></Route>
+                <Route path="/case-study/dripnation" element={<Dripnation/>}></Route>
+                <Route path="/case-study/laddersafetyrails" element={<LadderSafety/>}></Route>
 
                 <Route path='*' element={<NotFoundPage />}></Route>
 

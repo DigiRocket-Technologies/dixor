@@ -1,24 +1,24 @@
 [
     {
-        "id": "1",
+        "id": "dripnation",
         "thumb": "/assets/img/portfolio/DripNation.jpg",
         "title": "Drip Nation IL",
         "tag": "Marketing"
     },
     {
-        "id": "2",
+        "id": "alamocitypopcorn",
         "thumb": "/assets/img/portfolio/Alamo city popcorn 1.jpg",
         "title": "Alamo City Popcorn",
         "tag": "UX Design"
     },
     {
-        "id": "3",
+        "id": "eyecandybrownsalon",
         "thumb": "/assets/img/portfolio/eyecandy website.jpg",
         "title": "Eye Candy Brown Salon",
         "tag": "Branding"
     },
     {
-        "id": "4",
+        "id": "gourmetkitchenworks",
         "thumb": "/assets/img/portfolio/gourmet kitchen 1.jpg",
         "title": "Gourmet Kitchenworks",
         "tag": "Business"
@@ -47,13 +47,13 @@
         "title": "Rehisk"
     },
     {
-        "id": "alamo-city-popcorn",
+        "id": "alamocitypopcorn",
         "thumb": "/assets/img/portfolio/Alamocitypopcorn-thumb.jpg",
         "tag": "Business",
         "title": "Alamo City Popcorn"
     },
     {
-        "id": "drip-nation-il",
+        "id": "dripnation",
         "thumb": "/assets/img/portfolio/drip-nation-thumb.jpg",
         "tag": "Business",
         "title": "Drip Nation IL"

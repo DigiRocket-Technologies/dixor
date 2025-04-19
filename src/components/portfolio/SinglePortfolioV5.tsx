@@ -14,7 +14,7 @@ const SinglePortfolioV5 = ({ portfolio }: { portfolio: DataType }) => {
     return (
         <>
             <div className="portfolio-style-five">
-                <Link to={`/project-details/${id}`} className="cursor-target">
+                <Link to={`/case-study/${id}`} className="cursor-target">
                     <div className="thumb-zoom" >
                         <img className="img-reveal" src={thumb} alt="Image Not Found" width={800} height={1067} ref={containerRef} />
                         <div className="overlay">

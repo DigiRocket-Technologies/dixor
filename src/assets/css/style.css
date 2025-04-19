@@ -18289,7 +18289,7 @@ button.Toastify__close-button {
 
 .country-card:hover {
 	transform: scale(1.05);
-	filter:grayscale(1.0);
+	filter:grayscale(0);
 }
 
 .ocard{

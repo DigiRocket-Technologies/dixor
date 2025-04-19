@@ -62,7 +62,7 @@ const MobileApplicationContent = ({
   const features = [
     {
       icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "Custom App Developmen",
+      title: "Custom App Development",
       description:
         "Tailored apps that align with your specific business goals.",
     },
