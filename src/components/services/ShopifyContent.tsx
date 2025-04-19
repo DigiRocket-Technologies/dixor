@@ -140,12 +140,11 @@ const ShopifyContent = ({
                 </ul>
               </div>
             </div>
-            <div className="row mt-80 mt-xs-50 gallery-two-columns">
-              <div className="col-md-6">
-                <img src={img1} alt="Image Not Found" />
-              </div>
-              <div className="col-md-6">
-                <img src={img2} alt="Image Not Found" />
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="service-single-thumb">
+                  <img src={bannerImg} alt="Thumb" />
+                </div>
               </div>
             </div>
           </div>
