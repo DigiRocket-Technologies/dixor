@@ -30,11 +30,11 @@ const SingleBannerV3 = ({ banner }: { banner: DataType }) => {
                     </div>
                 </Link>
             </div> */}
-            <div className="banner-style-three">
+            <div className="banner-style-three" style={{width:"100%"}}>
                 <Link to="#" className="cursor-target" data-bs-toggle="modal" data-bs-target={`#${id}`}>
                     <div className="thumb">
                         <div className="bnner">
-                            <img src={`/assets/img/portfolio/4.jpg`} alt="Image Not Found"  width={1050} height={700} />
+                            <img src={`/assets/img/portfolio/4.jpg`}  alt="Image Not Found"  width={1050} height={700} />
                         </div>
                     </div>
                     <div className="content">

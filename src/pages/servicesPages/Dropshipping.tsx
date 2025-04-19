@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 // import pricingInfo from "../../assets/jsonData/price/PriceV2New.json";
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import DarkClass from "../../components/classes/DarkClass";
-import banner6 from "/assets/img/services/dropshipping.png";
+import banner6 from "/assets/img/services/dropshipping.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import SplitText from "../../components/animation/SplitText.jsx";
 // import { Link } from "react-router-dom";
@@ -28,6 +28,7 @@ const Dropshipping = () => {
     {
       id: 1,
       title: "Winning Product Research",
+      img:"/assets/img/services/winning product.jpg",
       description:
         "We analyze trending products, search volume, competition, and cost-per-click to find a niche that has high demand and long-term growth potential.",
     },
@@ -41,24 +42,28 @@ const Dropshipping = () => {
     {
       id: 3,
       title: "Custom Store & Website Development",
+      img:"/assets/img/services/custom store.jpg",
       description:
         "We design and develop a high-converting online store tailored to your niche, ensuring a seamless user experience and optimized sales funnel.",
     },
     {
       id: 4,
       title: "Branding & Positioning",
+      img:"/assets/img/services/branding.jpg",
       description:
         "We help you create a unique brand identity, from logo creation to product packaging",
     },
     {
       id: 5,
       title: "Data-Driven Marketing Strategy",
+      img:"/assets/img/services/data driven.jpg",
       description:
         "We don’t just build stores; we drive sales. Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
     },
     {
       id: 6,
       title: "Performance Tracking & Optimization",
+      img:"/assets/img/services/performance.jpg",
       description:
         "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
     },
@@ -292,13 +297,14 @@ const Dropshipping = () => {
             className="mt-5"
           >
             <div className="card shadow bg-dark text-white">
-              <div className="row g-0" style={{ minHeight: "750px" }}>
+              <div className="row g-0" style={{ minHeight: "650px" }}>
                 {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
-                <div className="col-md-5 col-lg-5 d-none d-md-block">
+                <div style={{display:"flex",height:"100%",justifyContent:"center",alignItems:"center"}} className="col-md-5 col-lg-5  d-none d-md-block">
                   <img
-                    src="/assets/img/blog/1.jpg"
+                    style={{height:"80%",objectPosition:"center"}}
+                    src="/assets/img/services/contact.jpg"
                     alt="Business professional"
-                    className="w-100 h-100 object-fit-cover"
+                    className="w-100 object-fit-cover"
                   />
                 </div>
 

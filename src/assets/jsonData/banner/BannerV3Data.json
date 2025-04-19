@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "thumb": "10.jpg",
-    "thumbFull": "10-full.jpg",
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Lifestyle ",
     "date": "18 October, 2024"
@@ -12,21 +12,21 @@
     "thumb": "11.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
-    "title": "Clothing ",
+    "title": "Clothing",
     "date": "18 January, 2024"
   },
   {
     "id": 3,
-    "thumb": "12.jpg",
-    "thumbFull": "12-full.jpg",
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Food & Beverage",
     "date": "18 July, 2024"
   },
   {
     "id": 4,
-    "thumb": "10.jpg",
-    "thumbFull": "10-full.jpg",
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Health & Wellness",
     "date": "18 October, 2024"
@@ -41,8 +41,8 @@
   },
   {
     "id": 6,
-    "thumb": "12.jpg",
-    "thumbFull": "12-full.jpg",
+    "thumb": "11.jpg",
+    "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Beauty ",
     "date": "18 July, 2024"
