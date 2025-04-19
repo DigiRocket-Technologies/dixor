@@ -305,7 +305,8 @@
   },
   {
     "id": "shopify-development",
-    "bannerImg": "/assets/img/services/upasana-shopify.jpg",
+    "bannerImg1": "/assets/img/services/banner01.jpg",
+    "bannerImg2": "/assets/img/services/banner02.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "type": "development",
