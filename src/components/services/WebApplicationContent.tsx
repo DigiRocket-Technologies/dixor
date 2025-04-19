@@ -2,6 +2,8 @@
 import { Link } from "react-router-dom";
 import MostPopularServices from "./MostPopularServices.tsx";
 import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Keyboard, Autoplay } from "swiper/modules";
 
 interface DataType {
   title?: string;
@@ -58,33 +60,6 @@ const WebApplicationContent = ({
     importance_title,
   } = serviceInfo || {};
 
-  const features = [
-    {
-      icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "First Impressions Count",
-      description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
-    },
-    {
-      icon: "/assets/img/icon/24.png",
-      title: "User Experience Matters",
-      description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
-    },
-    {
-      icon: "/assets/img/icon/24.png",
-      title: "Supports Marketing Efforts",
-      description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
-    },
-    {
-      icon: "/assets/img/icon/24.png",
-      title: "Drives Conversions",
-      description:
-        "Optimized design and clear call-to-actions turn visitors into customers.",
-    },
-  ];
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -93,6 +68,53 @@ const WebApplicationContent = ({
     otherWebsiteType: "",
     additional: "",
   });
+
+  const cards = [
+    {
+      id: 1,
+      title: "Discovery & Planning",
+      img: "/assets/img/services/winning product.jpg",
+      description:
+        "We start by understanding your brand, business goals, and target audience. This phase includes gathering requirements, defining project scope, and setting timelines. Our aim is to build a clear roadmap that aligns technical execution with your long-term objectives.",
+    },
+    {
+      id: 2,
+      title: " Design & Wireframing",
+      img: "/assets/img/services/supplying.jpg",
+      description:
+        "Our design team crafts intuitive wireframes and visual mockups to bring your ideas to life. We focus on user experience, brand consistency, and aesthetics—ensuring the design not only looks great but also guides users seamlessly through your site.",
+    },
+    {
+      id: 3,
+      title: "Development",
+      img: "/assets/img/services/custom store.jpg",
+      description:
+        "Once the design is finalized, our developers build your website using clean, scalable code. We implement all planned functionalities, from basic layouts to advanced integrations, ensuring the site is responsive, fast, and compatible across all devices..",
+    },
+    {
+      id: 4,
+      title: "Testing & Quality Assurance",
+      img: "/assets/img/services/branding.jpg",
+      description:
+        "Before going live, we conduct thorough testing—checking for bugs, browser compatibility, and performance issues. This phase ensures your website runs smoothly and delivers a flawless user experience under all conditions.",
+    },
+    {
+      id: 5,
+      title: "Launch & Handover",
+      img: "/assets/img/services/data driven.jpg",
+      description:
+        "After final approval, we launch your site and hand over full access. We also provide basic training and documentation to help you manage your site independently. Post-launch support is available to ensure everything stays optimized.",
+    },
+  ];
+
+  const Skills = [
+    "Custom Website Development",
+    "eCommerce Website Development",
+    "Web Application Development",
+    "CMS-Based Development (WordPress, Shopify, etc.)",
+    "Landing Page & UI/UX Design",
+    "Website Maintenance & Support",
+  ];
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -137,86 +159,176 @@ const WebApplicationContent = ({
 
             <div className="mt-50 mt-xs-20">
               <h1 style={{ marginBottom: "50px" }}>
-                Why do you need woocommerce?{" "}
+                Our Web Development Services{" "}
               </h1>
-              <div style={{ marginTop: "50px", width: "100%" }}>
-                {[
-                  {
-                    id: 1,
-                    title: "Project Research",
-                    img: "/assets/img/blog/4.jpg",
-                  },
-                  {
-                    id: 2,
-                    title: "Best Concept",
-                    img: "/assets/img/blog/4.jpg",
-                  },
-                  {
-                    id: 3,
-                    title: "Design Implement",
-                    img: "/assets/img/blog/4.jpg",
-                  },
-                  {
-                    id: 4,
-                    title: "Final Result",
-                    img: "/assets/img/blog/4.jpg",
-                  },
-                ].map((item, index) => (
-                  <div
-                    key={item.id}
-                    className={`w-100 d-flex flex-column flex-lg-row ${
-                      index % 2 !== 0 ? "flex-lg-row-reverse" : ""
-                    }  mb-5`}
-                  >
-                    {/* Image */}
-                    <div className="w-100 w-lg-50 text-center p-2">
-                      <img
-                        src={item.img}
-                        alt="Blog"
-                        className="img-fluid"
+              <div style={{ marginTop: "40px" }}>
+                <Swiper
+                  modules={[Navigation]}
+                  navigation={{
+                    nextEl: ".right",
+                    prevEl: ".left",
+                  }}
+                  loop={true}
+                  spaceBetween={20}
+                  breakpoints={{
+                    0: {
+                      slidesPerView: 1,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                    },
+                    1024: {
+                      slidesPerView: 4,
+                    },
+                  }}
+                >
+                  {Skills.map((name, index) => (
+                    <SwiperSlide className="" key={index}>
+                      <div
                         style={{
-                          maxWidth: "500px",
-                          height: "500px",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
                           width: "100%",
+                          height: "150px",
                         }}
-                      />
-                    </div>
+                        className="p-3 ocard  rounded shadow-sm text-center"
+                      >
+                        <div
+                          style={{ fontWeight: "bold" }}
+                          className="text-dark fs-4"
+                        >
+                          {name}
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
 
-                    {/* Text */}
-                    <div className="w-100 w-lg-50 p-4 text-center">
-                      <h2 className="post-title">
-                        <Link to={`/blog-single-with-sidebar`}>
-                          {item.title}
-                        </Link>
-                      </h2>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quod unde omnis est eius corrupti, odit vero fuga
-                        accusantium cum expedita debitis velit assumenda quidem.
-                        Facilis suscipit neque ullam numquam fugiat.
-                      </p>
-                    </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "40px",
+                    gap: "10px",
+                  }}
+                  className="project-four-nav"
+                >
+                  <div className="d-flex justify-content-center align-items-center gap-2 my-4">
+                    <button className="left btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                      <i className="fas fa-chevron-left me-2 text-dark"></i>
+                    </button>
+                    <button className="right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                      <i className="fas fa-chevron-right ms-2 text-dark"></i>
+                    </button>
                   </div>
-                ))}
+                </div>
               </div>
             </div>
             <div style={{ marginTop: "50px" }}>
-              <h2 className="text-center">Benefits of using woocommerce</h2>
-              <div className="row g-4 mt-4">
-                {features.map((feature, index) => (
-                  <div key={index} className="col-12 col-sm-6 col-lg-3">
-                    <div className="text-white  p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
-                      <img
-                        src={feature.icon}
-                        style={{ width: "60px" }}
-                        alt=""
-                      />
-                      <h5 className="fw-bold mt-4">{feature.title}</h5>
-                      <p className="mb-0">{feature.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <h2 className="text-center">Our Proven Process</h2>
+              <Swiper
+                loop={true}
+                centeredSlides={false}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                speed={1000}
+                navigation={{
+                  nextEl: ".dropshippingservice-next",
+                  prevEl: ".dropshippingservice-prev",
+                }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1000: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40,
+                  },
+                }}
+                modules={[Navigation, Keyboard, Autoplay]}
+              >
+                <div className="swiper-wrapper">
+                  {cards.map((card) => (
+                    <SwiperSlide key={card.id}>
+                      <div
+                        key={card.id}
+                        style={{ minHeight: "650px", padding: "10px" }}
+                      >
+                        <div className="card h-100 border">
+                          <div className="position-relative">
+                            <img
+                              src={
+                                card?.img ? card.img : `/assets/img/blog/4.jpg`
+                              }
+                              className="card-img-top"
+                              alt="Featured"
+                              style={{ height: "460px", width: "100%" }}
+                            />
+                            <div
+                              className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                              style={{
+                                width: "40px",
+                                height: "40px",
+                                top: "12px",
+                                left: "5px",
+                                fontWeight: "bold",
+                                border: "2px solid white",
+                              }}
+                            >
+                              {card.id}
+                            </div>
+                          </div>
+                          <div className="card-body">
+                            <h4
+                              style={{ color: "black" }}
+                              className="card-title"
+                            >
+                              {card.title}
+                            </h4>
+                            <p
+                              className="card-text text-muted"
+                              style={{
+                                overflow: "hidden",
+                                display: "-webkit-box",
+                                WebkitLineClamp: 3,
+                                WebkitBoxOrient: "vertical",
+                              }}
+                            >
+                              {card.description}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </div>
+              </Swiper>
+              <div
+              style={{
+                display: "flex",
+                marginTop: "30px",
+                top: "110%",
+                left: "50%",
+                gap: "10px",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
+                <i className="fas fa-chevron-left me-2 text-dark"></i>
+              </button>
+              <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                <i className="fas fa-chevron-right ms-2 text-dark"></i>
+              </button>
+            </div>
             </div>
             <div
               style={{ marginTop: "50px" }}
@@ -225,7 +337,7 @@ const WebApplicationContent = ({
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
-                  src="/assets/img/blog/1.jpg"
+                  src="/assets/img/about/choose us 1.png"
                   alt="Blog"
                   className="img-fluid"
                   style={{ maxWidth: "500px", height: "500px", width: "100%" }}
@@ -234,7 +346,7 @@ const WebApplicationContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                  <Link to={`#`}>Why Choose Us? </Link>
                 </h2>
                 <p>
                   {whyChooseP1}
@@ -244,7 +356,7 @@ const WebApplicationContent = ({
             </div>
           </div>
         </div>
-       
+
         <div className="container mt-4">
           <MostPopularServices />
           <div className="item">
@@ -299,9 +411,7 @@ const WebApplicationContent = ({
                 <div className="col-md-7 col-lg-7 p-4 p-md-5">
                   <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
                     LEARN HOW WE CAN ENHANCE THE EFFECTIVENESS OF YOUR
-                 
-                      E-COMMERCE PLATFORM'S DEVELOPMENT.
-              
+                    E-COMMERCE PLATFORM'S DEVELOPMENT.
                   </h2>
 
                   <form onSubmit={handleSubmit}>
@@ -324,7 +434,6 @@ const WebApplicationContent = ({
                           required
                           placeholder="Email address *"
                           className="form-control bg-dark text-white"
-                          
                           value={formData.email}
                           onChange={handleChange}
                         />
@@ -337,7 +446,6 @@ const WebApplicationContent = ({
                           required
                           placeholder="Phone no. *"
                           className="form-control bg-dark text-white"
-                          
                           value={formData.phone}
                           onChange={handleChange}
                         />
@@ -348,7 +456,6 @@ const WebApplicationContent = ({
                       <select
                         name="websiteType"
                         className="form-select bg-dark text-white"
-                       
                         value={formData.websiteType}
                         onChange={handleChange}
                       >
@@ -369,7 +476,6 @@ const WebApplicationContent = ({
                           name="otherWebsiteType"
                           placeholder="Specify Website Type"
                           className="form-control bg-dark text-white"
-                         
                           value={formData.otherWebsiteType}
                           onChange={handleChange}
                         />
@@ -383,7 +489,6 @@ const WebApplicationContent = ({
                         className="form-control bg-dark text-white"
                         style={{
                           height: "120px",
-                       
                         }}
                         value={formData.additional}
                         onChange={handleChange}
@@ -401,7 +506,11 @@ const WebApplicationContent = ({
                       <button
                         type="submit"
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
-                        style={{ color: "black", backgroundColor:"white", borderColor: "white" }}
+                        style={{
+                          color: "black",
+                          backgroundColor: "white",
+                          borderColor: "white",
+                        }}
                       >
                         BOOK CONSULTATION
                       </button>

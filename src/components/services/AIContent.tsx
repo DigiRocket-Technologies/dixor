@@ -136,6 +136,8 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
   };
+
+  
   return (
     <>
       <div
