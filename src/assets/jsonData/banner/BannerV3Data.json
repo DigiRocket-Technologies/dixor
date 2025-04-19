@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/thumb/lifestyle.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Lifestyle ",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/thumb/clothing.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Clothing",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/thumb/food and beverages.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Food & Beverage",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/thumb/health and wellness.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Health & Wellness",
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/thumb/edtech learning platforms.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "EdTech & Learning Platforms",
@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/thumb/beauty.jpg",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Beauty ",
