@@ -6,7 +6,8 @@ import MostPopularServices from "./MostPopularServices.tsx";
 
 interface DataType {
   title?: string;
-  bannerImg?: string;
+  bannerImg1?: string;
+  bannerImg2?: string;
   img1?: string;
   img2?: string;
   whyChooseP1?: string;
@@ -53,7 +54,8 @@ const LocalSeoContent = ({
   const {
     title,
     whyChooseP1,
-    bannerImg,
+    bannerImg1,
+    bannerImg2,
     whyChooseP2,
     faqs,
     definition,
@@ -77,7 +79,7 @@ const LocalSeoContent = ({
     "Quality Link building",
     "Meta optimization",
     "GSC and GA4 Analysis",
-    "Google my business Optimization"
+    "Google my business Optimization",
   ];
   return (
     <>
@@ -89,7 +91,7 @@ const LocalSeoContent = ({
             <div className="row">
               <div className="col-xl-12">
                 <div className="service-single-thumb">
-                  <img src={bannerImg} alt="Thumb" />
+                  <img src={bannerImg1} alt="Thumb" />
                 </div>
               </div>
             </div>
@@ -114,42 +116,42 @@ const LocalSeoContent = ({
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/ahrefs.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/google keyword planner.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/google merchant account.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/google trends.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/screaming frog.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/semrush1.png"
                     alt=""
                   />
                 </div>
@@ -159,7 +161,7 @@ const LocalSeoContent = ({
               <div className="row">
                 <div className="col-xl-12">
                   <div className="service-single-thumb">
-                    <img src={bannerImg} alt="Thumb" />
+                    <img src={bannerImg2} alt="Thumb" />
                   </div>
                 </div>
               </div>
@@ -190,7 +192,16 @@ const LocalSeoContent = ({
               >
                 {Skills.map((name, index) => (
                   <SwiperSlide key={index}>
-                    <div style={{display:"flex",alignItems:"center",justifyContent:"center",width:"100%",height:"150px"}} className="p-3 bg-white rounded shadow-sm text-center">
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "100%",
+                        height: "150px",
+                      }}
+                      className="p-3 bg-white rounded shadow-sm text-center"
+                    >
                       {/* <img
                         src={imgSrc}
                         alt={`Partner ${index}`}
@@ -200,7 +211,12 @@ const LocalSeoContent = ({
                           objectFit: "contain",
                         }}
                       /> */}
-                      <div style={{fontWeight:"bold"}} className="text-dark fs-4">{name}</div>
+                      <div
+                        style={{ fontWeight: "bold" }}
+                        className="text-dark fs-4"
+                      >
+                        {name}
+                      </div>
                     </div>
                   </SwiperSlide>
                 ))}
@@ -232,7 +248,7 @@ const LocalSeoContent = ({
             {/* Image */}
             <div className="w-100 w-lg-50 text-center p-2">
               <img
-                src="/assets/img/blog/1.jpg"
+                src="/assets/img/blog/quick win.jpg"
                 alt="Blog"
                 className="img-fluid"
                 style={{ maxWidth: "500px", minHeight: "500px", width: "100%" }}
@@ -241,12 +257,12 @@ const LocalSeoContent = ({
             {/* Text */}
             <div className="w-100 w-lg-50 p-4 ">
               <h2 className="post-title">
-                <Link to={`#`}>Our QuickWin SEO Makes All the Difference. </Link>
+                <Link to={`#`}>
+                  Our QuickWin SEO Makes All the Difference.{" "}
+                </Link>
               </h2>
               <h3>Why is it the best move?</h3>
-              <p>
-                {whyChooseP1}
-              </p>
+              <p>{whyChooseP1}</p>
               <p> {whyChooseP2}</p>
             </div>
           </div>
