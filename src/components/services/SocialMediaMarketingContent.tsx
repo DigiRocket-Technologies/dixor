@@ -72,37 +72,37 @@ const SocialMediaMarketingContent = ({
 
   const features = [
     {
-      icon: "/assets/img/icon/24.png", // Bootstrap Icon class
+      icon: "/assets/img/icon/brand position.svg", // Bootstrap Icon class
       title: "Consistent Brand Presence",
       description:
         " Stay top-of-mind with a steady stream of relevant and engaging content.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/engagement.svg",
       title: "Higher Engagement Rates",
       description:
         "Build genuine connections through interactive posts, stories, and community replies.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/platform specific.svg",
       title: "Platform-Specific Strategies",
       description:
         "Tailored campaigns that match the unique behavior of each social platform.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/reach.svg",
       title: "Growth in Followers & Reach",
       description:
         "Organic and paid efforts that steadily expand your brand’s visibility.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/audience insight.svg",
       title: "Better Audience Insights",
       description:
         "Track real-time data to understand what works and where to improve.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/website traffic.svg",
       title: "Increased Website Traffic & Conversions",
       description:
         " Drive targeted traffic from social channels to your store or landing pages.",
