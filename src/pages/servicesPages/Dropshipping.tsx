@@ -22,6 +22,7 @@ import {
 import SingleBannerV3 from "../../components/banner/SingleBannerV3.js";
 import { useState } from "react";
 import MostPopularServices from "../../components/services/MostPopularServices.js";
+
 const Dropshipping = () => {
   const cards = [
     {
@@ -33,6 +34,7 @@ const Dropshipping = () => {
     {
       id: 2,
       title: "Supplier Sourcing & Logistics",
+      img:"/assets/img/services/supplying.jpg",
       description:
         "We connect you with reliable suppliers from the U.S. and duty-free regions to ensure faster shipping times, superior product quality, and better customer satisfaction.",
     },
@@ -127,70 +129,113 @@ const Dropshipping = () => {
             </p>
           </div>
         </div>
-        <div
-          style={{ marginTop: "100px" }}
-          className={`blog-area home-blog blog-style-two-area  bottom-less `}
-        >
-          {" "}
-          <div className="container">
+        <div style={{ marginTop: "100px" }}>
+          <div style={{position:"relative"}} className="container">
             <h2 className="text-center">
               Our Dropshipping Service Encompasses
             </h2>
-            <div className="row gx-1 mt-4 gy-4 mb-5">
-              {cards.map((card) => (
-                <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
-                  <div className="card h-100 border">
-                    <div className="position-relative">
-                      <a href="/blog-single-with-sidebar/">
-                        <img
-                          src={`/assets/img/blog/4.jpg`}
-                          className="card-img-top"
-                          alt="Featured"
-                          style={{ height: "460px", objectFit: "cover" }}
-                        />
-                      </a>
-                      <div
-                        className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
-                        style={{
-                          width: "40px",
-                          height: "40px",
-                          top: "12px",
-                          left: "5px",
-                          fontWeight: "bold",
-                          border: "2px solid white",
-                        }}
-                      >
-                        {card.id}
+            <Swiper
+              loop={true}
+              centeredSlides={false}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              speed={1000}
+              navigation={{
+                nextEl: ".dropshippingservice-next",
+                prevEl: ".dropshippingservice-prev",
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                1000: {
+                  slidesPerView: 2.5,
+                  spaceBetween: 40,
+                },
+              }}
+              modules={[Navigation, Keyboard, Autoplay]}
+            >
+              <div className="swiper-wrapper">
+                {cards.map((card) => (
+                  <SwiperSlide key={card.id}>
+                    <div key={card.id} style={{ height: "600px",padding:"10px" }}>
+                      <div className="card h-100 border">
+                        <div className="position-relative">
+                          <img
+                            src={card?.img?card.img:`/assets/img/blog/4.jpg`}
+                            className="card-img-top"
+                            alt="Featured"
+                            style={{ height: "460px", width: "100%" }}
+                          />
+                          <div
+                            className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                            style={{
+                              width: "40px",
+                              height: "40px",
+                              top: "12px",
+                              left: "5px",
+                              fontWeight: "bold",
+                              border: "2px solid white",
+                            }}
+                          >
+                            {card.id}
+                          </div>
+                        </div>
+                        <div className="card-body">
+                          <h4 style={{ color: "black" }} className="card-title">
+                            {card.title}
+                          </h4>
+                          <p
+                            className="card-text text-muted"
+                            style={{
+                              overflow: "hidden",
+                              display: "-webkit-box",
+                              WebkitLineClamp: 3,
+                              WebkitBoxOrient: "vertical",
+                            }}
+                          >
+                            {card.description}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    <div className="card-body">
-                      <h4 style={{ color: "black" }} className="card-title">
-                        {card.title}
-                      </h4>
-                      <p
-                        className="card-text text-muted"
-                        style={{
-                          overflow: "hidden",
-                          display: "-webkit-box",
-                          WebkitLineClamp: 3,
-                          WebkitBoxOrient: "vertical",
-                        }}
-                      >
-                        {card.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+                  </SwiperSlide>
+                ))}
+              </div>
+            </Swiper>
+            <div
+                style={{
+                  display: "flex",
+                  marginTop:"30px",
+                  top:"110%",
+                  left:"50%",
+                  gap:"10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                  <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
+                    <i className="fas fa-chevron-left me-2 text-dark"></i>
+                  </button>
+                  <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                    <i className="fas fa-chevron-right ms-2 text-dark"></i>
+                  </button>
             </div>
           </div>
         </div>
 
-        <div className="container">
+        <div style={{marginTop:"60px"}} className="container">
           <h2 className="text-center">Start today with the best niche</h2>
           <div
             style={{ padding: "20px 0px" }}
-            className="banner-style-three-area "
+            className="banner-style-three-area"
           >
             <Swiper
               className="banner-slide-counter"

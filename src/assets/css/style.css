@@ -18276,7 +18276,9 @@ button.Toastify__close-button {
 }
 
 .country-card {
-	transition: transform 0.3s ease;
+	transition: transform 0.3s ease; 
+	filter:grayscale(1.0);
+	transition:"1s";
 }
 
 .overlay {
@@ -18284,6 +18286,9 @@ button.Toastify__close-button {
 	width: 100%;
 	height: 100%;
   }
+
 .country-card:hover {
 	transform: scale(1.05);
+	filter:grayscale(0);
 }
+
