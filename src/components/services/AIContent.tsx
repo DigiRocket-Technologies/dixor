@@ -2,6 +2,8 @@
 import { Link } from "react-router-dom";
 import MostPopularServices from "./MostPopularServices.tsx";
 import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Keyboard, Navigation } from "swiper/modules";
 
 interface DataType {
   title?: string;
@@ -43,10 +45,7 @@ interface ServiceDetailsProps {
   pricing?: PricingDataType;
 }
 
-const AIContent = ({
-  serviceInfo,
-  sectionClass,
-}: ServiceDetailsProps) => {
+const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
   const {
     title,
     whyChooseP1,
@@ -58,73 +57,67 @@ const AIContent = ({
     importance_title,
   } = serviceInfo || {};
 
-  const features = [
-    {
-      icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-      title: "First Impressions Count",
-      description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
-    },
-    {
-      icon: "/assets/img/icon/24.png",
-      title: "User Experience Matters",
-      description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
-    },
-    {
-      icon: "/assets/img/icon/24.png",
-      title: "Supports Marketing Efforts",
-      description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
-    },
-    {
-      icon: "/assets/img/icon/24.png",
-      title: "Drives Conversions",
-      description:
-        "Optimized design and clear call-to-actions turn visitors into customers.",
-    },
-  ];
+  // const features = [
+  //   {
+  //     icon: "/assets/img/icon/24.png", // Bootstrap Icon class
+  //     title: "First Impressions Count",
+  //     description:
+  //       "Visitors judge your business within seconds. A professional website helps build trust instantly.",
+  //   },
+  //   {
+  //     icon: "/assets/img/icon/24.png",
+  //     title: "User Experience Matters",
+  //     description:
+  //       "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
+  //   },
+  //   {
+  //     icon: "/assets/img/icon/24.png",
+  //     title: "Supports Marketing Efforts",
+  //     description:
+  //       "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
+  //   },
+  //   {
+  //     icon: "/assets/img/icon/24.png",
+  //     title: "Drives Conversions",
+  //     description:
+  //       "Optimized design and clear call-to-actions turn visitors into customers.",
+  //   },
+  // ];
 
   const cards = [
     {
       id: 1,
-      title: "Winning Product Research",
+      title: "Customer Segmentation",
+      img:"/assets/img/services/ai/customer segment.png",
       description:
-        "We analyze trending products, search volume, competition, and cost-per-click to find a niche that has high demand and long-term growth potential.",
+        "AI can analyze vast amounts of customer data to identify patterns and segment audiences effectively. This allows businesses to create highly targeted marketing campaigns, ensuring that the right message reaches the right people, increasing engagement and conversion rates while reducing wasted resources.",
     },
     {
       id: 2,
-      title: "Supplier Sourcing & Logistics",
+      title: "Predictive Analytics",
+      img:"/assets/img/services/ai/predictive.png",
       description:
-        "We connect you with reliable suppliers from the U.S. and duty-free regions to ensure faster shipping times, superior product quality, and better customer satisfaction.",
+        "AI-powered predictive analytics can help businesses forecast future trends, consumer behavior, and sales. By leveraging historical data, AI can provide insights into what customers are likely to purchase, allowing brands to tailor their strategies and improve decision-making, leading to enhanced ROI and reduced risks.",
     },
     {
       id: 3,
-      title: "Custom Store & Website Development",
+      title: "Content Personalization",
+      img:"/assets/img/services/ai/ai chatbot.png",
       description:
-        "We design and develop a high-converting online store tailored to your niche, ensuring a seamless user experience and optimized sales funnel.",
+        "AI can personalize content in real-time by analyzing customer preferences, behaviors, and interactions. It helps businesses create dynamic content that resonates with individual users, enhancing customer satisfaction, loyalty, and overall engagement, which can ultimately lead to higher sales and brand affinity.",
     },
     {
       id: 4,
-      title: "Branding & Positioning",
+      title: "Automated Customer Support",
+      img:"/assets/img/services/ai/custom content.png",
       description:
-        "We help you create a unique brand identity, from logo creation to product packaging",
+        "AI-driven chatbots and virtual assistants are transforming customer support by providing instant responses to queries. These systems can handle a wide range of customer service issues, from product inquiries to troubleshooting, improving customer satisfaction while reducing operational costs and increasing efficiency.",
     },
-    {
-      id: 5,
-      title: "Data-Driven Marketing Strategy",
-      description:
-        "We don’t just build stores; we drive sales. Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
-    },
-    {
-      id: 6,
-      title: "Performance Tracking & Optimization",
-      description:
-        "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
-    },
+ 
   ];
+
   const [formData, setFormData] = useState({
-    name:"",
+    name: "",
     email: "",
     phone: "",
     aiService: "",
@@ -173,13 +166,7 @@ const AIContent = ({
               </div>
             </div>
 
-            {/* <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px" }}>
-                We build for both ? cards
-              </h1>
-            </div> */}
-            
-            <div style={{ marginTop: "50px" }}>
+            {/* <div style={{ marginTop: "50px" }}>
               <h2 className="text-center">Features we offer</h2>
               <div className="row g-4 mt-4">
                 {features.map((feature, index) => (
@@ -196,55 +183,111 @@ const AIContent = ({
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
             <div style={{ marginTop: "40px" }}>
-              <h2>When you choose us you get</h2>
-              <div className="row gx-1 mt-1 gy-4 mb-5">
-                {cards.map((card) => (
-                  <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
-                    <div className="card h-100 border shadow-sm">
-                      <div className="position-relative">
-                        <a href="/blog-single-with-sidebar/">
-                          <img
-                            src={`/assets/img/blog/4.jpg`}
-                            className="card-img-top"
-                            alt="Featured"
-                            style={{ height: "550px", objectFit: "cover" }}
-                          />
-                        </a>
-                        <div
-                          className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
-                          style={{
-                            width: "40px",
-                            height: "40px",
-                            top: "12px",
-                            left: "5px",
-                            fontWeight: "bold",
-                            border: "2px solid white",
-                          }}
-                        >
-                          {card.id}
+              <h2>Challenges that AI can help you Solve</h2>
+              <Swiper
+                loop={true}
+                centeredSlides={false}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                speed={1000}
+                navigation={{
+                  nextEl: ".dropshippingservice-next",
+                  prevEl: ".dropshippingservice-prev",
+                }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1000: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40,
+                  },
+                }}
+                modules={[Navigation, Keyboard, Autoplay]}
+              >
+                <div className="swiper-wrapper">
+                  {cards.map((card) => (
+                    <SwiperSlide key={card.id}>
+                      <div
+                        key={card.id}
+                        style={{ minHeight: "650px", padding: "10px" }}
+                      >
+                        <div className="card h-100 border">
+                          <div className="position-relative">
+                            <img
+                              src={
+                                card?.img ? card.img : `/assets/img/blog/4.jpg`
+                              }
+                              className="card-img-top"
+                              alt="Featured"
+                              style={{ height: "460px", width: "100%" }}
+                            />
+                            <div
+                              className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                              style={{
+                                width: "40px",
+                                height: "40px",
+                                top: "12px",
+                                left: "5px",
+                                fontWeight: "bold",
+                                border: "2px solid white",
+                              }}
+                            >
+                              {card.id}
+                            </div>
+                          </div>
+                          <div className="card-body">
+                            <h4
+                              style={{ color: "black" }}
+                              className="card-title"
+                            >
+                              {card.title}
+                            </h4>
+                            <p
+                              className="card-text text-muted"
+                              style={{
+                                overflow: "hidden",
+                                display: "-webkit-box",
+                                WebkitLineClamp: 3,
+                                WebkitBoxOrient: "vertical",
+                              }}
+                            >
+                              {card.description}
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="card-body">
-                        <h4 style={{ color: "black" }} className="card-title">
-                          {card.title}
-                        </h4>
-                        <p
-                          className="card-text text-muted"
-                          style={{
-                            overflow: "hidden",
-                            display: "-webkit-box",
-                            WebkitLineClamp: 3,
-                            WebkitBoxOrient: "vertical",
-                          }}
-                        >
-                          {card.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                    </SwiperSlide>
+                  ))}
+                </div>
+              </Swiper>
+              
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "30px",
+                  top: "110%",
+                  left: "50%",
+                  gap: "10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-left me-2 text-dark"></i>
+                </button>
+                <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-right ms-2 text-dark"></i>
+                </button>
               </div>
             </div>
             <div
@@ -254,7 +297,7 @@ const AIContent = ({
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
-                  src="/assets/img/blog/1.jpg"
+                  src="/assets/img/about/choose us 1.png"
                   alt="Blog"
                   className="img-fluid"
                   style={{ maxWidth: "500px", height: "500px", width: "100%" }}
@@ -263,7 +306,7 @@ const AIContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                  <Link to={`#`}>Why Choose Us?  </Link>
                 </h2>
                 <p>
                   {whyChooseP1}
@@ -273,7 +316,7 @@ const AIContent = ({
             </div>
           </div>
         </div>
-      
+
         <div className="container mt-4">
           <MostPopularServices />
           <div className="item">
@@ -334,7 +377,7 @@ const AIContent = ({
                   </h2>
 
                   <form onSubmit={handleSubmit}>
-                  <div className="mb-4">
+                    <div className="mb-4">
                       <label className="form-label text-white">Name</label>
                       <input
                         name="name"
