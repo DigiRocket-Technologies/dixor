@@ -441,17 +441,17 @@
     "type": "development",
     "icon": "1.png",
     "iconLight": "23.png",
-    "title": "Web Application Development",
-    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+    "title": "Wordpress Development",
+    "definition": "WordPress stands as one of the most popular website building platforms globally, powering over 40% of all websites. Renowned for its flexibility, user-friendliness, and scalability, WordPress enables you to create anything from a personal blog to a professional portfolio or a strong eCommerce store.",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
     "importance": [
-      "Targets the Right Audience",
-      "Maximizes ROI",
-      "Provides Transparency"
+      "Easy-to-use Interface",
+      "Highly Customizable",
+      "SEO-Friendly"
     ],
-    "importance_title": "In today’s competitive digital landscape, businesses need strategies that not only attract attention but also drive conversions. Performance marketing:",
-    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
-    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "importance_title": "With its vast library of themes, plugins, and customizable features, WordPress makes it easy to create a unique and functional website that is optimized for growth. It’s the preferred platform for businesses and individuals aiming to establish a strong, professional online presence with minimal complexity.",
+    "whyChooseP1": "Our team blends creative design, technical expertise, and strategic insights to build custom WordPress sites tailored to your business needs.We prioritize user-friendly interfaces, ensuring seamless navigation for both visitors and administrators. Our designs are scalable, allowing your WordPress site to grow alongside your business. We also focus on SEO-friendly practices to ensure your website performs well on search engines.",
+    "whyChooseP2": "With extensive experience in WordPress, we deliver fast, secure, and mobile-optimized websites that meet the highest standards. Whether you're a startup or an established brand, we offer the expertise needed to help you stand out and succeed online, providing long-term value and exceptional customer satisfaction.",
     "faqs": [
       {
         "q": "What is WordPress development?",
