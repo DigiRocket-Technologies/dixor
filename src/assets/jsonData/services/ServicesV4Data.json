@@ -3,7 +3,7 @@
     "id": 1,
     "titleFirst": "Custom Theme Design",
     "titleLast": "Optimization",
-    "icon": "9.png",
+    "icon": "custom theme design.svg",
     "text": "We design visually stunning and user-friendly Shopify themes that align with your brand identity, ensuring a seamless and engaging shopping experience across all devices.",
     "number": "01"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "titleFirst": "Store Setup & Configuration",
     "titleLast": "Web Development",
-    "icon": "11.png",
+    "icon": "store setup.svg",
     "text": "From product listings and payment gateways to shipping and taxes, we handle the complete setup of your Shopify store for a hassle-free launch.",
     "number": "02"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "titleFirst": "App Integration",
     "titleLast": "from Professionals",
-    "icon": "12.png",
+    "icon": "app integration.svg",
     "text": "We integrate essential Shopify apps for reviews, email marketing, upselling, analytics, and more—enhancing functionality and user experience without compromising speed.",
     "number": "03"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "titleFirst": "Conversion Rate Optimization",
     "titleLast": "Latest Technology",
-    "icon": "13.png",
+    "icon": "conversion rate.svg",
     "text": "Our team optimizes every element of your store—from layout to CTAs—to increase engagement, reduce drop-offs, and drive more sales.",
     "number": "04"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "titleFirst": "SEO & Speed Optimization",
     "titleLast": "Latest Technology",
-    "icon": "13.png",
+    "icon": "seo and speed optimization.svg",
     "text": "We improve your store’s visibility with on-page SEO best practices and boost performance through image compression, clean code, and fast-loading pages.",
     "number": "04"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "titleFirst": "Ongoing Support & Maintenance",
     "titleLast": "Latest Technology",
-    "icon": "13.png",
+    "icon": "support and maintainance.svg",
     "text": "Post-launch, we offer reliable support to resolve issues, implement updates, and keep your store running smoothly at all times",
     "number": "04"
   }
