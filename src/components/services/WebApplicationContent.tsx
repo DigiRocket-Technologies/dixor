@@ -47,7 +47,6 @@ interface ServiceDetailsProps {
 const WebApplicationContent = ({
   serviceInfo,
   sectionClass,
-  pricing,
 }: ServiceDetailsProps) => {
   const {
     title,
@@ -246,7 +245,7 @@ const WebApplicationContent = ({
             </div>
           </div>
         </div>
-        <PriceV2New pricing={pricing} />
+       
         <div className="container mt-4">
           <MostPopularServices />
           <div className="item">

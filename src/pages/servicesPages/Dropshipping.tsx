@@ -170,7 +170,7 @@ const Dropshipping = () => {
               <div className="swiper-wrapper">
                 {cards.map((card) => (
                   <SwiperSlide key={card.id}>
-                    <div key={card.id} style={{ height: "600px",padding:"10px" }}>
+                    <div key={card.id} style={{ minHeight: "650px",padding:"10px" }}>
                       <div className="card h-100 border">
                         <div className="position-relative">
                           <img

@@ -104,48 +104,56 @@ const PerformanceMarketingContent = ({
     {
       id: 1,
       title: "Data-Driven Decisions",
+      img:"/assets/img/services/pm/data driven decision.png",
       description:
         "Our strategy is grounded in data. We use strong analytics tools to monitor performance and adjust campaigns in real time.",
     },
     {
       id: 2,
       title: "Targeted PPC Campaigns",
+      img:"/assets/img/services/pm/targeted ppc campaign.png",
       description:
         "We create highly focused paid campaigns aimed at reaching your ideal audience.",
     },
     {
       id: 3,
       title: "Conversion Rate Optimization",
+      img:"/assets/img/services/pm/conversion rate optimization.png",
       description:
         "We continuously test and refine landing pages, ads, and user flow to ensure that visitors take the desired action.",
     },
     {
       id: 4,
       title: "A/B Testing",
+      img:"/assets/img/services/pm/ab testing.png",
       description:
         "We run A/B tests to compare different strategies and identify the best-performing approaches.",
     },
     {
       id: 5,
       title: "Remarketing Campaigns",
+      img:"/assets/img/services/pm/remarketing.png",
       description:
         "We re-engage users who have previously interacted with your brand but didn't convert.",
     },
     {
       id: 6,
       title: "Multi-Platform Advertising",
+      img:"/assets/img/services/pm/multi platform.png",
       description:
         "We use multiple advertising platforms like Google Ads, Facebook Ads, and more to reach a broader audience.",
     },
     {
       id: 7,
       title: "Performance Tracking & Analytics",
+      img:"/assets/img/services/pm/performance tracking.png",
       description:
         "Our detailed reporting helps you understand the success of your campaigns and guides future decision-making for continuous improvement.",
     },
     {
       id: 8,
       title: "Budget Optimization",
+      img:"/assets/img/services/pm/budget optimization.png",
       description:
         "We manage your advertising budget efficiently, allocating resources to the highest-performing campaigns.",
     },
@@ -181,7 +189,7 @@ const PerformanceMarketingContent = ({
             </div>
             <div className="">
               <h2>Our Strategy</h2>
-              <div className="row gx-1 mt-4 gy-4 mb-5">
+              {/* <div className="row gx-1 mt-4 gy-4 mb-5">
                 {cards.map((card) => (
                   <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
                     <div className="card h-100 border shadow-sm">
@@ -226,7 +234,109 @@ const PerformanceMarketingContent = ({
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
+              <Swiper
+                loop={true}
+                centeredSlides={false}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                speed={1000}
+                navigation={{
+                  nextEl: ".dropshippingservice-next",
+                  prevEl: ".dropshippingservice-prev",
+                }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1000: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40,
+                  },
+                }}
+                modules={[Navigation]}
+              >
+                <div className="swiper-wrapper">
+                  {cards.map((card) => (
+                    <SwiperSlide key={card.id}>
+                      <div
+                        key={card.id}
+                        style={{ minHeight: "650px", padding: "10px" }}
+                      >
+                        <div className="card h-100 border">
+                          <div className="position-relative">
+                            <img
+                              src={
+                                card?.img ? card.img : `/assets/img/blog/4.jpg`
+                              }
+                              className="card-img-top"
+                              alt="Featured"
+                              style={{ height: "460px", width: "100%" }}
+                            />
+                            <div
+                              className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                              style={{
+                                width: "40px",
+                                height: "40px",
+                                top: "12px",
+                                left: "5px",
+                                fontWeight: "bold",
+                                border: "2px solid white",
+                              }}
+                            >
+                              {card.id}
+                            </div>
+                          </div>
+                          <div className="card-body">
+                            <h4
+                              style={{ color: "black" }}
+                              className="card-title"
+                            >
+                              {card.title}
+                            </h4>
+                            <p
+                              className="card-text text-muted"
+                              style={{
+                                overflow: "hidden",
+                                display: "-webkit-box",
+                                WebkitLineClamp: 3,
+                                WebkitBoxOrient: "vertical",
+                              }}
+                            >
+                              {card.description}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </div>
+              </Swiper>
+              <div
+                style={{
+                  display: "flex",
+                  marginTop:"30px",
+                  top:"110%",
+                  left:"50%",
+                  gap:"10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                  <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
+                    <i className="fas fa-chevron-left me-2 text-dark"></i>
+                  </button>
+                  <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                    <i className="fas fa-chevron-right ms-2 text-dark"></i>
+                  </button>
+            </div>
             </div>
             <div>
               <h2 className="">Tools and Platform</h2>
