@@ -104,42 +104,42 @@ const EcommerceSeoContent = ({
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/ahrefs.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/google keyword planner.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/google merchant account.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/google trends.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/screaming frog.png"
                     alt=""
                   />
                 </div>
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
                   <img
                     className="img-fluid"
-                    src="/assets/img/partner/sp.png"
+                    src="/assets/img/partner/semrush1.png"
                     alt=""
                   />
                 </div>
