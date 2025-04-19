@@ -3,7 +3,8 @@
     "id": "ecommerce-seo",
     "type": "marketing",
     "icon": "1.png",
-    "bannerImg": "/assets/img/banner/6.jpg",
+    "bannerImg1":"/assets/img/banner/Ecommerce SEO banner1.jpg",
+    "bannerImg2":"/assets/img/banner/ecommerce banner 2.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "iconLight": "23.png",
@@ -45,7 +46,7 @@
   {
     "id": "local-seo",
     "type": "marketing",
-    "bannerImg1": "/assets/img/banner/6.jpg",
+    "bannerImg1": "/assets/img/banner/local seo.jpg",
     "bannerImg2": "/assets/img/banner/local Seo 2nd banner.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
