@@ -4,8 +4,9 @@ import LayoutV1 from "../../components/layouts/LayoutV1";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-import portfolio15 from "/assets/img/portfolio/15.jpg";
-import portfolio44 from "/assets/img/portfolio/44.jpg";
+import img1 from "/assets/img/portfolio/dn1.jpg"
+import img2 from "/assets/img/portfolio/dn2.jpg"
+import img3 from "/assets/img/portfolio/dn3.jpg"
 
 const Dripnation = () => {
   return (
@@ -22,7 +23,7 @@ const Dripnation = () => {
               <div className="col-lg-12">
                 <div className="project-details-thumb">
                   <img
-                    src={`/assets/img/portfolio/1-full.jpg`}
+                    src={img1}
                     alt="Image Not Found"
                   />
                 </div>
@@ -72,7 +73,7 @@ const Dripnation = () => {
           </div>
         </div>
         <div className="container">
-          <img src={portfolio15} alt="Image Not Found" />
+          <img src={img2} alt="Image Not Found" />
         </div>
 
         {/* 3rd Section */}
@@ -118,7 +119,7 @@ const Dripnation = () => {
                           to keep up with ever-changing consumer interests and
                           the competitive nature of the fashion industry.
                         </p>
-                        <img src={portfolio44} alt="Image Not Found" />
+                        <img src={img3} alt="Image Not Found" />
                       </div>
                     </div>
                   </div>

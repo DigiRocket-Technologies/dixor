@@ -14,21 +14,21 @@ const Development = () => {
   const features = [
     {
       icon: "/assets/img/icon/2.png", // Bootstrap Icon class
-      title: "First Impressions Count",
+      title: "Startup-Friendly Builds",
       description:
-        "Visitors judge your business within seconds. A professional website helps build trust instantly.",
+        "Fast, lean websites designed to get you online and growing.",
     },
     {
       icon: "/assets/img/icon/2.png",
-      title: "User Experience Matters",
+      title: "Growth-Ready Upgrades",
       description:
-        "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
+        "Scalable systems that support higher traffic and more features.",
     },
     {
       icon: "/assets/img/icon/2.png",
-      title: "Supports Marketing Efforts",
+      title: "Enterprise-Level Solutions",
       description:
-        "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
+        "Advanced tools and integrations to manage complex business needs.",
     },
   ];
   return (
@@ -82,23 +82,27 @@ const Development = () => {
               {[
                 {
                   id: 1,
-                  title: "Project Research",
-                  img: "/assets/img/blog/4.jpg",
+                  title: "Scalable & Modular Codebase",
+                  img: "/assets/img/services/development/research.png",
+                  p: "We build solutions with a modular structure that allows for easy updates and expansion. This means you can add features, handle higher traffic, or pivot your platform without rebuilding from scratch. It keeps your development agile and future-proof, no matter how fast your business grows.",
                 },
                 {
                   id: 2,
-                  title: "Best Concept",
-                  img: "/assets/img/blog/4.jpg",
+                  title: "User-First Experience Design",
+                  img: "/assets/img/services/development/concept.png",
+                  p: "Every development decision is made with your users in mind. We prioritize speed, simplicity, and intuitive navigation—ensuring that your website or app isn’t just functional but enjoyable to use. This leads to higher engagement, better retention, and ultimately, more conversions.",
                 },
                 {
                   id: 3,
-                  title: "Design Implement",
-                  img: "/assets/img/blog/4.jpg",
+                  title: "Business-Aligned Development Strategy",
+                  img: "/assets/img/services/development/implement.png",
+                  p: "We don’t just code—we understand your business goals first. Our solutions are designed to align with your revenue model, operations, and audience needs. Whether you're in eCommerce, SaaS, or services, we tailor development to support your unique journey and growth targets.",
                 },
                 {
                   id: 4,
-                  title: "Final Result",
-                  img: "/assets/img/blog/4.jpg",
+                  title: "Built-In Performance & Security",
+                  img: "/assets/img/services/development/result.png",
+                  p: "Speed and safety aren’t optional—they’re essential. We optimize every layer of your platform for fast loading, smooth functionality, and strong data protection. From code quality to server configuration, our team ensures your digital product performs reliably and remains secure at all times.",
                 },
               ].map((item, index) => (
                 <div
@@ -117,6 +121,7 @@ const Development = () => {
                         maxWidth: "500px",
                         height: "550px",
                         width: "100%",
+                        borderRadius: "10px",
                       }}
                     />
                   </div>
@@ -126,12 +131,7 @@ const Development = () => {
                     <h2 className="post-title">
                       <Link to={`/blog-single-with-sidebar`}>{item.title}</Link>
                     </h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quod unde omnis est eius corrupti, odit vero fuga
-                      accusantium cum expedita debitis velit assumenda quidem.
-                      Facilis suscipit neque ullam numquam fugiat.
-                    </p>
+                    <p>{item?.p}</p>
                   </div>
                 </div>
               ))}
@@ -145,7 +145,7 @@ const Development = () => {
                   <div className="row align-center">
                     <div className="col-lg-7">
                       <img
-                        src={`/assets/img/portfolio/1.jpg`}
+                        src={`/assets/img/services/development/shopify.png`}
                         alt="Image Not Found"
                         width={800}
                         height={600}
@@ -178,7 +178,7 @@ const Development = () => {
                   <div className="row align-center">
                     <div className="col-lg-7">
                       <img
-                        src={`/assets/img/portfolio/1.jpg`}
+                        src={`/assets/img/services/development/woocommerce.png`}
                         alt="Image Not Found"
                         width={800}
                         height={600}
@@ -211,7 +211,7 @@ const Development = () => {
                   <div className="row align-center">
                     <div className="col-lg-7">
                       <img
-                        src={`/assets/img/portfolio/1.jpg`}
+                        src={`/assets/img/services/development/AI.png`}
                         alt="Image Not Found"
                         width={800}
                         height={600}
@@ -244,7 +244,7 @@ const Development = () => {
                   <div className="row align-center">
                     <div className="col-lg-7">
                       <img
-                        src={`/assets/img/portfolio/1.jpg`}
+                        src={`/assets/img/services/development/web dev.png`}
                         alt="Image Not Found"
                         width={800}
                         height={600}
@@ -277,7 +277,7 @@ const Development = () => {
                   <div className="row align-center">
                     <div className="col-lg-7">
                       <img
-                        src={`/assets/img/portfolio/1.jpg`}
+                        src={`/assets/img/services/development/mobile app.png`}
                         alt="Image Not Found"
                         width={800}
                         height={600}
@@ -310,7 +310,7 @@ const Development = () => {
                   <div className="row align-center">
                     <div className="col-lg-7">
                       <img
-                        src={`/assets/img/portfolio/1.jpg`}
+                        src={`/assets/img/services/development/wordpress.png`}
                         alt="Image Not Found"
                         width={800}
                         height={600}
@@ -354,17 +354,23 @@ const Development = () => {
                     <div className="pl-80 pl-md-0 pl-xs-0">
                       <h2 className="title">Unlock Revenue Growth</h2>
                       <div>
-                        We are dedicated to providing outstanding service and
-                        helping our clients achieve their goals.We are dedicated
-                        to providing outstanding service and helping our clients
-                        achieve their goals. We are dedicated to providing
-                        outstanding service and helping our clients achieve
-                        their goals. We are dedicated to providing outstanding
-                        service and helping our clients achieve their goals. We
-                        are dedicated to providing outstanding service and
-                        helping our clients achieve their goals. We are
-                        dedicated to providing outstanding service and helping
-                        our clients achieve their goals.
+                        We partnered with <span style={{fontWeight:"bold"}}>Aquatic Venture</span> to build a clean,
+                        easy-to-navigate website that brings their love for
+                        water adventures online. The platform showcases a wide
+                        range of inflatable kayaks, paddleboards, boats, and
+                        accessories. Our goal was to create a smooth shopping
+                        experience where customers can quickly find what they
+                        need and feel confident making a purchase.
+                      </div>
+                      <div>
+                        After launching the new website, Aquatic Venture saw
+                        better engagement and a more seamless user journey
+                        across all devices. With clear categories, detailed
+                        product pages, and faster load times, the platform is
+                        now better equipped to serve both first-time buyers and
+                        experienced outdoor lovers. The new design helps build
+                        trust and supports Aquatic Venture’s mission to provide
+                        top-quality gear for unforgettable moments on the water.
                       </div>
                     </div>
                   </div>

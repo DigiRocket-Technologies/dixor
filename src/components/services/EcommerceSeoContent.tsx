@@ -4,6 +4,7 @@ import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import MostPopularServices from "./MostPopularServices.tsx";
+import { Link } from "react-router-dom";
 
 interface DataType {
   title?: string;
@@ -147,7 +148,32 @@ const EcommerceSeoContent = ({
                 </div>
               </div>
             </div>
-
+            <div
+            style={{ marginTop: "50px" }}
+            className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+          >
+            {/* Image */}
+            <div className="w-100 w-lg-50 text-center p-2">
+              <img
+                src="/assets/img/blog/quick win.jpg"
+                alt="Blog"
+                className="img-fluid"
+                style={{ maxWidth: "500px", minHeight: "500px", width: "100%" }}
+              />
+            </div>
+            {/* Text */}
+            <div className="w-100 w-lg-50 p-4 ">
+              <h2 className="post-title">
+              
+                <Link to={`#`}>
+                  Our QuickWin SEO Makes All the Difference.{" "}
+                </Link>
+              </h2>
+              <h3>Why is it the best move?</h3>
+              <p>{whyChooseP1}</p>
+              <p> {whyChooseP2}</p>
+            </div>
+          </div>
             <div className="row mt-80 mt-xs-50 gallery-two-columns">
               <div className="row">
                 <div className="col-xl-12">
