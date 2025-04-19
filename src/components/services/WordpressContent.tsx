@@ -284,7 +284,7 @@ const WordpressContent = ({
               {/* Image */}
               <div className="w-100 w-lg-50 text-center p-2">
                 <img
-                  src="/assets/img/blog/1.jpg"
+                  src="/assets/img/about/choose us 1.png"
                   alt="Blog"
                   className="img-fluid"
                   style={{ maxWidth: "500px", height: "500px", width: "100%" }}
@@ -293,7 +293,7 @@ const WordpressContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>What we do? </Link>
+                  <Link to={`#`}>Why Choose Us</Link>
                 </h2>
                 <p>{whyChooseP1}</p>
                 <p> {whyChooseP2}</p>
