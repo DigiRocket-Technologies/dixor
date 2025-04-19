@@ -1,13 +1,9 @@
 [
   {
-[
-  {
     "id": "ecommerce-seo",
     "type": "marketing",
     "icon": "1.png",
-    "bannerImg": "/assets/img/banner/6.jpg",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "bannerImg": "/assets/img/banner/6.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
@@ -50,9 +46,7 @@
   {
     "id": "local-seo",
     "type": "marketing",
-    "bannerImg": "/assets/img/banner/6.jpg",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "bannerImg": "/assets/img/banner/6.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
@@ -95,9 +89,7 @@
   },
   {
     "id": "performance-marketing",
-    "bannerImg": "/assets/img/banner/pm-banner.jpg",
-    "img1": "/assets/img/services/pm-1.png",
-    "img2": "/assets/img/services/pm-2.png",
+
     "bannerImg": "/assets/img/banner/pm-banner.jpg",
     "img1": "/assets/img/services/pm-1.png",
     "img2": "/assets/img/services/pm-2.png",
@@ -141,9 +133,7 @@
   },
   {
     "id": "social-media-marketing",
-    "bannerImg": "/assets/img/banner/socialmediamarketing.jpg",
-    "img1": "/assets/img/services/smm1.jpg",
-    "img2": "/assets/img/services/smm2.png",
+
     "bannerImg": "/assets/img/banner/socialmediamarketing.jpg",
     "img1": "/assets/img/services/smm1.jpg",
     "img2": "/assets/img/services/smm2.png",
@@ -188,15 +178,13 @@
   {
     "id": "influencer-marketing",
     "type": "marketing",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Influencer Marketing",
-    "bannerImg": "/assets/img/banner/6.jpg",
-    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+
     "bannerImg": "/assets/img/banner/6.jpg",
     "definition": "With the right creators, you tap into trust, relevance, and powerful storytelling that speaks directly to your audience. At DigiRocket, we help you partner with influencers who align with your brand values, amplify your message, and drive real impact.From micro to mega creators, every collaboration is backed by strategy, data, and clear goals. ",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
@@ -235,15 +223,13 @@
   {
     "id": "ecommerce-marketing",
     "type": "marketing",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "icon": "1.png",
     "iconLight": "23.png",
     "title": "Ecommerce Marketing",
-    "bannerImg": "/assets/img/banner/6.jpg",
-    "definition": "Performance Marketing is a results-driven strategy that focuses on measurable outcomes, such as leads, sales, or clicks. Unlike traditional marketing, performance marketing ensures you pay only for tangible results, making it one of the most efficient and ROI-focused advertising methods.",
+
     "bannerImg": "/assets/img/banner/6.jpg",
     "definition": "In today’s competitive online landscape, effective ecommerce marketing is essential to stand out and drive sales. With our ecommerce marketing services, we help businesses increase visibility, attract the right audience, and convert traffic into loyal customers. From SEO and paid advertising to social media marketing and email campaigns, we offer comprehensive strategies tailored to your ecommerce needs. ",
     "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
@@ -282,9 +268,7 @@
   },
   {
     "id": "artificial-intelligence",
-    "bannerImg": "/assets/img/services/sudanshu ai.png",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "bannerImg": "/assets/img/services/sudanshu ai.png",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
@@ -329,9 +313,7 @@
   },
   {
     "id": "shopify-development",
-    "bannerImg": "/assets/img/banner/6.jpg",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "bannerImg": "/assets/img/banner/6.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
@@ -375,9 +357,7 @@
   },
   {
     "id": "woocommerce-development",
-    "bannerImg": "/assets/img/services/woo commerce banner.png",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "bannerImg": "/assets/img/services/woo commerce banner.png",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
@@ -421,9 +401,7 @@
   },
   {
     "id": "web-application-development",
-    "bannerImg": "/assets/img/services/web application upasana.png",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "bannerImg": "/assets/img/services/web application upasana.png",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
@@ -467,9 +445,7 @@
   },
   {
     "id": "wordpress-development",
-    "bannerImg": "/assets/img/services/shristi wordpress.png",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "bannerImg": "/assets/img/services/shristi wordpress.png",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
@@ -513,11 +489,10 @@
   },
   {
     "id": "mobile-application-development",
-    "bannerImg": "/assets/img/services/sudanshu mobile development.png",
+
     "bannerImg": "/assets/img/services/sudanshu mobile development.png",
     "type": "development",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "icon": "1.png",
@@ -559,9 +534,7 @@
   },
   {
     "id": "dropshipping",
-    "bannerImg": "/assets/img/banner/6.jpg",
-    "img1": "/assets/img/portfolio/45.jpg",
-    "img2": "/assets/img/portfolio/46.jpg",
+
     "bannerImg": "/assets/img/banner/6.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
@@ -604,4 +577,3 @@
     "activeClass": ""
   }
 ]
-
