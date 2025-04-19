@@ -1,6 +1,6 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import { Helmet } from "react-helmet-async";
-//import banner6 from "/assets/img/services/marketing.png";
+import banner6 from "/assets/img/services/marketing.png";
 import { Link } from "react-router-dom";
 import TestimonialV2 from "../../components/testimonial/TestimonialV2";
 import thumb3 from "/assets/img/thumb/3.jpg";
