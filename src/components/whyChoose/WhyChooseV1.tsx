@@ -113,7 +113,7 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                     <div className="award-item bg-white">
                       {/* <i className="fab fa-behance" />
                       <h4>Behance Awards </h4> */}
-                      <img src="/assets/img/partner/wp.png" alt="" />
+                      <img src="/assets/img/partner/sp.png" alt="" />
                     </div>
                   </Animate>
 
@@ -131,7 +131,7 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                     delay="200ms"
                   >
                     <div className="award-item bg-white">
-                       <img src="/assets/img/partner/magento.png" alt="" />
+                       <img src="/assets/img/partner/semrush.png" alt="" />
                     </div>
                   </Animate>
                 </div>
