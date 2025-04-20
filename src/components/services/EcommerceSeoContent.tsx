@@ -4,7 +4,7 @@ import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import MostPopularServices from "./MostPopularServices.tsx";
-import { Link } from "react-router-dom";
+
 
 interface DataType {
   title?: string;
