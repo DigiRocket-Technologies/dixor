@@ -399,16 +399,16 @@ const WebApplicationContent = ({
             <div className="card shadow bg-dark text-white">
               <div className="row g-0" style={{ minHeight: "750px" }}>
                 {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
-                <div className="col-md-5 col-lg-5 d-none d-md-block">
+                <div className="col-md-5 col-lg-5 d-none d-lg-block">
                   <img
-                    src="/assets/img/blog/1.jpg"
+                    src="/assets/img/services/contact_us.jpg"
                     alt="Business professional"
                     className="w-100 h-100 object-fit-cover"
                   />
                 </div>
 
                 {/* Right Side (Form Content) */}
-                <div className="col-md-7 col-lg-7 p-4 p-md-5">
+                <div className="col-md-12 col-lg-7 p-4 p-md-5">
                   <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
                     LEARN HOW WE CAN ENHANCE THE EFFECTIVENESS OF YOUR
                     E-COMMERCE PLATFORM'S DEVELOPMENT.
