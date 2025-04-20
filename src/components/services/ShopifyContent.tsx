@@ -150,13 +150,13 @@ const ShopifyContent = ({
           </div>
         </div>
         <div
-          style={{ width: "100%", marginTop: "50px" }}
+          style={{ width: "90%",margin:"auto", marginTop: "50px" }}
           className="services-style-four-area default-padding-bottom overflow-hidden blurry-shape-left"
         >
           <div className="mt-50 mt-xs-20">
             <div className="container container-stage">
               <h1 style={{ marginBottom: "50px" }}>
-                Our Shopify Developmet Service include{" "}
+                Our Shopify Developmet Service Include{" "}
               </h1>
               <div className="row">
                 <div className="col-lg-12">

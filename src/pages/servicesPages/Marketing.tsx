@@ -2,13 +2,12 @@ import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import { Helmet } from "react-helmet-async";
 import banner6 from "/assets/img/services/m2.jpg";
 import { Link } from "react-router-dom";
-import TestimonialV2 from "../../components/testimonial/TestimonialV2";
-import thumb3 from "/assets/img/thumb/3.jpg";
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import DarkClass from "../../components/classes/DarkClass";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Keyboard, Navigation, FreeMode } from "swiper/modules";
 import MostPopularServices from "../../components/services/MostPopularServices";
+import TestimonialMarketing from "../../components/testimonial/TestimonialMarketing";
 const Marketing = () => {
   const features = [
     {
@@ -371,25 +370,34 @@ const Marketing = () => {
               <div className="row align-center">
                 <div className="col-lg-5">
                   <div className="thumb-style-one">
-                    <img src={thumb3} alt="Image Not Found" />
+                    <img src="/assets/img/services/dtfnc.jpg" alt="Image Not Found" />
                   </div>
                 </div>
                 <div className="col-lg-7">
                   <div className="choose-us-style-one">
                     <div className="pl-80 pl-md-0 pl-xs-0">
-                      <h2 className="title">Unlock Revenue Growth</h2>
+                      <h2>DTFNC</h2>
                       <div>
-                        We are dedicated to providing outstanding service and
-                        helping our clients achieve their goals.We are dedicated
-                        to providing outstanding service and helping our clients
-                        achieve their goals. We are dedicated to providing
-                        outstanding service and helping our clients achieve
-                        their goals. We are dedicated to providing outstanding
-                        service and helping our clients achieve their goals. We
-                        are dedicated to providing outstanding service and
-                        helping our clients achieve their goals. We are
-                        dedicated to providing outstanding service and helping
-                        our clients achieve their goals.
+                        DTFNC, a leading provider of custom Direct-to-Film (DTF)
+                        transfers, partnered with us to strengthen their online
+                        presence and attract a broader customer base. Our
+                        collaboration focused on comprehensive SEO strategies,
+                        including keyword optimization, content enhancement, and
+                        technical improvements. By aligning their website
+                        content with relevant search queries and ensuring a
+                        seamless user experience, we aimed to improve their
+                        search engine rankings and drive organic traffic.
+                        <div className="mt-4">
+                          As a result of our targeted SEO efforts, DTFNC
+                          experienced a significant increase in organic search
+                          visibility. The website saw improved rankings for key
+                          industry-related keywords, leading to higher traffic
+                          and increased customer engagement. This growth not
+                          only expanded their reach within the custom apparel
+                          market but also contributed to a notable rise in
+                          online orders, solidifying DTFNC's position as a
+                          trusted name in the DTF transfer industry.
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -397,7 +405,7 @@ const Marketing = () => {
               </div>
             </div>
           </div>
-          <TestimonialV2 />
+          <TestimonialMarketing/>
           <MostPopularServices />
         </div>
         <DarkClass />

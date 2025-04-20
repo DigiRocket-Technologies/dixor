@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import MostPopularServices from "./MostPopularServices.tsx";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+ import { Navigation,Keyboard,Autoplay } from "swiper/modules";
 
 interface DataType {
   title?: string;
@@ -66,12 +66,14 @@ const InfluencerMarketingContent = ({
       title: "Strategic Influencer Selection",
       description:
         "We research and handpick influencers who align perfectly with your brand, audience, and objectives.",
+      img:"/assets/img/services/IM/selection.png"  
     },
     {
       id: 2,
       title: "Tailored Campaign Design",
       description:
         "We craft influencer campaigns that speak directly to your audience, ensuring maximum engagement and impact.",
+        img:"/assets/img/services/IM/tailored campaign design.png"
     },
 
     {
@@ -79,25 +81,29 @@ const InfluencerMarketingContent = ({
       title: "End-to-End Management",
       description:
         "From negotiating terms to overseeing content creation, we manage every detail to ensure seamless execution.",
+        img:"/assets/img/services/IM/end to end.png"
     },
     {
       id: 4,
       title: "Creative Collaboration",
       description:
         "We work closely with influencers to create authentic, compelling content that resonates with their audience and drives results.",
+        img:"/assets/img/services/IM/creative collab.png"
     },
     {
       id: 5,
       title: "Data-Driven Optimization",
       description:
         "We continuously track performance, refining strategies based on real-time data to improve results as the campaign progresses.",
-    },
+      img:"/assets/img/services/IM/data driven.png"
+      },
     {
       id: 6,
       title: "Impactful Reporting",
       description:
         "We provide detailed performance reports, offering insights into campaign success and actionable recommendations for future efforts.",
-    },
+      img:"/assets/img/services/IM/reporting.png"
+      },
   ];
 
   return (
@@ -153,28 +159,28 @@ const InfluencerMarketingContent = ({
                     title: "Nano Influencers",
                     description:
                       "Nano influencers typically have between 1k to 10k followers. Despite their smaller audience size, they often boast exceptionally high engagement rates and deeply loyal communities. Their recommendations feel more personal, making them ideal for hyper-targeted campaigns, local marketing, or niche-specific promotions. They are cost-effective, accessible, and more open to genuine brand collaborations.",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/services/IM/nano.png",
                   },
                   {
                     id: 2,
                     title: "Micro Influencers",
                     description:
                       "Micro influencers usually have between 10k to 100k followers. They offer a sweet spot between reach and authenticity. Their audiences are still niche enough to feel personal but large enough to make an impact. These influencers often specialize in specific interests or industries, making them valuable for brands that want to tap into relevant and engaged communities. Micro influencers drive strong engagement, trust, and conversions. ",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/services/IM/micro.png",
                   },
                   {
                     id: 3,
                     title: "Macro Influencers",
                     description:
                       "Macro influencers have between 100k to 1M  followers. They bring scale and visibility while still maintaining some level of audience connection. Most have built their following through consistent content creation, making them experienced and reliable partners. These influencers are ideal for brands aiming to increase awareness on a larger scale without losing all sense of relatability. Their content quality is usually high, and their audience spans diverse demographics. ",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/services/IM/macro.png",
                   },
                   {
                     id: 4,
                     title: "Mega Influencers",
                     description:
                       "Mega influencers are creators or celebrities with over 1 million followers. They offer massive reach and brand exposure, often across global audiences. These influencers are ideal for large-scale brand awareness campaigns and product launches. Their influence can instantly boost visibility, drive social buzz, and elevate your brand’s status. While they come with higher costs, the potential impact is significant.",
-                    img: "/assets/img/blog/4.jpg",
+                    img: "/assets/img/services/IM/mega.png",
                   },
                 ].map((item, index) => (
                   <div
@@ -193,6 +199,7 @@ const InfluencerMarketingContent = ({
                           maxWidth: "500px",
                           height: "500px",
                           width: "100%",
+                          borderRadius: "10px",
                         }}
                       />
                     </div>
@@ -264,51 +271,108 @@ const InfluencerMarketingContent = ({
             </div>
             <div className="mt-50 mt-xs-20">
               <h1 style={{ marginBottom: "50px" }}>Our Process </h1>
-              <div className="row gx-1 mt-4 gy-4 mb-5">
-                {cards.map((card) => (
-                  <div key={card.id} className="col-12 mb-3 col-md-6 col-lg-4">
-                    <div className="card h-100 border shadow-sm">
-                      <div className="position-relative">
-                        <img
-                          src={`/assets/img/blog/4.jpg`}
-                          className="card-img-top"
-                          alt="Featured"
-                          style={{ height: "550px", objectFit: "cover" }}
-                        />
-
-                        <div
-                          className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
-                          style={{
-                            width: "40px",
-                            height: "40px",
-                            top: "12px",
-                            left: "5px",
-                            fontWeight: "bold",
-                            border: "2px solid white",
-                          }}
-                        >
-                          {card.id}
+              <Swiper
+                loop={true}
+                centeredSlides={false}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
+                speed={1000}
+                navigation={{
+                  nextEl: ".dropshippingservice-next",
+                  prevEl: ".dropshippingservice-prev",
+                }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1000: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40,
+                  },
+                }}
+                modules={[Navigation, Keyboard, Autoplay]}
+              >
+                <div className="swiper-wrapper">
+                  {cards.map((card) => (
+                    <SwiperSlide key={card.id}>
+                      <div
+                        key={card.id}
+                        style={{ minHeight: "650px", padding: "10px" }}
+                      >
+                        <div className="card h-100 border">
+                          <div className="position-relative">
+                            <img
+                              src={
+                                card?.img ? card.img : `/assets/img/blog/4.jpg`
+                              }
+                              className="card-img-top"
+                              alt="Featured"
+                              style={{ height: "460px", width: "100%" }}
+                            />
+                            <div
+                              className="position-absolute bg-dark text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                              style={{
+                                width: "40px",
+                                height: "40px",
+                                top: "12px",
+                                left: "5px",
+                                fontWeight: "bold",
+                                border: "2px solid white",
+                              }}
+                            >
+                              {card.id}
+                            </div>
+                          </div>
+                          <div className="card-body">
+                            <h4
+                              style={{ color: "black" }}
+                              className="card-title"
+                            >
+                              {card.title}
+                            </h4>
+                            <p
+                              className="card-text text-muted"
+                              style={{
+                                overflow: "hidden",
+                                display: "-webkit-box",
+                                WebkitLineClamp: 3,
+                                WebkitBoxOrient: "vertical",
+                              }}
+                            >
+                              {card.description}
+                            </p>
+                          </div>
                         </div>
                       </div>
-                      <div className="card-body">
-                        <h4 style={{ color: "black" }} className="card-title">
-                          {card.title}
-                        </h4>
-                        <p
-                          className="card-text text-muted"
-                          style={{
-                            overflow: "hidden",
-                            display: "-webkit-box",
-                            WebkitLineClamp: 3,
-                            WebkitBoxOrient: "vertical",
-                          }}
-                        >
-                          {card.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                    </SwiperSlide>
+                  ))}
+                </div>
+              </Swiper>
+              
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "30px",
+                  top: "110%",
+                  left: "50%",
+                  gap: "10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-left me-2 text-dark"></i>
+                </button>
+                <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-right ms-2 text-dark"></i>
+                </button>
               </div>
             </div>
             <div

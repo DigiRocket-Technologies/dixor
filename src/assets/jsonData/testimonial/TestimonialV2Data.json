@@ -2,165 +2,71 @@
     "quoteData": [
         {
             "id": 1,
-            "name": "Michel Dark",
+            "name": "JustinCASE",
             "designation": "Envato Client",
-            "quote": "Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties practasing why she shewing now remembering."
+            "quote": "We have been very pleased with the quality of service and support offered by DigiRocket in the five months of engagement.  Communications and response times are excellent as is the collaboration process.  We would gladly endorse them to others ."
         },
         {
             "id": 2,
-            "name": "John Doe",
+            "name": "Marinela Makeup",
             "designation": "Business Owner",
-            "quote": "Engagement consultation across various sectors is key to improving efficiency. Strategic thinking often leads to exponential growth when applied correctly. Understanding the customer’s needs creates a winning solution."
+            "quote": "We love working with them! Professional and so great to work with and great to communicate with.  Highly Recommended."
         },
         {
             "id": 3,
-            "name": "Anna Smith",
+            "name": "Sole Design Studio",
             "designation": "Creative Director",
-            "quote": "Collaborative efforts within the design team enabled us to come up with innovative solutions. Understanding the nuances of modern trends has really pushed our project outcomes to the next level."
+            "quote": "DigiRocket provided an invaluable service to me with regards to Google advertising and SEO work. Starting with the basics they helped bring my site up in ranking, reworking product issues, enhancing SEO, writing a blog and setting up ads for Google. Their communication was excellent with meetings via Zoom each month and email in between. Whenever I had a question, they were responsive."
         },
         {
-            "id": 4,
-            "name": "James Bond",
-            "designation": "Consultant",
-            "quote": "Through critical thinking and adaptive strategy, we can transform challenges into opportunities. The key to success lies in the execution and alignment of vision across all teams."
-        },
-        {
-            "id": 5,
-            "name": "Michel Dark",
-            "designation": "Envato Client",
-            "quote": "Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties practasing why she shewing now remembering."
-        },
-        {
-            "id": 6,
-            "name": "John Doe",
-            "designation": "Business Owner",
-            "quote": "Engagement consultation across various sectors is key to improving efficiency. Strategic thinking often leads to exponential growth when applied correctly. Understanding the customer’s needs creates a winning solution."
-        },
-        {
-            "id": 7,
-            "name": "Anna Smith",
+            "id": 3,
+            "name": "Sole Design Studio",
             "designation": "Creative Director",
-            "quote": "Collaborative efforts within the design team enabled us to come up with innovative solutions. Understanding the nuances of modern trends has really pushed our project outcomes to the next level."
+            "quote": "DigiRocket provided an invaluable service to me with regards to Google advertising and SEO work. Starting with the basics they helped bring my site up in ranking, reworking product issues, enhancing SEO, writing a blog and setting up ads for Google. Their communication was excellent with meetings via Zoom each month and email in between. Whenever I had a question, they were responsive."
         },
         {
-            "id": 8,
-            "name": "James Bond",
-            "designation": "Consultant",
-            "quote": "Through critical thinking and adaptive strategy, we can transform challenges into opportunities. The key to success lies in the execution and alignment of vision across all teams."
-        },
-        {
-            "id": 9,
-            "name": "Michel Dark",
-            "designation": "Envato Client",
-            "quote": "Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties practasing why she shewing now remembering."
-        },
-        {
-            "id": 10,
-            "name": "John Doe",
-            "designation": "Business Owner",
-            "quote": "Engagement consultation across various sectors is key to improving efficiency. Strategic thinking often leads to exponential growth when applied correctly. Understanding the customer’s needs creates a winning solution."
-        },
-        {
-            "id": 11,
-            "name": "Anna Smith",
+            "id": 3,
+            "name": "Sole Design Studio",
             "designation": "Creative Director",
-            "quote": "Collaborative efforts within the design team enabled us to come up with innovative solutions. Understanding the nuances of modern trends has really pushed our project outcomes to the next level."
+            "quote": "DigiRocket provided an invaluable service to me with regards to Google advertising and SEO work. Starting with the basics they helped bring my site up in ranking, reworking product issues, enhancing SEO, writing a blog and setting up ads for Google. Their communication was excellent with meetings via Zoom each month and email in between. Whenever I had a question, they were responsive."
         },
         {
-            "id": 12,
-            "name": "James Bond",
-            "designation": "Consultant",
-            "quote": "Through critical thinking and adaptive strategy, we can transform challenges into opportunities. The key to success lies in the execution and alignment of vision across all teams."
-        },
-        {
-            "id": 13,
-            "name": "Michel Dark",
-            "designation": "Envato Client",
-            "quote": "Targeting consultation discover apartments. ndulgence off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties practasing why she shewing now remembering."
-        },
-        {
-            "id": 14,
-            "name": "John Doe",
-            "designation": "Business Owner",
-            "quote": "Engagement consultation across various sectors is key to improving efficiency. Strategic thinking often leads to exponential growth when applied correctly. Understanding the customer’s needs creates a winning solution."
-        },
-        {
-            "id": 15,
-            "name": "Anna Smith",
+            "id": 3,
+            "name": "Sole Design Studio",
             "designation": "Creative Director",
-            "quote": "Collaborative efforts within the design team enabled us to come up with innovative solutions. Understanding the nuances of modern trends has really pushed our project outcomes to the next level."
-        },
-        {
-            "id": 16,
-            "name": "James Bond",
-            "designation": "Consultant",
-            "quote": "Through critical thinking and adaptive strategy, we can transform challenges into opportunities. The key to success lies in the execution and alignment of vision across all teams."
+            "quote": "DigiRocket provided an invaluable service to me with regards to Google advertising and SEO work. Starting with the basics they helped bring my site up in ranking, reworking product issues, enhancing SEO, writing a blog and setting up ads for Google. Their communication was excellent with meetings via Zoom each month and email in between. Whenever I had a question, they were responsive."
         }
     ],
     "navigationData": [
         {
             "id": 1,
-            "thumb": "11.jpg"
+            "thumb": "/assets/img/testimonial/just in case.jpg"
         },
         {
             "id": 2,
-            "thumb": "12.jpg"
+            "thumb": "/assets/img/testimonial/marinela.jpg"
         },
         {
             "id": 3,
-            "thumb": "13.jpg"
+            "thumb": "/assets/img/testimonial/soledesign.jpg"
         },
         {
-            "id": 4,
-            "thumb": "10.jpg"
+            "id": 3,
+            "name": "Sole Design Studio",
+            "designation": "Creative Director",
+            "quote": "DigiRocket provided an invaluable service to me with regards to Google advertising and SEO work. Starting with the basics they helped bring my site up in ranking, reworking product issues, enhancing SEO, writing a blog and setting up ads for Google. Their communication was excellent with meetings via Zoom each month and email in between. Whenever I had a question, they were responsive."
         },
         {
-            "id": 5,
-            "thumb": "11.jpg"
+            "id": 3,
+            "name": "Sole Design Studio",
+            "designation": "Creative Director",
+            "quote": "DigiRocket provided an invaluable service to me with regards to Google advertising and SEO work. Starting with the basics they helped bring my site up in ranking, reworking product issues, enhancing SEO, writing a blog and setting up ads for Google. Their communication was excellent with meetings via Zoom each month and email in between. Whenever I had a question, they were responsive."
         },
         {
-            "id": 6,
-            "thumb": "12.jpg"
-        },
-        {
-            "id": 7,
-            "thumb": "13.jpg"
-        },
-        {
-            "id": 8,
-            "thumb": "10.jpg"
-        },
-        {
-            "id": 9,
-            "thumb": "11.jpg"
-        },
-        {
-            "id": 10,
-            "thumb": "12.jpg"
-        },
-        {
-            "id": 11,
-            "thumb": "13.jpg"
-        },
-        {
-            "id": 12,
-            "thumb": "10.jpg"
-        },
-        {
-            "id": 13,
-            "thumb": "11.jpg"
-        },
-        {
-            "id": 14,
-            "thumb": "12.jpg"
-        },
-        {
-            "id": 15,
-            "thumb": "13.jpg"
-        },
-        {
-            "id": 16,
-            "thumb": "10.jpg"
+            "id": 3,
+            "name": "Sole Design Studio",
+            "designation": "Creative Director",
+            "quote": "DigiRocket provided an invaluable service to me with regards to Google advertising and SEO work. Starting with the basics they helped bring my site up in ranking, reworking product issues, enhancing SEO, writing a blog and setting up ads for Google. Their communication was excellent with meetings via Zoom each month and email in between. Whenever I had a question, they were responsive."
         }
     ]
 }

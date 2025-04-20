@@ -22,12 +22,12 @@ const SinglePriceV2New = ({ plan }: { plan: DataType }) => {
                     <span>{description}</span>
                 </div>
                 <ul>
-                    {features.map((feature, index) => (
+                    {features.length>1&&features?.map((feature, index) => (
                         <li className="given" key={index}>
                             {  feature}
                         </li>
                     ))}
-                     {blockedFeatures.map((feature, index) => (
+                     {blockedFeatures.length>1&&blockedFeatures?.map((feature, index) => (
                         <li className="blocked" key={index}>
                             {feature}
                         </li>

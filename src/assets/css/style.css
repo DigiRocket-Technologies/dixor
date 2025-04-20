@@ -18302,3 +18302,7 @@ button.Toastify__close-button {
 	background-color:#c9f21d;
 	filter:grayscale(0.0);
 }
+
+video{
+	opacity:2 !important;
+}

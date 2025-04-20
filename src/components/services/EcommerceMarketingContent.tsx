@@ -4,7 +4,7 @@ import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import MostPopularServices from "./MostPopularServices.tsx";
-
+import bannerImg2 from "/assets/img/services/banner02.jpg"
 interface DataType {
   title?: string;
   bannerImg?: string;
@@ -54,8 +54,6 @@ const EcommerceMarketingContent = ({
     title,
     whyChooseP1,
     bannerImg,
-    img1,
-    img2,
     whyChooseP2,
     faqs,
     definition,
@@ -101,12 +99,11 @@ const EcommerceMarketingContent = ({
                 </ul>
               </div>
             </div>
-            <div className="row mt-80 mt-xs-50 gallery-two-columns">
-              <div className="col-md-6">
-                <img src={img1} alt="Image Not Found" />
-              </div>
-              <div className="col-md-6">
-                <img src={img2} alt="Image Not Found" />
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="service-single-thumb">
+                  <img src={bannerImg2} alt="Thumb" />
+                </div>
               </div>
             </div>
             <div className="mt-50 mt-xs-20">

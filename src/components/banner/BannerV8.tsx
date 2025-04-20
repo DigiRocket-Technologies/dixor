@@ -39,7 +39,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                       threshold={0.2}
                       rootMargin="-50px"
                     >
-                      Sky rocket
+                      Skyrocket
                     </SplitText>
                   </h2>
 

@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import banner6 from "/assets/img/services/dev.jpg";
 import { Link } from "react-router-dom";
 import TestimonialV2 from "../../components/testimonial/TestimonialV2";
-import thumb3 from "/assets/img/thumb/3.jpg";
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import DarkClass from "../../components/classes/DarkClass";
 import MostPopularServices from "../../components/services/MostPopularServices";
@@ -13,19 +12,19 @@ import MostPopularServices from "../../components/services/MostPopularServices";
 const Development = () => {
   const features = [
     {
-      icon: "/assets/img/icon/2.png", // Bootstrap Icon class
+      icon: "/assets/img/services/development/startup friendly.svg", // Bootstrap Icon class
       title: "Startup-Friendly Builds",
       description:
         "Fast, lean websites designed to get you online and growing.",
     },
     {
-      icon: "/assets/img/icon/2.png",
+      icon: "/assets/img/services/development/growth.svg",
       title: "Growth-Ready Upgrades",
       description:
         "Scalable systems that support higher traffic and more features.",
     },
     {
-      icon: "/assets/img/icon/2.png",
+      icon: "/assets/img/services/development/solution.svg",
       title: "Enterprise-Level Solutions",
       description:
         "Advanced tools and integrations to manage complex business needs.",
@@ -341,18 +340,18 @@ const Development = () => {
             </div>
           </div>
           <div style={{ marginTop: "60px" }}>
-            <h2>Behind the Numbers: Our Work in Action</h2>
+          <h2>Behind the Numbers: Our Work in Action</h2>
             <div className="container">
               <div className="row align-center">
                 <div className="col-lg-5">
                   <div className="thumb-style-one">
-                    <img src={thumb3} alt="Image Not Found" />
+                    <img src="/assets/img/services/aq.jpg" alt="Image Not Found" />
                   </div>
                 </div>
                 <div className="col-lg-7">
                   <div className="choose-us-style-one">
                     <div className="pl-80 pl-md-0 pl-xs-0">
-                      <h2 className="title">Unlock Revenue Growth</h2>
+                      <h2>Aquatic Venture</h2>
                       <div>
                         We partnered with <span style={{fontWeight:"bold"}}>Aquatic Venture</span> to build a clean,
                         easy-to-navigate website that brings their love for

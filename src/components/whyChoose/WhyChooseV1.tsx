@@ -131,7 +131,7 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                     delay="200ms"
                   >
                     <div className="award-item bg-white">
-                       <img src="/assets/img/partner/semrush.png" alt="" />
+                       <img src="/assets/img/partner/tick-tock.png" alt="" />
                     </div>
                   </Animate>
                 </div>

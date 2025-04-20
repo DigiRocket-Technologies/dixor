@@ -11,7 +11,7 @@ interface DataType {
     sectionClass?: string
 }
 
-const TestimonialV2 = ({ sectionClass }: DataType) => {
+const TestimonialMarketing = ({ sectionClass }: DataType) => {
 
     const [mainSwiper, setMainSwiper] = useState<SwiperType | null>(null);
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
@@ -99,4 +99,4 @@ const TestimonialV2 = ({ sectionClass }: DataType) => {
     );
 };
 
-export default TestimonialV2;
+export default TestimonialMarketing;

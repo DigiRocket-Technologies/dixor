@@ -5,7 +5,7 @@ interface DataType {
 }
 
 const SingleTestimonialV2 = ({ testimonial }: { testimonial: DataType }) => {
-    const { quote, name, designation } = testimonial
+    const { quote, name } = testimonial
 
     return (
         <>
@@ -14,7 +14,6 @@ const SingleTestimonialV2 = ({ testimonial }: { testimonial: DataType }) => {
                 <div className="tm-provider">
                     <div className="content">
                         <h4>{name}</h4>
-                        <span>{designation}</span>
                     </div>
                 </div>
             </div>
