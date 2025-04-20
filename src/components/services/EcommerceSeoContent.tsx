@@ -149,31 +149,37 @@ const EcommerceSeoContent = ({
               </div>
             </div>
             <div
-            style={{ marginTop: "50px" }}
-            className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
-          >
-            {/* Image */}
-            <div className="w-100 w-lg-50 text-center p-2">
-              <img
-                src="/assets/img/blog/quick win.jpg"
-                alt="Blog"
-                className="img-fluid"
-                style={{ maxWidth: "500px", minHeight: "500px", width: "100%" }}
-              />
+              style={{ marginTop: "50px" }}
+              className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+            >
+              {/* Image */}
+              <a className="w-100" href="https://quickwinseo.net/" target="_blank">
+                <div className="w-100 w-lg-50 text-center p-2">
+                  <img
+                    src="/assets/img/blog/quick win.jpg"
+                    alt="Blog"
+                    className="img-fluid"
+                    style={{
+                      maxWidth: "500px",
+                      minHeight: "600px",
+                      width: "100%",
+                    }}
+                  />
+                </div>
+              </a>
+
+              {/* Text */}
+              <div className="w-100 w-lg-50 p-4 ">
+                <h2 className="post-title">
+                  <a href="https://quickwinseo.net/" target="_blank">
+                    Our QuickWin SEO Makes All the Difference.{" "}
+                  </a>
+                </h2>
+                <h3>Why is it the best move?</h3>
+                <p>{whyChooseP1}</p>
+                <p> {whyChooseP2}</p>
+              </div>
             </div>
-            {/* Text */}
-            <div className="w-100 w-lg-50 p-4 ">
-              <h2 className="post-title">
-              
-                <Link to={`#`}>
-                  Our QuickWin SEO Makes All the Difference.{" "}
-                </Link>
-              </h2>
-              <h3>Why is it the best move?</h3>
-              <p>{whyChooseP1}</p>
-              <p> {whyChooseP2}</p>
-            </div>
-          </div>
             <div className="row mt-80 mt-xs-50 gallery-two-columns">
               <div className="row">
                 <div className="col-xl-12">
@@ -249,44 +255,42 @@ const EcommerceSeoContent = ({
         <div className="container">
           <MostPopularServices />
           <div className="services-details-items">
-          
-              <div className="item">
-                <div className="faq-style-one faq-style-two">
-                  <h2 className="mb-30">Frequently Asked Questions</h2>
-                  <div className="accordion" id="faqAccordion">
-                    {faqs?.map((item, idx) => {
-                      return (
-                        <div key={idx} className="accordion-item">
-                          <h2 className="accordion-header" id={`heading${idx}`}>
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target={`#collapse${idx}`}
-                              aria-expanded="true"
-                              aria-controls={`collapse${idx}`}
-                            >
-                              {item.q}
-                            </button>
-                          </h2>
-                          <div
-                            id={`collapse${idx}`}
-                            className={`accordion-collapse collapse`}
-                            //className="accordion-collapse collapse show"  //use this to keep the answers open
-                            aria-labelledby={`heading${idx}`}
-                            data-bs-parent="#faqAccordion"
+            <div className="item">
+              <div className="faq-style-one faq-style-two">
+                <h2 className="mb-30">Frequently Asked Questions</h2>
+                <div className="accordion" id="faqAccordion">
+                  {faqs?.map((item, idx) => {
+                    return (
+                      <div key={idx} className="accordion-item">
+                        <h2 className="accordion-header" id={`heading${idx}`}>
+                          <button
+                            className="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target={`#collapse${idx}`}
+                            aria-expanded="true"
+                            aria-controls={`collapse${idx}`}
                           >
-                            <div className="accordion-body">
-                              <p>{item.a}</p>
-                            </div>
+                            {item.q}
+                          </button>
+                        </h2>
+                        <div
+                          id={`collapse${idx}`}
+                          className={`accordion-collapse collapse`}
+                          //className="accordion-collapse collapse show"  //use this to keep the answers open
+                          aria-labelledby={`heading${idx}`}
+                          data-bs-parent="#faqAccordion"
+                        >
+                          <div className="accordion-body">
+                            <p>{item.a}</p>
                           </div>
                         </div>
-                      );
-                    })}
-                  </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            
+            </div>
           </div>
         </div>
       </div>

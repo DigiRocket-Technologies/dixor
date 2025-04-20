@@ -10,7 +10,7 @@ interface DataType {
 
 const SingleBannerV3 = ({ banner }: { banner: DataType }) => {
   const { id, title, thumb } = banner;
-  console.log(thumb, "thumb");
+  
 
   return (
     <>

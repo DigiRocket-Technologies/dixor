@@ -1,17 +1,17 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-// import ServicesV1Data from "../../assets/jsonData/services/ServiceV1New.json";
+
 import { Helmet } from "react-helmet-async";
-// import thumb15 from "/assets/img/thumb/15.jpg";
-// import pricingInfo from "../../assets/jsonData/price/PriceV2New.json";
+
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import DarkClass from "../../components/classes/DarkClass";
 import banner6 from "/assets/img/services/dropshipping.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import SplitText from "../../components/animation/SplitText.jsx";
-// import { Link } from "react-router-dom";
 
 import BannerV3Data from "../../../src/assets/jsonData/banner/BannerV3Data.json";
-// import BannerV3ModalContent from "../../components/banner/BannerV3ModalContent.js";
+
+
+import { toast } from "react-toastify";
+
 import {
   Keyboard,
   Pagination,
@@ -24,6 +24,7 @@ import { useState } from "react";
 import MostPopularServices from "../../components/services/MostPopularServices.js";
 
 const Dropshipping = () => {
+  const [loading, setLoading] = useState(false);
   const cards = [
     {
       id: 1,
@@ -93,9 +94,44 @@ const Dropshipping = () => {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async(e: any) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+
+    try {
+      setLoading(true);
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendcontactformmail`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data?.success) {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          question1: "",
+          question1Details: "",
+          question2: "",
+          question2Details: "",
+          question3: "",
+          question4: "",
+        });
+        toast.success("Form Saved Successfully");
+      } else throw new Error(data?.message);
+    } catch (err: any) {
+      toast.warn(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -466,6 +502,7 @@ const Dropshipping = () => {
                       <button
                         type="submit"
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
+                        disabled={loading}
                         style={{
                           color: "black",
                           backgroundColor: "white",
