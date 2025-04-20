@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "thumb": "siddhart sir shoot.png",
+    "thumb": "siddhart sir fixed.png",
     "name": "Sidharth Anant Shiv",
     "designation": "Assistant Director",
     "social": {
@@ -40,8 +40,8 @@
     }
   },
   {
-    "id": 11,
-    "thumb": "nikhar shoot.png",
+    "id": 5,
+    "thumb": "nikhar makkar shoot 1.png",
     "name": "Nikhar Makkar",
     "designation": "Project Manager",
     "social": {
@@ -50,7 +50,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 6,
     "thumb": "shudanshu shoot.png",
     "name": "Sudhanshu Awasthi",
     "designation": "AI Developer",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 7,
     "thumb": "vaishnavi mam.png",
     "name": "Vaishnavi Gupta",
     "designation": "Creative Head",
@@ -70,7 +70,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 8,
     "thumb": "suraj shoot.png",
     "name": "Suraj Kumar",
     "designation": "Data Analyst",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 9,
     "thumb": "/upasana shoot_1.png",
     "name": "Upasana Rathore",
     "designation": "Senior Frontend Developer",
@@ -90,7 +90,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 10,
     "thumb": "/akriti mam shoot 2.png",
     "name": "Akriti Mahajan",
     "designation": "Project Coordinator",
@@ -100,7 +100,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 11,
     "thumb": "pratyaksh shoot.png",
     "name": "Pratyaksh Srivastava",
     "designation": "Graphic Designer",
@@ -111,7 +111,7 @@
   },
 
   {
-    "id": 11,
+    "id": 12,
     "thumb": "pari.webp",
     "name": "Pratyush Negi",
     "designation": "Graphic Designer",
@@ -121,7 +121,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 13,
     "thumb": "garvit shoot 1.png",
     "name": "Garvit Sharma",
     "designation": "SEO Executive",
@@ -131,7 +131,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 14,
     "thumb": "shristi shoot 1.png",
     "name": "Shristi Sinha",
     "designation": "Content Writer",
@@ -141,8 +141,8 @@
     }
   },
   {
-    "id": 12,
-    "thumb": "saumya shoot 1.png",
+    "id": 15,
+    "thumb": "saumya fixed.png",
     "name": "Saumya Tomar",
     "designation": "H.R. Manager",
     "social": {
@@ -151,7 +151,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 16,
     "thumb": "sahil shoot.png",
     "name": "Sahil Awasthi",
     "designation": "Accountant",
@@ -161,8 +161,8 @@
     }
   },
   {
-    "id": 14,
-    "thumb": "sohan shoot.png",
+    "id": 17,
+    "thumb": "sohan fixed.jpg",
     "name": "Sohan Kumar",
     "designation": "SEO Expert",
     "social": {
@@ -171,8 +171,8 @@
     }
   },
   {
-    "id": 15,
-    "thumb": "harshit shoot.png",
+    "id": 18,
+    "thumb": "harshit fixed.jpg",
     "name": "Harshit Singla",
     "designation": "Ecommerce Specialist",
     "social": {
@@ -181,7 +181,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 19,
     "thumb": "anurag-shoot.jpg",
     "name": "Anurag Sharma",
     "designation": "Performance Marketing Manager",
@@ -191,7 +191,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 20,
     "thumb": "harsh shoot.png",
     "name": "Harsh Raj",
     "designation": "Sales Expert",
@@ -201,9 +201,59 @@
     }
   },
   {
-    "id": 18,
+    "id": 21,
     "thumb": "bhargav shoot.png",
     "name": "Bhargav ",
+    "designation": "Sales Expert",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 22,
+    "thumb": "navneet shoot 1.png",
+    "name": "Navneet",
+    "designation": "Sales Expert",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 23,
+    "thumb": "sanjeev shoot f.png",
+    "name": "Sanjeev",
+    "designation": "Sales Expert",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 24,
+    "thumb": "saksham shoot.png",
+    "name": "Saksham",
+    "designation": "Sales Expert",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 25,
+    "thumb": "saksham shoot.png",
+    "name": "Saksham",
+    "designation": "Sales Expert",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 26,
+    "thumb": "shaswat shoot.png",
+    "name": "Shashwat",
     "designation": "Sales Expert",
     "social": {
       "linkedin": "",
