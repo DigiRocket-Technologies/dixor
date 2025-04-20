@@ -3,6 +3,7 @@ import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BannerV3Data from "../../../src/assets/jsonData/banner/BannerV3Data.json";
 import SingleBannerV3 from "../../components/banner/SingleBannerV3.js";
+import bannerImg2 from "/assets/img/banner/social media management.png";
 import {
   Keyboard,
   Pagination,
@@ -136,31 +137,47 @@ const SocialMediaMarketingContent = ({
                 </ul>
               </div>
             </div>
+            <div className="row">
+              <div className="col-xl-12">
+                <div className="service-single-thumb">
+                  <img src={bannerImg2} alt="Thumb" />
+                </div>
+              </div>
+            </div>
             <div>
               <h2 className="">Platforms We Serve</h2>
-              <div style={{display:"flex",marginTop:"50px",justifyContent:"space-evenly",alignItems:"center",flexWrap:"wrap"}} className="">
-                <div style={{width:"180px"}} className="">
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "50px",
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                }}
+                className=""
+              >
+                <div style={{ width: "180px" }} className="">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/fb.svg"
                     alt=""
                   />
                 </div>
-                <div style={{width:"180px"}} className="">
+                <div style={{ width: "180px" }} className="">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/insta.svg"
                     alt=""
                   />
                 </div>
-                <div style={{width:"180px"}} className="">
+                <div style={{ width: "180px" }} className="">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/tiktok.svg"
                     alt=""
                   />
                 </div>
-                <div style={{width:"180px"}} className="">
+                <div style={{ width: "180px" }} className="">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/yt.svg"
@@ -169,7 +186,7 @@ const SocialMediaMarketingContent = ({
                 </div>
               </div>
             </div>
-  
+
             <div className="container mt-4 pt-4">
               <h2 className="">Industry Expertise</h2>
               <div
@@ -284,7 +301,6 @@ const SocialMediaMarketingContent = ({
                     </SwiperSlide>
                   ))}
                 </Swiper>
-        
               </div>
             </div>
             <div
@@ -305,9 +321,7 @@ const SocialMediaMarketingContent = ({
                 <h2 className="post-title">
                   <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
                 </h2>
-                <p>
-                  {whyChooseP1}
-                </p>
+                <p>{whyChooseP1}</p>
                 <p>{whyChooseP2}</p>
               </div>
             </div>
