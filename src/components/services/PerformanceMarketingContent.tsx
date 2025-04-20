@@ -62,36 +62,36 @@ const PerformanceMarketingContent = ({
 
   const features = [
     {
-      icon: "/assets/img/icon/24.png", // Bootstrap Icon class
+      icon: "/assets/img/icon/conversion rate.svg", // Bootstrap Icon class
       title: "Conversion Rate",
       description:
         "Tracks how many visitors complete a desired action like a purchase or sign-up.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/Cost Per Acquisition.svg",
       title: "Cost Per Acquisition (CPA)",
       description: "Measures how much it costs to acquire one paying customer.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/Return on Ad Spend.svg",
       title: "Return on Ad Spend (ROAS)",
       description:
         "Shows how much revenue is earned for every dollar spent on ads.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/Click-Through Rate.svg",
       title: "Click-Through Rate (CTR)",
       description:
         "Indicates how many people clicked on your ad after seeing it.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/Customer Lifetime Value.svg",
       title: "Customer Lifetime Value (CLV)",
       description:
         "Estimates the total revenue a business earns from a single customer over time.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/icon/Impressions & Reach.svg",
       title: "Impressions & Reach",
       description:
         "Measures how many times your ad is shown and how many people saw it.",
@@ -102,56 +102,56 @@ const PerformanceMarketingContent = ({
     {
       id: 1,
       title: "Data-Driven Decisions",
-      img:"/assets/img/services/pm/data driven decision.png",
+      img: "/assets/img/services/pm/data driven decision.png",
       description:
         "Our strategy is grounded in data. We use strong analytics tools to monitor performance and adjust campaigns in real time.",
     },
     {
       id: 2,
       title: "Targeted PPC Campaigns",
-      img:"/assets/img/services/pm/targeted ppc campaign.png",
+      img: "/assets/img/services/pm/targeted ppc campaign.png",
       description:
         "We create highly focused paid campaigns aimed at reaching your ideal audience.",
     },
     {
       id: 3,
       title: "Conversion Rate Optimization",
-      img:"/assets/img/services/pm/conversion rate optimization.png",
+      img: "/assets/img/services/pm/conversion rate optimization.png",
       description:
         "We continuously test and refine landing pages, ads, and user flow to ensure that visitors take the desired action.",
     },
     {
       id: 4,
       title: "A/B Testing",
-      img:"/assets/img/services/pm/ab testing.png",
+      img: "/assets/img/services/pm/ab testing.png",
       description:
         "We run A/B tests to compare different strategies and identify the best-performing approaches.",
     },
     {
       id: 5,
       title: "Remarketing Campaigns",
-      img:"/assets/img/services/pm/remarketing.png",
+      img: "/assets/img/services/pm/remarketing.png",
       description:
         "We re-engage users who have previously interacted with your brand but didn't convert.",
     },
     {
       id: 6,
       title: "Multi-Platform Advertising",
-      img:"/assets/img/services/pm/multi platform.png",
+      img: "/assets/img/services/pm/multi platform.png",
       description:
         "We use multiple advertising platforms like Google Ads, Facebook Ads, and more to reach a broader audience.",
     },
     {
       id: 7,
       title: "Performance Tracking & Analytics",
-      img:"/assets/img/services/pm/performance tracking.png",
+      img: "/assets/img/services/pm/performance tracking.png",
       description:
         "Our detailed reporting helps you understand the success of your campaigns and guides future decision-making for continuous improvement.",
     },
     {
       id: 8,
       title: "Budget Optimization",
-      img:"/assets/img/services/pm/budget optimization.png",
+      img: "/assets/img/services/pm/budget optimization.png",
       description:
         "We manage your advertising budget efficiently, allocating resources to the highest-performing campaigns.",
     },
@@ -320,21 +320,21 @@ const PerformanceMarketingContent = ({
               <div
                 style={{
                   display: "flex",
-                  marginTop:"30px",
-                  top:"110%",
-                  left:"50%",
-                  gap:"10px",
+                  marginTop: "30px",
+                  top: "110%",
+                  left: "50%",
+                  gap: "10px",
                   justifyContent: "center",
                   alignItems: "center",
                 }}
               >
-                  <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
-                    <i className="fas fa-chevron-left me-2 text-dark"></i>
-                  </button>
-                  <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
-                    <i className="fas fa-chevron-right ms-2 text-dark"></i>
-                  </button>
-            </div>
+                <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-left me-2 text-dark"></i>
+                </button>
+                <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-right ms-2 text-dark"></i>
+                </button>
+              </div>
             </div>
             <div>
               <h2 className="">Tools and Platform</h2>
@@ -464,9 +464,7 @@ const PerformanceMarketingContent = ({
                 <h2 className="post-title">
                   <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
                 </h2>
-                <p>
-                  {whyChooseP1}
-                </p>
+                <p>{whyChooseP1}</p>
                 <p>{whyChooseP2}</p>
               </div>
             </div>
