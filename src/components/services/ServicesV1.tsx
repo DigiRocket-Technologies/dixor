@@ -23,7 +23,7 @@ const ServicesV1 = ({ hasTitle, sectionClass, lightMode }: DataType) => {
 
     return (
         <>
-            <div className={`services-style-one-area ${sectionClass ? sectionClass : ""}`}>
+            <div style={{paddingBottom:"80px"}} className={`services-style-one-area ${sectionClass ? sectionClass : ""}`}>
 
                 {/* Service Title */}
                 {hasTitle &&

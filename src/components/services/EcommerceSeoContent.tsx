@@ -249,7 +249,7 @@ const EcommerceSeoContent = ({
         <div className="container">
           <MostPopularServices />
           <div className="services-details-items">
-            <div className="d-grid colums-2 mt-50">
+          
               <div className="item">
                 <div className="faq-style-one faq-style-two">
                   <h2 className="mb-30">Frequently Asked Questions</h2>
@@ -286,12 +286,7 @@ const EcommerceSeoContent = ({
                   </div>
                 </div>
               </div>
-              <div className="item">
-                <h2>What we do?</h2>
-                <p>{whyChooseP1}</p>
-                <p>{whyChooseP2}</p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

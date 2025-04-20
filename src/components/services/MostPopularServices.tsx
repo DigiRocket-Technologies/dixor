@@ -16,7 +16,7 @@ const MostPopularServices = () => {
                   height={60}
                 />
                 <h4>
-                  <Link to={`/sid`}>{item?.name}</Link>
+                  <Link to={`#`}>{item?.name}</Link>
                 </h4>
                 <p>{item?.desc}</p>
               </div>

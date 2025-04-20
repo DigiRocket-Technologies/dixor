@@ -155,12 +155,13 @@ const EcommerceMarketingContent = ({
                           maxWidth: "500px",
                           height: "550px",
                           width: "100%",
+                          borderRadius:"10px"
                         }}
                       />
                     </div>
 
                     {/* Text */}
-                    <div className="w-100 w-lg-50 p-4 text-center">
+                    <div  style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}} className="w-100 w-lg-50 p-4 text-center">
                       <h2 className="post-title">
                         <Link to={`/blog-single-with-sidebar`}>
                           {item.title}
@@ -176,25 +177,7 @@ const EcommerceMarketingContent = ({
               style={{ marginTop: "50px" }}
               className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
             >
-              {/* Image */}
-              {/* <div className="w-100 w-lg-50 text-center p-2">
-                <img
-                  src="/assets/img/blog/1.jpg"
-                  alt="Blog"
-                  className="img-fluid"
-                  style={{ maxWidth: "500px", height: "500px", width: "100%" }}
-                />
-              </div> */}
-              {/* Text */}
-              {/* <div className="w-100 w-lg-50 p-4 ">
-                <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
-                </h2>
-                <p>
-                  {whyChooseP1}
-                  {whyChooseP2}
-                </p>
-              </div> */}
+            
             </div>
             <div>
               <h2>How will it benefit you?</h2>
@@ -276,8 +259,8 @@ const EcommerceMarketingContent = ({
                 </h2>
                 <p>
                   {whyChooseP1}
-                  {whyChooseP2}
                 </p>
+                <p>{whyChooseP2}</p>
               </div>
             </div>
           </div>

@@ -153,7 +153,7 @@ const ShopifyContent = ({
           style={{ width: "90%",margin:"auto", marginTop: "50px" }}
           className="services-style-four-area default-padding-bottom overflow-hidden blurry-shape-left"
         >
-          <div className="mt-50 mt-xs-20">
+          <div className=" mt-xs-20">
             <div className="container container-stage">
               <h1 style={{ marginBottom: "50px" }}>
                 Our Shopify Developmet Service Include{" "}

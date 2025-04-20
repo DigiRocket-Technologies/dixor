@@ -62,19 +62,19 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                     <Link to="/contact-us">Contact</Link>
                   </li>
                   <li>
-                    <Link to="/faq">FAQS</Link>
+                    <Link to="#">FAQS</Link>
                   </li>
                   <li>
-                    <Link to="/services">Services</Link>
+                    <Link to="#">Services</Link>
                   </li>
                   <li>
-                    <Link to="/about-2">Term & Conditions</Link>
+                    <Link to="#">Term & Conditions</Link>
                   </li>
                   <li>
-                    <Link to="/about-us">Privacy Policy</Link>
+                    <Link to="#">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to="/about-2">Careers</Link>
+                    <Link to="#">Careers</Link>
                   </li>
                   <li>
                     <Link to="/contact-us">Help Desk</Link>

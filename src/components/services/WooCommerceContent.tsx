@@ -162,12 +162,13 @@ const WooCommerceContent = ({
                           maxWidth: "500px",
                           height: "500px",
                           width: "100%",
+                          borderRadius:"10px"
                         }}
                       />
                     </div>
 
                     {/* Text */}
-                    <div className="w-100 w-lg-50 p-4 text-center">
+                    <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:'column'}} className="w-100 w-lg-50 p-4 text-center">
                       <h2 className="post-title">
                         <Link to={`/blog-single-with-sidebar`}>
                           {item.title}
@@ -180,7 +181,7 @@ const WooCommerceContent = ({
               </div>
             </div>
             <div style={{ marginTop: "50px" }}>
-              <h2 className="text-center">
+              <h2 className="">
                 What Makes WooCommerce + WordPress a Smart Choice?
               </h2>
               <div className="row g-4 mt-4">
@@ -221,8 +222,8 @@ const WooCommerceContent = ({
                 </h2>
                 <p>
                   {whyChooseP1}
-                  <p> {whyChooseP2}</p>
                 </p>
+                <p> {whyChooseP2}</p>
               </div>
             </div>
           </div>

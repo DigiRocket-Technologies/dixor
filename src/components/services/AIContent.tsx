@@ -168,26 +168,8 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
               </div>
             </div>
 
-            {/* <div style={{ marginTop: "50px" }}>
-              <h2 className="text-center">Features we offer</h2>
-              <div className="row g-4 mt-4">
-                {features.map((feature, index) => (
-                  <div key={index} className="col-12 col-sm-6 col-lg-3">
-                    <div className="text-white  p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
-                      <img
-                        src={feature.icon}
-                        style={{ width: "60px" }}
-                        alt=""
-                      />
-                      <h5 className="fw-bold mt-4">{feature.title}</h5>
-                      <p className="mb-0">{feature.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div> */}
             <div style={{ marginTop: "40px" }}>
-              <h2>Challenges that AI can help you Solve</h2>
+              <h2>Challenges That AI Can Help You Solve</h2>
               <Swiper
                 loop={true}
                 centeredSlides={false}

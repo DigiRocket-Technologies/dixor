@@ -84,7 +84,7 @@ const TestimonialV3 = ({ sectionClass }: DataType) => {
                     alignItems: "center",
                   }}
                 >
-                  <a href="https://www.shopify.com/partners/directory/partner/digirocket-technologies">
+                  <a target="_blank" href="https://www.shopify.com/partners/directory/partner/digirocket-technologies">
                     <button style={{ margin: "auto" }} className="tbutton">
                       View All
                     </button>

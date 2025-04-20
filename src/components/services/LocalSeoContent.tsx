@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -53,24 +52,14 @@ const LocalSeoContent = ({
 }: ServiceDetailsProps) => {
   const {
     title,
-    whyChooseP1,
     bannerImg1,
     bannerImg2,
-    whyChooseP2,
     faqs,
     definition,
     importance,
     importance_title,
   } = serviceInfo || {};
 
-  // const images = [
-  //   "/assets/img/partner/sp.png",
-  //   "/assets/img/partner/cloud.png",
-  //   "/assets/img/partner/semrush.png",
-  //   "/assets/img/partner/sp.png",
-  //   "/assets/img/partner/sp.png",
-  //   "/assets/img/partner/sp.png",
-  // ];
   const Skills = [
     "Technical SEO",
     "Keywords Planning",
@@ -112,43 +101,43 @@ const LocalSeoContent = ({
             </div>
             <div>
               <h2 className="text-center">Seo Toolkit</h2>
-              <div className="row justify-content-center">
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+              <div style={{display:"flex",marginTop:"50px",justifyContent:"space-evenly",alignItems:"center",flexWrap:"wrap"}} className="">
+                <div style={{width:"200px"}} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/ahrefs.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{width:"200px"}} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/google keyword planner.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{width:"200px"}} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/google merchant account.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{width:"200px"}} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/google trends.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{width:"200px"}} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/screaming frog.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{width:"200px"}} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/semrush1.png"
@@ -233,31 +222,7 @@ const LocalSeoContent = ({
               </div>
             </div>
           </div>
-          <div
-            style={{ marginTop: "50px" }}
-            className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
-          >
-            {/* Image */}
-            <div className="w-100 w-lg-50 text-center p-2">
-              <img
-                src="/assets/img/blog/quick win.jpg"
-                alt="Blog"
-                className="img-fluid"
-                style={{ maxWidth: "500px", minHeight: "500px", width: "100%" }}
-              />
-            </div>
-            {/* Text */}
-            <div className="w-100 w-lg-50 p-4 ">
-              <h2 className="post-title">
-                <Link to={`#`}>
-                  Our QuickWin SEO Makes All the Difference.{" "}
-                </Link>
-              </h2>
-              <h3>Why is it the best move?</h3>
-              <p>{whyChooseP1}</p>
-              <p> {whyChooseP2}</p>
-            </div>
-          </div>
+
         </div>
         <PriceV2New pricing={pricing} />
 

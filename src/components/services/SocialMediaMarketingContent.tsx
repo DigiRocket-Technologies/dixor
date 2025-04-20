@@ -61,8 +61,6 @@ const SocialMediaMarketingContent = ({
     title,
     whyChooseP1,
     bannerImg,
-    img1,
-    img2,
     whyChooseP2,
     faqs,
     definition,
@@ -140,29 +138,29 @@ const SocialMediaMarketingContent = ({
             </div>
             <div>
               <h2 className="">Platforms We Serve</h2>
-              <div className="row justify-content-center">
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+              <div style={{display:"flex",marginTop:"50px",justifyContent:"space-evenly",alignItems:"center",flexWrap:"wrap"}} className="">
+                <div style={{width:"180px"}} className="">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/fb.svg"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{width:"180px"}} className="">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/insta.svg"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{width:"180px"}} className="">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/tiktok.svg"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{width:"180px"}} className="">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/yt.svg"
@@ -171,14 +169,7 @@ const SocialMediaMarketingContent = ({
                 </div>
               </div>
             </div>
-            <div className="row mt-80 mt-xs-50 gallery-two-columns">
-              <div className="col-md-6">
-                <img src={img1} alt="Image Not Found" />
-              </div>
-              <div className="col-md-6">
-                <img src={img2} alt="Image Not Found" />
-              </div>
-            </div>
+  
             <div className="container mt-4 pt-4">
               <h2 className="">Industry Expertise</h2>
               <div
@@ -293,24 +284,7 @@ const SocialMediaMarketingContent = ({
                     </SwiperSlide>
                   ))}
                 </Swiper>
-                {/* <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: "40px",
-                    gap: "10px",
-                  }}
-                  className="project-four-nav"
-                >
-                  <div className="d-flex justify-content-center align-items-center gap-2 my-4">
-                    <button className="left btn  border border-dark rounded-pill px-4 d-flex align-items-center">
-                      <i className="fas fa-chevron-left me-2 text-dark"></i>
-                    </button>
-                    <button className="right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
-                      <i className="fas fa-chevron-right ms-2 text-dark"></i>
-                    </button>
-                  </div>
-                </div> */}
+        
               </div>
             </div>
             <div
@@ -333,8 +307,8 @@ const SocialMediaMarketingContent = ({
                 </h2>
                 <p>
                   {whyChooseP1}
-                  {whyChooseP2}
                 </p>
+                <p>{whyChooseP2}</p>
               </div>
             </div>
           </div>

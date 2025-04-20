@@ -16,28 +16,10 @@ import { Keyboard } from "swiper/modules";
 import { useState } from "react";
 import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3.js";
 import MostPopularServices from "../../components/services/MostPopularServices.js";
+import Countries from "../../components/clients/countries.js";
 // import SocialShareNew from "../../components/social/SocialShareNew.js";
 
 const AboutUsPage2 = () => {
-  const countries = [
-    {
-      name: "United States",
-      flag: "/assets/img/about/us.svg",
-    },
-    {
-      name: "United Kingdom",
-      flag: "/assets/img/about/uk.svg",
-    },
-    {
-      name: "Canada",
-      flag: "/assets/img/about/canada.svg",
-    },
-    {
-      name: "India",
-      flag: "/assets/img/about/india.svg",
-    },
-  ];
-
   const [selectedIndustry, setSelectedIndustry] = useState("Textile Printing");
   const industryData: Record<
     string,
@@ -425,25 +407,8 @@ const AboutUsPage2 = () => {
         <WhyChooseV3 />
 
         <div className="container">
-          <div className="container my-5">
-            <h2 className="text-center mb-4">Countries We Serve In </h2>
-            <div className="row mt-4 g-4">
-              {countries.map((country, index) => (
-                <div key={index} className="col-12 col-md-6 col-lg-3">
-                  <div 
-                    className="card shadow-sm bg-dark country-card"
-                    style={{
-                      backgroundImage: `url(${country.flag})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      height: "150px",
-                    }}
-                  > 
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+         
+          <Countries/>
 
           <MostPopularServices />
         </div>

@@ -1,7 +1,7 @@
 import team10 from "/assets/img/clients/cevherun.png";
 import team11 from "/assets/img/clients/alamo city popcorn.png";
-import team12 from "/assets/img/team/12.jpg";
-import team13 from "/assets/img/team/13.jpg";
+import team12 from "/assets/img/testimonial/marinela.jpg";
+import team13 from "/assets/img/testimonial/soledesign.jpg";
 // import brand10 from "/assets/img/brand/10.png";
 import brand10 from "/assets/img/clients/cevherun.png";
 import brand2 from "/assets/img/clients/alamo city popcorn.png";

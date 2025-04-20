@@ -205,7 +205,7 @@ const InfluencerMarketingContent = ({
                     </div>
 
                     {/* Text */}
-                    <div className="w-100 w-lg-50 p-4 text-center">
+                    <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}} className="w-100 w-lg-50 p-4 text-center">
                       <h2 className="post-title">
                         <Link to={`/blog-single-with-sidebar`}>
                           {item.title}
@@ -397,8 +397,8 @@ const InfluencerMarketingContent = ({
                 </h2>
                 <p>
                   {whyChooseP1}
-                  {whyChooseP2}
                 </p>
+                <p>{whyChooseP2}</p>
               </div>
             </div>
           </div>

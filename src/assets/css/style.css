@@ -18306,3 +18306,7 @@ button.Toastify__close-button {
 video{
 	opacity:2 !important;
 }
+
+h2{
+	text-transform:capitalize !important
+}

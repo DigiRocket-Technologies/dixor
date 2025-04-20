@@ -180,7 +180,7 @@ const MobileApplicationContent = ({
             </div>
                 
             <div style={{ marginTop: "50px" }}>
-              <h2 className="text-center">Features we offer</h2>
+              <h2 className="text-center">Features We Offer</h2>
               <div className="row g-4 mt-4">
                 {features.map((feature, index) => (
                   <div key={index} className="col-12 col-sm-6 col-lg-3">
@@ -198,7 +198,7 @@ const MobileApplicationContent = ({
               </div>
             </div>
             <div style={{ marginTop: "40px" }}>
-              <h2>What you get when you choose us</h2>
+              <h2>What You Get When You Choose Us</h2>
               <Swiper
                 loop={true}
                 centeredSlides={false}
@@ -371,7 +371,7 @@ const MobileApplicationContent = ({
                 {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
                 <div className="col-md-5 col-lg-5 d-none d-lg-block">
                   <img
-                    src="/assets/img/blog/1.jpg"
+                    src="/assets/img/services/contact_us.jpg"
                     alt="Business professional"
                     className="w-100 h-100 object-fit-cover"
                   />

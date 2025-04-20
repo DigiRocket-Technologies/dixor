@@ -53,8 +53,6 @@ const PerformanceMarketingContent = ({
     title,
     whyChooseP1,
     bannerImg,
-    img1,
-    img2,
     whyChooseP2,
     faqs,
     definition,
@@ -385,31 +383,8 @@ const PerformanceMarketingContent = ({
                 </div>
               </div>
             </div>
-            <div className="row mt-80 mt-xs-50 gallery-two-columns">
-              <div className="col-md-6">
-                <img src={img1} alt="Image Not Found" />
-              </div>
-              <div className="col-md-6">
-                <img src={img2} alt="Image Not Found" />
-              </div>
-            </div>
             <div className="mt-50 mt-xs-20">
               <h1>Metrics we use to measure your growth </h1>
-              {/* <div className="row g-4 mt-4">
-                {features.map((feature, index) => (
-                  <div key={index} className="col-12 col-sm-6 col-lg-3">
-                    <div className="text-white  p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
-                      <img
-                        src={feature.icon}
-                        style={{ width: "60px" }}
-                        alt=""
-                      />
-                      <h5 className="fw-bold mt-4">{feature.title}</h5>
-                      <p className="mb-0">{feature.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div> */}
               <div style={{ marginTop: "40px", paddingTop: "40px" }}>
                 <Swiper
                   modules={[Navigation]}
@@ -491,8 +466,8 @@ const PerformanceMarketingContent = ({
                 </h2>
                 <p>
                   {whyChooseP1}
-                  {whyChooseP2}
                 </p>
+                <p>{whyChooseP2}</p>
               </div>
             </div>
           </div>
