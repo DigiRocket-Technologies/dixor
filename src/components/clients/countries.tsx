@@ -1,6 +1,3 @@
-
-
-
 const Countries = () => {
   const countries = [
     {
@@ -44,15 +41,15 @@ const Countries = () => {
       >
         {countries.map((country, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-3">
-            <div
-              className="card shadow-sm bg-dark country-card"
-              style={{
-                backgroundImage: `url(${country.flag})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "150px",
-              }}
-            ></div>
+            <div className="card shadow-sm bg-dark country-card">
+              <img
+                src={country.flag}
+                style={{
+                  minHeight: "150ps",
+                }}
+                alt=""
+              />
+            </div>
           </div>
         ))}
       </div>
