@@ -4,6 +4,7 @@ import MostPopularServices from "./MostPopularServices.tsx";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Keyboard, Autoplay } from "swiper/modules";
+import { toast } from "react-toastify";
 
 interface DataType {
   title?: string;
@@ -68,6 +69,7 @@ const WebApplicationContent = ({
     otherWebsiteType: "",
     additional: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const cards = [
     {
@@ -124,10 +126,42 @@ const WebApplicationContent = ({
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    try {
+      setLoading(true);
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendcontactformmail`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data?.success) {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          websiteType: "",
+          otherWebsiteType: "",
+          additional: "",
+        });
+        toast.success("Form Saved Successfully");
+      } else throw new Error(data?.message);
+    } catch (err: any) {
+      toast.warn(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
+
   return (
     <>
       <div
@@ -312,23 +346,23 @@ const WebApplicationContent = ({
                 </div>
               </Swiper>
               <div
-              style={{
-                display: "flex",
-                marginTop: "30px",
-                top: "110%",
-                left: "50%",
-                gap: "10px",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
-                <i className="fas fa-chevron-left me-2 text-dark"></i>
-              </button>
-              <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
-                <i className="fas fa-chevron-right ms-2 text-dark"></i>
-              </button>
-            </div>
+                style={{
+                  display: "flex",
+                  marginTop: "30px",
+                  top: "110%",
+                  left: "50%",
+                  gap: "10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <button className="dropshippingservice-prev left btn bg-white  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-left me-2 text-dark"></i>
+                </button>
+                <button className="dropshippingservice-next bg-white right btn  border border-dark rounded-pill px-4 d-flex align-items-center">
+                  <i className="fas fa-chevron-right ms-2 text-dark"></i>
+                </button>
+              </div>
             </div>
             <div
               style={{ marginTop: "50px" }}
@@ -398,7 +432,7 @@ const WebApplicationContent = ({
           <div className="mt-5">
             <div className="card shadow bg-dark text-white">
               <div className="row g-0" style={{ minHeight: "650px" }}>
-              <div
+                <div
                   style={{
                     display: "flex",
                     height: "100%",
@@ -416,7 +450,7 @@ const WebApplicationContent = ({
                 </div>
 
                 {/* Right Side (Form Content) */}
-                <div  className="col-md-12 col-lg-7 p-4 p-md-5">
+                <div className="col-md-12 col-lg-7 p-4 p-md-5">
                   <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
                     LEARN HOW WE CAN ENHANCE THE EFFECTIVENESS OF YOUR
                     E-COMMERCE PLATFORM'S DEVELOPMENT.
@@ -513,6 +547,7 @@ const WebApplicationContent = ({
                     >
                       <button
                         type="submit"
+                        disabled={loading}
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",
