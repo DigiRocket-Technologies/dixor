@@ -5184,13 +5184,13 @@ ul.project-meta {
 .card-style-one .bottom span.medium {
 	font-weight: 600;
 }
-
 .banner-style-eight-heading h2 {
-	font-size: 150px;
+	font-size: 80px;
 	text-transform: uppercase;
 	line-height: 1;
 	margin: 0;
 }
+
 
 .banner-style-eight-heading h2.title-right {
 	text-align: right;
@@ -14448,7 +14448,7 @@ ul.footer-social li a img {
 
 	/* Banner Style Eight */
 	.banner-style-eight-heading h2 {
-		font-size: 120px;
+		font-size: 80px;
 	}
 
 	.banner-style-eight-heading {
@@ -18311,12 +18311,9 @@ h2{
 	text-transform:capitalize !important
 }
 
-.head-title{
-	font-size: 80 px !important; 
-}
 
-@media screen and (max-width: 480px) {
-	.head-title{
-		font-size: 70 px !important
+@media screen and (max-width: 580px) {
+	.banner-style-eight-heading h2{
+		font-size: 70 px !important;
 	}
-  }
+}
