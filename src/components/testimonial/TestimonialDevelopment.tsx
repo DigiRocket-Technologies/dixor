@@ -11,7 +11,7 @@ interface DataType {
     sectionClass?: string
 }
 
-const TestimonialMarketing = ({ sectionClass }: DataType) => {
+const TestimonialDevelopment = ({ sectionClass }: DataType) => {
 
     const [mainSwiper, setMainSwiper] = useState<SwiperType | null>(null);
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
@@ -60,7 +60,7 @@ const TestimonialMarketing = ({ sectionClass }: DataType) => {
                                 controller={{ control: thumbsSwiper }}
                             >
                                 <div className="swiper-wrapper">
-                                    {TestimonialV2Data.quoteData.slice(0,4).map(testimonial =>
+                                    {TestimonialV2Data.quoteData.slice(3,7).map(testimonial =>
                                         <SwiperSlide key={testimonial.id}>
                                             <SingleTestimonialV2 testimonial={testimonial} />
                                         </SwiperSlide>
@@ -82,7 +82,7 @@ const TestimonialMarketing = ({ sectionClass }: DataType) => {
                                 modules={[Controller, FreeMode]}
                             >
                                 <div className="swiper-wrapper">
-                                    {TestimonialV2Data.navigationData.slice(0,4).map(data =>
+                                    {TestimonialV2Data.navigationData.slice(3,7).map(data =>
                                         <SwiperSlide className="swiper-slide" key={data.id}>
                                             <div className="swiper-bullet-item">
                                                 <img src={data.thumb} alt="Image Not Found" width={200} height={200} />
@@ -99,4 +99,4 @@ const TestimonialMarketing = ({ sectionClass }: DataType) => {
     );
 };
 
-export default TestimonialMarketing;
+export default TestimonialDevelopment;

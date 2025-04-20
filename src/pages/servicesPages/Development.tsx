@@ -2,10 +2,10 @@ import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import { Helmet } from "react-helmet-async";
 import banner6 from "/assets/img/services/dev.jpg";
 import { Link } from "react-router-dom";
-import TestimonialV2 from "../../components/testimonial/TestimonialV2";
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import DarkClass from "../../components/classes/DarkClass";
 import MostPopularServices from "../../components/services/MostPopularServices";
+import TestimonialDevelopment from "../../components/testimonial/TestimonialDevelopment";
 // import Blog2ColumnContent from "../../components/blog/Blog2ColumnContent";
 // import PortfolioV3 from "../../components/portfolio/PortfolioV3";
 
@@ -126,7 +126,7 @@ const Development = () => {
                   </div>
 
                   {/* Text */}
-                  <div className="w-100 w-lg-50 p-4 text-center">
+                  <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}} className="w-100 w-lg-50 p-4 text-center">
                     <h2 className="post-title">
                       <Link to={`/blog-single-with-sidebar`}>{item.title}</Link>
                     </h2>
@@ -361,7 +361,7 @@ const Development = () => {
                         experience where customers can quickly find what they
                         need and feel confident making a purchase.
                       </div>
-                      <div>
+                      <div className="mt-4">
                         After launching the new website, Aquatic Venture saw
                         better engagement and a more seamless user journey
                         across all devices. With clear categories, detailed
@@ -377,7 +377,7 @@ const Development = () => {
               </div>
             </div>
           </div>
-          <TestimonialV2 />
+          <TestimonialDevelopment/>
           <MostPopularServices />
         </div>
         <DarkClass />
