@@ -61,8 +61,6 @@ const WebApplicationContent = ({
     importance_title,
   } = serviceInfo || {};
 
-  const [loading, setLoading] = useState(false);
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -550,7 +548,7 @@ const WebApplicationContent = ({
                       <button
                         disabled={loading}
                         type="submit"
-                        disabled={loading}
+                      
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",
