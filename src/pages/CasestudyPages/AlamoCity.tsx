@@ -4,8 +4,9 @@ import LayoutV1 from "../../components/layouts/LayoutV1";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-import portfolio15 from "/assets/img/portfolio/15.jpg";
-import portfolio44 from "/assets/img/portfolio/44.jpg";
+import img1 from "/assets/img/portfolio/ac1.jpg"
+import img2 from "/assets/img/portfolio/ac2.jpg"
+import img3 from "/assets/img/portfolio/ac3.jpg"
 
 const Alamocity = () => {
   return (
@@ -25,7 +26,7 @@ const Alamocity = () => {
               <div className="col-lg-12">
                 <div className="project-details-thumb">
                   <img
-                    src={`/assets/img/portfolio/1-full.jpg`}
+                    src={img1}
                     alt="Image Not Found"
                   />
                 </div>
@@ -77,7 +78,7 @@ const Alamocity = () => {
           </div>
         </div>
         <div className="container">
-          <img src={portfolio15} alt="Image Not Found" />
+          <img src={img2} alt="Image Not Found" />
         </div>
 
         {/* 3rd Section */}
@@ -123,7 +124,7 @@ const Alamocity = () => {
                           SEO strategy to improve its SERP ranking and attract a
                           broader customer base.
                         </p>
-                        <img src={portfolio44} alt="Image Not Found" />
+                        <img src={img3} alt="Image Not Found" />
                       </div>
                     </div>
                   </div>

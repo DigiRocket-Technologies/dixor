@@ -4,8 +4,9 @@ import LayoutV1 from "../../components/layouts/LayoutV1";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
-import portfolio15 from "/assets/img/portfolio/15.jpg";
-import portfolio44 from "/assets/img/portfolio/44.jpg";
+import img1 from "/assets/img/portfolio/ec1.jpg"
+import img2 from "/assets/img/portfolio/ec2.jpg"
+import img3 from "/assets/img/portfolio/ec3.jpg"
 
 const EyeCandy = () => {
   return (
@@ -22,7 +23,7 @@ const EyeCandy = () => {
               <div className="col-lg-12">
                 <div className="project-details-thumb">
                   <img
-                    src={`/assets/img/portfolio/1-full.jpg`}
+                    src={img1}
                     alt="Image Not Found"
                   />
                 </div>
@@ -74,7 +75,7 @@ const EyeCandy = () => {
           </div>
         </div>
         <div className="container">
-          <img src={portfolio15} alt="Image Not Found" />
+          <img src={img2} alt="Image Not Found" />
         </div>
 
         {/* 3rd Section */}
@@ -123,7 +124,7 @@ const EyeCandy = () => {
                           spirit while simultaneously optimizing for search
                           performance and increasing overall traffic.
                         </p>
-                        <img src={portfolio44} alt="Image Not Found" />
+                        <img src={img3} alt="Image Not Found" />
                       </div>
                     </div>
                   </div>
