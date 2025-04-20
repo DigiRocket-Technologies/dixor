@@ -4,6 +4,7 @@ import MostPopularServices from "./MostPopularServices.tsx";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard, Navigation } from "swiper/modules";
+import { toast } from "react-toastify";
 
 interface DataType {
   title?: string;
@@ -88,32 +89,31 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     {
       id: 1,
       title: "Customer Segmentation",
-      img:"/assets/img/services/ai/customer segment.png",
+      img: "/assets/img/services/ai/customer segment.png",
       description:
         "AI can analyze vast amounts of customer data to identify patterns and segment audiences effectively. This allows businesses to create highly targeted marketing campaigns, ensuring that the right message reaches the right people, increasing engagement and conversion rates while reducing wasted resources.",
     },
     {
       id: 2,
       title: "Predictive Analytics",
-      img:"/assets/img/services/ai/predictive.png",
+      img: "/assets/img/services/ai/predictive.png",
       description:
         "AI-powered predictive analytics can help businesses forecast future trends, consumer behavior, and sales. By leveraging historical data, AI can provide insights into what customers are likely to purchase, allowing brands to tailor their strategies and improve decision-making, leading to enhanced ROI and reduced risks.",
     },
     {
       id: 3,
       title: "Content Personalization",
-      img:"/assets/img/services/ai/ai chatbot.png",
+      img: "/assets/img/services/ai/ai chatbot.png",
       description:
         "AI can personalize content in real-time by analyzing customer preferences, behaviors, and interactions. It helps businesses create dynamic content that resonates with individual users, enhancing customer satisfaction, loyalty, and overall engagement, which can ultimately lead to higher sales and brand affinity.",
     },
     {
       id: 4,
       title: "Automated Customer Support",
-      img:"/assets/img/services/ai/custom content.png",
+      img: "/assets/img/services/ai/custom content.png",
       description:
         "AI-driven chatbots and virtual assistants are transforming customer support by providing instant responses to queries. These systems can handle a wide range of customer service issues, from product inquiries to troubleshooting, improving customer satisfaction while reducing operational costs and increasing efficiency.",
     },
- 
   ];
 
   const [formData, setFormData] = useState({
@@ -132,12 +132,43 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    try {
+      setLoading(true);
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/senddropshippingformmail`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data?.success) {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          aiService: "",
+          additional: "",
+        });
+        toast.success("Form Saved Successfully");
+      } else throw new Error(data?.message);
+    } catch (err: any) {
+      toast.warn(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
-  
   return (
     <>
       <div
@@ -254,7 +285,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                   ))}
                 </div>
               </Swiper>
-              
+
               <div
                 style={{
                   display: "flex",
@@ -290,7 +321,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`#`}>Why Choose Us?  </Link>
+                  <Link to={`#`}>Why Choose Us? </Link>
                 </h2>
                 <p>
                   {whyChooseP1}
@@ -344,18 +375,33 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
             className="mt-5"
           >
             <div className="card shadow bg-dark text-white">
-              <div className="row g-0">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
                 {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
-                <div className="col-md-5 col-lg-5 d-none d-lg-block">
+                <div
+                  style={{
+                    display: "flex",
+                    height: "100%",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "40%",
+                  }}
+                  className="d-none  d-lg-block"
+                >
                   <img
-                    src="/assets/img/blog/1.jpg"
+                    src="/assets/img/services/contact_us.jpg"
                     alt="Business professional"
-                    className="h-100 object-fit-cover"
+                    className="h-100 w-100 object-fit-cover"
                   />
                 </div>
 
                 {/* Right Side (Form Content) */}
-                <div className="col-md-12 col-lg-7 p-4 p-md-5">
+                <div className="w-80 w-lg-60 p-4 p-md-5">
                   <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
                     HELP US UNDERSTAND YOUR AI SERVICE NEEDS
                   </h2>
@@ -442,6 +488,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                     >
                       <button
                         type="submit"
+                        disabled={loading}
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",

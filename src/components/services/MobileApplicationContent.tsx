@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import MostPopularServices from "./MostPopularServices.tsx";
 import { useState } from "react";
 
-import { SwiperSlide,Swiper } from "swiper/react";
+import { SwiperSlide, Swiper } from "swiper/react";
 import { Autoplay, Keyboard, Navigation } from "swiper/modules";
+import { toast } from "react-toastify";
 
 interface DataType {
   title?: string;
@@ -90,41 +91,41 @@ const MobileApplicationContent = ({
     {
       id: 1,
       title: "Custom Solutions",
-      img:"/assets/img/services/wyg/Custom Solutions.jpg",
+      img: "/assets/img/services/wyg/Custom Solutions.jpg",
       description:
         "We develop mobile apps tailored to your unique business needs.",
     },
     {
       id: 2,
       title: "High-Performance Apps",
-      img:"/assets/img/services/wyg/High-Performance Apps.jpg",
+      img: "/assets/img/services/wyg/High-Performance Apps.jpg",
       description:
         "Our apps are optimized for speed and efficiency, ensuring smooth performance.",
     },
     {
       id: 3,
       title: "User-Focused Design",
-      img:"/assets/img/services/wyg/User-Focused Design.jpg",
+      img: "/assets/img/services/wyg/User-Focused Design.jpg",
       description:
         "We prioritize user experience to create engaging, intuitive interfaces.",
     },
     {
       id: 4,
       title: "Cross-Platform Reach",
-      img:"/assets/img/services/wyg/Cross-Platform Reach.jpg",
+      img: "/assets/img/services/wyg/Cross-Platform Reach.jpg",
       description:
         "Your app will work seamlessly across both iOS and Android platforms.",
     },
     {
       id: 5,
       title: "Scalability",
-      img:"/assets/img/services/wyg/Scalability.jpg",
+      img: "/assets/img/services/wyg/Scalability.jpg",
       description: "Apps are built to evolve with your business as it grows.",
     },
     {
       id: 6,
       title: "Ongoing Support",
-      img:"/assets/img/services/wyg/Ongoing Support.jpg",
+      img: "/assets/img/services/wyg/Ongoing Support.jpg",
       description:
         "We provide continuous updates and troubleshooting to keep your app running smoothly",
     },
@@ -145,10 +146,42 @@ const MobileApplicationContent = ({
       [name]: value,
     });
   };
-
-  const handleSubmit = (e: any) => {
+  
+  const [loading, setLoading] = useState(false);
+  const handleSubmit = async(e: any) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    try {
+      setLoading(true);
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/senddropshippingformmail`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data?.success) {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          appType: "",
+          additional: "",
+        });
+        toast.success("Form Saved Successfully");
+      } else throw new Error(data?.message);
+    } catch (err: any) {
+      toast.warn(err.message);
+    } finally {
+      setLoading(false);
+    }
+
   };
   return (
     <>
@@ -178,7 +211,7 @@ const MobileApplicationContent = ({
                 </ul>
               </div>
             </div>
-                
+
             <div style={{ marginTop: "50px" }}>
               <h2 className="text-center">Features We Offer</h2>
               <div className="row g-4 mt-4">
@@ -459,6 +492,7 @@ const MobileApplicationContent = ({
                     >
                       <button
                         type="submit"
+                        disabled={loading}
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",

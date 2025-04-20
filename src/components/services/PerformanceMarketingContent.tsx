@@ -336,7 +336,7 @@ const PerformanceMarketingContent = ({
                 </button>
               </div>
             </div>
-            <div>
+            {/* <div>
               <h2 className="">Tools and Platform</h2>
               <div className="row justify-content-center">
                 <div className="col-6 col-md-4 col-lg-3 mb-4">
@@ -382,7 +382,7 @@ const PerformanceMarketingContent = ({
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="mt-50 mt-xs-20">
               <h2>Metrics we use to measure your growth </h2>
               <div style={{ marginTop: "40px", paddingTop: "40px" }}>

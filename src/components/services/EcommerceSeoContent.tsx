@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import MostPopularServices from "./MostPopularServices.tsx";
 
-
 interface DataType {
   title?: string;
   bannerImg1?: string;
@@ -103,43 +102,52 @@ const EcommerceSeoContent = ({
             </div>
             <div>
               <h2 className="text-center">Seo Toolkit</h2>
-              <div className="row justify-content-center">
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "50px",
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                }}
+                className=""
+              >
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/ahrefs.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/google keyword planner.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/google merchant account.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/google trends.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/screaming frog.png"
                     alt=""
                   />
                 </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/semrush1.png"
@@ -153,7 +161,11 @@ const EcommerceSeoContent = ({
               className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
             >
               {/* Image */}
-              <a className="w-100" href="https://quickwinseo.net/" target="_blank">
+              <a
+                className="w-100"
+                href="https://quickwinseo.net/"
+                target="_blank"
+              >
                 <div className="w-100 w-lg-50 text-center p-2">
                   <img
                     src="/assets/img/blog/quick win.jpg"
