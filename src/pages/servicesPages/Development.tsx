@@ -82,25 +82,25 @@ const Development = () => {
                 {
                   id: 1,
                   title: "Scalable & Modular Codebase",
-                  img: "/assets/img/services/development/research.png",
+                  img: "/assets/img/services/development/modular.png",
                   p: "We build solutions with a modular structure that allows for easy updates and expansion. This means you can add features, handle higher traffic, or pivot your platform without rebuilding from scratch. It keeps your development agile and future-proof, no matter how fast your business grows.",
                 },
                 {
                   id: 2,
                   title: "User-First Experience Design",
-                  img: "/assets/img/services/development/concept.png",
+                  img: "/assets/img/services/development/user experience.png",
                   p: "Every development decision is made with your users in mind. We prioritize speed, simplicity, and intuitive navigation—ensuring that your website or app isn’t just functional but enjoyable to use. This leads to higher engagement, better retention, and ultimately, more conversions.",
                 },
                 {
                   id: 3,
                   title: "Business-Aligned Development Strategy",
-                  img: "/assets/img/services/development/implement.png",
+                  img: "/assets/img/services/development/strategy.png",
                   p: "We don’t just code—we understand your business goals first. Our solutions are designed to align with your revenue model, operations, and audience needs. Whether you're in eCommerce, SaaS, or services, we tailor development to support your unique journey and growth targets.",
                 },
                 {
                   id: 4,
                   title: "Built-In Performance & Security",
-                  img: "/assets/img/services/development/result.png",
+                  img: "/assets/img/services/development/built in security.png",
                   p: "Speed and safety aren’t optional—they’re essential. We optimize every layer of your platform for fast loading, smooth functionality, and strong data protection. From code quality to server configuration, our team ensures your digital product performs reliably and remains secure at all times.",
                 },
               ].map((item, index) => (
