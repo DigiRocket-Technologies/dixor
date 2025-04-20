@@ -384,7 +384,7 @@ const PerformanceMarketingContent = ({
               </div>
             </div>
             <div className="mt-50 mt-xs-20">
-              <h1>Metrics we use to measure your growth </h1>
+              <h2>Metrics we use to measure your growth </h2>
               <div style={{ marginTop: "40px", paddingTop: "40px" }}>
                 <Swiper
                   modules={[Navigation]}
