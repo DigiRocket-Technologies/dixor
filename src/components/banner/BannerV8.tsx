@@ -23,7 +23,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
             <div className="col-xl-8">
               <div className="banner-style-eight-heading">
                 <div className="banner-title">
-                  <h2 style={{ fontSize: "70px" }}>
+                  <h2 style={{ fontSize: "80px" }}>
                     <SplitText
                       className="title-left split-text"
                       delay={150}
@@ -39,13 +39,13 @@ const BannerV8 = ({ lightMode }: DataType) => {
                       threshold={0.2}
                       rootMargin="-50px"
                     >
-                      Driven by Passion
+                      Sky rocket
                     </SplitText>
                   </h2>
 
                   <h2
                     className="title-right split-text"
-                    style={{ fontSize: "70px" }}
+                    style={{ fontSize: "80px" }}
                   >
                     <SplitText
                       delay={150}
@@ -61,7 +61,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                       threshold={0.2}
                       rootMargin="-50px"
                     >
-                      Defined by Results
+                       Your sales
                     </SplitText>
                   </h2>
                 </div>
