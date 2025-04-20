@@ -71,6 +71,7 @@ const WebApplicationContent = ({
     otherWebsiteType: "",
     additional: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const cards = [
     {
@@ -130,11 +131,10 @@ const WebApplicationContent = ({
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-
     try {
       setLoading(true);
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/senddropshippingformmail`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendcontactformmail`,
         {
           method: "POST",
           headers: {
@@ -143,7 +143,7 @@ const WebApplicationContent = ({
           body: JSON.stringify(formData),
         }
       );
-      
+
       const data = await response.json();
 
       if (data?.success) {
@@ -163,6 +163,7 @@ const WebApplicationContent = ({
       setLoading(false);
     }
   };
+
   return (
     <>
       <div
@@ -549,6 +550,7 @@ const WebApplicationContent = ({
                       <button
                         disabled={loading}
                         type="submit"
+                        disabled={loading}
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",

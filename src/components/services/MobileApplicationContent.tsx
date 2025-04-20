@@ -138,6 +138,7 @@ const MobileApplicationContent = ({
     appType: "",
     additional: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -146,15 +147,14 @@ const MobileApplicationContent = ({
       [name]: value,
     });
   };
-  
-  const [loading, setLoading] = useState(false);
-  const handleSubmit = async(e: any) => {
+
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     try {
       setLoading(true);
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/senddropshippingformmail`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendcontactformmail`,
         {
           method: "POST",
           headers: {
@@ -181,7 +181,6 @@ const MobileApplicationContent = ({
     } finally {
       setLoading(false);
     }
-
   };
   return (
     <>
