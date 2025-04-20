@@ -11,6 +11,8 @@ import {
   Autoplay,
 } from "swiper/modules";
 
+import bannerImg2 from "/assets/img/services/shopify/banner02.jpg";
+
 import ServicesV4Data from "../../../src/assets/jsonData/services/ServicesV4Data.json";
 import SingleServiceV4 from "./SingleServiceV4";
 import MostPopularServices from "./MostPopularServices.tsx";
@@ -140,12 +142,11 @@ const ShopifyContent = ({
                 </ul>
               </div>
             </div>
-            <div className="row mt-80 mt-xs-50 gallery-two-columns">
-              <div className="col-md-6">
-                <img src={img1} alt="Image Not Found" />
-              </div>
-              <div className="col-md-6">
-                <img src={img2} alt="Image Not Found" />
+            <div className="row mt-4">
+              <div className="col-xl-12">
+                <div className="service-single-thumb">
+                  <img src={bannerImg2} alt="Thumb" />
+                </div>
               </div>
             </div>
           </div>
@@ -202,10 +203,31 @@ const ShopifyContent = ({
         </div>
         <div className="container">
           <div
+            style={{ marginTop: "80px" }}
+            className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+          >
+            {/* Image */}
+            <div className="w-100 w-lg-50 text-center p-2">
+              <img
+                src="/assets/img/blog/choose us 1.png"
+                alt="Blog"
+                className="img-fluid"
+                style={{ maxWidth: "500px", height: "500px", width: "100%" }}
+              />
+            </div>
+            {/* Text */}
+            <div className="w-100 w-lg-50 p-4 ">
+              <h2 className="post-title">
+                <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
+              </h2>
+              <p>{whyChooseP1}</p>
+              <p>{whyChooseP2}</p>
+            </div>
+          </div>
+          <div
             style={{ marginTop: "50px" }}
             className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
           >
-            <h2>Shopify app integration and custom features</h2>
           </div>
           <div style={{ marginTop: "0px", paddingTop: "0px" }}>
             <Swiper
@@ -234,7 +256,7 @@ const ShopifyContent = ({
               {features.map((feature, index) => (
                 <SwiperSlide key={index}>
                   <div
-                    style={{ minHeight: "380px" }}
+                    style={{ minHeight: "380px",width:"100%" }}
                     className="feature-card d-flex flex-column justify-content-between text-center p-4 rounded-4 shadow border border-secondary bg-dark h-100"
                   >
                     <div>
@@ -254,28 +276,6 @@ const ShopifyContent = ({
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
-          <div
-            style={{ marginTop: "80px" }}
-            className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
-          >
-            {/* Image */}
-            <div className="w-100 w-lg-50 text-center p-2">
-              <img
-                src="/assets/img/blog/choose us 1.png"
-                alt="Blog"
-                className="img-fluid"
-                style={{ maxWidth: "500px", height: "500px", width: "100%" }}
-              />
-            </div>
-            {/* Text */}
-            <div className="w-100 w-lg-50 p-4 ">
-              <h2 className="post-title">
-                <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
-              </h2>
-              <p>{whyChooseP1}</p>
-              <p>{whyChooseP2}</p>
-            </div>
           </div>
         </div>
 

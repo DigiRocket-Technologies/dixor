@@ -285,7 +285,7 @@ const Dropshipping = () => {
               modules={[Pagination, Navigation, Keyboard, Mousewheel, Autoplay]}
             >
               <div className="swiper-wrapper">
-                {BannerV3Data.slice(0, 7).map((banner) => (
+                {BannerV3Data.slice(0, 6).map((banner) => (
                   <SwiperSlide key={banner.id}>
                     <SingleBannerV3 banner={banner} />
                   </SwiperSlide>

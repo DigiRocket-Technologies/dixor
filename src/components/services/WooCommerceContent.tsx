@@ -61,25 +61,25 @@ const WooCommerceContent = ({
 
   const features = [
     {
-      icon: "/assets/img/icon/24.png", // Bootstrap Icon class
+      icon: "/assets/img/services/woocommerce/integration.svg", // Bootstrap Icon class
       title: "Seamless Integration",
       description:
         "WooCommerce fits naturally within WordPress, letting you manage products, content, and design from one dashboard",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/services/woocommerce/design freedom.svg",
       title: "Total Design Freedom",
       description:
         "Take full control of your store's look and feel using themes, page builders, and custom CSS — no limits.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/services/woocommerce/plugin.svg",
       title: "Massive Plugin Ecosystem",
       description:
         "Extend your store with thousands of WordPress plugins for SEO, speed, marketing, and more.",
     },
     {
-      icon: "/assets/img/icon/24.png",
+      icon: "/assets/img/services/woocommerce/community.svg",
       title: "trong Community Support",
       description:
         "Join a global community of developers, designers, and store owners ready to help and share knowledge.",
@@ -116,7 +116,7 @@ const WooCommerceContent = ({
             </div>
 
             <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px" }}>
+              <h1 className="" style={{ marginBottom: "50px" }}>
                 Why WooCommerce is Right for Your Business?
               </h1>
               <div style={{ marginTop: "50px", width: "100%" }}>

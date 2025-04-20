@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/services/nniche/eco frndly.png",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Eco-Friendly Products ",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/services/nniche/Home Fitness.png",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Home Fitness & Wellness",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/services/nniche/pet.png",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Pet Accessories & Toys",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/services/nniche/tech.png",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Tech Gadgets & Accessories",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/services/nniche/beauty.png",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
     "title": "Beauty & Skincare Tools",
@@ -41,10 +41,10 @@
   },
   {
     "id": 6,
-    "thumb": "11.jpg",
+    "thumb": "/assets/img/services/nniche/decor.png",
     "thumbFull": "11-full.jpg",
     "tag": "Marketing",
-    "title": "BeauHome Decor & Organizationty ",
+    "title": "Home Decor & Organizationt ",
     "date": "18 July, 2024"
   },
   {
