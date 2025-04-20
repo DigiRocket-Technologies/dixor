@@ -9,7 +9,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import BannerV3Data from "../../../src/assets/jsonData/banner/BannerV3Data.json";
 
-
 import { toast } from "react-toastify";
 
 import {
@@ -94,7 +93,7 @@ const Dropshipping = () => {
     });
   };
 
-  const handleSubmit = async(e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
 
