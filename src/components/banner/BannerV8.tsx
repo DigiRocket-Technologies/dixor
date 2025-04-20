@@ -23,7 +23,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
             <div className="col-xl-8">
               <div className="banner-style-eight-heading">
                 <div className="banner-title">
-                  <h2 style={{ fontSize: "80px" }}>
+                  <h2 className="head-title">
                     <SplitText
                       className="title-left split-text"
                       delay={150}
@@ -44,8 +44,8 @@ const BannerV8 = ({ lightMode }: DataType) => {
                   </h2>
 
                   <h2
-                    className="title-right split-text"
-                    style={{ fontSize: "80px" }}
+                    className="title-right split-text head-title"
+                    
                   >
                     <SplitText
                       delay={150}
