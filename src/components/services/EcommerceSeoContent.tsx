@@ -94,7 +94,7 @@ const EcommerceSeoContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
-                <h3>What we focus on:</h3>
+                <h3>What We Offer:</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -186,7 +186,7 @@ const EcommerceSeoContent = ({
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
                   <a href="https://quickwinseo.net/" target="_blank">
-                    Our QuickWin SEO Makes All the Difference.{" "}
+                    Our QuickWin SEO Makes All the Difference{" "}
                   </a>
                 </h2>
                 <h3>Why is it the best move?</h3>
