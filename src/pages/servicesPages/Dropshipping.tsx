@@ -157,12 +157,19 @@ const Dropshipping = () => {
               Access suppliers used by top sellers
             </h2>
             <p style={{ fontSize: "20px" }}>
-              Dropshipping isn't all about selling products, it's about selling
-              the right products that are sourced from reliable suppliers, with
-              profit margins that make your business sustainable. When you pick
-              DigiRocket, you are choosing an agency that will build you a
-              profitable brand with data-backed strategies, high-quality
-              suppliers, and expert marketing techniques.
+              Dropshipping isn't just about selling products—it's about selling
+              the right products from trusted suppliers who support long-term
+              profitability. At DigiRocket, we connect you with the same
+              high-performing suppliers used by top sellers worldwide. Each
+              supplier is carefully vetted to ensure quality, reliability, fast
+              fulfillment, and strong profit margins.
+            </p>
+            <p style={{ fontSize: "20px" }}>
+              By partnering with us, you’re choosing an agency that builds your
+              brand with data-backed strategies, premium suppliers, and expert
+              marketing techniques. With the right products and partners in
+              place, your business is set up to scale confidently and
+              sustainably.
             </p>
           </div>
         </div>
@@ -501,11 +508,11 @@ const Dropshipping = () => {
                         disabled={loading}
                         style={{
                           color: "black",
-                         
+
                           borderColor: "white",
                         }}
                       >
-                        {loading?"Loading":"Submit"}
+                        {loading ? "Loading" : "Submit"}
                       </button>
                     </div>
                   </form>
