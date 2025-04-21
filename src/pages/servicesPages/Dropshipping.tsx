@@ -55,14 +55,14 @@ const Dropshipping = () => {
       title: "Data-Driven Marketing Strategy",
       img: "/assets/img/services/data driven.jpg",
       description:
-        "We don’t just build stores; we drive sales. Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
+        "Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
     },
     {
       id: 6,
       title: "Performance Tracking & Optimization",
       img: "/assets/img/services/performance.jpg",
       description:
-        "We continuously monitor your store’s performance using advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability",
+        "We use advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability.",
     },
   ];
   // const data = ServicesV1Data.find((service) => service.id === "dropshipping");
