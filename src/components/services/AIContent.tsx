@@ -368,10 +368,8 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                 <h2 className="post-title">
                   <Link to={`#`}>Why Choose Us? </Link>
                 </h2>
-                <p>
-                  {whyChooseP1}
-                  {whyChooseP2}
-                </p>
+                <p>{whyChooseP1}</p>
+                <p>{whyChooseP2}</p>
               </div>
             </div>
           </div>
@@ -537,11 +535,11 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",
-                          
+
                           borderColor: "white",
                         }}
                       >
-                        {loading?"Loading":"Submit"}
+                        {loading ? "Loading" : "Submit"}
                       </button>
                     </div>
                   </form>
