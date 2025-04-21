@@ -63,7 +63,6 @@ const EcommerceSeoContent = ({
     importance_title,
   } = serviceInfo || {};
 
-  
   const Skills = [
     "Technical SEO",
     "Keywords Planning",
@@ -95,6 +94,7 @@ const EcommerceSeoContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h3>What we focus on:</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -239,7 +239,6 @@ const EcommerceSeoContent = ({
                       }}
                       className="p-3 ocard  rounded shadow-sm text-center"
                     >
-                    
                       <div
                         style={{ fontWeight: "bold" }}
                         className="text-dark fs-4"
@@ -270,7 +269,6 @@ const EcommerceSeoContent = ({
               </div>
             </div>
           </div>
-
         </div>
         <PriceV2New pricing={pricing} />
 
