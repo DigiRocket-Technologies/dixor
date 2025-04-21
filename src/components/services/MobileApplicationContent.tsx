@@ -72,8 +72,8 @@ const MobileApplicationContent = ({
     },
     {
       icon: "/assets/img/services/Compatibility.svg",
-      title: "Cross-Platform Compatibility.",
-      description: "eamless app experience across both iOS and Android.",
+      title: "Cross-Platform Compatibility",
+      description: "Seamless app experience across both iOS and Android.",
     },
     {
       icon: "/assets/img/services/user centric.svg",
@@ -203,6 +203,7 @@ const MobileApplicationContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h3>What We Offer :</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -212,7 +213,7 @@ const MobileApplicationContent = ({
             </div>
 
             <div style={{ marginTop: "50px" }}>
-              <h2 className="text-center">Features We Offer</h2>
+              <h2 className="text-center">Key Features We Offer</h2>
               <div className="row g-4 mt-4">
                 {features.map((feature, index) => (
                   <div key={index} className="col-12 col-sm-6 col-lg-3">
@@ -495,11 +496,11 @@ const MobileApplicationContent = ({
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",
-                       
+
                           borderColor: "white",
                         }}
                       >
-                        {loading?"Loading":"Submit"}
+                        {loading ? "Loading" : "Submit"}
                       </button>
                     </div>
                   </form>
