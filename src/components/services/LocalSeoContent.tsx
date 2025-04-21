@@ -70,7 +70,7 @@ const LocalSeoContent = ({
     },
     {
       icon: "/assets/img/services/development/growth.svg",
-      title: "Service-Based Professionals .",
+      title: "Service-Based Professionals",
       description: "Helps clients find and contact you in their local area.",
     },
     {
@@ -225,7 +225,7 @@ const LocalSeoContent = ({
             {/* Text */}
             <div className="w-100 w-lg-50 p-4 ">
               <h2 className="post-title">
-                <Link to={`#`}>What Edge Do They Offer Your Business?</Link>
+                <Link to={`#`}>What Edge Will It Give Your Business?</Link>
               </h2>
               <p>
                 Local SEO helps your business appear in search results when
