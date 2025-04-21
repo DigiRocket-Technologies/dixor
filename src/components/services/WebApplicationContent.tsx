@@ -183,6 +183,7 @@ const WebApplicationContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
+                <h3>What We Offer:</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -415,7 +416,6 @@ const WebApplicationContent = ({
                       <div
                         id={`collapse${idx}`}
                         className={`accordion-collapse collapse`}
-                       
                         aria-labelledby={`heading${idx}`}
                         data-bs-parent="#faqAccordion"
                       >
@@ -452,7 +452,8 @@ const WebApplicationContent = ({
                 {/* Right Side (Form Content) */}
                 <div className="col-md-12 col-lg-7 p-4 p-md-5">
                   <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
-                  LEARN HOW WE CAN ENHANCE THE EFFECTIVENESS OF YOUR WEB APP DEVELOPMENT.
+                    LEARN HOW WE CAN ENHANCE THE EFFECTIVENESS OF YOUR WEB APP
+                    DEVELOPMENT.
                   </h2>
 
                   <form onSubmit={handleSubmit}>
@@ -547,15 +548,14 @@ const WebApplicationContent = ({
                       <button
                         disabled={loading}
                         type="submit"
-                      
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",
-                          
+
                           borderColor: "white",
                         }}
                       >
-                        {loading?"Loading":"Submit"}
+                        {loading ? "Loading" : "Submit"}
                       </button>
                     </div>
                   </form>
