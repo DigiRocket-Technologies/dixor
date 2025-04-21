@@ -236,8 +236,8 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                         style={{ width: "60px" }}
                         alt=""
                       />
-                      <h5 className="fw-bold mt-4">{feature.title}</h5>
-                      <p className="mb-0">{feature.description}</p>
+                      <h4 className="fw-bold mt-4">{feature.title}</h4>
+                      {/* <p className="mb-0">{feature.description}</p> */}
                     </div>
                   </div>
                 ))}
