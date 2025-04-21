@@ -80,7 +80,7 @@ const WooCommerceContent = ({
     },
     {
       icon: "/assets/img/services/woocommerce/community.svg",
-      title: "trong Community Support",
+      title: "Strong Community Support",
       description:
         "Join a global community of developers, designers, and store owners ready to help and share knowledge.",
     },
@@ -163,13 +163,21 @@ const WooCommerceContent = ({
                           maxWidth: "500px",
                           height: "500px",
                           width: "100%",
-                          borderRadius:"10px"
+                          borderRadius: "10px",
                         }}
                       />
                     </div>
 
                     {/* Text */}
-                    <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:'column'}} className="w-100 w-lg-50 p-4 text-center">
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        flexDirection: "column",
+                      }}
+                      className="w-100 w-lg-50 p-4 text-center"
+                    >
                       <h2 className="post-title">
                         <Link to={`/blog-single-with-sidebar`}>
                           {item.title}
@@ -217,13 +225,9 @@ const WooCommerceContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`#`}>
-                    What Sets Us Apart?{" "}
-                  </Link>
+                  <Link to={`#`}>Why Choose Us? </Link>
                 </h2>
-                <p>
-                  {whyChooseP1}
-                </p>
+                <p>{whyChooseP1}</p>
                 <p> {whyChooseP2}</p>
               </div>
             </div>
