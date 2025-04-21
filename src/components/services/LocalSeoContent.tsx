@@ -63,18 +63,18 @@ const LocalSeoContent = ({
 
   const features = [
     {
-      icon: "/assets/img/services/development/startup friendly.svg", // Bootstrap Icon class
+      icon: "/assets/img/services/development/small business owner.svg", // Bootstrap Icon class
       title: "Small Business Owners",
       description:
         "Boosts local visibility and drives nearby customers to your doorstep.",
     },
     {
-      icon: "/assets/img/services/development/growth.svg",
+      icon: "/assets/img/services/development/Service-Based Professionals.svg",
       title: "Service-Based Professionals",
       description: "Helps clients find and contact you in their local area.",
     },
     {
-      icon: "/assets/img/services/development/solution.svg",
+      icon: "/assets/img/services/development/Multi-Location brand.svg",
       title: "Multi-Location Brands",
       description:
         "Boosts search visibility for each branch in its specific market.",
