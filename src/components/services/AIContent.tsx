@@ -139,7 +139,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     try {
       setLoading(true);
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendcontactformmail`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendaimail`,
         {
           method: "POST",
           headers: {
@@ -168,6 +168,33 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     }
   };
 
+  const features = [
+    {
+      icon: "/assets/img/services/ai/app.svg", // Bootstrap Icon class
+      title: "Reporting App",
+      description:
+        "Targeting the right people at the right time makes all the difference. Smart marketing drives relevant traffic, boosting engagement and conversions.",
+    },
+    {
+      icon: "/assets/img/services/ai/tracer.svg",
+      title: "Tracer",
+      description:
+        "Personalization is key. Marketing today isn’t just about selling — it’s about building meaningful relationships with your customers.",
+    },
+    {
+      icon: "/assets/img/services/ai/chatbot.svg",
+      title: "Chat Bot ",
+      description:
+        "AI helps analyze data, predict behaviors, and optimize campaigns, giving you a competitive edge in a fast-paced digital world.",
+    },
+    {
+      icon: "/assets/img/services/ai/sales automation.svg",
+      title: "AI Sales Automation",
+      description:
+        "Marketing is constantly evolving. We keep your brand agile, adapting to the latest trends and tools to ensure sustained growth.",
+    },
+  ];
+
   return (
     <>
       <div
@@ -195,6 +222,25 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                     return <li key={idx}>{item}</li>;
                   })}
                 </ul>
+              </div>
+            </div>
+
+            <div className="mt-50 mt-xs-20">
+              <h1>All In One Library of White Label AI Tools</h1>
+              <div className="row g-4 mt-4">
+                {features.map((feature, index) => (
+                  <div key={index} className="col-12 col-sm-6 col-lg-3">
+                    <div className="text-white  p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
+                      <img
+                        src={feature.icon}
+                        style={{ width: "60px" }}
+                        alt=""
+                      />
+                      <h5 className="fw-bold mt-4">{feature.title}</h5>
+                      <p className="mb-0">{feature.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -491,11 +537,11 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",
-                          backgroundColor: "white",
+                          
                           borderColor: "white",
                         }}
                       >
-                        SUBMIT RESPONSES
+                        {loading?"Loading":"Submit"}
                       </button>
                     </div>
                   </form>

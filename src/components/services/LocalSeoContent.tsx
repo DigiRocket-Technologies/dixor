@@ -2,6 +2,7 @@ import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import MostPopularServices from "./MostPopularServices.tsx";
+import { Link } from "react-router-dom";
 
 interface DataType {
   title?: string;
@@ -60,6 +61,26 @@ const LocalSeoContent = ({
     importance_title,
   } = serviceInfo || {};
 
+  const features = [
+    {
+      icon: "/assets/img/services/development/startup friendly.svg", // Bootstrap Icon class
+      title: "Small Business Owners",
+      description:
+        "Boosts local visibility and drives nearby customers to your doorstep.",
+    },
+    {
+      icon: "/assets/img/services/development/growth.svg",
+      title: "Service-Based Professionals .",
+      description: "Helps clients find and contact you in their local area.",
+    },
+    {
+      icon: "/assets/img/services/development/solution.svg",
+      title: "Multi-Location Brands",
+      description:
+        "Boosts search visibility for each branch in its specific market.",
+    },
+  ];
+
   const Skills = [
     "Technical SEO",
     "Keywords Planning",
@@ -101,43 +122,52 @@ const LocalSeoContent = ({
             </div>
             <div>
               <h2 className="text-center">Seo Toolkit</h2>
-              <div style={{display:"flex",marginTop:"50px",justifyContent:"space-evenly",alignItems:"center",flexWrap:"wrap"}} className="">
-                <div style={{width:"200px"}} className="mb-4">
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "50px",
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                }}
+                className=""
+              >
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/ahrefs.png"
                     alt=""
                   />
                 </div>
-                <div style={{width:"200px"}} className="mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/google keyword planner.png"
                     alt=""
                   />
                 </div>
-                <div style={{width:"200px"}} className="mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/google merchant account.png"
                     alt=""
                   />
                 </div>
-                <div style={{width:"200px"}} className="mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/google trends.png"
                     alt=""
                   />
                 </div>
-                <div style={{width:"200px"}} className="mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/screaming frog.png"
                     alt=""
                   />
                 </div>
-                <div style={{width:"200px"}} className="mb-4">
+                <div style={{ width: "200px" }} className="mb-4">
                   <img
                     className="img-fluid"
                     src="/assets/img/partner/semrush1.png"
@@ -156,6 +186,71 @@ const LocalSeoContent = ({
               </div>
             </div>
           </div>
+
+          <div className="mt-20 mt-xs-20">
+            <h1 className="text-center" style={{ marginBottom: "50px" }}>
+              Who Needs Local SEO Services?
+            </h1>
+            <div className="container py-1">
+              <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                {features.map((feature, index) => (
+                  <div key={index} className="col">
+                    <div className="text-white bg-dark p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
+                      <img
+                        src={feature.icon}
+                        style={{ width: "60px" }}
+                        alt=""
+                      />
+                      <h5 className="fw-bold mt-4">{feature.title}</h5>
+                      <p className="mb-0">{feature.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ marginTop: "50px" }}
+            className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+          >
+            {/* Image */}
+            <div className="w-100 w-lg-50 text-center p-2">
+              <img
+                src="/assets/img/about/choose us 1.png"
+                alt="Blog"
+                className="img-fluid"
+                style={{ maxWidth: "500px", height: "500px", width: "100%" }}
+              />
+            </div>
+            {/* Text */}
+            <div className="w-100 w-lg-50 p-4 ">
+              <h2 className="post-title">
+                <Link to={`#`}>What Edge Do They Offer Your Business?</Link>
+              </h2>
+              <p>
+                Local SEO helps your business appear in search results when
+                people nearby are actively looking for your products or
+                services. It improves your visibility on platforms like Google
+                Search and Google Maps, especially for location-based queries
+                such as “near me” or “best service in city.” This targeted
+                exposure connects you with customers who are ready to take
+                action—calling, visiting, or making a purchase. Optimizing your
+                Google Business Profile, managing online reviews, and ensuring
+                accurate local citations also build credibility and trust.
+                Compared to traditional advertising, Local SEO is cost-effective
+                and delivers long-term value by attracting organic traffic
+                without ongoing ad spend.
+              </p>
+              <p>
+                For businesses that rely on local footfall or regional
+                clientele, it’s one of the most impactful marketing strategies
+                available. In short, Local SEO turns local searchers into loyal
+                customers—giving your business a real edge in today’s
+                competitive landscape.
+              </p>
+            </div>
+          </div>
+
           <div style={{ paddingTop: "50px" }} className="">
             <h2>Outrank your competitors with our seo service</h2>
             <div style={{ marginTop: "40px" }}>
@@ -191,7 +286,6 @@ const LocalSeoContent = ({
                       }}
                       className="p-3 ocard  rounded shadow-sm text-center"
                     >
-                    
                       <div
                         style={{ fontWeight: "bold" }}
                         className="text-dark fs-4"
@@ -222,7 +316,6 @@ const LocalSeoContent = ({
               </div>
             </div>
           </div>
-
         </div>
         <PriceV2New pricing={pricing} />
 

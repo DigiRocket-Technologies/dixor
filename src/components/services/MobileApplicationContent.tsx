@@ -154,7 +154,7 @@ const MobileApplicationContent = ({
     try {
       setLoading(true);
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendcontactformmail`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendmobileappmail`,
         {
           method: "POST",
           headers: {
@@ -495,11 +495,11 @@ const MobileApplicationContent = ({
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",
-                          backgroundColor: "white",
+                       
                           borderColor: "white",
                         }}
                       >
-                        BOOK CONSULTATION
+                        {loading?"Loading":"Submit"}
                       </button>
                     </div>
                   </form>

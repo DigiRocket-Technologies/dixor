@@ -501,11 +501,11 @@ const Dropshipping = () => {
                         disabled={loading}
                         style={{
                           color: "black",
-                          backgroundColor: "white",
+                         
                           borderColor: "white",
                         }}
                       >
-                        SUBMIT RESPONSES
+                        {loading?"Loading":"Submit"}
                       </button>
                     </div>
                   </form>

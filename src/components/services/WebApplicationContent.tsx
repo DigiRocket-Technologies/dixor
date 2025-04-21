@@ -132,7 +132,7 @@ const WebApplicationContent = ({
     try {
       setLoading(true);
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendcontactformmail`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendwebappmail`,
         {
           method: "POST",
           headers: {
@@ -415,7 +415,7 @@ const WebApplicationContent = ({
                       <div
                         id={`collapse${idx}`}
                         className={`accordion-collapse collapse`}
-                        //className="accordion-collapse collapse show"  //use this to keep the answers open
+                       
                         aria-labelledby={`heading${idx}`}
                         data-bs-parent="#faqAccordion"
                       >
@@ -452,8 +452,7 @@ const WebApplicationContent = ({
                 {/* Right Side (Form Content) */}
                 <div className="col-md-12 col-lg-7 p-4 p-md-5">
                   <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
-                    LEARN HOW WE CAN ENHANCE THE EFFECTIVENESS OF YOUR
-                    E-COMMERCE PLATFORM'S DEVELOPMENT.
+                  LEARN HOW WE CAN ENHANCE THE EFFECTIVENESS OF YOUR WEB APP DEVELOPMENT.
                   </h2>
 
                   <form onSubmit={handleSubmit}>
@@ -552,11 +551,11 @@ const WebApplicationContent = ({
                         className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
                         style={{
                           color: "black",
-                          backgroundColor: "white",
+                          
                           borderColor: "white",
                         }}
                       >
-                        BOOK CONSULTATION
+                        {loading?"Loading":"Submit"}
                       </button>
                     </div>
                   </form>

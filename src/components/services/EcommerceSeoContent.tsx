@@ -63,15 +63,17 @@ const EcommerceSeoContent = ({
     importance_title,
   } = serviceInfo || {};
 
-  const images = [
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/cloud.png",
-    "/assets/img/partner/semrush.png",
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/sp.png",
-    "/assets/img/partner/sp.png",
+  
+  const Skills = [
+    "Technical SEO",
+    "Keywords Planning",
+    "Competitor Research",
+    "Blog Optimization",
+    "Quality Link building",
+    "Meta optimization",
+    "GSC and GA4 Analysis",
+    "Google my business Optimization",
   ];
-
   return (
     <>
       <div
@@ -221,22 +223,29 @@ const EcommerceSeoContent = ({
                     slidesPerView: 2,
                   },
                   1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                   },
                 }}
               >
-                {images.map((imgSrc, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="p-3 bg-white rounded shadow-sm text-center">
-                      <img
-                        src={imgSrc}
-                        alt={`Partner ${index}`}
-                        style={{
-                          width: "100%",
-                          height: "200px",
-                          objectFit: "contain",
-                        }}
-                      />
+                {Skills.map((name, index) => (
+                  <SwiperSlide className="" key={index}>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "100%",
+                        height: "150px",
+                      }}
+                      className="p-3 ocard  rounded shadow-sm text-center"
+                    >
+                    
+                      <div
+                        style={{ fontWeight: "bold" }}
+                        className="text-dark fs-4"
+                      >
+                        {name}
+                      </div>
                     </div>
                   </SwiperSlide>
                 ))}
@@ -261,6 +270,7 @@ const EcommerceSeoContent = ({
               </div>
             </div>
           </div>
+
         </div>
         <PriceV2New pricing={pricing} />
 
