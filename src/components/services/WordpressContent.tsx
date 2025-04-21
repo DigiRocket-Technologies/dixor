@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import MostPopularServices from "./MostPopularServices.tsx";
 
-import {Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard, Navigation } from "swiper/modules";
 
 interface DataType {
@@ -66,42 +66,42 @@ const WordpressContent = ({
     {
       id: 1,
       title: "Open-Source Platform",
-      img:"/assets/img/services/wordpress/Open-Source Platform.png",
+      img: "/assets/img/services/wordpress/Open-Source Platform.png",
       description:
         "WordPress is free and fully customizable, with constant updates from a vibrant developer community.",
     },
     {
       id: 2,
       title: "User-Friendly Interface",
-      img:"/assets/img/services/wordpress/User-Friendly Interface.png",
+      img: "/assets/img/services/wordpress/User-Friendly Interface.png",
       description:
         "WordPress is designed for ease of use, making it ideal for beginners. At the same time, it offers advanced features and flexibility for experienced developers.",
     },
     {
       id: 3,
       title: "SEO-Friendly",
-      img:"/assets/img/services/wordpress/SEO-Friendly.png",
+      img: "/assets/img/services/wordpress/SEO-Friendly.png",
       description:
         "With built-in SEO tools and plugins, WordPress helps you optimize your site for better visibility in search engines",
     },
     {
       id: 4,
       title: "Scalable and Flexible ",
-      img:"/assets/img/services/wordpress/Scalable and Flexible.png",
+      img: "/assets/img/services/wordpress/Scalable and Flexible.png",
       description:
         "WordPress grows with your business, offering the flexibility to expand your site’s features as needed .",
     },
     {
       id: 5,
       title: "Wide Range of Themes",
-      img:"/assets/img/services/wordpress/Wide Range of Themes.png",
+      img: "/assets/img/services/wordpress/Wide Range of Themes.png",
       description:
         "Choose from thousands of pre-designed themes to create a unique, professional look for your site .",
     },
     {
       id: 6,
       title: "Strong Community Support",
-      img:"/assets/img/services/wordpress/Strong Community Support.png",
+      img: "/assets/img/services/wordpress/Strong Community Support.png",
       description:
         "Benefit from extensive resources, tutorials, and support from a large, active WordPress community.",
     },
@@ -224,7 +224,7 @@ const WordpressContent = ({
                   ))}
                 </div>
               </Swiper>
-              
+
               <div
                 style={{
                   display: "flex",
@@ -293,7 +293,7 @@ const WordpressContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`#`}>Why Choose Us</Link>
+                  <Link to={`#`}>Why Choose Us?</Link>
                 </h2>
                 <p>{whyChooseP1}</p>
                 <p> {whyChooseP2}</p>
