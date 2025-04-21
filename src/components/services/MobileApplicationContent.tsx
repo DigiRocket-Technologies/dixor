@@ -404,7 +404,7 @@ const MobileApplicationContent = ({
                 {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
                 <div className="col-md-5 col-lg-5 d-none d-lg-block">
                   <img
-                    src="/assets/img/services/contact_us.jpg"
+                    src="/assets/img/services/contact_us_2.png"
                     alt="Business professional"
                     className="w-100 h-100 object-fit-cover"
                   />
