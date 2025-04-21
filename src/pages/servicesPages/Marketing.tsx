@@ -145,7 +145,7 @@ const Marketing = () => {
             </div>
           </div>
           <div style={{ marginTop: "50px" }}>
-            <h2>What We Bring To The Table .</h2>
+            <h2>What We Bring to the Table ?</h2>
 
             <div
               style={{ marginTop: "50px" }}
@@ -370,7 +370,10 @@ const Marketing = () => {
               <div className="row align-center">
                 <div className="col-lg-5">
                   <div className="thumb-style-one">
-                    <img src="/assets/img/services/dtfnc.jpg" alt="Image Not Found" />
+                    <img
+                      src="/assets/img/services/dtfnc.jpg"
+                      alt="Image Not Found"
+                    />
                   </div>
                 </div>
                 <div className="col-lg-7">
@@ -405,7 +408,7 @@ const Marketing = () => {
               </div>
             </div>
           </div>
-          <TestimonialMarketing/>
+          <TestimonialMarketing />
           <MostPopularServices />
         </div>
         <DarkClass />
