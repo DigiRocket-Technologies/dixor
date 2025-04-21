@@ -61,13 +61,39 @@ const EcommerceMarketingContent = ({
     importance_title,
   } = serviceInfo || {};
 
-  const images = [
-    "/assets/img/partner/Data-Driven Decisions.jpg",
-    "/assets/img/partner/enhanced Customer Engagement.jpg",
-    "/assets/img/partner/higher conversion rate.jpg",
-    "/assets/img/partner/Increased Brand Visibility.jpg",
-    "/assets/img/partner/Scalable Marketing strategy.jpg",
-    "/assets/img/partner/Targeted Advertising.jpg",
+  // const images = [
+  //   "/assets/img/partner/Data-Driven Decisions.jpg",
+  //   "/assets/img/partner/enhanced Customer Engagement.jpg",
+  //   "/assets/img/partner/higher conversion rate.jpg",
+  //   "/assets/img/partner/Increased Brand Visibility.jpg",
+  //   "/assets/img/partner/Scalable Marketing strategy.jpg",
+  //   "/assets/img/partner/Targeted Advertising.jpg",
+  // ];
+  const images1 = [
+    {
+      img: "/assets/img/partner/Data-Driven Decisions.jpg",
+      title: "Data-Driven Decisions",
+    },
+    {
+      img: "/assets/img/partner/enhanced Customer Engagement.jpg",
+      title: "Enhanced Customer Engagement",
+    },
+    {
+      img: "/assets/img/partner/higher conversion rate.jpg",
+      title: "Higher Conversion Rates",
+    },
+    {
+      img: "/assets/img/partner/Increased Brand Visibility.jpg",
+      title: "Increased Brand Visibility",
+    },
+    {
+      img: "/assets/img/partner/Scalable Marketing strategy.jpg",
+      title: "Scalable Marketing Strategies",
+    },
+    {
+      img: "/assets/img/partner/Targeted Advertising.jpg",
+      title: "Targeted Advertising",
+    },
   ];
 
   return (
@@ -208,11 +234,11 @@ const EcommerceMarketingContent = ({
                     },
                   }}
                 >
-                  {images.map((imgSrc, index) => (
+                  {images1.map((imgSrc, index) => (
                     <SwiperSlide key={index}>
                       <div className="p-3 bg-white rounded shadow-sm text-center">
                         <img
-                          src={imgSrc}
+                          src={imgSrc.img}
                           alt={`Partner ${index}`}
                           style={{
                             width: "100%",
@@ -220,6 +246,12 @@ const EcommerceMarketingContent = ({
                             objectFit: "contain",
                           }}
                         />
+                        <p
+                          className="text-black "
+                          style={{ fontWeight: "bold", fontSize: "24px" }}
+                        >
+                          {imgSrc.title}
+                        </p>
                       </div>
                     </SwiperSlide>
                   ))}
