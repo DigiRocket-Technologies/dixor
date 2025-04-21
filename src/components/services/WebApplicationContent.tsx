@@ -383,10 +383,9 @@ const WebApplicationContent = ({
                 <h2 className="post-title">
                   <Link to={`#`}>Why Choose Us? </Link>
                 </h2>
-                <p>
-                  {whyChooseP1}
-                  {whyChooseP2}
-                </p>
+                <p>{whyChooseP1}</p>
+
+                <p>{whyChooseP2}</p>
               </div>
             </div>
           </div>
