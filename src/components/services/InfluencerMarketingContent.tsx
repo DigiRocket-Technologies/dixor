@@ -401,9 +401,7 @@ const InfluencerMarketingContent = ({
               {/* Text */}
               <div className="w-100 w-lg-50 p-4 ">
                 <h2 className="post-title">
-                  <Link to={`/blog-single-with-sidebar`}>
-                    What Makes Us Different?{" "}
-                  </Link>
+                  <Link to={`/blog-single-with-sidebar`}>What Choose Us? </Link>
                 </h2>
                 <p>{whyChooseP1}</p>
                 <p>{whyChooseP2}</p>
