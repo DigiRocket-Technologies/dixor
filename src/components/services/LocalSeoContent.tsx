@@ -216,7 +216,7 @@ const LocalSeoContent = ({
             {/* Image */}
             <div className="w-100 w-lg-50 text-center p-2">
               <img
-                src="/assets/img/about/choose us 1.png"
+                src="/assets/img/about/what edge will it offer 1.png"
                 alt="Blog"
                 className="img-fluid"
                 style={{ maxWidth: "500px", height: "500px", width: "100%" }}
