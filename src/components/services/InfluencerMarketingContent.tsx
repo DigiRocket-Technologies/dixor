@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PriceV2New from "../price/PriceV2New.tsx";
 import MostPopularServices from "./MostPopularServices.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
- import { Navigation,Keyboard,Autoplay } from "swiper/modules";
+import { Navigation, Keyboard, Autoplay } from "swiper/modules";
 
 interface DataType {
   title?: string;
@@ -66,14 +66,14 @@ const InfluencerMarketingContent = ({
       title: "Strategic Influencer Selection",
       description:
         "We research and handpick influencers who align perfectly with your brand, audience, and objectives.",
-      img:"/assets/img/services/IM/selection.png"  
+      img: "/assets/img/services/IM/selection.png",
     },
     {
       id: 2,
       title: "Tailored Campaign Design",
       description:
         "We craft influencer campaigns that speak directly to your audience, ensuring maximum engagement and impact.",
-        img:"/assets/img/services/IM/tailored campaign design.png"
+      img: "/assets/img/services/IM/tailored campaign design.png",
     },
 
     {
@@ -81,29 +81,29 @@ const InfluencerMarketingContent = ({
       title: "End-to-End Management",
       description:
         "From negotiating terms to overseeing content creation, we manage every detail to ensure seamless execution.",
-        img:"/assets/img/services/IM/end to end.png"
+      img: "/assets/img/services/IM/end to end.png",
     },
     {
       id: 4,
       title: "Creative Collaboration",
       description:
         "We work closely with influencers to create authentic, compelling content that resonates with their audience and drives results.",
-        img:"/assets/img/services/IM/creative collab.png"
+      img: "/assets/img/services/IM/creative collab.png",
     },
     {
       id: 5,
       title: "Data-Driven Optimization",
       description:
         "We continuously track performance, refining strategies based on real-time data to improve results as the campaign progresses.",
-      img:"/assets/img/services/IM/data driven.png"
-      },
+      img: "/assets/img/services/IM/data driven.png",
+    },
     {
       id: 6,
       title: "Impactful Reporting",
       description:
         "We provide detailed performance reports, offering insights into campaign success and actionable recommendations for future efforts.",
-      img:"/assets/img/services/IM/reporting.png"
-      },
+      img: "/assets/img/services/IM/reporting.png",
+    },
   ];
 
   return (
@@ -127,7 +127,7 @@ const InfluencerMarketingContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
-                <h4>What We Offer:</h4>
+                <h3>What We Offer:</h3>
 
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
@@ -205,7 +205,15 @@ const InfluencerMarketingContent = ({
                     </div>
 
                     {/* Text */}
-                    <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}} className="w-100 w-lg-50 p-4 text-center">
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      className="w-100 w-lg-50 p-4 text-center"
+                    >
                       <h2 className="post-title">
                         <Link to={`/blog-single-with-sidebar`}>
                           {item.title}
@@ -355,7 +363,7 @@ const InfluencerMarketingContent = ({
                   ))}
                 </div>
               </Swiper>
-              
+
               <div
                 style={{
                   display: "flex",
@@ -395,9 +403,7 @@ const InfluencerMarketingContent = ({
                     What Makes Us Different?{" "}
                   </Link>
                 </h2>
-                <p>
-                  {whyChooseP1}
-                </p>
+                <p>{whyChooseP1}</p>
                 <p>{whyChooseP2}</p>
               </div>
             </div>

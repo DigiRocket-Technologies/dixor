@@ -4,7 +4,7 @@ import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import MostPopularServices from "./MostPopularServices.tsx";
-import bannerImg2 from "/assets/img/services/banner02.jpg"
+import bannerImg2 from "/assets/img/services/banner02.jpg";
 interface DataType {
   title?: string;
   bannerImg?: string;
@@ -91,7 +91,7 @@ const EcommerceMarketingContent = ({
               </div>
               <div className="col-lg-5 pl-60 pl-md-15 pl-xs-15">
                 <p>{importance_title}</p>
-                <h4>What We Offer:</h4>
+                <h3>What We Offer:</h3>
                 <ul className="feature-list-item">
                   {importance?.map((item, idx) => {
                     return <li key={idx}>{item}</li>;
@@ -155,13 +155,21 @@ const EcommerceMarketingContent = ({
                           maxWidth: "500px",
                           height: "550px",
                           width: "100%",
-                          borderRadius:"10px"
+                          borderRadius: "10px",
                         }}
                       />
                     </div>
 
                     {/* Text */}
-                    <div  style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}} className="w-100 w-lg-50 p-4 text-center">
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      className="w-100 w-lg-50 p-4 text-center"
+                    >
                       <h2 className="post-title">
                         <Link to={`/blog-single-with-sidebar`}>
                           {item.title}
@@ -176,9 +184,7 @@ const EcommerceMarketingContent = ({
             <div
               style={{ marginTop: "50px" }}
               className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
-            >
-            
-            </div>
+            ></div>
             <div>
               <h2>How will it benefit you?</h2>
               <div style={{ marginTop: "40px" }}>
@@ -257,9 +263,7 @@ const EcommerceMarketingContent = ({
                 <h2 className="post-title">
                   <Link to={`/blog-single-with-sidebar`}>Why Choose Us? </Link>
                 </h2>
-                <p>
-                  {whyChooseP1}
-                </p>
+                <p>{whyChooseP1}</p>
                 <p>{whyChooseP2}</p>
               </div>
             </div>
