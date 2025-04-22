@@ -1,4 +1,3 @@
-
 interface DataType {
   id: number;
   title: string;

@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import PriceV2New from "../price/PriceV2New.tsx";
 import MostPopularServices from "./MostPopularServices.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Keyboard, Autoplay } from "swiper/modules";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 interface DataType {
   title?: string;
@@ -44,10 +45,18 @@ interface ServiceDetailsProps {
   pricing?: PricingDataType;
 }
 
+type FormDataType = {
+  socialMedia: string[];
+  // ...other form fields
+  name: string;
+  email: string;
+  phone: string;
+  additional: string;
+};
+
 const InfluencerMarketingContent = ({
   serviceInfo,
   sectionClass,
-  pricing,
 }: ServiceDetailsProps) => {
   const {
     title,
@@ -105,6 +114,75 @@ const InfluencerMarketingContent = ({
       img: "/assets/img/services/IM/reporting.png",
     },
   ];
+
+  const [formData, setFormData] = useState<FormDataType>({
+    name: "",
+    email: "",
+    phone: "",
+    socialMedia: [],
+    additional: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    if (name === "socialMedia") {
+      // Prevent duplicates and add new selection
+      if (!formData.socialMedia.includes(value) && value) {
+        setFormData((prev: any) => ({
+          ...prev,
+          socialMedia: [...prev.socialMedia, value],
+        }));
+      }
+    } else {
+      setFormData((prev) => ({
+        ...prev,
+        [name]: value,
+      }));
+    }
+  };
+
+  const handleRemoveSocialMedia = (platform?: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      socialMedia: prev.socialMedia.filter((item) => item !== platform),
+    }));
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    try {
+      setLoading(true);
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/influencer`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data?.success) {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          socialMedia: [],
+          additional: "",
+        });
+        toast.success("Form Saved Successfully");
+      } else throw new Error(data?.message);
+    } catch (err: any) {
+      toast.warn(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -228,11 +306,6 @@ const InfluencerMarketingContent = ({
 
             <div style={{ marginTop: "50px" }}>
               <h2 className="">Why Influencer Marketing Works?</h2>
-              {/* <p>
-                By leveraging influencers' established relationships with their
-                audience, brands can connect with potential customers in a more
-                genuine and engaging way.
-              </p> */}
               <div className="my-2">
                 <h3 className="mb-1">Authentic Connections</h3>
                 <p className="">
@@ -409,7 +482,6 @@ const InfluencerMarketingContent = ({
             </div>
           </div>
         </div>
-        <PriceV2New pricing={pricing} />
         <div className="container mt-4">
           <MostPopularServices />
           <div className="item">
@@ -445,6 +517,193 @@ const InfluencerMarketingContent = ({
                     </div>
                   );
                 })}
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ paddingBottom: "20px", paddingTop: "40px" }}
+            className="mt-5"
+          >
+            <div className="card shadow bg-dark text-white">
+              <div
+                style={{
+                  maxWidth: "100%",
+
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
+                <div
+                  style={{
+                    display: "flex",
+                    height: "100%",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "40%",
+                  }}
+                  className="d-none d-lg-block"
+                >
+                  <img
+                    src="/assets/img/services/contact_us.jpg"
+                    alt="Business professional"
+                    className="h-100 w-100 object-fit-cover"
+                  />
+                </div>
+
+                {/* Right Side (Form Content) */}
+                <div className="w-80 w-lg-60 p-4 p-md-5">
+                  <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
+                    HELP US UNDERSTAND YOUR NEEDS
+                  </h2>
+
+                  <form onSubmit={handleSubmit}>
+                    <div className="mb-4">
+                      <label className="form-label text-white">Name</label>
+                      <input
+                        name="name"
+                        placeholder="Enter Name"
+                        className="form-control bg-dark text-white"
+                        value={formData.name}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label className="form-label text-white">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Email"
+                        className="form-control bg-dark text-white"
+                        value={formData.email}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label className="form-label text-white">Phone</label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Enter Phone Number"
+                        className="form-control bg-dark text-white"
+                        value={formData.phone}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label className="form-label text-white">
+                        Which social media platforms are you interested in?
+                      </label>
+                      <select
+                        name="socialMedia"
+                        className="form-select bg-dark text-white mb-3"
+                        value=""
+                        onChange={handleChange}
+                      >
+                        <option value="" disabled>
+                          Select a platform
+                        </option>
+                        {[
+                          "Instagram",
+                          "TikTok",
+                          "Facebook",
+                          "Youtube",
+                          "LinkedIn",
+                        ].map((platform: string, idx) => (
+                          <option
+                            key={idx}
+                            value={platform}
+                            disabled={formData.socialMedia.includes(platform)}
+                          >
+                            {platform}
+                          </option>
+                        ))}
+                      </select>
+                      <div
+                        className="gap-2"
+                        style={{
+                          width: "100%",
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "5px",
+                          alignItems: "center",
+                        }}
+                      >
+                        {formData.socialMedia.map((platform) => (
+                          <div
+                            key={platform}
+                            style={{
+                              width: "100%",
+                              display: "flex",
+                              justifyContent: "space-between",
+                              alignItems: "center",
+                              backgroundColor: "rgba(255, 255, 255, 0.1)",
+                              borderRadius: "16px",
+                              padding: "6px 12px",
+                              fontSize: "0.9rem",
+                              fontWeight: "500",
+                              color: "white",
+                              boxSizing: "border-box",
+                              marginBottom: "5px",
+                            }}
+                          >
+                            {platform}
+                            <button
+                              type="button"
+                              onClick={() => handleRemoveSocialMedia(platform)}
+                              style={{
+                                marginLeft: "8px",
+                                background: "none",
+                                border: "none",
+                                color: "white",
+                                cursor: "pointer",
+                                fontSize: "1rem",
+                                lineHeight: "1",
+                              }}
+                              aria-label={`Remove ${platform}`}
+                            >
+                              ✕
+                            </button>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">
+                        Additional Information
+                      </label>
+                      <textarea
+                        name="additional"
+                        placeholder="Enter any additional details"
+                        className="form-control bg-dark text-white"
+                        style={{ height: "120px" }}
+                        value={formData.additional}
+                        onChange={handleChange}
+                      ></textarea>
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <button
+                        type="submit"
+                        disabled={loading}
+                        className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
+                        style={{
+                          color: "black",
+                          borderColor: "white",
+                        }}
+                      >
+                        {loading ? "Loading" : "Submit"}
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

@@ -84,8 +84,8 @@
   position: absolute;
   left: 1rem;
   transform: translateX(-50%);
-  width: 10rem; /* Increased size to fit the image */
-  height: 10rem; /* Increased size to fit the image */
+  width: 4rem; /* Increased size to fit the image */
+  height: 4rem; /* Increased size to fit the image */
   background-color: #1e1e1e; /* Dark background for circle */
   border-radius: 50%;
   border: 3px solid #c9f21d; /* Purple border for circle */
@@ -93,6 +93,14 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+	.timeline-circle{
+    width: 2rem; /* Increased size to fit the image */
+    height: 2rem;
+	}
 }
 
 .circle-icon {
@@ -107,7 +115,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   border-radius: 0.5rem;
   border: 1px solid #333333;
-  max-width: 24rem;
+  max-width: 30rem;
 }
 
 .card-title {

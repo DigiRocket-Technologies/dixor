@@ -70,6 +70,33 @@ const Dropshipping = () => {
   //   (service) => service.serviceId === "dropshipping"
   // );
 
+  const features = [
+    {
+      icon: "/assets/img/services/dropshipping/unriable deliveries.jpg", // Bootstrap Icon class
+      title: "Unreliable Delivery",
+      description:
+        "You have no control over shipping times, leading to frustrated customers.",
+    },
+    {
+      icon: "/assets/img/services/dropshipping/Poor Product Quality.jpg",
+      title: "Poor Product Quality",
+      description:
+        "Customers often receive damaged or incorrect items, resulting in high return rates and refunds.",
+    },
+    {
+      icon: "/assets/img/services/dropshipping/low repeated customers.png",
+      title: "Low Repeat Customers",
+      description:
+        "Bad experiences mean fewer returning buyers and negative reviews.",
+    },
+    {
+      icon: "/assets/img/services/dropshipping/high duties.jpg",
+      title: "High Duties",
+      description:
+        "With tariffs of up to 60% on Chinese products (imposed by the US administration), your profit margins shrink significantly.",
+    },
+  ];
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -171,6 +198,31 @@ const Dropshipping = () => {
               place, your business is set up to scale confidently and
               sustainably.
             </p>
+          </div>
+        </div>
+        <div className="container mt-50 mt-xs-20">
+          <h1 className="text-center">
+            Start Your Dropshipping Business The Right Way
+          </h1>
+          <h4 className="mt-5 text-center">
+            Are you tired of the pitfalls of Chinese dropshipping? Many
+            entrepreneurs jump into dropshipping with high hopes, only to face
+            disappointing results. Due to reasons like:
+          </h4>
+          <div className="row g-4 mt-4">
+            {features.map((feature, index) => (
+              <div key={index} className="col-12 col-sm-6 col-lg-3">
+                <div className="text-white  p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
+                  <img
+                    src={feature.icon}
+                    style={{ width: "100px", height: "100px" }}
+                    alt=""
+                  />
+                  <h4 className="fw-bold mt-4">{feature.title}</h4>
+                  <p className="mb-0">{feature.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         <div style={{ marginTop: "100px" }}>
@@ -279,10 +331,53 @@ const Dropshipping = () => {
             </div>
           </div>
         </div>
+
         <div>
           <CardWithProgressBar />
         </div>
-
+        <div
+          style={{ marginTop: "50px" }}
+          className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+        >
+          {/* Image */}
+          <div className="w-100 w-lg-50 text-center p-2">
+            <img
+              src="/assets/img/blog/why.png"
+              alt="Blog"
+              className="img-fluid"
+              style={{ maxWidth: "500px", height: "500px", width: "100%" }}
+            />
+          </div>
+          {/* Text */}
+          <div className="drop w-100 w-lg-50 p-4 ">
+            <h2 className="post-title">Why Choose Us?</h2>
+            <ul style={{ width: "70%" }}>
+              <li>
+                <span style={{ fontWeight: "bold" }}>No More Guesswork</span>:
+                We handle the research, planning, and setup so you can focus on
+                growing your business.
+              </li>
+              <li>
+                {" "}
+                <span style={{ fontWeight: "bold" }}>
+                  Duty-Free Solutions:
+                </span>{" "}
+                Avoid hefty tariffs by sourcing products from non-Chinese
+                suppliers.
+              </li>
+              <li>
+                <span style={{ fontWeight: "bold" }}>Proven Results:</span> Our
+                strategies have helped countless entrepreneurs build successful
+                dropshipping businesses.{" "}
+              </li>
+              <li>
+                <span style={{ fontWeight: "bold" }}>End-to-End Support:</span>
+                From niche selection to marketing, we’re with you every step of
+                the way.
+              </li>
+            </ul>
+          </div>
+        </div>
         <div style={{ marginTop: "60px" }} className="container">
           <h2 className="text-center">Start today with the best niche</h2>
           <div
@@ -511,7 +606,6 @@ const Dropshipping = () => {
                         disabled={loading}
                         style={{
                           color: "black",
-
                           borderColor: "white",
                         }}
                       >

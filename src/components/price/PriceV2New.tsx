@@ -23,19 +23,18 @@ interface pricingType {
   serviceId?: string;
 }
 
-interface pricingProps{
-  pricing?:pricingType
+interface pricingProps {
+  pricing?: pricingType;
 }
 
-const PriceV2New = ({ pricing }:pricingProps) => {
-
-  const { monthlyPlans, yearlyPlans} = pricing || {};
+const PriceV2New = ({ pricing }: pricingProps) => {
+  const { monthlyPlans, yearlyPlans, serviceId } = pricing || {};
 
   return (
     <>
       <div
         id="pricing"
-        style={{marginTop:"40px"}}
+        style={{ marginTop: "40px" }}
         className="pricing-style-two-area  bottom-less "
       >
         <div className="container">
@@ -67,40 +66,44 @@ const PriceV2New = ({ pricing }:pricingProps) => {
         </div>
         <div className="container">
           <div className="pricing-style-two-items">
-            <div className="row">
-              <div className="col-lg-12 text-center">
-                <div
-                  className="nav nav-tabs pricing-tab-navs"
-                  id="nav-tab"
-                  role="tablist"
-                >
-                  <button
-                    className="nav-link active"
-                    id="nav-id-1"
-                    data-bs-toggle="tab"
-                    data-bs-target="#tab1"
-                    type="button"
-                    role="tab"
-                    aria-controls="tab1"
-                    aria-selected="true"
+            {serviceId !== "shopify-development" ? (
+              <div className="row">
+                <div className="col-lg-12 text-center">
+                  <div
+                    className="nav nav-tabs pricing-tab-navs"
+                    id="nav-tab"
+                    role="tablist"
                   >
-                    <span>Monthly</span>
-                  </button>
-                  <button
-                    className="nav-link"
-                    id="nav-id-2"
-                    data-bs-toggle="tab"
-                    data-bs-target="#tab2"
-                    type="button"
-                    role="tab"
-                    aria-controls="tab2"
-                    aria-selected="false"
-                  >
-                    <span>Yearly</span>
-                  </button>
+                    <button
+                      className="nav-link active"
+                      id="nav-id-1"
+                      data-bs-toggle="tab"
+                      data-bs-target="#tab1"
+                      type="button"
+                      role="tab"
+                      aria-controls="tab1"
+                      aria-selected="true"
+                    >
+                      <span>Monthly</span>
+                    </button>
+                    <button
+                      className="nav-link"
+                      id="nav-id-2"
+                      data-bs-toggle="tab"
+                      data-bs-target="#tab2"
+                      type="button"
+                      role="tab"
+                      aria-controls="tab2"
+                      aria-selected="false"
+                    >
+                      <span>Yearly</span>
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              ""
+            )}
             <div
               className="tab-content pricing-tab-content"
               id="nav-tabContent"
@@ -113,7 +116,7 @@ const PriceV2New = ({ pricing }:pricingProps) => {
                 aria-labelledby="nav-id-1"
               >
                 <div className="row">
-                  {monthlyPlans?.map((plan:PricingPlan) => (
+                  {monthlyPlans?.map((plan: PricingPlan) => (
                     <div
                       className="col-xl-4 col-lg-6 col-md-6 mb-30"
                       key={plan.id}
@@ -132,7 +135,7 @@ const PriceV2New = ({ pricing }:pricingProps) => {
                 aria-labelledby="nav-id-2"
               >
                 <div className="row">
-                  {yearlyPlans?.map((plan:PricingPlan) => (
+                  {yearlyPlans?.map((plan: PricingPlan) => (
                     <div
                       className="col-xl-4 col-lg-6 col-md-6 mb-30"
                       key={plan.id}

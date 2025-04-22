@@ -123,6 +123,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     aiService: "",
     additional: "",
   });
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e: any) => {
@@ -171,27 +172,26 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
   const features = [
     {
       icon: "/assets/img/services/ai/app.svg", // Bootstrap Icon class
-      title: "Reporting App",
+      title: "AI Project Coordinator",
       description:
-        "Targeting the right people at the right time makes all the difference. Smart marketing drives relevant traffic, boosting engagement and conversions.",
-    },
+        "Converts raw business data into interactive videos where users can explore insights by asking questions."},
     {
       icon: "/assets/img/services/ai/tracer.svg",
-      title: "Tracer",
+      title: "Spider Sage",
       description:
-        "Personalization is key. Marketing today isn’t just about selling — it’s about building meaningful relationships with your customers.",
+        "A powerful scraper that processes bulk website links to collect and store targeted data automatically.",
     },
     {
       icon: "/assets/img/services/ai/chatbot.svg",
-      title: "Chat Bot ",
+      title: "DROK: Worlds First AI Marketing Expert ",
       description:
-        "AI helps analyze data, predict behaviors, and optimize campaigns, giving you a competitive edge in a fast-paced digital world.",
+        "It is powered by an advanced LLM, built to solve your marketing challenges with expert-level precision.",
     },
     {
       icon: "/assets/img/services/ai/sales automation.svg",
       title: "AI Sales Automation",
       description:
-        "Marketing is constantly evolving. We keep your brand agile, adapting to the latest trends and tools to ensure sustained growth.",
+        "An agentic AI package that calls, collects and automates the entire sales process from outreach to follow-up.",
     },
   ];
 
@@ -237,7 +237,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                         alt=""
                       />
                       <h4 className="fw-bold mt-4">{feature.title}</h4>
-                      {/* <p className="mb-0">{feature.description}</p> */}
+                      <p className="mb-0">{feature.description}</p>
                     </div>
                   </div>
                 ))}
@@ -245,7 +245,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
             </div>
 
             <div style={{ marginTop: "40px" }}>
-              <h2>Challenges That AI Can Help You Solve</h2>
+              <h2>Challenges That Our AI Can Help You Solve</h2>
               <Swiper
                 loop={true}
                 centeredSlides={false}
