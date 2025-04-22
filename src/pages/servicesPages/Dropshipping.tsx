@@ -5,7 +5,7 @@ import DarkClass from "../../components/classes/DarkClass";
 import banner6 from "/assets/img/services/dropshipping.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BannerV3Data from "../../../src/assets/jsonData/banner/BannerV3Data.json";
-
+import CardWithProgressBar from "../../components/process/CardsWithProgressBar.js";
 import { toast } from "react-toastify";
 
 import {
@@ -278,6 +278,9 @@ const Dropshipping = () => {
               </button>
             </div>
           </div>
+        </div>
+        <div>
+          <CardWithProgressBar />
         </div>
 
         <div style={{ marginTop: "60px" }} className="container">
