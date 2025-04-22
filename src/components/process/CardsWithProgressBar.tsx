@@ -42,7 +42,7 @@ const Card: React.FC<CardProps> = ({ title, content, isLeft }) => {
 
   return (
     <div className={`timeline-card ${isLeft ? "left-card" : "right-card"}`}>
-      <h2 className="card-title">{title}</h2>
+      <h2 style={{color:"#c9f21d"}} className="card-title">{title}</h2>
       <p className="card-content">{formatContent(content)}</p>
     </div>
   );
@@ -187,6 +187,7 @@ const Timeline: React.FC<TimelineProps> = ({
                       {/* Card on right */}
                       <div className="timeline-card-container-mobile">
                         <Card
+                        
                           title={card.title}
                           content={card.content}
                           isLeft={false}

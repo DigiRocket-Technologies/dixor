@@ -352,26 +352,26 @@ const Dropshipping = () => {
           <div className="drop w-100 w-lg-50 p-4 ">
             <h2 className="post-title">Why Choose Us?</h2>
             <ul style={{ width: "70%" }}>
-              <li>
-                <span style={{ fontWeight: "bold" }}>No More Guesswork</span>:
+              <li style={{marginBottom:"8px"}}>
+                <span style={{ fontWeight: "bold",fontSize:"20px" }}>No More Guesswork</span>:
                 We handle the research, planning, and setup so you can focus on
                 growing your business.
               </li>
-              <li>
+              <li style={{marginBottom:"8px"}}>
                 {" "}
-                <span style={{ fontWeight: "bold" }}>
+                <span style={{ fontWeight: "bold",fontSize:"20px" }}>
                   Duty-Free Solutions:
                 </span>{" "}
                 Avoid hefty tariffs by sourcing products from non-Chinese
                 suppliers.
               </li>
-              <li>
-                <span style={{ fontWeight: "bold" }}>Proven Results:</span> Our
+              <li style={{marginBottom:"8px"}}>
+                <span style={{ fontWeight: "bold",fontSize:"20px" }}>Proven Results:</span> Our
                 strategies have helped countless entrepreneurs build successful
                 dropshipping businesses.{" "}
               </li>
-              <li>
-                <span style={{ fontWeight: "bold" }}>End-to-End Support:</span>
+              <li style={{marginBottom:"8px"}}>
+                <span style={{ fontWeight: "bold",fontSize:"20px" }}>End-to-End Support:</span>
                 From niche selection to marketing, we’re with you every step of
                 the way.
               </li>
@@ -387,8 +387,7 @@ const Dropshipping = () => {
             <Swiper
               className="banner-slide-counter"
               loop={true}
-              grabCursor={true}
-              mousewheel={true}
+        
               centeredSlides={true}
               autoplay={{
                 delay: 5000,

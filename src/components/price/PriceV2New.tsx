@@ -66,7 +66,7 @@ const PriceV2New = ({ pricing }: pricingProps) => {
         </div>
         <div className="container">
           <div className="pricing-style-two-items">
-            {serviceId !== "shopify-development" ? (
+            {serviceId !== "shopify-development"&&serviceId !== "woocommerce-development" ? (
               <div className="row">
                 <div className="col-lg-12 text-center">
                   <div

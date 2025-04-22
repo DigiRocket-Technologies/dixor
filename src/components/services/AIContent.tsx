@@ -174,7 +174,8 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
       icon: "/assets/img/services/ai/app.svg", // Bootstrap Icon class
       title: "AI Project Coordinator",
       description:
-        "Converts raw business data into interactive videos where users can explore insights by asking questions."},
+        "Converts raw business data into interactive videos where users can explore insights by asking questions.",
+    },
     {
       icon: "/assets/img/services/ai/tracer.svg",
       title: "Spider Sage",
@@ -226,7 +227,68 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
             </div>
 
             <div className="mt-50 mt-xs-20">
-              <h1>All In One Library of White Label AI Tools</h1>
+              <div className="w-100">
+                <div className="aitoolsdesc  text-white p-4  h-100">
+                  <a style={{
+                        width: "70%",
+                        paddingTop: "20px",
+                        paddingBottom: "20px",
+                        position: "relative",
+                      }}target="_blank" href="https://drok.digirocket.io/">
+                    {" "}
+                    <div
+                      style={{paddingTop: "40px",
+                        paddingBottom: "20px",}}
+                      className="drokimg rounded-4 text-center shadow-sm border border-secondary"
+                    >
+                      <img
+                        src="/assets/img/services/white 1.png"
+                        style={{ width: "90%" }}
+                        alt=""
+                      />
+                      {/* <div style={{backgroundColor:"white",color:"black",width:"40%",borderRadius:'10px',position:"absolute",top:"-20px",right:"0"}}>Click Here To Try Now</div> */}
+                    </div>
+                  </a>
+                  <div>
+                    <h3
+                      style={{ marginTop: "75px" }}
+                      className="fw-bold text-center"
+                    >
+                      Your Trusted AI Marketing Expert
+                    </h3>
+                    <p className="mb-4">
+                      At the core of this system lies a cutting-edge Large
+                      Language Model (LLM), designed to intelligently and
+                      efficiently address your most pressing marketing
+                      challenges. Trained on a vast and diverse dataset that
+                      spans marketing strategy, digital trends, consumer
+                      psychology, and brand communication, the model is capable
+                      of delivering insights, recommendations, and content that
+                      rival the expertise of seasoned professionals.
+                    </p>
+                    <p className="mb-4">
+                      One of its standout capabilities is its ability to rapidly
+                      synthesize large amounts of information. Instead of
+                      spending hours researching audience behavior or testing
+                      different headlines, marketers can receive real-time
+                      suggestions backed by language intelligence and data
+                      patterns. It can assist with everything from email
+                      marketing and social media content to customer
+                      segmentation and funnel optimization.
+                    </p>
+                    <p>
+                      {" "}
+                      What makes this LLM truly valuable is not just its breadth
+                      of knowledge, but its ability to evolve and learn from
+                      interactions. As it processes more queries and adapts to
+                      specific industries, it becomes even more aligned with the
+                      unique needs of your brand or business. This means faster
+                      workflows, better content, smarter decisions, and
+                      ultimately — higher ROI on your marketing efforts.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div className="row g-4 mt-4">
                 {features.map((feature, index) => (
                   <div key={index} className="col-12 col-sm-6 col-lg-3">

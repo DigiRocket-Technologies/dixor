@@ -5184,6 +5184,7 @@ ul.project-meta {
 .card-style-one .bottom span.medium {
 	font-weight: 600;
 }
+
 .banner-style-eight-heading h2 {
 	font-size: 80px;
 	text-transform: uppercase;
@@ -18276,48 +18277,60 @@ button.Toastify__close-button {
 }
 
 .country-card {
-	transition: transform 0.3s ease; 
-	filter:grayscale(1.0);
-	transition:"1s";
+	transition: transform 0.3s ease;
+	filter: grayscale(1.0);
+	transition: "1s";
 }
 
 .overlay {
 	background: rgba(0, 0, 0, 0.5);
 	width: 100%;
 	height: 100%;
-  }
+}
 
 .country-card:hover {
 	transform: scale(1.05);
-	filter:grayscale(0);
+	filter: grayscale(0);
 }
 
-.ocard{
-	background-color:white;
-	filter:grayscale(1.0);
-	transition:"2s"
+.ocard {
+	background-color: white;
+	filter: grayscale(1.0);
+	transition: "2s"
 }
 
-.ocard:hover{
-	background-color:#c9f21d;
-	filter:grayscale(0.0);
+.ocard:hover {
+	background-color: #c9f21d;
+	filter: grayscale(0.0);
 }
 
-video{
-	opacity:2 !important;
+video {
+	opacity: 2 !important;
 }
 
-h2{
-	text-transform:capitalize !important
+h2 {
+	text-transform: capitalize !important
 }
 
 
 @media screen and (max-width: 580px) {
-	.banner-style-eight-heading h2{
+	.banner-style-eight-heading h2 {
 		font-size: 70 px !important;
 	}
 }
 
-.drop ul li::marker{
-	color:"white" !important
+.drop ul li::marker {
+	color: "white" !important
+}
+
+.aitoolsdesc {
+	display: flex;
+	flex-direction:column;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.drokimg:hover {
+	box-shadow: 0 0 30px #c9f31d !important;
 }
