@@ -8,7 +8,7 @@ interface DataType {
 
 const Breadcrumb = ({ title, breadCrumb, LightMode }: DataType) => {
     return (
-        <>
+        <>   
             <div className={`breadcrumb-area text-center ${LightMode ? "bg-gray" : "bg-dark"}`}
                 style={{ backgroundImage: `url(/assets/img/shape/${LightMode ? "6.jpg" : "10.jpg"})` }}>
                 <div className="container">

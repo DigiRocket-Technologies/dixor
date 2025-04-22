@@ -12,7 +12,7 @@ const ContactUsLightPage = () => {
             </Helmet>
 
             <LayoutV1Light>
-                <Breadcrumb title='Get In Touch' breadCrumb='contact-us-light' LightMode={true} />
+                <Breadcrumb title='Get In Touch' breadCrumb='Contact Us' LightMode={true} />
                 <ContactV1 sectionClass='default-padding-top' />
                 <ContactMap />
             </LayoutV1Light>
