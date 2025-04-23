@@ -62,7 +62,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                     <Link to="/contact-us">Contact</Link>
                   </li>
                   <li>
-                    <Link to="/faqs">FAQS</Link>
+                    <Link to="#">FAQS</Link>
                   </li>
                   <li>
                     <Link to="#">Services</Link>
