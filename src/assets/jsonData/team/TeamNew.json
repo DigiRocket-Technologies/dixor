@@ -191,10 +191,10 @@
     }
   },
   {
-    "id": 25,
-    "thumb": "harsh shoot.png",
-    "name": "Harsh Raj",
-    "designation": "Sales Expert",
+    "id": 20,
+    "thumb": "shaswat shoot.png",
+    "name": "Shashwat Srivastava",
+    "designation": "Paid Ads Executive",
     "social": {
       "linkedin": "",
       "instagram": ""
@@ -240,11 +240,12 @@
       "instagram": ""
     }
   },
+  
   {
-    "id": 20,
-    "thumb": "shaswat shoot.png",
-    "name": "Shashwat Srivastava",
-    "designation": "Paid Ads Executive",
+    "id": 25,
+    "thumb": "harsh shoot.png",
+    "name": "Harsh Raj",
+    "designation": "Sales Expert",
     "social": {
       "linkedin": "",
       "instagram": ""
