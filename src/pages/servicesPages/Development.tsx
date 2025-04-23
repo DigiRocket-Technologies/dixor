@@ -128,7 +128,7 @@ const Development = () => {
                   {/* Text */}
                   <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}} className="w-100 w-lg-50 p-4 text-center">
                     <h2 className="post-title">
-                      <Link to={`/blog-single-with-sidebar`}>{item.title}</Link>
+                      <Link to={`#`}>{item.title}</Link>
                     </h2>
                     <p>{item?.p}</p>
                   </div>
