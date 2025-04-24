@@ -116,7 +116,7 @@ const EcommerceMarketingContent = ({
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    
+
     try {
       setLoading(true);
       const response = await fetch(
@@ -146,7 +146,6 @@ const EcommerceMarketingContent = ({
     } finally {
       setLoading(false);
     }
-
   };
 
   return (
@@ -354,7 +353,7 @@ const EcommerceMarketingContent = ({
             </div>
           </div>
         </div>
-      
+
         <div className="container">
           <MostPopularServices />
           <div className="item">
@@ -400,22 +399,21 @@ const EcommerceMarketingContent = ({
             <div className="card shadow bg-dark text-white">
               <div
                 style={{
-                  maxWidth: "100%",
+                  width: "100%",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  gap: "5%",
                 }}
               >
                 {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
                 <div
                   style={{
-                    display: "flex",
-                    height: "750px",
-                    justifyContent: "center",
-                    alignItems: "center",
+                    height: "100%",
+
                     width: "40%",
                   }}
-                  className="d-none d-lg-block"
+                  className="formImageDiv"
                 >
                   <img
                     src="/assets/img/services/contact_us.jpg"
@@ -425,7 +423,7 @@ const EcommerceMarketingContent = ({
                 </div>
 
                 {/* Right Side (Form Content) */}
-                <div className="w-80 w-lg-60 p-4 p-md-5">
+                <div className="formcontent p-4 p-md-5">
                   <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
                     HELP US UNDERSTAND YOUR NEEDS
                   </h2>
