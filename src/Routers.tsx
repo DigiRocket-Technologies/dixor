@@ -105,6 +105,8 @@ import Dripnation from "./pages/CasestudyPages/DripNation";
 import LadderSafety from "./pages/CasestudyPages/LadderSafety";
 import Terms from "./pages/innerPages/T&C";
 import Privacy from "./pages/innerPages/Privacy";
+import Career from "./pages/innerPages/Career";
+import Services3Page from "./pages/servicesPages/Services3Page";
 const Routers = () => {
     return (
         <>
@@ -143,12 +145,12 @@ const Routers = () => {
                 <Route path='/privacy-policy' element={<Privacy/>}></Route>
 
 
-                <Route path='/privacy-policy' element={<BlogSingleWithSidebarLightPage />}></Route>
+                <Route path='/careers' element={<Career/>}></Route>
 
                 <Route path='/about-us' element={<AboutUsPage2/>}></Route>
                 <Route path='/marketing' element={<Marketing/>}></Route>
                 <Route path='/development' element={<Development/>}></Route>
-
+                <Route path='/services' element={<Services3Page/>}></Route>
                 <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route>
                 <Route path="/case-study/gourmetkitchenworks" element={<GourmetKitchen/>}></Route>
                 <Route path="/case-study/alamocitypopcorn" element={<Alamocity/>}></Route>
@@ -157,7 +159,7 @@ const Routers = () => {
                 <Route path="/case-study/dripnation" element={<Dripnation/>}></Route>
                 <Route path="/case-study/laddersafetyrails" element={<LadderSafety/>}></Route>
 
-                <Route path='/faqs' element={<FaqPage />}></Route>
+                <Route path='/faqs' element={<FaqPage/>}></Route>
 
                 <Route path='*' element={<NotFoundPage />}></Route>
 

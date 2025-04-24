@@ -67,7 +67,7 @@ const ClientsV1 = ({ sectionClass }: DataType) => {
                     threshold={0.2}
                     rootMargin="-50px"
                   >
-                    We’ve partnered with 400+ brands across industries, helping
+                    We’ve partnered with 105+ brands across industries, helping
                     them scale through strategy, design, and execution. Our work
                     speaks through the growth and trust we’ve built together.
                   </SplitText>

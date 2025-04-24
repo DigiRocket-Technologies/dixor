@@ -18334,3 +18334,20 @@ h2 {
 .drokimg:hover {
 	box-shadow: 0 0 30px #c9f31d !important;
 }
+
+.careerform{
+	width:45%;
+}
+
+.careerformimage{
+	display:flex;
+}
+
+@media screen and (max-width: 1280px) {
+	.careerform {
+		width:80%
+	}
+	.careerformimage{
+		display:none;
+	}
+}

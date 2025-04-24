@@ -1,31 +1,36 @@
 import { Helmet } from "react-helmet-async";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import DarkClass from "../../components/classes/DarkClass";
-import ClientsV1 from "../../components/clients/ClientsV1";
-import FunFactV1 from "../../components/fact/FunFactV1";
 import LayoutV1 from "../../components/layouts/LayoutV1";
-import PriceV1 from "../../components/price/PriceV1";
 import ServicesV3 from "../../components/services/ServicesV3";
-import TestimonialV2 from "../../components/testimonial/TestimonialV2";
-
+import MostPopularServices from "../../components/services/MostPopularServices";
+import banner6 from "/assets/img/services/vaishnavi-pic-2.png"
 const Services3Page = () => {
-    return (
-        <>
-            <Helmet>
-                <title>Dixor - Services 3</title>
-            </Helmet>
+  return (
+    <>
+      <Helmet>
+        <title>Services | DigiRocket</title>
+      </Helmet>
 
-            <LayoutV1>
-                <Breadcrumb title='Our Services' breadCrumb='services-3' />
-                <ServicesV3 sectionClass='default-padding bg-gray' />
-                <FunFactV1 sectionClass='default-padding' />
-                <ClientsV1 sectionClass='bg-gray' />
-                <TestimonialV2 />
-                <PriceV1 sectionClass='bg-gray' />
-                <DarkClass />
-            </LayoutV1>
-        </>
-    );
+      <LayoutV1>
+        <Breadcrumb title="Our Services" breadCrumb="Services" />
+        <div className="container">
+          <div className="row ">
+            <div className="col-xl-12">
+              <div className="service-single-thumb">
+                <img src={banner6} alt="Thumb" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <ServicesV3 sectionClass="default-padding bg-gray" />
+        <div className="container">
+          <MostPopularServices />
+        </div>
+        <DarkClass />
+      </LayoutV1>
+    </>
+  );
 };
 
 export default Services3Page;

@@ -50,23 +50,15 @@ import AboutV2 from "../../components/about/AboutV2";
 // import BannerV6 from "../../components/banner/BannerV6";
 // import BannerV7 from "../../components/banner/BannerV7";
 import BannerV8 from "../../components/banner/BannerV8";
-// import BannerV9 from "../../components/banner/BannerV9";
-// import BannerV10 from "../../components/banner/BannerV10";
-// import BlogV1 from "../../components/blog/BlogV1";
-// import AchievementAward from "../../components/awards/AchievementAward";
-// import AwardV1 from "../../components/awards/AwardV1";
-// import ExpertiseV1 from "../../components/expertise/ExpertiseV1";
-// import FunFactV1 from "../../components/fact/FunFactV1";
-// import ContactMap from "../../components/map/ContactMap";
-// import NewsletterV2 from "../../components/newsletter/NewsletterV2";
 import PartnerV2 from "../../components/partner/PartnerV2";
 import ServicesV2 from "../../components/services/ServicesV2";
 import Countries from "../../components/clients/countries";
-// import WhyChooseV1 from "../../components/whyChoose/WhyChooseV1";
-// import WhyChooseV2 from "../../components/whyChoose/WhyChooseV2";
-// import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3";
 
-const dt = () => {
+
+
+const Dt = () => {
+  
+
   return (
     <>
       <Helmet>
@@ -151,14 +143,14 @@ const dt = () => {
           </div>
         </div> */}
         <AboutV2 />
-        <ServicesV2 />
+        <ServicesV2  />
         {/* <p>Brand 1</p> */}
         {/* <BrandV1/> */}
         {/* <p>Brand 2</p> */}
         {/* <BrandV2/> */}
         {/* <p>Focus/Service 1 Preferred</p> */}
         <ClientsV1 sectionClass="bg-gray" />
-        <ServicesV1  sectionClass="bg-gray" hasTitle={true} />
+        <ServicesV1 sectionClass="bg-gray" hasTitle={true} />
         {/* <p>Focus/Service 2 PREFFERED TILL NOW</p> */}
         {/* <ServicesV2 sectionClass="default-padding bg-gray" hasTitle={true} /> */}
         {/* <p>Focus/Service 3</p> */}
@@ -220,7 +212,7 @@ const dt = () => {
         {/* <p>Partner</p> */}
         <PartnerV2 />
 
-        <Countries/>
+        <Countries />
 
         {/* <p>Why Choose V1</p>
         <WhyChooseV1/>
@@ -263,4 +255,4 @@ const dt = () => {
   );
 };
 
-export default dt;
+export default Dt;

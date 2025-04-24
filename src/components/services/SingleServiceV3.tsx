@@ -7,10 +7,11 @@ interface DataType {
     titleLast?: string;
     text?: string;
     number?: string;
+    serviceid?:string
 }
 
 const SingleServiceV3 = ({ service }: { service: DataType }) => {
-    const { id, icon, titleFirst, titleLast, text, number } = service
+    const { icon, titleFirst, text, number,serviceid } = service
 
     return (
         <>
@@ -21,7 +22,7 @@ const SingleServiceV3 = ({ service }: { service: DataType }) => {
                     </div>
                 </div>
                 <div className="info">
-                    <h4><Link to={`/service-details/${id}`}>{titleFirst} <br /> {titleLast}</Link></h4>
+                    <h4><Link to={`/${serviceid}`}>{titleFirst} </Link></h4>
                     <p>{text}</p>
                 </div>
                 <div className="bottom">

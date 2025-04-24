@@ -1,21 +1,19 @@
 import { Helmet } from "react-helmet-async";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import DarkClass from "../../components/classes/DarkClass";
-import QuickContact from "../../components/contact/QuickContact";
-import FaqV1 from "../../components/faq/FaqV1";
 import LayoutV1 from "../../components/layouts/LayoutV1";
+import Faq from "../../components/faq/faq";
 
 const FaqPage = () => {
     return (
         <>
             <Helmet>
-                <title>Dixor - Faq</title>
+                <title>Faqs | DigiRocket</title>
             </Helmet>
 
             <LayoutV1>
-                <Breadcrumb title='Frequently asked question' breadCrumb='faq' />
-                <FaqV1 sectionClass='bg-gray' />
-                <QuickContact title='Need' titleBold='Help?' />
+                <Breadcrumb title='Frequently Asked Questions' breadCrumb='Faqs' />
+                <Faq/>
                 <DarkClass />
             </LayoutV1>
         </>

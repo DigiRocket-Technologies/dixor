@@ -10,7 +10,7 @@ interface DataType {
 const ServicesV2 = ({ sectionClass, hasTitle }: DataType) => {
     return (
         <>
-            <div className={`services-style-two-area overflow-hidden ${sectionClass ? sectionClass : ""}`}>
+            <div id="services" className={`services-style-two-area overflow-hidden ${sectionClass ? sectionClass : ""}`}>
                 {/* Section Title */}
                 {hasTitle &&
                     <div className="container">

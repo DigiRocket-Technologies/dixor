@@ -36,20 +36,14 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                       Gurugram
                     </p>
                   </li>
-                  {/* <li>
-                                        <h4>United Kingdom</h4>
-                                        <p>
-                                            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ
-                                        </p>
-                                    </li> */}
                 </ul>
                 <ul>
-                  <li style={{width:'70%',marginTop:"10px"}}>
-                                        <h4>United Kingdom</h4>
-                                        <p>
-                                            71-75, Shelton Street, Covent Garden, London, WC2H 9JQ
-                                        </p>
-                                    </li>
+                  <li style={{ width: "70%", marginTop: "10px" }}>
+                    <h4>United Kingdom</h4>
+                    <p>
+                      71-75, Shelton Street, Covent Garden, London, WC2H 9JQ
+                    </p>
+                  </li>
                 </ul>
               </div>
               <div className="col-lg-5 offset-lg-1 footer-item">
@@ -62,10 +56,10 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                     <Link to="/contact-us">Contact</Link>
                   </li>
                   <li>
-                    <Link to="#">FAQS</Link>
+                    <Link to="/faqs">FAQS</Link>
                   </li>
                   <li>
-                    <Link to="#">Services</Link>
+                    <Link to="/services">Services</Link>
                   </li>
                   <li>
                     <Link to="/terms-conditions">Term & Conditions</Link>
@@ -74,10 +68,12 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                     <Link to="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to="#">Careers</Link>
+                    <Link to="/careers">Careers</Link>
                   </li>
                   <li>
-                    <Link to="/contact-us">Help Desk</Link>
+                    <a target="_blank" href="http://support.digirocket.io/">
+                      Help Desk
+                    </a>
                   </li>
                 </ul>
                 <div className="footer-contact">

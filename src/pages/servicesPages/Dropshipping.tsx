@@ -25,42 +25,42 @@ const Dropshipping = () => {
     {
       id: 1,
       title: "Winning Product Research",
-      img: "/assets/img/services/winning product.jpg",
+      img: "/assets/img/services/dropshipping/winning product research-100.jpg",
       description:
         "We analyze trending products, search volume, competition, and cost-per-click to find a niche that has high demand and long-term growth potential.",
     },
     {
       id: 2,
       title: "Supplier Sourcing & Logistics",
-      img: "/assets/img/services/supplying.jpg",
+      img: "/assets/img/services/dropshipping/supplier sourcing and logistic-100.jpg",
       description:
         "We connect you with reliable suppliers from the U.S. and duty-free regions to ensure faster shipping times, superior product quality, and better customer satisfaction.",
     },
     {
       id: 3,
       title: "Custom Store & Website Development",
-      img: "/assets/img/services/custom store.jpg",
+      img: "/assets/img/services/dropshipping/custom store and website development-100.jpg",
       description:
         "We design and develop a high-converting online store tailored to your niche, ensuring a seamless user experience and optimized sales funnel.",
     },
     {
       id: 4,
       title: "Branding & Positioning",
-      img: "/assets/img/services/branding.jpg",
+      img: "/assets/img/services/dropshipping/brand positioning-100.jpg",
       description:
         "We help you create a unique brand identity, from logo creation to product packaging",
     },
     {
       id: 5,
       title: "Data-Driven Marketing Strategy",
-      img: "/assets/img/services/data driven.jpg",
+      img: "/assets/img/services/dropshipping/Data driven marketing strategy-100.jpg",
       description:
         "Our expert team develops targeted ad campaigns, SEO strategies, and email marketing plans to scale your business profitably.",
     },
     {
       id: 6,
       title: "Performance Tracking & Optimization",
-      img: "/assets/img/services/performance.jpg",
+      img: "/assets/img/services/dropshipping/performance tracking & marketing strategy-100.jpg",
       description:
         "We use advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability.",
     },
@@ -200,7 +200,7 @@ const Dropshipping = () => {
             </p>
           </div>
         </div>
-        <div className="container mt-50 mt-xs-20">
+        <div  className="container mt-50 mt-xs-20">
           <h1 className="text-center">
             Start Your Dropshipping Business The Right Way
           </h1>
@@ -215,7 +215,7 @@ const Dropshipping = () => {
                 <div className="text-white  p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
                   <img
                     src={feature.icon}
-                    style={{ width: "100px", height: "100px" }}
+                    style={{ width: "80%",aspectRatio:"square" }}
                     alt=""
                   />
                   <h4 className="fw-bold mt-4">{feature.title}</h4>
@@ -225,7 +225,7 @@ const Dropshipping = () => {
             ))}
           </div>
         </div>
-        <div style={{ marginTop: "100px" }}>
+        <div style={{paddingBottom:"40px", marginTop: "100px" }}>
           <div style={{ position: "relative" }} className="container">
             <h2 className="text-center">
               Our Dropshipping Service Encompasses
@@ -252,7 +252,7 @@ const Dropshipping = () => {
                   spaceBetween: 30,
                 },
                 1000: {
-                  slidesPerView: 2.5,
+                  slidesPerView: 2.8,
                   spaceBetween: 40,
                 },
               }}
