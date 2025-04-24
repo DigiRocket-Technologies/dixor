@@ -159,7 +159,7 @@ const Career = () => {
                         className="form-label text-white"
                         htmlFor="fileUpload"
                       >
-                        Upload File
+                        Upload Resume
                       </label>
                       <div
                         style={{
