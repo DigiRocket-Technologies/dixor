@@ -119,7 +119,7 @@ const Dropshipping = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    
 
     try {
       setLoading(true);

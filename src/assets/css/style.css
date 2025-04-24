@@ -18343,6 +18343,13 @@ h2 {
 	display:flex;
 }
 
+.formcontent{
+	width:55%;
+}
+.formImageDiv{
+	display:block;
+}
+
 @media screen and (max-width: 1280px) {
 	.careerform {
 		width:80%
@@ -18350,4 +18357,21 @@ h2 {
 	.careerformimage{
 		display:none;
 	}
+
+	.formImageDiv{
+		display:none;
+	}
+
+	.formcontent{
+		width:90%;
+	}
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+

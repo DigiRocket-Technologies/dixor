@@ -32,8 +32,6 @@ const Career = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-
     const tempData = new FormData();
     tempData.append("name", formData.name);
     tempData.append("email", formData.email);

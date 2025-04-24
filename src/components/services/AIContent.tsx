@@ -136,7 +136,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    
     try {
       setLoading(true);
       const response = await fetch(
@@ -482,21 +482,20 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
             <div className="card shadow bg-dark text-white">
               <div
                 style={{
+                  width:"100%",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  gap:"5%"
                 }}
               >
                 {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
                 <div
                   style={{
-                    display: "flex",
                     height: "100%",
-                    justifyContent: "center",
-                    alignItems: "center",
                     width: "40%",
                   }}
-                  className="d-none  d-lg-block"
+                  className="formImageDiv"
                 >
                   <img
                     src="/assets/img/services/contact_us.jpg"
@@ -506,7 +505,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                 </div>
 
                 {/* Right Side (Form Content) */}
-                <div className="w-80 w-lg-60 p-4 p-md-5">
+                <div className="formcontent p-4 p-md-5">
                   <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
                     HELP US UNDERSTAND YOUR AI SERVICE NEEDS
                   </h2>

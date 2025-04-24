@@ -8,7 +8,7 @@ import ZoomVideoV1 from "../../components/videos/ZoomVideoV1";
 import WhyChooseV1 from "../../components/whyChoose/WhyChooseV1";
 
 const About2LightPage = () => {
-    console.log(document.title);
+    
     return (
         <>
             <Helmet>

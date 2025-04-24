@@ -1,6 +1,5 @@
 // import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
 import { Link } from "react-router-dom";
-import PriceV2New from "../price/PriceV2New.tsx";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -16,6 +15,8 @@ import bannerImg2 from "/assets/img/services/shopify/banner02.jpg";
 import ServicesV4Data from "../../../src/assets/jsonData/services/ServicesV4Data.json";
 import SingleServiceV4 from "./SingleServiceV4";
 import MostPopularServices from "./MostPopularServices.tsx";
+import { toast } from "react-toastify";
+import { useState } from "react";
 interface DataType {
   title?: string;
   bannerImg?: string;
@@ -56,11 +57,7 @@ interface ServiceDetailsProps {
   pricing?: PricingDataType;
 }
 
-const ShopifyContent = ({
-  serviceInfo,
-  sectionClass,
-  pricing,
-}: ServiceDetailsProps) => {
+const ShopifyContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
   const {
     title,
     whyChooseP1,
@@ -111,6 +108,61 @@ const ShopifyContent = ({
     },
   ];
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    industry: "",
+    country: "",
+    budget: 0,
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+   
+    try {
+      setLoading(true);
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/commonform`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({...formData,type:"shopify"}),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data?.success) {
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          industry: "",
+          country: "",
+          budget: 0,
+        });
+        toast.success("Form Saved Successfully");
+      } else throw new Error(data?.message);
+    } catch (err: any) {
+      toast.warn(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <div
@@ -150,7 +202,7 @@ const ShopifyContent = ({
           </div>
         </div>
         <div
-          style={{ width: "90%",margin:"auto", marginTop: "50px" }}
+          style={{ width: "90%", margin: "auto", marginTop: "50px" }}
           className="services-style-four-area default-padding-bottom overflow-hidden blurry-shape-left"
         >
           <div className=" mt-xs-20">
@@ -225,8 +277,7 @@ const ShopifyContent = ({
           <div
             style={{ marginTop: "50px" }}
             className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
-          >
-          </div>
+          ></div>
           <div style={{ marginTop: "0px", paddingTop: "0px" }}>
             <Swiper
               modules={[Pagination, Navigation, Keyboard, Mousewheel, Autoplay]}
@@ -254,7 +305,7 @@ const ShopifyContent = ({
               {features.map((feature, index) => (
                 <SwiperSlide key={index}>
                   <div
-                    style={{ minHeight: "380px",width:"100%" }}
+                    style={{ minHeight: "380px", width: "100%" }}
                     className="feature-card d-flex flex-column justify-content-between text-center p-4 rounded-4 shadow border border-secondary bg-dark h-100"
                   >
                     <div>
@@ -277,7 +328,6 @@ const ShopifyContent = ({
           </div>
         </div>
 
-        <PriceV2New pricing={pricing} />
         <div className="container">
           <MostPopularServices />
           <div className="item">
@@ -313,6 +363,140 @@ const ShopifyContent = ({
                     </div>
                   );
                 })}
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ paddingBottom: "20px", paddingTop: "40px" }}
+            className="mt-5"
+          >
+            <div  className="card shadow bg-dark text-white">
+              <div
+                style={{
+                  width:"100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap:"5%",
+                }}
+              >
+                {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
+                <div
+                  style={{
+                    height: "100%",
+                    width: "40%",
+                  }}
+                  className="formImageDiv"
+                >
+                  <img
+                    src="/assets/img/services/contact_us.jpg"
+                    alt="Business professional"
+                    className="h-100 w-100 object-fit-cover"
+                  />
+                </div>
+
+                {/* Right Side (Form Content) */}
+                <div   className="formcontent p-4 p-md-5">
+                  <h2 className="fw-bold mb-4 fs-3 fs-md-2 text-white">
+                    HELP US UNDERSTAND YOUR QUERY.
+                  </h2>
+
+                  <form onSubmit={handleSubmit}>
+                    <div className="mb-4">
+                      <label className="form-label text-white">Name</label>
+                      <input
+                        name="name"
+                        placeholder="Enter Name"
+                        className="form-control bg-dark text-white"
+                        value={formData.name}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label className="form-label text-white">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Email"
+                        className="form-control bg-dark text-white"
+                        value={formData.email}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div className="mb-4" style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                      <div style={{width:"45%"}} className="">
+                        <label className="form-label text-white">Country</label>
+                        <input
+                          name="country"
+                          placeholder="Enter country name"
+                          className="form-control bg-dark text-white"
+                          value={formData.country}
+                          onChange={handleChange}
+                        />
+                      </div>
+
+                      <div style={{width:"45%"}} className="">
+                        <label className="form-label text-white">Phone</label>
+                        <input
+                          type="tel"
+                          name="phone"
+                          placeholder="Enter Phone Number"
+                          className="form-control bg-dark text-white"
+                          value={formData.phone}
+                          onChange={handleChange}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">Industry</label>
+                      <input
+                        name="industry"
+                        placeholder="Enter industry name"
+                        className="form-control bg-dark text-white"
+                        value={formData.industry}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div className="mb-4">
+                      <label className="form-label text-white">Budget</label>
+                      <input
+                        name="budget"
+                        type="number"
+                        min={0}
+                        placeholder="Enter budget in USD"
+                        className="form-control bg-dark text-white"
+                        onWheel={(e) => e.currentTarget.blur()}
+                        value={formData.budget}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      className=""
+                    >
+                      <button
+                        type="submit"
+                        disabled={loading}
+                        className="btn mx-auto btn-outline-success fw-bold px-3 py-2"
+                        style={{
+                          color: "black",
+
+                          borderColor: "white",
+                        }}
+                      >
+                        {loading ? "Loading" : "Submit"}
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
