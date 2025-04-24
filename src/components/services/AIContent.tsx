@@ -58,32 +58,6 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     importance_title,
   } = serviceInfo || {};
 
-  // const features = [
-  //   {
-  //     icon: "/assets/img/icon/24.png", // Bootstrap Icon class
-  //     title: "First Impressions Count",
-  //     description:
-  //       "Visitors judge your business within seconds. A professional website helps build trust instantly.",
-  //   },
-  //   {
-  //     icon: "/assets/img/icon/24.png",
-  //     title: "User Experience Matters",
-  //     description:
-  //       "A well-structured and visually appealing site ensures visitors stay longer and engage more.",
-  //   },
-  //   {
-  //     icon: "/assets/img/icon/24.png",
-  //     title: "Supports Marketing Efforts",
-  //     description:
-  //       "Whether it’s SEO, content marketing, or social media, your website is the foundation for all digital strategies.",
-  //   },
-  //   {
-  //     icon: "/assets/img/icon/24.png",
-  //     title: "Drives Conversions",
-  //     description:
-  //       "Optimized design and clear call-to-actions turn visitors into customers.",
-  //   },
-  // ];
 
   const cards = [
     {
