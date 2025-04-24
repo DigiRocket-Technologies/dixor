@@ -441,7 +441,7 @@ const WebApplicationContent = ({
                 >
                   <img
                     style={{ height: "80%", objectPosition: "center" }}
-                    src="/assets/img/services/contact_us_2.png"
+                    src="/assets/img/services/contact_us_2.jpg"
                     alt="Business professional"
                     className="w-100 object-fit-cover"
                   />
