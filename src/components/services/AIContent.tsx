@@ -1,7 +1,7 @@
 // import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
 import { Link } from "react-router-dom";
 import MostPopularServices from "./MostPopularServices.tsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard, Navigation } from "swiper/modules";
 import { toast } from "react-toastify";
@@ -47,6 +47,7 @@ interface ServiceDetailsProps {
 }
 
 const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
+  
   const {
     title,
     whyChooseP1,
@@ -57,7 +58,6 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     importance,
     importance_title,
   } = serviceInfo || {};
-
 
   const cards = [
     {
@@ -110,7 +110,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    
+   
     try {
       setLoading(true);
       const response = await fetch(
