@@ -46,10 +46,10 @@ const Career = () => {
         `${import.meta.env.VITE_BACKEND_URL}/api/v1/sendcareer`,
         {
           method: "POST",
-          body: tempData,
           headers: {
             "Accept-Type": "application/json",
           },
+          body: tempData,
         }
       );
 
