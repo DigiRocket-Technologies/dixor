@@ -191,7 +191,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/services/local so.png`}
+                                  src={`/assets/img/services/marketing/local seo-100.jpg`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
@@ -217,7 +217,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/services/ecommerc seo.png`}
+                                  src={`/assets/img/services/marketing/ecommerce seo-100.jpg`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
@@ -243,7 +243,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/services/performance marketing.png`}
+                                  src={`/assets/img/services/marketing/performance marketing-100.jpg`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
@@ -269,7 +269,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/services/social media marketing.png`}
+                                  src={`/assets/img/services/marketing/social media marketing-100.jpg`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
@@ -295,7 +295,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/services/influencer marketing.png`}
+                                  src={`/assets/img/services/marketing/influencer marketing-100.jpg`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}
@@ -321,7 +321,7 @@ const Marketing = () => {
                             <div className="portfolio-style-four">
                               <div className="thumb">
                                 <img
-                                  src={`/assets/img/services/ecommerce marketing.png`}
+                                  src={`/assets/img/services/marketing/ecommerce marketing-100.jpg`}
                                   alt="Image Not Found"
                                   width={700}
                                   height={600}

@@ -102,56 +102,56 @@ const PerformanceMarketingContent = ({
     {
       id: 1,
       title: "Data-Driven Decisions",
-      img: "/assets/img/services/pm/data driven decision.png",
+      img: "/assets/img/services/pm/Data driven decision-100.jpg",
       description:
         "Our strategy is grounded in data. We use strong analytics tools to monitor performance and adjust campaigns in real time.",
     },
     {
       id: 2,
       title: "Targeted PPC Campaigns",
-      img: "/assets/img/services/pm/targeted ppc campaign.png",
+      img: "/assets/img/services/pm/targeted ppc campaigns-100.jpg",
       description:
         "We create highly focused paid campaigns aimed at reaching your ideal audience.",
     },
     {
       id: 3,
       title: "Conversion Rate Optimization",
-      img: "/assets/img/services/pm/conversion rate optimization.png",
+      img: "/assets/img/services/pm/conversion rate optimization-100.jpg",
       description:
         "We continuously test and refine landing pages, ads, and user flow to ensure that visitors take the desired action.",
     },
     {
       id: 4,
       title: "A/B Testing",
-      img: "/assets/img/services/pm/ab testing.png",
+      img: "/assets/img/services/pm/AB testing-100.jpg",
       description:
         "We run A/B tests to compare different strategies and identify the best-performing approaches.",
     },
     {
       id: 5,
       title: "Remarketing Campaigns",
-      img: "/assets/img/services/pm/remarketing.png",
+      img: "/assets/img/services/pm/remarketing campaigns-100.jpg",
       description:
         "We re-engage users who have previously interacted with your brand but didn't convert.",
     },
     {
       id: 6,
       title: "Multi-Platform Advertising",
-      img: "/assets/img/services/pm/multi platform.png",
+      img: "/assets/img/services/pm/multiplatorm advertising-100.jpg",
       description:
         "We use multiple advertising platforms like Google Ads, Facebook Ads, and more to reach a broader audience.",
     },
     {
       id: 7,
       title: "Performance Tracking & Analytics",
-      img: "/assets/img/services/pm/performance tracking.png",
+      img: "/assets/img/services/pm/performance tracking & analytics-100.jpg",
       description:
         "Our detailed reporting helps you understand the success of your campaigns and guides future decision-making for continuous improvement.",
     },
     {
       id: 8,
       title: "Budget Optimization",
-      img: "/assets/img/services/pm/budget optimization.png",
+      img: "/assets/img/services/pm/Budget optimization-100.jpg",
       description:
         "We manage your advertising budget efficiently, allocating resources to the highest-performing campaigns.",
     },
@@ -337,53 +337,6 @@ const PerformanceMarketingContent = ({
                 </button>
               </div>
             </div>
-            {/* <div>
-              <h2 className="">Tools and Platform</h2>
-              <div className="row justify-content-center">
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
-                  <img
-                    className="img-fluid"
-                    src="/assets/img/partner/ahrefs.png"
-                    alt=""
-                  />
-                </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
-                  <img
-                    className="img-fluid"
-                    src="/assets/img/partner/google keyword planner.png"
-                    alt=""
-                  />
-                </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
-                  <img
-                    className="img-fluid"
-                    src="/assets/img/partner/google merchant account.png"
-                    alt=""
-                  />
-                </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
-                  <img
-                    className="img-fluid"
-                    src="/assets/img/partner/google trends.png"
-                    alt=""
-                  />
-                </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
-                  <img
-                    className="img-fluid"
-                    src="/assets/img/partner/screaming frog.png"
-                    alt=""
-                  />
-                </div>
-                <div className="col-6 col-md-4 col-lg-3 mb-4">
-                  <img
-                    className="img-fluid"
-                    src="/assets/img/partner/semrush1.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div> */}
             <div className="mt-50 mt-xs-20">
               <h2>Metrics we use to measure your growth </h2>
               <div style={{ marginTop: "40px", paddingTop: "40px" }}>
