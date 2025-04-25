@@ -7,7 +7,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 type FormDataType = {
-  file: File|null;
+  file: File | null;
   name: string;
   email: string;
   position: string;
@@ -17,8 +17,8 @@ const Career = () => {
   const [formData, setFormData] = useState<FormDataType>({
     name: "",
     email: "",
-    position:"",
-    file:null
+    position: "",
+    file: null,
   });
   const [loading, setLoading] = useState(false);
 
@@ -47,6 +47,9 @@ const Career = () => {
         {
           method: "POST",
           body: tempData,
+          headers: {
+            "Accept-Type": "application/json",
+          },
         }
       );
 
