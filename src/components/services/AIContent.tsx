@@ -1,7 +1,7 @@
 // import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
 import { Link } from "react-router-dom";
 import MostPopularServices from "./MostPopularServices.tsx";
-import {useState } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard, Navigation } from "swiper/modules";
 import { toast } from "react-toastify";
@@ -47,7 +47,6 @@ interface ServiceDetailsProps {
 }
 
 const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
-  
   const {
     title,
     whyChooseP1,
@@ -110,7 +109,7 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-   
+
     try {
       setLoading(true);
       const response = await fetch(
@@ -170,6 +169,15 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     },
   ];
 
+  
+  
+  const contactRef = useRef<HTMLDivElement | null>(null);
+
+  const handleClick=()=>{
+    if(contactRef.current){
+      contactRef.current.scrollIntoView({behavior:"smooth"})
+    }
+  }
   return (
     <>
       <div
@@ -203,16 +211,19 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
             <div className="mt-50 mt-xs-20">
               <div className="w-100">
                 <div className="aitoolsdesc  text-white p-4  h-100">
-                  <a style={{
-                        width: "70%",
-                        paddingTop: "20px",
-                        paddingBottom: "20px",
-                        position: "relative",
-                      }}target="_blank" href="https://drok.digirocket.io/">
+                  <a
+                    style={{
+                      width: "70%",
+                      paddingTop: "20px",
+                      paddingBottom: "20px",
+                      position: "relative",
+                    }}
+                    target="_blank"
+                    href="https://drok.digirocket.io/"
+                  >
                     {" "}
                     <div
-                      style={{paddingTop: "40px",
-                        paddingBottom: "20px",}}
+                      style={{ paddingTop: "40px", paddingBottom: "20px" }}
                       className="drokimg rounded-4 text-center shadow-sm border border-secondary"
                     >
                       <img
@@ -277,6 +288,59 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                     </div>
                   </div>
                 ))}
+              </div>
+              <div className="container" style={{ marginTop: "50px" }}>
+                <h2>Finetune LLM For Your Business</h2>
+                <div
+                  style={{ marginTop: "30px", width: "100%" }}
+                  className={`mb-5 finetunebox`}
+                >
+                  {/* Text */}
+                  <div
+                    className="p-4 finetunecontent"
+                  >
+                    <h2 className="post-title">
+                      <div>What are its benefit?</div>
+                    </h2>
+                    <p>
+                      Fine-tuning a Large Language Model (LLM) for your business
+                      offers a wide range of advantages that significantly
+                      enhance operational efficiency, user engagement, and
+                      overall productivity. By training the model on your
+                      company’s domain-specific data—such as product manuals,
+                      customer queries, emails, or internal documentation—the
+                      LLM becomes highly proficient in understanding the unique
+                      vocabulary, workflows, and tone of your industry.
+                      Additionally, fine-tuned LLMs can dramatically reduce
+                      human workload by automating repetitive tasks such as data
+                      entry, report generation, summarization, and transcription
+                    </p>
+                    <p>
+                      Importantly, when deployed in a secure environment, a
+                      fine-tuned LLM can help maintain data privacy and
+                      compliance with industry regulations, as the model
+                      operates within your infrastructure and does not expose
+                      sensitive information to external APIs. Furthermore, the
+                      adaptability of a fine-tuned model means it can evolve
+                      with your business—learning from ongoing interactions,
+                      feedback, and new data, which ensures its relevance over
+                      time.
+                    </p>
+
+                    <button className="btn" onClick={handleClick}>Contact Now</button>
+                  </div>
+                  <div  className="finetuneimage text-center p-2">
+                    <img
+                      src="/assets/img/team/shubhsir shoot.png"
+                      alt="Blog"
+                      className="img-fluid"
+                      style={{
+                        width: "450px",
+                        height:'550px'
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -449,18 +513,19 @@ const AIContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
               </div>
             </div>
           </div>
-          <div
+          <div 
+            ref={contactRef}
             style={{ paddingBottom: "20px", paddingTop: "40px" }}
             className="mt-5"
           >
             <div className="card shadow bg-dark text-white">
               <div
                 style={{
-                  width:"100%",
+                  width: "100%",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  gap:"5%"
+                  gap: "5%",
                 }}
               >
                 {/* Left Side (Image) - Hidden on small screens, visible on medium and up */}
