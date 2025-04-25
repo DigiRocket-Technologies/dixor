@@ -1,7 +1,7 @@
 // import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json";
 import { Link } from "react-router-dom";
 import MostPopularServices from "./MostPopularServices.tsx";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard, Navigation } from "swiper/modules";
 import { toast } from "react-toastify";
