@@ -65,26 +65,22 @@ const Dropshipping = () => {
         "We use advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability.",
     },
   ];
-  // const data = ServicesV1Data.find((service) => service.id === "dropshipping");
-  // const pricing = pricingInfo.find(
-  //   (service) => service.serviceId === "dropshipping"
-  // );
 
   const features = [
     {
-      icon: "/assets/img/services/dropshipping/unriable deliveries.jpg", // Bootstrap Icon class
+      icon: "/assets/img/services/dropshipping/unreliable deliveries.jpg", // Bootstrap Icon class
       title: "Unreliable Delivery",
       description:
         "You have no control over shipping times, leading to frustrated customers.",
     },
     {
-      icon: "/assets/img/services/dropshipping/Poor Product Quality.jpg",
+      icon: "/assets/img/services/dropshipping/poor product quality.jpg",
       title: "Poor Product Quality",
       description:
         "Customers often receive damaged or incorrect items, resulting in high return rates and refunds.",
     },
     {
-      icon: "/assets/img/services/dropshipping/low repeated customers.png",
+      icon: "/assets/img/services/dropshipping/low repeate customer.jpg",
       title: "Low Repeat Customers",
       description:
         "Bad experiences mean fewer returning buyers and negative reviews.",
