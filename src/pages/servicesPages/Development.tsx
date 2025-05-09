@@ -33,8 +33,8 @@ const Development = () => {
   return (
     <>
       <Helmet>
-        <title>Dixor - Service Details Light</title>
-        <meta title="Custom Web & Ecommerce Development Services | AI & Web Development" content="DigiRocket offers expert development services including AI development, custom web development and ecommerce website development to enhance your online presence."></meta>
+        <title>Custom Web & Ecommerce Development Services | AI & Web Development</title>
+        <meta name="description" content="DigiRocket offers expert development services including AI development, custom web development and ecommerce website development to enhance your online presence."></meta>
       </Helmet>
 
       <LayoutV1>
