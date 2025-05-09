@@ -16,6 +16,7 @@ const EcommerceSeo = () => {
         <>
             <Helmet>
                 <title>Ecommerce-Seo</title>
+                <meta name="description" content="Ecommerce SEO services for your online store" />
             </Helmet>
             
             <LayoutV1>
