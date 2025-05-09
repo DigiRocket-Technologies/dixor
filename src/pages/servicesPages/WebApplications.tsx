@@ -13,8 +13,8 @@ const WebApplication = () => {
     return (
         <>
             <Helmet>
-                <title>Web Application Development | DigiRocket Technologies</title>
-                <meta title="Custom Web Application Development Services | DigiRocket" content="DigiRocket offers expert web application development services, including custom web app development and website application solutions to enhance your business."></meta>
+                <title>Custom Web Application Development Services | DigiRocket</title>
+                <meta name="description" content="DigiRocket offers expert web application development services, including custom web app development and website application solutions to enhance your business."></meta>
             </Helmet>
             
             <LayoutV1>

@@ -14,8 +14,8 @@ const EcommerceMarketing = () => {
     return (
         <>
             <Helmet>
-                <title>Ecommerce Marketing | DigiRocket Technologies</title>
-                <meta title="Ecommerce Marketing Agency & Digital Marketing Services | DigiRocket" content="DigiRocket is a certified ecommerce marketing agency offering ecommerce marketing, Amazon marketing, and expert ecommerce marketing services to boost your online sales."></meta>
+                <title>Ecommerce Marketing Agency & Digital Marketing Services | DigiRocket</title>
+                <meta name="description" content="DigiRocket is a certified ecommerce marketing agency offering ecommerce marketing, Amazon marketing, and expert ecommerce marketing services to boost your online sales."></meta>
             </Helmet>
             
             <LayoutV1>

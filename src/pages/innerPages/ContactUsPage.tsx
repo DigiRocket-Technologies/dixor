@@ -9,8 +9,8 @@ const ContactUsPage = () => {
     return (
         <>
             <Helmet>
-                <title>Contact Us | DigiRocket Technologies</title>
-                <meta title="Contact DigiRocket Technologies | Speak with Our Digital Marketing Experts" ></meta>
+                <title>Contact DigiRocket Technologies | Speak with Our Digital Marketing Experts</title>
+                <meta name="description" content="Get in touch with DigiRocket Technologies to discuss your digital marketing needs. Reach us at info@digirocket.io or call +1 815 688 6366." ></meta>
             </Helmet>
 
             <LayoutV1>

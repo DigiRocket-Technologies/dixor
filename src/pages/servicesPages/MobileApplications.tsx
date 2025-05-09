@@ -13,8 +13,8 @@ const MobileApplication = () => {
     return (
         <>
             <Helmet>
-                <title>Mobile Application Development | DigiRocket Technologies</title>
-                <meta title="Custom Mobile App Development Services & Cross-Platform Solutions" content="DigiRocket offers custom mobile app development services, including cross-platform app development, mobile application design, and the best phone apps for Android."></meta>
+                <title>Custom Mobile App Development Services & Cross-Platform Solutions</title>
+                <meta name="description" content="DigiRocket offers custom mobile app development services, including cross-platform app development, mobile application design, and the best phone apps for Android."></meta>
             </Helmet>
             
             <LayoutV1>

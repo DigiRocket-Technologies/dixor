@@ -8,8 +8,8 @@ const ProjectPage2 = () => {
     return (
         <>
             <Helmet>
-                <title>Portfolio | DigiRocket</title>
-                <meta title="Portfolio: Showcasing Our Digital Marketing & Development Successes" content="Explore DigiRocket's portfolio featuring successful projects in SEO, web design, branding, and more. See how we've helped businesses achieve their digital goals."></meta>
+                <title>Portfolio: Showcasing Our Digital Marketing & Development Successes</title>
+                <meta name="description" content="Explore DigiRocket's portfolio featuring successful projects in SEO, web design, branding, and more. See how we've helped businesses achieve their digital goals."></meta>
             </Helmet>
 
             <LayoutV1>

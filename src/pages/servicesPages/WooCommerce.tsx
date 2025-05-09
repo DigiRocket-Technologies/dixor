@@ -17,8 +17,8 @@ const Woocommerce = () => {
   return (
     <>
       <Helmet>
-        <title>Woo Commerce Development | DigiRocket Technologies</title>
-        <meta title="WooCommerce Development Services & Integration | WooCommerce Agency" content="DigiRocket offers expert WooCommerce development services and integration for your online store. Partner with a leading WooCommerce development agency now."></meta>
+        <title>WooCommerce Development Services & Integration | WooCommerce Agency</title>
+        <meta name="description" content="DigiRocket offers expert WooCommerce development services and integration for your online store. Partner with a leading WooCommerce development agency now."></meta>
       </Helmet>
 
       <LayoutV1>

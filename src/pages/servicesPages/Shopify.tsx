@@ -16,8 +16,8 @@ const Shopify = () => {
   return (
     <>
       <Helmet>
-        <title>Shopify Development | DigiRocket Technologies</title>
-        <meta title="Expert Shopify Development Services & Website Design | DigiRocket" content="DigiRocket is a leading Shopify development company offering expert Shopify Plus development services, custom theme design, and web development for your online store."></meta>
+        <title>Expert Shopify Development Services & Website Design | DigiRocket</title>
+        <meta name="description" content="DigiRocket is a leading Shopify development company offering expert Shopify Plus development services, custom theme design, and web development for your online store."></meta>
       </Helmet>
 
       <LayoutV1>

@@ -156,7 +156,8 @@ const Dropshipping = () => {
   return (
     <>
       <Helmet>
-        <title>Dropshipping | DigiRocket Technologies</title>
+        <title>Explore Dropshipping Services for Entrepreneurs | DigiRocket</title>
+        <meta name="description" content="DigiRocket offers comprehensive dropshipping services, including product research, supplier sourcing, custom store development, and branding, to help entrepreneurs."></meta>
       </Helmet>
 
       <LayoutV1>

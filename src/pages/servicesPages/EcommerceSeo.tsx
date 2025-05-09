@@ -15,8 +15,8 @@ const EcommerceSeo = () => {
     return (
         <>
             <Helmet>
-                <title>Ecommerce-Seo</title>
-                <meta  title="Ecommerce SEO Services to Boost Online Sales & Visibility | DigiRocket" content="DigiRocket offers expert ecommerce SEO services to enhance online store visibility, increase sales, and optimize product listings for better search engine performance." />
+                <title>Ecommerce SEO Services to Boost Online Sales & Visibility | DigiRocket</title>
+                <meta  name="description" content="DigiRocket offers expert ecommerce SEO services to enhance online store visibility, increase sales, and optimize product listings for better search engine performance." />
             </Helmet>
             
             <LayoutV1>
