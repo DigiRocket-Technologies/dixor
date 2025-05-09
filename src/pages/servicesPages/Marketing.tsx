@@ -39,6 +39,7 @@ const Marketing = () => {
     <>
       <Helmet>
         <title>Marketing | Digirocket</title>
+        <meta title="Digital Marketing Company & Website Development Services | DigiRocket" content="DigiRocket is a top marketing company offering digital marketing management services. We use the best AI models for business with leading digital marketing platforms."></meta>
       </Helmet>
 
       <LayoutV1>

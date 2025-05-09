@@ -13,6 +13,7 @@ const LocalSeo = () => {
         <>
             <Helmet>
                 <title>Social Media Marketing | DigiRocket Technologies</title>
+                <meta title="Expert Social Media Marketing Ageny | DigiRocket Technologies" content="DigiRocket offers social media marketing packages and expert SMM services for small businesses to enhance social media presence with advantages of SMO strategy."></meta>
             </Helmet>
             
             <LayoutV1>

@@ -13,6 +13,7 @@ const LocalSeo = () => {
         <>
             <Helmet>
                 <title>Local SEO | DigiRocket Technologies</title>
+                <meta title="Local SEO Services & Expert Solutions to Grow Google Business Profile" content="DigiRocket offers affordable local SEO services to increase Google Business Profile traffic, perform local SEO audits, and generate organic visits to grow your audience."></meta>
             </Helmet>
             
             <LayoutV1>

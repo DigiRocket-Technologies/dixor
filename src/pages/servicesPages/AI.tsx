@@ -13,6 +13,7 @@ const AI = () => {
         <>
             <Helmet>
                 <title>Artificial Intelligence | DigiRocket Technologies</title>
+                <meta title="AI for Business Automation & Marketing Strategy | DigiRocket" content="DigiRocket leverages AI in marketing automation, business intelligence, and small business marketing. Explore AI tools and machine learning to boost efficiency."></meta>
             </Helmet>
             
             <LayoutV1>

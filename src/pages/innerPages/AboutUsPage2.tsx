@@ -73,6 +73,7 @@ const AboutUsPage2 = () => {
     <>
       <Helmet>
         <title> About Us | DigiRocket </title>
+        <meta title="About DigiRocket Technologies | Transforming Startups into Brands" content="DigiRocket Technologies is a passionate team of designers, strategists, and experts committed to helping startups become recognized brands for their business solutions."></meta>
       </Helmet>
 
       <LayoutV1>

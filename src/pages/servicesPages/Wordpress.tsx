@@ -18,6 +18,7 @@ const Wordpress = () => {
     <>
       <Helmet>
         <title>WordPress Development | DigiRocket Technologies</title>
+        <meta title="Custom WordPress Development & Website Design Services | DigiRocket" content="DigiRocket is a leading WordPress development company offering custom WordPress website design, and web development solutions for your business. Explore Digirocket Now!"></meta>
       </Helmet>
 
       <LayoutV1>

@@ -63,6 +63,7 @@ const Dt = () => {
     <>
       <Helmet>
         <title>DigiRocket Technologies</title>
+        <meta title="Top Digital Marketing Agency | DigiRocket Technologies" content="DigiRocket is a top digital marketing agency for small businesses, offering AI growth marketing services, expert digital marketing management, and development services​."></meta>
       </Helmet>
       <div className="smooth-scroll-container">
         <HeaderV1 lightMode={false} />
