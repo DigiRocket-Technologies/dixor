@@ -107,6 +107,8 @@ import Terms from "./pages/innerPages/T&C";
 import Privacy from "./pages/innerPages/Privacy";
 import Career from "./pages/innerPages/Career";
 import Services3Page from "./pages/servicesPages/Services3Page";
+import CandlePearls from "./pages/CasestudyPages/CandlePearls";
+import BrewTheBlend from "./pages/CasestudyPages/BrewTheBlend";
 const Routers = () => {
     return (
         <>
@@ -158,6 +160,8 @@ const Routers = () => {
                 <Route path="/case-study/eyecandybrownsalon" element={<EyeCandy/>}></Route>
                 <Route path="/case-study/dripnation" element={<Dripnation/>}></Route>
                 <Route path="/case-study/laddersafetyrails" element={<LadderSafety/>}></Route>
+                <Route path="/case-study/candlepearls" element={<CandlePearls/>}></Route>
+                <Route path="/case-study/brewtheblend" element={<BrewTheBlend/>}></Route>
 
                 <Route path='/faqs' element={<FaqPage/>}></Route>
 
