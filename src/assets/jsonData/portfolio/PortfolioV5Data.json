@@ -69,5 +69,23 @@
         "thumb": "/assets/img/portfolio/brew the blend.jpg",
         "tag": "Business",
         "title": "Brew The Blend"
+    },
+     {
+        "id": "aquatic-ventures",
+        "thumb": "/assets/img/portfolio/aquatic venture banner img.jpg",
+        "tag": "Business",
+        "title": "Aquatic Venture"
+    },
+     {
+        "id": "axyloza",
+        "thumb": "/assets/img/portfolio/axyloza banner.jpg",
+        "tag": "Business",
+        "title": "Axyloza"
+    },
+     {
+        "id": "chameleon-transfer",
+        "thumb": "/assets/img/portfolio/chameleon transfer banner.jpg",
+        "tag": "Business",
+        "title": "Chameleon Transfer"
     }
 ]

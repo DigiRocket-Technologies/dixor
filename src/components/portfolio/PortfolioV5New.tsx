@@ -65,6 +65,22 @@ const PortfolioV5 = ({ hasShape }: DataType) => {
                     <SinglePortfolioV5 portfolio={portfolio} />
                   </div>
                 ))}
+                {PortfolioV5Data.slice(12, 14).map((portfolio) => (
+                  <div
+                    className="col-lg-6 portfolio-style-five-item"
+                    key={portfolio.id}
+                  >
+                    <SinglePortfolioV5 portfolio={portfolio} />
+                  </div>
+                ))}
+                  {PortfolioV5Data.slice(14, 15).map((portfolio) => (
+                  <div
+                    className="col-lg-6 portfolio-style-five-item"
+                    key={portfolio.id}
+                  >
+                    <SinglePortfolioV5 portfolio={portfolio} />
+                  </div>
+                ))}
               </div>
             </div>
           </div>

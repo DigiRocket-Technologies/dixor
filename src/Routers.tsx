@@ -109,6 +109,9 @@ import Career from "./pages/innerPages/Career";
 import Services3Page from "./pages/servicesPages/Services3Page";
 import CandlePearls from "./pages/CasestudyPages/CandlePearls";
 import BrewTheBlend from "./pages/CasestudyPages/BrewTheBlend";
+import Aquatic from "./pages/CasestudyPages/Aquatic";
+import Axyloza from "./pages/CasestudyPages/Axyloza";
+import Chameleon from "./pages/CasestudyPages/Chameleon";
 const Routers = () => {
     return (
         <>
@@ -162,6 +165,9 @@ const Routers = () => {
                 <Route path="/case-study/laddersafetyrails" element={<LadderSafety/>}></Route>
                 <Route path="/case-study/candlepearls" element={<CandlePearls/>}></Route>
                 <Route path="/case-study/brewtheblend" element={<BrewTheBlend/>}></Route>
+                <Route path="/case-study/aquatic-ventures" element={<Aquatic/>}></Route>
+                <Route path="/case-study/axyloza" element={<Axyloza/>}></Route>
+                <Route path="/case-study/chameleon-transfer" element={<Chameleon/>}></Route>
 
                 <Route path='/faqs' element={<FaqPage/>}></Route>
 
