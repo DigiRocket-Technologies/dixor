@@ -52,11 +52,18 @@ const Privacy = () => {
             The information we gather helps us improve our services, website,
             and customer experience. We may also use your details to:
           </p>
-          <ul style={{marginTop:"10px",paddingLeft:"20px"}} className="mb-2">
+          <ul
+            style={{ marginTop: "10px", paddingLeft: "20px" }}
+            className="mb-2"
+          >
             <li className="listitem">Answer your inquiries</li>
             <li className="listitem">Share relevant updates</li>
-            <li className="listitem">Offer tailored products or services</li>{" "}
-            <li className="listitem">Support our marketing and advertising strategies</li>
+            <li className="listitem">
+              Offer tailored products or services
+            </li>{" "}
+            <li className="listitem">
+              Support our marketing and advertising strategies
+            </li>
           </ul>
           <p>All usage is done with your privacy in mind.</p>
           <h2>Keeping Your Information Safe</h2>
@@ -77,17 +84,36 @@ const Privacy = () => {
             Cookies do not store any personal information by themselves.
           </p>
           <h2>Sharing Information</h2>
+          <ul style={{ paddingLeft: "20px" }} className="listitem mb-4">
+            <li className="listitem">
+              We do not sell or rent your personal information. However, we may
+              share general, non-personal insights (like usage trends) with our
+              partners or advertisers.
+            </li>
+
+            <li className="listitem">
+              In some cases, we may share your data with third-party services
+              that work with us to deliver certain features or fulfill
+              requests—but only when necessary, and with appropriate safeguards
+              in place.
+            </li>
+
+            <li className="listitem">
+              We may also share information if legally required to do so or if
+              we believe such action is necessary to protect our website, users,
+              or legal rights.
+            </li>
+          </ul>
+          <h2>Messaging Privacy Policy (SMS & Mobile Communication)</h2>
           <p>
-            We do not sell or rent your personal information. However, we may
-            share general, non-personal insights (like usage trends) with our
-            partners or advertisers.
-            <br /> In some cases, we may share your data with third-party
-            services that work with us to deliver certain features or fulfill
-            requests—but only when necessary, and with appropriate safeguards in
-            place.
-            <br /> We may also share information if legally required to do so or
-            if we believe such action is necessary to protect our website,
-            users, or legal rights.
+            We do not share mobile-related information with third parties or
+            affiliates for promotional or marketing use. Additionally, any data
+            collected through text message opt-ins, including consent details,
+            is kept strictly confidential and is not sold, shared, or accessed
+            by outside parties.
+            <br /> If you no longer wish to receive mobile updates or alerts,
+            you can unsubscribe anytime by replying with STOP or by emailing us
+            at <a href="mailto:info@digirocket.io">info@digirocket.io</a>
           </p>
           <h2>Third-Party Links</h2>
           <p>
@@ -113,7 +139,9 @@ const Privacy = () => {
             If you have any questions or concerns, feel free to reach out at
             info@digirocket.io.
           </p>
-          <p><span style={{fontWeight:"bold"}}>Last updated</span>: 25/04/25</p>
+          <p>
+            <span style={{ fontWeight: "bold" }}>Last updated</span>: 25/04/25
+          </p>
         </div>
         <DarkClass />
       </LayoutV1>

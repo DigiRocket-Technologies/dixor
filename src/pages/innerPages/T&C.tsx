@@ -42,12 +42,18 @@ const Terms = () => {
             <br />
             You may not:
           </p>
-          <ul style={{paddingLeft:"20px"}} className="listitem mb-4">
-            <li className="listitem">Misuse the site by introducing viruses or harmful content</li>
+          <ul style={{ paddingLeft: "20px" }} className="listitem mb-4">
+            <li className="listitem">
+              Misuse the site by introducing viruses or harmful content
+            </li>
 
-            <li className="listitem">Attempt to gain unauthorized access to our systems</li>
+            <li className="listitem">
+              Attempt to gain unauthorized access to our systems
+            </li>
 
-            <li className="listitem">Copy or reuse content without written permission</li>
+            <li className="listitem">
+              Copy or reuse content without written permission
+            </li>
           </ul>
           <h2>2. Intellectual Property </h2>
           <p>
@@ -94,12 +100,77 @@ const Terms = () => {
             laws of India, and any disputes shall be handled in that
             jurisdiction.
           </p>
+          <h2>9. Refund Policy</h2>
+          <p>
+            Once onboarding is complete and payment has been made, clients are
+            eligible to request a refund within 15 calendar days. Refunds will
+            only be considered under valid circumstances, such as:
+          </p>
+          <ul style={{ paddingLeft: "20px" }} className="listitem mb-4">
+            <li className="listitem">
+              Failure to initiate the project within a reasonable time frame
+            </li>
+          </ul>
+          <p>
+            Refund requests made after the 15-day period will not be accepted.
+            <br />
+            If you wish to cancel our services after the refund window has
+            passed, a 30-day written notice is required. The notice period will
+            be applicable from the end of the current calendar month, and
+            services will continue as scheduled during that period, with
+            standard billing in effect.
+          </p>
+          <h2>10. Messaging Terms & Conditions</h2>
+          <p>
+            By providing your contact information and using our services, you
+            agree to receive informational messages from DigiRocket
+            Technologies. These may include updates such as appointment
+            reminders, service notifications, offers, or other relevant
+            communications.
+            <br />
+            Here’s what you can expect:
+          </p>
+          <ul style={{ paddingLeft: "20px" }} className="listitem mb-4">
+            <li className="listitem">
+              <strong>Brand Name</strong> : DigiRocket Technologies
+            </li>
+
+            <li className="listitem">
+              <strong>Types of Messages</strong> : Service updates, marketing
+              messages, appointment reminders, and notifications
+            </li>
+
+            <li className="listitem">
+              <strong>Message Frequency</strong> : Varies based on your
+              interaction with our services
+            </li>
+
+            <li className="listitem">
+              <strong>Charges</strong> : Message and data rates may apply,
+              depending on your mobile carrier
+            </li>
+
+            <li className="listitem">
+              <strong>Support </strong> : For help, reply HELP or contact us at
+              info@digirocket.io
+            </li>
+            <li className="listitem">
+              <strong> Opt-Out</strong> : You can opt out at any time by
+              replying STOP
+            </li>
+          </ul>
+          <p>
+            Your privacy is important to us. All messaging is managed in
+            accordance with this Privacy Policy and applicable regulations.
+          </p>
           <h2>Contact Us</h2>
           <p>
             If you have any questions about these Terms & Conditions, feel free
             to reach out to us at: info@digirocket.io.
           </p>
-          <p><span style={{fontWeight:"bold"}}>Last updated</span>: 25/04/25</p>
+          <p>
+            <span style={{ fontWeight: "bold" }}>Last updated</span>: 25/04/25
+          </p>
         </div>
         <DarkClass />
       </LayoutV1>
