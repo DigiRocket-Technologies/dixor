@@ -18413,3 +18413,17 @@ input[type=number]::-webkit-outer-spin-button {
 		width: 70%;
 	}
 }
+
+
+.valuesbox{
+	width: 100%;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+	.valuesbox{
+		width: 120%;
+	}
+}
+

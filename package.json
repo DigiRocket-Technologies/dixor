@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "postbuild":"node generate-sitemap.js",
+    "postbuild": "node generate-sitemap.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -16,6 +16,7 @@
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.7",
     "jquery": "^3.7.1",
+    "quill": "^2.0.3",
     "react": "^19.0.0",
     "react-circular-progressbar": "^2.2.0",
     "react-countup": "^6.5.3",

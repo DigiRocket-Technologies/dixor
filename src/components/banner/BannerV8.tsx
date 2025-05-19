@@ -39,11 +39,11 @@ const BannerV8 = ({ lightMode }: DataType) => {
                       threshold={0.2}
                       rootMargin="-50px"
                     >
-                      Skyrocket
+                      Built To SCALE
                     </SplitText>
                   </h2>
 
-                  <h2
+                  {/* <h2
                     className="title-right split-text"
                   >
                     <SplitText
@@ -60,9 +60,9 @@ const BannerV8 = ({ lightMode }: DataType) => {
                       threshold={0.2}
                       rootMargin="-50px"
                     >
-                       Your sales
+                    
                     </SplitText>
-                  </h2>
+                  </h2> */}
                 </div>
               </div>
             </div>

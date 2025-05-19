@@ -1,20 +1,38 @@
 [
     {
         "id": 1,
-        "serviceName": "Integrity",
+        "serviceName": "Client Centric Innovation",
         "img":"/assets/img/about/integrity.svg",
         "count": "01"
     },
     {
         "id": 2,
         "img":"/assets/img/about/work together.svg",
-        "serviceName": "Team Work",
+        "serviceName": "Ownership Culture",
         "count": "02"
     },
     {
         "id": 3,
         "img":"/assets/img/about/commitment.svg",
-        "serviceName": "Customer Commitment",
+        "serviceName": "Transparency and Integrity",
+        "count": "03"
+    },
+     {
+        "id": 4,
+        "serviceName": "Empathy and Respect",
+        "img":"/assets/img/about/integrity.svg",
+        "count": "01"
+    },
+    {
+        "id": 5,
+        "img":"/assets/img/about/work together.svg",
+        "serviceName": "Humility",
+        "count": "02"
+    },
+    {
+        "id": 6,
+        "img":"/assets/img/about/commitment.svg",
+        "serviceName": "Collaborate to Elevate",
         "count": "03"
     }
 ]

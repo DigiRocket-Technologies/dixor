@@ -112,6 +112,14 @@ import BrewTheBlend from "./pages/CasestudyPages/BrewTheBlend";
 import Aquatic from "./pages/CasestudyPages/Aquatic";
 import Axyloza from "./pages/CasestudyPages/Axyloza";
 import Chameleon from "./pages/CasestudyPages/Chameleon";
+import AllBlogPagesAdmin from "./pages/blogPages/AllBlogPagesAdmin";
+import QuillEditor from "./components/editor/QuillEditor";
+import EditBlog from "./components/editor/editBlog";
+import CheckAuth from "./components/protected/checkAuth";
+import AdminLogin from "./pages/Login/adminLogin";
+// import AllBlogPages from "./pages/blogPages/AllBlogPages";
+import BlogSinglePage from "./pages/blogPages/BlogSinglePage";
+import Thrive from "./pages/CasestudyPages/Thrive";
 const Routers = () => {
     return (
         <>
@@ -168,10 +176,20 @@ const Routers = () => {
                 <Route path="/case-study/aquatic-ventures" element={<Aquatic/>}></Route>
                 <Route path="/case-study/axyloza" element={<Axyloza/>}></Route>
                 <Route path="/case-study/chameleon-transfer" element={<Chameleon/>}></Route>
+                 <Route path="/case-study/thrivewell-sports" element={<Thrive/>}></Route>
 
                 <Route path='/faqs' element={<FaqPage/>}></Route>
+                {/* <Route path='/blogs' element={<AllBlogPages/>}></Route> */}
+                <Route path ="/blog/:id" element={<BlogSinglePage/>}></Route>
+
 
                 <Route path='*' element={<NotFoundPage />}></Route>
+                 <Route path ="/admin" element={<AdminLogin/>}></Route>  
+                 <Route element={<CheckAuth/>}> 
+                 <Route path ="/admin/blogs" element={<AllBlogPagesAdmin/>}></Route>
+                   <Route path ="/admin/addblog" element={<QuillEditor/>}></Route>
+                   <Route path ="/admin/editblog/:id" element={<EditBlog/>}></Route>
+                 </Route> 
 
                 {/* DIGIROCKET ROUTES END OVER HERE */}
 

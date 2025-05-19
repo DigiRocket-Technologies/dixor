@@ -48,7 +48,7 @@ const ContactV1 = ({ sectionClass }: DataType) => {
                       <div className="info">
                         <h4>India</h4>
                         <p>
-                          Unit No. 259, Tower B1, SPAZE ITECH PARK
+                          9A, Tower B4, SPAZE ITECH PARK
                           <br /> Sector 49 Gurugram
                         </p>
                       </div>

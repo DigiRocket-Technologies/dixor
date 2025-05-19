@@ -87,5 +87,11 @@
         "thumb": "/assets/img/portfolio/chameleon transfer banner.jpg",
         "tag": "Business",
         "title": "Chameleon Transfer"
+    },
+    {
+        "id": "thrivewell-sports",
+        "thumb": "/assets/img/portfolio/thrivell sports banner 2.jpg",
+        "tag": "Business",
+        "title": "ThriveWell Sports"
     }
 ]
