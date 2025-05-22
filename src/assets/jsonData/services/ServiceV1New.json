@@ -262,7 +262,7 @@
   },
   {
     "id": "artificial-intelligence",
-    "bannerImg": "/assets/img/services/dev.jpg",
+    "bannerImg": "/assets/img/services/ai/ai home page banner.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "type": "development",
@@ -564,7 +564,7 @@
   },
   {
     "id": "content-personalization-and-predictive-Analysis",
-    "bannerImg": "/assets/img/banner/Ecommerce SEO banner1.jpg",
+    "bannerImg": "/assets/img/services/ai/cpapa.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "type": "ai",
@@ -603,7 +603,7 @@
   },
   {
     "id": "agentic-process-automation",
-    "bannerImg": "/assets/img/services/4.jpg",
+    "bannerImg": "/assets/img/services/sudanshu.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "type": "ai",
@@ -642,7 +642,7 @@
   },
   {
     "id": "custom-llm-and-fine-tuning",
-    "bannerImg": "/assets/img/services/woo commerce banner.jpg",
+    "bannerImg": "/assets/img/services/ai/custom-llm.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "type": "ai",
@@ -680,7 +680,7 @@
   },
   {
     "id": "custom-ai-tool-development",
-    "bannerImg": "/assets/img/services/shopify/banner01.jpg",
+    "bannerImg": "/assets/img/services/ai/ai-tool.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "type": "ai",
