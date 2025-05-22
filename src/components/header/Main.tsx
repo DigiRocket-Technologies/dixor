@@ -85,9 +85,9 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
                 Mobile Applications
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/artificial-intelligence">Artificial Intelligence</Link>
-            </li>
+            </li> */}
           </ul>
         </li>
         <li className="dropdown">
@@ -109,6 +109,30 @@ const MainMenu = ({ navbarPlacement, toggleSubMenu }: DataType) => {
           >
             Portfolio
           </Link>
+        </li>
+        <li className="dropdown">
+          <Link
+            to="/artificial-intelligence"
+            className="dropdown-toggle"
+            data-toggle="dropdown"
+            onClick={toggleSubMenu}
+          >
+            Artificial Intelligence
+          </Link>
+          <ul className="dropdown-menu">
+            <li>
+              <Link to="/content-personalization-and-predictive-Analysis">Content Personalization and Predictive Analysis</Link>
+            </li>
+            <li>
+              <Link to="/custom-llm-and-fine-tuning">Custom LLM and Fine Tuning</Link>
+            </li>
+            <li>
+              <Link to="/custom-ai-tool-development">Custom AI Tool Development</Link>
+            </li>
+            <li>
+              <Link to="/agentic-processs-automation">Agentic Process Automation</Link>
+            </li>
+          </ul>
         </li>
         <li>
           <Link to="/contact-us">contact</Link>

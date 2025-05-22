@@ -18427,3 +18427,26 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 }
 
+.features-grid {
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+  grid-template-columns: 1fr; /* default: 1 column */
+}
+
+/* ≥1200px - 2 columns */
+@media (min-width: 1200px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature-item {
+  display: flex;
+  gap: 15px;
+}
+
+.feature-item img {
+  width: 30px;
+  height: 30px;
+}

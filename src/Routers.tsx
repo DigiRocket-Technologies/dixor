@@ -120,6 +120,11 @@ import AdminLogin from "./pages/Login/adminLogin";
 // import AllBlogPages from "./pages/blogPages/AllBlogPages";
 import BlogSinglePage from "./pages/blogPages/BlogSinglePage";
 import Thrive from "./pages/CasestudyPages/Thrive";
+import CPAPA from "./pages/servicesPages/CPAPA";
+import AgenticPage from "./pages/servicesPages/AgenticPage";
+import CLLMPAGE from "./pages/servicesPages/CLLMPage";
+import CToolPage from "./pages/servicesPages/CToolPage";
+// import NewCareers from "./pages/innerPages/NewCareers";
 const Routers = () => {
     return (
         <>
@@ -141,6 +146,12 @@ const Routers = () => {
                 <Route path='/mobile-application-development' element={<MobileApplication/>}></Route>
                 <Route path='/application-development' element={<BlogSingleWithSidebarLightPage />}></Route>
                 <Route path='/artificial-intelligence' element={<AI/>}></Route>
+         
+                <Route path='/content-personalization-and-predictive-Analysis' element={<CPAPA/>}></Route>
+                
+                <Route path='/agentic-processs-automation' element={<AgenticPage/>}></Route>
+                 <Route path='/custom-llm-and-fine-tuning' element={<CLLMPAGE/>}></Route>
+                 <Route path='/custom-ai-tool-development' element={<CToolPage/>}></Route>
 
                 <Route path='/dropshipping' element={<Dropshipping/>}></Route>
 
@@ -179,6 +190,7 @@ const Routers = () => {
                  <Route path="/case-study/thrivewell-sports" element={<Thrive/>}></Route>
 
                 <Route path='/faqs' element={<FaqPage/>}></Route>
+                {/* <Route path='/test' element={<NewCareers/>}></Route> */}
                 {/* <Route path='/blogs' element={<AllBlogPages/>}></Route> */}
                 <Route path ="/blog/:id" element={<BlogSinglePage/>}></Route>
 

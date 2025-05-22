@@ -262,7 +262,7 @@
   },
   {
     "id": "artificial-intelligence",
-    "bannerImg": "/assets/img/services/sudanshu.jpg",
+    "bannerImg": "/assets/img/services/dev.jpg",
     "img1": "/assets/img/portfolio/45.jpg",
     "img2": "/assets/img/portfolio/46.jpg",
     "type": "development",
@@ -560,6 +560,162 @@
         "a": "Yes. We provide training or documentation so you can easily manage products, orders, and marketing—even with no tech background."
       }
     ],
+    "activeClass": ""
+  },
+  {
+    "id": "content-personalization-and-predictive-Analysis",
+    "bannerImg": "/assets/img/banner/Ecommerce SEO banner1.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
+    "type": "ai",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Content Personalization And Predictive Analysis",
+    "definition": "Content Personalization and Predictive Analysis combine to create smarter, more engaging digital experiences. Content personalization tailors website elements, product suggestions, and user journeys based on real-time behavior, preferences, and past interactions. Predictive analysis, powered by historical data and machine learning, anticipates future customer actions and market shifts.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Deeper User Engagement",
+      "Improved Conversion Rates",
+      "Smarter, Data-Driven Decisions"
+    ],
+    "importance_title": "When used together, these tools empower businesses to deliver highly relevant experiences while proactively fine-tuning strategies for stronger engagement and improved results.",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "How does content personalization work?",
+        "a": "Content personalization uses user data—like behavior, preferences, and past interactions—to dynamically deliver relevant content, offers, or product recommendations tailored to each individual."
+      },
+      {
+        "q": "What is predictive analysis and how is it used?",
+        "a": "Predictive analysis uses historical and real-time data, along with machine learning models, to forecast future outcomes—such as customer behavior, sales trends, or engagement levels."
+      },
+      {
+        "q": "Can personalization and predictive analytics be used together?",
+        "a": "Absolutely. Predictive insights can power smarter personalization by anticipating what a user might need or do next, allowing you to deliver timely and relevant content automatically."
+      },
+      {
+        "q": "What kind of data is needed for personalization and prediction?",
+        "a": "Typical data sources include website activity, purchase history, demographic info, CRM data, and engagement metrics—all of which help models make accurate and useful predictions."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "agentic-process-automation",
+    "bannerImg": "/assets/img/services/4.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
+    "type": "ai",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Agentic Processs Automation",
+    "definition": "Agentic Process Automation merges smart autonomous agents with advanced automation to manage complex, decision-based workflows independently. These agents understand context, make informed decisions, and carry out tasks dynamically across multiple systems—minimizing human intervention while maximizing efficiency.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Autonomous Decision-Making",
+      "Improved Operational Efficiency",
+      "Scalable and Adaptive Systems"
+    ],
+    "importance_title": "By embedding cognitive intelligence into automation, businesses can streamline operations, reduce errors, and swiftly adapt to changing conditions, unlocking new levels of scalability and agility .",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is the difference between traditional automation and agentic process automation?",
+        "a": "Traditional automation follows fixed rules, while agentic automation uses intelligent agents capable of making decisions, adapting to context, and handling dynamic workflows autonomously."
+      },
+      {
+        "q": "What types of tasks can be handled by agentic automation?",
+        "a": "Agentic automation is ideal for complex, multi-step tasks like data analysis, customer support workflows, process optimization, and decision-based operations across systems."
+      },
+      {
+        "q": "How do intelligent agents make decisions during automation?",
+        "a": "Agents use real-time data, contextual awareness, and pre-defined goals or policies to evaluate situations and make decisions—similar to how a human might operate under changing conditions."
+      },
+      {
+        "q": "Can agentic automation be customized for specific business needs?",
+        "a": "Yes. We design and train agentic systems to match your exact business processes, decision rules, and goals—ensuring high relevance and efficiency."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "custom-llm-and-fine-tuning",
+    "bannerImg": "/assets/img/services/woo commerce banner.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
+    "type": "ai",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Custom LLM and Fine Tuning",
+    "definition": "Custom LLMs and Fine-Tuning enable businesses to shape advanced language models around their unique needs and data. By training pre-trained models on domain-specific content, we enhance their ability to perform specialized tasks—whether it’s customer support, content creation, internal documentation, or code generation. Fine-tuning ensures outputs are not only more accurate but also context-aware and aligned with your brand voice and business objectives.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Domain-Specific Intelligence",
+      "Enhanced Performance & Accuracy",
+      "Consistent Brand Voice"
+    ],
+    "importance_title": "The result is a powerful AI system that understands your language, adapts to your workflows, and delivers relevant results with precision.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "What is the difference between fine-tuning and using a pre-trained LLM as-is?",
+        "a": "Pre-trained LLMs offer general language understanding, while fine-tuning customizes the model on your domain-specific data—making it more accurate, relevant, and aligned with your use case."
+      },
+      {
+        "q": "What types of data are needed for fine-tuning an LLM?",
+        "a": "You can use chat logs, knowledge base articles, product documentation, customer interactions, or any text data that reflects the language and knowledge specific to your business."
+      },
+      {
+        "q": "How secure is our data during the fine-tuning process?",
+        "a": "Data security is a top priority. We use encrypted environments, access control, and can work under NDAs to ensure your data stays private and protected throughout the process."
+      },
+      {
+        "q": "Can the fine-tuned model be deployed on our infrastructure?",
+        "a": "Yes. We support deployment on your cloud provider, on-premises servers, or via secure APIs—depending on your infrastructure and compliance needs."
+      }
+    ],
+    "activeClass": ""
+  },
+  {
+    "id": "custom-ai-tool-development",
+    "bannerImg": "/assets/img/services/shopify/banner01.jpg",
+    "img1": "/assets/img/portfolio/45.jpg",
+    "img2": "/assets/img/portfolio/46.jpg",
+    "type": "ai",
+    "icon": "1.png",
+    "iconLight": "23.png",
+    "title": "Custom AI Tool Development",
+    "definition": "Custom AI Tool Development involves designing and building AI-powered solutions tailored to an organization’s unique workflows, challenges, and goals. Unlike generic tools, custom AI applications are built from the ground up—or adapted using modular frameworks—to fit specific use cases such as automated decision-making, intelligent data extraction, predictive analytics, or personalized user experiences.",
+    "text": "Explained jas something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.",
+    "importance": [
+      "Tailored to Your Business Needs",
+      "Greater Control and Flexibility",
+      "Competitive Advantage"
+    ],
+    "importance_title": "This approach ensures seamless integration with existing systems while delivering highly targeted results that drive efficiency and innovation.",
+    "whyChooseP1": "Choosing us for your local SEO needs means partnering with experts who truly understand the nuances of local search. We specialize in crafting tailored strategies to boost your visibility in local markets, ensuring your business appears at the top of search results when it matters most. From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "whyChooseP2": "From optimizing your Google Business Profile to building local citations and targeting the right audience, we leave no stone unturned. Our data-driven approach, combined with an in-depth understanding of local trends, guarantees increased foot traffic, online leads, and a stronger connection with your community.",
+    "faqs": [
+      {
+        "q": "How long does it take to develop a custom AI tool?",
+        "a": "The timeline varies by complexity, but most custom AI tools are developed and deployed within 4 to 12 weeks after requirements are finalized."
+      },
+      {
+        "q": "Can the AI tool integrate with our current systems?",
+        "a": "Yes. We design AI tools to seamlessly integrate with your existing software, APIs, databases, and cloud platforms."
+      },
+      {
+        "q": "Do you offer post-deployment support?",
+        "a": "Absolutely. We provide ongoing support, performance monitoring, and updates to ensure long-term success and reliability."
+      },
+      {
+        "q": "Will the AI tool be scalable as our needs grow?",
+        "a": "Yes. Our tools are built with scalability in mind, allowing them to grow alongside your business and handle increasing data or user demand."
+      }
+    ],
+
     "activeClass": ""
   }
 ]

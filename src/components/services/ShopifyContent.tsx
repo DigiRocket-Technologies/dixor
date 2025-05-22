@@ -238,7 +238,7 @@ const ShopifyContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
                       modules={[Navigation, FreeMode, Keyboard, Autoplay]}
                     >
                       <div className="swiper-wrapper">
-                        {ServicesV4Data.map((service) => (
+                        {ServicesV4Data.slice(0,6).map((service) => (
                           <SwiperSlide key={service.id}>
                             <SingleServiceV4 service={service} />
                           </SwiperSlide>

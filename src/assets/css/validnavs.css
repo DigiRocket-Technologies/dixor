@@ -184,7 +184,7 @@ Version: 1.0
 
 .navbar-brand>img {
 	display: block;
-	height: 40px;
+	height: 35px;
 }
 
 .navbar-toggle {
@@ -248,9 +248,9 @@ Version: 1.0
 }
 
 .navbar .attr-right .attr-nav li.button a {
-	padding: 13px 40px !important;
+	padding: 13px 25px !important;
 	border-radius: 5px;
-	font-size: 16px;
+	font-size: 14px;
 	color: var(--color-heading) !important;
 	border: none;
 	background: var(--color-primary) !important;
@@ -3101,7 +3101,7 @@ ul.simple-menu-list>li i {
 
 	.navbar-brand>img {
 		height: auto;
-		max-height: 40px;
+		max-height: 35px;
 	}
 
 	nav.navbar.validnavs.navbar-fixed .logo-display {
@@ -3217,7 +3217,7 @@ ul.simple-menu-list>li i {
 	nav.navbar ul.nav>li>a {
 		padding: 30px 15px;
 		font-weight: 600;
-		font-size: 16px;
+		font-size: 15px;
 		text-transform: capitalize;
 	}
 
@@ -3706,6 +3706,8 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 	}
 }
 
+
+
 @media only screen and (min-width: 1200px) and (max-width: 1350px) {
 	.navbar.validnavs.navbar-default .navbar-nav li a {
 		padding: 30px 10px !important;
@@ -3713,10 +3715,17 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 	}
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+@media only screen and (min-width: 1100px) and (max-width: 1199px) {
 	.navbar.validnavs.navbar-default .navbar-nav li a {
 		padding: 30px 8px !important;
 		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+	.navbar.validnavs.navbar-default .navbar-nav li a {
+		padding: 30px 10px !important;
+		font-size: 12px;
 	}
 }
 
