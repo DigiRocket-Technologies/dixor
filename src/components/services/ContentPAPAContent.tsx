@@ -82,7 +82,7 @@ const ContentPapa = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
     {
       id: 5,
       title: "Higher ROI, Lower Waste",
-      img: "/assets/img/services/ai/cpapa/Behavior-Driven Campaigns.png",
+      img: "/assets/img/services/ai/cpapa/Higher ROI, Lower Waste.png",
       description:
         "Spend smarter with campaigns that convert more and guess less.",
     },
