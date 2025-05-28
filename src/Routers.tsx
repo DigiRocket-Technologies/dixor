@@ -175,7 +175,7 @@ const Routers = () => {
                 <Route path='/marketing' element={<Marketing/>}></Route>
                 <Route path='/development' element={<Development/>}></Route>
                 <Route path='/services' element={<Services3Page/>}></Route>
-                <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route>
+                {/* <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route> */}
                 <Route path="/case-study/gourmetkitchenworks" element={<GourmetKitchen/>}></Route>
                 <Route path="/case-study/alamocitypopcorn" element={<Alamocity/>}></Route>
                 <Route path="/case-study/rehisk" element={<Rehisk/>}></Route>
