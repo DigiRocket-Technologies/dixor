@@ -60,7 +60,7 @@ const Dropshipping = () => {
     {
       id: 6,
       title: "Performance Tracking & Optimization",
-      img: "/assets/img/services/dropshipping/performance tracking & marketing strategy-100.jpg",
+      img: "/assets/img/services/dropshipping/performance tracking & marketing strategy.png",
       description:
         "We use advanced analytics, A/B testing, and conversion rate optimization to maximize your profitability.",
     },
@@ -207,11 +207,11 @@ const Dropshipping = () => {
             disappointing results. Due to reasons like:
           </h4>
           <div className="row g-4 mt-4">
-            {features.map((feature, index) => (
+            {features?.map((feature, index) => (
               <div key={index} className="col-12 col-sm-6 col-lg-3">
                 <div className="text-white  p-4 text-center h-100 rounded-4 shadow-sm border border-secondary">
                   <img
-                    src={feature.icon}
+                    src={feature?.icon}
                     style={{ width: "80%",aspectRatio:"square" }}
                     alt=""
                   />
