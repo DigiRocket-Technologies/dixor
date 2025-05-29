@@ -74,7 +74,7 @@ const Dropshipping = () => {
         "You have no control over shipping times, leading to frustrated customers.",
     },
     {
-      icon: "/assets/img/services/dropshipping/poor product quality.jpg",
+      icon: "/assets/img/services/dropshipping/PPQ.jpg",
       title: "Poor Product Quality",
       description:
         "Customers often receive damaged or incorrect items, resulting in high return rates and refunds.",
