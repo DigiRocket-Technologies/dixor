@@ -19,6 +19,8 @@ import MostPopularServices from "../../components/services/MostPopularServices.j
 import Countries from "../../components/clients/countries.js";
 // import SocialShareNew from "../../components/social/SocialShareNew.js";
 
+
+
 const AboutUsPage2 = () => {
   const [selectedIndustry, setSelectedIndustry] = useState("Textile Printing");
   const industryData: Record<
@@ -73,7 +75,10 @@ const AboutUsPage2 = () => {
     <>
       <Helmet>
         <title> About Us | DigiRocket </title>
-        <meta title="About DigiRocket Technologies | Transforming Startups into Brands" content="DigiRocket Technologies is a passionate team of designers, strategists, and experts committed to helping startups become recognized brands for their business solutions."></meta>
+        <meta
+          title="About DigiRocket Technologies | Transforming Startups into Brands"
+          content="DigiRocket Technologies is a passionate team of designers, strategists, and experts committed to helping startups become recognized brands for their business solutions."
+        ></meta>
       </Helmet>
 
       <LayoutV1>
@@ -132,7 +137,6 @@ const AboutUsPage2 = () => {
           </div>
         </div>
         <AboutV6 sectionClass="bg-gray" />
-
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 ">
@@ -404,12 +408,11 @@ const AboutUsPage2 = () => {
             </div>
           </div>
         </div>
-       
+
         <WhyChooseV3 />
 
         <div className="container">
-         
-          <Countries/>
+          <Countries />
 
           <MostPopularServices />
         </div>

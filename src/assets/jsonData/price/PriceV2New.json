@@ -25,9 +25,9 @@
           "Mobile App Development",
           "Quick Commerce Platform Listing and Optimisation"
         ],
-        "checkoutLink": "https://buy.stripe.com/3cs2aIfVRcabaze8xa",
-        "priceOriginal": null,
-        "priceDiscounted": 1000,
+        "checkoutLink": "https://buy.stripe.com/fZe7v25hd1vx9va4gI",
+        "priceOriginal": 1950,
+        "priceDiscounted": 1499,
         "currency": "USD",
         "billingCycle": "Monthly"
       },
@@ -54,9 +54,9 @@
           "Mobile App Development",
           "Quick Commerce Platform Listing and Optimisation"
         ],
-        "checkoutLink": "https://buy.stripe.com/00gaHebFBcab22I5kZ",
-        "priceOriginal": null,
-        "priceDiscounted": 1950,
+        "checkoutLink": "https://buy.stripe.com/eVa02A8tp5LNbDi9B3",
+        "priceOriginal": 3650,
+        "priceDiscounted": 2799,
         "currency": "USD",
         "billingCycle": "Monthly"
       },
@@ -83,8 +83,8 @@
         ],
         "blockedFeatures": [],
         "checkoutLink": "https://buy.stripe.com/dR63eM8tpcab9vaeVA",
-        "priceOriginal": null,
-        "priceDiscounted": 3450,
+        "priceOriginal": 7200,
+        "priceDiscounted": 5599,
         "currency": "USD",
         "billingCycle": "Monthly"
       }
@@ -117,7 +117,7 @@
         "priceDiscounted": 11000,
         "currency": "USD",
         "billingCycle": "Yearly",
-        "checkoutLink": "https://buy.stripe.com/bIYeXubFBeij22I28Y"
+        "checkoutLink": "https://buy.stripe.com/7sIdTqdNJgqr7n24gK"
       },
       {
         "id": 2,

@@ -29,10 +29,11 @@ const SinglePriceV2 = ({ plan }: { plan: DataType }) => {
                     ))}
                 </ul>
                 <div className="price">
-                    <h2>
-                        {priceOriginal && <del>${priceOriginal}</del>} ${priceDiscounted}
+                    <h3 style={{fontSize:"35px"}}>
+                        {priceOriginal && <del>${priceOriginal}</del>} 
+                          ${priceDiscounted}
                         <sub> / {billingCycle}</sub>
-                    </h2>
+                    </h3>
 
                 </div>
                 <Link className="btn mt-25 btn-sm circle btn-border dark effect" to="/contact-us">Get Started</Link>
