@@ -2,7 +2,7 @@ import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import { Helmet } from "react-helmet-async";
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import DarkClass from "../../components/classes/DarkClass";
-import banner6 from "/assets/img/services/dropshipping.jpg";
+import banner6 from "/assets/img/services/woo commerce banner.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BannerV3Data from "../../../src/assets/jsonData/banner/BannerV3Data.json";
 import CardWithProgressBar from "../../components/process/CardsWithProgressBar.js";
