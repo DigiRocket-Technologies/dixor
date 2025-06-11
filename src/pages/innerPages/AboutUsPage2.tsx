@@ -178,7 +178,7 @@ const AboutUsPage2 = () => {
                 modules={[Keyboard]}
               >
                 <div className="swiper-wrapper">
-                  {TeamV2Data.map((team) => (
+                  {TeamV2Data.slice(0,2).map((team) => (
                     <SwiperSlide key={team.id}>
                       <SingleTeamV2 team={team} />
                     </SwiperSlide>
@@ -229,7 +229,7 @@ const AboutUsPage2 = () => {
                   modules={[Keyboard]}
                 >
                   <div className="swiper-wrapper">
-                    {TeamV2Data.slice(2).map((team) => (
+                    {TeamV2Data.slice(2,4).map((team) => (
                       <SwiperSlide key={team.id}>
                         <SingleTeamV2 team={team} />
                       </SwiperSlide>
