@@ -184,7 +184,7 @@ const AboutV2 = () => {
 
         setTimeout(() => {
           document.body.style.overflow = "";
-        }, 3000);
+        }, 0);
       },
       once: true, // lock scroll only once
     });
