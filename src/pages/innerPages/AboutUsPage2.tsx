@@ -70,7 +70,11 @@ const AboutUsPage2 = () => {
     },
     // ...
   };
+  
   const currentStats = industryData[selectedIndustry];
+
+
+  
   return (
     <>
       <Helmet>
@@ -178,7 +182,7 @@ const AboutUsPage2 = () => {
                 modules={[Keyboard]}
               >
                 <div className="swiper-wrapper">
-                  {TeamV2Data.slice(0,2).map((team) => (
+                  {TeamV2Data.slice(0, 2).map((team) => (
                     <SwiperSlide key={team.id}>
                       <SingleTeamV2 team={team} />
                     </SwiperSlide>
@@ -229,7 +233,7 @@ const AboutUsPage2 = () => {
                   modules={[Keyboard]}
                 >
                   <div className="swiper-wrapper">
-                    {TeamV2Data.slice(2,4).map((team) => (
+                    {TeamV2Data.slice(2, 4).map((team) => (
                       <SwiperSlide key={team.id}>
                         <SingleTeamV2 team={team} />
                       </SwiperSlide>
@@ -288,6 +292,7 @@ const AboutUsPage2 = () => {
             </div>
           </div>
         </div>
+      
         <div
           style={{ marginTop: "60px", paddingBottom: "30px" }}
           className="container"
@@ -308,11 +313,10 @@ const AboutUsPage2 = () => {
                         key={industry}
                         className="d-flex justify-content-between align-items-center pb-2 cursor-pointer"
                         style={{
-                          borderBottom: `1px solid ${
-                            selectedIndustry === industry
+                          borderBottom: `1px solid ${selectedIndustry === industry
                               ? "#C9F31D"
                               : "#D9D9D9"
-                          }`,
+                            }`,
                           color:
                             selectedIndustry === industry ? "white" : "#D9D9D9",
                           cursor: "pointer",

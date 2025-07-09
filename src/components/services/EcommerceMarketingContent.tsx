@@ -148,6 +148,80 @@ const EcommerceMarketingContent = ({
     }
   };
 
+  const services = [
+    {
+      title: "Increase your Amazon business's growth",
+      description: "Unlock the full potential of your Amazon store through strategic account management. Digirocket's dedicated experts focus on scaling your business efficiently while ensuring consistent and sustainable sales growth. We've been driving Amazon business growth for over 3 years, completing 150+ successful projects across various categories. Provided below are the services we offer:",
+      bgColor: "#d9f21d",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/1.png"
+
+    },
+    {
+      title: "Boost potential income",
+      description: "Amplify your earnings on Amazon with our performance-driven approach. We help you enhance your conversion rates and streamline daily operations to boost overall profitability and long-term success.",
+      bgColor: "white",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/2.png"
+    },
+    {
+      title: "Comprehensive Assistance",
+      description: "Our team of seasoned Amazon advisors and top-rated sellers provides hands-on support tailored to your business needs. From setup to scaling, we offer expert insights and end-to-end guidance.",
+      bgColor: "#d9f21d",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/3.png"
+    },
+    {
+      title: "Amazon Listing Services",
+      description: "We create optimized, keyword-rich product listings that enhance visibility, attract more customers, and drive better conversions. Stand out with content that's clear, compelling, and designed to sell.",
+      bgColor: "white",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/4.png"
+    },
+    {
+      title: "Amazon Seller Registration",
+      description: "Avoid common pitfalls and fast-track your entry into the Amazon marketplace. Our experts guide you step-by-step through the seller registration process, ensuring your account is set up accurately and efficiently.",
+      bgColor: "#d9f21d",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/5.png"
+    },
+    {
+      title: "Amazon Boost Services",
+      description: "Elevate your Amazon presence with our tailored boost strategies. From increasing visibility to accelerating sales, we design growth plans that align with your brand goals and market positioning.",
+      bgColor: "white",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/6.png"
+    },
+    {
+      title: "Amazon Reconciliation",
+      description: "We help you stay financially sound by resolving inconsistencies in your payments, orders, and inventory. Our reconciliation services are designed to protect your bottom line and ensure accuracy.",
+      bgColor: "#d9f21d",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/7.png"
+    },
+    {
+      title: "Amazon advertising Services",
+      description: "Reach your ideal audience and maximize your ROI with precision-targeted Amazon advertising. We handle everything from campaign setup to optimization, helping your brand get noticed and sell more.",
+      bgColor: "white",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/8.png"
+    },
+    {
+      title: "Amazon account management Services",
+      description: "Let our experienced team manage your Amazon account from end to end—product listings, advertising, customer service, and compliance included. We take the stress out of selling.",
+      bgColor: "#d9f21d",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/9.png"
+    },
+    {
+      title: "Imaging (Product Photography)",
+      description: "Make a lasting impression with professional product photography that highlights every detail. Our imaging services are crafted to showcase your products in the best light—literally and figuratively.",
+      bgColor: "white",
+      textColor: "text-black",
+      img: "/assets/img/services/amazon/10.png"
+    }
+  ];
+
   return (
     <>
       <div
@@ -184,85 +258,6 @@ const EcommerceMarketingContent = ({
                 </div>
               </div>
             </div>
-            <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px" }}>Our Process </h1>
-              <div style={{ marginTop: "50px", width: "100%" }}>
-                {[
-                  {
-                    id: 1,
-                    title: "Market Research and Audience Insights ",
-                    decription:
-                      "We begin by researching your market, competitors, and target audience. This helps us gain insights into consumer behavior and preferences, allowing us to create a marketing strategy that resonates with the right people. Understanding these elements ensures we reach your audience with personalized messaging.",
-                    img: "/assets/img/blog/1.jpg",
-                  },
-                  {
-                    id: 2,
-                    title: "SEO and Content Strategy ",
-                    decription:
-                      "We optimize your website with a comprehensive SEO strategy that focuses on improving visibility and rankings on search engines. Our content strategy includes keyword optimization, product descriptions, blog posts, and other content forms that engage and inform your potential ",
-                    img: "/assets/img/blog/3.jpg",
-                  },
-                  {
-                    id: 3,
-                    title: "Paid Advertising Campaigns",
-                    decription:
-                      "We run paid campaigns across multiple platforms like Google Ads and Facebook to drive qualified traffic to your online store. These campaigns are carefully crafted to ensure maximum ROI by targeting the right demographics and using effective ad creatives. We monitor, adjust, and scale campaigns based on real-time performance.",
-                    img: "/assets/img/blog/2.jpg",
-                  },
-                  {
-                    id: 4,
-                    title: "Performance Analysis and Optimization",
-                    decription:
-                      "Constant tracking and analysis of campaign performance help us make data-driven adjustments. By analyzing metrics such as conversion rates, customer behavior, and ROI, we refine strategies to continuously improve results. This ensures that your ecommerce marketing efforts are always aligned with your goals and deliver the best outcomes.",
-                    img: "/assets/img/blog/4.jpg",
-                  },
-                ].map((item, index) => (
-                  <div
-                    key={item.id}
-                    className={`w-100 d-flex flex-column flex-lg-row ${
-                      index % 2 !== 0 ? "flex-lg-row-reverse" : ""
-                    }  mb-5`}
-                  >
-                    {/* Image */}
-                    <div className="w-100 w-lg-50 text-center p-2">
-                      <img
-                        src={item.img}
-                        alt="Blog"
-                        className="img-fluid "
-                        style={{
-                          maxWidth: "500px",
-                          height: "550px",
-                          width: "100%",
-                          borderRadius: "10px",
-                        }}
-                      />
-                    </div>
-
-                    {/* Text */}
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                      className="w-100 w-lg-50 p-4 text-center"
-                    >
-                      <h2 className="post-title">
-                        <Link to={`/blog-single-with-sidebar`}>
-                          {item.title}
-                        </Link>
-                      </h2>
-                      <p>{item.decription}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div
-              style={{ marginTop: "50px" }}
-              className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
-            ></div>
             <div>
               <h2>How will it benefit you?</h2>
               <div style={{ marginTop: "40px" }}>
@@ -328,6 +323,306 @@ const EcommerceMarketingContent = ({
                 </div>
               </div>
             </div>
+
+            <div className="mt-50 mt-xs-20">
+              <h1 style={{ marginBottom: "50px",textAlign:"center" }}>Our Amazon Services </h1>
+
+              <div className="d-none d-lg-block">
+                <div style={{ width: "100%", fontSize: "14px" }} className="d-flex flex-column flex-md-row gap-2">
+                  <div style={{ width: "30%", padding: "10px", borderRadius: "10px", backgroundColor: "#d9f21d", color: "black" }} className="d-flex flex-column ">
+
+                    <img
+                      src="/assets/img/services/amazon/1.png"
+                      alt="Image Not Found"
+                      style={{ width: "60px" }}
+                    />
+                    <h3 className="mt-4 text-black">
+                      Increase your Amazon business's growth
+                    </h3>
+                    <div>
+                      Unlock the full potential of your Amazon store through strategic account management. Digirocket’s dedicated experts focus on scaling your business efficiently while ensuring consistent and sustainable sales growth.
+                      We’ve been driving Amazon business growth for over 3 years, completing 150+ successful projects across various categories. Provided below are the services we offer:
+                    </div>
+
+                  </div>
+                  <div style={{ width: "30%", padding: "10px", borderRadius: "10px", backgroundColor: "#d9f21d", color: "black" }} className="d-flex flex-column ">
+
+                    <img
+                      src="/assets/img/services/amazon/2.png"
+                      alt="Image Not Found"
+                      style={{ width: "60px" }}
+                    />
+                    <h3 className="mt-4 text-black">
+                      Boost potential income
+                    </h3>
+                    <div>
+                      Amplify your earnings on Amazon with our performance-driven approach. We help you enhance your conversion rates and streamline daily operations to boost overall profitability and long-term success.
+                    </div>
+
+                  </div>
+                  <div style={{ width: "40%", padding: "10px", borderRadius: "10px", backgroundColor: "white", color: "black" }} className="d-flex flex-column ">
+                    <img
+                      src="/assets/img/services/amazon/3.png"
+                      alt="Image Not Found"
+                      style={{ width: "60px" }}
+                    />
+                    <h3 className="mt-4 text-black">
+                      Comprehensive Assistance
+                    </h3>
+                    <div>
+                      Our team of seasoned Amazon advisors and top-rated sellers provides hands-on support tailored to your business needs. From setup to scaling, we offer expert insights and end-to-end guidance.
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div style={{ width: "100%", fontSize: "14px" }} className="d-flex mt-2 flex-column flex-md-row gap-2">
+
+                  <div style={{ width: "50%", padding: "10px", borderRadius: "10px", backgroundColor: "#d9f21d", color: "black" }} className="d-flex flex-column ">
+
+                    <img
+                      src="/assets/img/services/amazon/4.png"
+                      alt="Image Not Found"
+                      style={{ width: "60px" }}
+                    />
+                    <h3 className="mt-4 text-black">
+                      Amazon Listing Services
+                    </h3>
+                    <div>
+                      We create optimized, keyword-rich product listings that enhance visibility, attract more customers, and drive better conversions. Stand out with content that’s clear, compelling, and designed to sell.
+                    </div>
+
+                  </div>
+
+
+                  <div style={{ width: "50%", padding: "10px", borderRadius: "10px", backgroundColor: "white", color: "black" }} className="d-flex flex-column ">
+
+                    <div>
+                      <img
+                        src="/assets/img/services/amazon/5.png"
+                        alt="Image Not Found"
+                        style={{ width: "60px" }}
+                      />
+                      <h3 className="mt-4 text-black">
+                        Amazon Seller Registration
+                      </h3>
+                      <div>
+                        Avoid common pitfalls and fast-track your entry into the Amazon marketplace. Our experts guide you step-by-step through the seller registration process, ensuring your account is set up accurately and efficiently.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div style={{ width: "100%", fontSize: "14px" }} className="d-flex mt-2 flex-column flex-md-row gap-2">
+
+                  <div style={{ width: "50%", padding: "10px", borderRadius: "10px", backgroundColor: "white", color: "black" }} className="d-flex flex-column ">
+
+                    <div>
+                      <img
+                        src="/assets/img/services/amazon/6.png"
+                        alt="Image Not Found"
+                        style={{ width: "60px" }}
+                      />
+                      <h3 className="mt-4 text-black">
+                        Amazon Boost Services
+                      </h3>
+                      <div>
+                        Elevate your Amazon presence with our tailored boost strategies. From increasing visibility to accelerating sales, we design growth plans that align with your brand goals and market positioning.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style={{ width: "50%", padding: "10px", borderRadius: "10px", backgroundColor: "#d9f21d", color: "black" }} className="d-flex flex-column ">
+
+                    <img
+                      src="/assets/img/services/amazon/7.png"
+                      alt="Image Not Found"
+                      style={{ width: "60px" }}
+                    />
+                    <h3 className="mt-4 text-black">
+                      Amazon Reconciliation
+                    </h3>
+                    <div>
+                      We help you stay financially sound by resolving inconsistencies in your payments, orders, and inventory. Our reconciliation services are designed to protect your bottom line and ensure accuracy.
+                    </div>
+
+                  </div>
+
+
+
+
+                </div>
+
+                <div style={{ width: "100%", fontSize: "14px" }} className="d-flex mt-2 flex-column flex-md-row gap-2">
+                  <div style={{ width: "30%", padding: "10px", borderRadius: "10px", backgroundColor: "#d9f21d", color: "black" }} className="d-flex flex-column ">
+
+                    <img
+                      src="/assets/img/services/amazon/8.png"
+                      alt="Image Not Found"
+                      style={{ width: "60px" }}
+                    />
+                    <h3 className="mt-4 text-black">
+                      Amazon advertising Services
+                    </h3>
+                    <div>
+                      Reach your ideal audience and maximize your ROI with precision-targeted Amazon advertising. We handle everything from campaign setup to optimization, helping your brand get noticed and sell more.
+                    </div>
+
+                  </div>
+                  <div style={{ width: "30%", padding: "10px", borderRadius: "10px", backgroundColor: "#d9f21d", color: "black" }} className="d-flex flex-column ">
+
+                    <img
+                      src="/assets/img/services/amazon/9.png"
+                      alt="Image Not Found"
+                      style={{ width: "60px" }}
+                    />
+                    <h3 className="mt-4 text-black">
+                      Amazon account management Services
+                    </h3>
+                    <div>
+                      Let our experienced team manage your Amazon account from end to end—product listings, advertising, customer service, and compliance included. We take the stress out of selling.
+                    </div>
+
+                  </div>
+                  <div style={{ width: "40%", padding: "10px", borderRadius: "10px", backgroundColor: "white", color: "black" }} className="d-flex flex-column ">
+
+                    <div>
+                      <img
+                        src="/assets/img/services/amazon/10.png"
+                        alt="Image Not Found"
+                        style={{ width: "60px" }}
+                      />
+                      <h3 className="mt-4 text-black">
+                        Imaging (Product Photography)
+                      </h3>
+                      <div>
+                        Make a lasting impression with professional product photography that highlights every detail. Our imaging services are crafted to showcase your products in the best light—literally and figuratively.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="d-block d-lg-none container-fluid py-5">
+                <div className="container">
+                  <div className="row g-3">
+                    {services.map((service, index) => (
+                      <div key={index} className="col-12 col-md-6">
+                        <div
+                          className="card h-100 border-0 shadow-sm"
+                          style={{
+                            backgroundColor: service.bgColor,
+                            borderRadius: '10px',
+                            fontSize: '14px'
+                          }}
+                        >
+                          <div className="card-body p-3 d-flex flex-column">
+                            <div className="mb-3">
+                              <img
+                                src={service.img}
+                                alt="Service Icon"
+                                style={{ width: '60px' }}
+                                className="img-fluid"
+                              />
+                            </div>
+                            <h3 className={`card-title fw-bold mb-3 ${service.textColor}`} style={{ fontSize: '18px' }}>
+                              {service.title}
+                            </h3>
+                            <div className={`card-text ${service.textColor} flex-grow-1`}>
+                              {service.description}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div className="mt-50 mt-xs-20">
+              <h1 style={{ marginBottom: "50px" }}>Our Process </h1>
+              <div style={{ marginTop: "50px", width: "100%" }}>
+                {[
+                  {
+                    id: 1,
+                    title: "Market Research and Audience Insights ",
+                    decription:
+                      "We begin by researching your market, competitors, and target audience. This helps us gain insights into consumer behavior and preferences, allowing us to create a marketing strategy that resonates with the right people. Understanding these elements ensures we reach your audience with personalized messaging.",
+                    img: "/assets/img/blog/1.jpg",
+                  },
+                  {
+                    id: 2,
+                    title: "SEO and Content Strategy ",
+                    decription:
+                      "We optimize your website with a comprehensive SEO strategy that focuses on improving visibility and rankings on search engines. Our content strategy includes keyword optimization, product descriptions, blog posts, and other content forms that engage and inform your potential ",
+                    img: "/assets/img/blog/3.jpg",
+                  },
+                  {
+                    id: 3,
+                    title: "Paid Advertising Campaigns",
+                    decription:
+                      "We run paid campaigns across multiple platforms like Google Ads and Facebook to drive qualified traffic to your online store. These campaigns are carefully crafted to ensure maximum ROI by targeting the right demographics and using effective ad creatives. We monitor, adjust, and scale campaigns based on real-time performance.",
+                    img: "/assets/img/blog/2.jpg",
+                  },
+                  {
+                    id: 4,
+                    title: "Performance Analysis and Optimization",
+                    decription:
+                      "Constant tracking and analysis of campaign performance help us make data-driven adjustments. By analyzing metrics such as conversion rates, customer behavior, and ROI, we refine strategies to continuously improve results. This ensures that your ecommerce marketing efforts are always aligned with your goals and deliver the best outcomes.",
+                    img: "/assets/img/blog/4.jpg",
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={item.id}
+                    className={`w-100 d-flex flex-column flex-lg-row ${index % 2 !== 0 ? "flex-lg-row-reverse" : ""
+                      }  mb-5`}
+                  >
+                    {/* Image */}
+                    <div className="w-100 w-lg-50 text-center p-2">
+                      <img
+                        src={item.img}
+                        alt="Blog"
+                        className="img-fluid "
+                        style={{
+                          maxWidth: "500px",
+                          height: "550px",
+                          width: "100%",
+                          borderRadius: "10px",
+                        }}
+                      />
+                    </div>
+
+                    {/* Text */}
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                      className="w-100 w-lg-50 p-4 text-center"
+                    >
+                      <h2 className="post-title">
+                        <Link to={`/blog-single-with-sidebar`}>
+                          {item.title}
+                        </Link>
+                      </h2>
+                      <p>{item.decription}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div
+              style={{ marginTop: "50px" }}
+              className={`w-100 d-flex flex-column flex-lg-row  mb-5`}
+            ></div>
+
 
             <div
               style={{ marginTop: "50px" }}

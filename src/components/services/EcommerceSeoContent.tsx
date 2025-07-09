@@ -23,6 +23,7 @@ interface FAQ {
   q?: string;
   a?: string;
 }
+
 interface PricingPlan {
   id: number;
   title: string;
@@ -34,6 +35,7 @@ interface PricingPlan {
   currency: string;
   billingCycle: string;
 }
+
 interface PricingDataType {
   serviceId?: string;
   monthlyPlans?: PricingPlan[];

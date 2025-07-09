@@ -124,6 +124,7 @@ import CPAPA from "./pages/servicesPages/CPAPA";
 import AgenticPage from "./pages/servicesPages/AgenticPage";
 import CLLMPAGE from "./pages/servicesPages/CLLMPage";
 import CToolPage from "./pages/servicesPages/CToolPage";
+// import AIResearch from "./pages/CasestudyPages/AIResearch";
 // import NewCareers from "./pages/innerPages/NewCareers";
 const Routers = () => {
     return (
@@ -132,76 +133,78 @@ const Routers = () => {
                 <Route path='/' element={<Dt />}></Route>
 
                 {/* TO BE USED FOR DIGIROCKET TECHNOLOGIES MADE BY APOORV */}
-                <Route path="/ecommerce-seo" element={<EcommerceSeo/>}></Route>
+                <Route path="/ecommerce-seo" element={<EcommerceSeo />}></Route>
                 <Route path='/local-seo' element={<LocalSeo />}></Route>
                 <Route path='/performance-marketing' element={<PerformanceMarketing />}></Route>
                 <Route path='/social-media-marketing' element={<SocialMediaMarketing />}></Route>
-                <Route path='/influencer-marketing' element={<InfluencerMarketing/>}></Route>
-                <Route path='/ecommerce-marketing' element={<EcommerceMarketing/>}></Route>
+                <Route path='/influencer-marketing' element={<InfluencerMarketing />}></Route>
+                <Route path='/ecommerce-marketing' element={<EcommerceMarketing />}></Route>
 
-                <Route path='/shopify-development' element={<Shopify/>}></Route>
-                <Route path='/woocommerce-development' element={<Woocommerce/>}></Route>
-                <Route path='/web-application-development' element={<WebApplication/>}></Route>
-                <Route path='/wordpress-development' element={<Wordpress/>}></Route>
-                <Route path='/mobile-application-development' element={<MobileApplication/>}></Route>
+                <Route path='/shopify-development' element={<Shopify />}></Route>
+                <Route path='/woocommerce-development' element={<Woocommerce />}></Route>
+                <Route path='/web-application-development' element={<WebApplication />}></Route>
+                <Route path='/wordpress-development' element={<Wordpress />}></Route>
+                <Route path='/mobile-application-development' element={<MobileApplication />}></Route>
                 <Route path='/application-development' element={<BlogSingleWithSidebarLightPage />}></Route>
-                <Route path='/artificial-intelligence' element={<AI/>}></Route>
-         
-                <Route path='/content-personalization-and-predictive-Analysis' element={<CPAPA/>}></Route>
-                
-                <Route path='/agentic-processs-automation' element={<AgenticPage/>}></Route>
-                 <Route path='/custom-llm-and-fine-tuning' element={<CLLMPAGE/>}></Route>
-                 <Route path='/custom-ai-tool-development' element={<CToolPage/>}></Route>
+                <Route path='/artificial-intelligence' element={<AI />}></Route>
 
-                <Route path='/dropshipping' element={<Dropshipping/>}></Route>
+                <Route path='/content-personalization-and-predictive-Analysis' element={<CPAPA />}></Route>
+
+                <Route path='/agentic-processs-automation' element={<AgenticPage />}></Route>
+                <Route path='/custom-llm-and-fine-tuning' element={<CLLMPAGE />}></Route>
+                <Route path='/custom-ai-tool-development' element={<CToolPage />}></Route>
+
+                <Route path='/dropshipping' element={<Dropshipping />}></Route>
 
 
-                <Route path='/portfolio' element={<ProjectPage2/>}></Route>
+                <Route path='/portfolio' element={<ProjectPage2 />}></Route>
 
 
                 {/* <Route path='/case-studies' element={<BlogSingleWithSidebarLightPage />}></Route> */}
 
 
                 {/* <Route path='/contact-us' element={<ContactUsPage />}></Route> */}
-                <Route path='/contact-us' element={<ContactUsLightPage/>}></Route>
+                <Route path='/contact-us' element={<ContactUsLightPage />}></Route>
 
-                <Route path='/terms-conditions' element={<Terms/>}></Route>
-                <Route path='/privacy-policy' element={<Privacy/>}></Route>
+                <Route path='/terms-conditions' element={<Terms />}></Route>
+                <Route path='/privacy-policy' element={<Privacy />}></Route>
 
+                <Route path='/careers' element={<Career />}></Route>
 
-                <Route path='/careers' element={<Career/>}></Route>
+                <Route path='/about-us' element={<AboutUsPage2 />}></Route>
+                <Route path='/marketing' element={<Marketing />}></Route>
+                <Route path='/development' element={<Development />}></Route>
+                <Route path='/services' element={<Services3Page />}></Route>
 
-                <Route path='/about-us' element={<AboutUsPage2/>}></Route>
-                <Route path='/marketing' element={<Marketing/>}></Route>
-                <Route path='/development' element={<Development/>}></Route>
-                <Route path='/services' element={<Services3Page/>}></Route>
+                {/* <Route path='/res' element={<AIResearch />}></Route> */}
+               
                 {/* <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route> */}
-                <Route path="/case-study/gourmetkitchenworks" element={<GourmetKitchen/>}></Route>
-                <Route path="/case-study/alamocitypopcorn" element={<Alamocity/>}></Route>
-                <Route path="/case-study/rehisk" element={<Rehisk/>}></Route>
-                <Route path="/case-study/eyecandybrownsalon" element={<EyeCandy/>}></Route>
-                <Route path="/case-study/dripnation" element={<Dripnation/>}></Route>
-                <Route path="/case-study/laddersafetyrails" element={<LadderSafety/>}></Route>
-                <Route path="/case-study/candlepearls" element={<CandlePearls/>}></Route>
-                <Route path="/case-study/brewtheblend" element={<BrewTheBlend/>}></Route>
-                <Route path="/case-study/aquatic-ventures" element={<Aquatic/>}></Route>
-                <Route path="/case-study/axyloza" element={<Axyloza/>}></Route>
-                <Route path="/case-study/chameleon-transfer" element={<Chameleon/>}></Route>
-                 <Route path="/case-study/thrivewell-sports" element={<Thrive/>}></Route>
+                <Route path="/case-study/gourmetkitchenworks" element={<GourmetKitchen />}></Route>
+                <Route path="/case-study/alamocitypopcorn" element={<Alamocity />}></Route>
+                <Route path="/case-study/rehisk" element={<Rehisk />}></Route>
+                <Route path="/case-study/eyecandybrownsalon" element={<EyeCandy />}></Route>
+                <Route path="/case-study/dripnation" element={<Dripnation />}></Route>
+                <Route path="/case-study/laddersafetyrails" element={<LadderSafety />}></Route>
+                <Route path="/case-study/candlepearls" element={<CandlePearls />}></Route>
+                <Route path="/case-study/brewtheblend" element={<BrewTheBlend />}></Route>
+                <Route path="/case-study/aquatic-ventures" element={<Aquatic />}></Route>
+                <Route path="/case-study/axyloza" element={<Axyloza />}></Route>
+                <Route path="/case-study/chameleon-transfer" element={<Chameleon />}></Route>
+                <Route path="/case-study/thrivewell-sports" element={<Thrive />}></Route>
 
-                <Route path='/faqs' element={<FaqPage/>}></Route>
+                <Route path='/faqs' element={<FaqPage />}></Route>
                 {/* <Route path='/test' element={<NewCareers/>}></Route> */}
                 {/* <Route path='/blogs' element={<AllBlogPages/>}></Route> */}
-                <Route path ="/blog/:id" element={<BlogSinglePage/>}></Route>
-
+                <Route path="/blog/:id" element={<BlogSinglePage />}></Route>
+               
 
                 <Route path='*' element={<NotFoundPage />}></Route>
-                 <Route path ="/admin" element={<AdminLogin/>}></Route>  
-                 <Route element={<CheckAuth/>}> 
-                 <Route path ="/admin/blogs" element={<AllBlogPagesAdmin/>}></Route>
-                   <Route path ="/admin/addblog" element={<QuillEditor/>}></Route>
-                   <Route path ="/admin/editblog/:id" element={<EditBlog/>}></Route>
-                 </Route> 
+                <Route path="/admin" element={<AdminLogin />}></Route>
+                <Route element={<CheckAuth />}>
+                    <Route path="/admin/blogs" element={<AllBlogPagesAdmin />}></Route>
+                    <Route path="/admin/addblog" element={<QuillEditor />}></Route>
+                    <Route path="/admin/editblog/:id" element={<EditBlog />}></Route>
+                </Route>
 
                 {/* DIGIROCKET ROUTES END OVER HERE */}
 
