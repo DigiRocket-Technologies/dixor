@@ -17,6 +17,8 @@ import { useState } from "react";
 import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3.js";
 import MostPopularServices from "../../components/services/MostPopularServices.js";
 import Countries from "../../components/clients/countries.js";
+import CertificateSlider from "../../components/certifications/CertificateSlider.js";
+
 // import SocialShareNew from "../../components/social/SocialShareNew.js";
 
 
@@ -70,11 +72,11 @@ const AboutUsPage2 = () => {
     },
     // ...
   };
-  
+
   const currentStats = industryData[selectedIndustry];
 
 
-  
+
   return (
     <>
       <Helmet>
@@ -140,6 +142,11 @@ const AboutUsPage2 = () => {
             evolved into a successful agency.{" "}
           </div>
         </div>
+        <div  className="container">
+          <CertificateSlider />
+        </div>
+
+
         <AboutV6 sectionClass="bg-gray" />
         <div className="container">
           <div className="row">
@@ -292,7 +299,7 @@ const AboutUsPage2 = () => {
             </div>
           </div>
         </div>
-      
+
         <div
           style={{ marginTop: "60px", paddingBottom: "30px" }}
           className="container"
@@ -314,8 +321,8 @@ const AboutUsPage2 = () => {
                         className="d-flex justify-content-between align-items-center pb-2 cursor-pointer"
                         style={{
                           borderBottom: `1px solid ${selectedIndustry === industry
-                              ? "#C9F31D"
-                              : "#D9D9D9"
+                            ? "#C9F31D"
+                            : "#D9D9D9"
                             }`,
                           color:
                             selectedIndustry === industry ? "white" : "#D9D9D9",

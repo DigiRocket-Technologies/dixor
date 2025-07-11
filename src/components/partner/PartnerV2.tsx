@@ -13,9 +13,8 @@ const PartnerV2 = ({ sectionClass }: DataType) => {
   return (
     <>
       <div
-        className={`partner-style-two-area default-padding overflow-hidden blurry-shape-right ${
-          sectionClass ? sectionClass : ""
-        }`}
+        className={`partner-style-two-area default-padding overflow-hidden blurry-shape-right ${sectionClass ? sectionClass : ""
+          }`}
       >
         <div className="container">
           <div className="row">
@@ -99,7 +98,7 @@ const PartnerV2 = ({ sectionClass }: DataType) => {
                 >
                   <div className="swiper-wrapper">
                     <SwiperSlide>
-                      <div
+                      {/* <div
                         style={{
                           display: "flex",
                           justifyContent: "center",
@@ -113,7 +112,8 @@ const PartnerV2 = ({ sectionClass }: DataType) => {
                           width={350}
                           height={100}
                         />
-                      </div>
+                      </div> */}
+
                     </SwiperSlide>
                     <SwiperSlide>
                       <div
@@ -152,6 +152,8 @@ const PartnerV2 = ({ sectionClass }: DataType) => {
                   </div>
                 </Swiper>
               </div>
+
+           
             </div>
           </div>
         </div>
