@@ -8,17 +8,18 @@ interface DataType {
   createdAt?: string;
   thumbnail: string;
   _id: string;
+  live: boolean;
 }
 
 const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
-  const { title, createdAt, thumbnail, _id } = blog;
+  const { title, createdAt, thumbnail, _id, live } = blog;
   const [loading, setLoading] = useState(false);
-  const {authUser}=useAuthContext();
+  const { authUser } = useAuthContext();
 
-  const handleDelete = async (id:string) => {
-    const opinion=confirm("Do you want to delete item")
-    if(!opinion)
-    return  
+  const handleDelete = async (id: string) => {
+    const opinion = confirm("Do you want to delete item")
+    if (!opinion)
+      return
 
     try {
 
@@ -43,6 +44,36 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
       setLoading(false);
     }
   };
+
+  const changeVisibility = async (id: string) => {
+
+    const opinion = confirm(`Do you want to ${live ? "hide" : "show"} the blog`)
+    if (!opinion)
+      return
+
+    try {
+
+      setLoading(true);
+      const res = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/altervisibility`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: authUser || "",
+          },
+          body: JSON.stringify({ id }),
+        }
+      );
+      const data = await res.json();
+      if (!data?.success) throw new Error(data?.message);
+    } catch (err: any) {
+      console.log(err)
+      alert(err.message);
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <>
@@ -70,6 +101,14 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
               className=""
             >
               Delete
+            </button>
+            <button
+              disabled={loading}
+              onClick={() => changeVisibility(_id)}
+              style={{ marginLeft: "20px" }}
+              className=""
+            >
+              {live ? "Hide It" : "Make it live"}
             </button>
           </div>
         </div>

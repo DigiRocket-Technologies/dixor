@@ -16,6 +16,9 @@ const FooterSocial = () => {
             <li>
                 <Link to="https://www.instagram.com/digirocket.io/" target='_blank'><i className="fab fa-instagram" /></Link>
             </li>
+            <li>
+                <Link to="https://www.tiktok.com/@digirocket" target='_blank'>  <i className="fab fa-tiktok" /></Link>
+            </li>
         </>
     );
 };

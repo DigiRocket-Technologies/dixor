@@ -12,6 +12,7 @@ interface DataType {
 const AllBlogPagesContent = ({ sectionClass }: DataType) => {
 
   const [blogs,setBlogs]=useState([])  
+  
   const getAllBlogs = async () => {
     try {
       const response = await fetch(

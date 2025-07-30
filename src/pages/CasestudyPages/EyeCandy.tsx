@@ -49,7 +49,7 @@ const EyeCandy = () => {
                         </div>
                         <div className="right-info">
                           <p className="project-inner-tag">
-                            Website Redevelopmen <br /> Search Engine
+                            Website Development <br /> Search Engine
                             Optimization
                             <br /> Ads Management{" "}
                           </p>

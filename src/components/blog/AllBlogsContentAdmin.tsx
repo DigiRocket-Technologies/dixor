@@ -1,30 +1,31 @@
 // import BlogV3Data from "../../assets/jsonData/blog/BlogV3Data.json";
-
+// import Spline from '@splinetool/react-spline';
 import { useEffect, useState } from "react";
 // import Pagination from "react-paginate";
-import { Link,  } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import SingleBlog2ItemAdmin from "./SingleBlog2ItemAdmin";
+import { useAuthContext } from "../../context/AuthContext";
 
 interface DataType {
   sectionClass?: string;
 }
 
 const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
-
+  const { authUser } = useAuthContext()
 
   const [blogs, setBlogs] = useState([]);
-  
+
   const getAllBlogs = async () => {
     try {
 
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/getallblogs`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/getallblogsadmin`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": authUser || ""
         }
-      );
+      });
 
       const data = await response.json();
       if (!data?.success) throw new Error(data?.message);
@@ -73,11 +74,15 @@ const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
   return (
     <>
       <div
-        className={`blog-area blog-grid-colum ${
-          sectionClass ? sectionClass : ""
-        }`}
+        className={`blog-area blog-grid-colum ${sectionClass ? sectionClass : ""
+          }`}
       >
         <div className="container">
+          {/* <main>
+            <Spline
+              scene="https://prod.spline.design/LC6nAjlrL3mkmMqx/scene.splinecode"
+            />
+          </main> */}
           <div className="row">
             {blogs.map((blog, idx) => (
               <div className="col-lg-6 mb-50" key={idx}>
@@ -126,7 +131,7 @@ const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
             }}
           >
             <Link to="/admin/addblog">
-              
+
               <button>Add Blog</button>
             </Link>
           </div>

@@ -177,7 +177,7 @@ const Routers = () => {
                 <Route path='/services' element={<Services3Page />}></Route>
 
                 {/* <Route path='/res' element={<AIResearch />}></Route> */}
-               
+
                 {/* <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route> */}
                 <Route path="/case-study/gourmetkitchenworks" element={<GourmetKitchen />}></Route>
                 <Route path="/case-study/alamocitypopcorn" element={<Alamocity />}></Route>
@@ -196,10 +196,11 @@ const Routers = () => {
                 {/* <Route path='/test' element={<NewCareers/>}></Route> */}
                 {/* <Route path='/blogs' element={<AllBlogPages/>}></Route> */}
                 <Route path="/blog/:id" element={<BlogSinglePage />}></Route>
-               
+
 
                 <Route path='*' element={<NotFoundPage />}></Route>
                 <Route path="/admin" element={<AdminLogin />}></Route>
+
                 <Route element={<CheckAuth />}>
                     <Route path="/admin/blogs" element={<AllBlogPagesAdmin />}></Route>
                     <Route path="/admin/addblog" element={<QuillEditor />}></Route>

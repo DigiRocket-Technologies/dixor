@@ -8,14 +8,14 @@ interface AuthProviderProps {
 
 const AuthContextProvider = ({ children }: AuthProviderProps) => {
   const [authUser, setAuthUser] = useState<string | null>(() => {
-    const storedUser = localStorage.getItem("user");
-    return storedUser ? JSON.parse(storedUser) : null;
+    const storedUser = localStorage.getItem("user")||null;
+    return storedUser 
   });
 
   // Optional: keep localStorage in sync
   useEffect(() => {
     if (authUser) {
-      localStorage.setItem("user", JSON.stringify(authUser));
+      localStorage.setItem("user", authUser);
     } else {
       localStorage.removeItem("user");
     }
