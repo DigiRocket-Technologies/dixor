@@ -113,7 +113,9 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                     <div className="award-item bg-white">
                       {/* <i className="fab fa-behance" />
                       <h4>Behance Awards </h4> */}
+                      <a href="">
                       <img src="/assets/img/partner/sp.png" alt="" />
+                      </a>
                     </div>
                   </Animate>
 
@@ -122,7 +124,9 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                     delay="100ms"
                   >
                     <div className="award-item bg-white">
+                      <a href="">
                       <img src="/assets/img/partner/meta.png" alt="" />
+                      </a>
                     </div>
                   </Animate>
 
@@ -131,7 +135,10 @@ const WhyChooseV1 = ({ sectionClass }: DataType) => {
                     delay="200ms"
                   >
                     <div className="award-item bg-white">
-                       <img src="/assets/img/partner/tick-tock.png" alt="" />
+                      <a href="https://www.tiktok.com/@digirocket" target="_blank">
+                        <img src="/assets/img/partner/tick-tock.png" alt="" />
+                      </a>
+
                     </div>
                   </Animate>
                 </div>
