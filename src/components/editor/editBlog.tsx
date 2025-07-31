@@ -919,7 +919,7 @@ const EditBlog = () => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/getblogdetails/${id}`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getblogdetails/${id}`,
         {
           method: "GET",
           headers: {
