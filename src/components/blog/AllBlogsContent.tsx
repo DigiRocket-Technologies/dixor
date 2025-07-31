@@ -16,7 +16,7 @@ const AllBlogPagesContent = ({ sectionClass }: DataType) => {
   const getAllBlogs = async () => {
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/getallblogs`,{
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogs`,{
             method: "GET",
           headers: {
             "Content-Type": "application/json",

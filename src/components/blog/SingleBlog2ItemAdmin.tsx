@@ -25,7 +25,7 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
 
       setLoading(true);
       const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/deleteblog`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/deleteblog`,
         {
           method: "DELETE",
           headers: {
@@ -55,7 +55,7 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
 
       setLoading(true);
       const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/altervisibility`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/altervisibility`,
         {
           method: "PUT",
           headers: {

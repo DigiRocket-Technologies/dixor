@@ -681,7 +681,7 @@ const QuillEditor = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/addblog`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/addblog`,
         {
           method: "POST",
           headers: {

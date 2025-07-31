@@ -19,7 +19,7 @@ const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
     try {
 
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/getallblogsadmin`, {
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogsadmin`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

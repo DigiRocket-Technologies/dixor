@@ -1341,7 +1341,7 @@ const EditBlog = () => {
     try {
       setLoading(true);
       const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/editblogdetails`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/editblogdetails`,
         {
           method: "PUT",
           headers: { 
