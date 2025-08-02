@@ -18,6 +18,7 @@ import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3.js";
 import MostPopularServices from "../../components/services/MostPopularServices.js";
 import Countries from "../../components/clients/countries.js";
 import CertificateSlider from "../../components/certifications/CertificateSlider.js";
+import { Link } from "react-router-dom";
 
 // import SocialShareNew from "../../components/social/SocialShareNew.js";
 
@@ -74,6 +75,40 @@ const AboutUsPage2 = () => {
   };
 
   const currentStats = industryData[selectedIndustry];
+
+  const b2sValues = [
+    {
+      title: "CLIENT CENTRIC INNOVATION",
+      desc: "We innovate with our client success at the core.",
+      image: "/assets/img/b2S/client centric innovation.png"
+    },
+    {
+      title: "OWNERSHIP CULTURE",
+      desc: "We know accountability and their outcomes, not just tasks.",
+      image: "/assets/img/b2S/Ownership culture.png"
+    },
+    {
+      title: "TRANSPARENCY & INTEGRITY",
+      desc: "We do the right thing even when no one is watching us and keep clear communication to deliver honest results.",
+      image: "/assets/img/b2S/Transparency and integrity.png"
+    },
+    {
+      title: "HUMILITY",
+      desc: "Be bold, take risks but stay grounded.",
+      image: "/assets/img/b2S/humility.png"
+    },
+    {
+      title: "COLLABORATE TO ELEVATE",
+      desc: "We grow faster when we grow together. Teamwork is the key to success.",
+      image: "/assets/img/b2S/collaborate to elevate.png"
+    },
+    {
+      title: "EMPATHY & RESPECT",
+      desc: "We care deeply, act kindly and respect every voice as we know ideas matter more than hierarchy.",
+      image: "/assets/img/b2S/Empathy and Respect.png"
+    }
+  ];
+
 
 
 
@@ -142,12 +177,52 @@ const AboutUsPage2 = () => {
             evolved into a successful agency.{" "}
           </div>
         </div>
-        <div  className="container">
+        <div className="container">
           <CertificateSlider />
         </div>
 
 
         <AboutV6 sectionClass="bg-gray" />
+          <div style={{ marginTop: "50px" }}>
+          <h2 className="text-center">B2S Values</h2>
+          <div className="container">
+            <div className={`portfolio-style-three-area `}>
+              {b2sValues?.map((item, idx) => {
+                return (<div key ={idx} className="portfolio-style-three-item" style={{backgroundColor:"#212121"}}>
+                  <div className="row align-center">
+                    <div className="col-lg-7">
+                      <img
+                        src={item?.image}
+                        alt="Image Not Found"
+                        width={800}
+                        height={600}
+                      />
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        
+                      }}
+                      className="col-lg-5"
+                    >
+                      <h2 className="b2stext">
+                        <Link  to="">
+                          <strong style={{marginLeft:"0",color:"#c9f21d"}}>{item?.title}</strong>
+                        </Link>
+                      </h2>
+                      <p style={{font:"30px"}}>
+                        {item?.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>)
+              })}
+
+            </div>
+          </div>
+        </div>
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 ">
@@ -299,6 +374,7 @@ const AboutUsPage2 = () => {
             </div>
           </div>
         </div>
+      
 
         <div
           style={{ marginTop: "60px", paddingBottom: "30px" }}

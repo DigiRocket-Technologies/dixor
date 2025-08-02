@@ -7,6 +7,7 @@ import { Autoplay, Keyboard, Mousewheel, Navigation, Pagination } from "swiper/m
 
 const services = [
     { name: "semrush", img: "/assets/img/partner/certifications/semrush.svg" },
+    {name:"shopify",img:"/assets/img/partner/certifications/shopify partners.png"},
     { name: "meta", img: "/assets/img/partner/certifications/meta.svg" },
     { name: "gcp", img: "/assets/img/partner/certifications/gcp.svg" },
     { name: "bsp", img: "/assets/img/partner/certifications/bsp.svg" }
@@ -16,6 +17,7 @@ const services = [
 type PdfKey = keyof typeof pdfsList;
 const pdfsList = {
     "semrush": ["/assets/pdf/semrush/1.pdf", "/assets/pdf/semrush/2.pdf", "/assets/pdf/semrush/3.pdf"],
+    "shopify":[],
     "meta": [],
     "gcp": [],
     "bsp": [],
