@@ -110,6 +110,27 @@ const AboutUsPage2 = () => {
   ];
 
 
+  const certifications = [
+    {
+      id: 1,
+      imgsrc: "/assets/img/partner/certifications/iso/itsm.png",
+      title: "Information Technology Service Management",
+      pdfUrl:"/assets/pdf/iso/itsm.pdf"
+    },
+    {
+      id: 2,
+      title: "Quality Management System",
+      imgsrc: "/assets/img/partner/certifications/iso/qms.png",
+      pdfUrl:"/assets/pdf/iso/qms.pdf"
+      
+    },
+    {
+      id: 3,
+      title: "Information Security Management System",
+      imgsrc: "/assets/img/partner/certifications/iso/isms.png",
+      pdfUrl:"/assets/pdf/iso/isms.pdf"
+    }
+  ];
 
 
   return (
@@ -180,15 +201,122 @@ const AboutUsPage2 = () => {
         <div className="container">
           <CertificateSlider />
         </div>
+        <div className="container my-5">
+          {/* Section Header */}
+          <div className="row mb-5">
+            <div className="col-12 text-center">
+              <h2 className="mb-3">Our ISO Certifications</h2>
+            </div>
+          </div>
 
+
+          {/* Certifications Grid */}
+          <div className="row g-4">
+            {certifications.map((cert) => (
+              <div key={cert.id} className="col-lg-4 col-md-6">
+                <div>
+                  <img src={cert.imgsrc} alt="" />
+                </div>
+
+                <div className="text-center mt-2 fs-4">
+                  {cert.title}
+                </div>
+
+                <div className="d-flex flex-row justify-content-center  mt-2">
+                  <a href={cert?.pdfUrl}>
+                    <button className="pdfButton">View Pdf</button>
+                  </a>
+                </div>
+                {/* <div className="card h-100 shadow-sm border-0 certification-card"
+                  style={{ transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-5px)';
+                    e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.15)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+                  }}>
+
+                  <div className="card-header bg-light border-0 text-center py-4">
+                    <img
+                      src={cert.badgeUrl}
+                      alt={`${cert.title} Badge`}
+                      className="img-fluid rounded-circle mb-3"
+                      style={{ width: '80px', height: '80px', objectFit: 'cover' }}
+                    />
+                    <h5 className="card-title fw-bold text-dark mb-1">{cert.title}</h5>
+                    <p className="text-muted small mb-0">{cert.organization}</p>
+                  </div>
+
+     
+                  <div className="card-body d-flex flex-column">
+                    <div className="mb-3">
+                      <small className="text-muted d-block">
+                        <i className="bi bi-calendar3 me-1"></i>
+                        Earned: {cert.date}
+                      </small>
+                      <small className="text-muted d-block">
+                        <i className="bi bi-award me-1"></i>
+                        ID: {cert.credentialId}
+                      </small>
+                    </div>
+
+                    <p className="card-text text-muted small flex-grow-1">
+                      {cert.description.length > 100
+                        ? `${cert.description.substring(0, 100)}...`
+                        : cert.description}
+                    </p>
+
+                
+                    <div className="mb-3">
+                      {cert.skills.slice(0, 3).map((skill, index) => (
+                        <span key={index} className="badge bg-primary bg-opacity-10 text-primary me-1 mb-1 small">
+                          {skill}
+                        </span>
+                      ))}
+                      {cert.skills.length > 3 && (
+                        <span className="badge bg-secondary bg-opacity-10 text-secondary small">
+                          +{cert.skills.length - 3} more
+                        </span>
+                      )}
+                    </div>
+
+          
+                    <div className="mt-auto">
+                      <div className="d-grid gap-2">
+                        <button
+                          className="btn btn-primary btn-sm"
+                          onClick={() => openModal(cert)}
+                        >
+                          <i className="bi bi-eye me-1"></i>
+                          View Details
+                        </button>
+                        <a
+                          href={cert.verifyUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-outline-secondary btn-sm"
+                        >
+                          <i className="bi bi-patch-check me-1"></i>
+                          Verify Credential
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div> */ }
+              </div>
+            ))}
+          </div>
+        </div>
 
         <AboutV6 sectionClass="bg-gray" />
-          <div style={{ marginTop: "50px" }}>
+        <div style={{ marginTop: "50px" }}>
           <h2 className="text-center">B2S Values</h2>
           <div className="container">
             <div className={`portfolio-style-three-area `}>
               {b2sValues?.map((item, idx) => {
-                return (<div key ={idx} className="portfolio-style-three-item" style={{backgroundColor:"#212121"}}>
+                return (<div key={idx} className="portfolio-style-three-item" style={{ backgroundColor: "#212121" }}>
                   <div className="row align-center">
                     <div className="col-lg-7">
                       <img
@@ -203,16 +331,16 @@ const AboutUsPage2 = () => {
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
-                        
+
                       }}
                       className="col-lg-5"
                     >
                       <h2 className="b2stext">
-                        <Link  to="">
-                          <strong style={{marginLeft:"0",color:"#c9f21d"}}>{item?.title}</strong>
+                        <Link to="">
+                          <strong style={{ marginLeft: "0", color: "#c9f21d" }}>{item?.title}</strong>
                         </Link>
                       </h2>
-                      <p style={{font:"30px"}}>
+                      <p style={{ font: "30px" }}>
                         {item?.desc}
                       </p>
                     </div>
@@ -374,7 +502,7 @@ const AboutUsPage2 = () => {
             </div>
           </div>
         </div>
-      
+
 
         <div
           style={{ marginTop: "60px", paddingBottom: "30px" }}
