@@ -14,7 +14,7 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
     return (
         <>
             <div className="home-blog-style-one">
-                <div className="thumb">
+                <div className="thumb" >
                     <Link to={`/blog/${_id}`}>
                         <img src={thumbnail} width={800} height={600} alt="Thumb" />
                     </Link>
