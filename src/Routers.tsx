@@ -117,7 +117,7 @@ import QuillEditor from "./components/editor/QuillEditor";
 import EditBlog from "./components/editor/editBlog";
 import CheckAuth from "./components/protected/checkAuth";
 import AdminLogin from "./pages/Login/adminLogin";
-// import AllBlogPages from "./pages/blogPages/AllBlogPages";
+import AllBlogPages from "./pages/blogPages/AllBlogPages";
 import BlogSinglePage from "./pages/blogPages/BlogSinglePage";
 import Thrive from "./pages/CasestudyPages/Thrive";
 import CPAPA from "./pages/servicesPages/CPAPA";
@@ -194,7 +194,7 @@ const Routers = () => {
 
                 <Route path='/faqs' element={<FaqPage />}></Route>
                 {/* <Route path='/test' element={<NewCareers/>}></Route> */}
-                {/* <Route path='/blogs' element={<AllBlogPages/>}></Route> */}
+                <Route path='/blogs' element={<AllBlogPages/>}></Route>
                 <Route path="/blog/:id" element={<BlogSinglePage />}></Route>
 
 

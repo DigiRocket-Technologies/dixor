@@ -19,7 +19,7 @@ const BlogContentNew = ({
   return (
     <>
       <div
-        className={`blog-area single full-blog full-blog ${
+        className={`blog-area  single full-blog full-blog ${
           sectionClass ? sectionClass : ""
         }`}
       >
@@ -30,8 +30,8 @@ const BlogContentNew = ({
                 <div className="blog-content col-lg-10 offset-lg-1 col-md-12">
                   {content ? (
                     <div
-                      className="blog-content-html ql-editor"
-                      dangerouslySetInnerHTML={{ __html:content }}
+                      className="blog-content-html text-white ql-editor"
+                      dangerouslySetInnerHTML={{ __html:content.replace(/color:\s*rgb\(0,\s*0,\s*0\)/g, "color: rgb(255, 255, 255)") }}
                     />
                   ) : (
                     ""

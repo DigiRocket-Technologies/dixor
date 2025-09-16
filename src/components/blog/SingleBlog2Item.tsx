@@ -5,10 +5,11 @@ interface DataType {
     createdAt?:string;
     thumbnail:string,
     _id:string,
+    metaDescription:string
 }
 
 const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
-    const { title,createdAt,thumbnail,_id } = blog
+    const { title,createdAt,thumbnail,_id,metaDescription } = blog
 
     return (
         <>
@@ -27,7 +28,7 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
                             <Link to={`/blog/${_id}`}>{title}</Link>
                         </h2>
                         <Link to={`/blog/${_id}`} className="button-regular">
-                            Continue Reading
+                            {metaDescription} Continue Reading
                             <i className="fas fa-long-arrow-right" />
                         </Link>
                     </div>
