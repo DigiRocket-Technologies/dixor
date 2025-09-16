@@ -4,7 +4,7 @@ import "quill/dist/quill.snow.css";
 import PreviewBlog from "../../pages/blogPages/PreviewBlog";
 import { useAuthContext } from "../../context/AuthContext";
 
-// Replace with your Cloudinary config for image uploads
+// Replace with your Cloudinary config for image uploads 
 const CLOUDINARY_UPLOAD_PRESET = "Quill Image";
 const CLOUDINARY_CLOUD_NAME = "dteglgu3w";
 
