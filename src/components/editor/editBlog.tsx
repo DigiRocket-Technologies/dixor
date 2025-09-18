@@ -36,6 +36,7 @@ const EditBlog = () => {
 
   const { authUser } = useAuthContext();
   const { slug } = useParams();
+  const [id,setId]=useState();
 
   const [formData, setFormData] = useState<FormData>({
     title: "",
@@ -78,12 +79,13 @@ const EditBlog = () => {
       );
 
       const data = await response.json();
-      console.log(data);
 
       if (quillRef.current) {
         quillRef.current.clipboard.dangerouslyPasteHTML(data.blog.content);
         setContent(data.blog.content);
       }
+      
+      setId(data.blog._id)
 
       setFormData({
         title: data.blog.title,
@@ -502,6 +504,7 @@ const EditBlog = () => {
         }
       );
       const data = await res.json();
+      console.log(data)
       if (!data?.success) throw new Error(data?.message);
       alert("Blog updated successfully!");
     } catch (err: any) {
