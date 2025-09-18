@@ -40,7 +40,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                 <ul>
                   <li style={{ width: "70%", marginTop: "10px" }}>
                     <h4>United Kingdom</h4>
-                    <p>
+                    <p >
                       71-75, Shelton Street, Covent Garden, London, WC2H 9JQ
                     </p>
                   </li>

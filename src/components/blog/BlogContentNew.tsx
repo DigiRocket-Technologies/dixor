@@ -23,7 +23,7 @@ const BlogContentNew = ({
           sectionClass ? sectionClass : ""
         }`}
       >
-        <div className="container">
+        <div className="container" >
           <div className="blog-items">
             <div className="row">
               <Animate className="animate__animated animate__fadeInUp">
