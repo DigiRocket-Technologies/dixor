@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Link, } from "react-router-dom";
 import SingleBlog2ItemAdmin from "./SingleBlog2ItemAdmin";
 import { useAuthContext } from "../../context/AuthContext";
+import Preloader from "../utilities/Preloader";
 
 interface DataType {
   sectionClass?: string;
@@ -12,12 +13,13 @@ interface DataType {
 
 const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
   const { authUser } = useAuthContext()
+  const [loading, setloading] = useState(false);
 
   const [blogs, setBlogs] = useState([]);
 
   const getAllBlogs = async () => {
     try {
-
+      setloading(true)
       const response = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogsadmin`, {
         method: "GET",
@@ -32,6 +34,8 @@ const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
       setBlogs(data?.blogs);
     } catch (err) {
       alert(err);
+    }finally{
+      setloading(false)
     }
   };
 
@@ -70,7 +74,9 @@ const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
   // };
 
   // const totalPages = Math.ceil(BlogV3Data.length / itemsPerPage);
-
+ 
+    if (loading)
+    return <Preloader />
   return (
     <>
       <div

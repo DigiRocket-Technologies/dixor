@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
+import Preloader from "../utilities/Preloader";
 
 
 interface DataType {
@@ -9,20 +10,20 @@ interface DataType {
   thumbnail: string;
   _id: string;
   live: boolean;
+  slug:string
 }
 
 const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
-  const { title, createdAt, thumbnail, _id, live } = blog;
+  const { title, createdAt, thumbnail, _id, live,slug } = blog;
   const [loading, setLoading] = useState(false);
   const { authUser } = useAuthContext();
 
   const handleDelete = async (id: string) => {
     const opinion = confirm("Do you want to delete item")
     if (!opinion)
-      return
+    return
 
     try {
-
       setLoading(true);
       const res = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/deleteblog`,
@@ -37,6 +38,8 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
       );
       const data = await res.json();
       if (!data?.success) throw new Error(data?.message);
+      window.location.reload()
+      alert("Blog deleted sucessfully")
     } catch (err: any) {
       console.log(err)
       alert(err.message);
@@ -67,6 +70,8 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
       );
       const data = await res.json();
       if (!data?.success) throw new Error(data?.message);
+      window.location.reload()
+      alert(`Blog is now ${live?"hidden":"live"}`)
     } catch (err: any) {
       console.log(err)
       alert(err.message);
@@ -74,12 +79,12 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
       setLoading(false);
     }
   }
-
+  
   return (
     <>
       <div className="home-blog-style-one">
         <div className="thumb">
-          <Link to={`/blog/${_id}`}>
+          <Link to={`/blog/${slug}`}>
             <img src={thumbnail} width={800} height={600} alt="Thumb" />
           </Link>
           <div className="info">
@@ -89,9 +94,9 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
               </ul>
             </div>
             <h2 className="post-title">
-              <Link to={`/blog/${_id}`}>{title}</Link>
+              <Link to={`/blog/${slug}`}>{title}</Link>
             </h2>
-            <Link to={`/admin/editblog/${_id}`}>
+            <Link to={`/admin/editblog/${slug}`}>
               <button>Edit</button>
             </Link>
             <button

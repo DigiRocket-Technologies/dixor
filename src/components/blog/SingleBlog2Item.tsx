@@ -4,18 +4,18 @@ interface DataType {
     title?: string;
     createdAt?:string;
     thumbnail:string,
-    _id:string,
+    slug:string,
     metaDescription:string
 }
 
 const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
-    const { title,createdAt,thumbnail,_id,metaDescription } = blog
+    const { title,createdAt,thumbnail,slug,metaDescription } = blog
 
     return (
         <>
             <div className="home-blog-style-one">
                 <div className="thumb">
-                    <Link to={`/blog/${_id}`}>
+                    <Link to={`/blog/${slug}`}>
                         <img src={thumbnail} width={800} height={600} alt="Thumb" />
                     </Link>
                     <div className="info">
@@ -25,9 +25,9 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
                             </ul>
                         </div>
                         <h2 className="post-title">
-                            <Link to={`/blog/${_id}`}>{title}</Link>
+                            <Link to={`/blog/${slug}`}>{title}</Link>
                         </h2>
-                        <Link to={`/blog/${_id}`} className="button-regular">
+                        <Link to={`/blog/${slug}`} className="button-regular">
                             {metaDescription} Continue Reading
                             <i className="fas fa-long-arrow-right" />
                         </Link>

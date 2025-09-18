@@ -4,24 +4,27 @@ import { useEffect, useState } from "react";
 // import Pagination from "react-paginate";
 // import { useNavigate, useParams } from "react-router-dom";
 import SingleBlog2Item from "./SingleBlog2Item";
+import Preloader from "../utilities/Preloader";
 
 interface DataType {
   sectionClass?: string;
 }
 
 const AllBlogPagesContent = ({ sectionClass }: DataType) => {
+  const [loading, setloading] = useState(false);
 
-  const [blogs,setBlogs]=useState([])  
-  
+  const [blogs, setBlogs] = useState([])
+
   const getAllBlogs = async () => {
     try {
+      setloading(true)
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogs`,{
-            method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogs`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
       );
       const data = await response.json();
 
@@ -30,13 +33,15 @@ const AllBlogPagesContent = ({ sectionClass }: DataType) => {
     } catch (err) {
       console.log(err)
       alert(err);
+    } finally {
+      setloading(false)
     }
   };
 
   useEffect(() => {
     getAllBlogs();
-  },[]);
-  
+  }, []);
+
   // Pagination
 
   // const navigate = useNavigate();
@@ -69,16 +74,18 @@ const AllBlogPagesContent = ({ sectionClass }: DataType) => {
 
   // const totalPages = Math.ceil(BlogV3Data.length / itemsPerPage);
 
+  if (loading)
+  return <Preloader />
+  else
   return (
     <>
       <div
-        className={`blog-area blog-grid-colum ${
-          sectionClass ? sectionClass : ""
-        }`}
+        className={`blog-area blog-grid-colum ${sectionClass ? sectionClass : ""
+          }`}
       >
         <div className="container">
           <div className="row">
-            {blogs.map((blog,idx) => (
+            {blogs.map((blog, idx) => (
               <div className="col-lg-6 mb-50" key={idx}>
                 <SingleBlog2Item blog={blog} />
               </div>

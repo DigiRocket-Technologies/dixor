@@ -17,6 +17,8 @@ interface FormData {
   metaDescription: string;
   scriptTags: string[];
   thumbnail: string;
+  slug:string;
+  heading:string
 }
 
 const QuillEditor = () => {
@@ -36,6 +38,8 @@ const QuillEditor = () => {
     metaDescription: "",
     scriptTags: [],
     thumbnail: "",
+    slug:"",
+    heading:""
   });
 
   const resizeRef = useRef<{
@@ -69,6 +73,7 @@ const QuillEditor = () => {
 
       const data = await response.json();
       if (!data.success) throw new Error(data.message);
+      alert("Blog saved successfully")
     } catch (err: any) {
       alert(err.message);
     } finally {
@@ -546,6 +551,40 @@ const QuillEditor = () => {
                   borderRadius: "10px",
                 }}
                 value={formData.title}
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="form-label">Slug</label>
+              <input
+                name="slug"
+                placeholder="Enter slug for url"
+                className=""
+                style={{
+                  width: "100%",
+                  border: "1px solid black",
+                  padding: "10px 10px",
+                  borderRadius: "10px",
+                }}
+                value={formData.slug}
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="form-label">H1</label>
+              <input
+                name="heading"
+                placeholder="Enter heading"
+                className=""
+                style={{
+                  width: "100%",
+                  border: "1px solid black",
+                  padding: "10px 10px",
+                  borderRadius: "10px",
+                }}
+                value={formData.heading}
                 onChange={handleChange}
               />
             </div>

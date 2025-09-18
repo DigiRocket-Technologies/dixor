@@ -195,7 +195,7 @@ const Routers = () => {
                 <Route path='/faqs' element={<FaqPage />}></Route>
                 {/* <Route path='/test' element={<NewCareers/>}></Route> */}
                 <Route path='/blogs' element={<AllBlogPages/>}></Route>
-                <Route path="/blog/:id" element={<BlogSinglePage />}></Route>
+                <Route path="/blog/:slug" element={<BlogSinglePage />}></Route>
 
 
                 <Route path='*' element={<NotFoundPage />}></Route>
@@ -204,7 +204,7 @@ const Routers = () => {
                 <Route element={<CheckAuth />}>
                     <Route path="/admin/blogs" element={<AllBlogPagesAdmin />}></Route>
                     <Route path="/admin/addblog" element={<QuillEditor />}></Route>
-                    <Route path="/admin/editblog/:id" element={<EditBlog />}></Route>
+                    <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route>
                 </Route>
 
                 {/* DIGIROCKET ROUTES END OVER HERE */}

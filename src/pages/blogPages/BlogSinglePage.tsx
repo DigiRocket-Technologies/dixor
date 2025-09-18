@@ -16,6 +16,8 @@ const BlogSinglePage = () => {
     
   const [blogData, setBlogData] = useState({
     title: "",
+    slug:"",
+    h1:"",
     metaDescription: "",
     scripts: [],
     content: "",
@@ -44,9 +46,9 @@ const BlogSinglePage = () => {
     };
   }
 
-  const getBlogDetails = async (id:string) => {
+  const getBlogDetails = async (slug:string) => {
     const response = await fetch(
-      `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getblogdetails/${id}`,
+      `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getblogdetails/${slug}`,
       {
         method: "GET",
         headers: {
@@ -66,11 +68,12 @@ const BlogSinglePage = () => {
     }
   };
 
-  const { id } = useParams();
+  const { slug } = useParams();
+  console.log(slug)
   useEffect(() => {
-    if(id)
-    getBlogDetails(id);
-  }, [id]);
+    if(slug)
+    getBlogDetails(slug);
+  }, [slug]);
   return (
     <>
       <Helmet>
@@ -88,7 +91,7 @@ const BlogSinglePage = () => {
       </Helmet>
 
       <LayoutV1>
-        <Breadcrumb title="Blog Single" breadCrumb="blog-single" />
+        <Breadcrumb title={blogData?.h1||"Blog-Single"} breadCrumb={blogData?.slug||"blog-single"} />
         {
           <BlogContentNew
             sectionClass="default-padding-bottom"
