@@ -1,4 +1,4 @@
-import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json"
+// import ServicesV1Data from "../../../src/assets/jsonData/services/ServicesV1Data.json"
 // import SplitText from "../animation/SplitText.jsx"
 // import { Link } from "react-router-dom";
 import { useState } from "react";

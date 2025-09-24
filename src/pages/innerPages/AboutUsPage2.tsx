@@ -13,7 +13,7 @@ import SingleTeamV2 from "../../components/team/SingleTeamV2.js";
 import thumb3 from "/assets/img/about/who-we-are.png";
 import { Keyboard } from "swiper/modules";
 // import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3.js";
 import MostPopularServices from "../../components/services/MostPopularServices.js";
 import Countries from "../../components/clients/countries.js";
@@ -25,56 +25,56 @@ import { Link } from "react-router-dom";
 
 
 const AboutUsPage2 = () => {
-  const [selectedIndustry, setSelectedIndustry] = useState("Textile Printing");
-  const industryData: Record<
-    string,
-    {
-      activeUsers: string;
-      sessions: string;
-      eventCount: string;
-      clicks: string;
-      impressions: string;
-    }
-  > = {
-    "Textile Printing": {
-      activeUsers: "205%",
-      sessions: "159%",
-      eventCount: "1.8 M",
-      clicks: "53.7 K",
-      impressions: "2.85 M",
-    },
-    "Food & Beverage": {
-      activeUsers: "187%",
-      sessions: "142%",
-      eventCount: "2.3 M",
-      clicks: "48.2 K",
-      impressions: "3.12 M",
-    },
-    "Health & Safety": {
-      activeUsers: "231%",
-      sessions: "178%",
-      eventCount: "1.5 M",
-      clicks: "62.4 K",
-      impressions: "2.41 M",
-    },
-    Clothing: {
-      activeUsers: "193%",
-      sessions: "151%",
-      eventCount: "2.1 M",
-      clicks: "57.8 K",
-      impressions: "3.05 M",
-    },
-    Technologies: {
-      activeUsers: "247%",
-      sessions: "183%",
-      eventCount: "2.7 M",
-      clicks: "71.3 K",
-      impressions: "4.22 M",
-    },
-    // ...
-  };
+  // const [selectedIndustry, setSelectedIndustry] = useState("Textile Printing");
+  // const industryData: Record<
+  //   string,
+  //   {
+  //     activeUsers: string;
+  //     sessions: string;
+  //     eventCount: string;
+  //     clicks: string;
+  //     impressions: string;
+  //   }
+  // > = {
+  //   "Textile Printing": {
+  //     activeUsers: "205%",
+  //     sessions: "159%",
+  //     eventCount: "1.8 M",
+  //     clicks: "53.7 K",
+  //     impressions: "2.85 M",
+  //   },
+  //   "Food & Beverage": {
+  //     activeUsers: "187%",
+  //     sessions: "142%",
+  //     eventCount: "2.3 M",
+  //     clicks: "48.2 K",
+  //     impressions: "3.12 M",
+  //   },
+  //   "Health & Safety": {
+  //     activeUsers: "231%",
+  //     sessions: "178%",
+  //     eventCount: "1.5 M",
+  //     clicks: "62.4 K",
+  //     impressions: "2.41 M",
+  //   },
+  //   Clothing: {
+  //     activeUsers: "193%",
+  //     sessions: "151%",
+  //     eventCount: "2.1 M",
+  //     clicks: "57.8 K",
+  //     impressions: "3.05 M",
+  //   },
+  //   Technologies: {
+  //     activeUsers: "247%",
+  //     sessions: "183%",
+  //     eventCount: "2.7 M",
+  //     clicks: "71.3 K",
+  //     impressions: "4.22 M",
+  //   },
+  //   // ...
+  // };
 
-  const currentStats = industryData[selectedIndustry];
+  // const currentStats = industryData[selectedIndustry];
 
   const b2sValues = [
     {
