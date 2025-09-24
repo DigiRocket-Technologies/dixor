@@ -115,20 +115,20 @@ const AboutUsPage2 = () => {
       id: 1,
       imgsrc: "/assets/img/partner/certifications/iso/itsm.png",
       title: "Information Technology Service Management",
-      pdfUrl:"/assets/pdf/iso/itsm.pdf"
+      pdfUrl: "/assets/pdf/iso/itsm.pdf"
     },
     {
       id: 2,
       title: "Quality Management System",
       imgsrc: "/assets/img/partner/certifications/iso/qms.png",
-      pdfUrl:"/assets/pdf/iso/qms.pdf"
-      
+      pdfUrl: "/assets/pdf/iso/qms.pdf"
+
     },
     {
       id: 3,
       title: "Information Security Management System",
       imgsrc: "/assets/img/partner/certifications/iso/isms.png",
-      pdfUrl:"/assets/pdf/iso/isms.pdf"
+      pdfUrl: "/assets/pdf/iso/isms.pdf"
     }
   ];
 
@@ -504,13 +504,12 @@ const AboutUsPage2 = () => {
         </div>
 
 
-        <div
+        {/* <div
           style={{ marginTop: "60px", paddingBottom: "30px" }}
           className="container"
         >
           <div className="container-fluid p-0">
             <div className="row g-0" style={{ minHeight: "70vh" }}>
-              {/* Left Column - Industries */}
               <div className="col-12 col-md-6 bg-dark h-100 d-flex flex-column">
                 <div className="px-4 py-3 flex-grow-1">
                   <h2 className="fs-2 fw-bold mb-1">Industries</h2>
@@ -535,27 +534,13 @@ const AboutUsPage2 = () => {
                         onClick={() => setSelectedIndustry(industry)}
                       >
                         <span className="fs-4">{industry}</span>
-                        {/* <button
-                    className="rounded-circle d-flex align-items-center justify-content-center"
-                    style={{
-                      width: "1.5rem",
-                      height: "1.5rem",
-                      border: `1px solid ${selectedIndustry === industry ? "#C9F31D" : "#D9D9D9"}`,
-                      color: selectedIndustry === industry ? "#C9F31D" : "#D9D9D9",
-                      background: "transparent",
-                    }}
-                  >
-                    <img src="./Arrow 2.svg" alt="" />
-                  </button> */}
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
 
-              {/* Right Column - Stats */}
               <div className="col-12 col-md-6  d-flex flex-column">
-                {/* Active Users */}
                 <div
                   className="d-flex flex-column justify-content-end align-items-end text-end p-2 flex-grow-1"
                   style={{ backgroundColor: "#C9F31D", height: "25%" }}
@@ -567,8 +552,6 @@ const AboutUsPage2 = () => {
                     {currentStats.activeUsers}
                   </p>
                 </div>
-
-                {/* Sessions and Event Count */}
                 <div className="d-flex flex-grow-1" style={{ height: "25%" }}>
                   <div
                     className="d-flex flex-column justify-content-end align-items-end p-2 text-end w-50"
@@ -593,8 +576,6 @@ const AboutUsPage2 = () => {
                     </p>
                   </div>
                 </div>
-
-                {/* Clicks */}
                 <div
                   className="d-flex flex-column justify-content-end align-items-end text-end p-2 flex-grow-1"
                   style={{ backgroundColor: "#C9F31D", height: "25%" }}
@@ -606,8 +587,6 @@ const AboutUsPage2 = () => {
                     {currentStats.clicks}
                   </p>
                 </div>
-
-                {/* Impressions */}
                 <div
                   className="d-flex flex-column justify-content-end align-items-end text-end p-2 flex-grow-1"
                   style={{ backgroundColor: "white", height: "25%" }}
@@ -622,7 +601,7 @@ const AboutUsPage2 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <WhyChooseV3 />
 
