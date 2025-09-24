@@ -1,0 +1,44 @@
+[
+    {
+        "id": "creative-branding-eyecandy",
+        "thumb": "/assets/img/portfolio/eyecandy-thumb.jpg",
+        "tag": "Brand Identity",
+        "title": "Eye Candy Brown Salon",
+        "description": "Complete brand makeover with elegant logo design, color palette, and marketing collaterals"
+    },
+    {
+        "id": "creative-design-gourmet",
+        "thumb": "/assets/img/portfolio/gk-thumb.jpg",
+        "tag": "Logo Design",
+        "title": "Gourmet Kitchenworks",
+        "description": "Modern logo creation with sophisticated typography and kitchen-themed visual elements"
+    },
+    {
+        "id": "creative-visual-dripnation",
+        "thumb": "/assets/img/portfolio/drip-nation-thumb.jpg",
+        "tag": "Visual Graphics",
+        "title": "Drip Nation IL",
+        "description": "Street-style graphics with bold typography and urban aesthetic for fashion brand"
+    },
+    {
+        "id": "creative-graphics-alamocity",
+        "thumb": "/assets/img/portfolio/Alamocitypopcorn-thumb.jpg",
+        "tag": "Package Design",
+        "title": "Alamo City Popcorn",
+        "description": "Fun and colorful packaging design with playful illustrations and brand mascot"
+    },
+    {
+        "id": "creative-digital-rehisk",
+        "thumb": "/assets/img/portfolio/rehisk-thumb.jpg",
+        "tag": "Digital Graphics",
+        "title": "Rehisk",
+        "description": "Modern digital artwork with clean lines and professional color scheme for tech startup"
+    },
+    {
+        "id": "creative-brand-laddersafety",
+        "thumb": "/assets/img/portfolio/laddersafety-thumb.jpg",
+        "tag": "Corporate Design",
+        "title": "Ladder Safety Rails",
+        "description": "Professional corporate identity with safety-focused iconography and industrial aesthetics"
+    }
+]

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import AboutV6 from "../../components/about/AboutV6";
-import BannerV8 from "../../components/banner/BannerV8";
+// import BannerV8 from "../../components/banner/BannerV8";
 import BlogV2 from "../../components/blog/BlogV2";
 import DarkClass from "../../components/classes/DarkClass";
 import ClientsV1 from "../../components/clients/ClientsV1";
@@ -21,7 +21,7 @@ const Home1 = () => {
 
             <div className="smooth-scroll-container">
                 <HeaderV1 />
-                <BannerV8 />
+                {/* <BannerV8 /> */}
                 <AboutV6 />
                 <ServicesV1 sectionClass='bg-gray default-padding' hasTitle={true} />
                 <ProjectV1 />

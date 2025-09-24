@@ -124,6 +124,7 @@ import CPAPA from "./pages/servicesPages/CPAPA";
 import AgenticPage from "./pages/servicesPages/AgenticPage";
 import CLLMPAGE from "./pages/servicesPages/CLLMPage";
 import CToolPage from "./pages/servicesPages/CToolPage";
+import CreativesPage from "./pages/innerPages/CreativesPage";
 // import AIResearch from "./pages/CasestudyPages/AIResearch";
 // import NewCareers from "./pages/innerPages/NewCareers";
 const Routers = () => {
@@ -158,7 +159,7 @@ const Routers = () => {
 
 
                 <Route path='/portfolio' element={<ProjectPage2 />}></Route>
-
+                <Route path='/creatives' element={<CreativesPage />}></Route>
 
                 {/* <Route path='/case-studies' element={<BlogSingleWithSidebarLightPage />}></Route> */}
 

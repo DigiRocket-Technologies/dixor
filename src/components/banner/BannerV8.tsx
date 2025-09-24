@@ -13,17 +13,16 @@ const BannerV8 = ({ lightMode }: DataType) => {
       <div
         className="banner-style-eight-area bg-cover"
         style={{
-          backgroundImage: `url(${
-            lightMode ? "/assets/img/shape/4.jpg" : "/assets/img/shape/3.jpg"
-          })`,
+          backgroundImage: `url(${lightMode ? "/assets/img/shape/4.jpg" : "/assets/img/shape/3.jpg"
+            })`,
         }}
       >
-        <div style={{paddingBottom:"70px"}} className="container">
+        <div style={{ paddingBottom: "70px" }} className="container">
           <div className="row">
             <div className="col-xl-8">
               <div className="banner-style-eight-heading">
                 <div className="banner-title">
-                  <h2  className="">
+                  <h2 className="">
                     <SplitText
                       className="title-left split-text"
                       delay={150}
@@ -78,9 +77,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                 <h4>DigiRocket Technologies</h4>
                 <div className="right">
                   <p>
-                    As digital boundaries expand, DigiRocket Technologies stands
-                    strong—your trusted partner in achieving lasting success in
-                    a dynamic landscape
+                    As digital boundaries expand, DigiRocket Technologies stands strong—your trusted partner in achieving lasting success in a dynamic landscape
                   </p>
                   <Link className="btn-animation mt-10" to="/about-us">
                     <i className="fas fa-arrow-right" /> <span>Know More</span>
@@ -89,8 +86,8 @@ const BannerV8 = ({ lightMode }: DataType) => {
               </div>
             </div>
             <div className="col-xl-4 offset-xl-1">
-              <div style={{marginTop:"150px",paddingTop:"0",paddingBottom:"0"}} className="card-style-one">
-                <div className="bottom" style={{gap:"0",justifyContent:"space-evenly"}}>
+              <div style={{ marginTop: "150px", paddingTop: "0", paddingBottom: "0" }} className="card-style-one">
+                <div className="bottom" style={{ gap: "0", justifyContent: "space-evenly" }}>
                   <div className="fun-fact">
                     <div className="counter">
                       <div className="timer">
