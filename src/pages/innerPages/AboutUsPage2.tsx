@@ -13,7 +13,7 @@ import SingleTeamV2 from "../../components/team/SingleTeamV2.js";
 import thumb3 from "/assets/img/about/who-we-are.png";
 import { Keyboard } from "swiper/modules";
 // import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 import WhyChooseV3 from "../../components/whyChoose/WhyChooseV3.js";
 import MostPopularServices from "../../components/services/MostPopularServices.js";
 import Countries from "../../components/clients/countries.js";
@@ -25,56 +25,56 @@ import { Link } from "react-router-dom";
 
 
 const AboutUsPage2 = () => {
-  const [selectedIndustry, setSelectedIndustry] = useState("Textile Printing");
-  const industryData: Record<
-    string,
-    {
-      activeUsers: string;
-      sessions: string;
-      eventCount: string;
-      clicks: string;
-      impressions: string;
-    }
-  > = {
-    "Textile Printing": {
-      activeUsers: "205%",
-      sessions: "159%",
-      eventCount: "1.8 M",
-      clicks: "53.7 K",
-      impressions: "2.85 M",
-    },
-    "Food & Beverage": {
-      activeUsers: "187%",
-      sessions: "142%",
-      eventCount: "2.3 M",
-      clicks: "48.2 K",
-      impressions: "3.12 M",
-    },
-    "Health & Safety": {
-      activeUsers: "231%",
-      sessions: "178%",
-      eventCount: "1.5 M",
-      clicks: "62.4 K",
-      impressions: "2.41 M",
-    },
-    Clothing: {
-      activeUsers: "193%",
-      sessions: "151%",
-      eventCount: "2.1 M",
-      clicks: "57.8 K",
-      impressions: "3.05 M",
-    },
-    Technologies: {
-      activeUsers: "247%",
-      sessions: "183%",
-      eventCount: "2.7 M",
-      clicks: "71.3 K",
-      impressions: "4.22 M",
-    },
-    // ...
-  };
+  // const [selectedIndustry, setSelectedIndustry] = useState("Textile Printing");
+  // const industryData: Record<
+  //   string,
+  //   {
+  //     activeUsers: string;
+  //     sessions: string;
+  //     eventCount: string;
+  //     clicks: string;
+  //     impressions: string;
+  //   }
+  // > = {
+  //   "Textile Printing": {
+  //     activeUsers: "205%",
+  //     sessions: "159%",
+  //     eventCount: "1.8 M",
+  //     clicks: "53.7 K",
+  //     impressions: "2.85 M",
+  //   },
+  //   "Food & Beverage": {
+  //     activeUsers: "187%",
+  //     sessions: "142%",
+  //     eventCount: "2.3 M",
+  //     clicks: "48.2 K",
+  //     impressions: "3.12 M",
+  //   },
+  //   "Health & Safety": {
+  //     activeUsers: "231%",
+  //     sessions: "178%",
+  //     eventCount: "1.5 M",
+  //     clicks: "62.4 K",
+  //     impressions: "2.41 M",
+  //   },
+  //   Clothing: {
+  //     activeUsers: "193%",
+  //     sessions: "151%",
+  //     eventCount: "2.1 M",
+  //     clicks: "57.8 K",
+  //     impressions: "3.05 M",
+  //   },
+  //   Technologies: {
+  //     activeUsers: "247%",
+  //     sessions: "183%",
+  //     eventCount: "2.7 M",
+  //     clicks: "71.3 K",
+  //     impressions: "4.22 M",
+  //   },
+  //   // ...
+  // };
 
-  const currentStats = industryData[selectedIndustry];
+  // const currentStats = industryData[selectedIndustry];
 
   const b2sValues = [
     {
@@ -115,20 +115,20 @@ const AboutUsPage2 = () => {
       id: 1,
       imgsrc: "/assets/img/partner/certifications/iso/itsm.png",
       title: "Information Technology Service Management",
-      pdfUrl:"/assets/pdf/iso/itsm.pdf"
+      pdfUrl: "/assets/pdf/iso/itsm.pdf"
     },
     {
       id: 2,
       title: "Quality Management System",
       imgsrc: "/assets/img/partner/certifications/iso/qms.png",
-      pdfUrl:"/assets/pdf/iso/qms.pdf"
-      
+      pdfUrl: "/assets/pdf/iso/qms.pdf"
+
     },
     {
       id: 3,
       title: "Information Security Management System",
       imgsrc: "/assets/img/partner/certifications/iso/isms.png",
-      pdfUrl:"/assets/pdf/iso/isms.pdf"
+      pdfUrl: "/assets/pdf/iso/isms.pdf"
     }
   ];
 
@@ -504,13 +504,12 @@ const AboutUsPage2 = () => {
         </div>
 
 
-        <div
+        {/* <div
           style={{ marginTop: "60px", paddingBottom: "30px" }}
           className="container"
         >
           <div className="container-fluid p-0">
             <div className="row g-0" style={{ minHeight: "70vh" }}>
-              {/* Left Column - Industries */}
               <div className="col-12 col-md-6 bg-dark h-100 d-flex flex-column">
                 <div className="px-4 py-3 flex-grow-1">
                   <h2 className="fs-2 fw-bold mb-1">Industries</h2>
@@ -535,27 +534,13 @@ const AboutUsPage2 = () => {
                         onClick={() => setSelectedIndustry(industry)}
                       >
                         <span className="fs-4">{industry}</span>
-                        {/* <button
-                    className="rounded-circle d-flex align-items-center justify-content-center"
-                    style={{
-                      width: "1.5rem",
-                      height: "1.5rem",
-                      border: `1px solid ${selectedIndustry === industry ? "#C9F31D" : "#D9D9D9"}`,
-                      color: selectedIndustry === industry ? "#C9F31D" : "#D9D9D9",
-                      background: "transparent",
-                    }}
-                  >
-                    <img src="./Arrow 2.svg" alt="" />
-                  </button> */}
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
 
-              {/* Right Column - Stats */}
               <div className="col-12 col-md-6  d-flex flex-column">
-                {/* Active Users */}
                 <div
                   className="d-flex flex-column justify-content-end align-items-end text-end p-2 flex-grow-1"
                   style={{ backgroundColor: "#C9F31D", height: "25%" }}
@@ -567,8 +552,6 @@ const AboutUsPage2 = () => {
                     {currentStats.activeUsers}
                   </p>
                 </div>
-
-                {/* Sessions and Event Count */}
                 <div className="d-flex flex-grow-1" style={{ height: "25%" }}>
                   <div
                     className="d-flex flex-column justify-content-end align-items-end p-2 text-end w-50"
@@ -593,8 +576,6 @@ const AboutUsPage2 = () => {
                     </p>
                   </div>
                 </div>
-
-                {/* Clicks */}
                 <div
                   className="d-flex flex-column justify-content-end align-items-end text-end p-2 flex-grow-1"
                   style={{ backgroundColor: "#C9F31D", height: "25%" }}
@@ -606,8 +587,6 @@ const AboutUsPage2 = () => {
                     {currentStats.clicks}
                   </p>
                 </div>
-
-                {/* Impressions */}
                 <div
                   className="d-flex flex-column justify-content-end align-items-end text-end p-2 flex-grow-1"
                   style={{ backgroundColor: "white", height: "25%" }}
@@ -622,7 +601,7 @@ const AboutUsPage2 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <WhyChooseV3 />
 
