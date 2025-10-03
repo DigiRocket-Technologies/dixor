@@ -45,8 +45,8 @@ const AdminLogin = () => {
       const data = await response.json();
 
       if (data?.success) {
-        localStorage.setItem("user",data?.token);
-        setAuthUser(localStorage.getItem("user")||null) ;
+        localStorage.setItem("digirocket.io.auth_token",data?.token);
+        setAuthUser(localStorage.getItem("digirocket.io.auth_token")||null) ;
         setFormData({
           password: "",
         });

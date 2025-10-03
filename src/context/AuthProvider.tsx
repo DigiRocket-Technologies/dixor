@@ -7,17 +7,18 @@ interface AuthProviderProps {
 }
 
 const AuthContextProvider = ({ children }: AuthProviderProps) => {
+
   const [authUser, setAuthUser] = useState<string | null>(() => {
-    const storedUser = localStorage.getItem("user")||null;
+    const storedUser = localStorage.getItem("digirocket.io.auth_token")||null;
     return storedUser 
   });
 
   // Optional: keep localStorage in sync
   useEffect(() => {
     if (authUser) {
-      localStorage.setItem("user", authUser);
+      localStorage.setItem("digirocket.io.auth_token", authUser);
     } else {
-      localStorage.removeItem("user");
+      localStorage.removeItem("digirocket.io.auth_token");
     }
   }, [authUser]);
 
