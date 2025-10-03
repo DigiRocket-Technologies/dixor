@@ -6,6 +6,7 @@ interface AuthProviderProps {
   children: ReactNode;
 }
 
+
 const AuthContextProvider = ({ children }: AuthProviderProps) => {
 
   const [authUser, setAuthUser] = useState<string | null>(() => {
