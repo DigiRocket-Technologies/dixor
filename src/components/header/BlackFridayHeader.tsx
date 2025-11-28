@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // import MainMenu from './MainMenu';
 import Main from './Main'
 // import SidebarInfo from './SidebarInfo';
-import logo from '/assets/img/logo.png';
+// import logo from '/assets/img/logo.png';
 import santaLogo from "/assets/img/merrychristmas.png";
 // import logoLight from '/assets/img/logo-light.png';
 import useSidebarMenu from "../../hooks/useSidebarMenu";
