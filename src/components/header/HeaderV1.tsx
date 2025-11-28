@@ -6,8 +6,10 @@ import logo from '/assets/img/logo.png';
 import logoLight from '/assets/img/logo-light.png';
 import useSidebarMenu from "../../hooks/useSidebarMenu";
 import useSubMenuToggle from "../../hooks/useSubMenuToggle";
+import santaLogo from "/assets/img/merrychristmas.png";
 // import useSidebarInfo from "../../hooks/useSidebarInfo";
 import useStickyMenu from "../../hooks/useStickyMenu";
+import blackLogo from "../../assets/image/logo-black-santa.png";
 
 
 interface DataType {
@@ -31,12 +33,14 @@ const HeaderV1 = ({ lightMode }: DataType) => {
                                 <i className="fa fa-bars" />
                             </button>
                             <Link className="navbar-brand" to="/">
-                                <img src={lightMode ? logo : logoLight} className="logo logo-display" alt="Logo" />
-                                <img src={lightMode ? logo : logoLight} className="logo logo-scrolled" alt="Logo" />
+                                {/* <img src={lightMode ? logo : logoLight} className="logo logo-display" alt="Logo" />
+                                <img src={lightMode ? logo : logoLight} className="logo logo-scrolled" alt="Logo" /> */}
+                                <img src={lightMode ? blackLogo : santaLogo} className="logo logo-display blackfriday-logo" alt="Logo" />
+                                <img src={lightMode ? blackLogo : santaLogo} className="logo logo-scrolled blackfriday-logo" alt="Logo" />
                             </Link>
                         </div>
                         <div className={`collapse navbar-collapse ${isOpen ? "show collapse-mobile" : "collapse-mobile"}`} id="navbar-menu">
-                            <img src={logoLight} alt="Logo" />
+                            <img src={lightMode ?  blackLogo: santaLogo} alt="Logo" />
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" onClick={closeMenu}>
                                 <i className="fa fa-times" />
                             </button>

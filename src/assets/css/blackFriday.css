@@ -1,0 +1,106 @@
+
+/* @media screen and (min-width: 1200px) {
+  .blackfridaytext {
+    font-size: 94px !important;
+  }
+} */
+
+
+.blackfriday-offer-text {
+  text-align: center;
+  color: #fff;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+/* "SPECIAL OFFER" text */
+.offer-subtitle {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #cfcfcf;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* "BLACK FRIDAY" heading */
+.offer-heading {
+  font-size: 90px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.1;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.offer-heading span {
+  color: #c6ff00; /* bright neon green */
+}
+
+/* Yellow-green badge */
+.offer-badge {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 5px 38px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  background-color: #c6ff00;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.offer-badge:hover {
+  background-color: #daff55;
+}
+
+/* Bottom description */
+.offer-description {
+  margin-top: 22px;
+  font-size: 16px;
+  color: #cfcfcf;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.offer-description span {
+  color: #c6ff00;
+  font-weight: 600;
+}
+
+/* 💡 Responsiveness */
+@media screen and (max-width: 992px) {
+  .offer-heading {
+    font-size: 60px;
+  }
+  .offer-badge {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+  .offer-description {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .offer-heading {
+    font-size: 40px;
+  }
+  .offer-subtitle {
+    font-size: 16px;
+  }
+  .offer-badge {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+/* Logo CSS HERE */
+.blackfriday-logo {
+  height: 80px;
+  margin-bottom: 10px;
+  width: 120px;
+}
+
