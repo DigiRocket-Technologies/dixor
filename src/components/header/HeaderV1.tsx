@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 // import MainMenu from './MainMenu';
 import Main from './Main'
 // import SidebarInfo from './SidebarInfo';
-import logo from '/assets/img/logo.png';
-import logoLight from '/assets/img/logo-light.png';
+// import logo from '/assets/img/logo.png';
+// import logoLight from '/assets/img/logo-light.png';
 import useSidebarMenu from "../../hooks/useSidebarMenu";
 import useSubMenuToggle from "../../hooks/useSubMenuToggle";
 import santaLogo from "/assets/img/merrychristmas.png";

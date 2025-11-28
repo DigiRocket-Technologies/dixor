@@ -10,6 +10,7 @@ interface DataType {
 }
 
 const BlackFriday = ({ lightMode }: DataType) => {
+  console.log(lightMode)
   const [backgroundImage, setBackgroundImage] = useState(bg);
 
   useEffect(() => {
@@ -83,7 +84,7 @@ const BlackFriday = ({ lightMode }: DataType) => {
           </h1>
 
           <Link to="/contact-us">
-            <div className="offer-badge">50% OFF ON ALL SERVICES</div>
+            <div className="offer-badge button">50% OFF ON ALL SERVICES</div>
           </Link>
 
           <p className="offer-description">
