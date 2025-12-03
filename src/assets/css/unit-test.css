@@ -193,6 +193,9 @@ button.btn:hover::after {
 	border-top: 1px solid rgba(255, 255, 255, 0.4);
 	margin-top: 25px;
 }
+.blog-area.blog-grid .thumb-less .button:hover {
+	color: var(--white);
+}
 
 .blog-area.blog-grid .thumb-less .item::after {
 	position: absolute;

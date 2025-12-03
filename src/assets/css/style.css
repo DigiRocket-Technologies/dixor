@@ -2013,10 +2013,13 @@ button {
 
 button:hover {
 	color: var(--white);
+	border:"1px solid re"
 }
 
 .bg-dark button:hover {
 	color: var(--color-heading);
+	/* color: var(--white); */
+
 }
 
 button::after {
@@ -2030,6 +2033,22 @@ button::after {
 	width: 115%;
 	z-index: -1;
 	background-color: var(--dark);
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	-webkit-transform: translateY(-45%) skew(25deg) scale(0);
+	transform: translateY(-45%) skew(25deg) scale(0);
+}
+.blogButton::after {
+	position: absolute;
+	top: inherit;
+	right: inherit;
+	bottom: inherit;
+	left: -5%;
+	content: "";
+	height: 150px;
+	width: 115%;
+	z-index: -1;
+	background-color: var(--white);
 	-webkit-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 	-webkit-transform: translateY(-45%) skew(25deg) scale(0);
@@ -12734,6 +12753,14 @@ ul.list-disc li {
 	margin-bottom: -80px;
 	padding-right: 30px;
 }
+
+.blogAddbtn:hover {
+    background-color: white;
+	color: black;
+}
+/* .blogAddbtn {
+	
+} */
 
 .bg-dark .blog-area .home-blog-two .meta li,
 .bg-dark .blog-area .home-blog-two .meta li a {

@@ -56,11 +56,7 @@ import Countries from "../../components/clients/countries";
 import BlackFriday from "../../components/banner/BlackFriday";
 import BlackFridayHeader from "../../components/header/BlackFridayHeader";
 
-
-
 const Dt = () => {
-  
-
   return (
     <>
       <Helmet>

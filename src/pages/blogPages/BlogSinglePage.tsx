@@ -74,6 +74,7 @@ const BlogSinglePage = () => {
     if(slug)
     getBlogDetails(slug);
   }, [slug]);
+
   return (
     <>
       <Helmet>

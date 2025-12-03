@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
 import PreviewBlog from "../../pages/blogPages/PreviewBlog";
@@ -23,6 +24,7 @@ interface FormData {
 
 const QuillEditor = () => {
   const { authUser } = useAuthContext();
+  const navigate = useNavigate();
   const editorRef = useRef<HTMLDivElement | null>(null);
   const quillRef = useRef<Quill | null>(null);
   const thumbRef = useRef<HTMLInputElement | null>(null);
@@ -58,6 +60,11 @@ const QuillEditor = () => {
 
   const handleSave = async () => {
     try {
+      if(!formData.heading || formData.scriptTags.length <= 0 || !formData.metaDescription || !formData.title || !formData.slug || !formData.thumbnail) {
+        alert("Please Enter All Details");
+        return;
+      } 
+      // console.log(formData.heading)
       setLoading(true);
       const response = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/addblog`,
@@ -68,12 +75,14 @@ const QuillEditor = () => {
             Authorization: authUser || ""
           },
           body: JSON.stringify({ content, formData }),
+          credentials: "include", 
         }
       );
 
       const data = await response.json();
-      if (!data.success) throw new Error(data.message);
+      if (!data.success) { throw new Error(data.message)};
       alert("Blog saved successfully")
+      navigate('/admin/blogs')
     } catch (err: any) {
       alert(err.message);
     } finally {
@@ -539,10 +548,10 @@ const QuillEditor = () => {
             </div>
 
             <div className="mb-4">
-              <label className="form-label">Blog Title</label>
+              <label className="form-label">h1</label>
               <input
                 name="title"
-                placeholder="Enter Blog Title"
+                placeholder="Enter heading"
                 className=""
                 style={{
                   width: "100%",
@@ -573,10 +582,10 @@ const QuillEditor = () => {
             </div>
 
             <div className="mb-4">
-              <label className="form-label">H1</label>
+              <label className="form-label">Blog Title</label>
               <input
                 name="heading"
-                placeholder="Enter heading"
+                placeholder="Enter Blog Title"
                 className=""
                 style={{
                   width: "100%",

@@ -1,17 +1,20 @@
 // import BlogV3Data from "../../assets/jsonData/blog/BlogV3Data.json";
 // import Spline from '@splinetool/react-spline';
 import { useEffect, useState } from "react";
+// import { toast } from "react-toastify";
 // import Pagination from "react-paginate";
-import { Link, } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SingleBlog2ItemAdmin from "./SingleBlog2ItemAdmin";
 import { useAuthContext } from "../../context/AuthContext";
 import Preloader from "../utilities/Preloader";
+import '../../assets/css/style.css'
 
 interface DataType {
   sectionClass?: string;
 }
 
 const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
+  const navigate = useNavigate();
   const { authUser } = useAuthContext()
   const [loading, setloading] = useState(false);
 
@@ -25,16 +28,17 @@ const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": authUser || ""
-        }
+          Authorization: `Bearer ${authUser}`,
+        },
+        credentials: "include",
       });
 
       const data = await response.json();
-      if (!data?.success) throw new Error(data?.message);
+      if (!data?.success) { navigate('/admin'); alert("Please Loggin") };
       setBlogs(data?.blogs);
     } catch (err) {
       alert(err);
-    }finally{
+    } finally {
       setloading(false)
     }
   };
@@ -74,8 +78,8 @@ const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
   // };
 
   // const totalPages = Math.ceil(BlogV3Data.length / itemsPerPage);
- 
-    if (loading)
+
+  if (loading)
     return <Preloader />
   return (
     <>
@@ -137,10 +141,12 @@ const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
             }}
           >
             <Link to="/admin/addblog">
-
-              <button>Add Blog</button>
+              <button className="blogButton">
+                Add Blog
+              </button>
             </Link>
           </div>
+
         </div>
       </div>
     </>

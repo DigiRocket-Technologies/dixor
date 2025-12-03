@@ -1,19 +1,21 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
 
 
 interface DataType {
   title?: string;
+  h1?:string;
   createdAt?: string;
   thumbnail: string;
   _id: string;
   live: boolean;
-  slug:string
+  slug:string;
 }
 
 const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
-  const { title, createdAt, thumbnail, _id, live,slug } = blog;
+  const navigate = useNavigate()
+  const { createdAt, thumbnail, _id, live,slug, h1 } = blog;
   const [loading, setLoading] = useState(false);
   const { authUser } = useAuthContext();
 
@@ -30,13 +32,14 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",
-            Authorization: authUser || "",
+            Authorization: `Bearer ${authUser}`,
           },
           body: JSON.stringify({ id }),
+          credentials: "include",
         }
       );
       const data = await res.json();
-      if (!data?.success) throw new Error(data?.message);
+      if (!data?.success) {navigate('/admin'); throw new Error(data?.message)};
       window.location.reload()
       alert("Blog deleted sucessfully")
     } catch (err: any) {
@@ -62,9 +65,10 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
-            Authorization: authUser || "",
+            Authorization: `Bearer ${authUser}`,
           },
           body: JSON.stringify({ id }),
+          credentials: "include",
         }
       );
       const data = await res.json();
@@ -93,16 +97,16 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
               </ul>
             </div>
             <h2 className="post-title">
-              <Link to={`/blog/${slug}`}>{title}</Link>
+              <Link to={`/blog/${slug}`}>{h1?.substring(0,65)}...</Link>
             </h2>
             <Link to={`/admin/editblog/${slug}`}>
-              <button>Edit</button>
+              <button className="blogButton">Edit</button>
             </Link>
             <button
               disabled={loading}
               onClick={() => handleDelete(_id)}
               style={{ marginLeft: "20px" }}
-              className=""
+              className="blogButton"
             >
               Delete
             </button>
@@ -110,7 +114,7 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
               disabled={loading}
               onClick={() => changeVisibility(_id)}
               style={{ marginLeft: "20px" }}
-              className=""
+              className="blogButton"
             >
               {live ? "Hide It" : "Make it live"}
             </button>
