@@ -194,7 +194,7 @@ const Routers = () => {
 
                 <Route path='/faqs' element={<FaqPage />}></Route>
                 {/* <Route path='/test' element={<NewCareers/>}></Route> */}
-                <Route path='/blogs' element={<AllBlogPages/>}></Route>
+                <Route path='/blogs' element={<AllBlogPages />}></Route>
                 <Route path="/blog/:slug" element={<BlogSinglePage />}></Route>
 
 
@@ -206,6 +206,7 @@ const Routers = () => {
                     <Route path="/admin/addblog" element={<QuillEditor />}></Route>
                     <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route>
                 </Route>
+
 
                 {/* DIGIROCKET ROUTES END OVER HERE */}
 

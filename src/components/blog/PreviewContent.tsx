@@ -24,7 +24,7 @@ const PreviewContent = ({
       >
         <div className="container">
            <div style={{width:"100%",display:"flex",justifyContent:"center",marginTop:"40px"}}>
-            <button onClick={()=>setPreview(false)}>BACK</button>
+            <button className="blogButton" onClick={()=>setPreview(false)}>BACK</button>
             </div> 
           <div className="blog-items">
             <div className="row">

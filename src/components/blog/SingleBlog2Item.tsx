@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 interface DataType {
+    h1?: string;
     title?: string;
     createdAt?:string;
     thumbnail:string,
@@ -9,7 +10,7 @@ interface DataType {
 }
 
 const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
-    const { title,createdAt,thumbnail,slug,metaDescription } = blog
+    const { h1,createdAt,thumbnail,slug,metaDescription } = blog
 
     return (
         <>
@@ -25,10 +26,10 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
                             </ul>
                         </div>
                         <h2 className="post-title">
-                            <Link to={`/blog/${slug}`}>{title}</Link>
+                            <Link to={`/blog/${slug}`}>{h1?.slice(0,70)}...</Link>
                         </h2>
                         <Link to={`/blog/${slug}`} className="button-regular">
-                            {metaDescription} Continue Reading
+                            {metaDescription?.slice(0,65)} Continue Reading
                             <i className="fas fa-long-arrow-right" />
                         </Link>
                     </div>

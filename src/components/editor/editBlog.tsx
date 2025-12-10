@@ -1,5 +1,4 @@
-
-
+import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from "react";
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
@@ -24,6 +23,7 @@ interface FormData {
 }
 
 const EditBlog = () => {
+  const navigate = useNavigate()
   const editorRef = useRef<HTMLDivElement | null>(null);
   const thumbRef = useRef<HTMLInputElement | null>(null);
   const quillRef = useRef<Quill | null>(null);
@@ -63,8 +63,6 @@ const EditBlog = () => {
   const fetchBlog = async () => {
     if (!slug || blogLoaded) return;
 
-    console.log(authUser);
-
     try {
       const response = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getblogdetails/${slug}`,
@@ -73,11 +71,13 @@ const EditBlog = () => {
           headers: {
             "Content-Type": "application/json",
             Authorization: authUser ? authUser : ""
-          }
+          },
+          credentials: "include", 
         }
       );
 
       const data = await response.json();
+      if (!data?.success) { navigate('/admin'); alert("Please Loggin") };
 
       if (quillRef.current) {
         quillRef.current.clipboard.dangerouslyPasteHTML(data.blog.content);
@@ -150,7 +150,6 @@ const EditBlog = () => {
 
     // Image upload handler
     const imageHandler = () => {
-      console.log("Image upload triggered");
       const input = document.createElement("input");
       input.setAttribute("type", "file");
       input.setAttribute("accept", "image/*");
@@ -490,6 +489,10 @@ const EditBlog = () => {
   const handleSave = async () => {
     if (!id) return;
     try {
+      if(!formData.heading || formData.scriptTags.length <= 0 || !formData.metaDescription || !formData.title || !formData.slug || !formData.thumbnail) {
+        alert("Please Enter All Details");
+        return;
+      }
       setLoading(true);
       const res = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/editblogdetails`,
@@ -500,12 +503,14 @@ const EditBlog = () => {
             Authorization: authUser || "" 
           },
           body: JSON.stringify({ content, formData, id }),
+          credentials: "include",
         }
       );
       const data = await res.json();
-      console.log(data)
+      // console.log(data)
       if (!data?.success) throw new Error(data?.message);
       alert("Blog updated successfully!");
+      navigate("/admin/blogs")
     } catch (err: any) {
       alert(err.message);
     } finally {
@@ -593,10 +598,10 @@ const EditBlog = () => {
             </div>
 
             <div className="mb-4">
-              <label className="form-label">Blog Title</label>
+              <label className="form-label">H1</label>
               <input
-                name="title"
-                placeholder="Enter Blog Title"
+                name="heading"
+                placeholder="Enter heading"
                 className=""
                 style={{
                   width: "100%",
@@ -604,7 +609,7 @@ const EditBlog = () => {
                   padding: "10px 10px",
                   borderRadius: "10px",
                 }}
-                value={formData.title}
+                value={formData.heading}
                 onChange={handleChange}
               />
             </div>
@@ -628,6 +633,22 @@ const EditBlog = () => {
             </div>
 
             <div className="mb-4">
+              <label className="form-label">Blog Title</label>
+              <input
+                name="title"
+                placeholder="Enter Blog Title"
+                className=""
+                style={{
+                  width: "100%",
+                  border: "1px solid black",
+                  padding: "10px 10px",
+                  borderRadius: "10px",
+                }}
+                value={formData.title}
+                onChange={handleChange}
+              />
+            </div>
+            {/* <div className="mb-4">
               <label className="form-label">H1</label>
               <input
                 name="heading"
@@ -642,7 +663,7 @@ const EditBlog = () => {
                 value={formData.heading}
                 onChange={handleChange}
               />
-            </div>
+            </div> */}
 
             <div className="mb-4">
               <label className="form-label">Meta Description</label>

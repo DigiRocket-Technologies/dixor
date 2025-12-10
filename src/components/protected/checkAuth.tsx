@@ -1,16 +1,34 @@
 import { Navigate, Outlet } from "react-router-dom";
-import { useAuthContext } from "../../context/AuthContext";
+import { useEffect, useState } from "react";
 
 const CheckAuth = () => {
-  const { authUser } = useAuthContext();
+  const [authChecked, setAuthChecked] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  if (!authUser) {
-    {
-      return <Navigate to="/admin" />;
-    }
-  }
+  useEffect(() => {
+    const verifyAuth = async () => {
+      try {
+        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/checkauth`, {
+          credentials: "include",
+        });
+        const data = await res.json();
+        setIsAuthenticated(data.success);
+      } catch {
+        setIsAuthenticated(false);
+      } finally {
+        setAuthChecked(true);
+      }
+    };
+    verifyAuth();
+  }, []);
 
-  return <Outlet />;
+  
+  if (!authChecked) return <div>Loading...</div>;
+
+  return isAuthenticated ? <Outlet /> : <Navigate to="/admin" replace />;
 };
 
 export default CheckAuth;
+
+
+

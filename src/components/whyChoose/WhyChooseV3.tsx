@@ -13,14 +13,14 @@ const WhyChooseV3 = () => {
                                         <div className="timer"><CountUp end={40} enableScrollSpy /> </div>
                                         <div className="operator">+</div>
                                     </div>
-                                    <h3>We have won 40+ award and we believe in
+                                    <h3>We have won 40+ awards and we believe in
                                         quality.</h3>
                                 </div>
                                 <ul className="list-style-three">
                                     <li>
                                         <h4>Top Brand</h4>
                                         <p>
-                                            We help brands stand ou visual design
+                                            We help brands stand out with visual design.
                                         </p>
                                     </li>
                                     <li>
@@ -47,7 +47,7 @@ const WhyChooseV3 = () => {
                                     <div className="center">
                                         <h4>Design Awards</h4>
                                         <p>
-                                            Craetive Best design of the day
+                                            Creative Best design of the day
                                         </p>
                                     </div>
                                     <h2>2013</h2>

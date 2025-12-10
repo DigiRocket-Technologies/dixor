@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 // import MainMenu from './MainMenu';
-import Main from './Main'
+import Main from './Main';
 // import SidebarInfo from './SidebarInfo';
 // import logo from '/assets/img/logo.png';
 import santaLogo from "/assets/img/merrychristmas.png";
@@ -12,7 +12,6 @@ import useStickyMenu from "../../hooks/useStickyMenu";
 import "../../assets/css/blackFriday.css";
 import newIcon from '../../assets/image/newiconCap.png';
 
-console.log(santaLogo);
 interface DataType { 
     lightMode?: boolean;
 }
