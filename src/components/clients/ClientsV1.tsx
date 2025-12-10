@@ -90,7 +90,7 @@ const ClientsV1 = ({ sectionClass }: DataType) => {
                   <div className="fun-fact">
                     <div className="counter">
                       <div className="count-num">
-                        <CountUp end={300} enableScrollSpy />
+                        <CountUp end={80} enableScrollSpy />
                       </div>
                       <div className="operator">+</div>
                     </div>

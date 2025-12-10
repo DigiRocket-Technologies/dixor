@@ -14,7 +14,7 @@ const ServiceList = ({ service }: { service: DataType }) => {
       </div> */}
       <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
         <img
-          style={{ height: "100px",width:"120px" }}
+          style={{ height: "100px",width:"100px" }}
           src={img}
           alt=""
         />
