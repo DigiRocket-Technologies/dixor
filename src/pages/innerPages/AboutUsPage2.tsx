@@ -79,32 +79,32 @@ const AboutUsPage2 = () => {
   const b2sValues = [
     {
       title: "CLIENT CENTRIC INNOVATION",
-      desc: "We innovate with our client success at the core.",
+      desc: "Client-centric innovation means every idea, feature, and solution starts with your goals, not ours. By understanding your business, strategies, and systems are designed to solve real-world challenges, not just tick boxes. The focus is on blending data, creativity, and technology to deliver measurable results that keep you ahead of the curve.",
       image: "/assets/img/b2S/client centric innovation.png"
     },
     {
       title: "OWNERSHIP CULTURE",
-      desc: "We know accountability and their outcomes, not just tasks.",
+      desc: "Ownership culture means every member of the team treats your project as their own responsibility, not just another assignment. Each decision is made with long-term outcomes in mind, focusing on impact, not activity. This mindset builds trust, speeds up problem-solving, and ensures that commitments are followed through with real accountability.",
       image: "/assets/img/b2S/Ownership culture.png"
     },
     {
       title: "TRANSPARENCY & INTEGRITY",
-      desc: "We do the right thing even when no one is watching us and keep clear communication to deliver honest results.",
+      desc: "We believe trust is built through open communication and honest actions. Every decision we make reflects our commitment to doing what’s right. With clear processes and accountable practices, we ensure you always know where we stand. ",
       image: "/assets/img/b2S/Transparency and integrity.png"
     },
     {
       title: "HUMILITY",
-      desc: "Be bold, take risks but stay grounded.",
+      desc: "Humility keeps the team grounded, no matter how complex the project or how big the result. It means listening first, questioning assumptions, and staying open to better ideas wherever they come from. This mindset helps build genuine collaboration with clients and colleagues, turning every engagement into a learning opportunity and a shared win.",
       image: "/assets/img/b2S/humility.png"
     },
     {
       title: "COLLABORATE TO ELEVATE",
-      desc: "We grow faster when we grow together. Teamwork is the key to success.",
+      desc: "Together, we achieve more than we ever could alone. Innovation grows when ideas, skills, and perspectives come together. At DigiRocket, teamwork fuels progress, and progress fuels success.",
       image: "/assets/img/b2S/collaborate to elevate.png"
     },
     {
       title: "EMPATHY & RESPECT",
-      desc: "We care deeply, act kindly and respect every voice as we know ideas matter more than hierarchy.",
+      desc: "We value people first, listening with care and understanding every perspective. Each voice matters, and every idea is welcomed with openness and dignity. By treating one another with kindness, we create a culture where everyone can thrive",
       image: "/assets/img/b2S/Empathy and Respect.png"
     }
   ];
@@ -137,10 +137,11 @@ const AboutUsPage2 = () => {
     <>
       <Helmet>
         <title> About Us | DigiRocket </title>
-        <meta
+        <meta name="description" content="DigiRocket Technologies is a passionate team of designers, strategists, and experts committed to helping startups become recognized brands for their business solutions."></meta>
+        {/* <meta
           title="About DigiRocket Technologies | Transforming Startups into Brands"
           content="DigiRocket Technologies is a passionate team of designers, strategists, and experts committed to helping startups become recognized brands for their business solutions."
-        ></meta>
+        ></meta> */}
       </Helmet>
 
       <LayoutV1>

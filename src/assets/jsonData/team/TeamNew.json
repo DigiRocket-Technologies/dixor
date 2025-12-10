@@ -60,16 +60,6 @@
     }
   },
   {
-    "id": 7,
-    "thumb": "shudanshu shoot.png",
-    "name": "Sudhanshu Awasthi",
-    "designation": "Data Science & AI Engineer",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-  {
     "id": 8,
     "thumb": "harsh shoot.png",
     "name": "Harsh Raj",
@@ -79,17 +69,6 @@
       "instagram": ""
     }
   },
-  {
-    "id": 9,
-    "thumb": "vaishnavi mam.png",
-    "name": "Vaishnavi Gupta",
-    "designation": "Creative Head",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-
   {
     "id": 10,
     "thumb": "/upasana shoot_1.png",
@@ -101,71 +80,10 @@
     }
   },
   {
-    "id": 11,
-    "thumb": "/akriti mam shoot 2.png",
-    "name": "Akriti Mahajan",
-    "designation": "Project Manager",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-  {
-    "id": 12,
-    "thumb": "pratyaksh shoot.png",
-    "name": "Pratyaksh Srivastava",
-    "designation": "UX Expert",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-
-  {
-    "id": 13,
-    "thumb": "pari.webp",
-    "name": "Pratyush Negi",
-    "designation": "Visual Specialist",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-  {
     "id": 14,
     "thumb": "garvit shoot 1.png",
     "name": "Garvit Sharma",
     "designation": "SEM Expert",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-  {
-    "id": 15,
-    "thumb": "shristi shoot 1.png",
-    "name": "Shristi Sinha",
-    "designation": "Brand Content Expert",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-  {
-    "id": 17,
-    "thumb": "sahil shoot.png",
-    "name": "Sahil Awasthi",
-    "designation": "Account Manager",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-  {
-    "id": 18,
-    "thumb": "sohan fixed.jpg",
-    "name": "Sohan Kumar",
-    "designation": "SEO Expert",
     "social": {
       "linkedin": "",
       "instagram": ""
@@ -222,31 +140,80 @@
     }
   },
   {
-    "id": 24,
-    "thumb": "sanjeev shoot f.png",
-    "name": "Sanjeev Kumar",
-    "designation": "Technical Project Co-ordinator",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-  {
-    "id": 25,
-    "thumb": "saksham shoot.png",
-    "name": "Saksham",
-    "designation": "Sales Expert",
-    "social": {
-      "linkedin": "",
-      "instagram": ""
-    }
-  },
-
-  {
     "id": 26,
     "thumb": "nitesh shoot.png",
     "name": "Nitesh Srivastava",
     "designation": "SEO Team Leader",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 27,
+    "thumb": "Bhumika.png",
+    "name": "Bhumika",
+    "designation": "Content Writer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 28,
+    "thumb": "Kanika.png",
+    "name": "Kanika",
+    "designation": "Graphic Designer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 29,
+    "thumb": "Pratyaksh.png",
+    "name": "Pratyaksh",
+    "designation": "UX Expert",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 31,
+    "thumb": "Sakshi.png",
+    "name": "Sakshi",
+    "designation": "Graphic Designer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 30,
+    "thumb": "Ritika.png",
+    "name": "Ritika",
+    "designation": "Shopify Developer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 32,
+    "thumb": "sourav.png",
+    "name": "Sourav",
+    "designation": "Web Developer",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 33,
+    "thumb": "Sumit.png",
+    "name": "Sumit",
+    "designation": "SEO Executive",
     "social": {
       "linkedin": "",
       "instagram": ""
