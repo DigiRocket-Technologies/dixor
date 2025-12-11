@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 import { Helmet } from "react-helmet-async";
 import { toast } from "react-toastify";
 import LayoutV1 from "../../components/layouts/LayoutV1";
