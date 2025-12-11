@@ -356,7 +356,7 @@ const AboutUsPage2 = () => {
           <div className="row">
             <div className="col-lg-8 offset-lg-2 ">
               <div className="site-heading text-center pt-4">
-                <h1 className="split-text">
+                <h3 className="split-text " style={{textTransform: "none", fontSize: "2.5rem"}}>
                   <SplitText
                     delay={120}
                     animationFrom={{
@@ -373,7 +373,7 @@ const AboutUsPage2 = () => {
                   >
                     Meet Our Brains
                   </SplitText>
-                </h1>
+                </h3>
               </div>
             </div>
           </div>
@@ -407,7 +407,7 @@ const AboutUsPage2 = () => {
             <div className="row">
               <div className="col-lg-8 offset-lg-2 ">
                 <div className="site-heading text-center pt-4">
-                  <h1 className="split-text">
+                  <h3 className="split-text" style={{textTransform: "none", fontSize: "2.5rem"}}>
                     <SplitText
                       delay={120}
                       animationFrom={{
@@ -424,7 +424,7 @@ const AboutUsPage2 = () => {
                     >
                       The Leardership Personnel
                     </SplitText>
-                  </h1>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -456,7 +456,7 @@ const AboutUsPage2 = () => {
           </div>
 
           <div style={{ padding: "40px 0px" }}>
-            <h1 className="text-center">Our Team</h1>
+            <h2 className="text-center">Our Team</h2>
             <div
               className="team-grid"
               style={{

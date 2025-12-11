@@ -5258,7 +5258,15 @@ ul.project-meta {
 	position: absolute;
 }
 
-
+.bannerV8title {
+	font-size: 80px;
+}
+@media (max-width: 767px) {
+	.bannerV8title {
+		font-size: 60px;
+		color: #c6ff00 !important;
+	}
+}
 /* Banner Style Nine */
 .banner-style-nine-items {
 	padding-top: 240px;
@@ -13774,6 +13782,11 @@ ul.footer-social li a img {
 		display: none;
 	}
 
+    #aboutUsPage2text span {
+		font-size: 200px;
+      /* text-transform: none !important; */
+    }
+
 	/* About Five */
 	.banner-style-five-info .d-grid .thumb {
 		display: none;
@@ -18252,6 +18265,11 @@ button.Toastify__close-button {
 
 .b2stext{
 	font-size:55px !important;
+}
+@media (max-width: 540px) {
+	.b2stext {
+		font-size: 40px !important;
+	}
 }
 
 .form-control::placeholder,
