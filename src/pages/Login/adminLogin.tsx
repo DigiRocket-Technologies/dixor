@@ -1,53 +1,48 @@
+
+
+
+
+
+
+
+
 import { Helmet } from "react-helmet-async";
 import { toast } from "react-toastify";
 import LayoutV1 from "../../components/layouts/LayoutV1";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import DarkClass from "../../components/classes/DarkClass";
-import { useEffect, useState } from "react";
+import { useEffect, useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 
+interface AuthResponse {
+  success: boolean;
+  message?: string;
+}
+
 const AdminLogin = () => {
-  const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [password, setPassword] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
   const navigate = useNavigate();
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
-    // try {
-    //   const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/login`, {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify({ password }),
-    //     credentials: "include", 
-    //   });
-
-    //   const data = await response.json();
-    //   if (data.success) {
-    //     toast.success("Logged in successfully!");
-    //     navigate("/admin/blogs");
-    //   } else {
-    //     toast.error(data.message || "Invalid password");
-    //   }
-    // } catch (err) {
-    //   toast.error("Something went wrong, please try again.");
-    // } finally {
-    //   setLoading(false);
-    // }
-
     try {
-      await fetch('https://dt-backend-gamma.vercel.app/api/v1/login', {
-        method: 'POST',
-        credentials: 'include', // IMPORTANT!
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({ password })
-      })
-        .then(response => response.json())
-        .catch(error => console.error('Error:', error));
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+        credentials: "include",
+      });
+
+      const data: AuthResponse = await response.json();
+      if (data.success) {
+        toast.success("Logged in successfully!");
+        navigate("/admin/blogs");
+      } else {
+        toast.error(data.message || "Invalid password");
+      }
     } catch (err) {
       toast.error("Something went wrong, please try again.");
     } finally {
@@ -57,16 +52,21 @@ const AdminLogin = () => {
 
   useEffect(() => {
     const verifyAuth = async () => {
-      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/checkauth`, {
-        credentials: "include",
-      });
-      const data = await res.json();
-      if (data.success) {
-        navigate('/admin/blogs');
+      try {
+        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/checkauth`, {
+          credentials: "include",
+        });
+        const data = await res.json();
+        if (data.success) {
+          navigate('/admin/blogs');
+        }
+      } catch (error) {
+        // Silent fail - user is not authenticated
+        console.log('Auth check failed:', error);
       }
     }
     verifyAuth();
-  }, [])
+  }, [navigate])
 
   return (
     <>
