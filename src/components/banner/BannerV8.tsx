@@ -22,8 +22,8 @@ const BannerV8 = ({ lightMode }: DataType) => {
           <div className="row">
             <div className="col-xl-8">
               <div className="banner-style-eight-heading">
-                <div className="banner-title">
-                  <h2  className="">
+                <div className="banner-title" style={{marginBottom: "-26px"}}>
+                  <h1  className="bannerV8title">
                     <SplitText
                       className="title-left split-text"
                       delay={150}
@@ -41,7 +41,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                     >
                       BUILT TO SCALE
                     </SplitText>
-                  </h2>
+                  </h1>
 
                   {/* <h2
                     className="title-right split-text"
@@ -80,7 +80,7 @@ const BannerV8 = ({ lightMode }: DataType) => {
                   <p>
                     As digital boundaries expand, DigiRocket Technologies stands
                     strong—your trusted partner in achieving lasting success in
-                    a dynamic landscape
+                    a dynamic landscape.
                   </p>
                   <Link className="btn-animation mt-10" to="/about-us">
                     <i className="fas fa-arrow-right" /> <span>Know More</span>

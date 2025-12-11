@@ -10,6 +10,7 @@ const Services3Page = () => {
     <>
       <Helmet>
         <title>Services | DigiRocket</title>
+        <meta name="description" content="DigiRocket Technologies is a passionate team of designers, strategists, and experts committed to helping startups become recognized brands for their business solutions."></meta>
       </Helmet>
 
       <LayoutV1>

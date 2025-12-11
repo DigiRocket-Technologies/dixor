@@ -15,21 +15,39 @@ const AdminLogin = () => {
     e.preventDefault();
     setLoading(true);
 
-    try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/login`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password }),
-        credentials: "include", 
-      });
+    // try {
+    //   const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/login`, {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify({ password }),
+    //     credentials: "include", 
+    //   });
 
-      const data = await response.json();
-      if (data.success) {
-        toast.success("Logged in successfully!");
-        navigate("/admin/blogs");
-      } else {
-        toast.error(data.message || "Invalid password");
-      }
+    //   const data = await response.json();
+    //   if (data.success) {
+    //     toast.success("Logged in successfully!");
+    //     navigate("/admin/blogs");
+    //   } else {
+    //     toast.error(data.message || "Invalid password");
+    //   }
+    // } catch (err) {
+    //   toast.error("Something went wrong, please try again.");
+    // } finally {
+    //   setLoading(false);
+    // }
+
+    try {
+      await fetch('https://dt-backend-gamma.vercel.app/api/v1/login', {
+        method: 'POST',
+        credentials: 'include', // IMPORTANT!
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({ password })
+      })
+        .then(response => response.json())
+        .catch(error => console.error('Error:', error));
     } catch (err) {
       toast.error("Something went wrong, please try again.");
     } finally {
@@ -43,7 +61,7 @@ const AdminLogin = () => {
         credentials: "include",
       });
       const data = await res.json();
-      if(data.success) {
+      if (data.success) {
         navigate('/admin/blogs');
       }
     }
