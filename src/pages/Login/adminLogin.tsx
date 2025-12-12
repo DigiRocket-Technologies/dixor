@@ -25,6 +25,7 @@ const AdminLogin = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
+        credentials: 'include'
       });
 
       const data: AuthResponse & { token?: string } = await response.json();
@@ -53,13 +54,13 @@ const AdminLogin = () => {
           headers: {
             Authorization: `Bearer ${token}`,
           },
+          credentials: 'include'
         });
         const data = await res.json();
         if (data.success) {
           navigate('/admin/blogs');
         }
       } catch (error) {
-        // Silent fail - user is not authenticated
         console.log('Auth check failed:', error);
       }
     }
