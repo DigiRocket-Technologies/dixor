@@ -157,6 +157,7 @@ const Dropshipping = () => {
     <>
       <Helmet>
         <title>Explore Dropshipping Services for Entrepreneurs | DigiRocket</title>
+        <link rel="canonical" href="https://digirocket.io/dropshipping" />
         <meta name="description" content="DigiRocket offers comprehensive dropshipping services, including product research, supplier sourcing, custom store development, and branding, to help entrepreneurs."></meta>
       </Helmet>
 
@@ -198,9 +199,9 @@ const Dropshipping = () => {
           </div>
         </div>
         <div  className="container mt-50 mt-xs-20">
-          <h1 className="text-center">
+          <h2 style={{fontSize: "2.5rem"}} className="text-center">
             Start Your Dropshipping Business The Right Way
-          </h1>
+          </h2>
           <h4 className="mt-5 text-center">
             Are you tired of the pitfalls of Chinese dropshipping? Many
             entrepreneurs jump into dropshipping with high hopes, only to face

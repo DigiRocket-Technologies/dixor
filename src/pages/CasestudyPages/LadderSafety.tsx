@@ -13,6 +13,7 @@ const LadderSafety = () => {
     <>
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
+        <link rel="canonical" href="https://digirocket.io/case-study/laddersafetyrails" />
       </Helmet>
 
       <LayoutV1>

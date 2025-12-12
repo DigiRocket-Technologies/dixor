@@ -14,6 +14,7 @@ const WebApplication = () => {
         <>
             <Helmet>
                 <title>Custom Web Application Development Services | DigiRocket</title>
+                <link rel="canonical" href="https://digirocket.io/web-application-development" />
                 <meta name="description" content="DigiRocket offers expert web application development services, including custom web app development and website application solutions to enhance your business."></meta>
             </Helmet>
             

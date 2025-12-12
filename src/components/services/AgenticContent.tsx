@@ -88,9 +88,9 @@ const AgenticContent = ({ serviceInfo, sectionClass }: ServiceDetailsProps) => {
         >
           <div className=" mt-xs-20">
             <div className="container container-stage">
-              <h1 style={{ marginBottom: "50px" }}>
+              <h2 style={{fontSize: "2.5rem", marginBottom: "50px" }}>
                 How Agentic Process Automation Works?
-              </h1>
+              </h2>
               <div className="row">
                 <div className="col-lg-12">
                   <div className="services-item-one-items">

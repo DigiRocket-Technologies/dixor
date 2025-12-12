@@ -22,6 +22,7 @@ const PerformanceMarketing = () => {
     <>
       <Helmet>
         <title>Top Performance Marketing Company & Google Ads Services | DigiRocket</title>
+        <link rel="canonical" href="https://digirocket.io/performance-marketing" />
         <meta name="description" content="DigiRocket is a leading performance marketing company offering Google Ads management services, product listing ads, and Google Local Services Ads to boost your business."></meta>
       </Helmet>
 

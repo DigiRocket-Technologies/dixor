@@ -14,6 +14,7 @@ const MobileApplication = () => {
         <>
             <Helmet>
                 <title>Custom Mobile App Development Services & Cross-Platform Solutions</title>
+                <link rel="canonical" href="https://digirocket.io/mobile-application-development" />
                 <meta name="description" content="DigiRocket offers custom mobile app development services, including cross-platform app development, mobile application design, and the best phone apps for Android."></meta>
             </Helmet>
             

@@ -61,6 +61,7 @@ const Dt = () => {
     <>
       <Helmet>
         <title>Top Digital Marketing Agency | DigiRocket Technologies</title>
+        <link rel="canonical" href="https://digirocket.io/" />
         <meta name="description" content="DigiRocket is a top digital marketing agency for small businesses, offering AI growth marketing services, expert digital marketing management, and development services​."></meta>
       </Helmet>
       <div className="smooth-scroll-container">

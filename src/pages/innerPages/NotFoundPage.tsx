@@ -8,6 +8,7 @@ const NotFoundPage = () => {
         <>
             <Helmet>
                 <title>Dixor - 404 Not Found</title>
+                <link rel="canonical" href="https://digirocket.io/*" />
             </Helmet>
 
             <LayoutV1>

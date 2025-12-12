@@ -16,6 +16,7 @@ const EcommerceSeo = () => {
         <>
             <Helmet>
                 <title>Ecommerce SEO Services to Boost Online Sales & Visibility | DigiRocket</title>
+                <link rel="canonical" href="https://digirocket.io/ecommerce-seo" />
                 <meta  name="description" content="DigiRocket offers expert ecommerce SEO services to enhance online store visibility, increase sales, and optimize product listings for better search engine performance." />
             </Helmet>
             

@@ -9,6 +9,7 @@ const Terms = () => {
     <>
       <Helmet>
         <title>Terms and Conditions | DigiRocket</title>
+        <link rel="canonical" href="https://digirocket.io/terms-conditions" />
       </Helmet>
 
       <LayoutV1>

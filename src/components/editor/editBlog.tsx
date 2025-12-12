@@ -71,13 +71,12 @@ const EditBlog = () => {
           headers: {
             "Content-Type": "application/json",
             Authorization: authUser ? authUser : ""
-          },
-          credentials: "include", 
+          }
         }
       );
 
       const data = await response.json();
-      if (!data?.success) { navigate('/admin'); alert("Please Loggin") };
+      if (!data?.success) { alert("Someting went wrong") };
 
       if (quillRef.current) {
         quillRef.current.clipboard.dangerouslyPasteHTML(data.blog.content);
@@ -503,7 +502,6 @@ const EditBlog = () => {
             Authorization: authUser || "" 
           },
           body: JSON.stringify({ content, formData, id }),
-          credentials: "include",
         }
       );
       const data = await res.json();

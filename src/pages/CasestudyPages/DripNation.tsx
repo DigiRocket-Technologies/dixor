@@ -13,6 +13,7 @@ const Dripnation = () => {
     <>
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
+        <link rel="canonical" href="https://digirocket.io/case-study/dripnation" />
       </Helmet>
 
       <LayoutV1>

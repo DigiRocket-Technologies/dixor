@@ -75,7 +75,6 @@ const QuillEditor = () => {
             Authorization: authUser || ""
           },
           body: JSON.stringify({ content, formData }),
-          credentials: "include", 
         }
       );
 

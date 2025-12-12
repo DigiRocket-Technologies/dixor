@@ -39,6 +39,7 @@ const Marketing = () => {
     <>
       <Helmet>
         <title>Digital Marketing Company & Website Development Services | DigiRocket</title>
+        <link rel="canonical" href="https://digirocket.io/marketing" />
         <meta name="description" content="DigiRocket is a top marketing company offering digital marketing management services. We use the best AI models for business with leading digital marketing platforms."></meta>
       </Helmet>
 
@@ -59,7 +60,7 @@ const Marketing = () => {
             </div>
           </div>
           <div className="mt-50 mt-xs-20">
-            <h1>The Future of Growth is Marketing </h1>
+            <h3 style={{fontSize: "2.5rem"}}>The Future of Growth is Marketing </h3>
             <div className="row g-4 mt-4">
               {features.map((feature, index) => (
                 <div key={index} className="col-12 col-sm-6 col-lg-3">

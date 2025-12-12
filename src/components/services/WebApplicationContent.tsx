@@ -192,9 +192,9 @@ const WebApplicationContent = ({
             </div>
 
             <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px" }}>
+              <h2 style={{fontSize: "2.5rem", marginBottom: "50px" }}>
                 Our Web Development Services{" "}
-              </h1>
+              </h2>
               <div style={{ marginTop: "40px" }}>
                 <Swiper
                   modules={[Navigation]}

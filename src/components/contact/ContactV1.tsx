@@ -11,7 +11,6 @@ const ContactV1 = ({ sectionClass }: DataType) => {
   const location=useLocation()  
   const contactFormRef = useRef<HTMLDivElement | null>(null);
   
-  
   useEffect(() => {
     if (contactFormRef.current) {
       contactFormRef.current.scrollIntoView({ block: "start" });

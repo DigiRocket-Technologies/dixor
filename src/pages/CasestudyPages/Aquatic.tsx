@@ -13,6 +13,7 @@ const Aquatic = () => {
     <>
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
+        <link rel="canonical" href="https://digirocket.io/case-study/aquatic-ventures" />
       </Helmet>
 
       <LayoutV1>

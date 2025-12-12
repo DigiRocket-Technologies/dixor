@@ -8,7 +8,9 @@ const ContactUsLightPage = () => {
     return (
         <>
             <Helmet>
-                <title>Contact Us - DigiRocket</title>
+                <title>Contact DigiRocket Technologies | Speak with Our Experts</title>
+                <link rel="canonical" href="https://digirocket.io/contact-us" />
+                <meta name="description" content="Get in touch with DigiRocket Technologies to discuss your digital marketing needs. Reach us at info@digirocket.io or call +1 815 688 6366."></meta>
             </Helmet>
 
             <LayoutV1Light>

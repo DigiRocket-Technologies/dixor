@@ -8,7 +8,9 @@ const AllBlogPages = () => {
     return (
         <>
             <Helmet>
-                <title>Blogs | DigiRocket Technologies</title>
+                <title>DigiRocket Blog | Insights on Digital Marketing & Influencer Trends</title>
+                <link rel="canonical" href="https://digirocket.io/blogs" />
+                <meta name="description" content="Stay updated with the latest tips, trends, and strategies in digital marketing and influencer campaigns through the DigiRocket blog. Learn, grow, and innovate with us."></meta>
             </Helmet>
 
             <LayoutV1>

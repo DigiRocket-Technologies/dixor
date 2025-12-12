@@ -13,6 +13,7 @@ const CToolPage = () => {
         <>
             <Helmet>
                 <title>Custom AI Tool Development | DigiRocket</title>
+                <link rel="canonical" href="https://digirocket.io/custom-ai-tool-development" />
                 <meta name="description" content="DigiRocket leverages AI in marketing automation, business intelligence, and small business marketing. Explore AI tools and machine learning to boost efficiency."></meta>
             </Helmet>
             

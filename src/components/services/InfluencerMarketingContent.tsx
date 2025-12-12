@@ -351,9 +351,9 @@ const InfluencerMarketingContent = ({
               </div>
             </div>
             <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px" }}>
+              <h2 style={{fontSize: "2.5rem", marginBottom: "50px" }}>
                 How Do We Make It Happen?
-              </h1>
+              </h2>
               <Swiper
                 loop={true}
                 centeredSlides={false}

@@ -9,8 +9,9 @@ const Services3Page = () => {
   return (
     <>
       <Helmet>
-        <title>Services | DigiRocket</title>
-        <meta name="description" content="DigiRocket Technologies is a passionate team of designers, strategists, and experts committed to helping startups become recognized brands for their business solutions."></meta>
+        <title>Expert Digital Marketing Services | Digirocket Technologies</title>
+        <link rel="canonical" href="https://digirocket.io/services" />
+        <meta name="description" content="Explore DigiRocket’s comprehensive digital marketing services, from influencer campaigns to social media strategies, designed to help brands grow and engage their audience effectively."></meta>
       </Helmet>
 
       <LayoutV1>

@@ -173,9 +173,9 @@ const WooCommerceContent = ({
             </div>
 
             <div className="mt-50 mt-xs-20">
-              <h1 className="" style={{ marginBottom: "50px" }}>
+              <h3 className="" style={{fontSize: "2.5rem", marginBottom: "50px" }}>
                 Why WooCommerce is Right for Your Business?
-              </h1>
+              </h3>
               <div style={{ marginTop: "50px", width: "100%" }}>
                 {[
                   {
