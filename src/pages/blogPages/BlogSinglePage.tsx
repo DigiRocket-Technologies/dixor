@@ -79,6 +79,7 @@ const BlogSinglePage = () => {
     <>
       <Helmet>
         <title>{blogData?.title}</title>
+        <link rel="canonical" href="https://digirocket.io/blog/:slug" />
         <meta name="description" content={blogData?.metaDescription}></meta>
         {parsedScripts.map((script, idx) =>
           script.src ? (

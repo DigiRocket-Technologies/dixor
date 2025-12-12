@@ -188,9 +188,9 @@ const LocalSeoContent = ({
           </div>
 
           <div className="mt-20 mt-xs-20">
-            <h1 className="text-center" style={{ marginBottom: "50px" }}>
+            <h2 className="text-center" style={{fontSize: "2.5rem", marginBottom: "50px" }}>
               Who Needs Local SEO Services?
-            </h1>
+            </h2>
             <div className="container py-1">
               <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 {features.map((feature, index) => (

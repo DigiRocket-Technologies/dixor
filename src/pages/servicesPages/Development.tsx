@@ -34,6 +34,7 @@ const Development = () => {
     <>
       <Helmet>
         <title>Custom Web & Ecommerce Development Services | AI & Web Development</title>
+        <link rel="canonical" href="https://digirocket.io/development" />
         <meta name="description" content="DigiRocket offers expert development services including AI development, custom web development and ecommerce website development to enhance your online presence."></meta>
       </Helmet>
 

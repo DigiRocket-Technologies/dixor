@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 // import { toast } from "react-toastify";
 // import Pagination from "react-paginate";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SingleBlog2ItemAdmin from "./SingleBlog2ItemAdmin";
 import { useAuthContext } from "../../context/AuthContext";
 import Preloader from "../utilities/Preloader";
@@ -14,7 +14,7 @@ interface DataType {
 }
 
 const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { authUser } = useAuthContext()
   const [loading, setloading] = useState(false);
 
@@ -29,12 +29,10 @@ const AllBlogPagesContentAdmin = ({ sectionClass }: DataType) => {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${authUser}`,
-        },
-        credentials: "include",
+        }
       });
-
       const data = await response.json();
-      if (!data?.success) { navigate('/admin'); alert("Please Loggin") };
+      if (!data?.success) { alert("someting went wrong blogs data") };
       setBlogs(data?.blogs);
     } catch (err) {
       alert(err);

@@ -25,7 +25,6 @@ const AdminLogin = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
-        credentials: 'include'
       });
 
       const data: AuthResponse & { token?: string } = await response.json();
@@ -54,7 +53,6 @@ const AdminLogin = () => {
           headers: {
             Authorization: `Bearer ${token}`,
           },
-          credentials: 'include'
         });
         const data = await res.json();
         if (data.success) {
@@ -69,7 +67,10 @@ const AdminLogin = () => {
 
   return (
     <>
-      <Helmet><title>Admin Login | DigiRocket Technologies</title></Helmet>
+      <Helmet>
+        <title>Admin Login | DigiRocket Technologies</title>
+        <link rel="canonical" href="https://digirocket.io/admin" />
+      </Helmet>
       <LayoutV1>
         <Breadcrumb title="Login" breadCrumb="Login" LightMode={false} />
         <form onSubmit={handleSubmit} className="container" style={{ width: "60%", margin: "auto" }}>

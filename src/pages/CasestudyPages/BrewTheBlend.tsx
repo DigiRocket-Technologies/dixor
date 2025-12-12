@@ -13,6 +13,7 @@ const BrewTheBlend = () => {
     <>
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
+        <link rel="canonical" href="https://digirocket.io/case-study/brewtheblend" />
       </Helmet>
 
       <LayoutV1>

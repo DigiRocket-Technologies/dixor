@@ -9,6 +9,7 @@ const Privacy = () => {
     <>
       <Helmet>
         <title>Privacy Policy | DigiRocket</title>
+        <link rel="canonical" href="https://digirocket.io/privacy-policy" />
       </Helmet>
 
       <LayoutV1>

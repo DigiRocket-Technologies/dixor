@@ -9,6 +9,7 @@ const AllBlogPagesAdmin = () => {
         <>
             <Helmet>
                 <title>Blogs | DigiRocket Technologies</title>
+                <link rel="canonical" href="https://digirocket.io/admin/blogs" />
             </Helmet>
 
             <LayoutV1>

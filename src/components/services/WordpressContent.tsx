@@ -192,9 +192,9 @@ const WordpressContent = ({
             </div>
 
             <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "20px" }}>
+              <h3 style={{fontSize: "2.5rem", marginBottom: "20px" }}>
                 Why WordPress is the Best Choice for Your Website?
-              </h1>
+              </h3>
               <Swiper
                 loop={true}
                 centeredSlides={false}

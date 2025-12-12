@@ -14,6 +14,7 @@ const CPAPA = () => {
         <>
             <Helmet>
                 <title>Content Personalization And Predictive Analysis | DigiRocket</title>
+                <link rel="canonical" href="https://digirocket.io/content-personalization-and-predictive-Analysis" />
                 <meta name="description" content="DigiRocket leverages AI in marketing automation, business intelligence, and small business marketing. Explore AI tools and machine learning to boost efficiency."></meta>
             </Helmet>
             

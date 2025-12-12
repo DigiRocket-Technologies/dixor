@@ -325,7 +325,7 @@ const EcommerceMarketingContent = ({
             </div>
 
             <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px",textAlign:"center" }}>Our Amazon Services </h1>
+              <h3 style={{fontSize: "2.5rem", marginBottom: "50px",textAlign:"center" }}>Our Amazon Services </h3>
 
               <div className="d-none d-lg-block">
                 <div style={{ width: "100%", fontSize: "14px" }} className="d-flex flex-column flex-md-row gap-2">
@@ -545,7 +545,7 @@ const EcommerceMarketingContent = ({
 
 
             <div className="mt-50 mt-xs-20">
-              <h1 style={{ marginBottom: "50px" }}>Our Process </h1>
+              <h2 style={{fontSize: "2.5rem", marginBottom: "50px" }}>Our Process </h2>
               <div style={{ marginTop: "50px", width: "100%" }}>
                 {[
                   {

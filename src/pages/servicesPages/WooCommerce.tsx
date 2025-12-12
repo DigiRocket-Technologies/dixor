@@ -18,6 +18,7 @@ const Woocommerce = () => {
     <>
       <Helmet>
         <title>WooCommerce Development Services & Integration | WooCommerce Agency</title>
+        <link rel="canonical" href="https://digirocket.io/woocommerce-development" />
         <meta name="description" content="DigiRocket offers expert WooCommerce development services and integration for your online store. Partner with a leading WooCommerce development agency now."></meta>
       </Helmet>
 

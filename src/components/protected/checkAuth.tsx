@@ -15,8 +15,7 @@ const CheckAuth = () => {
 
       try {
         const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/checkauth`, {
-          headers: { Authorization: `Bearer ${token}` },
-          credentials: 'include',
+          headers: { Authorization: `Bearer ${token}` }
         });
         const data = await res.json();
         if (data.success) setIsAuthenticated(true);

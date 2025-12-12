@@ -75,7 +75,9 @@ const Career = () => {
   return (
     <>
       <Helmet>
-        <title>Careers | DigiRocket</title>
+        <title>Digirocket Technologies - Careers opportunities and positions</title>
+        <link rel="canonical" href="https://digirocket.io/careers" />
+        <meta name="description" content="Discover exciting career opportunities at DigiRocket. Join our team of digital marketing and influencer experts and help shape the future of online brand engagement."></meta>
       </Helmet>
 
       <LayoutV1>

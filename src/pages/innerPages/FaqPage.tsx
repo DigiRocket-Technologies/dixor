@@ -9,6 +9,7 @@ const FaqPage = () => {
         <>
             <Helmet>
                 <title>Faqs | DigiRocket</title>
+                <link rel="canonical" href="https://digirocket.io/faqs" />
             </Helmet>
 
             <LayoutV1>

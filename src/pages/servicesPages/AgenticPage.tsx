@@ -13,6 +13,7 @@ const AgenticPage = () => {
         <>
             <Helmet>
                 <title>Agentic Process Automation | DigiRocket</title>
+                <link rel="canonical" href="https://digirocket.io/agentic-processs-automation" />
                 <meta name="description" content="DigiRocket leverages AI in marketing automation, business intelligence, and small business marketing. Explore AI tools and machine learning to boost efficiency."></meta>
             </Helmet>
             

@@ -17,6 +17,7 @@ const Shopify = () => {
     <>
       <Helmet>
         <title>Expert Shopify Development Services & Website Design | DigiRocket</title>
+        <link rel="canonical" href="https://digirocket.io/shopify-development" />
         <meta name="description" content="DigiRocket is a leading Shopify development company offering expert Shopify Plus development services, custom theme design, and web development for your online store."></meta>
       </Helmet>
 

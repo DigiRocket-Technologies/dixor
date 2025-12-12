@@ -12,7 +12,9 @@ const InfluencerMarketing = () => {
     return (
         <>
             <Helmet>
-                <title>Influencer Marketing | DigiRocket Technologies</title>
+                <title>Best Influencer Marketing Services | DigiRocket</title>
+                <link rel="canonical" href="https://digirocket.io/influencer-marketing" />
+                <meta name="description" content="Maximize your brand’s reach with DigiRocket’s influencer marketing solutions. Connect with top creators, launch impactful campaigns, and drive measurable results."></meta>
             </Helmet>
             
             <LayoutV1>

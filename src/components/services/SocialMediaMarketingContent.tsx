@@ -250,7 +250,7 @@ const SocialMediaMarketingContent = ({
               </div>
             </div>
             <div className="mt-50 mt-xs-20">
-              <h1>What can you expect? </h1>
+              <h3 style={{fontSize: "2.5rem"}}>What can you expect? </h3>
               <div style={{ marginTop: "40px", paddingTop: "40px" }}>
                 <Swiper
                   modules={[
