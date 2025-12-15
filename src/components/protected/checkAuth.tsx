@@ -14,13 +14,30 @@ const CheckAuth = () => {
       }
 
       try {
-        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/checkauth`, {
-          headers: { Authorization: `Bearer ${token}` }
+        let res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/checkauth`, {
+          headers: { Authorization: `Bearer ${token}` },
         });
-        const data = await res.json();
+        let data = await res.json();
+        if (!data.success) {
+          const refreshRes = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/refresh`, {
+            method: "POST",
+            credentials: "include", 
+          });
+          const refreshData = await refreshRes.json();
+
+          if (refreshData.success && refreshData.token) {
+            localStorage.setItem("auth_token", refreshData.token);
+
+            res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/checkauth`, {
+              headers: { Authorization: `Bearer ${refreshData.token}` },
+            });
+            data = await res.json();
+          }
+        }
+
         if (data.success) setIsAuthenticated(true);
       } catch (err) {
-        console.log(err);
+        console.log("Auth verification failed:", err);
       } finally {
         setAuthChecked(true);
       }
