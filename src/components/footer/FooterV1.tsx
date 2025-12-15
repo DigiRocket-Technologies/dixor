@@ -87,8 +87,9 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                     <li>
                       <a href="mailto:info@digirocket.io">info@digirocket.io</a>
                     </li>
-                    <li>
-                      <a href="tel:+18156886366">+1 815 688 6366</a>
+                    <li style={{paddingTop: "46px"}}>
+                      <a href="tel:+18156886366">+1 815 688 6366</a> <br />
+                      <a style={{paddingTop: "-20px"}} href="tel:+919871196816">+91 987 119 6816</a>
                     </li>
                   </ul>
                 </div>
