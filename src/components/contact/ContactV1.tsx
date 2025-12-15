@@ -8,9 +8,9 @@ interface DataType {
 }
 
 const ContactV1 = ({ sectionClass }: DataType) => {
-  const location=useLocation()  
+  const location = useLocation()
   const contactFormRef = useRef<HTMLDivElement | null>(null);
-  
+
   useEffect(() => {
     if (contactFormRef.current) {
       contactFormRef.current.scrollIntoView({ block: "start" });
@@ -20,9 +20,8 @@ const ContactV1 = ({ sectionClass }: DataType) => {
   return (
     <>
       <div
-        className={`contact-area overflow-hidden relative ${
-          sectionClass ? sectionClass : ""
-        }`}
+        className={`contact-area overflow-hidden relative ${sectionClass ? sectionClass : ""
+          }`}
       >
         <div className="container">
           <div className="contact-style-one-items">
@@ -30,10 +29,17 @@ const ContactV1 = ({ sectionClass }: DataType) => {
               <div className="col-tact-stye-one col-lg-4">
                 <div className="contact-style-one-info">
                   <ul className="contact-address">
-                    <li>
-                      <a className="phone-link" href="tel:+18156886366">
-                        <i className="fas fa-user-headset" /> +1 815 688 6366
-                      </a>
+                    <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                      <i className="fas fa-user-headset" style={{fontSize: "51px", color: "#98c906ff"}} />
+                      <div>
+                        <a className="phone-link" href="tel:+18156886366" style={{ marginRight: "10px" }}>
+                          +1 815 688 6366
+                        </a>
+                        <br />
+                        <a className="phone-link" href="tel:+919871196816" style={{ color: "green" }}>
+                          +91 987 119 6816
+                        </a>
+                      </div>
                     </li>
                     <li>
                       <div className="info">
