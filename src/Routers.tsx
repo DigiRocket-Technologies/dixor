@@ -124,6 +124,7 @@ import CPAPA from "./pages/servicesPages/CPAPA";
 import AgenticPage from "./pages/servicesPages/AgenticPage";
 import CLLMPAGE from "./pages/servicesPages/CLLMPage";
 import CToolPage from "./pages/servicesPages/CToolPage";
+// import AllBlogsAdminNew from "./components/blog/AllBlogsAdminNew";
 // import AIResearch from "./pages/CasestudyPages/AIResearch";
 // import NewCareers from "./pages/innerPages/NewCareers";
 const Routers = () => {
@@ -203,6 +204,7 @@ const Routers = () => {
 
                 <Route element={<CheckAuth />}>
                     <Route path="/admin/blogs" element={<AllBlogPagesAdmin />}></Route>
+                    {/* <Route path="/admin/blogs" element={<AllBlogsAdminNew />}></Route> */}
                     <Route path="/admin/addblog" element={<QuillEditor />}></Route>
                     <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route>
                 </Route>

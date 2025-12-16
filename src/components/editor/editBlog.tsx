@@ -516,7 +516,6 @@ const EditBlog = () => {
     }
   };
   
-  
   return (
     <>
       <div className={`d-${!preview ? "block" : "none"}`}>

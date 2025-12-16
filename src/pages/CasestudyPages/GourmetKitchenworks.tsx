@@ -10,7 +10,7 @@ import img2 from "/assets/img/portfolio/gk2.jpg"
 import img3 from "/assets/img/portfolio/gk3.jpg"
 
 
-const GourmetKitchen = () => {
+const   GourmetKitchen = () => {
   return (
     <>
       <Helmet>
