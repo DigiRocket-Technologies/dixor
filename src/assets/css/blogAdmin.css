@@ -1,0 +1,35 @@
+.blog-dropdown-btn {
+    background-color: rgb(93, 92, 92) !important;
+}
+.blog-dropdown-btn:hover {
+   color: black !important;
+}
+
+.blog-next-btn {
+    background-color: #275df5 !important;
+}
+.blogTopContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.blogTopContainerRightChild {
+    display: flex;
+    justify-content: space-between;
+}
+.blogTopContainerRightChild button {
+    padding: -12px 0
+}
+.addPostButton {
+    background-color: #275df5 !important;
+    margin-left: 20px;
+}
+.search-bar {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.blogHeadingHai {
+    cursor: pointer;
+}
+.blogHeadingHai:hover {
+    color: #275df5;
+}

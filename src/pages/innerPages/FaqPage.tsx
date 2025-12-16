@@ -10,6 +10,7 @@ const FaqPage = () => {
             <Helmet>
                 <title>Faqs | DigiRocket</title>
                 <link rel="canonical" href="https://digirocket.io/faqs" />
+                <meta name="description" content="Find answers to frequently asked questions about Digirocket Technologies’ services, processes, pricing, and support in one place."></meta>
             </Helmet>
 
             <LayoutV1>

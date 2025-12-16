@@ -15,6 +15,7 @@ const BlogSingleWithSidebarLightPage = () => {
             <Helmet>
                 <title>Dixor - Blog Single With Sidebar Light</title>
                 <link rel="canonical" href="https://digirocket.io/application-development" />
+                <meta name="description" content="Custom application development services by Digirocket Technologies delivering scalable, secure, and high-performance web and mobile solutions."></meta>
             </Helmet>
 
             <LayoutV1Light>

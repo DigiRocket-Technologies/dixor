@@ -10,6 +10,7 @@ const AllBlogPagesAdmin = () => {
             <Helmet>
                 <title>Blogs | DigiRocket Technologies</title>
                 <link rel="canonical" href="https://digirocket.io/admin/blogs" />
+                <meta name="description" content="Admin dashboard for Digirocket Technologies to view, edit, publish, and manage all blog posts and content from a centralized system. Visit Now!"></meta>
             </Helmet>
 
             <LayoutV1>

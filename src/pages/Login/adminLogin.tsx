@@ -86,6 +86,8 @@ const AdminLogin = () => {
       <Helmet>
         <title>Admin Login | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/admin" />
+        <meta name="description" content="Secure admin login page for Digirocket Technologies to access the dashboard and manage users, content, settings, and website operations efficiently."></meta>
+
       </Helmet>
       <LayoutV1>
         <Breadcrumb title="Login" breadCrumb="Login" LightMode={false} />
