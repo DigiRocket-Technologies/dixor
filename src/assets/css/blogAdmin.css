@@ -1,35 +1,86 @@
 .blog-dropdown-btn {
     background-color: rgb(93, 92, 92) !important;
 }
+
 .blog-dropdown-btn:hover {
-   color: black !important;
+    color: black !important;
 }
 
 .blog-next-btn {
     background-color: #275df5 !important;
 }
+
 .blogTopContainer {
     display: flex;
     justify-content: space-between;
 }
+
 .blogTopContainerRightChild {
     display: flex;
     justify-content: space-between;
 }
+
 .blogTopContainerRightChild button {
-    padding: -12px 0
+    padding: -12px 0;
 }
+
 .addPostButton {
     background-color: #275df5 !important;
     margin-left: 20px;
+    margin-right: 20px;
 }
+
 .search-bar {
     margin-right: 20px;
     margin-left: 20px;
 }
+
 .blogHeadingHai {
     cursor: pointer;
+    font-weight: 500;
 }
+
 .blogHeadingHai:hover {
-    color: #275df5;
+    color: #275df5 !important;
+}
+
+.pageNumberDetail1 {
+    display: none;
+}
+
+.thumbnailImageblog {
+   max-height: 380px !important;
+   object-fit: cover;
+}
+
+@media (max-width: 630px) {
+    .blogTopContainer {
+        flex-direction: column;
+    }
+
+    .blogTopContainerRightChild {
+        margin: 0 0 0 20px;
+    }
+
+    .blogNextButton {
+        padding: -9px -9px !important;
+    }
+
+    .blogPreviousButton {
+        padding: -9px -9px !important;
+    }
+}
+
+@media (max-width: 417px) {
+    .pagination-container {
+        flex-direction: column;
+    }
+
+    .pageNumberDetail {
+        display: none;
+    }
+
+    .pageNumberDetail1 {
+        display: block;
+    }
 }

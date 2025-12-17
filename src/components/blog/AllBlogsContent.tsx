@@ -8,9 +8,15 @@ import Preloader from "../utilities/Preloader";
 interface DataType {
   sectionClass?: string;
 }
+interface AllDataType {
+  noOfPage: number;
+  blogSize: number;
+}
 
 const AllBlogPagesContent = ({ sectionClass }: DataType) => {
   const [loading, setloading] = useState(false);
+  const [allData, setAllData] = useState<AllDataType | null>(null)
+  const [pageNo, setPageNo] = useState(1);
 
   const [blogs, setBlogs] = useState([])
 
@@ -18,7 +24,7 @@ const AllBlogPagesContent = ({ sectionClass }: DataType) => {
     try {
       setloading(true)
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogs`, {
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogs/${pageNo}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -28,6 +34,7 @@ const AllBlogPagesContent = ({ sectionClass }: DataType) => {
       const data = await response.json();
 
       if (!data?.success) throw new Error(data?.message);
+      setAllData(data);
       setBlogs(data?.blogs)
     } catch (err) {
       console.log(err)
@@ -39,7 +46,7 @@ const AllBlogPagesContent = ({ sectionClass }: DataType) => {
 
   useEffect(() => {
     getAllBlogs();
-  }, []);
+  }, [pageNo]);
 
   // Pagination
 
@@ -74,25 +81,58 @@ const AllBlogPagesContent = ({ sectionClass }: DataType) => {
   // const totalPages = Math.ceil(BlogV3Data.length / itemsPerPage);
 
   if (loading)
-  return <Preloader />
+    return <Preloader />
   else
-  return (
-    <>
-      <div
-        className={`blog-area blog-grid-colum ${sectionClass ? sectionClass : ""
-          }`}
-      >
-        <div className="container">
-          <div className="row">
-            {blogs.map((blog, idx) => (
-              <div className="col-lg-6 mb-50" key={idx}>
-                <SingleBlog2Item blog={blog} />
-              </div>
-            ))}
-          </div>
+    return (
+      <>
+        <div
+          className={`blog-area blog-grid-colum ${sectionClass ? sectionClass : ""
+            }`}
+        >
+          <div className="container">
+            <div className="row">
+              {blogs.map((blog, idx) => (
+                <div className="col-lg-6 mb-50" key={idx}>
+                  <SingleBlog2Item blog={blog} />
+                </div>
+              ))}
+            </div>
+            {/* <div className="d-flex justify-content-center align-items-center mt-3 mb-3">
+              <button disabled={pageNo <= 1} onClick={() => setPageNo(pageNo - 1)} className="btn btn-secondary btn-sm me-2 text-dark blog-prev-btn" >
+                Previous
+              </button>
 
-          {/* Pagination */}
-          {/* <div className="row">
+              <span style={{ color: "#fff", margin: "0 10px" }}>
+                Page {pageNo} of {allData?.noOfPage || 1}
+              </span>
+
+              <button disabled={pageNo >= (allData?.noOfPage || 1)} onClick={() => setPageNo(pageNo + 1)} className="btn btn-primary btn-sm blog-next-btn" >
+                Next
+              </button>
+            </div> */}
+
+            <p style={{ textAlign: "center" }}>
+              <span className="pageNumberDetail1" style={{ color: "#fff", margin: "0 10px" }}>
+                Page {pageNo} of {allData?.noOfPage || 1}
+              </span>
+            </p>
+            <div className="row">
+              <div className="col-md-12 pagi-area text-center mb-3 mt-3">
+                <button disabled={pageNo <= 1} onClick={() => setPageNo(pageNo - 1)} className="btn btn-secondary btn-sm me-2 text-dark blog-prev-btn" >
+                  Previous
+                </button>
+
+                <span className="pageNumberDetail" style={{ color: "#fff", margin: "0 10px" }}>
+                  Page {pageNo} of {allData?.noOfPage || 1}
+                </span>
+
+                <button disabled={pageNo >= (allData?.noOfPage || 1)} onClick={() => setPageNo(pageNo + 1)} className="btn btn-primary btn-sm blog-next-btn" >
+                  Next
+                </button>
+              </div>
+            </div>
+            {/* Pagination */}
+            {/* <div className="row">
             <div className="col-md-12 pagi-area text-center">
               <Pagination
                 previousLabel={
@@ -123,10 +163,10 @@ const AllBlogPagesContent = ({ sectionClass }: DataType) => {
               />
             </div>
           </div> */}
+          </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+    );
 };
 
 export default AllBlogPagesContent;
