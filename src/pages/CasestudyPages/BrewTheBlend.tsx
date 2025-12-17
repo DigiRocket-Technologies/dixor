@@ -14,6 +14,7 @@ const BrewTheBlend = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/brewtheblend" />
+        <meta name="description" content="Explore how Digirocket Technologies enhanced Brew The Blend’s online branding, customer engagement, and digital growth strategy."></meta>
       </Helmet>
 
       <LayoutV1>

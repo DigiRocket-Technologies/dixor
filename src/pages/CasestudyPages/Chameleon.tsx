@@ -14,6 +14,7 @@ const Chameleon = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/chameleon-transfer" />
+        <meta name="description" content="Discover how Digirocket Technologies supported Chameleon Transfer with tailored digital marketing strategies to boost visibility and growth."></meta>
       </Helmet>
 
       <LayoutV1>

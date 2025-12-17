@@ -16,6 +16,7 @@ const   GourmetKitchen = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/gourmetkitchenworks" />
+        <meta name="description" content="Discover how Digirocket Technologies helped Gourmet Kitchen Works improve online presence, branding, and digital performance with a tailored marketing strategy."></meta>
       </Helmet>
 
       <LayoutV1>

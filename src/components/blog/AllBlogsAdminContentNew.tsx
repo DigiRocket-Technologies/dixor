@@ -31,38 +31,48 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
     const [dropdownValue, setDropdownValue] = useState("title");
     const [pageNo, setPageNo] = useState(1);
     const [searchTerm, setSearchTerm] = useState("");
+    const [loading, setLoading] = useState(false);
     const blogArray = useRef<Blog[]>([]);
     const navigate = useNavigate();
     const { authUser } = useAuthContext();
 
     useEffect(() => {
+        console.log(loading);
         const getAllData = async () => {
             let ToggleValue = "h1";
             let sortNo = -1;
-
-            if (dropdownValue === "Heading") ToggleValue = "h1";
-            else if (dropdownValue === "Date") ToggleValue = "updatedAt";
-            else if (dropdownValue === "Published" || dropdownValue === "Draft") {
-                ToggleValue = "live";
-                if (dropdownValue === "Draft") sortNo = 1;
-            }
-
-            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogsadmin/${ToggleValue}/${pageNo}/${sortNo}`, {
-                method: "GET",
-                headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${authUser}`,
+            try {
+                setLoading(true);
+                if (dropdownValue === "Heading") ToggleValue = "h1";
+                else if (dropdownValue === "Date") ToggleValue = "updatedAt";
+                else if (dropdownValue === "Published" || dropdownValue === "Draft") {
+                    ToggleValue = "live";
+                    if (dropdownValue === "Draft") sortNo = 1;
                 }
-            });
-            const items = await response.json();
 
-            if (dropdownValue === "Draft") {
-                blogArray.current = items.blogs;
-            } else {
-                blogArray.current = items.blogs;
+                const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogsadmin/${ToggleValue}/${pageNo}/${sortNo}`, {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${authUser}`,
+                    }
+                });
+                const items = await response.json();
+
+                if (dropdownValue === "Draft") {
+                    blogArray.current = items.blogs;
+                } else {
+                    blogArray.current = items.blogs;
+                }
+                setData(items);
+
+            } catch (err: any) {
+                console.log(err)
+                alert(err.message);
+            } finally {
+                setLoading(false);
             }
 
-            setData(items);
         };
 
         getAllData();
@@ -84,6 +94,7 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
         if (!opinion) return;
 
         try {
+            setLoading(true);
             const response = await fetch(
                 `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/deleteblog`,
                 {
@@ -101,7 +112,10 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
             alert("Blog deleted successfully");
             window.location.reload();
         } catch (err: any) {
+            console.log(err)
             alert(err.message);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -118,6 +132,7 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
         if (!opinion) return;
 
         try {
+            setLoading(true);
             const res = await fetch(
                 `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/altervisibility`,
                 {
@@ -137,8 +152,10 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
                 `Blog is now ${isLive ? "hidden" : "live"}`
             );
         } catch (err: any) {
-            console.log(err);
+            console.log(err)
             alert(err.message);
+        } finally {
+            setLoading(false);
         }
     };
 

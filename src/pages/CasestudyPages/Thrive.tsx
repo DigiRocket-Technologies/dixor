@@ -14,6 +14,7 @@ const Thrive = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/thrivewell-sports" />
+        <meta name="description" content="Find out how Digirocket Technologies helped Thrivewell Sports improve brand reach and engagement through strategic digital and web solutions."></meta>
       </Helmet>
 
       <LayoutV1>

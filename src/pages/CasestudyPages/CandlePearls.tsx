@@ -14,6 +14,8 @@ const CandlePearls = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/candlepearls" />
+        <meta name="description" content="Discover how Digirocket Technologies elevated Candle Pearls’ brand presence and eCommerce performance with data-driven digital solutions."></meta>
+
       </Helmet>
 
       <LayoutV1>
