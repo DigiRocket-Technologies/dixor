@@ -110,7 +110,10 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
             const result = await response.json();
             if (!result?.success) throw new Error(result?.message);
             alert("Blog deleted successfully");
-            window.location.reload();
+            setData(prev => ({
+                ...prev!,
+                blogs: prev?.blogs?.filter(b => b._id !== id) || []
+            }));
         } catch (err: any) {
             console.log(err)
             alert(err.message);
@@ -147,7 +150,12 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
             );
             const data = await res.json();
             if (!data?.success) throw new Error(data?.message);
-            window.location.reload();
+            setData(prev => ({
+                ...prev!,
+                blogs: prev?.blogs?.map(b =>
+                    b._id === id ? { ...b, live: !b.live } : b
+                ) || []
+            }));
             alert(
                 `Blog is now ${isLive ? "hidden" : "live"}`
             );
@@ -174,7 +182,7 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
                             {dropdownValue}
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonblog" >
-                            {["heading", "Date", "Published", "Draft"].map((val) => (
+                            {["Heading", "Date", "Published", "Draft"].map((val) => (
                                 <li key={val}>
                                     <button
                                         className="dropdown-item text-primary"
@@ -203,7 +211,7 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
                 </div>
             </div>
 
-            <table className="table table-bordered table-striped text-center bg-dark">
+            <table className="table table-bordered table-striped bg-dark">
                 <thead>
                     <tr style={{ border: "1px solid white" }}>
                         <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>ID</th>
