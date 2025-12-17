@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
 
-
 interface DataType {
   title?: string;
   h1?:string;
@@ -51,7 +50,6 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
   };
 
   const changeVisibility = async (id: string) => {
-
     const opinion = confirm(`Do you want to ${live ? "hide" : "show"} the blog`)
     if (!opinion)
       return
@@ -72,9 +70,10 @@ const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
         }
       );
       const data = await res.json();
+      console.log("the value of live is : " + data.live)
       if (!data?.success) throw new Error(data?.message);
       window.location.reload()
-      alert(`Blog is now ${live?"hidden":"live"}`)
+      alert(`Blog is now ${data.live?"hidden":"live"}`)
     } catch (err: any) {
       console.log(err)
       alert(err.message);

@@ -1,127 +1,396 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "../../assets/css/blogAdmin.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuthContext } from "../../context/AuthContext";
 
 interface DataType {
     sectionClass?: string;
 }
-interface PostDataType {
-    blogs: [
-        {
-            title: string,
-            slug: string,
-            h1: string,
-            content: string,
-            thumbnail: string,
-            metaDescription: string,
-            scripts: string,
-            live: boolean,
-            createdAt: string,
-            updatedAt: string
-        }
-    ]
+interface Blog {
+    title: string;
+    slug: string;
+    h1: string;
+    content: string;
+    thumbnail: string;
+    metaDescription: string;
+    scripts: string;
+    live: boolean;
+    createdAt: string;
+    updatedAt: string;
+    _id: string;
 }
+interface PostDataType {
+    noOfPage: number;
+    blogs: Blog[];
+}
+
 export default function AllBlogsAdminNew({ sectionClass }: DataType) {
-    console.log(sectionClass)
+    console.log(sectionClass);
     const [data, setData] = useState<PostDataType | null>(null);
+    const [searchData, setSearchData] = useState<Blog[]>([]);
+    const [dropdownValue, setDropdownValue] = useState("title");
+    const [pageNo, setPageNo] = useState(1);
+    const [searchTerm, setSearchTerm] = useState("");
+    const blogArray = useRef<Blog[]>([]);
+    const navigate = useNavigate();
+    const { authUser } = useAuthContext();
 
     useEffect(() => {
         const getAllData = async () => {
-            let response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogsadmin`);
-            let items = await response.json();
-            console.log(items);
+            let ToggleValue = "h1";
+            let sortNo = -1;
+
+            if (dropdownValue === "Heading") ToggleValue = "h1";
+            else if (dropdownValue === "Date") ToggleValue = "updatedAt";
+            else if (dropdownValue === "Published" || dropdownValue === "Draft") {
+                ToggleValue = "live";
+                if (dropdownValue === "Draft") sortNo = 1;
+            }
+
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogsadmin/${ToggleValue}/${pageNo}/${sortNo}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${authUser}`,
+                }
+            });
+            const items = await response.json();
+
+            if (dropdownValue === "Draft") {
+                blogArray.current = items.blogs;
+            } else {
+                blogArray.current = items.blogs;
+            }
+
             setData(items);
-        }
+        };
+
         getAllData();
+    }, [dropdownValue, pageNo]);
+
+    useEffect(() => {
+        const getalldataforSearch = async () => {
+            const response = await fetch(
+                `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/getallblogsadminSearch`
+            );
+            const items = await response.json();
+            setSearchData(items.blogs);
+        };
+        getalldataforSearch();
     }, []);
+
+    const deleteblogs = async (id: string) => {
+        const opinion = confirm("Do you want to delete this blog?");
+        if (!opinion) return;
+
+        try {
+            const response = await fetch(
+                `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/deleteblog`,
+                {
+                    method: "DELETE",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${authUser}`,
+                    },
+                    body: JSON.stringify({ id }),
+                    credentials: "include",
+                }
+            );
+            const result = await response.json();
+            if (!result?.success) throw new Error(result?.message);
+            alert("Blog deleted successfully");
+            window.location.reload();
+        } catch (err: any) {
+            alert(err.message);
+        }
+    };
+
+    const filteredBlogs = searchData?.slice(0).filter((blog) => {
+        const term = searchTerm.toLowerCase();
+        return (
+            blog.title.toLowerCase().includes(term) ||
+            blog.h1.toLowerCase().includes(term)
+        );
+    });
+
+    const changeVisibility = async (id: string, isLive: boolean) => {
+        const opinion = confirm(`Do you want to ${isLive ? "hide" : "show"} the blog`);
+        if (!opinion) return;
+
+        try {
+            const res = await fetch(
+                `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/altervisibility`,
+                {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${authUser}`,
+                    },
+                    body: JSON.stringify({ id }),
+                    credentials: "include",
+                }
+            );
+            const data = await res.json();
+            if (!data?.success) throw new Error(data?.message);
+            window.location.reload();
+            alert(
+                `Blog is now ${isLive ? "hidden" : "live"}`
+            );
+        } catch (err: any) {
+            console.log(err);
+            alert(err.message);
+        }
+    };
 
     return (
         <div className="table-responsive mt-12">
-
             <div className="blogTopContainer">
                 <Link to="/admin/addblog">
-                    <button type="button" className="btn btn-primary addPostButton" style={{ height: "60px" }}>Add Blog</button>
+                    <button type="button" className="mb-3 btn btn-primary addPostButton" style={{ height: "60px" }} >
+                        Add Blog
+                    </button>
                 </Link>
+
                 <div className="blogTopContainerRightChild">
                     <div className="dropdown mb-3">
-                        <button className="btn dropdown-toggle blog-dropdown-btn text-white" type="button" id="dropdownMenuButtonblog" data-bs-toggle="dropdown" aria-expanded="false">
-                            Title
+                        <button className="btn dropdown-toggle blog-dropdown-btn text-white" type="button" id="dropdownMenuButtonblog" data-bs-toggle="dropdown" aria-expanded="false" >
+                            {dropdownValue}
                         </button>
-                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a className="dropdown-item text-dark" href="#">Title</a></li>
-                            <li><a className="dropdown-item text-dark" href="#">Date</a></li>
-                            <li><a className="dropdown-item text-dark" href="#">Published</a></li>
-                            <li><a className="dropdown-item text-dark" href="#">Draft</a></li>
+                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonblog" >
+                            {["heading", "Date", "Published", "Draft"].map((val) => (
+                                <li key={val}>
+                                    <button
+                                        className="dropdown-item text-primary"
+                                        onClick={() => setDropdownValue(val)}
+                                    >
+                                        {val}
+                                    </button>
+                                </li>
+                            ))}
                         </ul>
                     </div>
-                    <div className="search-bar" style={{ position: "relative" }}>
-                        <input type="text" style={{ fontSize: "28px" }} className="search-input form-control" placeholder="Search Post" />
-                        <i className="fas fa-search search-icon" style={{ position: "absolute", right: "12px", top: "50%", transform: "translateY(-50%)", color: "#999" }}></i>
+
+                    <div
+                        className="search-bar"
+                        style={{ display: "flex", height: "50px" }}
+                    >
+                        <input
+                            type="text"
+                            style={{ fontSize: "20px" }}
+                            className="search-input form-control"
+                            placeholder="Search Blogs"
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
                     </div>
                 </div>
             </div>
 
-
-            {/* <form className="form-inline my-2 my-lg-0">
-                <input className="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> */}
-
-
             <table className="table table-bordered table-striped text-center bg-dark">
                 <thead>
                     <tr style={{ border: "1px solid white" }}>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }} className="table-header">ID</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }} className="table-header">Title</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }} className="table-header">Author</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }} className="table-header">Publish Date</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }} className="table-header">Updated Date</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }} className="table-header">Status</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }} className="table-header">Action</th>
+                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>ID</th>
+                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Heading</th>
+                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Author</th>
+                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>
+                            Publish Date
+                        </th>
+                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>
+                            Updated Date
+                        </th>
+                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Status (Published / Draft)</th>
+                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Action</th>
                     </tr>
                 </thead>
+
                 <tbody>
-                    {/* Example static rows — replace later with dynamic data */}
-                    {
-                        data?.blogs.map((val, idx) => {
-                            return <tr>
-                                <td style={{ color: "#4e4e4e", paddingTop: "20px" }}>{idx + 101}</td>
-                                <td className="blogHeadingHai">
+                    {searchTerm === ""
+                        ? data?.blogs.map((val, idx) => (
+                            <tr key={val._id}>
+                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                    {idx + 101}
+                                </td>
+                                <td
+                                    style={{
+                                        color: "#4e4e4e",
+                                        paddingTop: "20px",
+                                        cursor: "pointer",
+                                    }}
+                                    onClick={() => navigate(`/blog/${val.slug}`)}
+                                    className="blogHeadingHai"
+                                >
                                     {val.h1.substring(0, 65)}...
                                     <img
                                         src={val.thumbnail}
-                                        alt="Male Avatar"
-                                        style={{
-                                            width: "65px",
-                                            height: "50px",
-                                            marginLeft: "12px",
-                                        }}
+                                        alt="thumbnail"
+                                        style={{ width: "65px", height: "50px", marginLeft: "12px", borderRadius: "6px", }}
                                     />
                                 </td>
-                                <td style={{ color: "#4e4e4e", paddingTop: "20px" }}>Admin</td>
-                                <td style={{ color: "#4e4e4e", paddingTop: "20px" }}>{new Date(val.createdAt).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })}</td>
-                                <td style={{ color: "#4e4e4e", paddingTop: "20px" }}>{new Date(val.updatedAt).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })}</td>
-                                <td style={{ color: "#4e4e4e", paddingTop: "20px" }}>{val.live ? "Published" : "Draft"} {val.live ? <i style={{ color: "red", cursor: "pointer" }} className="fas fa-minus"></i> : <i style={{ color: "#275df5", cursor: "pointer" }} className="fas fa-plus"></i>} </td>
-                                <td style={{ paddingTop: "20px" }}>
+                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>Admin</td>
+                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                    {new Date(val.createdAt).toLocaleDateString("en-GB", {
+                                        day: "2-digit",
+                                        month: "short",
+                                        year: "numeric",
+                                    })}
+                                </td>
+                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                    {new Date(val.updatedAt).toLocaleDateString("en-GB", {
+                                        day: "2-digit",
+                                        month: "short",
+                                        year: "numeric",
+                                    })}
+                                </td>
+                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                    {val.live ? "Published" : "Draft"}{" "}
+                                    {val.live ? (
+                                        <i
+                                            onClick={() => changeVisibility(val._id, true)}
+                                            style={{ color: "red", cursor: "pointer" }}
+                                            className="fas fa-minus"
+                                        ></i>
+                                    ) : (
+                                        <i
+                                            onClick={() => changeVisibility(val._id, false)}
+                                            style={{ color: "#275df5", cursor: "pointer" }}
+                                            className="fas fa-plus"
+                                        ></i>
+                                    )}
+                                </td>
+                                <td style={{ paddingTop: "26px" }}>
                                     <Link to={`/admin/editblog/${val.slug}`}>
-                                        <i style={{ color: "red", marginRight: "8px", cursor: "pointer" }} data-bs-toggle="modal"
-                                        data-bs-target="#deleteConfirmationModal" className="fas fa-edit"></i>
+                                        <i
+                                            style={{
+                                                color: "green",
+                                                marginRight: "8px",
+                                                cursor: "pointer",
+                                            }}
+                                            className="fas fa-edit"
+                                        ></i>
                                     </Link>
-                                    <i style={{ color: "green", cursor: "pointer" }} className="fas fa-trash-alt"></i>
+                                    <i
+                                        onClick={() => deleteblogs(val._id)}
+                                        style={{ color: "red", cursor: "pointer" }}
+                                        className="fas fa-trash-alt"
+                                    ></i>
                                 </td>
                             </tr>
-                        })
-                    }
+                        ))
+                        : filteredBlogs && filteredBlogs.length > 0
+                            ? filteredBlogs.map((val, idx) => (
+                                <tr key={val._id}>
+                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                        {idx + 101}
+                                    </td>
+                                    <td
+                                        style={{
+                                            color: "#4e4e4e",
+                                            paddingTop: "20px",
+                                            cursor: "pointer",
+                                        }}
+                                        onClick={() => navigate(`/blog/${val.slug}`)}
+                                        className="blogHeadingHai"
+                                    >
+                                        {val.h1.substring(0, 65)}...
+                                        <img
+                                            src={val.thumbnail}
+                                            alt="thumbnail"
+                                            style={{
+                                                width: "65px",
+                                                height: "50px",
+                                                marginLeft: "12px",
+                                                borderRadius: "6px",
+                                            }}
+                                        />
+                                    </td>
+                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>Admin</td>
+                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                        {new Date(val.createdAt).toLocaleDateString("en-GB", {
+                                            day: "2-digit",
+                                            month: "short",
+                                            year: "numeric",
+                                        })}
+                                    </td>
+                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                        {new Date(val.updatedAt).toLocaleDateString("en-GB", {
+                                            day: "2-digit",
+                                            month: "short",
+                                            year: "numeric",
+                                        })}
+                                    </td>
+                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                        {val.live ? "Published" : "Draft"}{" "}
+                                        {val.live ? (
+                                            <i
+                                                onClick={() => changeVisibility(val._id, true)}
+                                                style={{ color: "red", cursor: "pointer" }}
+                                                className="fas fa-minus"
+                                            ></i>
+                                        ) : (
+                                            <i
+                                                onClick={() => changeVisibility(val._id, false)}
+                                                style={{ color: "#275df5", cursor: "pointer" }}
+                                                className="fas fa-plus"
+                                            ></i>
+                                        )}
+                                    </td>
+                                    <td style={{ paddingTop: "26px" }}>
+                                        <Link to={`/admin/editblog/${val.slug}`}>
+                                            <i
+                                                style={{
+                                                    color: "green",
+                                                    marginRight: "8px",
+                                                    cursor: "pointer",
+                                                }}
+                                                className="fas fa-edit"
+                                            ></i>
+                                        </Link>
+                                        <i
+                                            onClick={() => deleteblogs(val._id)}
+                                            style={{ color: "red", cursor: "pointer" }}
+                                            className="fas fa-trash-alt"
+                                        ></i>
+                                    </td>
+                                </tr>
+                            ))
+                            : (
+                                <tr>
+                                    <td colSpan={7} style={{ color: "#ff0000ff" }}>
+                                        No matching blogs found.
+                                    </td>
+                                </tr>
+                            )}
                 </tbody>
             </table>
 
-            {/* Pagination placeholder */}
-            <div className="d-flex justify-content-center mt-3 mb-3">
-                <button className="btn btn-secondary btn-sm me-2 text-dark blog-prev-btn" >
-                    Previous
-                </button>
-                <button className="btn btn-primary btn-sm blog-next-btn">Next</button>
-            </div>
+            <p style={{ textAlign: "center" }}>
+                <span className="pageNumberDetail1" style={{ color: "#fff", margin: "0 10px" }}>
+                    Page {pageNo} of {data?.noOfPage || 1}
+                </span>
+            </p>
+            {searchTerm === "" ? (
+                <div className="d-flex justify-content-center align-items-center mt-3 mb-3 pagination-container">
+                    <button
+                        disabled={pageNo <= 1}
+                        onClick={() => setPageNo(pageNo - 1)}
+                        className="btn btn-secondary me-2 text-dark blog-prev-btn blogPreviousButton"
+                    >
+                        Previous
+                    </button>
+
+                    <span style={{ color: "#fff", margin: "0 10px" }}>
+                        Page {pageNo} of {data?.noOfPage || 1}
+                    </span>
+
+                    <button
+                        disabled={pageNo >= (data?.noOfPage || 1)}
+                        onClick={() => setPageNo(pageNo + 1)}
+                        className="btn btn-primary  blog-next-btn blogNextButton"
+                    >
+                        Next
+                    </button>
+                </div>
+            ) : null}
         </div>
     );
 }
