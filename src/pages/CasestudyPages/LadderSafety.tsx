@@ -14,6 +14,8 @@ const LadderSafety = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/laddersafetyrails" />
+        <meta name="description" content="See how Digirocket Technologies improved online visibility and conversions for Ladder Safety Rails using focused SEO and website optimization."></meta>
+
       </Helmet>
 
       <LayoutV1>

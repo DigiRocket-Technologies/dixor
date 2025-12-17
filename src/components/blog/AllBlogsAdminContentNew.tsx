@@ -37,6 +37,7 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
     const { authUser } = useAuthContext();
 
     useEffect(() => {
+        console.log(loading);
         const getAllData = async () => {
             let ToggleValue = "h1";
             let sortNo = -1;

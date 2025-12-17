@@ -14,6 +14,7 @@ const Axyloza = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/axyloza" />
+        <meta name="description" content="See how Digirocket Technologies partnered with Axyloza to deliver scalable digital solutions that improved performance and user experience."></meta>
       </Helmet>
 
       <LayoutV1>

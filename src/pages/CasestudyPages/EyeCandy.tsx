@@ -14,6 +14,8 @@ const EyeCandy = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/eyecandybrownsalon" />
+        <meta name="description" content="Learn how Digirocket Technologies increased leads and local visibility for Eye Candy Brow Salon with targeted digital marketing and SEO strategies."></meta>
+
       </Helmet>
 
       <LayoutV1>

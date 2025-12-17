@@ -14,6 +14,8 @@ const Rehisk = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/rehisk" />
+        <meta name="description" content="Explore how Digirocket Technologies supported Rehisk with innovative web solutions and digital strategies to enhance brand growth and user engagement."></meta>
+
       </Helmet>
 
       <LayoutV1>

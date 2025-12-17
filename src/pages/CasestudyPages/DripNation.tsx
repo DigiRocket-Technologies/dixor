@@ -14,6 +14,8 @@ const Dripnation = () => {
       <Helmet>
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/dripnation" />
+        <meta name="description" content="Find out how Digirocket Technologies helped Drip Nation grow its digital reach and customer engagement through modern web and marketing solutions."></meta>
+
       </Helmet>
 
       <LayoutV1>
