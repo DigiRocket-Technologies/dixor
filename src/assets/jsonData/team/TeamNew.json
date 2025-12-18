@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "thumb": "suraj shoot.png",
+    "thumb": "Suraj.png",
     "name": "Suraj Kumar",
     "designation": "Work Force Manager",
     "social": {
@@ -214,6 +214,36 @@
     "thumb": "Sumit.png",
     "name": "Sumit Sisodiya",
     "designation": "SEO Executive",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 34,
+    "thumb": "Radhika.png",
+    "name": "Radhika Sharma",
+    "designation":"Project Coordinator",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 35,
+    "thumb": "Riya.png",
+    "name": "Ria Bakshi",
+    "designation":"AVP Sales",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 36,
+    "thumb": "shweta.png",
+    "name": "Shweta Singh",
+    "designation":"Project Manager",
     "social": {
       "linkedin": "",
       "instagram": ""
