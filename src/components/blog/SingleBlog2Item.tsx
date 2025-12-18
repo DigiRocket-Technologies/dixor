@@ -10,7 +10,7 @@ interface DataType {
 }
 
 const SingleBlog2Item = ({ blog }: { blog: DataType }) => {
-    const { h1,createdAt,thumbnail,slug,metaDescription } = blog
+    const { h1, createdAt, thumbnail, slug, metaDescription } = blog
 
     return (
         <>

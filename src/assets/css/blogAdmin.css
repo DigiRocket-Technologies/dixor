@@ -26,12 +26,12 @@
 
 .addPostButton {
     background-color: #275df5 !important;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
 }
 
 .search-bar {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     margin-left: 20px;
 }
 
@@ -53,6 +53,15 @@
    object-fit: cover;
 }
 
+.blogMainContainer {
+    padding: 0 70px !important;
+    padding-top: 125px !important;
+}
+
+.blogTD {
+    color: #4e4e4e !important;
+    padding: 15px 0 15px 8px !important;
+}
 @media (max-width: 630px) {
     .blogTopContainer {
         flex-direction: column;

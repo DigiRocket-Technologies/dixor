@@ -5,6 +5,7 @@ import { useAuthContext } from "../../context/AuthContext";
 
 interface DataType {
     sectionClass?: string;
+    LightMode?: boolean;
 }
 interface Blog {
     title: string;
@@ -24,11 +25,11 @@ interface PostDataType {
     blogs: Blog[];
 }
 
-export default function AllBlogsAdminNew({ sectionClass }: DataType) {
+export default function AllBlogsAdminNew({ sectionClass, LightMode }: DataType) {
     console.log(sectionClass);
     const [data, setData] = useState<PostDataType | null>(null);
     const [searchData, setSearchData] = useState<Blog[]>([]);
-    const [dropdownValue, setDropdownValue] = useState("title");
+    const [dropdownValue, setDropdownValue] = useState("Heading");
     const [pageNo, setPageNo] = useState(1);
     const [searchTerm, setSearchTerm] = useState("");
     const [loading, setLoading] = useState(false);
@@ -168,182 +169,103 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
     };
 
     return (
-        <div className="table-responsive mt-12">
-            <div className="blogTopContainer">
-                <Link to="/admin/addblog">
-                    <button type="button" className="mb-3 btn btn-primary addPostButton" style={{ height: "60px" }} >
-                        Add Blog
-                    </button>
-                </Link>
-
-                <div className="blogTopContainerRightChild">
-                    <div className="dropdown mb-3">
-                        <button className="btn dropdown-toggle blog-dropdown-btn text-white" type="button" id="dropdownMenuButtonblog" data-bs-toggle="dropdown" aria-expanded="false" >
-                            {dropdownValue}
+            <div className="table-responsive mt-12 blogMainContainer bg-dark" style={{ backgroundImage: `url(./assets/img/shape/${LightMode ? "6.jpg" : "10.jpg"})` }}>
+                <div className="blogTopContainer">
+                    <Link to="/admin/addblog">
+                        <button type="button" className="mb-3 btn btn-primary addPostButton" style={{ height: "60px" }} >
+                            Add Blog
                         </button>
-                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonblog" >
-                            {["Heading", "Date", "Published", "Draft"].map((val) => (
-                                <li key={val}>
-                                    <button
-                                        className="dropdown-item text-primary"
-                                        onClick={() => setDropdownValue(val)}
-                                    >
-                                        {val}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    </Link>
 
-                    <div
-                        className="search-bar"
-                        style={{ display: "flex", height: "50px" }}
-                    >
-                        <input
-                            type="text"
-                            style={{ fontSize: "20px" }}
-                            className="search-input form-control"
-                            placeholder="Search Blogs"
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                        />
+                    <div className="blogTopContainerRightChild">
+                        <div className="dropdown mb-3">
+                            <button className="btn dropdown-toggle blog-dropdown-btn text-white" type="button" id="dropdownMenuButtonblog" data-bs-toggle="dropdown" aria-expanded="false" >
+                                {dropdownValue}
+                            </button>
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButtonblog" >
+                                {["Heading", "Date", "Published", "Draft"].map((val) => (
+                                    <li key={val}>
+                                        <button
+                                            className="dropdown-item text-primary"
+                                            onClick={() => setDropdownValue(val)}
+                                        >
+                                            {val}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div
+                            className="search-bar"
+                            style={{ display: "flex", height: "50px" }}
+                        >
+                            <input
+                                type="text"
+                                style={{ fontSize: "20px" }}
+                                className="search-input form-control"
+                                placeholder="Search Blogs"
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <table className="table table-bordered table-striped bg-dark">
-                <thead>
-                    <tr style={{ border: "1px solid white" }}>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>ID</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Heading</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Author</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>
-                            Publish Date
-                        </th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>
-                            Updated Date
-                        </th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Status (Published / Draft)</th>
-                        <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Action</th>
-                    </tr>
-                </thead>
+                <table className="table table-bordered rounded table-striped bg-dark" >
+                    <thead>
+                        <tr style={{ border: "1px solid grey" }}>
+                            <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>ID</th>
+                            <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Heading</th>
+                            <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Author</th>
+                            <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>
+                                Publish Date
+                            </th>
+                            <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>
+                                Updated Date
+                            </th>
+                            <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Status (Published / Draft)</th>
+                            <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Action</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    {searchTerm === ""
-                        ? data?.blogs.map((val, idx) => (
-                            <tr key={val._id}>
-                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
-                                    {idx + 101}
-                                </td>
-                                <td
-                                    style={{
-                                        color: "#4e4e4e",
-                                        paddingTop: "20px",
-                                        cursor: "pointer",
-                                    }}
-                                    onClick={() => navigate(`/blog/${val.slug}`)}
-                                    className="blogHeadingHai"
-                                >
-                                    {val.h1.substring(0, 65)}...
-                                    <img
-                                        src={val.thumbnail}
-                                        alt="thumbnail"
-                                        style={{ width: "65px", height: "50px", marginLeft: "12px", borderRadius: "6px", }}
-                                    />
-                                </td>
-                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>Admin</td>
-                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
-                                    {new Date(val.createdAt).toLocaleDateString("en-GB", {
-                                        day: "2-digit",
-                                        month: "short",
-                                        year: "numeric",
-                                    })}
-                                </td>
-                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
-                                    {new Date(val.updatedAt).toLocaleDateString("en-GB", {
-                                        day: "2-digit",
-                                        month: "short",
-                                        year: "numeric",
-                                    })}
-                                </td>
-                                <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
-                                    {val.live ? "Published" : "Draft"}{" "}
-                                    {val.live ? (
-                                        <i
-                                            onClick={() => changeVisibility(val._id, true)}
-                                            style={{ color: "red", cursor: "pointer" }}
-                                            className="fas fa-minus"
-                                        ></i>
-                                    ) : (
-                                        <i
-                                            onClick={() => changeVisibility(val._id, false)}
-                                            style={{ color: "#275df5", cursor: "pointer" }}
-                                            className="fas fa-plus"
-                                        ></i>
-                                    )}
-                                </td>
-                                <td style={{ paddingTop: "26px" }}>
-                                    <Link to={`/admin/editblog/${val.slug}`}>
-                                        <i
-                                            style={{
-                                                color: "green",
-                                                marginRight: "8px",
-                                                cursor: "pointer",
-                                            }}
-                                            className="fas fa-edit"
-                                        ></i>
-                                    </Link>
-                                    <i
-                                        onClick={() => deleteblogs(val._id)}
-                                        style={{ color: "red", cursor: "pointer" }}
-                                        className="fas fa-trash-alt"
-                                    ></i>
-                                </td>
-                            </tr>
-                        ))
-                        : filteredBlogs && filteredBlogs.length > 0
-                            ? filteredBlogs.map((val, idx) => (
+                    <tbody>
+                        {searchTerm === ""
+                            ? data?.blogs.map((val, idx) => (
                                 <tr key={val._id}>
-                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                    <td className="blogTD">
                                         {idx + 101}
                                     </td>
                                     <td
                                         style={{
-                                            color: "#4e4e4e",
-                                            paddingTop: "20px",
                                             cursor: "pointer",
                                         }}
                                         onClick={() => navigate(`/blog/${val.slug}`)}
-                                        className="blogHeadingHai"
+                                        className="blogHeadingHai blogTD"
                                     >
                                         {val.h1.substring(0, 65)}...
-                                        <img
-                                            src={val.thumbnail}
-                                            alt="thumbnail"
-                                            style={{
-                                                width: "65px",
-                                                height: "50px",
-                                                marginLeft: "12px",
-                                                borderRadius: "6px",
-                                            }}
-                                        />
+                                        {/* <img
+                                        src={val.thumbnail}
+                                        alt="thumbnail"
+                                        style={{ width: "65px", height: "50px", marginLeft: "12px", borderRadius: "6px", }}
+                                    /> */}
                                     </td>
-                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>Admin</td>
-                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                    <td className="blogTD">Admin</td>
+                                    <td className="blogTD">
                                         {new Date(val.createdAt).toLocaleDateString("en-GB", {
                                             day: "2-digit",
                                             month: "short",
                                             year: "numeric",
                                         })}
                                     </td>
-                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                    <td className="blogTD">
                                         {new Date(val.updatedAt).toLocaleDateString("en-GB", {
                                             day: "2-digit",
                                             month: "short",
                                             year: "numeric",
                                         })}
                                     </td>
-                                    <td style={{ color: "#4e4e4e", paddingTop: "26px" }}>
+                                    <td className="blogTD">
                                         {val.live ? "Published" : "Draft"}{" "}
                                         {val.live ? (
                                             <i
@@ -359,7 +281,7 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
                                             ></i>
                                         )}
                                     </td>
-                                    <td style={{ paddingTop: "26px" }}>
+                                    <td className="blogTD">
                                         <Link to={`/admin/editblog/${val.slug}`}>
                                             <i
                                                 style={{
@@ -378,44 +300,85 @@ export default function AllBlogsAdminNew({ sectionClass }: DataType) {
                                     </td>
                                 </tr>
                             ))
-                            : (
-                                <tr>
-                                    <td colSpan={7} style={{ color: "#ff0000ff" }}>
-                                        No matching blogs found.
-                                    </td>
-                                </tr>
-                            )}
-                </tbody>
-            </table>
+                            : filteredBlogs && filteredBlogs.length > 0
+                                ? filteredBlogs.map((val, idx) => (
+                                    <tr key={val._id}>
+                                        <td className="blogTD">
+                                            {idx + 101}
+                                        </td>
+                                        <td
 
-            <p style={{ textAlign: "center" }}>
-                <span className="pageNumberDetail1" style={{ color: "#fff", margin: "0 10px" }}>
-                    Page {pageNo} of {data?.noOfPage || 1}
-                </span>
-            </p>
-            {searchTerm === "" ? (
-                <div className="d-flex justify-content-center align-items-center mt-3 mb-3 pagination-container">
-                    <button
-                        disabled={pageNo <= 1}
-                        onClick={() => setPageNo(pageNo - 1)}
-                        className="btn btn-secondary me-2 text-dark blog-prev-btn blogPreviousButton"
-                    >
-                        Previous
-                    </button>
+                                            onClick={() => navigate(`/blog/${val.slug}`)}
+                                            className="blogHeadingHai blogTD"
+                                        >
+                                            {val.h1.substring(0, 65)}...
+                                            <img
+                                                src={val.thumbnail}
+                                                alt="thumbnail"
+                                                style={{ width: "65px", height: "50px", marginLeft: "12px", borderRadius: "6px", }}
+                                            />
+                                        </td>
+                                        <td className="blogTD">Admin</td>
+                                        <td className="blogTD">
+                                            {new Date(val.createdAt).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", })}
+                                        </td>
+                                        <td className="blogTD">
+                                            {new Date(val.updatedAt).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", })}
+                                        </td>
+                                        <td className="blogTD">
+                                            {val.live ? "Published" : "Draft"}{" "}
+                                            {val.live ? (
+                                                <i
+                                                    onClick={() => changeVisibility(val._id, true)}
+                                                    style={{ color: "red", cursor: "pointer" }}
+                                                    className="fas fa-minus"
+                                                ></i>
+                                            ) : (
+                                                <i onClick={() => changeVisibility(val._id, false)} style={{ color: "#275df5", cursor: "pointer" }} className="fas fa-plus"
+                                                ></i>
+                                            )}
+                                        </td>
+                                        <td style={{ paddingTop: "26px" }}>
+                                            <Link to={`/admin/editblog/${val.slug}`}>
+                                                <i style={{ color: "green", marginRight: "8px", cursor: "pointer", }}
+                                                    className="fas fa-edit"
+                                                ></i>
+                                            </Link>
+                                            <i onClick={() => deleteblogs(val._id)} style={{ color: "red", cursor: "pointer" }} className="fas fa-trash-alt"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                ))
+                                : (
+                                    <tr>
+                                        <td colSpan={7} style={{ color: "#ff0000ff" }}>
+                                            No matching blogs found.
+                                        </td>
+                                    </tr>
+                                )}
+                    </tbody>
+                </table>
 
-                    <span style={{ color: "#fff", margin: "0 10px" }}>
+                <p style={{ textAlign: "center" }}>
+                    <span className="pageNumberDetail1" style={{ color: "#fff", margin: "0 10px" }}>
                         Page {pageNo} of {data?.noOfPage || 1}
                     </span>
+                </p>
+                {searchTerm === "" ? (
+                    <div className="d-flex justify-content-center align-items-center mt-3 mb-3 pagination-container">
+                        <button disabled={pageNo <= 1} onClick={() => setPageNo(pageNo - 1)} className="btn btn-secondary me-2 text-dark blog-prev-btn blogPreviousButton" >
+                            Previous
+                        </button>
 
-                    <button
-                        disabled={pageNo >= (data?.noOfPage || 1)}
-                        onClick={() => setPageNo(pageNo + 1)}
-                        className="btn btn-primary  blog-next-btn blogNextButton"
-                    >
-                        Next
-                    </button>
-                </div>
-            ) : null}
-        </div>
+                        <span style={{ color: "#fff", margin: "0 10px" }}>
+                            Page {pageNo} of {data?.noOfPage || 1}
+                        </span>
+
+                        <button disabled={pageNo >= (data?.noOfPage || 1)} onClick={() => setPageNo(pageNo + 1)} className="btn btn-primary  blog-next-btn blogNextButton" >
+                            Next
+                        </button>
+                    </div>
+                ) : null}
+            </div>
     );
 }

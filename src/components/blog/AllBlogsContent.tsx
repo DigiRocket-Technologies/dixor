@@ -111,26 +111,41 @@ const AllBlogPagesContent = ({ sectionClass }: DataType) => {
               </button>
             </div> */}
 
-            <p style={{ textAlign: "center" }}>
-              <span className="pageNumberDetail1" style={{ color: "#fff", margin: "0 10px" }}>
-                Page {pageNo} of {allData?.noOfPage || 1}
-              </span>
-            </p>
-            <div className="row">
-              <div className="col-md-12 pagi-area text-center mb-3 mt-3">
-                <button disabled={pageNo <= 1} onClick={() => setPageNo(pageNo - 1)} className="btn btn-secondary btn-sm me-2 text-dark blog-prev-btn" >
-                  Previous
-                </button>
+            {allData && allData?.blogSize > 10 && (
+              <div className="row mt-4 mb-3">
+                <p style={{ textAlign: "center" }}>
+                  <span className="pageNumberDetail1" style={{ color: "#fff", margin: "0 10px" }}>
+                    Page {pageNo} of {allData?.noOfPage || 1}
+                  </span>
+                </p>
+                <div className="col-md-12 text-center">
+                  <button
+                    disabled={pageNo <= 1}
+                    onClick={() => setPageNo(pageNo - 1)}
+                    className="btn btn-secondary btn-sm me-2 text-dark blog-prev-btn rounded-pill"
+                  >
+                    Previous
+                  </button>
 
-                <span className="pageNumberDetail" style={{ color: "#fff", margin: "0 10px" }}>
-                  Page {pageNo} of {allData?.noOfPage || 1}
-                </span>
+                  <span
+                    className="pageNumberDetail text-light mx-2"
+                    style={{ fontWeight: 500 }}
+                  >
+                    Page {pageNo} of {allData?.noOfPage || 1}
+                  </span>
 
-                <button disabled={pageNo >= (allData?.noOfPage || 1)} onClick={() => setPageNo(pageNo + 1)} className="btn btn-primary btn-sm blog-next-btn" >
-                  Next
-                </button>
+                  <button
+                    disabled={pageNo >= (allData?.noOfPage || 1)}
+                    onClick={() => setPageNo(pageNo + 1)}
+                    className="btn btn-primary btn-sm blog-next-btn rounded-pill"
+                  >
+                    Next
+                  </button>
+                </div>
               </div>
-            </div>
+            )}
+
+
             {/* Pagination */}
             {/* <div className="row">
             <div className="col-md-12 pagi-area text-center">
