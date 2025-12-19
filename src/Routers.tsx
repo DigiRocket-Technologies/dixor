@@ -113,10 +113,10 @@ import Aquatic from "./pages/CasestudyPages/Aquatic";
 import Axyloza from "./pages/CasestudyPages/Axyloza";
 import Chameleon from "./pages/CasestudyPages/Chameleon";
 // import AllBlogPagesAdmin from "./pages/blogPages/AllBlogPagesAdmin";
-import QuillEditor from "./components/editor/QuillEditor";
-import EditBlog from "./components/editor/editBlog";
-import CheckAuth from "./components/protected/checkAuth";
-import AdminLogin from "./pages/Login/adminLogin";
+// import QuillEditor from "./components/editor/QuillEditor";
+// import EditBlog from "./components/editor/editBlog";
+// import CheckAuth from "./components/protected/checkAuth";
+// import AdminLogin from "./pages/Login/adminLogin";
 import AllBlogPages from "./pages/blogPages/AllBlogPages";
 import BlogSinglePage from "./pages/blogPages/BlogSinglePage";
 import Thrive from "./pages/CasestudyPages/Thrive";
@@ -124,7 +124,10 @@ import CPAPA from "./pages/servicesPages/CPAPA";
 import AgenticPage from "./pages/servicesPages/AgenticPage";
 import CLLMPAGE from "./pages/servicesPages/CLLMPage";
 import CToolPage from "./pages/servicesPages/CToolPage";
-import AllBlogsAdminNew from "./components/blog/AllBlogsAdminNew";
+// import AllBlogsAdminNew from "./components/blog/AllBlogsAdminNew";
+// import AdministatorLogin from "./components/administator/administatorLogin";
+// import AdministatorPost from "./components/administator/AdministatorBlog";
+// import AdministatorBlog from "./components/administator/AdministatorBlog";
 // import AIResearch from "./pages/CasestudyPages/AIResearch";
 // import NewCareers from "./pages/innerPages/NewCareers";
 const Routers = () => {
@@ -200,14 +203,17 @@ const Routers = () => {
 
 
                 <Route path='*' element={<NotFoundPage />}></Route>
-                <Route path="/admin" element={<AdminLogin />}></Route>
+                {/* <Route path="/admin" element={<AdminLogin />}></Route> */}
 
-                <Route element={<CheckAuth />}>
+                {/* <Route element={<CheckAuth />}> */}
                     {/* <Route path="/admin/blogs" element={<AllBlogPagesAdmin />}></Route> */}
-                    <Route path="/admin/blogs" element={<AllBlogsAdminNew />}></Route>
+                    {/* <Route path="/admin/blogs" element={<AllBlogsAdminNew />}></Route>
                     <Route path="/admin/addblog" element={<QuillEditor />}></Route>
-                    <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route>
-                </Route>
+                    <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route> */}
+                {/* </Route> */}
+
+                {/* <Route path='/login' element={<AdministatorLogin />}></Route>
+                <Route path='/adminPost' element={<AdministatorBlog />}></Route> */}
 
 
                 {/* DIGIROCKET ROUTES END OVER HERE */}

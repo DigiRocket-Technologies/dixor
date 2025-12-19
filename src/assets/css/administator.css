@@ -1,0 +1,59 @@
+.form-control-administator:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 3px solid #275df5 !important;
+}
+.sideContainer {
+    width: 18% !important;
+    background-color: #2a2d32 !important;
+    height: 85vh;
+    padding: 15px;
+}
+.rightContainer {
+    width: 80% !important;
+    background-color: #2a2d32 !important;
+    padding: 15px;
+}
+.leftContent {
+    background-color: #fff;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-bottom: -13px;
+}
+.leftContent > p {
+    padding: 5px 5px;
+    color: black;
+
+}
+.rightContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blogsCard {
+    width: 15rem;
+    margin-bottom: 15px;
+    /* margin: -15px !important; */
+}
+.card-body-blogs {
+    margin: -10px;
+}
+.card-text-blogs {
+    font-size: smaller;
+    font-weight: 500;
+}
+.metaDataBlogsContainer {
+    display: flex;
+    color: black !important;
+    font-size: small;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+.metaDataBlogsContainer > p {
+    color: black !important;
+}
+.metaDataBlogs {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
