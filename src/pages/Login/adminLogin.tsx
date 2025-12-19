@@ -26,7 +26,6 @@ const AdminLogin = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
-        credentials: "include", 
       });
 
       const data: AuthResponse = await response.json();
@@ -40,7 +39,7 @@ const AdminLogin = () => {
       }
     } catch (err) {
       toast.error("Something went wrong, please try again.");
-      console.log("Login error:", err);
+      console.error("Login error:", err);
     } finally {
       setLoading(false);
     }
@@ -52,32 +51,22 @@ const AdminLogin = () => {
         const token = localStorage.getItem("auth_token");
         if (!token) return;
 
-        let res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/checkauth`, {
+        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/checkauth`, {
           headers: { Authorization: `Bearer ${token}` },
         });
-        let data = await res.json();
 
-        if (!data.success) {
-          const refreshRes = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/refresh`, {
-            method: "POST",
-            credentials: "include", 
-          });
-          const refreshData = await refreshRes.json();
-
-          if (refreshData.success && refreshData.token) {
-            localStorage.setItem("auth_token", refreshData.token);
-            res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/checkauth`, {
-              headers: { Authorization: `Bearer ${refreshData.token}` },
-            });
-            data = await res.json();
-          }
+        const data = await res.json();
+        if (data.success) {
+          navigate("/admin/blogs");
+        } else {
+          localStorage.removeItem("auth_token"); // remove invalid token
         }
-
-        if (data.success) navigate("/admin/blogs");
       } catch (error) {
-        console.log("Auth check failed:", error);
+        console.error("Auth check failed:", error);
+        localStorage.removeItem("auth_token");
       }
     };
+
     verifyAuth();
   }, [navigate]);
 
@@ -86,9 +75,12 @@ const AdminLogin = () => {
       <Helmet>
         <title>Admin Login | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/admin" />
-        <meta name="description" content="Secure admin login page for Digirocket Technologies to access the dashboard and manage users, content, settings, and website operations efficiently."></meta>
-
+        <meta
+          name="description"
+          content="Secure admin login page for Digirocket Technologies to access the dashboard and manage users, content, settings, and website operations efficiently."
+        />
       </Helmet>
+
       <LayoutV1>
         <Breadcrumb title="Login" breadCrumb="Login" LightMode={false} />
 
@@ -105,8 +97,10 @@ const AdminLogin = () => {
               placeholder="Enter Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
+
           <div style={{ display: "flex", justifyContent: "center" }}>
             <button
               type="submit"
