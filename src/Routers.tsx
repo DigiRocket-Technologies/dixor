@@ -131,6 +131,7 @@ import CToolPage from "./pages/servicesPages/CToolPage";
 // import AIResearch from "./pages/CasestudyPages/AIResearch";
 // import NewCareers from "./pages/innerPages/NewCareers";
 const Routers = () => {
+    console.log("jejfioe")
     return (
         <>
             <Routes>
@@ -205,9 +206,9 @@ const Routers = () => {
                 <Route path='*' element={<NotFoundPage />}></Route>
                 {/* <Route path="/admin" element={<AdminLogin />}></Route> */}
 
-                {/* <Route element={<CheckAuth />}> */}
-                    {/* <Route path="/admin/blogs" element={<AllBlogPagesAdmin />}></Route> */}
-                    {/* <Route path="/admin/blogs" element={<AllBlogsAdminNew />}></Route>
+                <Route element={<CheckAuth />}>
+                    {/* <Route path="/admin/blogsss" element={<AllBlogPagesAdmin />}></Route> */}
+                    <Route path="/admin/blogs" element={<AllBlogsAdminNew />}></Route>
                     <Route path="/admin/addblog" element={<QuillEditor />}></Route>
                     <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route>
                 </Route>
