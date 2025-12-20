@@ -26,7 +26,7 @@ interface PostDataType {
 }
 
 export default function AllBlogsAdminNew({ sectionClass, LightMode }: DataType) {
-    console.log(sectionClass);
+    console.log("section class: ",sectionClass);
     const [data, setData] = useState<PostDataType | null>(null);
     const [searchData, setSearchData] = useState<Blog[]>([]);
     const [dropdownValue, setDropdownValue] = useState("Heading");
@@ -38,7 +38,7 @@ export default function AllBlogsAdminNew({ sectionClass, LightMode }: DataType) 
     const { authUser } = useAuthContext();
 
     useEffect(() => {
-        console.log(loading);
+        console.log("Loading Hai"+loading);
         const getAllData = async () => {
             let ToggleValue = "h1";
             let sortNo = -1;
@@ -105,7 +105,6 @@ export default function AllBlogsAdminNew({ sectionClass, LightMode }: DataType) 
                         Authorization: `Bearer ${authUser}`,
                     },
                     body: JSON.stringify({ id }),
-                    credentials: "include",
                 }
             );
             const result = await response.json();
@@ -146,7 +145,6 @@ export default function AllBlogsAdminNew({ sectionClass, LightMode }: DataType) 
                         Authorization: `Bearer ${authUser}`,
                     },
                     body: JSON.stringify({ id }),
-                    credentials: "include",
                 }
             );
             const data = await res.json();
@@ -312,11 +310,11 @@ export default function AllBlogsAdminNew({ sectionClass, LightMode }: DataType) 
                                             className="blogHeadingHai blogTD"
                                         >
                                             {val.h1.substring(0, 65)}...
-                                            <img
+                                            {/* <img
                                                 src={val.thumbnail}
                                                 alt="thumbnail"
                                                 style={{ width: "65px", height: "50px", marginLeft: "12px", borderRadius: "6px", }}
-                                            />
+                                            /> */}
                                         </td>
                                         <td className="blogTD">Admin</td>
                                         <td className="blogTD">
