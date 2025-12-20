@@ -209,11 +209,9 @@ const Routers = () => {
                     {/* <Route path="/admin/blogs" element={<AllBlogPagesAdmin />}></Route> */}
                     {/* <Route path="/admin/blogs" element={<AllBlogsAdminNew />}></Route>
                     <Route path="/admin/addblog" element={<QuillEditor />}></Route>
-                    <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route> */}
-                {/* </Route> */}
-
-                {/* <Route path='/login' element={<AdministatorLogin />}></Route>
-                <Route path='/adminPost' element={<AdministatorBlog />}></Route> */}
+                    <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route>
+                </Route>
+                
 
 
                 {/* DIGIROCKET ROUTES END OVER HERE */}
