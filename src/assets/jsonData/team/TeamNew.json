@@ -218,5 +218,35 @@
       "linkedin": "",
       "instagram": ""
     }
+  },
+  {
+    "id": 34,
+    "thumb": "Radhika.png",
+    "name": "Radhika Sharma",
+    "designation":"Project Coordinator",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 35,
+    "thumb": "Riya.png",
+    "name": "Ria Bakshi",
+    "designation":"AVP Sales",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": 36,
+    "thumb": "shweta.png",
+    "name": "Shweta Singh",
+    "designation":"Project Manager",
+    "social": {
+      "linkedin": "",
+      "instagram": ""
+    }
   }
 ]
