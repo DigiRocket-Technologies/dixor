@@ -7,37 +7,30 @@ const CheckAuth = () => {
 
   useEffect(() => {
     const verifyAuth = async () => {
-      const token = localStorage.getItem("auth_token");
+      const token = localStorage.getItem("authToken");
       if (!token) {
         setAuthChecked(true);
         return;
       }
 
       try {
-        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/checkauth`, {
+        const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/login/verifyAuth`, {
           headers: { Authorization: `Bearer ${token}` },
         });
-
         const data = await res.json();
-
-        if (data.success) {
-          setIsAuthenticated(true);
-        } else {
-          localStorage.removeItem("auth_token");
-        }
+        if (data.success) setIsAuthenticated(true);
+        else localStorage.removeItem("authToken");
       } catch (err) {
         console.error("Auth verification failed:", err);
-        localStorage.removeItem("auth_token");
+        localStorage.removeItem("authToken");
       } finally {
         setAuthChecked(true);
       }
     };
-
     verifyAuth();
   }, []);
 
   if (!authChecked) return <div>Loading...</div>;
-
   return isAuthenticated ? <Outlet /> : <Navigate to="/admin" />;
 };
 

@@ -6,42 +6,41 @@
 .sideContainer {
     width: 18% !important;
     background-color: #2a2d32 !important;
-    height: 85vh;
+    height: 60vh;
     padding: 15px;
 }
 .rightContainer {
     width: 80% !important;
     background-color: #2a2d32 !important;
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
 }
 .leftContent {
     background-color: #fff;
-    border-radius: 1px;
+    border-radius: 2px;
     cursor: pointer;
-    margin-bottom: -13px;
+    margin-bottom: -17px;
 }
-.leftContent > p {
+.leftContentBar {
     padding: 5px 5px;
     color: black;
+    background-color: white;
 
 }
+.leftContent:hover {
+   background-color: #275df5;
+   color: white;
+}
+.leftContentBar:hover {
+    color: white !important;
+    background-color: #275df5;
+}
+
 .rightContent {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.blogsCard {
-    width: 15rem;
-    margin-bottom: 15px;
-    /* margin: -15px !important; */
-}
-.card-body-blogs {
-    margin: -10px;
-}
-.card-text-blogs {
-    font-size: smaller;
-    font-weight: 500;
-}
+
 .metaDataBlogsContainer {
     display: flex;
     color: black !important;
