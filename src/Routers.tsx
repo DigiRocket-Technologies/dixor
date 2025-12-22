@@ -128,6 +128,7 @@ import CToolPage from "./pages/servicesPages/CToolPage";
 import AdministratorLogin from "./components/administator/administatorLogin";
 import AdministatorBlog from "./components/administator/AdministatorBlog";
 import AdministatorUser from "./components/administator/AdministatorUser";
+import AdRegister from "./components/administator/AdRegister";
 // import AdministatorLogin from "./components/administator/administatorLogin";
 // import AdministatorPost from "./components/administator/AdministatorBlog";
 // import AdministatorBlog from "./components/administator/AdministatorBlog";
@@ -184,6 +185,8 @@ const Routers = () => {
                 <Route path='/development' element={<Development />}></Route>
                 <Route path='/services' element={<Services3Page />}></Route>
 
+            
+
                 {/* <Route path='/res' element={<AIResearch />}></Route> */}
 
                 {/* <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route> */}
@@ -221,6 +224,7 @@ const Routers = () => {
                 </Route>
                 
 
+                <Route path="/admin/registerHai" element={<AdRegister />}></Route>
 
                 {/* DIGIROCKET ROUTES END OVER HERE */}
 
