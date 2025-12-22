@@ -116,7 +116,7 @@ import Chameleon from "./pages/CasestudyPages/Chameleon";
 import QuillEditor from "./components/editor/QuillEditor";
 import EditBlog from "./components/editor/editBlog";
 import CheckAuth from "./components/protected/checkAuth";
-import AdminLogin from "./pages/Login/adminLogin";
+// import AdminLogin from "./pages/Login/adminLogin";
 import AllBlogPages from "./pages/blogPages/AllBlogPages";
 import BlogSinglePage from "./pages/blogPages/BlogSinglePage";
 import Thrive from "./pages/CasestudyPages/Thrive";
@@ -124,7 +124,10 @@ import CPAPA from "./pages/servicesPages/CPAPA";
 import AgenticPage from "./pages/servicesPages/AgenticPage";
 import CLLMPAGE from "./pages/servicesPages/CLLMPage";
 import CToolPage from "./pages/servicesPages/CToolPage";
-import AllBlogsAdminNew from "./components/blog/AllBlogsAdminNew";
+// import AllBlogsAdminNew from "./components/blog/AllBlogsAdminNew";
+import AdministratorLogin from "./components/administator/administatorLogin";
+import AdministatorBlog from "./components/administator/AdministatorBlog";
+import AdministatorUser from "./components/administator/AdministatorUser";
 // import AdministatorLogin from "./components/administator/administatorLogin";
 // import AdministatorPost from "./components/administator/AdministatorBlog";
 // import AdministatorBlog from "./components/administator/AdministatorBlog";
@@ -204,11 +207,15 @@ const Routers = () => {
 
 
                 <Route path='*' element={<NotFoundPage />}></Route>
-                <Route path="/admin" element={<AdminLogin />}></Route>
+                {/* <Route path="/admin" element={<AdminLogin />}></Route> */}
+                <Route path="/admin" element={<AdministratorLogin />}></Route>
 
-                <Route element={<CheckAuth />}>
-                    {/* <Route path="/admin/blogsss" element={<AllBlogPagesAdmin />}></Route> */}
-                    <Route path="/admin/blogs" element={<AllBlogsAdminNew />}></Route>
+                {/* <Route element={<CheckAuth />}> */}
+                <Route element={<CheckAuth/>}>
+                    {/* <Route path="/admin/blogs" element={<AllBlogPagesAdmin />}></Route> */}
+                    {/* <Route path="/admin/blogss" element={<AllBlogsAdminNew />}></Route> */}
+                    <Route path="/admin/blogs" element={<AdministatorBlog />}></Route>
+                    <Route path="/admin/users" element={<AdministatorUser />}></Route>
                     <Route path="/admin/addblog" element={<QuillEditor />}></Route>
                     <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route>
                 </Route>
