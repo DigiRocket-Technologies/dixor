@@ -18,6 +18,7 @@
 .blogTopContainerRightChild {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 .blogTopContainerRightChild button {

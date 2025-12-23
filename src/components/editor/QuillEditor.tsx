@@ -19,7 +19,7 @@ interface FormData {
   scriptTags: string[];
   thumbnail: string;
   slug:string;
-  heading:string
+  heading:string;
 }
 
 const QuillEditor = () => {
@@ -29,11 +29,23 @@ const QuillEditor = () => {
   const quillRef = useRef<Quill | null>(null);
   const thumbRef = useRef<HTMLInputElement | null>(null);
   const [preview, setPreview] = useState(false);
+  const [createdBy, setCreatedBy] = useState("");
 
   const [content, setContent] = useState("");
 
   const [loading, setLoading] = useState(false);
   const [uploading, setuploading] = useState(false);
+
+  useEffect(() => {
+    const userType = localStorage.getItem("adminData");
+    if (userType) {
+      const parsedUser = JSON.parse(userType);
+      console.log(parsedUser.firstName);
+      setCreatedBy(parsedUser.firstName || "");
+    } else {
+      setCreatedBy("");
+    }
+  }, [])
 
   const [formData, setFormData] = useState<FormData>({
     title: "",
@@ -41,7 +53,7 @@ const QuillEditor = () => {
     scriptTags: [],
     thumbnail: "",
     slug:"",
-    heading:""
+    heading:"",
   });
 
   const resizeRef = useRef<{
@@ -59,6 +71,7 @@ const QuillEditor = () => {
   };
 
   const handleSave = async () => {
+
     try {
       if(!formData.heading || formData.scriptTags.length <= 0 || !formData.metaDescription || !formData.title || !formData.slug || !formData.thumbnail) {
         alert("Please Enter All Details");
@@ -66,6 +79,7 @@ const QuillEditor = () => {
       } 
       // console.log(formData.heading)
       setLoading(true);
+      const createdByData = { createdBy };
       const response = await fetch(
         `${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/addblog`,
         {
@@ -74,7 +88,7 @@ const QuillEditor = () => {
             "Content-Type": "application/json",
             Authorization: authUser || ""
           },
-          body: JSON.stringify({ content, formData }),
+          body: JSON.stringify({ content, formData, createdByData }),
         }
       );
 
