@@ -129,6 +129,8 @@ import AdministratorLogin from "./components/administator/administatorLogin";
 import AdministatorBlog from "./components/administator/AdministatorBlog";
 import AdministatorUser from "./components/administator/AdministatorUser";
 import AdRegister from "./components/administator/AdRegister";
+import AdministatorAddUser from "./components/administator/AdministatorAddUser";
+import AdministatorEditUser from "./components/administator/AdministatorEditUser";
 // import AdministatorLogin from "./components/administator/administatorLogin";
 // import AdministatorPost from "./components/administator/AdministatorBlog";
 // import AdministatorBlog from "./components/administator/AdministatorBlog";
@@ -213,12 +215,13 @@ const Routers = () => {
                 {/* <Route path="/admin" element={<AdminLogin />}></Route> */}
                 <Route path="/admin" element={<AdministratorLogin />}></Route>
 
-                {/* <Route element={<CheckAuth />}> */}
                 <Route element={<CheckAuth/>}>
                     {/* <Route path="/admin/blogs" element={<AllBlogPagesAdmin />}></Route> */}
                     {/* <Route path="/admin/blogss" element={<AllBlogsAdminNew />}></Route> */}
                     <Route path="/admin/blogs" element={<AdministatorBlog />}></Route>
                     <Route path="/admin/users" element={<AdministatorUser />}></Route>
+                    <Route path="/admin/addUser" element={<AdministatorAddUser />}></Route>
+                    <Route path="/admin/editUser/:id" element={<AdministatorEditUser />}></Route>
                     <Route path="/admin/addblog" element={<QuillEditor />}></Route>
                     <Route path="/admin/editblog/:slug" element={<EditBlog />}></Route>
                 </Route>

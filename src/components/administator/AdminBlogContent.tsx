@@ -15,6 +15,7 @@ interface Blog {
   live: boolean;
   createdAt: string;
   updatedAt: string;
+  createdBy: string;
   _id: string;
 }
 
@@ -177,9 +178,9 @@ const AdminBlogContent = () => {
         onClick={() => navigate(`/blog/${val.slug}`)}
         className="blogHeadingHai blogTD"
       >
-        {val.h1.substring(0, 55)}...
+        {val.h1.substring(0, 45)}...
       </td>
-      <td className="blogTD">Admin</td>
+      <td className="blogTD">{val.createdBy}</td>
       <td className="blogTD">
         {new Date(val.createdAt).toLocaleDateString("en-GB", {
           day: "2-digit",
