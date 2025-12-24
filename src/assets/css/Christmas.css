@@ -1,0 +1,131 @@
+.offer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #b91c1c;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.leftContainerChrist {
+  width: 40%;
+}
+
+.christmassale {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.offer-content {
+  text-align: left;
+  /* max-width: 700px; */
+  margin-top: -70px;
+  width: 50%;
+}
+
+/* Text Styles */
+.offer-title {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.offer-heading {
+  font-size: 2.4rem;
+  color: #b91c1c;
+  margin-top: -20px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.offer-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #d32f2f;
+  margin-bottom: 50px;
+  max-width: 650px;
+  margin-top: -15px;
+}
+
+.offer-button {
+  background: none;
+  border: 3px solid #d32f2f;
+  color: #d32f2f;
+  padding: 16px 48px;
+  border-radius: 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ggpng {
+  max-width: 540px;
+  max-height: 280px;
+}
+
+.offer-button:hover {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+/* 🌐 Responsive */
+@media (max-width: 1024px) {
+  .offer-container {
+    /* flex-direction: column; */
+    gap: 20px;
+    text-align: center;
+  }
+  .leftContainerChrist {
+    display: none; /* 🚫 Hide left image */
+  }
+
+  .offer-content {
+    max-width: 90%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .leftContainerChrist {
+    display: none; /* 🚫 Hide left image */
+  }
+
+  .offer-content {
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .offer-title img {
+    width: 100%;
+    height: auto;
+  }
+
+  .offer-heading {
+    font-size: 1.6rem;
+  }
+
+  .offer-text {
+    font-size: 1.1rem;
+  }
+
+  .offer-button {
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 36px;
+  }
+}
