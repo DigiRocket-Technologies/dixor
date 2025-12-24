@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
-  color: #b91c1c;
   gap: 40px;
   padding: 0 40px;
+  font-family: "Poppins", sans-serif;
+  color: #b91c1c;
+  width: 100%;
+  height: auto; /* ✅ Let parent control the height */
 }
 
 .leftContainerChrist {
@@ -22,7 +23,7 @@
 .offer-content {
   text-align: left;
   /* max-width: 700px; */
-  margin-top: -70px;
+  margin-top: 0px;
   width: 50%;
 }
 

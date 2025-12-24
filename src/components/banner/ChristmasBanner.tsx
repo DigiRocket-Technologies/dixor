@@ -32,37 +32,41 @@ const ChristmasBanner = ({ lightMode }: DataType) => {
 
   return (
     <div
-      className="banner-style-eight-area bg-cover"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: "100vh",
-      }}
-    >
-      <div className="offer-container" style={{ marginTop: "-110px", height:"100vh" }}>
-        <div className="leftContainerChrist">
-          <img src={christmassale} className="christmassale" alt="Christmas Sale" />
-        </div>
-
-        <div className="offer-content">
-          <h1 className="offer-title">
-            <img className="ggpng" src={ggpng} alt="Sale" />
-          </h1>
-          <h2 className="offer-heading">
-            Christmas Rocket Deal: UPTO 50% OFF Services!
-          </h2>
-          <p className="offer-text">
-            Unlock massive savings on digital marketing, website design,
-            dropshipping, and more. Transform your startup into a recognized
-            powerhouse—limited time only!
-          </p>
-          <Link to="/contact-us">
-            <span className="offer-button">Claim 50% OFF Now</span>
-          </Link>
-        </div>
-      </div>
+  className="banner-style-eight-area bg-cover"
+  style={{
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  }}
+>
+  <div className="offer-container">
+    <div className="leftContainerChrist">
+      <img src={christmassale} className="christmassale" alt="Christmas Sale" />
     </div>
+
+    <div className="offer-content">
+      <h1 className="offer-title">
+        <img className="ggpng" src={ggpng} alt="Sale" />
+      </h1>
+      <h2 className="offer-heading">
+        Christmas Rocket Deal: UPTO 50% OFF Services!
+      </h2>
+      <p className="offer-text">
+        Unlock massive savings on digital marketing, website design,
+        dropshipping, and more. Transform your startup into a recognized
+        powerhouse—limited time only!
+      </p>
+      <Link to="/contact-us">
+        <span className="offer-button">Claim 50% OFF Now</span>
+      </Link>
+    </div>
+  </div>
+</div>
+
   );
 };
 
