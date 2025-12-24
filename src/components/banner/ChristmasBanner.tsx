@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import SplitText from "../animation/SplitText.jsx";
 import bg from "../../assets/image/Christmas2.png";
 import mobileBg from "../../assets/image/mobileImgbg.png";
@@ -57,7 +57,9 @@ const ChristmasBanner = ({ lightMode }: DataType) => {
             dropshipping, and more. Transform your startup into a recognized
             powerhouse—limited time only!
           </p>
-          <span className="offer-button">Claim 50% OFF Now</span>
+          <Link to="/contact-us">
+            <span className="offer-button">Claim 50% OFF Now</span>
+          </Link>
         </div>
       </div>
     </div>
