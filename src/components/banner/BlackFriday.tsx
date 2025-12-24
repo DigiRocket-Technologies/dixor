@@ -14,7 +14,6 @@ const BlackFriday = ({ lightMode }: DataType) => {
   const [backgroundImage, setBackgroundImage] = useState(bg);
 
   useEffect(() => {
-    // function to set background depending on screen width
     const updateBackground = () => {
       if (window.innerWidth < 500) {
         setBackgroundImage(mobileBg);
@@ -23,8 +22,8 @@ const BlackFriday = ({ lightMode }: DataType) => {
       }
     };
 
-    updateBackground(); // run on mount
-    window.addEventListener("resize", updateBackground); // run on resize
+    updateBackground(); 
+    window.addEventListener("resize", updateBackground); 
 
     return () => window.removeEventListener("resize", updateBackground);
   }, []);

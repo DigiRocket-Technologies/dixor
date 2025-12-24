@@ -49,12 +49,13 @@ import AboutV2 from "../../components/about/AboutV2";
 // import BannerV4 from "../../components/banner/BannerV4";
 // import BannerV6 from "../../components/banner/BannerV6";
 // import BannerV7 from "../../components/banner/BannerV7";
-import BannerV8 from "../../components/banner/BannerV8";
+// import BannerV8 from "../../components/banner/BannerV8";
 import PartnerV2 from "../../components/partner/PartnerV2";
 import ServicesV2 from "../../components/services/ServicesV2";
 import Countries from "../../components/clients/countries";
 // import BlackFriday from "../../components/banner/BlackFriday";
 import BlackFridayHeader from "../../components/header/BlackFridayHeader";
+import ChristmasBanner from "../../components/banner/ChristmasBanner";
 
 const Dt = () => {
   return (
@@ -69,7 +70,9 @@ const Dt = () => {
         {/* <p>Banner 1</p> */}
         {/* <BannerV8 /> */}
         {/* <p>Banner 8</p> */}
-        <BannerV8/>
+        {/* <BlackFriday /> */}
+        <ChristmasBanner />
+        {/* <BannerV8/> */}
         {/* <p>Banner 9</p> */}
         {/* <BannerV9 /> */}
 

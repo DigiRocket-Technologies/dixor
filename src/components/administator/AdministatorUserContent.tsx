@@ -13,9 +13,20 @@ const AdministatorUserContent = () => {
   const [searchData, setSearchData] = useState<User[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(false);
+  const [userType, setUserType] = useState("");
   const navigate = useNavigate();
   const { authUser } = useAuthContext();
 
+  useEffect(() => {
+    const usertypes = localStorage.getItem("adminData");
+    if (usertypes) {
+      const parsedUser = JSON.parse(usertypes);
+      console.log(parsedUser);
+      setUserType(parsedUser.userType || "");
+    } else {
+      setUserType("");
+    }
+  }, [])
   useEffect(() => {
     const getAllUsers = async () => {
       try {
@@ -68,24 +79,35 @@ const AdministatorUserContent = () => {
       <td className="blogTD">{val.email}</td>
       <td className="blogTD">{val.gender}</td>
       <td className="blogTD">{val.createdBy}</td>
-      <td className="blogTD">
+      {
+        userType === "Employee" ? null : (<td className="blogTD">
         <i onClick={() => navigate(`/admin/editUser/${val._id}`)} style={{ color: "green", marginRight: "8px", cursor: "pointer" }} className="fas fa-edit"></i>
         <i onClick={() => deleteUser(val._id)} style={{ color: "red", cursor: "pointer" }} className="fas fa-trash-alt"></i>
-      </td>
+      </td>)
+      }
     </tr>
   );
 
   return (
     <div className="container-fluid">
       <div className="container" style={{ paddingTop: "120px", marginBottom: "20px" }}>
-        <div className="blogTopContainer">
+        {
+          userType === "Employee" ? (<div style={{marginBottom:"10px"}}>
+          <div className="" style={{display: "flex"}}>
+            <div style={{width: "75%"}}></div>
+            <div className="search-bar" style={{ display: "flex", height: "50px", width: "300px" }}>
+              <input type="text" style={{ fontSize: "20px" }} className="search-input form-control" placeholder="Search Users" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+            </div>
+          </div>
+        </div>) : (<div className="blogTopContainer">
           <Link to="/admin/addUser"><button type="button" className="mb-3 btn btn-primary addPostButton" style={{ height: "60px" }}>Add User</button></Link>
           <div className="blogTopContainerRightChild">
             <div className="search-bar" style={{ display: "flex", height: "50px" }}>
               <input type="text" style={{ fontSize: "20px" }} className="search-input form-control" placeholder="Search Users" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
             </div>
           </div>
-        </div>
+        </div>)
+        }
 
         <div className="contentContainer d-flex justify-content-between">
           <div className="sideContainer">
@@ -103,7 +125,9 @@ const AdministatorUserContent = () => {
                     <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Email</th>
                     <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Gender</th>
                     <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Created By</th>
-                    <th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Action</th>
+                    {
+                      userType === "Employee" ? null : (<th style={{ backgroundColor: "#0e0f11", color: "whitesmoke" }}>Action</th>)
+                    }
                   </tr>
                 </thead>
                 <tbody>
