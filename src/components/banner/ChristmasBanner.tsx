@@ -43,6 +43,8 @@ const ChristmasBanner = ({ lightMode }: DataType) => {
     alignItems: "center",
   }}
 >
+  <div className="snow"></div>
+        <div className="snow2"></div>
   <div className="offer-container">
     <div className="leftContainerChrist">
       <img src={christmassale} className="christmassale" alt="Christmas Sale" />

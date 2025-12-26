@@ -7,7 +7,8 @@
   font-family: "Poppins", sans-serif;
   color: #b91c1c;
   width: 100%;
-  height: auto; /* ✅ Let parent control the height */
+  height: auto;
+  /* ✅ Let parent control the height */
 }
 
 .leftContainerChrist {
@@ -81,8 +82,10 @@
     gap: 20px;
     text-align: center;
   }
+
   .leftContainerChrist {
-    display: none; /* 🚫 Hide left image */
+    display: none;
+    /* 🚫 Hide left image */
   }
 
   .offer-content {
@@ -101,7 +104,8 @@
   }
 
   .leftContainerChrist {
-    display: none; /* 🚫 Hide left image */
+    display: none;
+    /* 🚫 Hide left image */
   }
 
   .offer-content {
@@ -130,3 +134,36 @@
     padding: 12px 36px;
   }
 }
+
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../image/snow.png");
+  background-position: 0 0;
+}
+
+.snow {
+  background-size: 70em;
+  animation: snowfall 30s linear infinite;
+}
+
+/* .snow2 {
+  background-size: 50em;
+  animation: snowfall 30s linear infinite;
+  opacity: 0.5;
+} */
+
+@keyframes snowfall {
+  100% {
+    background-position: 70em 70em;
+  }
+}
+
+/* @keyframes snowfall2 {
+  100% {
+    background-position: 50em 0;
+  }
+} */
