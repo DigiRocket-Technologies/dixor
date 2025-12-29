@@ -3,6 +3,7 @@ import "../../assets/css/administator.css";
 import "../../assets/css/blogAdmin.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
+import AdministorLoading from "./AdministorLoading";
 
 interface User { _id: string; firstName: string; lastName: string; email: string; gender: string; createdBy: string; createdAt?: string; updatedAt?: string; }
 interface UserDataType { noOfPage: number; currentPage: number; users: User[]; }
@@ -116,7 +117,7 @@ const AdministatorUserContent = () => {
           </div>
 
           <div className="rightContainer">
-            {loading ? <p style={{ color: "#fff", textAlign: "center" }}>Loading users...</p> : (
+            {loading ? <p style={{ color: "#fff", textAlign: "center" }}><AdministorLoading /></p> : (
               <table className="table table-bordered rounded table-striped bg-dark">
                 <thead>
                   <tr style={{ border: "1px solid grey" }}>

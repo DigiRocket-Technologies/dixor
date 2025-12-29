@@ -3,6 +3,7 @@ import "../../assets/css/administator.css";
 import "../../assets/css/blogAdmin.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
+import AdministorLoading from "./AdministorLoading";
 
 interface Blog { title: string; slug: string; h1: string; content: string; thumbnail: string; metaDescription: string; scripts: string; live: boolean; createdAt: string; updatedAt: string; createdBy: string; _id: string; }
 interface PostDataType { noOfPage: number; blogs: Blog[]; }
@@ -129,7 +130,7 @@ const AdminBlogContent = () => {
           </div>
 
           <div className="rightContainer">
-            {loading ? <p style={{ color: "#fff", textAlign: "center" }}>Loading blogs...</p> : (
+            {loading ? <p style={{ color: "#fff", textAlign: "center" }}><AdministorLoading /></p> : (
               <table className="table table-bordered rounded table-striped bg-dark">
                 <thead>
                   <tr style={{ border: "1px solid grey" }}>
