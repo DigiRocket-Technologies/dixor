@@ -56,3 +56,14 @@
     flex-direction: column;
     margin-top: -20px;
 }
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+}
+
+.loadingGif {
+   width: 100%;
+  height: 401px;
+}
