@@ -137,7 +137,7 @@ import AdministatorEditUser from "./components/administator/AdministatorEditUser
 // import AIResearch from "./pages/CasestudyPages/AIResearch";
 // import NewCareers from "./pages/innerPages/NewCareers";
 const Routers = () => {
-    console.log("jejfioe")
+    // console.log("jejfioe")
     return (
         <>
             <Routes>
