@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 // import MainMenu from './MainMenu';
 import Main from './Main';
 // import SidebarInfo from './SidebarInfo';
-// import logo from '/assets/img/logo.png';
+import logo from '/assets/img/logo.png';
 import santaLogo from "/assets/img/merrychristmas.png";
-// import logoLight from '/assets/img/logo-light.png';
+import logoLight from '/assets/img/logo-light.png';
 import useSidebarMenu from "../../hooks/useSidebarMenu";
 import useSubMenuToggle from "../../hooks/useSubMenuToggle";
 // import useSidebarInfo from "../../hooks/useSidebarInfo";
 import useStickyMenu from "../../hooks/useStickyMenu";
 import "../../assets/css/blackFriday.css";
-import newIcon from '../../assets/image/newiconCap.png';
+// import newIcon from '../../assets/image/newiconCap.png';
 
 interface DataType { 
     lightMode?: boolean;
@@ -33,10 +33,10 @@ const BlackFridayHeader = ({ lightMode }: DataType) => {
                                 <i className="fa fa-bars" />
                             </button>
                             <Link className="navbar-brand" to="/">
-                                {/* <img src={lightMode ? logo : logoLight} className="logo logo-display" alt="Logo" />
-                                <img src={lightMode ? logo : logoLight} className="logo logo-scrolled" alt="Logo" /> */}
-                                <img src={lightMode ?  newIcon: santaLogo} className="logo logo-display blackfriday-logo" alt="Logo" />
-                                <img src={lightMode ? newIcon : santaLogo} className="logo logo-scrolled blackfriday-logo" alt="Logo" /> 
+                                <img src={lightMode ? logo : logoLight} className="logo logo-display" alt="Logo" />
+                                <img src={lightMode ? logo : logoLight} className="logo logo-scrolled" alt="Logo" />
+                                {/* <img src={lightMode ?  newIcon: santaLogo} className="logo logo-display blackfriday-logo" alt="Logo" />
+                                <img src={lightMode ? newIcon : santaLogo} className="logo logo-scrolled blackfriday-logo" alt="Logo" />  */}
                             </Link>
                         </div>
                         <div className={`collapse navbar-collapse ${isOpen ? "show collapse-mobile" : "collapse-mobile"}`} id="navbar-menu">

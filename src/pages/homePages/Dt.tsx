@@ -54,7 +54,8 @@ import PartnerV2 from "../../components/partner/PartnerV2";
 import ServicesV2 from "../../components/services/ServicesV2";
 import Countries from "../../components/clients/countries";
 // import BlackFriday from "../../components/banner/BlackFriday";
-import BlackFridayHeader from "../../components/header/BlackFridayHeader";
+// import BlackFridayHeader from "../../components/header/BlackFridayHeader";
+import HeaderV1 from "../../components/header/HeaderV1";
 // import ChristmasBanner from "../../components/banner/ChristmasBanner";
 
 const Dt = () => {
@@ -66,7 +67,8 @@ const Dt = () => {
         <meta name="description" content="DigiRocket is a top digital marketing agency for small businesses, offering AI growth marketing services, expert digital marketing management, and development services​."></meta>
       </Helmet>
       <div className="smooth-scroll-container">
-        <BlackFridayHeader lightMode={false} />
+        {/* <BlackFridayHeader lightMode={false} /> */}
+        <HeaderV1 lightMode={false} />
         {/* <p>Banner 1</p> */}
         <BannerV8 />
         {/* <p>Banner 8</p> */}
