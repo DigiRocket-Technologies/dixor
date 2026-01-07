@@ -17,10 +17,12 @@ import "../src/assets/css/validnavs.css";
 import "../src/assets/css/style.css";
 
 import Routers from "./Routers";
+
 import RoutesScrollToTop from "./components/utilities/RoutesScrollToTop";
 import Dependency from "./components/utilities/Dependency";
 import { useEffect, useState } from "react";
 import Preloader from "./components/utilities/Preloader";
+import GoogleReview from "./components/GoogleReview/GoogleReview";
 
 function App() {
   //  Preloader
@@ -41,6 +43,8 @@ function App() {
           <Routers />
           <RoutesScrollToTop />
           <Dependency />
+          {/* <GoogleReview /> */}
+          <GoogleReview />
         </>
       )}
     </>
