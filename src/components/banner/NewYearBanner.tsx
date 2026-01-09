@@ -9,6 +9,7 @@ interface DataType {
 }
 
 const NewYearBanner = ({ lightMode }: DataType) => {
+    console.log(lightMode);
     const [backgroundImage, setBackgroundImage] = useState(bg);
 
     useEffect(() => {
