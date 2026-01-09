@@ -30,14 +30,8 @@ const AdministatorAddUser = () => {
     try {
       setLoading(true);
 
-      const user = {
-        firstName,
-        lastName,
-        email,
-        gender,
-        password,
-        createdBy,
-      };
+      const user = { firstName, lastName, email, gender, password, createdBy, };
+      
       console.log("CreatedBy : " + createdBy)
       const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/user/addUser`, {
         method: "POST",
