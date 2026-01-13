@@ -142,6 +142,7 @@ const Routers = () => {
         <>
             <Routes>
                 <Route path='/' element={<Dt />}></Route>
+                {/* Testing Purpos */}
 
                 {/* TO BE USED FOR DIGIROCKET TECHNOLOGIES MADE BY APOORV */}
                 <Route path="/ecommerce-seo" element={<EcommerceSeo />}></Route>
