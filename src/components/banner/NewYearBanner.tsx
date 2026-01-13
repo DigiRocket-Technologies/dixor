@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 // import "../../assets/css/Christmas.css";
-import bg from "../../assets/image/new-year-offer-banner.png";
+import bg from "../../assets/image/chris11.png";
 import mobileBg from "../../assets/image/mobile-banner-new-year.png";
 
 
