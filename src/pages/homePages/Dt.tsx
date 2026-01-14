@@ -57,6 +57,7 @@ import Countries from "../../components/clients/countries";
 // import BlackFridayHeader from "../../components/header/BlackFridayHeader";
 import HeaderV1 from "../../components/header/HeaderV1";
 import NewYearBanner from "../../components/banner/NewYearBanner";
+import AboutV8 from "../../components/about/AboutV8";
 // import ChristmasBanner from "../../components/banner/ChristmasBanner";
 
 const Dt = () => {
@@ -151,6 +152,7 @@ const Dt = () => {
         </div> */}
         <AboutV2 />
         <ServicesV2  />
+        <AboutV8 />
         {/* <p>Brand 1</p> */}
         {/* <BrandV1/> */}
         {/* <p>Brand 2</p> */}
