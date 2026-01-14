@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from "react"
-import ModalVideo from "react-modal-video"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useEffect, useRef, useState } from "react";
+import ModalVideo from "react-modal-video";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -40,13 +40,13 @@ const AboutV8 = () => {
 
     return (
         <>
-            <div style={{ backgroundColor: "black" }} className="overflow-hidden">
-                <div className="relative overflow-hidden">
-                    <div className="home-container" ref={homeContainerRef} style={{ width: "100%" }}>
-                        <div className="video-wrapper" style={{ width: "100%", maxWidth: "100%"}}>
+            <div style={{ backgroundColor: "black", height: "auto" }} className="overflow-hidden">
+                <div className="relative overflow-hidden" style={{height: "auto"}}>
+                    <div className="home-container" ref={homeContainerRef} style={{ width: "100%", height: "auto" }}>
+                        <div className="video-wrapper" style={{ width: "100%", maxWidth: "100%", height: "auto"}}>
                         <iframe
                             width="100%"
-                            height="650"
+                            height="790"
                             src="https://www.youtube.com/embed/ZSNXdPb2rAU?autoplay=1&mute=1&loop=1&playlist=ZSNXdPb2rAU&playsinline=1&rel=0&modestbranding=1&vq=hd720"
                             title="YouTube video player"
                             frameBorder="0"
@@ -68,4 +68,4 @@ const AboutV8 = () => {
     )
 }
 
-export default AboutV8
+export default AboutV8;
