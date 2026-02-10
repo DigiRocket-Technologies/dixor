@@ -49,14 +49,14 @@ import AboutV2 from "../../components/about/AboutV2";
 // import BannerV4 from "../../components/banner/BannerV4";
 // import BannerV6 from "../../components/banner/BannerV6";
 // import BannerV7 from "../../components/banner/BannerV7";
-// import BannerV8 from "../../components/banner/BannerV8";
+import BannerV8 from "../../components/banner/BannerV8";
 import PartnerV2 from "../../components/partner/PartnerV2";
 import ServicesV2 from "../../components/services/ServicesV2";
 import Countries from "../../components/clients/countries";
 // import BlackFriday from "../../components/banner/BlackFriday";
 // import BlackFridayHeader from "../../components/header/BlackFridayHeader";
 import HeaderV1 from "../../components/header/HeaderV1";
-import NewYearBanner from "../../components/banner/NewYearBanner";
+// import NewYearBanner from "../../components/banner/NewYearBanner";
 import AboutV8 from "../../components/about/AboutV8";
 // import ChristmasBanner from "../../components/banner/ChristmasBanner";
 
@@ -72,8 +72,8 @@ const Dt = () => {
         {/* <BlackFridayHeader lightMode={false} /> */}
         <HeaderV1 lightMode={false} />
         {/* <p>Banner 1</p> */}
-        {/* <BannerV8 /> */}
-        <NewYearBanner />
+        <BannerV8 />
+        {/* <NewYearBanner /> */}
         {/* <p>Banner 8</p> */}
         {/* <BlackFriday /> */}
         {/* <ChristmasBanner /> */}
