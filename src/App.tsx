@@ -23,6 +23,7 @@ import Dependency from "./components/utilities/Dependency";
 import { useEffect, useState } from "react";
 import Preloader from "./components/utilities/Preloader";
 import GoogleReview from "./components/GoogleReview/GoogleReview";
+import Cursor from "./components/animation/Cursor";
 
 function App() {
   //  Preloader
@@ -45,6 +46,7 @@ function App() {
           <Dependency />
           {/* <GoogleReview /> */}
           <GoogleReview />
+          <Cursor />
         </>
       )}
     </>
