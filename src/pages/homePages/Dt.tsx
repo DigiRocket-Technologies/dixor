@@ -58,6 +58,7 @@ import Countries from "../../components/clients/countries";
 import HeaderV1 from "../../components/header/HeaderV1";
 // import NewYearBanner from "../../components/banner/NewYearBanner";
 import AboutV8 from "../../components/about/AboutV8";
+import ScrollBanner from "../../components/banner/ScrollBanner";
 // import ChristmasBanner from "../../components/banner/ChristmasBanner";
 
 const Dt = () => {
@@ -70,6 +71,7 @@ const Dt = () => {
       </Helmet>
       <div className="smooth-scroll-container">
         {/* <BlackFridayHeader lightMode={false} /> */}
+        <ScrollBanner />
         <HeaderV1 lightMode={false} />
         {/* <p>Banner 1</p> */}
         <BannerV8 />

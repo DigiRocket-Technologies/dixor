@@ -15,14 +15,10 @@ const Alamocity = () => {
         <title>Case Studies | DigiRocket Technologies</title>
         <link rel="canonical" href="https://digirocket.io/case-study/alamocitypopcorn" />
         <meta name="description" content="See how Digirocket Technologies boosted Alamo City Popcorn’s visibility and sales through strategic digital marketing and performance-driven solutions."></meta>
-
       </Helmet>
 
       <LayoutV1>
-        <Breadcrumb
-          title="Case Studies"
-          breadCrumb="Alamo City Popcorn Company"
-        />
+        <Breadcrumb title="Case Studies" breadCrumb="Alamo City Popcorn Company" />
         <div className={`project-details-items default-padding-bottom `}>
           <div className="container">
             <div className="row">

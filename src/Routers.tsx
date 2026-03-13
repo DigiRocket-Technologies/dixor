@@ -131,6 +131,17 @@ import AdministatorUser from "./components/administator/AdministatorUser";
 // import AdRegister from "./components/administator/AdRegister";
 import AdministatorAddUser from "./components/administator/AdministatorAddUser";
 import AdministatorEditUser from "./components/administator/AdministatorEditUser";
+import Zoomiesmart from "./pages/CasestudyPages/Zoomies";
+import BiggerBras from "./pages/CasestudyPages/JustBiggerBra";
+import DebrasPassionBoutique from "./pages/CasestudyPages/DebraPassion";
+import KarstenNursery from "./pages/CasestudyPages/KarstenNursery";
+import DTFNC from "./pages/CasestudyPages/Dtfnc";
+import RugResources from "./pages/CasestudyPages/RugResource";
+import JadeAndJewels from "./pages/CasestudyPages/Jadean&Jewels";
+import MangoPetals from "./pages/CasestudyPages/MangoPetals";
+import GlobalCableWire from "./pages/CasestudyPages/GlobalCableWire";
+import EvergreenDog from "./pages/CasestudyPages/Evergreendog";
+import ArcoStudioHome from "./pages/CasestudyPages/ArcoStudio";
 // import AdministatorLogin from "./components/administator/administatorLogin";
 // import AdministatorPost from "./components/administator/AdministatorBlog";
 // import AdministatorBlog from "./components/administator/AdministatorBlog";
@@ -188,8 +199,6 @@ const Routers = () => {
                 <Route path='/development' element={<Development />}></Route>
                 <Route path='/services' element={<Services3Page />}></Route>
 
-            
-
                 {/* <Route path='/res' element={<AIResearch />}></Route> */}
 
                 {/* <Route path='/our-team' element={<BlogSingleWithSidebarLightPage />}></Route> */}
@@ -205,6 +214,17 @@ const Routers = () => {
                 <Route path="/case-study/axyloza" element={<Axyloza />}></Route>
                 <Route path="/case-study/chameleon-transfer" element={<Chameleon />}></Route>
                 <Route path="/case-study/thrivewell-sports" element={<Thrive />}></Route>
+                <Route path="/case-study/zoomie-smart" element={<Zoomiesmart />}></Route>
+                <Route path="/case-study/just-bigger-bra" element={<BiggerBras />}></Route>
+                <Route path="/case-study/debras-passion-boutique" element={<DebrasPassionBoutique />}></Route>
+                <Route path="/case-study/karsten-nursery" element={<KarstenNursery />}></Route>
+                <Route path="/case-study/dtfnc" element={<DTFNC />}></Route>
+                <Route path="/case-study/rug-resource" element={<RugResources />}></Route>
+                <Route path="/case-study/jade-jewels" element={<JadeAndJewels />}></Route>
+                <Route path="/case-study/mango-petals" element={<MangoPetals />}></Route>
+                <Route path="/case-study/global-cable-wire" element={<GlobalCableWire />}></Route>
+                <Route path="/case-study/evergreendog" element={<EvergreenDog />}></Route>
+                <Route path="/case-study/arco-studio-home" element={<ArcoStudioHome />}></Route>
 
                 <Route path='/faqs' element={<FaqPage />}></Route>
                 {/* <Route path='/test' element={<NewCareers/>}></Route> */}

@@ -1,0 +1,72 @@
+.carousel {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    gap: 0;
+    width: max-content;
+    animation: spin 80s linear infinite; /* slower */
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: max-content;
+    padding-right: 2em; 
+}
+
+.card1 {
+    height: 70px;          
+    max-width: 240px;     
+    width: auto;        
+    object-fit: contain;
+    flex-shrink: 0;
+    background: transparent;
+    padding: 6px 10px;    
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.card--sm {
+    max-width: 160px;
+}
+
+.card--wide {
+    max-width: 280px;
+}
+
+@keyframes spin {
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(-50%, 0, 0); }
+}
+
+.carousel:hover .track {
+    animation-play-state: paused;
+}
+
+@media (max-width: 1024px) {
+    .card1 {
+        height: 60px;
+        max-width: 200px;
+    }
+    .group {
+        gap: 1.5em;
+    }
+    .track {
+        animation-duration: 60s;
+    }
+}
+
+/* Mobile hide */
+@media (max-width: 640px) {
+    .carousel {
+        display: none;
+    }
+}
