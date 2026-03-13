@@ -6,10 +6,7 @@ import logo from '/assets/img/logo.png';
 import logoLight from '/assets/img/logo-light.png';
 import useSidebarMenu from "../../hooks/useSidebarMenu";
 import useSubMenuToggle from "../../hooks/useSubMenuToggle";
-// import santaLogo from "/assets/img/merrychristmas.png";
-// import useSidebarInfo from "../../hooks/useSidebarInfo";
 import useStickyMenu from "../../hooks/useStickyMenu";
-// import blackLogo from "../../assets/image/logo-black-santa.png";
 
 
 interface DataType {
