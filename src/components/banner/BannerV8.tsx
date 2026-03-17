@@ -190,6 +190,7 @@ function ParticleField() {
 
 // ─── Main Banner ───────────────────────────────────────────────────────────────
 const BannerV8 = ({ lightMode }: DataType) => {
+  console.log(lightMode);
   return (
     <>
       <style>{`
