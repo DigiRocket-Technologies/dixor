@@ -32,7 +32,7 @@ interface Meteor {
 // ─── Particle + Meteor Canvas ─────────────────────────────────────────────────
 function ParticleField() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-
+  console.log('h');
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
