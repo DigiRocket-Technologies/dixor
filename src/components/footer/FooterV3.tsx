@@ -22,7 +22,7 @@ const FooterV3 = () => {
                                     <li>
                                         <h4>United States</h4>
                                         <p>
-                                            8 The Green, St#4522, Dover, Delaware 19901
+                                            8 The Green #26133, Dover, DE 19901
                                         </p>
                                     </li>
                                     <li>
