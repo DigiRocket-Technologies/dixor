@@ -27,7 +27,7 @@ const FooterV1 = ({ sectionClass, lightMode }: DataType) => {
                 <ul className="address-list">
                   <li>
                     <h4>United States</h4>
-                    <p>8 The Green, St#4522, Dover, Delaware 19901</p>
+                    <p>8 The Green #26133, Dover, DE 19901</p>
                   </li>
                   <li>
                     <h4>India</h4>
