@@ -45,7 +45,7 @@ const ContactV1 = ({ sectionClass }: DataType) => {
                       <div className="info">
                         <h4>United States</h4>
                         <p>
-                          8 The Green, St#4522 <br /> Dover, Delaware 19901
+                          8 The Green #26133, <br /> Dover, DE 19901
                         </p>
                       </div>
                     </li>
